@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { subjects, topicById } from './data/catalog';
+import { subjects, topicById, contentDiagnostics } from './data/catalog';
 import type { SubjectId } from './domain/types';
 import { useStudy } from './state/StudyProvider';
 import { Button, Icon, Panel, type IconName } from './components/ui';
@@ -12,9 +12,10 @@ import { ProgressPage } from './pages/Progress';
 import { SettingsPage } from './pages/Settings';
 import { EasyPage, SessionPage } from './pages/Sessions';
 import { NetworkStatus, PwaNotice } from './components/PwaStatus';
+import { AdaptiveReviewPage } from './pages/AdaptiveReview';
 
-const mainNavigation: { id: string; label: string; icon: IconName }[] = [{ id: 'home', label: 'Главная', icon: 'home' }, { id: 'errors', label: 'Мои ошибки', icon: 'errors' }, { id: 'review', label: 'Повторение', icon: 'review' }, { id: 'progress', label: 'Прогресс', icon: 'progress' }];
-const validRoutes = new Set(['home', 'errors', 'review', 'progress', 'settings', 'easy', 'session', ...subjects.map(s => s.id)]);
+const mainNavigation: { id: string; label: string; icon: IconName }[] = [{ id: 'home', label: 'Главная', icon: 'home' }, { id: 'errors', label: 'Мои ошибки', icon: 'errors' }, { id: 'review', label: 'Повторение', icon: 'review' }, { id: 'review-today', label: 'Повторение на сегодня', icon: 'review' }, { id: 'progress', label: 'Прогресс', icon: 'progress' }];
+const validRoutes = new Set(['home', 'errors', 'review', 'review-today', 'progress', 'settings', 'easy', 'session', ...subjects.map(s => s.id)]);
 function route() { let hash = ''; try { hash = decodeURIComponent(window.location.hash.slice(1)); } catch { return 'home'; } return validRoutes.has(hash) || (hash.startsWith('topic/') && topicById[hash.slice(6)]) ? hash : 'home'; }
 function Navigation({ page, go }: { page: string; go: (page: string) => void }) {
   const { state } = useStudy(), errors = state.errors.filter(e => e.status !== 'закрепил').length;
@@ -29,6 +30,7 @@ export function App() {
   let screen;
   if (!ready) screen = <Panel><h2>Твой учебный центр</h2><p>Загружаем сохранённый прогресс…</p></Panel>;
   else if (page === 'home') screen = <Dashboard go={go}/>;
+  else if (page === 'review-today') screen = <AdaptiveReviewPage go={go}/>;
   else if (subjects.some(s => s.id === page)) screen = <SubjectPage key={page} subjectId={page as SubjectId} go={go}/>;
   else if (page.startsWith('topic/')) screen = <TopicPage key={page} id={page.slice(6)} go={go}/>;
   else if (page === 'errors') screen = <ErrorsPage/>;
@@ -36,6 +38,6 @@ export function App() {
   else if (page === 'progress') screen = <ProgressPage/>;
   else if (page === 'settings') screen = <SettingsPage/>;
   else if (page === 'easy') screen = <EasyPage go={go}/>;
-  else if (page === 'session') screen = <SessionPage go={go}/>;
-  return <div className="app-frame"><a className="skip-link" href="#main-content" onClick={e => { e.preventDefault(); document.getElementById('main-content')?.focus(); }}>К содержимому</a><aside className="study-sidebar desktop-sidebar" data-slot="sidebar-inner"><Navigation page={page} go={go}/></aside><dialog ref={menu} className="mobile-sidebar study-sidebar" aria-label="Главное меню" onCancel={() => setMobile(false)} onClick={e => { if (e.target === e.currentTarget) setMobile(false); }}><div className="mobile-sidebar-inner"><Button variant="ghost" className="mobile-close" aria-label="Закрыть меню" onClick={() => setMobile(false)}><Icon name="close"/></Button><Navigation page={page} go={go}/></div></dialog><div className="app-surface"><header className="topbar"><div className="breadcrumb"><Button variant="ghost" className="mobile-menu" aria-label="Открыть меню" onClick={() => setMobile(true)}><Icon name="menu"/></Button><span>Личный учебный центр</span><Icon name="chevron" size={15}/><b>{title}</b></div><div className="topbar-right"><span className="year-label">ЕГЭ 2027</span><NetworkStatus/><Button variant="ghost" aria-label={state.settings.theme === 'light' ? 'Включить тёмную тему' : 'Включить светлую тему'} onClick={() => mutate(previous => ({ ...previous, settings: { ...previous.settings, theme: previous.settings.theme === 'light' ? 'dark' : 'light' } }))}><Icon name={state.settings.theme === 'light' ? 'moon' : 'sun'} size={19}/></Button><div className="avatar" aria-label="Radisonbe">R</div></div></header><main id="main-content" tabIndex={-1} className="main-content">{storageError && <div className="storage-warning" role="alert">{storageError}</div>}<PwaNotice/>{screen}<footer className="site-footer"><span>Шаг за шагом, к пониманию.</span><button type="button" onClick={() => go('settings')}>Проекты ФИПИ ЕГЭ-2027 · О материалах</button></footer></main></div></div>;
+  else if (page === 'session') screen = contentDiagnostics.length ? <Panel><p>Короткая сессия недоступна до исправления учебного пакета. Прогресс и остальные разделы сохранены.</p></Panel> : <SessionPage go={go}/>;
+  return <div className="app-frame"><a className="skip-link" href="#main-content" onClick={e => { e.preventDefault(); document.getElementById('main-content')?.focus(); }}>К содержимому</a><aside className="study-sidebar desktop-sidebar" data-slot="sidebar-inner"><Navigation page={page} go={go}/></aside><dialog ref={menu} className="mobile-sidebar study-sidebar" aria-label="Главное меню" onCancel={() => setMobile(false)} onClick={e => { if (e.target === e.currentTarget) setMobile(false); }}><div className="mobile-sidebar-inner"><Button variant="ghost" className="mobile-close" aria-label="Закрыть меню" onClick={() => setMobile(false)}><Icon name="close"/></Button><Navigation page={page} go={go}/></div></dialog><div className="app-surface"><header className="topbar"><div className="breadcrumb"><Button variant="ghost" className="mobile-menu" aria-label="Открыть меню" onClick={() => setMobile(true)}><Icon name="menu"/></Button><span>Личный учебный центр</span><Icon name="chevron" size={15}/><b>{title}</b></div><div className="topbar-right"><span className="year-label">ЕГЭ 2027</span><NetworkStatus/><Button variant="ghost" aria-label={state.settings.theme === 'light' ? 'Включить тёмную тему' : 'Включить светлую тему'} onClick={() => mutate(previous => ({ ...previous, settings: { ...previous.settings, theme: previous.settings.theme === 'light' ? 'dark' : 'light' } }))}><Icon name={state.settings.theme === 'light' ? 'moon' : 'sun'} size={19}/></Button><div className="avatar" aria-label="Radisonbe">R</div></div></header><main id="main-content" tabIndex={-1} className="main-content">{storageError && <div className="storage-warning" role="alert">{storageError}</div>}<PwaNotice/>{contentDiagnostics.length > 0 && <p className="storage-warning" role="status">Некоторые учебные пакеты недоступны. Остальные разделы и прогресс работают.</p>}{screen}<footer className="site-footer"><span>Шаг за шагом, к пониманию.</span><button type="button" onClick={() => go('settings')}>Проекты ФИПИ ЕГЭ-2027 · О материалах</button></footer></main></div></div>;
 }

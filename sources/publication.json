@@ -50,7 +50,7 @@
         {
           "path": "src/data/catalog.ts",
           "normalization": "lf",
-          "sha256": "760fdcaec66f36c1303c67ff3d70002ac857603d4b32376b34325aa94eb853d8"
+          "sha256": "00a75352578339e49b7c690f1adf9831e3c1ea60ff0453cb24032acd3f4354a5"
         }
       ]
     },
@@ -113,6 +113,49 @@
           "path": "public/manifest.webmanifest",
           "normalization": "lf",
           "sha256": "50e38c562653e38248db37b1d65c00c9c5f2dec011143db2d119eef5e2c90a4f"
+        }
+      ]
+    },
+    {
+      "id": "stage3a-structured-bank",
+      "clearance": "project-generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "license": null,
+      "evidence": "Stage 3A metadata-only classification of the same 67 owner-declared generated questions; original IDs and every prompt/answer/hint/solution/options are preserved and compared in automated tests. No new educational material.",
+      "files": [
+        {
+          "path": "src/data/banks/math.json",
+          "normalization": "lf",
+          "sha256": "32167c4eeda21db850d5dcf400b8ead314e250dc6af72e6d27ea6b86b8df920c"
+        },
+        {
+          "path": "src/data/banks/russian.json",
+          "normalization": "lf",
+          "sha256": "196aa230bd9fc8a6264fbcdd1a2faf32e7b96a4e843185b3f5a6e7c9303e73ec"
+        },
+        {
+          "path": "src/data/banks/informatics.json",
+          "normalization": "lf",
+          "sha256": "1cff08739eb7c958a87b76351658db9c348622b59f8fda8e4a7d2f0975ea80e1"
+        },
+        {
+          "path": "src/data/banks/python.json",
+          "normalization": "lf",
+          "sha256": "931e5b9fcfbc77fb51108118c8068d7af9ad8e2a8ac3a10840b2637827beaab0"
+        }
+      ]
+    },
+    {
+      "id": "stage3a-taxonomy",
+      "clearance": "project-authored",
+      "source": null,
+      "license": null,
+      "evidence": "Original project metadata: stable subtopic/skill IDs, classification labels and basic prerequisite/remediation links. Not copied textbook prose or exam tasks.",
+      "files": [
+        {
+          "path": "src/data/taxonomy.json",
+          "normalization": "lf",
+          "sha256": "cd3022973bd760f1e253c17b864f5e7ae857732df3ee4575e3cd8f17e6eeec27"
         }
       ]
     }

@@ -1,18 +1,21 @@
 import { useId, useRef, useState, type ReactNode } from 'react';
 import { checkAnswer, normalizeText } from '../domain/answers';
 import { recordAttempt } from '../domain/progress';
+import { answerReview } from '../domain/adaptive';
 import type { AttemptContext, Question } from '../domain/types';
 import { useStudy } from '../state/StudyProvider';
 import { Badge, Button, Icon, Panel, ProgressBar } from './ui';
+import { QuestionMetadata } from './QuestionMetadata';
 
-export function AnswerBox({ question, context = 'test', onDone, customInput, customAnswer, customCorrect }: {
+export function AnswerBox({ question, context = 'test', onDone, customInput, customAnswer, customCorrect, adaptiveSessionId, initial }: {
   question: Question; context?: AttemptContext; onDone?: (correct: boolean) => void;
   customInput?: ReactNode; customAnswer?: string; customCorrect?: boolean;
+  adaptiveSessionId?: string; initial?: { answer: string; result: boolean | null };
 }) {
   const { mutate } = useStudy();
-  const [answer, setAnswer] = useState(''), [result, setResult] = useState<boolean | null>(null), [formatError, setFormatError] = useState('');
-  const [solution, setSolution] = useState(false), [hadAttempt, setHadAttempt] = useState(false);
-  const submitted = useRef(false), id = useId();
+  const [answer, setAnswer] = useState(initial?.answer ?? ''), [result, setResult] = useState<boolean | null>(initial?.result ?? null), [formatError, setFormatError] = useState('');
+  const [solution, setSolution] = useState(false), [hint, setHint] = useState(false), [hadAttempt, setHadAttempt] = useState(initial?.result !== undefined && initial.result !== null);
+  const submitted = useRef(initial?.result !== undefined && initial.result !== null), id = useId();
   const current = customAnswer ?? answer;
   function submit() {
     if (submitted.current) return;
@@ -20,18 +23,20 @@ export function AnswerBox({ question, context = 'test', onDone, customInput, cus
     if (!validation.valid) { setFormatError(validation.message); return; }
     submitted.current = true;
     const correct = validation.correct;
-    mutate(state => recordAttempt(state, question, current, correct, context, crypto.randomUUID()));
+    const attemptId = crypto.randomUUID();
+    mutate(state => adaptiveSessionId ? answerReview(state, adaptiveSessionId, current, correct, attemptId) : recordAttempt(state, question, current, correct, context, attemptId));
     setFormatError(''); setResult(correct); setHadAttempt(true); onDone?.(correct);
   }
-  return <div className="answer-box"><p className="question-prompt">{question.prompt}</p>
+  return <div className="answer-box"><QuestionMetadata question={question}/><p className="question-prompt">{question.prompt}</p>
+    {context === 'adaptive' && <><Button variant="ghost" onClick={() => setHint(!hint)}>{hint ? 'Скрыть подсказку' : 'Показать подсказку'}</Button>{hint && <p className="callout">{question.hint}</p>}</>}
     {customInput ? <fieldset disabled={result !== null}>{customInput}</fieldset> : question.answerType === 'choice' ?
       <div role="radiogroup" aria-label="Варианты ответа" className="answer-options">{question.options?.map((option, i) => <label className={`answer-option ${answer === option ? 'selected' : ''}`} key={option} htmlFor={`${id}-${i}`}><input type="radio" name={id} id={`${id}-${i}`} value={option} checked={answer === option} disabled={result !== null} onChange={() => { setAnswer(option); setFormatError(''); }}/><span>{option}</span></label>)}</div> :
       <form onSubmit={e => { e.preventDefault(); submit(); }}><label className="field-label" htmlFor={id}>Твой ответ</label><input id={id} data-slot="input" value={answer} disabled={result !== null} onChange={e => { setAnswer(e.target.value); setFormatError(''); }} placeholder={question.answerType === 'number' ? 'Например: 12,5 или 1/4' : 'Введи ответ'} autoComplete="off" maxLength={300} inputMode={question.answerType === 'number' ? 'decimal' : 'text'} aria-invalid={!!formatError} aria-describedby={formatError ? `${id}-format` : undefined}/></form>}
     {formatError && <p className="format-error" id={`${id}-format`} role="alert">{formatError}</p>}
     {result === null ? <Button className="check-button" onClick={submit} disabled={!current.trim()}>Проверить ответ <Icon name="arrow"/></Button> :
-      <div className={`feedback ${result ? 'success' : 'retry'}`} role="status"><strong><Icon name={result ? 'check' : 'bulb'}/>{result ? 'Ответ верный. Сверь свой ход решения.' : 'Давай проверим этот шаг'}</strong><p>{result ? question.solution : question.wrongAnswers?.[normalizeText(current)] ?? `Ответ «${current}» не подходит к условию.`}</p>{!result && <><p><b>Подсказка:</b> {question.hint}</p><Button variant="outline" onClick={() => { setResult(null); setSolution(false); submitted.current = false; }}><Icon name="review"/>Попробовать ещё раз</Button><p className="small muted">Эта попытка сохранена в «Мои ошибки».</p></>}</div>}
-    {hadAttempt && result === false && !solution && <Button variant="ghost" className="solution-toggle" onClick={() => setSolution(true)}>Показать полное решение <Icon name="chevron"/></Button>}
-    {solution && <div className="solution"><b>Разбор решения</b><p>{question.solution}</p><p>Ответ: <strong>{question.answer}</strong></p></div>}
+      <div className={`feedback ${result ? 'success' : 'retry'}`} role="status"><strong><Icon name={result ? 'check' : 'bulb'}/>{result ? 'Ответ верный. Сверь свой ход решения.' : 'Давай проверим этот шаг'}</strong><p>{result ? context === 'adaptive' ? 'Можно перейти к следующему вопросу или открыть разбор.' : question.solution : question.wrongAnswers?.[normalizeText(current)] ?? `Ответ «${current}» не подходит к условию.`}</p>{!result && <>{context !== 'adaptive' && <p><b>Подсказка:</b> {question.hint}</p>}<Button variant="outline" onClick={() => { setResult(null); setSolution(false); submitted.current = false; }}><Icon name="review"/>Попробовать ещё раз</Button><p className="small muted">Эта попытка сохранена в «Мои ошибки».</p></>}</div>}
+    {hadAttempt && (result === false || context === 'adaptive') && !solution && <Button variant="ghost" className="solution-toggle" onClick={() => setSolution(true)}>Показать полное решение <Icon name="chevron"/></Button>}
+    {solution && <div className="solution"><b>Разбор решения</b>{question.explanation !== question.solution && <p>{question.explanation}</p>}<p>{question.solution}</p><p>Ответ: <strong>{question.answer}</strong></p></div>}
   </div>;
 }
 export function Quiz({ items, title = 'Проверим понимание', context = 'test', onFinish }: { items: Question[]; title?: string; context?: AttemptContext; onFinish?: () => void }) {

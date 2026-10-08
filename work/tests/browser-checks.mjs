@@ -7,6 +7,7 @@ import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
 const { chromium } = createRequire(pathToFileURL(path.join(process.argv[2], '_runtime.js')))('playwright');
 const origin = process.argv[3] ?? 'http://127.0.0.1:4180';
+const buildDirectory = process.argv[4] ?? "dist";
 const runId = new Date().toISOString().replace(/[:.]/g,'-');
 const profile = path.resolve('work/browser-profile-' + runId);
 const results = [], failures = [], external = new Set();
@@ -38,9 +39,9 @@ async function input(answer) { await page.getByRole('textbox',{name:'Твой о
 async function importText(text) { await page.locator('input[type=file]').setInputFiles({name:'progress.json',mimeType:'application/json',buffer:Buffer.from(text)}); }
 try {
   context = await launch(); page = context.pages()[0]; watch(page);
-  await check('Online first load fully precaches all 8 resources and installable manifest has required icons', async () => {
+  await check('Online first load fully precaches all supplied resources and installable manifest has required icons', async () => {
     await go('settings'); await ready();
-    const inventory = JSON.parse(fs.readFileSync('dist/offline-inventory.json','utf8'));
+    const inventory = JSON.parse(fs.readFileSync(path.join(buildDirectory,'offline-inventory.json'),'utf8'));
     const cache = await page.evaluate(async () => { const names=(await caches.keys()).filter(n=>n.startsWith('ege-offline:')); const c=await caches.open(names[0]); return (await c.keys()).map(r=>new URL(r.url).pathname.slice(1)); });
     assert.deepEqual(cache.sort(),inventory.files.map(f=>f.path).sort());
     const cdp = await context.newCDPSession(page); const errors=await cdp.send('Page.getInstallabilityErrors'); assert.deepEqual(errors.installabilityErrors,[]); await cdp.detach();
@@ -78,15 +79,15 @@ try {
       await go(route); if (route.startsWith('topic/')) await page.getByRole('tab',{name:'Мини-тест'}).click();
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth), 'Overflow in ' + route);
     }
-    await page.screenshot({path:'outputs/stage2-mobile-offline.png'}); await page.setViewportSize({width:1440,height:1000});
+    await page.screenshot({path:'outputs/regression-mobile-offline.png'}); await page.setViewportSize({width:1440,height:1000});
   });
   await context.setOffline(false); await go('settings');
   let backup, text;
   await check('Network restoration and UI JSON export contain the complete user state but no learning bank', async () => {
     assert.ok(await page.getByText('Онлайн',{exact:true}).isVisible());
     const event=page.waitForEvent('download');await page.getByRole('button',{name:'Экспортировать JSON',exact:true}).click();const download=await event;
-    await download.saveAs('outputs/stage2-test-progress.json');text=fs.readFileSync('outputs/stage2-test-progress.json','utf8');backup=JSON.parse(text);
-    assert.deepEqual(backup.data,JSON.parse(JSON.stringify(offlineState))); assert.equal(backup.data.schemaVersion,1);assert.equal(backup.backupVersion,1);assert.equal(backup.format,'ege-progress-backup');assert.equal(backup.questions,undefined);
+    await download.saveAs('outputs/regression-test-progress.json');text=fs.readFileSync('outputs/regression-test-progress.json','utf8');backup=JSON.parse(text);
+    assert.deepEqual(backup.data,JSON.parse(JSON.stringify(offlineState))); assert.equal(backup.data.schemaVersion,2);assert.equal(backup.backupVersion,2);assert.equal(backup.format,'ege-progress-backup');assert.equal(backup.questions,undefined);
   });
   await go('topic/percent');await page.getByRole('textbox',{name:'Моя заметка по теме'}).fill('Изменённые тестовые данные');
   await saved(s=>s?.topics.percent.note==='Изменённые тестовые данные');await go('settings');const changed=await getState();
@@ -94,7 +95,7 @@ try {
     await importText('{');await page.getByText('Не удалось прочитать JSON.',{exact:false}).waitFor();assert.deepEqual(await getState(),changed);
     const bad=structuredClone(backup);bad.data.schemaVersion=7;await importText(JSON.stringify(bad));await page.getByText('Версия схемы данных пока не поддерживается.',{exact:false}).waitFor();assert.deepEqual(await getState(),changed);
     await importText(text);await page.getByRole('dialog').waitFor();assert.equal(await page.getByRole('button',{name:'Заменить данные',exact:true}).isDisabled(),true);
-    await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:'outputs/stage2-mobile-import.png'});await page.getByRole('button',{name:'Отмена',exact:true}).click();await page.setViewportSize({width:1440,height:1000});assert.deepEqual(await getState(),changed);
+    await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:'outputs/regression-mobile-import.png'});await page.getByRole('button',{name:'Отмена',exact:true}).click();await page.setViewportSize({width:1440,height:1000});assert.deepEqual(await getState(),changed);
   });
   await check('A failed IndexedDB import transaction rolls back both replacement and recovery-copy writes', async () => {
     const beforeKeys=await keys();await importText(text);await page.getByLabel('Понимаю, что импорт заменит текущий прогресс').check();
@@ -106,13 +107,13 @@ try {
   await check('Confirmed import restores the exported state exactly and saves a unique pre-import rollback copy', async () => {
     await page.getByRole('button',{name:'Заменить данные',exact:true}).click();await page.getByText('Данные восстановлены из резервной копии.',{exact:false}).waitFor();
     assert.deepEqual(await getState(),backup.data);assert.ok((await keys()).some(k=>String(k).startsWith('before-import:')));
-    await page.reload();await ready();assert.deepEqual(await getState(),backup.data);await page.screenshot({path:'outputs/stage2-desktop-settings.png'});
+    await page.reload();await ready();assert.deepEqual(await getState(),backup.data);await page.screenshot({path:'outputs/regression-desktop-settings.png'});
   });
   await check('Offline import and export continue to work without contacting any external service', async () => {
     await context.setOffline(true);await importText(text);await page.getByLabel('Понимаю, что импорт заменит текущий прогресс').check();await page.getByRole('button',{name:'Заменить данные',exact:true}).click();await page.getByText('Данные восстановлены из резервной копии.',{exact:false}).waitFor();
-    const event=page.waitForEvent('download');await page.getByRole('button',{name:'Экспортировать JSON',exact:true}).click();const download=await event;await download.saveAs('outputs/stage2-test-progress-offline.json');
-    assert.deepEqual(JSON.parse(fs.readFileSync('outputs/stage2-test-progress-offline.json','utf8')).data,backup.data);assert.equal(external.size,0);
+    const event=page.waitForEvent('download');await page.getByRole('button',{name:'Экспортировать JSON',exact:true}).click();const download=await event;await download.saveAs('outputs/regression-test-progress-offline.json');
+    assert.deepEqual(JSON.parse(fs.readFileSync('outputs/regression-test-progress-offline.json','utf8')).data,backup.data);assert.equal(external.size,0);
   });
   assert.deepEqual(failures,[]); await context.close(); context=undefined;
-  fs.writeFileSync('outputs/STAGE-2-BROWSER-CHECKS.json',JSON.stringify({passed:results,errors:failures,externalRequests:[...external],profile},null,2));
+  fs.writeFileSync('outputs/STAGE3A-REGRESSION-CHECKS.json',JSON.stringify({passed:results,errors:failures,externalRequests:[...external],profile},null,2));
 } finally { if(context) await context.close(); }

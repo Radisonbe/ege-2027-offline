@@ -1,7 +1,7 @@
-import type { Question, StudyState } from './types';
+import type { Question, StudyState } from './types.ts';
 
 export const MAX_BACKUP_BYTES = 20 * 1024 * 1024;
-export interface ProgressBackup { format: 'ege-progress-backup'; backupVersion: 1; appVersion: string; createdAt: string; data: StudyState }
+export interface ProgressBackup { format: 'ege-progress-backup'; backupVersion: 2; appVersion: string; createdAt: string; data: StudyState }
 export class BackupError extends Error {}
 const fail = (path: string): never => { throw new BackupError(`Файл не подходит: проверь поле «${path}». Текущий прогресс не изменён.`); };
 const forbidden = new Set(['__proto__', 'constructor', 'prototype']);
@@ -43,18 +43,20 @@ function unique(items: unknown[], path: string) {
   if (new Set(ids).size !== ids.length) fail(path + '.id');
 }
 export function validateQuestion(value: unknown, path = 'question'): Question {
-  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy']);
+  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates']);
   for (const key of ['id', 'topic']) string(q[key], path + '.' + key, true);
   for (const key of ['source', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle']) string(q[key], path + '.' + key);
   for (const key of ['subtopic', 'examTaskType']) if (q[key] !== null) string(q[key], path + '.' + key);
   choice(q.subject, path + '.subject', ['math', 'russian', 'informatics', 'python']);
   choice(q.difficulty, path + '.difficulty', ['unspecified', 'easy', 'medium', 'hard']);
-  choice(q.origin, path + '.origin', ['official', 'generated', 'reconstructed', 'custom']);
+  choice(q.origin, path + '.origin', ['official', 'generated', 'reconstructed', 'custom', 'private-import']);
   choice(q.sourceType, path + '.sourceType', ['training', 'exam', 'lesson']);
   choice(q.answerType, path + '.answerType', ['number', 'text', 'choice', 'selection']);
   integer(q.version, path + '.version', 1, Number.MAX_SAFE_INTEGER);
   if (q.sourceYear !== null) integer(q.sourceYear, path + '.sourceYear', 1900, 2200);
   strings(q.requires, path + '.requires'); strings(q.related, path + '.related');
+  if (q.skills !== undefined) strings(q.skills, path + '.skills');
+  if (q.remediates !== undefined) strings(q.remediates, path + '.remediates');
   if (q.options !== undefined) strings(q.options, path + '.options');
   if (q.easy !== undefined) choice(q.easy, path + '.easy', [true, false]);
   if (q.wrongAnswers !== undefined) for (const [key, message] of Object.entries(dictionary(q.wrongAnswers, path + '.wrongAnswers'))) string(message, path + '.wrongAnswers.' + key);
@@ -62,9 +64,11 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
 }
 
 export function validateStudyState(value: unknown): StudyState {
-  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt']);
+  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive']);
   if (s.app !== 'ege-local-center') fail('data.app');
-  if (s.schemaVersion !== 1) throw new BackupError('Версия схемы данных пока не поддерживается. Текущий прогресс не изменён.');
+  if (s.schemaVersion !== 1 && s.schemaVersion !== 2) throw new BackupError('Версия схемы данных пока не поддерживается. Текущий прогресс не изменён.');
+  if (s.schemaVersion === 1 && s.adaptive !== undefined) fail('data.adaptive');
+  if (s.schemaVersion === 2 && s.adaptive === undefined) fail('data.adaptive');
   string(s.contentVersion, 'data.contentVersion', true); instant(s.updatedAt, 'data.updatedAt');
   const topics = dictionary(s.topics, 'data.topics');
   for (const [key, value] of Object.entries(topics)) {
@@ -74,12 +78,16 @@ export function validateStudyState(value: unknown): StudyState {
     if (t.last !== undefined) date(t.last, 'last');
   }
   const attempts = array(s.attempts, 'data.attempts', (value, path) => {
-    const a = object(value, path, ['id', 'questionId', 'questionVersion', 'topic', 'answer', 'correct', 'date', 'at', 'context']);
+    const a = object(value, path, ['id', 'questionId', 'questionVersion', 'topic', 'answer', 'correct', 'date', 'at', 'context'], ['subject', 'subtopic', 'skills', 'sessionId']);
     for (const key of ['id', 'questionId', 'topic']) string(a[key], path + '.' + key, true);
     string(a.answer, path + '.answer'); choice(a.correct, path + '.correct', [true, false]);
     integer(a.questionVersion, path + '.questionVersion', 1, Number.MAX_SAFE_INTEGER);
     date(a.date, path + '.date'); instant(a.at, path + '.at');
-    choice(a.context, path + '.context', ['practice', 'test', 'easy', 'session', 'error']);
+    choice(a.context, path + '.context', ['practice', 'test', 'easy', 'session', 'error', 'adaptive']);
+    if (a.subject !== undefined) choice(a.subject, path + '.subject', ['math','russian','informatics','python']);
+    if (a.subtopic !== undefined && a.subtopic !== null) string(a.subtopic, path + '.subtopic', true);
+    if (a.skills !== undefined) strings(a.skills, path + '.skills');
+    if (a.sessionId !== undefined) string(a.sessionId, path + '.sessionId', true);
   }); unique(attempts, 'data.attempts');
   const attemptById = new Map(attempts.map(a => [(a as ObjectValue).id, a as ObjectValue]));
   const errors = array(s.errors, 'data.errors', (value, path) => {
@@ -110,13 +118,62 @@ export function validateStudyState(value: unknown): StudyState {
   }); unique(activity, 'data.activity');
   const settings = object(s.settings, 'data.settings', ['theme'], ['lastTopic']);
   choice(settings.theme, 'settings.theme', ['light', 'dark']); if (settings.lastTopic !== undefined) string(settings.lastTopic, 'settings.lastTopic', true);
+  if (s.schemaVersion === 2) validateAdaptive(s.adaptive, attemptById);
   // Historical IDs are deliberately not restricted to the current content catalogue.
-  return value as StudyState;
+  // Additive migration: historical IDs, snapshots, dates, intervals and notes are untouched.
+  return s.schemaVersion === 1 ? { ...value as StudyState, schemaVersion: 2, adaptive: { sessions: [], exposures: [] } } : value as StudyState;
+}
+
+function validateAdaptive(value: unknown, attempts: Map<unknown, ObjectValue>) {
+  const a = object(value, 'adaptive', ['sessions', 'exposures']);
+  const linkedAttempts = new Set<string>(), sessions = new Map<string, ObjectValue>();
+  const items = array(a.sessions, 'adaptive.sessions', (value, path) => {
+    const session = object(value, path, ['id','requested','subject','startedAt','index','items'], ['completedAt']);
+    string(session.id, path + '.id', true); choice(session.requested, path + '.requested', [5,10,15,20]);
+    choice(session.subject, path + '.subject', ['all','math','russian','informatics','python']); instant(session.startedAt, path + '.startedAt');
+    if (session.completedAt !== undefined) instant(session.completedAt, path + '.completedAt');
+    const questions = array(session.items, path + '.items', (value, name) => {
+      const item = object(value, name, ['question','score','reasons','firstCorrect','correct','attemptIds'], ['shownAt']);
+      const q = validateQuestion(item.question, name + '.question');
+      if (session.subject !== 'all' && q.subject !== session.subject) fail(name + '.question.subject');
+      if (typeof item.score !== 'number' || !Number.isFinite(item.score)) fail(name + '.score');
+      array(item.reasons, name + '.reasons', (value, path) => { const r = object(value,path,['code','points','label']); string(r.code,path+'.code',true); string(r.label,path+'.label'); if(typeof r.points !== 'number' || !Number.isFinite(r.points)) fail(path+'.points'); }, 100);
+      choice(item.firstCorrect, name+'.firstCorrect',[null,true,false]); choice(item.correct,name+'.correct',[null,true,false]);
+      if(item.shownAt !== undefined) instant(item.shownAt,name+'.shownAt');
+      strings(item.attemptIds,name+'.attemptIds');
+      const ids = item.attemptIds as string[];
+      for(const id of ids) {
+        const attempt = attempts.get(id);
+        if(!attempt || linkedAttempts.has(id) || attempt.context !== 'adaptive' || attempt.sessionId !== session.id || attempt.questionId !== q.id || attempt.topic !== q.topic || attempt.questionVersion !== q.version || attempt.subject !== q.subject || attempt.subtopic !== q.subtopic || JSON.stringify(attempt.skills) !== JSON.stringify(q.skills ?? [])) fail(name+'.attemptIds');
+        linkedAttempts.add(id);
+      }
+      if (ids.length ? item.firstCorrect !== attempts.get(ids[0])?.correct || item.correct !== attempts.get(ids.at(-1))?.correct || !item.shownAt : item.firstCorrect !== null || item.correct !== null) fail(name+'.correct');
+    }, 20);
+    if (questions.length !== session.requested) fail(path+'.items');
+    integer(session.index,path+'.index',0,questions.length-1);
+    if (questions.slice(0,session.index as number).some(q=>(q as ObjectValue).correct===null)) fail(path+'.index');
+    if (session.completedAt !== undefined && questions.some(q=>(q as ObjectValue).correct===null)) fail(path+'.completedAt');
+    sessions.set(session.id as string,session);
+  },10000); unique(items,'adaptive.sessions');
+  const seen = new Set<string>();
+  const exposures = array(a.exposures,'adaptive.exposures',(value,path)=>{
+    const e = object(value,path,['id','sessionId','index','questionId','topic','skills','at']);
+    for(const key of ['id','sessionId','questionId','topic']) string(e[key],path+'.'+key,true);
+    instant(e.at,path+'.at'); strings(e.skills,path+'.skills');
+    const session=sessions.get(e.sessionId as string), key=e.sessionId+':'+e.index;
+    if(!session || seen.has(key)) return fail(path+'.sessionId');
+    integer(e.index,path+'.index',0,(session.items as unknown[]).length-1);
+    const item=(session.items as ObjectValue[])[e.index as number],q=item.question as ObjectValue;
+    if(item.shownAt!==e.at || q.id!==e.questionId || q.topic!==e.topic || e.id!==key || JSON.stringify(e.skills)!==JSON.stringify(q.skills??[])) fail(path+'.questionId');
+    seen.add(key);
+  }); unique(exposures,'adaptive.exposures');
+  for(const session of sessions.values()) (session.items as ObjectValue[]).forEach((item,index)=>{if(item.shownAt&&!seen.has(session.id+':'+index))fail('adaptive.exposures');});
+  for(const attempt of attempts.values()) if(attempt.context==='adaptive' && !linkedAttempts.has(attempt.id as string)) fail('adaptive.attemptIds');
 }
 
 export function serializeBackup(state: StudyState, now = new Date()): string {
   const data = validateStudyState(JSON.parse(JSON.stringify(state)));
-  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 1, appVersion: '0.2.1', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
+  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 2, appVersion: '0.3.0-dev', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
   if (new TextEncoder().encode(text).length > MAX_BACKUP_BYTES) throw new BackupError('Данные превышают текущий лимит резервной копии 20 МБ. Прогресс не изменён.');
   return text;
 }
@@ -126,7 +183,9 @@ export function parseBackup(text: string): ProgressBackup {
   try { value = JSON.parse(text, (key, item) => { if (forbidden.has(key)) throw new Error('Unsafe key'); return item; }); }
   catch { throw new BackupError('Не удалось прочитать JSON. Файл повреждён или имеет неподходящий формат. Текущий прогресс не изменён.'); }
   const backup = object(value, 'backup', ['format', 'backupVersion', 'appVersion', 'createdAt', 'data']);
-  if (backup.format !== 'ege-progress-backup' || backup.backupVersion !== 1) throw new BackupError('Это не поддерживаемая резервная копия ЕГЭ 2027. Текущий прогресс не изменён.');
-  string(backup.appVersion, 'appVersion', true); instant(backup.createdAt, 'createdAt'); validateStudyState(backup.data);
-  return value as ProgressBackup;
+  if (backup.format !== 'ege-progress-backup' || ![1,2].includes(backup.backupVersion as number)) throw new BackupError('Это не поддерживаемая резервная копия ЕГЭ 2027. Текущий прогресс не изменён.');
+  string(backup.appVersion, 'appVersion', true); instant(backup.createdAt, 'createdAt');
+  const data = validateStudyState(backup.data);
+  if ((backup.backupVersion === 1 && (backup.data as ObjectValue).schemaVersion !== 1) || (backup.backupVersion === 2 && (backup.data as ObjectValue).schemaVersion !== 2)) fail('backupVersion');
+  return { ...value as ProgressBackup, backupVersion: 2, data };
 }

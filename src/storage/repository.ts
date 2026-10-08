@@ -21,11 +21,21 @@ export const repository: ProgressRepository = {
   async load() {
     const db = await open();
     return new Promise((resolve, reject) => {
-      const request = db.transaction(STORE, 'readonly').objectStore(STORE).get('current');
+      const transaction = db.transaction(STORE, 'readwrite'), store = transaction.objectStore(STORE), request = store.get('current');
+      let result: StudyState | undefined;
+      transaction.oncomplete = () => resolve(result);
+      transaction.onerror = () => reject(transaction.error);
+      transaction.onabort = () => reject(transaction.error ?? new Error('Миграция не завершена. Исходное сохранение не изменено.'));
       request.onsuccess = () => {
-        const state = request.result as StudyState | undefined;
-        try { resolve(state ? validateStudyState(state) : undefined); }
-        catch { reject(new Error('Локальное сохранение имеет неподдерживаемую структуру. Оно не перезаписано.')); }
+        const state = request.result;
+        try {
+          result = state ? validateStudyState(state) : undefined;
+          if (state?.schemaVersion === 1) {
+            // Original document and the migrated version commit together, or neither does.
+            store.add(state, `before-migration:1-2:${new Date().toISOString()}:${crypto.randomUUID()}`);
+            store.put(result, 'current');
+          }
+        } catch { transaction.abort(); reject(new Error('Локальное сохранение имеет неподдерживаемую структуру. Оно не перезаписано.')); }
       };
       request.onerror = () => reject(request.error);
     });

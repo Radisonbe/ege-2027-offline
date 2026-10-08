@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "id": "stage2-russian",
+  "subject": "russian",
+  "questions": [
+    {
+      "id": "s1",
+      "subject": "russian",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.basis",
+      "skills": [
+        "sentence.skill.main"
+      ],
+      "difficulty": "easy",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "В «Я вспомнил всё, что произошло вчера» выбери основу главной части.",
+      "answer": "Я вспомнил",
+      "options": [
+        "Вспомнил всё",
+        "Я вспомнил",
+        "Всё произошло",
+        "Произошло вчера"
+      ],
+      "hint": "Основа сообщает, о ком говорится и что он делает.",
+      "explanation": "Кто? Я — подлежащее. Что сделал? Вспомнил — сказуемое. «Всё» отвечает на вопрос «вспомнил что?» и является дополнением.",
+      "solution": "Кто? Я — подлежащее. Что сделал? Вспомнил — сказуемое. «Всё» отвечает на вопрос «вспомнил что?» и является дополнением.",
+      "principle": "Основа сообщает, о ком говорится и что он делает.",
+      "version": 1
+    },
+    {
+      "id": "s2",
+      "subject": "russian",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.link",
+      "skills": [
+        "sentence.skill.relative-subject"
+      ],
+      "difficulty": "medium",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Какую роль играет «что» в «Я вспомнил всё, что произошло вчера»?",
+      "answer": "Союзное слово, подлежащее",
+      "options": [
+        "Союз, не член предложения",
+        "Союзное слово, дополнение",
+        "Союзное слово, подлежащее"
+      ],
+      "hint": "В придаточной части спроси: произошло что? Слово отвечает на вопрос и занимает место члена предложения.",
+      "explanation": "«Что» — относительное местоимение и союзное слово. Оно связывает части и служит подлежащим: что произошло? — что (событие).",
+      "solution": "«Что» — относительное местоимение и союзное слово. Оно связывает части и служит подлежащим: что произошло? — что (событие).",
+      "principle": "В придаточной части спроси: произошло что? Слово отвечает на вопрос и занимает место члена предложения.",
+      "version": 1
+    },
+    {
+      "id": "s3",
+      "subject": "russian",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.basis",
+      "skills": [
+        "sentence.skill.subordinate"
+      ],
+      "difficulty": "easy",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Какова основа придаточной части в «Я знаю, что он вернётся»?",
+      "answer": "Он вернётся",
+      "options": [
+        "Что вернётся",
+        "Я знаю",
+        "Он вернётся",
+        "Знаю что"
+      ],
+      "hint": "Внутри придаточной части уже есть тот, кто совершает действие.",
+      "explanation": "Он — подлежащее, вернётся — сказуемое. «Что» только присоединяет придаточную часть и не является её членом.",
+      "solution": "Он — подлежащее, вернётся — сказуемое. «Что» только присоединяет придаточную часть и не является её членом.",
+      "principle": "Внутри придаточной части уже есть тот, кто совершает действие.",
+      "version": 1
+    },
+    {
+      "id": "s4",
+      "subject": "russian",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.parts",
+      "skills": [
+        "sentence.skill.separate"
+      ],
+      "difficulty": "easy",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "В «Когда стемнело, мы вернулись домой» какая часть главная?",
+      "answer": "Мы вернулись домой",
+      "options": [
+        "Когда стемнело",
+        "Мы вернулись домой"
+      ],
+      "hint": "От главной части можно задать вопрос к зависимой: вернулись когда?",
+      "explanation": "Главная часть — «мы вернулись домой». «Когда стемнело» отвечает на вопрос времени и является придаточной. Порядок частей не определяет их роль.",
+      "solution": "Главная часть — «мы вернулись домой». «Когда стемнело» отвечает на вопрос времени и является придаточной. Порядок частей не определяет их роль.",
+      "principle": "От главной части можно задать вопрос к зависимой: вернулись когда?",
+      "version": 1
+    },
+    {
+      "id": "u1",
+      "subject": "russian",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.distinction",
+      "skills": [
+        "unionwords.skill.that"
+      ],
+      "difficulty": "medium",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "«Я уверен, что поезд придёт вовремя». Слово «что» — это…",
+      "answer": "Союз",
+      "options": [
+        "Союз",
+        "Союзное слово"
+      ],
+      "hint": "Найди основу после запятой. Есть ли у «что» собственная роль в этой части?",
+      "explanation": "В придаточной основе «поезд придёт» обе роли заняты. «Что» только связывает части, вопрос к нему внутри придаточного не задаётся. Это союз.",
+      "solution": "В придаточной основе «поезд придёт» обе роли заняты. «Что» только связывает части, вопрос к нему внутри придаточного не задаётся. Это союз.",
+      "principle": "Найди основу после запятой. Есть ли у «что» собственная роль в этой части?",
+      "version": 1
+    },
+    {
+      "id": "u2",
+      "subject": "russian",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.distinction",
+      "skills": [
+        "unionwords.skill.that"
+      ],
+      "difficulty": "medium",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "«Я увидел, что лежит на столе». Слово «что» — это…",
+      "answer": "Союзное слово",
+      "options": [
+        "Союз",
+        "Союзное слово"
+      ],
+      "hint": "Спроси: лежит что? Есть ли другое подлежащее?",
+      "explanation": "«Что» занимает место предмета и является подлежащим: что лежит? Оно одновременно связывает части. Это союзное слово.",
+      "solution": "«Что» занимает место предмета и является подлежащим: что лежит? Оно одновременно связывает части. Это союзное слово.",
+      "principle": "Спроси: лежит что? Есть ли другое подлежащее?",
+      "version": 1
+    },
+    {
+      "id": "u3",
+      "subject": "russian",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.relative",
+      "skills": [
+        "unionwords.skill.where"
+      ],
+      "difficulty": "easy",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "«Я знаю, где находится станция». Слово «где» — это…",
+      "answer": "Союзное слово",
+      "options": [
+        "Союз",
+        "Союзное слово"
+      ],
+      "hint": "Слово указывает место и отвечает на вопрос «находится где?».",
+      "explanation": "«Где» — местоименное наречие, союзное слово и обстоятельство места. Оно связывает части и выполняет роль внутри придаточного.",
+      "solution": "«Где» — местоименное наречие, союзное слово и обстоятельство места. Оно связывает части и выполняет роль внутри придаточного.",
+      "principle": "Слово указывает место и отвечает на вопрос «находится где?».",
+      "version": 1
+    },
+    {
+      "id": "u4",
+      "subject": "russian",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.conjunction",
+      "skills": [
+        "unionwords.skill.compound"
+      ],
+      "difficulty": "easy",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "«Мы остались дома, потому что начался дождь». «Потому что» — это…",
+      "answer": "Союз",
+      "options": [
+        "Союз",
+        "Союзное слово"
+      ],
+      "hint": "Вопрос «почему остались?» относится ко всему придаточному, а не делает союз членом предложения.",
+      "explanation": "«Потому что» — составной причинный союз. Он связывает части. В придаточной части основа «дождь начался»; у союза синтаксической роли нет.",
+      "solution": "«Потому что» — составной причинный союз. Он связывает части. В придаточной части основа «дождь начался»; у союза синтаксической роли нет.",
+      "principle": "Вопрос «почему остались?» относится ко всему придаточному, а не делает союз членом предложения.",
+      "version": 1
+    },
+    {
+      "id": "u5",
+      "subject": "russian",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.relative",
+      "skills": [
+        "unionwords.skill.pronoun"
+      ],
+      "difficulty": "easy",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "«Книга, которую я прочитал, лежит здесь». «Которую» — это…",
+      "answer": "Союзное слово",
+      "options": [
+        "Союз",
+        "Союзное слово"
+      ],
+      "hint": "Поставь вопрос от сказуемого придаточной части: прочитал что?",
+      "explanation": "«Которую» — относительное местоимение, союзное слово и дополнение: я прочитал (что?) которую, то есть книгу. Связывает придаточную часть со словом «книга».",
+      "solution": "«Которую» — относительное местоимение, союзное слово и дополнение: я прочитал (что?) которую, то есть книгу. Связывает придаточную часть со словом «книга».",
+      "principle": "Поставь вопрос от сказуемого придаточной части: прочитал что?",
+      "version": 1
+    },
+    {
+      "id": "e5",
+      "subject": "russian",
+      "topic": "speech",
+      "subtopic": "speech.sub.verb",
+      "skills": [
+        "speech.skill.recognize"
+      ],
+      "difficulty": "easy",
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "origin": "generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "sourceYear": null,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Какая часть речи обозначает действие предмета?",
+      "answer": "Глагол",
+      "options": [
+        "Существительное",
+        "Глагол",
+        "Предлог"
+      ],
+      "hint": "Её вопросы: что делать? что сделать?",
+      "explanation": "Глагол обозначает действие или состояние: читать, спать, думать.",
+      "solution": "Глагол обозначает действие или состояние: читать, спать, думать.",
+      "principle": "Её вопросы: что делать? что сделать?",
+      "easy": true,
+      "version": 1
+    }
+  ]
+}

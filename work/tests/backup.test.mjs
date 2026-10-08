@@ -15,8 +15,8 @@ function sample() {
 test('Backup round trip preserves attempts, errors and historical question snapshot, notes, reviews, activity and settings', () => {
   const state = sample(), text = serializeBackup(state);
   assert.deepEqual(parseBackup(text).data, state);
-  assert.equal(parseBackup(text).backupVersion, 1);
-  assert.equal(parseBackup(text).data.schemaVersion, 1);
+  assert.equal(parseBackup(text).backupVersion, 2);
+  assert.equal(parseBackup(text).data.schemaVersion, 2);
   assert.ok(!Object.hasOwn(JSON.parse(text), 'questions'));
   assert.ok(!Object.hasOwn(JSON.parse(text).data, 'theories'));
 });
@@ -26,7 +26,7 @@ test('Malformed, incompatible and prototype-bearing files are rejected without a
   assert.deepEqual(current, before); assert.equal({}.polluted, undefined);
 });
 test('Future schema and backup versions require explicit migration; never silently imported', () => {
-  for (const mutate of [b => b.backupVersion = 2, b => b.data.schemaVersion = 2, b => b.data.app = 'another-app']) {
+  for (const mutate of [b => b.backupVersion = 3, b => b.data.schemaVersion = 3, b => b.data.app = 'another-app']) {
     const backup = JSON.parse(serializeBackup(sample())); mutate(backup); assert.throws(() => parseBackup(JSON.stringify(backup)));
   }
 });

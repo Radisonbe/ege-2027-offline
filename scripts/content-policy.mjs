@@ -40,6 +40,14 @@ export function checkPublication(registry, root) {
       if (!['lf', 'binary'].includes(file.normalization)) throw new Error('Invalid hash normalization: ' + file.path);
       const normalized = file.normalization === 'lf' ? bytes.toString('utf8').replaceAll('\r\n', '\n') : bytes;
       if (sha256(normalized) !== file.sha256) throw new Error('Content changed since provenance review: ' + file.path);
+      if (file.path.startsWith('src/data/banks/') && /\.json$/i.test(file.path)) {
+        const bank = JSON.parse(bytes);
+        if (!Array.isArray(bank.questions)) throw new Error('Missing question origins: ' + file.path);
+        for (const question of bank.questions) {
+          const allowed = entry.clearance === 'project-generated' ? ['generated'] : entry.clearance === 'project-authored' ? ['custom','generated'] : ['official','generated','custom','reconstructed'];
+          if (!allowed.includes(question.origin)) throw new Error('Question origin contradicts publication clearance: ' + question.id);
+        }
+      }
     }
   }
   for (const required of ['src/data/reference.json', 'src/styles/reference.css', 'src/components/Practices.tsx', 'src/components/GraphLab.tsx', 'src/components/ui.tsx', 'public/icon.svg', 'public/THIRD_PARTY_NOTICES.txt']) {
