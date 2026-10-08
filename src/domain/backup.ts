@@ -199,7 +199,7 @@ function validateAdaptive(value: unknown, attempts: Map<unknown, ObjectValue>) {
 
 export function serializeBackup(state: StudyState, now = new Date()): string {
   const data = validateStudyState(JSON.parse(JSON.stringify(state)));
-  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 2, appVersion: '0.3.2-dev', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
+  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 2, appVersion: '0.3.2', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
   if (new TextEncoder().encode(text).length > MAX_BACKUP_BYTES) throw new BackupError('Данные превышают текущий лимит резервной копии 20 МБ. Прогресс не изменён.');
   return text;
 }
