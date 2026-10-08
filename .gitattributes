@@ -1,0 +1,4 @@
+# Keep the reviewed upstream runtime and licence bytes unchanged on Windows checkouts.
+public/python-runtime/** -text
+# Preserve upstream licence formatting; whitespace checks remain enabled for project code.
+public/python-runtime/licenses/* whitespace=-blank-at-eol,-blank-at-eof
