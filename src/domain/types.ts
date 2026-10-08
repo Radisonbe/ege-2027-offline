@@ -2,7 +2,7 @@ import type {PythonTask} from '../python/tasks';
 export type SubjectId = 'math' | 'russian' | 'informatics' | 'python';
 export type TopicStatus = 'Не изучено' | 'Изучаю' | 'Нужна практика' | 'Уверенно' | 'Повторить';
 export type Origin = 'official' | 'generated' | 'reconstructed' | 'custom' | 'private-import';
-export type AnswerType = 'number' | 'text' | 'choice' | 'selection';
+export type AnswerType = 'number' | 'text' | 'choice' | 'selection' | 'multiple-choice' | 'code';
 export type AttemptContext = 'practice' | 'test' | 'easy' | 'session' | 'error' | 'adaptive';
 export type LocalDate = string;
 
@@ -20,7 +20,9 @@ export interface Question {
   origin: Origin; source: string; sourceYear: number | null;
   sourceType: 'training' | 'exam' | 'lesson'; examTaskType: string | null;
   answerType: AnswerType; prompt: string; answer: string; options?: string[];
+  answerFormat?: 'binary';
   hint: string; explanation: string; solution: string; principle: string;
+  hints?: string[];
   wrongAnswers?: Record<string, string>; easy?: boolean; version: number;
   requires: string[]; related: string[];
   skills?: string[]; remediates?: string[];
@@ -30,6 +32,7 @@ export interface Attempt {
   id: string; questionId: string; questionVersion: number; topic: string;
   answer: string; correct: boolean; date: LocalDate; at: string; context: AttemptContext;
   subject?: SubjectId; subtopic?: string | null; skills?: string[]; sessionId?: string;
+  assessmentKey?: string;
 }
 export interface LearningError {
   id: string; topic: string; questionId?: string; attemptId?: string;
@@ -53,7 +56,9 @@ export interface QuestionExposure { id: string; sessionId: string; index: number
 export interface StudyState extends Omit<LegacyStudyState, 'schemaVersion'> {
   schemaVersion: 2;
   adaptive: { sessions: AdaptiveSession[]; exposures: QuestionExposure[] };
+  codeDrafts?: Record<string, CodeDraft>;
 }
+export interface CodeDraft { schemaVersion: 1; questionVersion: number; code: string; stdin: string; updatedAt: string }
 export interface ContentNode { tag: string; className: string; children: (ContentNode | string | number)[] }
 export interface Sentence {
   text: string; words: string[]; main: number[]; sub: number[];

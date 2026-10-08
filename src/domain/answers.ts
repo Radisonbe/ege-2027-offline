@@ -16,6 +16,13 @@ export function parseNumber(value: string): number | null {
   return Number.isFinite(result) ? result : null;
 }
 export function checkAnswer(question: Question, value: string): AnswerResult {
+  if(question.answerType==='code')return {valid:false,message:'Проверь программу кнопкой «Проверить решение».'};
+  if(question.answerType==='multiple-choice'){
+    let selected:unknown;try{selected=JSON.parse(value);}catch{return {valid:false,message:'Выбери варианты ответа.'};}
+    if(!Array.isArray(selected)||!selected.length||new Set(selected).size!==selected.length||selected.some(v=>typeof v!=='string'||!question.options?.includes(v)))return {valid:false,message:'Выбери хотя бы один предложенный вариант.'};
+    const expected=JSON.parse(question.answer) as string[];
+    return {valid:true,correct:JSON.stringify([...selected].sort())===JSON.stringify([...expected].sort()),normalized:JSON.stringify([...selected].sort())};
+  }
   if (!value.trim()) return { valid: false, message: 'Сначала введи ответ.' };
   if (question.answerType === 'number') {
     const answer = parseNumber(value), expected = parseNumber(question.answer);
@@ -24,6 +31,6 @@ export function checkAnswer(question: Question, value: string): AnswerResult {
     return { valid: true, correct: Math.abs(answer - expected) <= 1e-9 * Math.max(1, Math.abs(expected)), normalized: String(answer) };
   }
   if (question.answerType === 'choice' && !question.options?.includes(value)) return { valid: false, message: 'Выбери один из предложенных вариантов.' };
-  if (question.id === 'b2' && !/^[01]+$/.test(value.trim())) return { valid: false, message: 'Двоичная запись состоит только из 0 и 1. Исправь ввод — попытка пока не учитывается.' };
+  if ((question.id === 'b2'||question.answerFormat==='binary') && !/^[01]+$/.test(value.trim())) return { valid: false, message: 'Двоичная запись состоит только из 0 и 1. Исправь ввод — попытка пока не учитывается.' };
   return { valid: true, correct: normalizeText(value) === normalizeText(question.answer), normalized: normalizeText(value) };
 }

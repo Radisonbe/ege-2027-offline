@@ -53,3 +53,7 @@ outputs/
 *.private-playground.json
 ege-progress-*.json
 ege-backup-*.json
+
+# Per-exercise Python drafts are personal local data
+**/exercise-drafts/
+*.private-exercise.json

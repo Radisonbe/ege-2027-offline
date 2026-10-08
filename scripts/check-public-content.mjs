@@ -13,7 +13,7 @@ function assertNoPersonalFile(file) {
   // A renamed package outside the designated directories is still private.
   if (/\.json$/i.test(file) && fs.existsSync(file)) {
     const value = JSON.parse(fs.readFileSync(file, 'utf8'));
-    if (['ege-private-learning-package', 'ege-progress-backup','ege-python-playground-backup'].includes(value?.format) || value?.distribution === 'private-import' || (value?.schemaVersion===1&&typeof value.code==='string'&&typeof value.stdin==='string'&&typeof value.updatedAt==='string')) throw new Error('Personal JSON exists among Git candidates: ' + file);
+    if (['ege-private-learning-package', 'ege-progress-backup','ege-python-playground-backup'].includes(value?.format) || value?.distribution === 'private-import' || value?.app === 'ege-local-center' || (value?.schemaVersion===1&&typeof value.code==='string'&&typeof value.stdin==='string'&&typeof value.updatedAt==='string')) throw new Error('Personal JSON exists among Git candidates: ' + file);
   }
 }
 const history = execFileSync('git', ['log', '--all', '--format=', '--name-only'], { encoding: 'utf8' }).split(/\r?\n/).filter(Boolean);

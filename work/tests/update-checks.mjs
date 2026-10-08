@@ -36,7 +36,9 @@ try {
   context=await launch();let page=context.pages()[0];await page.goto(origin+'#settings');await ready(page);
   await page.goto(origin+'#topic/py-variables');await page.getByRole('textbox',{name:'Моя заметка по теме'}).fill('История сохраняется при обновлении');
   for(let i=0;i<50;i++){if((await state(page))?.topics['py-variables'].note==='История сохраняется при обновлении')break;await new Promise(resolve=>setTimeout(resolve,50));}
-  const before=await state(page);assert.equal(before.topics['py-variables'].note,'История сохраняется при обновлении');
+  await page.goto(origin+'#topic/infpython');await page.getByRole('tab',{name:'Мини-тест',exact:true}).click();await page.getByLabel('Код решения',{exact:true}).fill('print("Own update draft")');
+  for(let i=0;i<100;i++){if((await state(page))?.codeDrafts?.['b1-informatics-21']?.code==='print("Own update draft")')break;await new Promise(r=>setTimeout(r,40));}
+  const before=await state(page);assert.equal(before.codeDrafts['b1-informatics-21'].code,'print("Own update draft")');assert.equal(before.topics['py-variables'].note,'История сохраняется при обновлении');
   const second=await context.newPage();await second.goto(origin+'#settings');await ready(second);
   current=b;
   await page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();await r.update();});
@@ -57,7 +59,7 @@ try {
   results.push('Incomplete update is refused and existing complete release and progress stay available');
   current=b;await page.close();await second.close();await context.close();context=await launch();page=context.pages()[0];
   await page.goto(origin+'#settings');await ready(page);assert.equal(await page.locator('meta[name=test-release]').getAttribute('content'),'B');assert.deepEqual(await state(page),before);
-  results.push('Release B activates only after all windows close and a new browser starts; IndexedDB is unchanged');
+  results.push('Release B activates only after all windows close and a new browser starts; IndexedDB progress and code drafts are unchanged');
   await context.close();context=await launch();await context.setOffline(true);page=context.pages()[0];const response=await page.goto(origin+'#settings');await ready(page);
   assert.equal(response.fromServiceWorker(),true);assert.equal(await page.locator('meta[name=test-release]').getAttribute('content'),'B');assert.deepEqual(await state(page),before);
   const cacheKeys=await page.evaluate(()=>caches.keys());assert.equal(cacheKeys.filter(k=>k.startsWith('ege-offline:')).length,1);

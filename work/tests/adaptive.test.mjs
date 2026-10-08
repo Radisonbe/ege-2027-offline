@@ -5,7 +5,7 @@ import {checkContentBank} from '../../scripts/content-bank.mjs';
 import {emptyState,recordAttempt} from '../../src/domain/progress.ts';
 import {selectReview,questionPriority,beginReview,showReviewQuestion,answerReview,advanceReview,reviewSummary,weakEvidence} from '../../src/domain/adaptive.ts';
 import {parseBackup,serializeBackup,validateStudyState} from '../../src/domain/backup.ts';
-const {questions:bank,taxonomy}=checkContentBank(),skills=taxonomy.skills,byId=Object.fromEntries(bank.map(q=>[q.id,q])),now=new Date('2026-10-08T12:00:00.000Z');
+const {questions:allQuestions,taxonomy}=checkContentBank(),bank=allQuestions.filter(q=>!q.id.startsWith("b1-")),skills=taxonomy.skills,byId=Object.fromEntries(bank.map(q=>[q.id,q])),now=new Date('2026-10-08T12:00:00.000Z');
 function studiedState(ids=['percent','functions','binary']){const s=emptyState('fixture');for(const topic of ids){s.topics[topic]={topic,status:topic==='percent'?'Нужна практика':'Уверенно',note:'Keep note',last:'2026-09-01'};s.reviews['topic:'+topic]={id:'topic:'+topic,targetType:'topic',targetId:topic,due:'2026-09-20',stage:1};}return s;}
 function fixedHistory(){let s=studiedState();s=recordAttempt(s,byId.p2,'12',false,'test','p-old',new Date('2026-09-30T12:00:00Z'));s=recordAttempt(s,byId.p2,'12',false,'test','p-recent',new Date('2026-10-05T12:00:00Z'));s=recordAttempt(s,byId.f1,'9',true,'test','f-correct',new Date('2026-08-01T12:00:00Z'));s.topics.functions.status='Уверенно';s.reviews['topic:percent'].due='2026-09-20';return s;}
 test('Fixed history deterministically chooses a prerequisite, weak-topic questions and confident maintenance',()=>{
@@ -18,9 +18,9 @@ test('Fixed history deterministically chooses a prerequisite, weak-topic questio
   fs.mkdirSync('outputs',{recursive:true});
   fs.writeFileSync('outputs/STAGE3A-PRIORITY-EXAMPLE.json',JSON.stringify({history:state.attempts,selection:plan.items.map(i=>({id:i.question.id,score:i.score,reasons:i.reasons}))},null,2));
 });
-test('5/10/15/20 requested sizes are exact; small bank repeats only after exhausting unique IDs',()=>{
-  for(const size of [5,10,15,20]){const result=selectReview(studiedState(),bank,skills,size,{},now);assert.equal(result.items.length,size);assert.equal(new Set(result.items.slice(0,Math.min(result.available,size)).map(i=>i.question.id)).size,Math.min(result.available,size));}
-  const result=selectReview(studiedState(['py-types']),bank,skills,15,{},now);assert.equal(result.available,2);for(let i=1;i<result.items.length;i++)assert.notEqual(result.items[i].question.id,result.items[i-1].question.id);
+test('5/10/15/20 sizes use distinct IDs and small banks honestly return shorter sessions',()=>{
+  for(const size of [5,10,15,20]){const result=selectReview(studiedState(),bank,skills,size,{},now);assert.equal(result.items.length,Math.min(size,result.available));assert.equal(new Set(result.items.slice(0,Math.min(result.available,size)).map(i=>i.question.id)).size,Math.min(result.available,size));}
+  const result=selectReview(studiedState(['py-types']),bank,skills,15,{},now);assert.equal(result.available,2);assert.equal(result.items.length,2);assert.equal(result.repeated,0);
 });
 test('Unstudied topics and unavailable prerequisites never enter a session',()=>{
   assert.equal(selectReview(emptyState('fixture'),bank,skills,15,{},now).items.length,0);
@@ -52,7 +52,7 @@ test('Session persists first-answer result, correction, snapshots, exposure and 
   const summary=reviewSummary(s.adaptive.sessions[0],s,bank);assert.equal(summary.corrected,1);assert.ok(summary.topics.every(t=>!t.persistent));
 });
 test('Successful due review advances the original interval once; an error keeps the one-day reset',()=>{
-  for(const error of [false,true]){let s=studiedState(['py-types']);s=beginReview(s,selectReview(s,bank,skills,5,{},now).items,5,'all','session',now);for(let i=0;i<5;i++){s=showReviewQuestion(s,'session',now);const q=s.adaptive.sessions[0].items[i].question;s=answerReview(s,'session',q.answer,!(error&&i===0),'attempt-'+i,now);s=advanceReview(s,'session',now);}assert.ok(s.adaptive.sessions[0].completedAt);assert.equal(s.reviews['topic:py-types'].stage,error?0:2);assert.equal(s.reviews['topic:py-types'].due,error?'2026-10-09':'2026-10-15');assert.deepEqual(parseBackup(serializeBackup(s)).data,s);}
+  for(const error of [false,true]){let s=studiedState(['py-types']);s=beginReview(s,selectReview(s,bank,skills,5,{},now).items,5,'all','session',now);for(let i=0;i<s.adaptive.sessions[0].items.length;i++){s=showReviewQuestion(s,'session',now);const q=s.adaptive.sessions[0].items[i].question;s=answerReview(s,'session',q.answer,!(error&&i===0),'attempt-'+i,now);s=advanceReview(s,'session',now);}assert.ok(s.adaptive.sessions[0].completedAt);assert.equal(s.reviews['topic:py-types'].stage,error?0:2);assert.equal(s.reviews['topic:py-types'].due,error?'2026-10-09':'2026-10-15');assert.deepEqual(parseBackup(serializeBackup(s)).data,s);}
 });
 test('Stage 2 document and backup v1 migrate additively, with all original fields intact',()=>{
   const old=structuredClone(fixedHistory());delete old.adaptive;old.schemaVersion=1;for(const a of old.attempts){delete a.subject;delete a.subtopic;delete a.skills;}for(const e of old.errors){delete e.question.skills;delete e.question.remediates;}

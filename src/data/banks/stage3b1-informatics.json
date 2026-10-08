@@ -1,0 +1,839 @@
+{
+  "schemaVersion": 1,
+  "id": "stage3b1-informatics",
+  "subject": "informatics",
+  "questions": [
+    {
+      "id": "b1-informatics-01",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "skills": [
+        "binary.skill.to-decimal"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Переведи 10110₂ в десятичную систему.",
+      "answer": "22",
+      "hint": "Сложи веса разрядов с единицами.",
+      "explanation": "16 + 4 + 2 = 22.",
+      "solution": "16 + 4 + 2 = 22.",
+      "principle": "Сложи веса разрядов с единицами.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-02",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "skills": [
+        "binary.skill.from-decimal"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Запиши 19₁₀ в двоичной системе без ведущих нулей.",
+      "answer": "10011",
+      "hint": "Представь 19 как сумму степеней двойки.",
+      "explanation": "19 = 16 + 2 + 1, поэтому запись 10011.",
+      "solution": "19 = 16 + 2 + 1, поэтому запись 10011.",
+      "principle": "Представь 19 как сумму степеней двойки.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "answerFormat": "binary"
+    },
+    {
+      "id": "b1-informatics-03",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.hex",
+      "skills": [
+        "binary.skill.hex-to-decimal"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Переведи 2D₁₆ в десятичную систему. D = 13.",
+      "answer": "45",
+      "hint": "У младшего разряда вес 1, у следующего — 16.",
+      "explanation": "2 · 16 + 13 = 45.",
+      "solution": "2 · 16 + 13 = 45.",
+      "principle": "У младшего разряда вес 1, у следующего — 16.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-04",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.place",
+      "skills": [
+        "binary.skill.weight"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Какой вес у четвёртого двоичного разряда справа? Самый правый разряд считается первым.",
+      "answer": "8",
+      "hint": "Показатель степени на единицу меньше номера разряда.",
+      "explanation": "Вес четвёртого разряда — 2³ = 8.",
+      "solution": "Вес четвёртого разряда — 2³ = 8.",
+      "principle": "Показатель степени на единицу меньше номера разряда.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-05",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "skills": [
+        "binary.skill.to-decimal"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сложи 101₂ и 11₂. Ответ запиши десятичным числом.",
+      "answer": "8",
+      "hint": "Можно сначала перевести оба слагаемых.",
+      "explanation": "101₂ = 5, 11₂ = 3, сумма 8.",
+      "solution": "101₂ = 5, 11₂ = 3, сумма 8.",
+      "principle": "Можно сначала перевести оба слагаемых.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-06",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "skills": [
+        "binary.skill.to-decimal"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "multiple-choice",
+      "prompt": "Выбери все записи, равные десятичному числу 10.",
+      "answer": "[\"1010₂\",\"12₈\",\"A₁₆\"]",
+      "hint": "Переведи каждую запись по разрядным весам.",
+      "explanation": "1010₂ = 8 + 2 = 10; 12₈ = 8 + 2 = 10; A₁₆ = 10; 111₂ = 7.",
+      "solution": "1010₂ = 8 + 2 = 10; 12₈ = 8 + 2 = 10; A₁₆ = 10; 111₂ = 7.",
+      "principle": "Переведи каждую запись по разрядным весам.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "1010₂",
+        "12₈",
+        "A₁₆",
+        "111₂"
+      ]
+    },
+    {
+      "id": "b1-informatics-07",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.alphabet",
+      "skills": [
+        "encoding.skill.minimum-bits"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Алфавит содержит 17 символов. Сколько минимум бит нужно на символ при равномерном кодировании?",
+      "answer": "5",
+      "hint": "Нужно 2ⁱ ≥ 17.",
+      "explanation": "2⁴ = 16 кодов недостаточно; 2⁵ = 32 достаточно.",
+      "solution": "2⁴ = 16 кодов недостаточно; 2⁵ = 32 достаточно.",
+      "principle": "Нужно 2ⁱ ≥ 17.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-08",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.alphabet",
+      "skills": [
+        "encoding.skill.capacity"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько различных двоичных кодов длины 6 существует?",
+      "answer": "64",
+      "hint": "У каждой позиции два варианта.",
+      "explanation": "2⁶ = 64.",
+      "solution": "2⁶ = 64.",
+      "principle": "У каждой позиции два варианта.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-09",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.volume",
+      "skills": [
+        "encoding.skill.bytes"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В сообщении 40 символов алфавита из 16 символов. Код каждого символа имеет минимальную одинаковую длину. Сколько байт занимает сообщение без служебных данных?",
+      "answer": "20",
+      "hint": "Сначала найди бит на символ, затем раздели общий объём на 8.",
+      "explanation": "16 = 2⁴, значит 4 бита на символ. 40 · 4 = 160 бит = 20 байт.",
+      "solution": "16 = 2⁴, значит 4 бита на символ. 40 · 4 = 160 бит = 20 байт.",
+      "principle": "Сначала найди бит на символ, затем раздели общий объём на 8.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-10",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.volume",
+      "skills": [
+        "encoding.skill.bytes"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В сообщении 24 символа алфавита из 32 символов. Используется минимальный равномерный код. Сколько байт занимает сообщение без служебных данных?",
+      "answer": "15",
+      "hint": "32 = 2⁵.",
+      "explanation": "24 · 5 = 120 бит; 120 ÷ 8 = 15 байт.",
+      "solution": "24 · 5 = 120 бит; 120 ÷ 8 = 15 байт.",
+      "principle": "32 = 2⁵.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-11",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.alphabet",
+      "skills": [
+        "encoding.skill.minimum-bits"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Алфавит расширили с 8 до 9 символов. Как изменится минимальная равномерная длина кода?",
+      "answer": "С 3 до 4 бит",
+      "hint": "Проверь ёмкости 2³ и 2⁴.",
+      "explanation": "Для 8 символов хватает 3 бит, но для 9 требуется 4: трёхбитных кодов всего 8.",
+      "solution": "Для 8 символов хватает 3 бит, но для 9 требуется 4: трёхбитных кодов всего 8.",
+      "principle": "Проверь ёмкости 2³ и 2⁴.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "С 3 до 4 бит",
+        "Останется 3 бита",
+        "С 3 до 9 бит",
+        "С 8 до 9 бит"
+      ]
+    },
+    {
+      "id": "b1-informatics-12",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "A = 1, B = 0. Чему равно A AND B? Запиши 0 или 1.",
+      "answer": "0",
+      "hint": "AND истинно только при двух истинных операндах.",
+      "explanation": "1 AND 0 = 0.",
+      "solution": "1 AND 0 = 0.",
+      "principle": "AND истинно только при двух истинных операндах.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-13",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "A = 0, B = 1. Чему равно A OR B? Запиши 0 или 1.",
+      "answer": "1",
+      "hint": "OR истинно, когда хотя бы один операнд истинен.",
+      "explanation": "0 OR 1 = 1.",
+      "solution": "0 OR 1 = 1.",
+      "principle": "OR истинно, когда хотя бы один операнд истинен.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-14",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "A = 1, B = 0. Чему равно NOT A OR B? NOT выполняется первым.",
+      "answer": "0",
+      "hint": "Сначала инвертируй A.",
+      "explanation": "NOT 1 = 0; 0 OR 0 = 0.",
+      "solution": "NOT 1 = 0; 0 OR 0 = 0.",
+      "principle": "Сначала инвертируй A.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-15",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько наборов A, B дают значение 1 для A AND NOT B?",
+      "answer": "1",
+      "hint": "Перебери 00, 01, 10, 11.",
+      "explanation": "Подходит только A = 1, B = 0.",
+      "solution": "Подходит только A = 1, B = 0.",
+      "principle": "Перебери 00, 01, 10, 11.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-16",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "multiple-choice",
+      "prompt": "Выбери все наборы A, B, при которых A OR B истинно.",
+      "answer": "[\"A=0, B=1\",\"A=1, B=0\",\"A=1, B=1\"]",
+      "hint": "OR ложно только при двух нулях.",
+      "explanation": "Из четырёх наборов не подходит лишь (0, 0).",
+      "solution": "Из четырёх наборов не подходит лишь (0, 0).",
+      "principle": "OR ложно только при двух нулях.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "A=0, B=0",
+        "A=0, B=1",
+        "A=1, B=0",
+        "A=1, B=1"
+      ]
+    },
+    {
+      "id": "b1-informatics-17",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько бит в 7 байтах?",
+      "answer": "56",
+      "hint": "Один байт равен 8 битам.",
+      "explanation": "7 · 8 = 56 бит.",
+      "solution": "7 · 8 = 56 бит.",
+      "principle": "Один байт равен 8 битам.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-18",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько байт в 3 КиБ? Здесь 1 КиБ = 1024 байта.",
+      "answer": "3072",
+      "hint": "Умножь на 1024.",
+      "explanation": "3 · 1024 = 3072 байта.",
+      "solution": "3 · 1024 = 3072 байта.",
+      "principle": "Умножь на 1024.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-19",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Файл занимает 2 КиБ. Каждый символ кодируется 2 байтами. Сколько символов в файле без служебных данных? 1 КиБ = 1024 байта.",
+      "answer": "1024",
+      "hint": "Раздели объём в байтах на число байт одного символа.",
+      "explanation": "2 · 1024 ÷ 2 = 1024 символа.",
+      "solution": "2 · 1024 ÷ 2 = 1024 символа.",
+      "principle": "Раздели объём в байтах на число байт одного символа.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-20",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько бит потребуется для 128 символов, если каждый символ занимает 1 байт? Служебных данных нет.",
+      "answer": "1024",
+      "hint": "Переведи байты в биты.",
+      "explanation": "128 · 8 = 1024 бита.",
+      "solution": "128 · 8 = 1024 бита.",
+      "principle": "Переведи байты в биты.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-informatics-21",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "skills": [
+        "infpython.skill.square-input"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай целое число n (−1000 ≤ n ≤ 1000) и выведи его квадрат.",
+      "answer": "Все тесты пройдены",
+      "hint": "Определи, что надо вычислить после чтения числа.",
+      "explanation": "input() возвращает строку. Преобразуй её в int и умножь число само на себя.",
+      "solution": "n = int(input())\nprint(n * n)",
+      "principle": "Определи, что надо вычислить после чтения числа.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Определи, что надо вычислить после чтения числа.",
+        "input() возвращает строку. Преобразуй её в int и умножь число само на себя."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "2",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "2",
+            "expectedOutput": "4"
+          },
+          {
+            "stdin": "-3",
+            "expectedOutput": "9"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "17",
+            "expectedOutput": "289"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-informatics-22",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "skills": [
+        "infpython.skill.sum-natural"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай целое n (0 ≤ n ≤ 1000). Выведи сумму целых чисел от 1 до n включительно; при n = 0 выведи 0.",
+      "answer": "Все тесты пройдены",
+      "hint": "Нужен накопитель, который начинается с нуля.",
+      "explanation": "range не включает правую границу. Перебирай до n + 1. Можно использовать и формулу суммы.",
+      "solution": "n = int(input())\ns = 0\nfor x in range(1, n + 1):\n    s += x\nprint(s)",
+      "principle": "Нужен накопитель, который начинается с нуля.",
+      "version": 1,
+      "requires": [
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Нужен накопитель, который начинается с нуля.",
+        "range не включает правую границу. Перебирай до n + 1. Можно использовать и формулу суммы."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "3",
+            "expectedOutput": "6"
+          },
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "1",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "10",
+            "expectedOutput": "55"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-informatics-23",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "skills": [
+        "infpython.skill.maximum-input"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай строку с 1–20 целыми числами, разделёнными пробелами (каждое от −100 до 100). Выведи максимальное из них.",
+      "answer": "Все тесты пройдены",
+      "hint": "Все числа могут оказаться отрицательными.",
+      "explanation": "split() разделяет строку по пробелам. Преобразуй элементы в int; max() найдёт наибольший.",
+      "solution": "nums = [int(x) for x in input().split()]\nprint(max(nums))",
+      "principle": "Все числа могут оказаться отрицательными.",
+      "version": 1,
+      "requires": [
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Все числа могут оказаться отрицательными.",
+        "split() разделяет строку по пробелам. Преобразуй элементы в int; max() найдёт наибольший."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "-8 -2 -5",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "-8 -2 -5",
+            "expectedOutput": "-2"
+          },
+          {
+            "stdin": "7",
+            "expectedOutput": "7"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0 4 4 -1",
+            "expectedOutput": "4"
+          },
+          {
+            "stdin": "-100 100",
+            "expectedOutput": "100"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-informatics-24",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "skills": [
+        "infpython.skill.count-even"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай строку с 1–20 целыми числами от −100 до 100 через пробел. Выведи количество чётных чисел.",
+      "answer": "Все тесты пройдены",
+      "hint": "Счётчик увеличивается только для подходящих элементов.",
+      "explanation": "Целое число чётно, если остаток от деления на 2 равен нулю; ноль тоже чётный.",
+      "solution": "count = 0\nfor item in input().split():\n    if int(item) % 2 == 0:\n        count += 1\nprint(count)",
+      "principle": "Счётчик увеличивается только для подходящих элементов.",
+      "version": 1,
+      "requires": [
+        "py-types",
+        "py-if",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Счётчик увеличивается только для подходящих элементов.",
+        "Целое число чётно, если остаток от деления на 2 равен нулю; ноль тоже чётный."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "2 3 4",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "2 3 4",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "1 5 7",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0 -2 -3",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "8",
+            "expectedOutput": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-informatics-25",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "skills": [
+        "infpython.skill.decode-binary"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай строку непустой двоичной записи неотрицательного числа (до 12 разрядов). Выведи его десятичное значение.",
+      "answer": "Все тесты пройдены",
+      "hint": "Можно последовательно учитывать двоичные разряды слева направо.",
+      "explanation": "Для новой цифры умножь накопленное значение на 2 и прибавь цифру. Допустим также int(строка, 2).",
+      "solution": "bits = input()\nvalue = 0\nfor bit in bits:\n    value = value * 2 + int(bit)\nprint(value)",
+      "principle": "Можно последовательно учитывать двоичные разряды слева направо.",
+      "version": 1,
+      "requires": [
+        "binary",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Можно последовательно учитывать двоичные разряды слева направо.",
+        "Для новой цифры умножь накопленное значение на 2 и прибавь цифру. Допустим также int(строка, 2)."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "101",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "101",
+            "expectedOutput": "5"
+          },
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "1111",
+            "expectedOutput": "15"
+          },
+          {
+            "stdin": "100000",
+            "expectedOutput": "32"
+          }
+        ]
+      }
+    }
+  ]
+}

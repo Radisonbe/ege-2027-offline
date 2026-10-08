@@ -1,5 +1,7 @@
 import { topics as referenceTopics, theories as referenceTheories, sentences as referenceSentences, bridges as referenceBridges } from './reference.json';
 import taxonomyData from './taxonomy.json';
+import lessonData from './stage3b1-lessons.json';
+import {validateLessonPack,lessonNode} from '../domain/lessons';
 import { contentFingerprint, loadContentPackages, validateTaxonomy } from '../domain/content';
 import type { ContentNode, PythonBridge, Question, Sentence, Subject, SubjectId, Topic } from '../domain/types';
 
@@ -17,6 +19,8 @@ export const topics: Topic[] = referenceTopics.map((entry, index, all) => ({
   subtopics: [], requires: [], related: [],
 }));
 export const topicById = Object.fromEntries(topics.map(t => [t.id, t]));
+const lessonResult=(()=>{try{return {lessons:validateLessonPack(lessonData,topics).lessons,diagnostics:[] as string[]};}catch(error){return {lessons:[],diagnostics:[String(error instanceof Error?error.message:error)]};}})();
+for(const lesson of lessonResult.lessons)if(topicById[lesson.topic].materialStatus!=='ready'){Object.assign(topicById[lesson.topic],{materialStatus:'ready',minutes:lesson.minutes,description:'Базовые правила, разобранный пример и самостоятельная практика'});}
 const taxonomyResult = (() => {
   try { return { taxonomy: validateTaxonomy(taxonomyData, topics), diagnostics: [] as string[] }; }
   catch (error) { return { taxonomy: { schemaVersion: 1 as const, subtopics: [], skills: [] }, diagnostics: [error instanceof Error ? error.message : 'Ошибка структуры тем'] }; }
@@ -30,9 +34,10 @@ for (const topic of topics) topic.subtopics = subtopics.filter(s => s.topic === 
 const packageFiles = import.meta.glob('./banks/*.json', { eager: true, import: 'default' });
 const bank = loadContentPackages(Object.keys(packageFiles).sort().map(key => packageFiles[key]), topics, taxonomy);
 export const questions: Question[] = bank.questions;
-export const contentDiagnostics = [...taxonomyResult.diagnostics, ...bank.diagnostics];
+export const contentDiagnostics = [...taxonomyResult.diagnostics, ...lessonResult.diagnostics, ...bank.diagnostics];
 export const questionById = Object.fromEntries(questions.map(q => [q.id, q]));
 export const theories = referenceTheories as unknown as Record<string, ContentNode>;
+for(const lesson of lessonResult.lessons){const added=lessonNode(lesson),old=theories[lesson.topic];theories[lesson.topic]=old?{tag:'div',className:'',children:[old,added]}:added;}
 export const sentences = referenceSentences as Sentence[];
 export const bridges = referenceBridges as Record<string, PythonBridge>;
 export const contentVersion = contentFingerprint(questions, taxonomy);

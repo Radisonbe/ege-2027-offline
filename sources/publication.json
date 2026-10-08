@@ -40,7 +40,7 @@
         {
           "path": "src/components/Practices.tsx",
           "normalization": "lf",
-          "sha256": "c821564ef46d95af3315ab4dd76280bbc45a6e2d7fd4bb05a5c956bce8b9d0c4"
+          "sha256": "82587672074adc68176e980ca8b90caf7b4e34511e245bb52e60cae7ac63f474"
         },
         {
           "path": "src/components/GraphLab.tsx",
@@ -50,7 +50,7 @@
         {
           "path": "src/data/catalog.ts",
           "normalization": "lf",
-          "sha256": "00a75352578339e49b7c690f1adf9831e3c1ea60ff0453cb24032acd3f4354a5"
+          "sha256": "ae3859bc3397be516dec429b565bc1d4240192d1b00a7e1e2161f576831bafdd"
         }
       ]
     },
@@ -155,7 +155,7 @@
         {
           "path": "src/data/taxonomy.json",
           "normalization": "lf",
-          "sha256": "cd3022973bd760f1e253c17b864f5e7ae857732df3ee4575e3cd8f17e6eeec27"
+          "sha256": "5ac4cc06256d5005e887575ed753fc6d52a5209a4b122cbf8bbf7effd07508ea"
         }
       ]
     },
@@ -260,6 +260,40 @@
           "path": "public/python-runtime/licenses/LICENSE-ZLIB.txt",
           "normalization": "lf",
           "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+        }
+      ]
+    },
+    {
+      "id": "stage3b1-original-wave",
+      "clearance": "project-generated",
+      "source": null,
+      "license": null,
+      "evidence": "100 original exercises and original foundational explanations created in this project at the explicit request of its owner (Stage 3B.1). No third-party question text/solutions or figures imported. All exercises generated; examTaskType null. Existing IDs and content untouched. Math checked independently, Python reference and deliberately incorrect programs executed in the existing runner. See docs/STAGE3B1.md and reusable tests for validation.",
+      "files": [
+        {
+          "path": "src/data/stage3b1-lessons.json",
+          "normalization": "lf",
+          "sha256": "fda6ac111297564f16899ad49e2f624b54ef50df22112048feffea7b7617522d"
+        },
+        {
+          "path": "src/data/banks/stage3b1-math.json",
+          "normalization": "lf",
+          "sha256": "00fb10d78959c2d526ced5e9f8c0798617f2fe6c0e3175933e13eefd98fa18bd"
+        },
+        {
+          "path": "src/data/banks/stage3b1-russian.json",
+          "normalization": "lf",
+          "sha256": "cb03c9ff9e232cce77da6f6706dad20da7909e5da4d6410b9f89855ef3cedca2"
+        },
+        {
+          "path": "src/data/banks/stage3b1-informatics.json",
+          "normalization": "lf",
+          "sha256": "2d227d252c6d487bb725af636288b167da05c6ad7607d8ef228b5578e50a745c"
+        },
+        {
+          "path": "src/data/banks/stage3b1-python.json",
+          "normalization": "lf",
+          "sha256": "bf7b4b899ba50d5a4df04a24dd923fdeb49711e44d2f2ce141dab6b68864b551"
         }
       ]
     }

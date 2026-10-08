@@ -44,7 +44,7 @@ function unique(items: unknown[], path: string) {
   if (new Set(ids).size !== ids.length) fail(path + '.id');
 }
 export function validateQuestion(value: unknown, path = 'question'): Question {
-  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python']);
+  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python','hints','answerFormat']);
   for (const key of ['id', 'topic']) string(q[key], path + '.' + key, true);
   for (const key of ['source', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle']) string(q[key], path + '.' + key);
   for (const key of ['subtopic', 'examTaskType']) if (q[key] !== null) string(q[key], path + '.' + key);
@@ -52,7 +52,8 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
   choice(q.difficulty, path + '.difficulty', ['unspecified', 'easy', 'medium', 'hard']);
   choice(q.origin, path + '.origin', ['official', 'generated', 'reconstructed', 'custom', 'private-import']);
   choice(q.sourceType, path + '.sourceType', ['training', 'exam', 'lesson']);
-  choice(q.answerType, path + '.answerType', ['number', 'text', 'choice', 'selection']);
+  choice(q.answerType, path + '.answerType', ['number', 'text', 'choice', 'selection','multiple-choice','code']);
+  if(q.answerFormat!==undefined)choice(q.answerFormat,path+'.answerFormat',['binary']);
   integer(q.version, path + '.version', 1, Number.MAX_SAFE_INTEGER);
   if (q.sourceYear !== null) integer(q.sourceYear, path + '.sourceYear', 1900, 2200);
   strings(q.requires, path + '.requires'); strings(q.related, path + '.related');
@@ -60,13 +61,24 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
   if (q.remediates !== undefined) strings(q.remediates, path + '.remediates');
   if (q.options !== undefined) strings(q.options, path + '.options');
   if (q.easy !== undefined) choice(q.easy, path + '.easy', [true, false]);
-  if(q.python!==undefined){if(q.subject!=='python')fail(path+'.python');try{validatePythonTask(q.python);}catch{fail(path+'.python');}}
+  if(q.hints!==undefined)array(q.hints,path+'.hints',(v,p)=>string(v,p),5);
+  if(q.python!==undefined){if(!['python','informatics'].includes(String(q.subject)))fail(path+'.python');try{validatePythonTask(q.python);}catch{fail(path+'.python');}}
+  if(q.answerType==='code'&&(!q.python||(q.python as {type:string}).type==='predict-output'))fail(path+'.python');
+  if(q.answerType==='multiple-choice'){
+    let expected:unknown;try{expected=JSON.parse(q.answer as string);}catch{fail(path+'.answer');}
+    if(!Array.isArray(expected)||!expected.length||new Set(expected).size!==expected.length||!Array.isArray(q.options)||q.options.length<2||new Set(q.options).size!==q.options.length||expected.some(v=>typeof v!=='string'||!(q.options as unknown[]).includes(v)))fail(path+'.answer');
+  }
+  if(q.answerFormat==='binary'&&(q.answerType!=='text'||!/^[01]+$/.test(q.answer as string)))fail(path+'.answerFormat');
+  if(q.answerType==='code'){
+    const task=validatePythonTask(q.python),tests=[...(task.visibleTests??[]),...(task.hiddenTests??[])];
+    if(tests.length<3||tests.some(t=>task.functionName?t.args===undefined||t.expectedReturn===undefined:t.stdin===undefined||t.expectedOutput===undefined))fail(path+'.python.tests');
+  }
   if (q.wrongAnswers !== undefined) for (const [key, message] of Object.entries(dictionary(q.wrongAnswers, path + '.wrongAnswers'))) string(message, path + '.wrongAnswers.' + key);
   return value as Question;
 }
 
 export function validateStudyState(value: unknown): StudyState {
-  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive']);
+  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive','codeDrafts']);
   if (s.app !== 'ege-local-center') fail('data.app');
   if (s.schemaVersion !== 1 && s.schemaVersion !== 2) throw new BackupError('Версия схемы данных пока не поддерживается. Текущий прогресс не изменён.');
   if (s.schemaVersion === 1 && s.adaptive !== undefined) fail('data.adaptive');
@@ -80,7 +92,7 @@ export function validateStudyState(value: unknown): StudyState {
     if (t.last !== undefined) date(t.last, 'last');
   }
   const attempts = array(s.attempts, 'data.attempts', (value, path) => {
-    const a = object(value, path, ['id', 'questionId', 'questionVersion', 'topic', 'answer', 'correct', 'date', 'at', 'context'], ['subject', 'subtopic', 'skills', 'sessionId']);
+    const a = object(value, path, ['id', 'questionId', 'questionVersion', 'topic', 'answer', 'correct', 'date', 'at', 'context'], ['subject', 'subtopic', 'skills', 'sessionId','assessmentKey']);
     for (const key of ['id', 'questionId', 'topic']) string(a[key], path + '.' + key, true);
     string(a.answer, path + '.answer'); choice(a.correct, path + '.correct', [true, false]);
     integer(a.questionVersion, path + '.questionVersion', 1, Number.MAX_SAFE_INTEGER);
@@ -90,6 +102,7 @@ export function validateStudyState(value: unknown): StudyState {
     if (a.subtopic !== undefined && a.subtopic !== null) string(a.subtopic, path + '.subtopic', true);
     if (a.skills !== undefined) strings(a.skills, path + '.skills');
     if (a.sessionId !== undefined) string(a.sessionId, path + '.sessionId', true);
+    if (a.assessmentKey !== undefined) string(a.assessmentKey,path+'.assessmentKey',true);
   }); unique(attempts, 'data.attempts');
   const attemptById = new Map(attempts.map(a => [(a as ObjectValue).id, a as ObjectValue]));
   const errors = array(s.errors, 'data.errors', (value, path) => {
@@ -121,6 +134,12 @@ export function validateStudyState(value: unknown): StudyState {
   const settings = object(s.settings, 'data.settings', ['theme'], ['lastTopic']);
   choice(settings.theme, 'settings.theme', ['light', 'dark']); if (settings.lastTopic !== undefined) string(settings.lastTopic, 'settings.lastTopic', true);
   if (s.schemaVersion === 2) validateAdaptive(s.adaptive, attemptById);
+  if(s.codeDrafts!==undefined)for(const [key,value] of Object.entries(dictionary(s.codeDrafts,'data.codeDrafts'))){
+    if(!/^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,199}$/.test(key))fail('data.codeDrafts.id');
+    const d=object(value,'data.codeDrafts.'+key,['schemaVersion','questionVersion','code','stdin','updatedAt']);
+    choice(d.schemaVersion,'draft.schemaVersion',[1]);integer(d.questionVersion,'draft.questionVersion',1,Number.MAX_SAFE_INTEGER);
+    string(d.code,'draft.code');string(d.stdin,'draft.stdin');if((d.stdin as string).length>32000)fail('draft.stdin');instant(d.updatedAt,'draft.updatedAt');
+  }
   // Historical IDs are deliberately not restricted to the current content catalogue.
   // Additive migration: historical IDs, snapshots, dates, intervals and notes are untouched.
   return s.schemaVersion === 1 ? { ...value as StudyState, schemaVersion: 2, adaptive: { sessions: [], exposures: [] } } : value as StudyState;
@@ -146,12 +165,17 @@ function validateAdaptive(value: unknown, attempts: Map<unknown, ObjectValue>) {
       const ids = item.attemptIds as string[];
       for(const id of ids) {
         const attempt = attempts.get(id);
+        if(!attempt)return fail(name+'.attemptIds');
         if(!attempt || linkedAttempts.has(id) || attempt.context !== 'adaptive' || attempt.sessionId !== session.id || attempt.questionId !== q.id || attempt.topic !== q.topic || attempt.questionVersion !== q.version || attempt.subject !== q.subject || attempt.subtopic !== q.subtopic || JSON.stringify(attempt.skills) !== JSON.stringify(q.skills ?? [])) fail(name+'.attemptIds');
+        if(q.answerType==='multiple-choice'){
+          let selected:unknown;try{selected=JSON.parse(attempt.answer as string);}catch{fail(name+'.answer');}
+          if(!Array.isArray(selected)||!selected.length||new Set(selected).size!==selected.length||selected.some(v=>typeof v!=='string'||!q.options?.includes(v)))fail(name+'.answer');
+        }
         linkedAttempts.add(id);
       }
       if (ids.length ? item.firstCorrect !== attempts.get(ids[0])?.correct || item.correct !== attempts.get(ids.at(-1))?.correct || !item.shownAt : item.firstCorrect !== null || item.correct !== null) fail(name+'.correct');
     }, 20);
-    if (questions.length !== session.requested) fail(path+'.items');
+    if (!questions.length || questions.length > (session.requested as number)) fail(path+'.items');
     integer(session.index,path+'.index',0,questions.length-1);
     if (questions.slice(0,session.index as number).some(q=>(q as ObjectValue).correct===null)) fail(path+'.index');
     if (session.completedAt !== undefined && questions.some(q=>(q as ObjectValue).correct===null)) fail(path+'.completedAt');
@@ -175,7 +199,7 @@ function validateAdaptive(value: unknown, attempts: Map<unknown, ObjectValue>) {
 
 export function serializeBackup(state: StudyState, now = new Date()): string {
   const data = validateStudyState(JSON.parse(JSON.stringify(state)));
-  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 2, appVersion: '0.3.1', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
+  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 2, appVersion: '0.3.2', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
   if (new TextEncoder().encode(text).length > MAX_BACKUP_BYTES) throw new BackupError('Данные превышают текущий лимит резервной копии 20 МБ. Прогресс не изменён.');
   return text;
 }

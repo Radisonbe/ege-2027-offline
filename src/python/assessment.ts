@@ -1,5 +1,5 @@
 import type {PythonTest} from './tasks.ts';
-export interface PythonActual {stdout:string;stderr:string;value?:unknown;ok:boolean}
+export interface PythonActual {stdout:string;stderr:string;value?:unknown;ok:boolean;kind?:'syntax'|'runtime'|'timeout'|'stopped'|'infrastructure'}
 function equal(a:unknown,b:unknown):boolean {
   if(a===b)return true;
   if(!a||!b||typeof a!=='object'||typeof b!=='object'||Array.isArray(a)!==Array.isArray(b))return false;

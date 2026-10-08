@@ -1,0 +1,28 @@
+// Deliberately incorrect, skill-specific programs for original learning-engine tests.
+export const programMutations={
+'b1-informatics-21':'n=int(input())\nprint(n)',
+'b1-informatics-22':'n=int(input())\nprint(n)',
+'b1-informatics-23':'nums=[int(x) for x in input().split()]\nbest=0\nfor x in nums:\n    if x>best: best=x\nprint(best)',
+'b1-informatics-24':'print(sum(int(x)%2!=0 for x in input().split()))',
+'b1-informatics-25':'print(int(input()))',
+'b1-python-01':'x=int(input())\nprint(x)',
+'b1-python-03':'a=input()\nb=input()\nprint(a+b)',
+'b1-python-05':'n=int(input())\nif n>=0: print("positive")\nelse: print("negative")',
+'b1-python-06':'age=int(input())\nprint("adult" if age>18 else "minor")',
+'b1-python-07':'n=int(input())\nprint("even" if n>0 else "odd")',
+'b1-python-08':'n=int(input())\nprint("yes" if n>=1 or n<=10 else "no")',
+'b1-python-09':'n=int(input())\nfor i in range(n+1): print(i)',
+'b1-python-10':'n=int(input())\nprint(sum(range(1,n)))',
+'b1-python-11':'n=int(input())\nprint(sum(range(1,n)))',
+'b1-python-13':'print(len(input().strip()))',
+'b1-python-14':'print(input().strip()[-1])',
+'b1-python-16':'print(len(input().split()))',
+'b1-python-17':'nums=[int(x) for x in input().split()]\nprint(nums[0])',
+'b1-python-18':'print(len(input()))',
+'b1-python-20':'damage=int(input())\nprint(75)',
+'b1-python-21':'scores={"anna":7,"boris":5}\nprint(scores.get(input(),-1))',
+'b1-python-22':'print(1 if "a" in input() else 0)',
+'b1-python-23':'def double(x):\n    print(x*2)',
+'b1-python-24':'def square(x):\n    print(x*x)',
+'b1-python-25':'def maximum(a,b):\n    return a'
+};
