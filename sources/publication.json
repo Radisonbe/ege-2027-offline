@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedOn": "2026-10-08",
+  "reviewedOn": "2026-10-09",
   "entries": [
     {
       "id": "reference-learning",
@@ -35,12 +35,12 @@
       "clearance": "project-generated",
       "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
       "license": null,
-      "evidence": "Code written for this project; instructional examples recreate the owner-declared generated reference. No new external bank was imported.",
+      "evidence": "Code written for this project; instructional examples recreate the owner-declared generated reference. No new external bank was imported. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved.",
       "files": [
         {
           "path": "src/components/Practices.tsx",
           "normalization": "lf",
-          "sha256": "82587672074adc68176e980ca8b90caf7b4e34511e245bb52e60cae7ac63f474"
+          "sha256": "90d0969ccb2bf11c6b526655ec61db229e94e08d2847875d7b2d594e9e927f01"
         },
         {
           "path": "src/components/GraphLab.tsx",
@@ -50,7 +50,7 @@
         {
           "path": "src/data/catalog.ts",
           "normalization": "lf",
-          "sha256": "ae3859bc3397be516dec429b565bc1d4240192d1b00a7e1e2161f576831bafdd"
+          "sha256": "ea844ef6aeba03fddec38f8bd25f55b4e1d64794399a5c924eb02a9b98c1f01c"
         }
       ]
     },
@@ -268,7 +268,7 @@
       "clearance": "project-generated",
       "source": null,
       "license": null,
-      "evidence": "100 original exercises and original foundational explanations created in this project at the explicit request of its owner (Stage 3B.1). No third-party question text/solutions or figures imported. All exercises generated; examTaskType null. Existing IDs and content untouched. Math checked independently, Python reference and deliberately incorrect programs executed in the existing runner. See docs/STAGE3B1.md and reusable tests for validation. Polishing after 0.3.2: original generated programming exercises retain IDs, prompts and reference solutions; version 2 appends in-domain boundary tests and beginner explanations. No external content was imported.",
+      "evidence": "100 original exercises and original foundational explanations created in this project at the explicit request of its owner (Stage 3B.1). No third-party question text/solutions or figures imported. All exercises generated; examTaskType null. Existing IDs and content untouched. Math checked independently, Python reference and deliberately incorrect programs executed in the existing runner. See docs/STAGE3B1.md and reusable tests for validation. Polishing after 0.3.2: original generated programming exercises retain IDs, prompts and reference solutions; version 2 appends in-domain boundary tests and beginner explanations. No external content was imported. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved.",
       "files": [
         {
           "path": "src/data/stage3b1-lessons.json",
@@ -288,12 +288,26 @@
         {
           "path": "src/data/banks/stage3b1-informatics.json",
           "normalization": "lf",
-          "sha256": "c5528ea3c8f377ea22d3e0dc95b782c6eac0644b6e300a375f483db130f68298"
+          "sha256": "d9ba90f2ac3110da24b9f3e1165db18a61981221ee25cb82fbc5c34fe2ffdc8c"
         },
         {
           "path": "src/data/banks/stage3b1-python.json",
           "normalization": "lf",
-          "sha256": "a2d65170237766b1887c60c1c376375fe370cd9ced0edf3fc2555d69da5b3c4d"
+          "sha256": "ffec1f9e6b5d40be2d50951f202ec93d6b8d954d0334face0c93abfb2d83baca"
+        }
+      ]
+    },
+    {
+      "id": "study-flow-allocation",
+      "clearance": "project-authored",
+      "source": null,
+      "license": null,
+      "evidence": "Own reviewed allocation of existing question IDs for learning and independent checks. Equivalent fourth-bit questions and sum/fix-sum programs remain together in practice. No new external or generated questions. The repeated because/rain sentence u4/b1-russian-16 also stays together in practice.",
+      "files": [
+        {
+          "path": "src/data/study-flow.json",
+          "normalization": "lf",
+          "sha256": "c6b75ff5a83ec041495ccaf6ff8f1bf1c3047ffd1705c815897c52b57efe6800"
         }
       ]
     }

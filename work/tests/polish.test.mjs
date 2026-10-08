@@ -21,7 +21,7 @@ test('Every display token preserves original source and parses deterministically
 test('Polishing changes only programming test/explanation revisions; IDs, conditions, solutions and old cases are retained',()=>{
  assert.equal(bank.length,167);assert.equal(codes.length,25);
  for(const old of oldBank){const current=bank.find(q=>q.id===old.id);assert.ok(current);if(old.answerType!=='code'){assert.deepEqual(current,old);continue;}
-  assert.equal(current.version,2);for(const field of ['prompt','answer','solution','hint','hints','origin','topic','skills','requires','subtopic'])assert.deepEqual(current[field],old[field],old.id+' '+field);
+  assert.equal(current.version,3);for(const field of ['prompt','answer','solution','hint','hints','origin','topic','skills','requires','subtopic'])assert.deepEqual(current[field],old[field],old.id+' '+field);
   assert.deepEqual(current.python.visibleTests,old.python.visibleTests);assert.deepEqual(current.python.hiddenTests.slice(0,old.python.hiddenTests.length),old.python.hiddenTests);
   const all=[...current.python.visibleTests,...current.python.hiddenTests];assert.ok(all.length>4);assert.equal(new Set(all.map(t=>JSON.stringify(t.args??t.stdin))).size,all.length,current.id+' duplicate input');
  }

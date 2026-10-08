@@ -1,6 +1,7 @@
 import type {AttemptContext,Question,StudyState,CodeDraft} from './types.ts';
 import {localDate,recordAttempt} from './progress.ts';
 import {answerReview} from './adaptive.ts';
+import {recordTraining} from './study-flow.ts';
 
 export function saveCodeDraft(state:StudyState,question:Question,code:string,stdin:string,now=new Date()):StudyState {
   const draft:CodeDraft={schemaVersion:1,questionVersion:question.version,code,stdin,updatedAt:now.toISOString()};
@@ -16,6 +17,7 @@ export function codeAssessmentKey(state:StudyState,q:Question,context:AttemptCon
 // One error and one subsequent success per question/day/context or adaptive slot.
 // Re-running/editing the same exercise cannot produce dozens of scored errors.
 export function recordCodeAssessment(state:StudyState,q:Question,code:string,correct:boolean,context:AttemptContext,id:string,sessionId?:string,now=new Date()):StudyState {
+  if(context==='practice')return recordTraining(state,q,code,correct,id,now);
   const key=codeAssessmentKey(state,q,context,sessionId,now),prior=state.attempts.filter(a=>a.assessmentKey===key);
   if(prior.some(a=>a.correct)||(!correct&&prior.some(a=>!a.correct)))return state;
   const next=sessionId?answerReview(state,sessionId,code,correct,id,now):recordAttempt(state,q,code,correct,context,id,now);

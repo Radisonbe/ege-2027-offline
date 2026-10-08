@@ -54,18 +54,18 @@ try {
   });
   await check('Invalid answer format creates no attempt; wrong and corrected answers, hint and solution work offline', async () => {
     await page.getByRole('tab',{name:'Мини-тест'}).click(); await input('па');
-    await page.getByRole('alert').filter({hasText:'попытка пока не учитывается'}).waitFor(); assert.equal(await getState(),undefined);
+    await page.getByRole('alert').filter({hasText:'попытка пока не учитывается'}).waitFor(); assert.equal((await getState()).attempts.length,0);
     await input('12'); await page.getByText('Подсказка:',{exact:true}).waitFor(); await saved(s=>s?.attempts.length===1);
     await page.getByRole('button',{name:'Показать полное решение'}).click(); await page.getByText('Разбор решения',{exact:true}).waitFor();
-    await page.getByRole('button',{name:'Попробовать ещё раз',exact:true}).click(); await input('120'); await saved(s=>s?.attempts.length===2);
-    await page.getByRole('button',{name:'Следующий вопрос'}).click(); await input('920'); await saved(s=>s?.attempts.length===3);
+    await page.getByRole('button',{name:'Попробовать ещё раз',exact:true}).click(); await input('28'); await saved(s=>s?.topicTests?.[0]?.items[0]?.correct===true); assert.equal((await getState()).attempts.length,1); assert.equal((await getState()).topicTests[0].items[0].firstCorrect,false);
+    await page.getByRole('button',{name:'Следующий вопрос'}).click(); await input('80'); await saved(s=>s?.attempts.length===2);
     await page.getByRole('textbox',{name:'Моя заметка по теме'}).fill('Офлайн-заметка для проверки'); await saved(s=>s?.topics.percent.note==='Офлайн-заметка для проверки');
   });
-  const offlineState = await getState();
+  let offlineState = await getState();
   await check('Another full offline browser restart retains IndexedDB attempts, errors, note, history and reviews', async () => {
     await context.close(); context=await launch();await context.setOffline(true);page=context.pages()[0];watch(page);
     await go('progress'); assert.deepEqual(await getState(),offlineState);
-    assert.equal(offlineState.attempts.length,3);assert.equal(offlineState.errors.length,1);assert.equal(offlineState.attempts.filter(a=>a.correct).length,2);
+    assert.equal(offlineState.attempts.length,2);assert.equal(offlineState.errors.length,1);assert.equal(offlineState.attempts.filter(a=>a.correct).length,1);
   });
   await check('All 67 pages and all available filled modules open offline; errors, review and short sessions render', async () => {
     const data=JSON.parse(fs.readFileSync('src/data/reference.json','utf8')),addedLessons=JSON.parse(fs.readFileSync('src/data/stage3b1-lessons.json','utf8')).lessons;
@@ -81,6 +81,7 @@ try {
     }
     await page.screenshot({path:'outputs/regression-mobile-offline.png'}); await page.setViewportSize({width:1440,height:1000});
   });
+  offlineState=await getState();
   await context.setOffline(false); await go('settings');
   let backup, text;
   await check('Network restoration and UI JSON export contain the complete user state but no learning bank', async () => {

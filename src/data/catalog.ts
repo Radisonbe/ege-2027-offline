@@ -1,3 +1,5 @@
+import flowData from './study-flow.json';
+import {learningSets,validateLearningFlow} from '../domain/study-flow';
 import { topics as referenceTopics, theories as referenceTheories, sentences as referenceSentences, bridges as referenceBridges } from './reference.json';
 import taxonomyData from './taxonomy.json';
 import lessonData from './stage3b1-lessons.json';
@@ -34,7 +36,8 @@ for (const topic of topics) topic.subtopics = subtopics.filter(s => s.topic === 
 const packageFiles = import.meta.glob('./banks/*.json', { eager: true, import: 'default' });
 const bank = loadContentPackages(Object.keys(packageFiles).sort().map(key => packageFiles[key]), topics, taxonomy);
 export const questions: Question[] = bank.questions;
-export const contentDiagnostics = [...taxonomyResult.diagnostics, ...lessonResult.diagnostics, ...bank.diagnostics];
+const flowResult=(()=>{try{return {allocation:validateLearningFlow(flowData,questions),diagnostics:[] as string[]};}catch(e){return {allocation:{},diagnostics:[String(e)]};}})();
+export const contentDiagnostics = [...taxonomyResult.diagnostics, ...lessonResult.diagnostics, ...bank.diagnostics,...flowResult.diagnostics];
 export const questionById = Object.fromEntries(questions.map(q => [q.id, q]));
 export const theories = referenceTheories as unknown as Record<string, ContentNode>;
 for(const lesson of lessonResult.lessons){const added=lessonNode(lesson),old=theories[lesson.topic];theories[lesson.topic]=old?{tag:'div',className:'',children:[old,added]}:added;}
@@ -45,3 +48,5 @@ export const statuses = ['Не изучено', 'Изучаю', 'Нужна пр
 export const intervals = [1, 3, 7, 14, 30] as const;
 export const topicQuestions = (id: string) => questions.filter(q => q.topic === id && !q.easy);
 export const easyQuestions = questions.filter(q => q.easy).slice(0, 5);
+
+export const topicLearning = (id:string) => learningSets(questions,id,flowResult.allocation);

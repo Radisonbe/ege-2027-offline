@@ -44,7 +44,7 @@ function unique(items: unknown[], path: string) {
   if (new Set(ids).size !== ids.length) fail(path + '.id');
 }
 export function validateQuestion(value: unknown, path = 'question'): Question {
-  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python','hints','answerFormat']);
+  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python','hints','answerFormat','presentation']);
   for (const key of ['id', 'topic']) string(q[key], path + '.' + key, true);
   for (const key of ['source', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle']) string(q[key], path + '.' + key);
   for (const key of ['subtopic', 'examTaskType']) if (q[key] !== null) string(q[key], path + '.' + key);
@@ -62,6 +62,7 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
   if (q.options !== undefined) strings(q.options, path + '.options');
   if (q.easy !== undefined) choice(q.easy, path + '.easy', [true, false]);
   if(q.hints!==undefined)array(q.hints,path+'.hints',(v,p)=>string(v,p),5);
+  if(q.presentation!==undefined){const p=object(q.presentation,path+'.presentation',['title','statement','limits','inputHelp']);for(const key of ['title','statement','limits']){string(p[key],path+'.presentation.'+key);if(!(p[key] as string).trim())fail(path+'.presentation.'+key);}choice(p.inputHelp,path+'.presentation.inputHelp',[true,false]);}
   if(q.python!==undefined){if(!['python','informatics'].includes(String(q.subject)))fail(path+'.python');try{validatePythonTask(q.python);}catch{fail(path+'.python');}}
   if(q.answerType==='code'&&(!q.python||(q.python as {type:string}).type==='predict-output'))fail(path+'.python');
   if(q.answerType==='multiple-choice'){
@@ -78,7 +79,7 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
 }
 
 export function validateStudyState(value: unknown): StudyState {
-  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive','codeDrafts']);
+  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive','codeDrafts','training','topicTests']);
   if (s.app !== 'ege-local-center') fail('data.app');
   if (s.schemaVersion !== 1 && s.schemaVersion !== 2) throw new BackupError('Версия схемы данных пока не поддерживается. Текущий прогресс не изменён.');
   if (s.schemaVersion === 1 && s.adaptive !== undefined) fail('data.adaptive');
@@ -91,7 +92,7 @@ export function validateStudyState(value: unknown): StudyState {
     choice(t.status, 'status', ['Не изучено', 'Изучаю', 'Нужна практика', 'Уверенно', 'Повторить']); string(t.note, 'note');
     if (t.last !== undefined) date(t.last, 'last');
   }
-  const attempts = array(s.attempts, 'data.attempts', (value, path) => {
+  const validateAttempt = (value:unknown, path:string) => {
     const a = object(value, path, ['id', 'questionId', 'questionVersion', 'topic', 'answer', 'correct', 'date', 'at', 'context'], ['subject', 'subtopic', 'skills', 'sessionId','assessmentKey']);
     for (const key of ['id', 'questionId', 'topic']) string(a[key], path + '.' + key, true);
     string(a.answer, path + '.answer'); choice(a.correct, path + '.correct', [true, false]);
@@ -103,8 +104,18 @@ export function validateStudyState(value: unknown): StudyState {
     if (a.skills !== undefined) strings(a.skills, path + '.skills');
     if (a.sessionId !== undefined) string(a.sessionId, path + '.sessionId', true);
     if (a.assessmentKey !== undefined) string(a.assessmentKey,path+'.assessmentKey',true);
-  }); unique(attempts, 'data.attempts');
+  };
+  const attempts = array(s.attempts, 'data.attempts', validateAttempt); unique(attempts, 'data.attempts');
   const attemptById = new Map(attempts.map(a => [(a as ObjectValue).id, a as ObjectValue]));
+  if(s.training!==undefined){const training=array(s.training,'data.training',(v,p)=>{validateAttempt(v,p);if((v as ObjectValue).context!=='practice'||attemptById.has((v as ObjectValue).id))fail(p);});unique(training,'data.training');}
+  if(s.topicTests!==undefined){const linked=new Set<unknown>(),active=new Set<unknown>();const tests=array(s.topicTests,'data.topicTests',(v,p)=>{
+    const session=object(v,p,['id','topic','startedAt','index','items'],['completedAt']);string(session.id,p+'.id',true);string(session.topic,p+'.topic',true);instant(session.startedAt,p+'.startedAt');if(session.completedAt!==undefined)instant(session.completedAt,p+'.completedAt');else {if(active.has(session.topic))fail(p+'.topic');active.add(session.topic);}
+    const items=array(session.items,p+'.items',(value,name)=>{const item=object(value,name,['question','answer','firstCorrect','correct'],['attemptId','lastAnswer']);if(item.lastAnswer!==undefined)string(item.lastAnswer,name+'.lastAnswer');const q=validateQuestion(item.question,name+'.question');if(q.topic!==session.topic)fail(name+'.topic');string(item.answer,name+'.answer');choice(item.firstCorrect,name+'.firstCorrect',[null,true,false]);choice(item.correct,name+'.correct',[null,true,false]);
+      if(item.firstCorrect===null){if(item.correct!==null||item.attemptId!==undefined||item.answer!=='')fail(name);}else{if(item.correct===null)fail(name+'.correct');string(item.attemptId,name+'.attemptId',true);const a=attemptById.get(item.attemptId);if(!a||linked.has(item.attemptId)||a.context!=='test'||a.sessionId!==session.id||a.questionId!==q.id||a.questionVersion!==q.version||a.topic!==q.topic||a.subject!==q.subject||a.subtopic!==q.subtopic||JSON.stringify(a.skills)!==JSON.stringify(q.skills??[])||a.answer!==item.answer||a.correct!==item.firstCorrect)fail(name+'.attemptId');linked.add(item.attemptId);}
+    },100);
+    if(!items.length||new Set(items.map(v=>(v as ObjectValue).question&&((v as ObjectValue).question as Question).id)).size!==items.length)fail(p+'.items');integer(session.index,p+'.index',0,items.length-1);
+    if(items.some((v,i)=>(i<Number(session.index)&&(v as ObjectValue).firstCorrect===null)||(i>Number(session.index)&&(v as ObjectValue).firstCorrect!==null)))fail(p+'.index');if(session.completedAt!==undefined&&(session.index!==items.length-1||items.some(v=>(v as ObjectValue).firstCorrect===null)))fail(p+'.completedAt');
+  },10000);unique(tests,'data.topicTests');}
   const errors = array(s.errors, 'data.errors', (value, path) => {
     const e = object(value, path, ['id', 'topic', 'prompt', 'wrong', 'correct', 'reason', 'principle', 'solution', 'note', 'date', 'status', 'due', 'stage'], ['questionId', 'attemptId', 'question']);
     for (const key of ['id', 'topic']) string(e[key], path + '.' + key, true);

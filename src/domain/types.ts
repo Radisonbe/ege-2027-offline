@@ -27,6 +27,7 @@ export interface Question {
   requires: string[]; related: string[];
   skills?: string[]; remediates?: string[];
   python?: PythonTask;
+  presentation?: { title: string; statement: string; limits: string; inputHelp: boolean };
 }
 export interface Attempt {
   id: string; questionId: string; questionVersion: number; topic: string;
@@ -57,7 +58,11 @@ export interface StudyState extends Omit<LegacyStudyState, 'schemaVersion'> {
   schemaVersion: 2;
   adaptive: { sessions: AdaptiveSession[]; exposures: QuestionExposure[] };
   codeDrafts?: Record<string, CodeDraft>;
+  training?: Attempt[];
+  topicTests?: TopicTestSession[];
 }
+export interface TopicTestSession { id: string; topic: string; startedAt: string; completedAt?: string; index: number; items: TopicTestItem[] }
+export interface TopicTestItem { question: Question; answer: string; lastAnswer?: string; firstCorrect: boolean | null; correct: boolean | null; attemptId?: string }
 export interface CodeDraft { schemaVersion: 1; questionVersion: number; code: string; stdin: string; updatedAt: string }
 export interface ContentNode { tag: string; className: string; children: (ContentNode | string | number)[] }
 export interface Sentence {

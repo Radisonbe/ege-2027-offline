@@ -1,0 +1,17 @@
+import {useEffect} from 'react';
+import type {Question} from '../domain/types';
+import {useStudy} from '../state/StudyProvider';
+import {startTopicTest,advanceTopicTest} from '../domain/study-flow';
+import {skillById,topicLearning} from '../data/catalog';
+import {AnswerBox} from './Quiz';
+import {Badge,Button,Panel,ProgressBar} from './ui';
+export function TopicTest({topic,items}:{topic:string;items:Question[]}){
+ const {state,mutate}=useStudy(),session=state.topicTests?.filter(s=>s.topic===topic).at(-1);
+ useEffect(()=>{if(!session&&items.length){const id=crypto.randomUUID();mutate(s=>startTopicTest(s,topic,items,id));}},[session,topic,items,mutate]);
+ if(!items.length&&!session)return <Panel><h3>Независимого мини-теста пока нет</h3><p>Для этой темы пока не хватает других заданий. Практика и заметки доступны; повторять те же вопросы как контрольную проверку не будем.</p></Panel>;
+ if(!session)return <Panel><p>Готовим самостоятельную проверку…</p></Panel>;
+ if(session.completedAt){const skills=[...new Set(session.items.flatMap(i=>i.question.skills??[]))];return <Panel className="quiz-finish"><h3>Мини-тест завершён</h3><p>Самостоятельно верно: <b>{session.items.filter(i=>i.firstCorrect).length} из {session.items.length}</b>.</p><p className="small muted">Учитывается первый ответ на каждое задание. Исправления после разбора не меняют этот результат.</p><ul>{skills.map(skill=>{const checked=session.items.filter(i=>i.question.skills?.includes(skill));return <li key={skill}>{skillById[skill]?.title??skill}: {checked.filter(i=>i.firstCorrect).length}/{checked.length}</li>;})}</ul><Button variant="outline" onClick={()=>{const id=crypto.randomUUID();mutate(s=>startTopicTest(s,topic,items,id));}}>Пройти ещё раз</Button><p className="small muted">Повторное прохождение использует уже знакомые вопросы и не является новой независимой проверкой.</p></Panel>;}
+ const missing=[...new Set(topicLearning(topic).practice.flatMap(q=>q.skills??[]))].filter(skill=>!session.items.some(i=>i.question.skills?.includes(skill)));
+ const familiar=session.items.some(i=>state.attempts.some(a=>a.questionId===i.question.id&&a.sessionId!==session.id));
+ const item=session.items[session.index];return <Panel className="quiz-panel"><div className="section-heading"><h3>Проверим понимание самостоятельно</h3><Badge>{session.index+1} / {session.items.length}</Badge></div><p className="small muted">Другие задания. Подсказки и разбор доступны после первой проверки решения. Первый ответ сохраняется, даже если закрыть приложение.</p><p className="small muted">В мини-тесте {session.items.length} заданий: это проверка части темы, а не всего материала.{missing.length>0&&" Некоторые навыки практики пока не проверяются независимо."}{familiar&&" Часть вопросов уже встречалась в твоей истории; результат следует считать повторной проверкой."}</p><ProgressBar value={session.index/session.items.length*100} label="Прогресс мини-теста"/><AnswerBox key={session.id+':'+session.index} question={item.question} context="test" topicTestSessionId={session.id} initial={{answer:item.lastAnswer??item.answer,result:item.correct}}/>{item.firstCorrect!==null&&<p className="small muted">Первый самостоятельный ответ: {item.firstCorrect?'верно':'ошибка'}. Исправление после разбора не меняет эту оценку.</p>}{item.firstCorrect!==null&&<div className="quiz-next"><Button variant="secondary" onClick={()=>mutate(s=>advanceTopicTest(s,session.id))}>{session.index===session.items.length-1?'Завершить мини-тест':'Следующий вопрос'}</Button></div>}</Panel>;
+}

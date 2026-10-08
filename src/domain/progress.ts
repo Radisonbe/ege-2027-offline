@@ -1,4 +1,4 @@
-import type { AttemptContext, Question, StudyState, TopicProgress, TopicStatus } from './types';
+import type { AttemptContext, Question, StudyState, TopicProgress, TopicStatus } from './types.ts';
 
 export const reviewIntervals = [1, 3, 7, 14, 30];
 export function localDate(date = new Date()): string {

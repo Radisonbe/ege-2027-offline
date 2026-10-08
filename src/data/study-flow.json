@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "topics": {
+    "binary": {
+      "practice": [
+        "b1",
+        "b2",
+        "b4",
+        "b1-informatics-02",
+        "b1-informatics-04"
+      ],
+      "test": [
+        "b5",
+        "b1-informatics-01",
+        "b1-informatics-03",
+        "b1-informatics-05",
+        "b1-informatics-06"
+      ]
+    },
+    "encoding": {
+      "practice": [
+        "c1",
+        "c2",
+        "c5",
+        "b1-informatics-07",
+        "b1-informatics-08"
+      ],
+      "test": [
+        "c3",
+        "c4",
+        "b1-informatics-09",
+        "b1-informatics-10",
+        "b1-informatics-11"
+      ]
+    },
+    "functions": {
+      "practice": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "b1-math-24"
+      ],
+      "test": [
+        "f3",
+        "f6",
+        "f7",
+        "b1-math-25"
+      ]
+    },
+    "percent": {
+      "practice": [
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7"
+      ],
+      "test": [
+        "b1-math-09",
+        "b1-math-10",
+        "b1-math-11",
+        "b1-math-12",
+        "b1-math-13",
+        "b1-math-14",
+        "b1-math-15"
+      ]
+    },
+    "py-variables": {
+      "practice": [
+        "py-variables-q",
+        "py-v2",
+        "b1-python-01"
+      ],
+      "test": [
+        "b1-python-02"
+      ]
+    },
+    "py-types": {
+      "practice": [
+        "py-types-q",
+        "b1-python-03"
+      ],
+      "test": [
+        "py-t2",
+        "b1-python-04"
+      ]
+    },
+    "py-if": {
+      "practice": [
+        "py-if-q",
+        "b1-python-05",
+        "b1-python-06"
+      ],
+      "test": [
+        "py-i2",
+        "b1-python-07",
+        "b1-python-08"
+      ]
+    },
+    "py-loops": {
+      "practice": [
+        "py-loops-q",
+        "b1-python-09",
+        "b1-python-10",
+        "b1-python-11"
+      ],
+      "test": [
+        "py-l2",
+        "b1-python-12"
+      ]
+    },
+    "py-strings": {
+      "practice": [
+        "py-strings-q",
+        "b1-python-13"
+      ],
+      "test": [
+        "py-s2",
+        "b1-python-14",
+        "b1-python-15"
+      ]
+    },
+    "py-lists": {
+      "practice": [
+        "py-lists-q",
+        "b1-python-16",
+        "b1-python-18"
+      ],
+      "test": [
+        "py-li2",
+        "b1-python-17",
+        "b1-python-19"
+      ]
+    },
+    "py-sets": {
+      "practice": [
+        "py-sets-q"
+      ],
+      "test": [
+        "py-se2"
+      ]
+    },
+    "py-tuples": {
+      "practice": [
+        "py-tuples-q"
+      ],
+      "test": [
+        "py-tu2"
+      ]
+    },
+    "py-dicts": {
+      "practice": [
+        "py-dicts-q",
+        "b1-python-20"
+      ],
+      "test": [
+        "py-d2",
+        "b1-python-21",
+        "b1-python-22"
+      ]
+    },
+    "py-functions": {
+      "practice": [
+        "py-functions-q",
+        "b1-python-23"
+      ],
+      "test": [
+        "py-f2",
+        "b1-python-24",
+        "b1-python-25"
+      ]
+    },
+    "py-files": {
+      "practice": [
+        "py-files-q"
+      ],
+      "test": [
+        "py-fi2"
+      ]
+    },
+    "py-csv": {
+      "practice": [
+        "py-csv-q"
+      ],
+      "test": [
+        "py-c2"
+      ]
+    },
+    "py-algorithms": {
+      "practice": [
+        "py-algorithms-q"
+      ],
+      "test": [
+        "py-a2"
+      ]
+    },
+    "sentence": {
+      "practice": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "b1-russian-06",
+        "b1-russian-07"
+      ],
+      "test": [
+        "b1-russian-08",
+        "b1-russian-09",
+        "b1-russian-10",
+        "b1-russian-11",
+        "b1-russian-12"
+      ]
+    },
+    "unionwords": {
+      "practice": [
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "u5",
+        "b1-russian-16"
+      ],
+      "test": [
+        "b1-russian-13",
+        "b1-russian-14",
+        "b1-russian-15",
+        "b1-russian-17"
+      ]
+    },
+    "logic": {
+      "practice": [
+        "b1-informatics-12",
+        "b1-informatics-13"
+      ],
+      "test": [
+        "b1-informatics-14",
+        "b1-informatics-15",
+        "b1-informatics-16"
+      ]
+    },
+    "information": {
+      "practice": [
+        "b1-informatics-17",
+        "b1-informatics-18"
+      ],
+      "test": [
+        "b1-informatics-19",
+        "b1-informatics-20"
+      ]
+    },
+    "infpython": {
+      "practice": [
+        "b1-informatics-21",
+        "b1-informatics-22"
+      ],
+      "test": [
+        "b1-informatics-23",
+        "b1-informatics-24",
+        "b1-informatics-25"
+      ]
+    },
+    "arithmetic": {
+      "practice": [
+        "b1-math-01",
+        "b1-math-02"
+      ],
+      "test": [
+        "b1-math-03",
+        "b1-math-04"
+      ]
+    },
+    "fractions": {
+      "practice": [
+        "b1-math-05",
+        "b1-math-07"
+      ],
+      "test": [
+        "b1-math-06",
+        "b1-math-08"
+      ]
+    },
+    "powers": {
+      "practice": [
+        "b1-math-16"
+      ],
+      "test": [
+        "b1-math-17",
+        "b1-math-18"
+      ]
+    },
+    "roots": {
+      "practice": [
+        "b1-math-19"
+      ],
+      "test": [
+        "b1-math-20"
+      ]
+    },
+    "linear": {
+      "practice": [
+        "b1-math-21"
+      ],
+      "test": [
+        "b1-math-22",
+        "b1-math-23"
+      ]
+    },
+    "speech": {
+      "practice": [
+        "b1-russian-01",
+        "b1-russian-02"
+      ],
+      "test": [
+        "b1-russian-03",
+        "b1-russian-04",
+        "b1-russian-05"
+      ]
+    },
+    "spelling": {
+      "practice": [
+        "b1-russian-18"
+      ],
+      "test": [
+        "b1-russian-19",
+        "b1-russian-20"
+      ]
+    },
+    "punctuation": {
+      "practice": [
+        "b1-russian-21"
+      ],
+      "test": [
+        "b1-russian-22",
+        "b1-russian-23"
+      ]
+    },
+    "text": {
+      "practice": [
+        "b1-russian-24"
+      ],
+      "test": [
+        "b1-russian-25"
+      ]
+    }
+  }
+}

@@ -851,3 +851,11 @@ button {
 .question-prompt:has(.math-fraction),.answer-option:has(.math-fraction),.solution:has(.math-fraction),.prose p:has(.math-fraction),.callout:has(.math-fraction),.feedback p:has(.math-fraction),.error-card h3:has(.math-fraction),.error-details:has(.math-fraction){line-height:2.3}
 .code-explanation p{white-space:pre-wrap}
 .code-explanation .python-output{margin:1rem 0}
+.program-examples{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;padding:16px;border:1px solid var(--border);border-radius:12px;background:var(--muted)}
+.program-examples>div{min-width:0}.program-examples h4{margin:0 0 8px}.program-examples pre,.expected-output{color:var(--foreground);white-space:pre-wrap;overflow-wrap:anywhere;padding:12px;background:var(--background);border-radius:8px;font:15px/1.6 ui-monospace,Consolas,monospace}.program-examples>p{grid-column:1/-1;margin:0}
+.execution-input{padding:16px;border:1px solid var(--border);border-radius:12px;margin:20px 0}.execution-input h3{margin-top:0}.input-help{margin:16px 0}.input-help summary{cursor:pointer;font-weight:600}
+.output-preview{max-height:none;overflow:visible;white-space:pre-wrap;overflow-wrap:anywhere;user-select:text}.output-viewer{position:fixed;inset:0;margin:0;width:100%;max-width:none;height:100dvh;max-height:none;border:0;border-radius:0;padding:0;color:var(--foreground);background:var(--background);overflow:hidden}
+.output-viewer[open]{display:flex;flex-direction:column}.output-viewer header{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:calc(12px + env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) 12px max(12px,env(safe-area-inset-left));border-bottom:1px solid var(--border)}
+.output-view-tools{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--border)}.output-view-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:12px 12px calc(12px + env(safe-area-inset-bottom));touch-action:pan-x pan-y;user-select:text}
+.output-view-scroll pre{margin:0;min-width:100%;width:max-content;white-space:pre;overflow:visible;font:15px/1.6 ui-monospace,Consolas,monospace;user-select:text}
+@media(max-width:600px){.program-examples{grid-template-columns:1fr}.output-viewer header strong{font-size:15px}.output-view-tools .button{padding:8px 10px}}

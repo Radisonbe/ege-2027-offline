@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { bridges, questionById, sentences, topicQuestions } from '../data/catalog';
+import { bridges, questionById, sentences, topicLearning } from '../data/catalog';
 import type { Question, Sentence } from '../domain/types';
 import { AnswerBox, Quiz } from './Quiz';
 import { GraphLab } from './GraphLab';
@@ -55,5 +55,5 @@ export function Practice({ topic }: { topic: string }) {
   if (topic === 'sentence') return <SentenceTrainer/>;
   if (topic === 'binary') return <BinaryTrainer/>;
   if (topic === 'encoding') return <EncodingTrainer/>;
-  return <Quiz items={topicQuestions(topic)} context="practice" title={topic === 'unionwords' ? 'Союз или союзное слово?' : 'Самостоятельная практика'}/>;
+  return <Quiz items={topicLearning(topic).practice} context="practice" title={topic === 'unionwords' ? 'Союз или союзное слово?' : 'Самостоятельная практика'}/>;
 }

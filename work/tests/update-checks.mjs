@@ -38,7 +38,7 @@ try {
   for(let i=0;i<50;i++){if((await state(page))?.topics['py-variables'].note==='История сохраняется при обновлении')break;await new Promise(resolve=>setTimeout(resolve,50));}
   await page.goto(origin+'#topic/infpython');await page.getByRole('tab',{name:'Мини-тест',exact:true}).click();await page.getByLabel('Код решения',{exact:true}).fill('print("Own update draft")');
   for(let i=0;i<100;i++){if((await state(page))?.codeDrafts?.['b1-informatics-21']?.code==='print("Own update draft")')break;await new Promise(r=>setTimeout(r,40));}
-  const before=await state(page);assert.equal(before.codeDrafts['b1-informatics-21'].code,'print("Own update draft")');assert.equal(before.topics['py-variables'].note,'История сохраняется при обновлении');
+  const before=await state(page);assert.equal(before.codeDrafts['b1-informatics-23'].code,'print("Own update draft")');assert.equal(before.topics['py-variables'].note,'История сохраняется при обновлении');
   const second=await context.newPage();await second.goto(origin+'#settings');await ready(second);
   current=b;
   await page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();await r.update();});
