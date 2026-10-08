@@ -1,0 +1,40 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.tsbuildinfo
+
+# Local caches and logs
+.vite/
+.cache/
+.pnpm-store/
+logs/
+*.log
+
+# Local environment and editor settings
+.env
+.env.*
+!.env.example
+*.local
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.bak
+*~
+
+# Keep reusable tools and tests; omit local analysis and migration artifacts
+work/*
+!work/extract-reference.mjs
+!work/format-css.mjs
+!work/tests/
+work/tests/*
+!work/tests/*.test.mjs
+
+# Generated reports, screenshots, and local path inventories
+outputs/
