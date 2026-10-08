@@ -835,3 +835,6 @@ button {
 .python-reset{margin-top:18px;}
 .python-reset summary{cursor:pointer;}
 @media(max-width:600px){.python-editor{padding:12px;height:300px;}.python-keys{gap:5px;}.python-keys button{font-size:12px;}.python-input-request{padding:12px;}}
+
+.code-exercise{min-width:0}.code-exercise .python-editor{min-height:280px}.code-exercise .question-prompt{white-space:pre-wrap}.code-test-result{padding:12px 0;border-top:1px solid var(--border)}.code-test-result pre{white-space:pre-wrap;overflow-wrap:anywhere}.code-exercise details{margin-top:20px}.wrong-answer{white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:600px){.code-exercise .button-row{display:flex;flex-wrap:wrap}.code-exercise .python-editor{min-height:300px}.code-exercise .python-keys{flex-wrap:wrap}}

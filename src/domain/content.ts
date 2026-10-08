@@ -58,6 +58,14 @@ export function validateContentPackage(value: unknown, topics: Topic[], taxonomy
     for (const field of ['requires', 'related', 'remediates'] as const) links(q[field] ?? [], entities, q.id);
     if (q.answerType === 'choice' && (!q.options || new Set(q.options).size !== q.options.length || !q.options.includes(q.answer) || q.options.length < 2)) problem('Неверные варианты: ' + q.id);
     if (q.answerType === 'number' && !checkAnswer(q, q.answer).valid) problem('Неверный формат правильного ответа: ' + q.id);
+    if(q.answerType==='multiple-choice'){
+      if(!q.options||q.options.length<2||new Set(q.options).size!==q.options.length||!checkAnswer(q,q.answer).valid)problem('Неверный набор ответов: '+q.id);
+    }
+    if(q.answerType==='code'){
+      const task=q.python!,tests=[...(task.visibleTests??[]),...(task.hiddenTests??[])];
+      if(tests.length<3||!tests.every(t=>task.functionName?t.args!==undefined&&t.expectedReturn!==undefined:t.stdin!==undefined&&t.expectedOutput!==undefined))problem('Нужны минимум три полных теста: '+q.id);
+      if(!q.hints?.length||!q.solution.trim())problem('Не заполнено объяснение программы: '+q.id);
+    }
     seen.add(q.id);
   }
   return value as ContentPackage;

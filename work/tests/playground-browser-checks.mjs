@@ -65,7 +65,7 @@ try{
  await context.close();context=await launch();page=context.pages()[0];watch();await go('settings');await readyKit();await page.waitForFunction(()=>Boolean(navigator.serviceWorker.controller));
  current=updated;await context.setOffline(true);await context.setOffline(false);await page.reload();
  await page.getByText('Новая версия готова.',{exact:false}).waitFor({timeout:30000});assert.deepEqual(await state(),stable);
- await context.close();context=await launch();await context.setOffline(true);page=context.pages()[0];watch();await go('settings');await readyKit();await page.getByText('Версия 0.3.1',{exact:true}).waitFor();assert.deepEqual(await state(),stable);
+ await context.close();context=await launch();await context.setOffline(true);page=context.pages()[0];watch();await go('settings');await readyKit();await page.getByText('Версия 0.3.2-dev',{exact:true}).waitFor();assert.deepEqual(await state(),stable);
  const inventory=JSON.parse(updated.get('offline-inventory.json'));assert.ok(inventory.files.some(f=>f.path.endsWith('pyodide.asm.wasm')));
  const cached=await page.evaluate(async()=>{const names=await caches.keys();let bytes=0,items=0;for(const name of names){const cache=await caches.open(name);for(const req of await cache.keys()){items++;bytes+=(await(await cache.match(req)).arrayBuffer()).byteLength;}}return {bytes,items};});
  pass('Stage 3A→3A.1 SW waits for complete runtime, activates cold offline, and preserves attempts/errors/notes/Adaptive Review exactly');

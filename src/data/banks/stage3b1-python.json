@@ -1,0 +1,1328 @@
+{
+  "schemaVersion": 1,
+  "id": "stage3b1-python",
+  "subject": "python",
+  "questions": [
+    {
+      "id": "b1-python-01",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.programming",
+      "skills": [
+        "py-variables.skill.input-expression"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай целое x (−100 ≤ x ≤ 100) и выведи x + 7.",
+      "answer": "Все тесты пройдены",
+      "hint": "Сначала получи исходное число, затем вычисли новое.",
+      "explanation": "Преобразуй input() в int. Можно сразу передать x + 7 в print().",
+      "solution": "x = int(input())\nprint(x + 7)",
+      "principle": "Сначала получи исходное число, затем вычисли новое.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Сначала получи исходное число, затем вычисли новое.",
+        "Преобразуй input() в int. Можно сразу передать x + 7 в print()."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "5",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "5",
+            "expectedOutput": "12"
+          },
+          {
+            "stdin": "-7",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "7"
+          },
+          {
+            "stdin": "-10",
+            "expectedOutput": "-3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-02",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "skills": [
+        "py-variables.skill.copy"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Что выведет код?\na = 4\nb = a\na = 10\nprint(b)",
+      "answer": "4",
+      "hint": "Присваивание b = a не создаёт постоянную связь между переменными.",
+      "explanation": "b получает число 4. Последующее изменение a не меняет b.",
+      "solution": "b получает число 4. Последующее изменение a не меняет b.",
+      "principle": "Присваивание b = a не создаёт постоянную связь между переменными.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-python-03",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.programming",
+      "skills": [
+        "py-types.skill.input-sum"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Даны два целых числа от −100 до 100, каждое на отдельной строке. Выведи их сумму.",
+      "answer": "Все тесты пройдены",
+      "hint": "Строки нужно превратить в числа до сложения.",
+      "explanation": "Без int операция + склеит строки. Прочитай обе строки с int(input()).",
+      "solution": "a = int(input())\nb = int(input())\nprint(a + b)",
+      "principle": "Строки нужно превратить в числа до сложения.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Строки нужно превратить в числа до сложения.",
+        "Без int операция + склеит строки. Прочитай обе строки с int(input())."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "2\n3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "2\n3",
+            "expectedOutput": "5"
+          },
+          {
+            "stdin": "-4\n4",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0\n0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "8\n-2",
+            "expectedOutput": "6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-04",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "skills": [
+        "py-types.skill.convert"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет print(\"8\" + \"2\")?",
+      "answer": "82",
+      "hint": "Оба операнда — строки.",
+      "explanation": "Операция + для строк выполняет конкатенацию, поэтому получается строка 82.",
+      "solution": "Операция + для строк выполняет конкатенацию, поэтому получается строка 82.",
+      "principle": "Оба операнда — строки.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "82",
+        "10",
+        "8 2",
+        "Ошибка"
+      ]
+    },
+    {
+      "id": "b1-python-05",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "skills": [
+        "py-if.skill.sign-program"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай целое n (−100 ≤ n ≤ 100). Выведи ровно positive, negative или zero в зависимости от знака числа.",
+      "answer": "Все тесты пройдены",
+      "hint": "Рассмотри положительное, отрицательное число и ноль отдельно.",
+      "explanation": "Используй if n > 0, elif n < 0 и else. Печатай только одну метку.",
+      "solution": "n = int(input())\nif n > 0:\n    print(\"positive\")\nelif n < 0:\n    print(\"negative\")\nelse:\n    print(\"zero\")",
+      "principle": "Рассмотри положительное, отрицательное число и ноль отдельно.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Рассмотри положительное, отрицательное число и ноль отдельно.",
+        "Используй if n > 0, elif n < 0 и else. Печатай только одну метку."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "3",
+            "expectedOutput": "positive"
+          },
+          {
+            "stdin": "-4",
+            "expectedOutput": "negative"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "zero"
+          },
+          {
+            "stdin": "100",
+            "expectedOutput": "positive"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-06",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "skills": [
+        "py-if.skill.threshold-program"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Допиши программу: считай целый возраст от 0 до 120. При возрасте не меньше 18 выведи adult, иначе minor.",
+      "answer": "Все тесты пройдены",
+      "hint": "Проверь, относится ли граница 18 к взрослым.",
+      "explanation": "В условии требуется >=, а не >.",
+      "solution": "age = int(input())\nif age >= 18:\n    print(\"adult\")\nelse:\n    print(\"minor\")",
+      "principle": "Проверь, относится ли граница 18 к взрослым.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Проверь, относится ли граница 18 к взрослым.",
+        "В условии требуется >=, а не >."
+      ],
+      "python": {
+        "type": "complete-code",
+        "starterCode": "age = int(input())\n# Добавь условие и вывод\n",
+        "stdin": "18",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "18",
+            "expectedOutput": "adult"
+          },
+          {
+            "stdin": "17",
+            "expectedOutput": "minor"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "minor"
+          },
+          {
+            "stdin": "120",
+            "expectedOutput": "adult"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-07",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "skills": [
+        "py-if.skill.parity-program"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай целое n (−100 ≤ n ≤ 100). Выведи even для чётного числа и odd для нечётного.",
+      "answer": "Все тесты пройдены",
+      "hint": "Чётность проверяется остатком от деления на 2.",
+      "explanation": "Если n % 2 равно 0, число чётное, в том числе при n = 0.",
+      "solution": "n = int(input())\nif n % 2 == 0:\n    print(\"even\")\nelse:\n    print(\"odd\")",
+      "principle": "Чётность проверяется остатком от деления на 2.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Чётность проверяется остатком от деления на 2.",
+        "Если n % 2 равно 0, число чётное, в том числе при n = 0."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "4",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "4",
+            "expectedOutput": "even"
+          },
+          {
+            "stdin": "3",
+            "expectedOutput": "odd"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "even"
+          },
+          {
+            "stdin": "-5",
+            "expectedOutput": "odd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-08",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "skills": [
+        "py-if.skill.fix-range"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Исправь программу. Она должна считывать целое n и выводить yes, если 1 ≤ n ≤ 10, иначе no. Вход: −100 ≤ n ≤ 100.",
+      "answer": "Все тесты пройдены",
+      "hint": "Для принадлежности отрезку обе границы должны выполняться одновременно.",
+      "explanation": "Вместо or используй and либо цепочку 1 <= n <= 10.",
+      "solution": "n = int(input())\nif 1 <= n <= 10:\n    print(\"yes\")\nelse:\n    print(\"no\")",
+      "principle": "Для принадлежности отрезку обе границы должны выполняться одновременно.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Для принадлежности отрезку обе границы должны выполняться одновременно.",
+        "Вместо or используй and либо цепочку 1 <= n <= 10."
+      ],
+      "python": {
+        "type": "fix-bug",
+        "starterCode": "n = int(input())\nif n >= 1 or n <= 10:\n    print(\"yes\")\nelse:\n    print(\"no\")\n",
+        "stdin": "1",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "1",
+            "expectedOutput": "yes"
+          },
+          {
+            "stdin": "10",
+            "expectedOutput": "yes"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "no"
+          },
+          {
+            "stdin": "11",
+            "expectedOutput": "no"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-09",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.programming",
+      "skills": [
+        "py-loops.skill.output-range"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай целое n (1 ≤ n ≤ 20). Выведи числа от 0 до n − 1: каждое на отдельной строке.",
+      "answer": "Все тесты пройдены",
+      "hint": "range(n) начинается с нуля.",
+      "explanation": "Цикл for i in range(n) перебирает ровно нужные значения; print внутри цикла создаёт строки.",
+      "solution": "n = int(input())\nfor i in range(n):\n    print(i)",
+      "principle": "range(n) начинается с нуля.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "range(n) начинается с нуля.",
+        "Цикл for i in range(n) перебирает ровно нужные значения; print внутри цикла создаёт строки."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "3",
+            "expectedOutput": "0\n1\n2"
+          },
+          {
+            "stdin": "1",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "2",
+            "expectedOutput": "0\n1"
+          },
+          {
+            "stdin": "4",
+            "expectedOutput": "0\n1\n2\n3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-10",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.programming",
+      "skills": [
+        "py-loops.skill.sum-range"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай целое n (0 ≤ n ≤ 100). Выведи сумму чисел от 1 до n включительно. При n = 0 сумма равна 0.",
+      "answer": "Все тесты пройдены",
+      "hint": "Начни накопитель с нуля и добавляй очередное число.",
+      "explanation": "В range(1, n + 1) правая граница не включается, поэтому n будет обработано.",
+      "solution": "n = int(input())\ntotal = 0\nfor i in range(1, n + 1):\n    total += i\nprint(total)",
+      "principle": "Начни накопитель с нуля и добавляй очередное число.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Начни накопитель с нуля и добавляй очередное число.",
+        "В range(1, n + 1) правая граница не включается, поэтому n будет обработано."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "4",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "4",
+            "expectedOutput": "10"
+          },
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "1",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "7",
+            "expectedOutput": "28"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-11",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.programming",
+      "skills": [
+        "py-loops.skill.fix-range-end"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Исправь программу, чтобы для целого n (0 ≤ n ≤ 100) она выводила сумму от 1 до n включительно.",
+      "answer": "Все тесты пройдены",
+      "hint": "Ошибка находится в правой границе range.",
+      "explanation": "range(1, n) пропускает n. Увеличь правую границу на 1.",
+      "solution": "n = int(input())\ns = 0\nfor i in range(1, n + 1):\n    s += i\nprint(s)",
+      "principle": "Ошибка находится в правой границе range.",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Ошибка находится в правой границе range.",
+        "range(1, n) пропускает n. Увеличь правую границу на 1."
+      ],
+      "python": {
+        "type": "fix-bug",
+        "starterCode": "n = int(input())\ns = 0\nfor i in range(1, n):\n    s += i\nprint(s)\n",
+        "stdin": "3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "3",
+            "expectedOutput": "6"
+          },
+          {
+            "stdin": "1",
+            "expectedOutput": "1"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "5",
+            "expectedOutput": "15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-12",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько строк выведет код?\nfor i in range(2, 9, 2):\n    print(i)",
+      "answer": "4",
+      "hint": "Правая граница 9 не включается.",
+      "explanation": "Будут обработаны 2, 4, 6 и 8 — четыре значения, значит четыре строки.",
+      "solution": "Будут обработаны 2, 4, 6 и 8 — четыре значения, значит четыре строки.",
+      "principle": "Правая граница 9 не включается.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-python-13",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.programming",
+      "skills": [
+        "py-strings.skill.input-length"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай одну строку (0–100 символов) и выведи число её символов. Пробелы тоже считаются символами.",
+      "answer": "Все тесты пройдены",
+      "hint": "Нужна длина исходной строки, а не число слов.",
+      "explanation": "len(s) считает в том числе пробелы. Не вызывай strip(), иначе потеряешь крайние пробелы.",
+      "solution": "s = input()\nprint(len(s))",
+      "principle": "Нужна длина исходной строки, а не число слов.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Нужна длина исходной строки, а не число слов.",
+        "len(s) считает в том числе пробелы. Не вызывай strip(), иначе потеряешь крайние пробелы."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "кот",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "кот",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "\n",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "a b",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": " x ",
+            "expectedOutput": "3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-14",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.programming",
+      "skills": [
+        "py-strings.skill.input-last"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай непустую строку (1–100 символов) и выведи её последний символ.",
+      "answer": "Все тесты пройдены",
+      "hint": "В Python отрицательный индекс отсчитывается от конца.",
+      "explanation": "У последнего символа индекс −1.",
+      "solution": "s = input()\nprint(s[-1])",
+      "principle": "В Python отрицательный индекс отсчитывается от конца.",
+      "version": 1,
+      "requires": [
+        "py-strings.skill.length"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "В Python отрицательный индекс отсчитывается от конца.",
+        "У последнего символа индекс −1."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "дом",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "дом",
+            "expectedOutput": "м"
+          },
+          {
+            "stdin": "x",
+            "expectedOutput": "x"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "abc",
+            "expectedOutput": "c"
+          },
+          {
+            "stdin": "a ",
+            "expectedOutput": " "
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-15",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.negative-index"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет print(\"алгоритм\"[-2])?",
+      "answer": "т",
+      "hint": "Последний символ имеет индекс −1.",
+      "explanation": "Последние символы слова — «тм». При индексе −2 выбирается «т».",
+      "solution": "Последние символы слова — «тм». При индексе −2 выбирается «т».",
+      "principle": "Последний символ имеет индекс −1.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "т",
+        "м",
+        "и",
+        "Ошибка"
+      ]
+    },
+    {
+      "id": "b1-python-16",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.programming",
+      "skills": [
+        "py-lists.skill.input-list-sum"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай строку с 1–20 целыми числами через пробел (от −100 до 100) и выведи их сумму.",
+      "answer": "Все тесты пройдены",
+      "hint": "Раздели строку и преобразуй все элементы в числа.",
+      "explanation": "Используй split() и int для элементов, затем sum(nums) или накопитель.",
+      "solution": "nums = [int(x) for x in input().split()]\nprint(sum(nums))",
+      "principle": "Раздели строку и преобразуй все элементы в числа.",
+      "version": 1,
+      "requires": [
+        "py-types",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Раздели строку и преобразуй все элементы в числа.",
+        "Используй split() и int для элементов, затем sum(nums) или накопитель."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "1 2 3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "1 2 3",
+            "expectedOutput": "6"
+          },
+          {
+            "stdin": "-5 5",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "7 -2 4",
+            "expectedOutput": "9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-17",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.programming",
+      "skills": [
+        "py-lists.skill.input-list-min"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай строку с 1–20 целыми числами через пробел (от −100 до 100) и выведи минимум.",
+      "answer": "Все тесты пройдены",
+      "hint": "Ноль не подходит как начальный минимум для всех случаев.",
+      "explanation": "Можно взять первый элемент как начальное значение или вызвать min(nums).",
+      "solution": "nums = [int(x) for x in input().split()]\nprint(min(nums))",
+      "principle": "Ноль не подходит как начальный минимум для всех случаев.",
+      "version": 1,
+      "requires": [
+        "py-types",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Ноль не подходит как начальный минимум для всех случаев.",
+        "Можно взять первый элемент как начальное значение или вызвать min(nums)."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "4 1 8",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "4 1 8",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "-3 -8 -1",
+            "expectedOutput": "-8"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "6",
+            "expectedOutput": "6"
+          },
+          {
+            "stdin": "0 -1 1",
+            "expectedOutput": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-18",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.programming",
+      "skills": [
+        "py-lists.skill.split-count"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Допиши программу: она считывает строку с 1–20 целыми числами и выводит количество чисел, а не длину строки.",
+      "answer": "Все тесты пройдены",
+      "hint": "Сначала преврати ввод в список элементов.",
+      "explanation": "split() без аргумента корректно обрабатывает несколько пробелов. len списка даёт число элементов.",
+      "solution": "nums = input().split()\nprint(len(nums))",
+      "principle": "Сначала преврати ввод в список элементов.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Сначала преврати ввод в список элементов.",
+        "split() без аргумента корректно обрабатывает несколько пробелов. len списка даёт число элементов."
+      ],
+      "python": {
+        "type": "complete-code",
+        "starterCode": "nums = input().split()\n# Выведи число элементов\n",
+        "stdin": "10 20 30",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "10 20 30",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "7",
+            "expectedOutput": "1"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "1  2",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "-1 0 1 2",
+            "expectedOutput": "4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-19",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.indices"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Что выведет код?\nitems = [2, 4, 6]\nitems[1] = 9\nprint(items[0] + items[1])",
+      "answer": "11",
+      "hint": "Индексы списка начинаются с нуля.",
+      "explanation": "После изменения items = [2, 9, 6]. Сумма первых двух элементов равна 11.",
+      "solution": "После изменения items = [2, 9, 6]. Сумма первых двух элементов равна 11.",
+      "principle": "Индексы списка начинаются с нуля.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b1-python-20",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.programming",
+      "skills": [
+        "py-dicts.skill.modify-key"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Допиши программу. Считай целый урон damage (0–100), уменьши player[\"hp\"] на damage и выведи остаток здоровья. Начальное здоровье — 100.",
+      "answer": "Все тесты пройдены",
+      "hint": "Значение словаря изменяется по ключу.",
+      "explanation": "Обращайся к player[\"hp\"]. Вычти урон и выведи значение этого ключа.",
+      "solution": "player = {\"hp\": 100}\ndamage = int(input())\nplayer[\"hp\"] -= damage\nprint(player[\"hp\"])",
+      "principle": "Значение словаря изменяется по ключу.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Значение словаря изменяется по ключу.",
+        "Обращайся к player[\"hp\"]. Вычти урон и выведи значение этого ключа."
+      ],
+      "python": {
+        "type": "complete-code",
+        "starterCode": "player = {\"hp\": 100}\ndamage = int(input())\n# Обнови здоровье и выведи его\n",
+        "stdin": "25",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "25",
+            "expectedOutput": "75"
+          },
+          {
+            "stdin": "0",
+            "expectedOutput": "100"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "100",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "1",
+            "expectedOutput": "99"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-21",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.programming",
+      "skills": [
+        "py-dicts.skill.lookup-default"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Дан словарь scores = {\"anna\": 7, \"boris\": 5}. Считай имя одной строкой и выведи его балл; если ключа нет, выведи 0.",
+      "answer": "Все тесты пройдены",
+      "hint": "Нужно предусмотреть отсутствие ключа.",
+      "explanation": "Метод scores.get(name, 0) возвращает 0 для неизвестного имени.",
+      "solution": "scores = {\"anna\": 7, \"boris\": 5}\nname = input()\nprint(scores.get(name, 0))",
+      "principle": "Нужно предусмотреть отсутствие ключа.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Нужно предусмотреть отсутствие ключа.",
+        "Метод scores.get(name, 0) возвращает 0 для неизвестного имени."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "anna",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "anna",
+            "expectedOutput": "7"
+          },
+          {
+            "stdin": "boris",
+            "expectedOutput": "5"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "olga",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "\n",
+            "expectedOutput": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-22",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.programming",
+      "skills": [
+        "py-dicts.skill.frequency"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Считай строку из 0–30 строчных латинских букв. Выведи количество букв a, используя или не используя словарь частот.",
+      "answer": "Все тесты пройдены",
+      "hint": "Буква a может отсутствовать.",
+      "explanation": "При подсчёте частот новое значение — прежний счётчик (или 0) плюс 1. Печатай counts.get(\"a\", 0).",
+      "solution": "s = input()\ncounts = {}\nfor ch in s:\n    counts[ch] = counts.get(ch, 0) + 1\nprint(counts.get(\"a\", 0))",
+      "principle": "Буква a может отсутствовать.",
+      "version": 1,
+      "requires": [
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Буква a может отсутствовать.",
+        "При подсчёте частот новое значение — прежний счётчик (или 0) плюс 1. Печатай counts.get(\"a\", 0)."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "# Напиши решение здесь\n",
+        "stdin": "banana",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "banana",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "bbb",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "\n",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "a",
+            "expectedOutput": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b1-python-23",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй функцию double(x), возвращающую удвоенное целое x (−100 ≤ x ≤ 100). Ввод и print не нужны.",
+      "answer": "Все тесты пройдены",
+      "hint": "Проверяется значение, которое возвращает функция.",
+      "explanation": "Используй return x * 2, а не только print(x * 2).",
+      "solution": "def double(x):\n    return x * 2",
+      "principle": "Проверяется значение, которое возвращает функция.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Проверяется значение, которое возвращает функция.",
+        "Используй return x * 2, а не только print(x * 2)."
+      ],
+      "python": {
+        "type": "write-function",
+        "starterCode": "def double(x):\n    # Верни результат\n    pass\n",
+        "stdin": "",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              2
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              -3
+            ],
+            "expectedReturn": -6
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              0
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              11
+            ],
+            "expectedReturn": 22
+          }
+        ],
+        "functionName": "double"
+      }
+    },
+    {
+      "id": "b1-python-24",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.fix-return"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Исправь функцию square(x), чтобы она возвращала квадрат целого x (−100 ≤ x ≤ 100).",
+      "answer": "Все тесты пройдены",
+      "hint": "Напечатанное значение и возвращаемое значение — разные вещи.",
+      "explanation": "Вместо print(x * x) нужен return x * x.",
+      "solution": "def square(x):\n    return x * x",
+      "principle": "Напечатанное значение и возвращаемое значение — разные вещи.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Напечатанное значение и возвращаемое значение — разные вещи.",
+        "Вместо print(x * x) нужен return x * x."
+      ],
+      "python": {
+        "type": "fix-bug",
+        "starterCode": "def square(x):\n    print(x * x)\n",
+        "stdin": "",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              6
+            ],
+            "expectedReturn": 36
+          },
+          {
+            "args": [
+              -3
+            ],
+            "expectedReturn": 9
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              0
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              1
+            ],
+            "expectedReturn": 1
+          }
+        ],
+        "functionName": "square"
+      }
+    },
+    {
+      "id": "b1-python-25",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.return-max"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальный учебный материал проекта · Stage 3B.1",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй функцию maximum(a, b), возвращающую большее из двух целых чисел от −100 до 100; при равенстве верни это число.",
+      "answer": "Все тесты пройдены",
+      "hint": "Функция должна работать при любом порядке аргументов.",
+      "explanation": "Сравни a и b и верни один из них через return. Разрешён и max(a, b).",
+      "solution": "def maximum(a, b):\n    if a >= b:\n        return a\n    return b",
+      "principle": "Функция должна работать при любом порядке аргументов.",
+      "version": 1,
+      "requires": [
+        "py-if"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Функция должна работать при любом порядке аргументов.",
+        "Сравни a и b и верни один из них через return. Разрешён и max(a, b)."
+      ],
+      "python": {
+        "type": "write-function",
+        "starterCode": "def maximum(a, b):\n    pass\n",
+        "stdin": "",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              2,
+              5
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              -3,
+              -8
+            ],
+            "expectedReturn": -3
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              4,
+              4
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              0,
+              9
+            ],
+            "expectedReturn": 9
+          }
+        ],
+        "functionName": "maximum"
+      }
+    }
+  ]
+}

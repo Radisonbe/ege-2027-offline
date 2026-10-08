@@ -170,6 +170,111 @@
       "id": "py-algorithms.sub.maximum",
       "topic": "py-algorithms",
       "title": "Поиск максимума"
+    },
+    {
+      "id": "arithmetic.sub.foundation",
+      "topic": "arithmetic",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "fractions.sub.foundation",
+      "topic": "fractions",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "powers.sub.foundation",
+      "topic": "powers",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "roots.sub.foundation",
+      "topic": "roots",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "linear.sub.foundation",
+      "topic": "linear",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "speech.sub.foundation",
+      "topic": "speech",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "spelling.sub.foundation",
+      "topic": "spelling",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "punctuation.sub.foundation",
+      "topic": "punctuation",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "text.sub.foundation",
+      "topic": "text",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "logic.sub.foundation",
+      "topic": "logic",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "information.sub.foundation",
+      "topic": "information",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "infpython.sub.foundation",
+      "topic": "infpython",
+      "title": "Базовые приёмы"
+    },
+    {
+      "id": "py-variables.sub.programming",
+      "topic": "py-variables",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "py-types.sub.programming",
+      "topic": "py-types",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "py-if.sub.programming",
+      "topic": "py-if",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "py-loops.sub.programming",
+      "topic": "py-loops",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "py-strings.sub.programming",
+      "topic": "py-strings",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "py-lists.sub.programming",
+      "topic": "py-lists",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "py-dicts.sub.programming",
+      "topic": "py-dicts",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "py-functions.sub.programming",
+      "topic": "py-functions",
+      "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "infpython.sub.programming",
+      "topic": "infpython",
+      "title": "Самостоятельное программирование"
     }
   ],
   "skills": [
@@ -717,6 +822,439 @@
       "title": "Выбрать начальное значение максимума",
       "requires": [],
       "related": [],
+      "remediates": []
+    },
+    {
+      "id": "arithmetic.skill.order",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.foundation",
+      "title": "Соблюдать порядок действий",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "fractions.skill.operations",
+      "topic": "fractions",
+      "subtopic": "fractions.sub.foundation",
+      "title": "Выполнять действия с дробями",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "powers.skill.rules",
+      "topic": "powers",
+      "subtopic": "powers.sub.foundation",
+      "title": "Применять правила степеней",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "roots.skill.principal",
+      "topic": "roots",
+      "subtopic": "roots.sub.foundation",
+      "title": "Вычислять арифметический квадратный корень",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "linear.skill.solve",
+      "topic": "linear",
+      "subtopic": "linear.sub.foundation",
+      "title": "Решать линейное уравнение",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "speech.skill.context",
+      "topic": "speech",
+      "subtopic": "speech.sub.foundation",
+      "title": "Определять часть речи в контексте",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "spelling.skill.checked-vowel",
+      "topic": "spelling",
+      "subtopic": "spelling.sub.foundation",
+      "title": "Проверять безударную гласную",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "punctuation.skill.simple",
+      "topic": "punctuation",
+      "subtopic": "punctuation.sub.foundation",
+      "title": "Ставить запятые при однородных членах",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "text.skill.link",
+      "topic": "text",
+      "subtopic": "text.sub.foundation",
+      "title": "Определять связь предложений",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "logic.skill.operations",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "title": "Вычислять логическое выражение",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "information.skill.units",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "title": "Переводить единицы объёма информации",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.program",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.foundation",
+      "title": "Реализовывать простой алгоритм на Python",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-variables.skill.input-expression",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.programming",
+      "title": "Считать целое и вычислить выражение",
+      "requires": [
+        "py-variables.skill.evaluate"
+      ],
+      "related": [
+        "py-variables.skill.evaluate"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-types.skill.input-sum",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.programming",
+      "title": "Преобразовать две входные строки и сложить числа",
+      "requires": [
+        "py-types.skill.convert"
+      ],
+      "related": [
+        "py-types.skill.convert"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.sign-program",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "title": "Запрограммировать классификацию по знаку",
+      "requires": [
+        "py-if.skill.branch"
+      ],
+      "related": [
+        "py-if.skill.branch"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.threshold-program",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "title": "Проверить включённый возрастной порог",
+      "requires": [
+        "py-if.skill.boundary"
+      ],
+      "related": [
+        "py-if.skill.boundary"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.parity-program",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "title": "Определить чётность целого",
+      "requires": [
+        "py-if.skill.branch"
+      ],
+      "related": [
+        "py-if.skill.branch"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.fix-range",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.programming",
+      "title": "Исправить условие принадлежности отрезку",
+      "requires": [
+        "py-if.skill.boundary"
+      ],
+      "related": [
+        "py-if.skill.boundary"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.output-range",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.programming",
+      "title": "Вывести последовательность чисел",
+      "requires": [
+        "py-loops.skill.range"
+      ],
+      "related": [
+        "py-loops.skill.range"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.sum-range",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.programming",
+      "title": "Накопить сумму заданного диапазона",
+      "requires": [
+        "py-loops.skill.accumulate"
+      ],
+      "related": [
+        "py-loops.skill.accumulate"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.fix-range-end",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.programming",
+      "title": "Исправить правую границу цикла",
+      "requires": [
+        "py-loops.skill.accumulate"
+      ],
+      "related": [
+        "py-loops.skill.accumulate"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.input-length",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.programming",
+      "title": "Измерить длину исходной строки",
+      "requires": [
+        "py-strings.skill.length"
+      ],
+      "related": [
+        "py-strings.skill.length"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.input-last",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.programming",
+      "title": "Прочитать последний символ ввода",
+      "requires": [
+        "py-strings.skill.negative-index"
+      ],
+      "related": [
+        "py-strings.skill.negative-index"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.input-list-sum",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.programming",
+      "title": "Вычислить сумму числового списка",
+      "requires": [
+        "py-lists.skill.indices"
+      ],
+      "related": [
+        "py-lists.skill.indices"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.input-list-min",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.programming",
+      "title": "Найти минимум, включая отрицательные числа",
+      "requires": [
+        "py-lists.skill.indices"
+      ],
+      "related": [
+        "py-lists.skill.indices"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.split-count",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.programming",
+      "title": "Посчитать элементы после разделения ввода",
+      "requires": [
+        "py-lists.skill.length"
+      ],
+      "related": [
+        "py-lists.skill.length"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-dicts.skill.modify-key",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.programming",
+      "title": "Изменить числовое значение по ключу",
+      "requires": [
+        "py-dicts.skill.update"
+      ],
+      "related": [
+        "py-dicts.skill.update"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-dicts.skill.lookup-default",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.programming",
+      "title": "Найти значение по входному ключу с запасным ответом",
+      "requires": [
+        "py-dicts.skill.default"
+      ],
+      "related": [
+        "py-dicts.skill.default"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-dicts.skill.frequency",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.programming",
+      "title": "Подсчитать частоту символа",
+      "requires": [
+        "py-dicts.skill.update"
+      ],
+      "related": [
+        "py-dicts.skill.update"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.write-return",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "title": "Реализовать функцию с возвращаемым значением",
+      "requires": [
+        "py-functions.skill.return"
+      ],
+      "related": [
+        "py-functions.skill.return"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.fix-return",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "title": "Исправить смешение print и return",
+      "requires": [
+        "py-functions.skill.return"
+      ],
+      "related": [
+        "py-functions.skill.return"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.return-max",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "title": "Вернуть максимум двух аргументов",
+      "requires": [
+        "py-functions.skill.evaluate"
+      ],
+      "related": [
+        "py-functions.skill.evaluate"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.square-input",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "title": "Считать целое и вычислить квадрат",
+      "requires": [
+        "infpython.skill.program"
+      ],
+      "related": [
+        "infpython.skill.program"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.sum-natural",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "title": "Вычислить сумму от 1 до n",
+      "requires": [
+        "infpython.skill.program"
+      ],
+      "related": [
+        "infpython.skill.program"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.maximum-input",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "title": "Найти максимум входного списка",
+      "requires": [
+        "infpython.skill.program"
+      ],
+      "related": [
+        "infpython.skill.program"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.count-even",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "title": "Посчитать чётные элементы",
+      "requires": [
+        "infpython.skill.program"
+      ],
+      "related": [
+        "infpython.skill.program"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.decode-binary",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.programming",
+      "title": "Реализовать перевод двоичного числа",
+      "requires": [
+        "infpython.skill.program"
+      ],
+      "related": [
+        "infpython.skill.program"
+      ],
       "remediates": []
     }
   ]

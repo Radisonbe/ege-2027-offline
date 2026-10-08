@@ -49,7 +49,12 @@ async function run(message) {
   const out=new TextDecoder(),err=new TextDecoder();
   python.setStdout({write:bytes=>write('stdout',out,bytes)});
   python.setStderr({write:bytes=>write('stderr',err,bytes)});
-  let lines=message.stdin===''?[]:message.stdin.replaceAll('\r\n','\n').split('\n'),index=0;
+  const text=message.stdin.replaceAll('\r\n','\n');
+  const lines=text===''?[]:text.split('\n');
+  // A final line terminator does not invent an extra empty input line.
+  // "\n" is one empty line; "a\n\n" is a followed by one empty line.
+  if(text.endsWith('\n'))lines.pop();
+  let index=0;
   python.setStdin({stdin:()=>index<lines.length?lines[index++]:null});
   const globals=python.runPython('dict(__name__="__main__")');
   const builtins=python.runPython('import builtins; dict(vars(builtins))');

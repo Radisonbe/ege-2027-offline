@@ -1,4 +1,4 @@
-import { useId, useRef, useState, type ReactNode } from 'react';
+import { lazy, Suspense, useId, useRef, useState, type ReactNode } from 'react';
 import { checkAnswer, normalizeText } from '../domain/answers';
 import { recordAttempt } from '../domain/progress';
 import { answerReview } from '../domain/adaptive';
@@ -6,12 +6,17 @@ import type { AttemptContext, Question } from '../domain/types';
 import { useStudy } from '../state/StudyProvider';
 import { Badge, Button, Icon, Panel, ProgressBar } from './ui';
 import { QuestionMetadata } from './QuestionMetadata';
+import {resumeCodeDraftIndex} from '../domain/code-learning';
+const CodeExercise=lazy(()=>import('./CodeExercise').then(m=>({default:m.CodeExercise})));
 
-export function AnswerBox({ question, context = 'test', onDone, customInput, customAnswer, customCorrect, adaptiveSessionId, initial }: {
+export function AnswerBox(props: {
   question: Question; context?: AttemptContext; onDone?: (correct: boolean) => void;
   customInput?: ReactNode; customAnswer?: string; customCorrect?: boolean;
   adaptiveSessionId?: string; initial?: { answer: string; result: boolean | null };
 }) {
+  return props.question.answerType==='code'?<Suspense fallback={<p role="status">Открываем редактор…</p>}><CodeExercise {...props}/></Suspense>:<TheoryAnswerBox {...props}/>;
+}
+function TheoryAnswerBox({question,context='test',onDone,customInput,customAnswer,customCorrect,adaptiveSessionId,initial}:Parameters<typeof AnswerBox>[0]) {
   const { mutate } = useStudy();
   const [answer, setAnswer] = useState(initial?.answer ?? ''), [result, setResult] = useState<boolean | null>(initial?.result ?? null), [formatError, setFormatError] = useState('');
   const [solution, setSolution] = useState(false), [hint, setHint] = useState(false), [hadAttempt, setHadAttempt] = useState(initial?.result !== undefined && initial.result !== null);
@@ -29,7 +34,8 @@ export function AnswerBox({ question, context = 'test', onDone, customInput, cus
   }
   return <div className="answer-box"><QuestionMetadata question={question}/><p className="question-prompt">{question.prompt}</p>
     {context === 'adaptive' && <><Button variant="ghost" onClick={() => setHint(!hint)}>{hint ? 'Скрыть подсказку' : 'Показать подсказку'}</Button>{hint && <p className="callout">{question.hint}</p>}</>}
-    {customInput ? <fieldset disabled={result !== null}>{customInput}</fieldset> : question.answerType === 'choice' ?
+    {customInput ? <fieldset disabled={result !== null}>{customInput}</fieldset> : question.answerType === 'multiple-choice' ?
+      <fieldset className="answer-options"><legend>Выбери все правильные варианты</legend>{question.options?.map((option,i)=><label className="answer-option" key={option} htmlFor={`${id}-${i}`}><input type="checkbox" id={`${id}-${i}`} checked={(answer?JSON.parse(answer) as string[]:[]).includes(option)} disabled={result!==null} onChange={e=>{const selected=answer?JSON.parse(answer) as string[]:[];setAnswer(JSON.stringify(e.target.checked?[...selected,option]:selected.filter(v=>v!==option)));setFormatError('');}}/><span>{option}</span></label>)}</fieldset> : question.answerType === 'choice' ?
       <div role="radiogroup" aria-label="Варианты ответа" className="answer-options">{question.options?.map((option, i) => <label className={`answer-option ${answer === option ? 'selected' : ''}`} key={option} htmlFor={`${id}-${i}`}><input type="radio" name={id} id={`${id}-${i}`} value={option} checked={answer === option} disabled={result !== null} onChange={() => { setAnswer(option); setFormatError(''); }}/><span>{option}</span></label>)}</div> :
       <form onSubmit={e => { e.preventDefault(); submit(); }}><label className="field-label" htmlFor={id}>Твой ответ</label><input id={id} data-slot="input" value={answer} disabled={result !== null} onChange={e => { setAnswer(e.target.value); setFormatError(''); }} placeholder={question.answerType === 'number' ? 'Например: 12,5 или 1/4' : 'Введи ответ'} autoComplete="off" maxLength={300} inputMode={question.answerType === 'number' ? 'decimal' : 'text'} aria-invalid={!!formatError} aria-describedby={formatError ? `${id}-format` : undefined}/></form>}
     {formatError && <p className="format-error" id={`${id}-format`} role="alert">{formatError}</p>}
@@ -40,8 +46,9 @@ export function AnswerBox({ question, context = 'test', onDone, customInput, cus
   </div>;
 }
 export function Quiz({ items, title = 'Проверим понимание', context = 'test', onFinish }: { items: Question[]; title?: string; context?: AttemptContext; onFinish?: () => void }) {
-  const [index, setIndex] = useState(0), [results, setResults] = useState<Record<number, boolean>>({}), [finished, setFinished] = useState(false);
+  const {state}=useStudy();
+  const [index, setIndex] = useState(()=>resumeCodeDraftIndex(state,items)), [results, setResults] = useState<Record<number, boolean>>({}), [finished, setFinished] = useState(false);
   if (!items.length) return <Panel><p>Задания этой темы ещё не добавлены.</p></Panel>;
   if (finished) return <Panel className="quiz-finish"><div className="empty-icon"><Icon name="check" size={28}/></div><h3>Мини-тест завершён</h3><p>Верных ответов: <b>{Object.values(results).filter(Boolean).length} из {items.length}</b>.</p><p className="muted">Ответ после новой попытки тоже учитывается. История всех попыток остаётся в прогрессе. Статус «Уверенно» выбери сам, когда сможешь объяснить способ.</p><Button variant="outline" onClick={() => { setIndex(0); setResults({}); setFinished(false); }}>Пройти ещё раз</Button></Panel>;
-  return <Panel className="quiz-panel"><div className="section-heading"><div><span className="eyebrow">МИНИ-ТЕСТ</span><h3>{title}</h3></div><Badge>{index + 1} / {items.length}</Badge></div><ProgressBar value={index / items.length * 100} label="Прогресс мини-теста"/><AnswerBox key={`${items[index].id}-${index}`} question={items[index]} context={context} onDone={correct => setResults(old => ({ ...old, [index]: correct }))}/>{Object.hasOwn(results, index) && <div className="quiz-next"><Button variant="secondary" onClick={() => { if (index === items.length - 1) { setFinished(true); onFinish?.(); } else setIndex(index + 1); }}>{index === items.length - 1 ? 'Завершить мини-тест' : results[index] ? 'Следующий вопрос' : 'Продолжить и вернуться позже'}<Icon name="arrow"/></Button></div>}</Panel>;
+  return <Panel className="quiz-panel"><div className="section-heading"><div><span className="eyebrow">МИНИ-ТЕСТ</span><h3>{title}</h3></div><Badge>{index + 1} / {items.length}</Badge></div>{state.codeDrafts?.[items[index].id]&&<div className="button-row"><p className="small muted">Открыт сохранённый черновик этого задания.</p>{index>0&&<Button variant="ghost" onClick={()=>setIndex(0)}>К первому заданию</Button>}</div>}<ProgressBar value={index / items.length * 100} label="Прогресс мини-теста"/><AnswerBox key={`${items[index].id}-${index}`} question={items[index]} context={context} onDone={correct => setResults(old => ({ ...old, [index]: correct }))}/>{Object.hasOwn(results, index) && <div className="quiz-next"><Button variant="secondary" onClick={() => { if (index === items.length - 1) { setFinished(true); onFinish?.(); } else setIndex(index + 1); }}>{index === items.length - 1 ? 'Завершить мини-тест' : results[index] ? 'Следующий вопрос' : 'Продолжить и вернуться позже'}<Icon name="arrow"/></Button></div>}</Panel>;
 }

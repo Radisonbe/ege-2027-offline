@@ -8,7 +8,7 @@ import { Badge, Button, Icon, Panel } from './ui';
 const number = (value: number) => Number.isFinite(value) ? Number(value.toFixed(3)).toLocaleString('ru-RU') : '—';
 function PythonReveal({ kind }: { kind: string }) {
   const [stage, setStage] = useState(0), content = bridges[kind];
-  return <Panel className="python-reveal"><Button variant="ghost" onClick={() => setStage(Math.max(1, stage))}>Как это можно решить Python?</Button>{stage >= 1 && <div><h4>1. Алгоритм словами</h4><p>{content.algorithm}</p>{stage === 1 && <Button variant="outline" onClick={() => setStage(2)}>Дальше: псевдокод</Button>}</div>}{stage >= 2 && <div><h4>2. Псевдокод</h4><pre>{content.pseudo}</pre>{stage === 2 && <Button variant="outline" onClick={() => setStage(3)}>Теперь показать Python</Button>}</div>}{stage >= 3 && <div><h4>3. Код</h4><pre>{content.code}</pre><p className="small muted">{content.note} Код можно перенести в VS Code. Выполнение Python в браузере не подключено.</p></div>}</Panel>;
+  return <Panel className="python-reveal"><Button variant="ghost" onClick={() => setStage(Math.max(1, stage))}>Как это можно решить Python?</Button>{stage >= 1 && <div><h4>1. Алгоритм словами</h4><p>{content.algorithm}</p>{stage === 1 && <Button variant="outline" onClick={() => setStage(2)}>Дальше: псевдокод</Button>}</div>}{stage >= 2 && <div><h4>2. Псевдокод</h4><pre>{content.pseudo}</pre>{stage === 2 && <Button variant="outline" onClick={() => setStage(3)}>Теперь показать Python</Button>}</div>}{stage >= 3 && <div><h4>3. Код</h4><pre>{content.code}</pre><p className="small muted">{content.note} Код можно попробовать в отдельной Python Playground. Программные задания содержат встроенный редактор.</p></div>}</Panel>;
 }
 function PercentLab() {
   const [amount, setAmount] = useState('800'), [percent, setPercent] = useState(25), [mode, setMode] = useState('part');
@@ -55,5 +55,5 @@ export function Practice({ topic }: { topic: string }) {
   if (topic === 'sentence') return <SentenceTrainer/>;
   if (topic === 'binary') return <BinaryTrainer/>;
   if (topic === 'encoding') return <EncodingTrainer/>;
-  return <Quiz items={topicQuestions(topic)} context="practice" title={topic === 'unionwords' ? 'Союз или союзное слово?' : 'Сначала предскажи результат'}/>;
+  return <Quiz items={topicQuestions(topic)} context="practice" title={topic === 'unionwords' ? 'Союз или союзное слово?' : 'Самостоятельная практика'}/>;
 }

@@ -102,7 +102,7 @@ export function selectReview(state: StudyState, bank: Question[], skills: Skill[
     &&[...q.requires,...(q.skills??[]).flatMap(id=>skillMap.get(id)?.requires??[])].every(id=>prerequisite(id)));
   const candidates=eligible.map(q=>({question:q,...questionPriority(q,state,bank,skills,now,index)}));
   const items:AdaptiveItem[]=[], appearances=new Map<string,number>(), topicCounts=new Map<string,number>(), skillCounts=new Map<string,number>(), subCounts=new Map<string,number>();
-  for(let index=0;index<size&&candidates.length;index++) {
+  for(let index=0;index<Math.min(size,candidates.length);index++) {
     const last=items.at(-1)?.question;
     const ranked=candidates.map(candidate=>{
       const q=candidate.question, qs=q.skills??[], reasons=[...candidate.reasons];
@@ -111,7 +111,7 @@ export function selectReview(state: StudyState, bank: Question[], skills: Skill[
       if(points)reasons.push({code:'diversity',points,label:'Разнообразие текущего занятия: тема, подтема, навык и повторы'});
       return {...candidate,score:candidate.score+points,reasons};
     }).sort((a,b)=>b.score-a.score||ordered(a.question.id,b.question.id));
-    // Exhaust every available ID once before repeating a small bank.
+    // New sessions use distinct IDs. Legacy sessions with repeated slots still load.
     const unused=ranked.filter(r=>!appearances.has(r.question.id));
     const chosen=unused[0]??ranked[0], q=chosen.question;
     items.push({question:q,score:chosen.score,reasons:chosen.reasons,firstCorrect:null,correct:null,attemptIds:[]});
@@ -121,7 +121,7 @@ export function selectReview(state: StudyState, bank: Question[], skills: Skill[
   return {items,available:eligible.length,repeated:items.length-new Set(items.map(i=>i.question.id)).size};
 }
 export function beginReview(state:StudyState, items:AdaptiveItem[], requested:ReviewSize, subject:SubjectId|'all',id:string,now=new Date()):StudyState {
-  if(items.length!==requested||state.adaptive.sessions.some(s=>s.id===id))throw new Error('Невозможно создать подборку');
+  if(!items.length||items.length>requested||new Set(items.map(i=>i.question.id)).size!==items.length||state.adaptive.sessions.some(s=>s.id===id))throw new Error('Невозможно создать подборку');
   const session:AdaptiveSession={id,requested,subject,startedAt:now.toISOString(),index:0,items};
   return {...state,adaptive:{...state.adaptive,sessions:[...state.adaptive.sessions,session]}};
 }
