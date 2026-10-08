@@ -19,7 +19,8 @@ export const questions: Question[] = reference.questions.map(entry => {
   const raw = entry as typeof entry & { options?: string[]; wrong?: Record<string, string>; easy?: boolean };
   return {
     id: raw.id, topic: raw.topic, subject: topicById[raw.topic].subject, subtopic: null,
-    difficulty: raw.easy ? 'easy' : 'unspecified', origin: 'custom',
+    // Owner's 2026-10-08 provenance declaration is recorded in SOURCES.md.
+    difficulty: raw.easy ? 'easy' : 'unspecified', origin: 'generated',
     source: reference.metadata.url, sourceYear: null, sourceType: 'training', examTaskType: null,
     answerType: raw.kind as Question['answerType'], prompt: raw.prompt, answer: raw.answer,
     options: raw.options, hint: raw.hint, explanation: raw.solution, solution: raw.solution,

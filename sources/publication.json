@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-08",
+  "entries": [
+    {
+      "id": "reference-learning",
+      "clearance": "project-generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "license": null,
+      "evidence": "Owner declaration in the current chat on 2026-10-08; reproduced in SOURCES.md. Original generation conversations were not supplied. Supporting owner-provided development/copyright summary SHA256 FA9918A5CEE05537D06EF1FF96FAD1996A06475FDC71199174F5988B6739486F; summary concerns later revision, not an exact snapshot of this bank.",
+      "files": [
+        {
+          "path": "src/data/reference.json",
+          "normalization": "lf",
+          "sha256": "03fe770355d128badd2dab3b7d944809415322d845827d4438e68c0ff61990b5"
+        }
+      ]
+    },
+    {
+      "id": "reference-style",
+      "clearance": "project-generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "license": null,
+      "evidence": "Same owner declaration covers the reference site. This CSS was transferred, not independently rewritten; no third-party stylesheet or font binary is embedded. Supporting owner-provided development/copyright summary SHA256 FA9918A5CEE05537D06EF1FF96FAD1996A06475FDC71199174F5988B6739486F; summary concerns later revision, not an exact snapshot of this bank.",
+      "files": [
+        {
+          "path": "src/styles/reference.css",
+          "normalization": "lf",
+          "sha256": "50b7d51acf5cd3e20ba6ec4b40211f21f82f54249bb70b464a2cd8c1560432a0"
+        }
+      ]
+    },
+    {
+      "id": "interactive-learning",
+      "clearance": "project-generated",
+      "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
+      "license": null,
+      "evidence": "Code written for this project; instructional examples recreate the owner-declared generated reference. No new external bank was imported.",
+      "files": [
+        {
+          "path": "src/components/Practices.tsx",
+          "normalization": "lf",
+          "sha256": "c821564ef46d95af3315ab4dd76280bbc45a6e2d7fd4bb05a5c956bce8b9d0c4"
+        },
+        {
+          "path": "src/components/GraphLab.tsx",
+          "normalization": "lf",
+          "sha256": "1bcca94e1a4982e92dbd3cfb0ae753b927dc443e179fc2c3af3f00785eb43e02"
+        },
+        {
+          "path": "src/data/catalog.ts",
+          "normalization": "lf",
+          "sha256": "760fdcaec66f36c1303c67ff3d70002ac857603d4b32376b34325aa94eb853d8"
+        }
+      ]
+    },
+    {
+      "id": "project-icons",
+      "clearance": "project-authored",
+      "source": null,
+      "license": null,
+      "evidence": "Inline SVG paths written in src/components/ui.tsx; icon.svg drawn for this project. PNG derivatives generated locally from it (work/generate-pwa-icons.mjs). No image/icon library or copied photos.",
+      "files": [
+        {
+          "path": "src/components/ui.tsx",
+          "normalization": "lf",
+          "sha256": "a6b3ce211bfa03989e5fda4bc3c90e36465d8ebe1f6581966e1cefa7b2e083d5"
+        },
+        {
+          "path": "public/icon.svg",
+          "normalization": "lf",
+          "sha256": "5d8cce0e0339e9bcdc912eed722d42a2716a7afb6ee4b2535af9aa571113707e"
+        },
+        {
+          "path": "public/icons/icon-192.png",
+          "normalization": "binary",
+          "sha256": "994a1539683a065be7b00223f0fd934b81e5b72d6dea80bde7da494ef1d956fc"
+        },
+        {
+          "path": "public/icons/icon-512.png",
+          "normalization": "binary",
+          "sha256": "5cf0556e106215987c76a1da037c6807826cec6c400cc72c1acf28f0ec15b930"
+        },
+        {
+          "path": "public/icons/maskable-512.png",
+          "normalization": "binary",
+          "sha256": "e70109ae685b4df2b860b126b9e682232e502dd68f0d7cdf677cca02f1b46714"
+        }
+      ]
+    },
+    {
+      "id": "runtime-notices",
+      "clearance": "licensed",
+      "source": "https://github.com/react/react/blob/main/LICENSE",
+      "license": "MIT",
+      "evidence": "Full MIT notices from installed React/React DOM/Scheduler LICENSE and Vite core LICENSE.md. Versions: 19.3.0, 19.3.0, 0.28.0, 8.3.3. Vite contributes the generated modulepreload helper.",
+      "files": [
+        {
+          "path": "public/THIRD_PARTY_NOTICES.txt",
+          "normalization": "lf",
+          "sha256": "ad16434304d53cbc937fdd8679f830975b642838e96bf49d46efcdd39f6b88a3"
+        }
+      ]
+    },
+    {
+      "id": "pwa-manifest",
+      "clearance": "project-authored",
+      "source": null,
+      "license": null,
+      "evidence": "Standard manifest written for this application, no external assets.",
+      "files": [
+        {
+          "path": "public/manifest.webmanifest",
+          "normalization": "lf",
+          "sha256": "50e38c562653e38248db37b1d65c00c9c5f2dec011143db2d119eef5e2c90a4f"
+        }
+      ]
+    }
+  ]
+}

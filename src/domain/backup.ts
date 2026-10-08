@@ -1,4 +1,4 @@
-import type { StudyState } from './types';
+import type { Question, StudyState } from './types';
 
 export const MAX_BACKUP_BYTES = 20 * 1024 * 1024;
 export interface ProgressBackup { format: 'ege-progress-backup'; backupVersion: 1; appVersion: string; createdAt: string; data: StudyState }
@@ -42,7 +42,7 @@ function unique(items: unknown[], path: string) {
   const ids = items.map(item => (item as ObjectValue).id);
   if (new Set(ids).size !== ids.length) fail(path + '.id');
 }
-function question(value: unknown, path: string) {
+export function validateQuestion(value: unknown, path = 'question'): Question {
   const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy']);
   for (const key of ['id', 'topic']) string(q[key], path + '.' + key, true);
   for (const key of ['source', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle']) string(q[key], path + '.' + key);
@@ -58,6 +58,7 @@ function question(value: unknown, path: string) {
   if (q.options !== undefined) strings(q.options, path + '.options');
   if (q.easy !== undefined) choice(q.easy, path + '.easy', [true, false]);
   if (q.wrongAnswers !== undefined) for (const [key, message] of Object.entries(dictionary(q.wrongAnswers, path + '.wrongAnswers'))) string(message, path + '.wrongAnswers.' + key);
+  return value as Question;
 }
 
 export function validateStudyState(value: unknown): StudyState {
@@ -88,7 +89,7 @@ export function validateStudyState(value: unknown): StudyState {
     for (const key of ['questionId', 'attemptId']) if (e[key] !== undefined) string(e[key], path + '.' + key, true);
     date(e.date, path + '.date'); date(e.due, path + '.due'); integer(e.stage, path + '.stage', 0, 4);
     choice(e.status, path + '.status', ['не понял', 'понял', 'закрепил']);
-    if (e.question !== undefined) question(e.question, path + '.question');
+    if (e.question !== undefined) validateQuestion(e.question, path + '.question');
     if (e.attemptId !== undefined) {
       const attempt = attemptById.get(e.attemptId);
       if (!attempt || attempt.correct !== false || attempt.topic !== e.topic || (e.questionId !== undefined && attempt.questionId !== e.questionId)) fail(path + '.attemptId');

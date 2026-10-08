@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
+    "audit:public": "node scripts/check-public-content.mjs",
+    "build:public": "node scripts/check-public-content.mjs && tsc --noEmit && vite build --emptyOutDir false",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test work/tests/*.test.mjs"
   },

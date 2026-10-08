@@ -38,3 +38,15 @@ work/tests/*
 
 # Generated reports, screenshots, and local path inventories
 outputs/
+
+# Personal content and progress: local-only, never repository/build inputs
+**/private-packages/
+**/personal-materials/
+**/local-data/
+**/user-data/
+**/imports/
+**/backups/
+*.private-package.json
+*.private-progress.json
+ege-progress-*.json
+ege-backup-*.json
