@@ -9,15 +9,15 @@ export function addDays(days: number, date = localDate()): string {
 }
 export function formatDate(date?: string): string { return date ? new Date(date + 'T12:00:00').toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' }) : '—'; }
 export function emptyState(contentVersion: string): StudyState {
-  return { app: 'ege-local-center', schemaVersion: 1, contentVersion, topics: {}, attempts: [], errors: [], reviews: {}, activity: [], settings: { theme: 'light' }, updatedAt: new Date().toISOString() };
+  return { app: 'ege-local-center', schemaVersion: 2, contentVersion, topics: {}, attempts: [], errors: [], reviews: {}, activity: [], adaptive: { sessions: [], exposures: [] }, settings: { theme: 'light' }, updatedAt: new Date().toISOString() };
 }
 export function topicProgress(state: StudyState, topic: string): TopicProgress {
   return state.topics[topic] ?? { topic, status: 'Не изучено', note: '' };
 }
-export function recordAttempt(state: StudyState, question: Question, answer: string, correct: boolean, context: AttemptContext, id: string, now = new Date()): StudyState {
+export function recordAttempt(state: StudyState, question: Question, answer: string, correct: boolean, context: AttemptContext, id: string, now = new Date(), sessionId?: string): StudyState {
   const date = localDate(now), progress = topicProgress(state, question.topic), reviewKey = `topic:${question.topic}`;
   const next = { ...state, topics: { ...state.topics, [question.topic]: { ...progress, status: correct ? (progress.status === 'Не изучено' ? 'Изучаю' : progress.status) : 'Нужна практика' as TopicStatus, last: date } },
-    attempts: [...state.attempts, { id, questionId: question.id, questionVersion: question.version, topic: question.topic, answer, correct, context, date, at: now.toISOString() }],
+    attempts: [...state.attempts, { id, questionId: question.id, questionVersion: question.version, topic: question.topic, answer, correct, context, date, at: now.toISOString(), ...(question.subject ? { subject: question.subject, subtopic: question.subtopic, skills: question.skills ?? [] } : {}), ...(sessionId ? { sessionId } : {}) }],
     reviews: { ...state.reviews }, errors: [...state.errors],
     activity: [...state.activity, { id, topic: question.topic, date, kind: 'answer' as const }],
     settings: { ...state.settings, lastTopic: question.topic }, updatedAt: now.toISOString() };

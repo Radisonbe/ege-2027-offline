@@ -6,10 +6,11 @@ import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
 import { createWorker, digest } from '../../scripts/pwa-plugin.mjs';
 const { chromium } = createRequire(pathToFileURL(path.join(process.argv[2], '_runtime.js')))('playwright');
-const inventory = JSON.parse(fs.readFileSync('dist/offline-inventory.json','utf8'));
+const buildDirectory = process.argv[3] ?? "dist";
+const inventory = JSON.parse(fs.readFileSync(path.join(buildDirectory,'offline-inventory.json'),'utf8'));
 const template = fs.readFileSync('scripts/sw-template.js','utf8');
 function release(name) {
-  const resources = new Map(inventory.files.map(file => [file.path,fs.readFileSync(path.join('dist',file.path))]));
+  const resources = new Map(inventory.files.map(file => [file.path,fs.readFileSync(path.join(buildDirectory,file.path))]));
   const buildId=digest(name).slice(0,20);
   resources.set('index.html',Buffer.from(resources.get('index.html').toString().replace(/(<meta name="ege-build" content=")[^"]+/, '$1' + buildId).replace('</head>',`<meta name="test-release" content="${name}"></head>`)));
   const worker=createWorker([...resources].map(([path,bytes])=>({path,sha256:digest(bytes)})),template,buildId);
@@ -61,5 +62,5 @@ try {
   assert.equal(response.fromServiceWorker(),true);assert.equal(await page.locator('meta[name=test-release]').getAttribute('content'),'B');assert.deepEqual(await state(page),before);
   const cacheKeys=await page.evaluate(()=>caches.keys());assert.equal(cacheKeys.filter(k=>k.startsWith('ege-offline:')).length,1);
   results.push('Updated release boots offline under a subdirectory; only its resource cache remains');
-  fs.writeFileSync('outputs/STAGE-2-UPDATE-CHECKS.json',JSON.stringify({passed:results,profile},null,2));results.forEach(name=>console.log('PASS '+name));
+  fs.writeFileSync('outputs/STAGE3A-REGRESSION-UPDATE-CHECKS.json',JSON.stringify({passed:results,profile},null,2));results.forEach(name=>console.log('PASS '+name));
 } finally {if(context)await context.close();await new Promise(resolve=>server.close(resolve));}

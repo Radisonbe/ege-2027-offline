@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { assertBuildInput, assertNoPrivateInputs } from './content-policy.mjs';
+import { checkContentBank } from './content-bank.mjs';
 
 export const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 export function createWorker(files, template, buildId = '') {
@@ -17,7 +18,7 @@ export function offlinePwa() {
     name: 'ege-complete-offline-kit',
     apply: 'build', enforce: 'post',
     configResolved(value) { config = value; },
-    buildStart() { assertNoPrivateInputs(config.root); },
+    buildStart() { assertNoPrivateInputs(config.root); checkContentBank(config.root); },
     load(id) { assertBuildInput(id); return null; },
     generateBundle(_options, bundle) {
       const files = new Map();

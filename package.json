@@ -1,15 +1,16 @@
 {
   "name": "ege-personal-center-local",
   "private": true,
-  "version": "0.2.1",
+  "version": "0.3.0-dev",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc --noEmit && vite build",
+    "build": "node scripts/check-content-bank.mjs && tsc --noEmit && vite build --emptyOutDir false",
     "audit:public": "node scripts/check-public-content.mjs",
-    "build:public": "node scripts/check-public-content.mjs && tsc --noEmit && vite build --emptyOutDir false",
+    "build:public": "node scripts/check-content-bank.mjs && node scripts/check-public-content.mjs && tsc --noEmit && vite build --emptyOutDir false",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test work/tests/*.test.mjs"
+    "test": "node --test work/tests/*.test.mjs",
+    "check:content": "node scripts/check-content-bank.mjs"
   },
   "dependencies": {
     "react": "19.3.0",

@@ -50,6 +50,9 @@ jobs:
       - name: Check content provenance and exclude personal data
         run: pnpm run audit:public
 
+      - name: Validate built-in question bank
+        run: pnpm run check:content
+
       - name: Build production PWA
         run: pnpm exec vite build --emptyOutDir false
 

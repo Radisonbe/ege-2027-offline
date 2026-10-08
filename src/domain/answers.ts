@@ -1,4 +1,4 @@
-import type { Question } from './types';
+import type { Question } from './types.ts';
 
 export type AnswerResult = { valid: false; message: string } | { valid: true; correct: boolean; normalized: string };
 export function normalizeText(value: string): string {

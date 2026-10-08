@@ -1,4 +1,6 @@
-import reference from './reference.json';
+import { topics as referenceTopics, theories as referenceTheories, sentences as referenceSentences, bridges as referenceBridges } from './reference.json';
+import taxonomyData from './taxonomy.json';
+import { contentFingerprint, loadContentPackages, validateTaxonomy } from '../domain/content';
 import type { ContentNode, PythonBridge, Question, Sentence, Subject, SubjectId, Topic } from '../domain/types';
 
 export const subjects: Subject[] = [
@@ -7,7 +9,7 @@ export const subjects: Subject[] = [
   { id: 'informatics', title: 'Информатика', short: 'Информатика', description: 'Логика, информация и алгоритмы', symbol: '01', tone: 'blue' },
   { id: 'python', title: 'Python', short: 'Python', description: 'Думать по шагам. Писать самому', symbol: '</>', tone: 'amber' },
 ];
-export const topics: Topic[] = reference.topics.map((entry, index, all) => ({
+export const topics: Topic[] = referenceTopics.map((entry, index, all) => ({
   id: entry.id, title: entry.title, subject: entry.subject as SubjectId,
   description: entry.description ?? (entry.live ? 'Объяснение, пример и проверка' : 'В плане · теория ещё не добавлена'),
   order: all.slice(0, index).filter(t => t.subject === entry.subject).length + 1,
@@ -15,24 +17,25 @@ export const topics: Topic[] = reference.topics.map((entry, index, all) => ({
   subtopics: [], requires: [], related: [],
 }));
 export const topicById = Object.fromEntries(topics.map(t => [t.id, t]));
-export const questions: Question[] = reference.questions.map(entry => {
-  const raw = entry as typeof entry & { options?: string[]; wrong?: Record<string, string>; easy?: boolean };
-  return {
-    id: raw.id, topic: raw.topic, subject: topicById[raw.topic].subject, subtopic: null,
-    // Owner's 2026-10-08 provenance declaration is recorded in SOURCES.md.
-    difficulty: raw.easy ? 'easy' : 'unspecified', origin: 'generated',
-    source: reference.metadata.url, sourceYear: null, sourceType: 'training', examTaskType: null,
-    answerType: raw.kind as Question['answerType'], prompt: raw.prompt, answer: raw.answer,
-    options: raw.options, hint: raw.hint, explanation: raw.solution, solution: raw.solution,
-    principle: raw.principle, wrongAnswers: raw.wrong, easy: raw.easy, version: 1,
-    requires: [], related: [],
-  };
-});
+const taxonomyResult = (() => {
+  try { return { taxonomy: validateTaxonomy(taxonomyData, topics), diagnostics: [] as string[] }; }
+  catch (error) { return { taxonomy: { schemaVersion: 1 as const, subtopics: [], skills: [] }, diagnostics: [error instanceof Error ? error.message : 'Ошибка структуры тем'] }; }
+})();
+export const taxonomy = taxonomyResult.taxonomy;
+export const skills = taxonomy.skills, subtopics = taxonomy.subtopics;
+export const skillById = Object.fromEntries(skills.map(s => [s.id,s]));
+export const subtopicById = Object.fromEntries(subtopics.map(s => [s.id,s]));
+for (const topic of topics) topic.subtopics = subtopics.filter(s => s.topic === topic.id).map(s => s.id);
+// Eager glob includes every validated bundled package before the first offline launch.
+const packageFiles = import.meta.glob('./banks/*.json', { eager: true, import: 'default' });
+const bank = loadContentPackages(Object.keys(packageFiles).sort().map(key => packageFiles[key]), topics, taxonomy);
+export const questions: Question[] = bank.questions;
+export const contentDiagnostics = [...taxonomyResult.diagnostics, ...bank.diagnostics];
 export const questionById = Object.fromEntries(questions.map(q => [q.id, q]));
-export const theories = reference.theories as unknown as Record<string, ContentNode>;
-export const sentences = reference.sentences as Sentence[];
-export const bridges = reference.bridges as Record<string, PythonBridge>;
-export const contentVersion = reference.metadata.sha256.slice(0, 12);
+export const theories = referenceTheories as unknown as Record<string, ContentNode>;
+export const sentences = referenceSentences as Sentence[];
+export const bridges = referenceBridges as Record<string, PythonBridge>;
+export const contentVersion = contentFingerprint(questions, taxonomy);
 export const statuses = ['Не изучено', 'Изучаю', 'Нужна практика', 'Уверенно', 'Повторить'] as const;
 export const intervals = [1, 3, 7, 14, 30] as const;
 export const topicQuestions = (id: string) => questions.filter(q => q.topic === id && !q.easy);

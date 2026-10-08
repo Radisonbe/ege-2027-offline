@@ -1,0 +1,723 @@
+{
+  "schemaVersion": 1,
+  "subtopics": [
+    {
+      "id": "functions.sub.values",
+      "topic": "functions",
+      "title": "Значение функции"
+    },
+    {
+      "id": "functions.sub.linear",
+      "topic": "functions",
+      "title": "Линейная функция"
+    },
+    {
+      "id": "functions.sub.domain",
+      "topic": "functions",
+      "title": "Область определения"
+    },
+    {
+      "id": "functions.sub.quadratic",
+      "topic": "functions",
+      "title": "Квадратичная функция"
+    },
+    {
+      "id": "percent.sub.direct",
+      "topic": "percent",
+      "title": "Прямые проценты"
+    },
+    {
+      "id": "percent.sub.inverse",
+      "topic": "percent",
+      "title": "Обратные проценты"
+    },
+    {
+      "id": "percent.sub.change",
+      "topic": "percent",
+      "title": "Изменение величины"
+    },
+    {
+      "id": "sentence.sub.basis",
+      "topic": "sentence",
+      "title": "Грамматическая основа"
+    },
+    {
+      "id": "sentence.sub.link",
+      "topic": "sentence",
+      "title": "Связь частей"
+    },
+    {
+      "id": "sentence.sub.parts",
+      "topic": "sentence",
+      "title": "Части предложения"
+    },
+    {
+      "id": "unionwords.sub.distinction",
+      "topic": "unionwords",
+      "title": "Союз и союзное слово"
+    },
+    {
+      "id": "unionwords.sub.relative",
+      "topic": "unionwords",
+      "title": "Относительные слова"
+    },
+    {
+      "id": "unionwords.sub.conjunction",
+      "topic": "unionwords",
+      "title": "Союзы"
+    },
+    {
+      "id": "binary.sub.conversion",
+      "topic": "binary",
+      "title": "Перевод записи"
+    },
+    {
+      "id": "binary.sub.place",
+      "topic": "binary",
+      "title": "Разрядные веса"
+    },
+    {
+      "id": "binary.sub.hex",
+      "topic": "binary",
+      "title": "Шестнадцатеричная запись"
+    },
+    {
+      "id": "encoding.sub.alphabet",
+      "topic": "encoding",
+      "title": "Алфавит и разрядность"
+    },
+    {
+      "id": "encoding.sub.volume",
+      "topic": "encoding",
+      "title": "Объём сообщения"
+    },
+    {
+      "id": "arithmetic.sub.multiplication",
+      "topic": "arithmetic",
+      "title": "Умножение"
+    },
+    {
+      "id": "powers.sub.integer",
+      "topic": "powers",
+      "title": "Целые степени"
+    },
+    {
+      "id": "speech.sub.verb",
+      "topic": "speech",
+      "title": "Глагол"
+    },
+    {
+      "id": "py-variables.sub.assign",
+      "topic": "py-variables",
+      "title": "Присваивание"
+    },
+    {
+      "id": "py-types.sub.types",
+      "topic": "py-types",
+      "title": "Типы и преобразования"
+    },
+    {
+      "id": "py-if.sub.condition",
+      "topic": "py-if",
+      "title": "Проверка условия"
+    },
+    {
+      "id": "py-loops.sub.iteration",
+      "topic": "py-loops",
+      "title": "Перебор"
+    },
+    {
+      "id": "py-strings.sub.index",
+      "topic": "py-strings",
+      "title": "Длина и индексы"
+    },
+    {
+      "id": "py-lists.sub.elements",
+      "topic": "py-lists",
+      "title": "Элементы списка"
+    },
+    {
+      "id": "py-sets.sub.membership",
+      "topic": "py-sets",
+      "title": "Уникальность и принадлежность"
+    },
+    {
+      "id": "py-tuples.sub.tuple",
+      "topic": "py-tuples",
+      "title": "Запись и элементы кортежа"
+    },
+    {
+      "id": "py-dicts.sub.mapping",
+      "topic": "py-dicts",
+      "title": "Ключи и значения"
+    },
+    {
+      "id": "py-functions.sub.return",
+      "topic": "py-functions",
+      "title": "Возвращаемое значение"
+    },
+    {
+      "id": "py-files.sub.mode",
+      "topic": "py-files",
+      "title": "Режим открытия файла"
+    },
+    {
+      "id": "py-csv.sub.value",
+      "topic": "py-csv",
+      "title": "Данные CSV"
+    },
+    {
+      "id": "py-algorithms.sub.maximum",
+      "topic": "py-algorithms",
+      "title": "Поиск максимума"
+    }
+  ],
+  "skills": [
+    {
+      "id": "functions.skill.evaluate",
+      "topic": "functions",
+      "subtopic": "functions.sub.values",
+      "title": "Подставить аргумент в правило",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.zero",
+      "topic": "functions",
+      "subtopic": "functions.sub.linear",
+      "title": "Найти нуль линейной функции",
+      "requires": [
+        "functions.skill.evaluate"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.sqrt-domain",
+      "topic": "functions",
+      "subtopic": "functions.sub.domain",
+      "title": "Определить область квадратного корня",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.vertex",
+      "topic": "functions",
+      "subtopic": "functions.sub.quadratic",
+      "title": "Найти абсциссу минимума",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.monotonic",
+      "topic": "functions",
+      "subtopic": "functions.sub.quadratic",
+      "title": "Определить промежуток убывания",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.inverse-value",
+      "topic": "functions",
+      "subtopic": "functions.sub.values",
+      "title": "Вычислить обратную пропорциональность",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.positive",
+      "topic": "functions",
+      "subtopic": "functions.sub.linear",
+      "title": "Определить знак линейной функции",
+      "requires": [
+        "functions.skill.zero"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "percent.skill.find-part",
+      "topic": "percent",
+      "subtopic": "percent.sub.direct",
+      "title": "Найти процент от числа",
+      "requires": [],
+      "related": [],
+      "remediates": [
+        "percent.skill.find-whole",
+        "percent.skill.original-price"
+      ]
+    },
+    {
+      "id": "percent.skill.find-whole",
+      "topic": "percent",
+      "subtopic": "percent.sub.inverse",
+      "title": "Найти целое по доле",
+      "requires": [
+        "percent.skill.find-part"
+      ],
+      "related": [
+        "percent.skill.original-price"
+      ],
+      "remediates": []
+    },
+    {
+      "id": "percent.skill.increase",
+      "topic": "percent",
+      "subtopic": "percent.sub.change",
+      "title": "Найти число после увеличения",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "percent.skill.decrease",
+      "topic": "percent",
+      "subtopic": "percent.sub.change",
+      "title": "Найти число после уменьшения",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "percent.skill.chain",
+      "topic": "percent",
+      "subtopic": "percent.sub.change",
+      "title": "Применить два изменения с разной базой",
+      "requires": [
+        "percent.skill.increase",
+        "percent.skill.decrease"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "percent.skill.original-price",
+      "topic": "percent",
+      "subtopic": "percent.sub.inverse",
+      "title": "Восстановить цену до скидки",
+      "requires": [
+        "percent.skill.find-whole"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "percent.skill.compound",
+      "topic": "percent",
+      "subtopic": "percent.sub.change",
+      "title": "Рассчитать повторное начисление процентов",
+      "requires": [
+        "percent.skill.increase"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "sentence.skill.main",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.basis",
+      "title": "Найти основу главной части",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "sentence.skill.relative-subject",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.link",
+      "title": "Определить роль союзного слова",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "sentence.skill.subordinate",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.basis",
+      "title": "Найти основу придаточной части",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "sentence.skill.separate",
+      "topic": "sentence",
+      "subtopic": "sentence.sub.parts",
+      "title": "Отличить главную часть от придаточной",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "unionwords.skill.that",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.distinction",
+      "title": "Различить роли слова «что»",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "unionwords.skill.where",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.relative",
+      "title": "Определить роль слова «где»",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "unionwords.skill.compound",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.conjunction",
+      "title": "Распознать составной союз",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "unionwords.skill.pronoun",
+      "topic": "unionwords",
+      "subtopic": "unionwords.sub.relative",
+      "title": "Распознать относительное местоимение",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "binary.skill.to-decimal",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "title": "Перевести двоичную запись в десятичную",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "binary.skill.from-decimal",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "title": "Записать число в двоичной системе",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "binary.skill.weight",
+      "topic": "binary",
+      "subtopic": "binary.sub.place",
+      "title": "Определить вес разряда",
+      "requires": [],
+      "related": [],
+      "remediates": [
+        "binary.skill.to-decimal"
+      ]
+    },
+    {
+      "id": "binary.skill.hex-to-decimal",
+      "topic": "binary",
+      "subtopic": "binary.sub.hex",
+      "title": "Перевести шестнадцатеричное число",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "encoding.skill.minimum-bits",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.alphabet",
+      "title": "Подобрать минимальное число бит",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "encoding.skill.bytes",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.volume",
+      "title": "Перевести объём из бит в байты",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "encoding.skill.capacity",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.alphabet",
+      "title": "Найти число комбинаций",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "arithmetic.skill.multiply",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.multiplication",
+      "title": "Воспроизвести произведение",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "powers.skill.power-two",
+      "topic": "powers",
+      "subtopic": "powers.sub.integer",
+      "title": "Вычислить степень двойки",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "speech.skill.recognize",
+      "topic": "speech",
+      "subtopic": "speech.sub.verb",
+      "title": "Узнать часть речи по её значению",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-variables.skill.evaluate",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "title": "Проследить изменение переменной",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-variables.skill.copy",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "title": "Различить присваивание и связь переменных",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-types.skill.length",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "title": "Прочитать результат len",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-types.skill.convert",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "title": "Преобразовать строку в число",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.branch",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "title": "Выбрать ветвь по условию",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.boundary",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "title": "Проверить включённую границу",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.range",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "title": "Посчитать элементы range",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.accumulate",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "title": "Проследить накопление в цикле",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.length",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "title": "Найти длину строки",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.negative-index",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "title": "Прочитать отрицательный индекс",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.length",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "title": "Найти длину списка",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.indices",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "title": "Вычислить выражение с элементами",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-sets.skill.unique",
+      "topic": "py-sets",
+      "subtopic": "py-sets.sub.membership",
+      "title": "Посчитать уникальные элементы",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-sets.skill.contains",
+      "topic": "py-sets",
+      "subtopic": "py-sets.sub.membership",
+      "title": "Проверить принадлежность множеству",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-tuples.skill.index",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.tuple",
+      "title": "Прочитать элемент кортежа",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-tuples.skill.singleton",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.tuple",
+      "title": "Записать одноэлементный кортеж",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-dicts.skill.default",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "title": "Прочитать значение с запасным вариантом",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-dicts.skill.update",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "title": "Проследить изменение значения",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.evaluate",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "title": "Проследить результат вызова",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.return",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "title": "Различить возврат и вывод",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-files.skill.append",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.mode",
+      "title": "Выбрать режим дополнения",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-files.skill.overwrite",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.mode",
+      "title": "Понять действие режима записи",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-csv.skill.convert",
+      "topic": "py-csv",
+      "subtopic": "py-csv.sub.value",
+      "title": "Преобразовать значение из CSV",
+      "requires": [
+        "py-types.skill.convert"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-csv.skill.string",
+      "topic": "py-csv",
+      "subtopic": "py-csv.sub.value",
+      "title": "Определить исходный тип поля",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-algorithms.skill.maximum",
+      "topic": "py-algorithms",
+      "subtopic": "py-algorithms.sub.maximum",
+      "title": "Найти максимум отрицательных чисел",
+      "requires": [
+        "py-lists.skill.indices"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-algorithms.skill.initialize",
+      "topic": "py-algorithms",
+      "subtopic": "py-algorithms.sub.maximum",
+      "title": "Выбрать начальное значение максимума",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    }
+  ]
+}

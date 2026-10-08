@@ -26,7 +26,7 @@ export function ErrorRetry({ error, onDone }: { error: LearningError; onDone?: (
   function selfCheck(correct: boolean) {
     if (saved) return;
     const id = crypto.randomUUID();
-    const recalled: Question = error.question ?? { ...questionById.f1, id: `manual:${error.id}`, topic: error.topic, prompt: error.prompt, answer: error.correct, answerType: 'text', hint: error.principle, solution: error.solution, principle: error.principle };
+    const recalled: Question = error.question ?? { subject: topicById[error.topic]?.subject ?? "math", origin: "custom", source: "Личная запись", sourceType: "training", explanation: error.solution, subtopic: null, skills: [], remediates: [], difficulty: "unspecified", sourceYear: null, examTaskType: null, requires: [], related: [], version: 1, id: `manual:${error.id}`, topic: error.topic, prompt: error.prompt, answer: error.correct, answerType: 'text', hint: error.principle, solution: error.solution, principle: error.principle };
     mutate(previous => recordAttempt(previous, recalled, answer, correct, 'error', id));
     schedule(correct); setSaved(true);
   }
@@ -39,7 +39,7 @@ function AddError({ close }: { close: () => void }) {
   function save(event: FormEvent) {
     event.preventDefault(); if (!fields.prompt.trim() || !fields.wrong.trim() || !fields.correct.trim()) return;
     const id = crypto.randomUUID();
-    const question: Question = { ...questionById.f1, id: `manual:${id}`, subject, topic, answerType: 'text', prompt: fields.prompt, answer: fields.correct, hint: fields.principle, principle: fields.principle, solution: fields.principle, explanation: fields.principle, origin: 'custom', source: 'Личная запись', sourceType: 'training', wrongAnswers: undefined };
+    const question: Question = { subtopic: null, skills: [], remediates: [], difficulty: "unspecified", sourceYear: null, examTaskType: null, requires: [], related: [], version: 1, id: `manual:${id}`, subject, topic, answerType: 'text', prompt: fields.prompt, answer: fields.correct, hint: fields.principle, principle: fields.principle, solution: fields.principle, explanation: fields.principle, origin: 'custom', source: 'Личная запись', sourceType: 'training', wrongAnswers: undefined };
     const error: LearningError = { ...fields, id, topic, date: localDate(), status: 'не понял', due: addDays(1), stage: 0, solution: fields.principle, question };
     mutate(state => ({ ...state, errors: [...state.errors, error] })); close();
   }
