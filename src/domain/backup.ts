@@ -165,7 +165,12 @@ function validateAdaptive(value: unknown, attempts: Map<unknown, ObjectValue>) {
       const ids = item.attemptIds as string[];
       for(const id of ids) {
         const attempt = attempts.get(id);
+        if(!attempt)return fail(name+'.attemptIds');
         if(!attempt || linkedAttempts.has(id) || attempt.context !== 'adaptive' || attempt.sessionId !== session.id || attempt.questionId !== q.id || attempt.topic !== q.topic || attempt.questionVersion !== q.version || attempt.subject !== q.subject || attempt.subtopic !== q.subtopic || JSON.stringify(attempt.skills) !== JSON.stringify(q.skills ?? [])) fail(name+'.attemptIds');
+        if(q.answerType==='multiple-choice'){
+          let selected:unknown;try{selected=JSON.parse(attempt.answer as string);}catch{fail(name+'.answer');}
+          if(!Array.isArray(selected)||!selected.length||new Set(selected).size!==selected.length||selected.some(v=>typeof v!=='string'||!q.options?.includes(v)))fail(name+'.answer');
+        }
         linkedAttempts.add(id);
       }
       if (ids.length ? item.firstCorrect !== attempts.get(ids[0])?.correct || item.correct !== attempts.get(ids.at(-1))?.correct || !item.shownAt : item.firstCorrect !== null || item.correct !== null) fail(name+'.correct');

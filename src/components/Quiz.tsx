@@ -32,7 +32,7 @@ function TheoryAnswerBox({question,context='test',onDone,customInput,customAnswe
     mutate(state => adaptiveSessionId ? answerReview(state, adaptiveSessionId, current, correct, attemptId) : recordAttempt(state, question, current, correct, context, attemptId));
     setFormatError(''); setResult(correct); setHadAttempt(true); onDone?.(correct);
   }
-  return <div className="answer-box"><QuestionMetadata question={question}/><p className="question-prompt">{question.prompt}</p>
+  return <div className="answer-box"><QuestionMetadata question={question}/><p className="question-prompt">{question.prompt}</p>{question.python?.type==='predict-output'&&question.python.starterCode&&<pre className="python-output" aria-label="Код для анализа">{question.python.starterCode}</pre>}
     {context === 'adaptive' && <><Button variant="ghost" onClick={() => setHint(!hint)}>{hint ? 'Скрыть подсказку' : 'Показать подсказку'}</Button>{hint && <p className="callout">{question.hint}</p>}</>}
     {customInput ? <fieldset disabled={result !== null}>{customInput}</fieldset> : question.answerType === 'multiple-choice' ?
       <fieldset className="answer-options"><legend>Выбери все правильные варианты</legend>{question.options?.map((option,i)=><label className="answer-option" key={option} htmlFor={`${id}-${i}`}><input type="checkbox" id={`${id}-${i}`} checked={(answer?JSON.parse(answer) as string[]:[]).includes(option)} disabled={result!==null} onChange={e=>{const selected=answer?JSON.parse(answer) as string[]:[];setAnswer(JSON.stringify(e.target.checked?[...selected,option]:selected.filter(v=>v!==option)));setFormatError('');}}/><span>{option}</span></label>)}</fieldset> : question.answerType === 'choice' ?

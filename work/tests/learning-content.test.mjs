@@ -6,7 +6,7 @@ import {checkAnswer,parseNumber} from '../../src/domain/answers.ts';
 import {emptyState,localDate} from '../../src/domain/progress.ts';
 import {saveCodeDraft,recordCodeAssessment,resumeCodeDraftIndex} from '../../src/domain/code-learning.ts';
 import {validateStudyState,parseBackup,serializeBackup} from '../../src/domain/backup.ts';
-import {selectReview,beginReview,reviewSummary} from '../../src/domain/adaptive.ts';
+import {selectReview,beginReview,answerReview,reviewSummary} from '../../src/domain/adaptive.ts';
 import {validateContentPackage} from '../../src/domain/content.ts';
 import {validateLessonPack} from '../../src/domain/lessons.ts';
 import {assertBuildInput,isPrivatePath} from '../../scripts/content-policy.mjs';
@@ -56,6 +56,12 @@ test('Malformed historical multi-answer/code snapshots are refused during backup
   const corrupted=structuredClone(s);if(question.answerType==='code')corrupted.adaptive.sessions[0].items[0].question.python.hiddenTests=[];else corrupted.adaptive.sessions[0].items[0].question.answer='broken JSON';
   assert.throws(()=>validateStudyState(corrupted));assert.deepEqual(parseBackup(serializeBackup(s)).data,s);
  }
+});
+test('A corrupt saved multi-answer cannot replace progress or crash a resumed question',()=>{
+ const question=wave.find(q=>q.answerType==='multiple-choice');let s=beginReview(emptyState('fixture'),[{question,score:1,reasons:[],firstCorrect:null,correct:null,attemptIds:[]}],5,'all','multi',now);
+ s=answerReview(s,'multi',question.answer,true,'selected',now);
+ for(const wrong of ['not JSON','{}','["unknown"]','[]']){const corrupt=structuredClone(s);corrupt.attempts[0].answer=wrong;assert.throws(()=>parseBackup(JSON.stringify({format:'ege-progress-backup',backupVersion:2,appVersion:'0.3.2-dev',createdAt:now.toISOString(),data:corrupt})));}
+ assert.deepEqual(parseBackup(serializeBackup(s)).data,s);
 });
 test('Repeated checks count at most one error and one correction; a later day is independent history',()=>{
  let s=recordCodeAssessment(emptyState('fixture'),q,'wrong',false,'test','a',undefined,now);for(let i=0;i<30;i++)s=recordCodeAssessment(s,q,'still wrong',false,'test','repeat-'+i,undefined,now);
