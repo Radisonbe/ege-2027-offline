@@ -7,6 +7,7 @@ import {gradePython,type PythonGrade} from '../python/grading';
 import {indent,insertText,newline} from '../python/editor';
 import {Button} from './ui';
 import {QuestionMetadata} from './QuestionMetadata';
+import {CodeExplanation} from './CodeExplanation';
 
 export function CodeExercise({question:q,context='test',onDone,adaptiveSessionId,initial}:{question:Question;context?:AttemptContext;onDone?:(correct:boolean)=>void;adaptiveSessionId?:string;initial?:{answer:string;result:boolean|null}}) {
   const {state,mutate,storageError,saving,replacing}=useStudy(),draft=state.codeDrafts?.[q.id],task=q.python!;
@@ -63,6 +64,6 @@ export function CodeExercise({question:q,context='test',onDone,adaptiveSessionId
     <h3>Вывод · stdout</h3><pre className="python-output" aria-label="Вывод stdout">{stdout||'Вывода пока нет.'}</pre><h3>Ошибки Python</h3><pre className="python-output python-error" aria-label="Ошибки Python">{stderr||'Ошибок нет.'}</pre>
     {results.length>0&&<section aria-label="Результаты тестов"><h3>Проверка решения</h3>{results.map((r,i)=>{const test=task.visibleTests?.[i],failure=r.actual.kind;return <div className="code-test-result" key={i}><b>Тест {i+1}: {r.passed?'пройден':failure==='syntax'?'SyntaxError':failure==='runtime'?'ошибка выполнения':failure==='timeout'?'лимит времени':failure==='stopped'?'остановлен':'неверный результат'}</b>{test&&!failure&&<><p className="small">{task.functionName?`Аргументы: ${JSON.stringify(test.args)}`:`Ввод: ${test.stdin||'(пустой)'}`}</p>{!r.passed&&<><pre>Ожидалось: {test.expectedOutput??JSON.stringify(test.expectedReturn)}</pre><pre>Получено: {task.functionName?JSON.stringify(r.actual.value):r.actual.stdout||'(пустой вывод)'}</pre></>}</>}{!test&&!r.passed&&!failure&&<p className="small muted">Не проходит дополнительный случай. Проверь границы и условие для всех допустимых входных данных.</p>}</div>;})}</section>}
     {hints<shownHints.length&&<Button variant="ghost" onClick={()=>setHints(n=>n+1)}>{hints?'Более конкретная подсказка':'Показать подсказку'}</Button>}{shownHints.slice(0,hints).map((h,i)=><p className="callout" key={i}>{h}</p>)}
-    <details><summary>Разбор и решение — по запросу</summary><Button variant="ghost" onClick={()=>setSolution(true)}>Показать полное решение</Button>{solution&&<><p>{q.explanation}</p><pre className="python-output">{q.solution}</pre></>}</details>
+    <details><summary>Разбор и решение — по запросу</summary><Button variant="ghost" onClick={()=>setSolution(true)}>Показать полное решение</Button>{solution&&<><CodeExplanation text={q.explanation}/><pre className="python-output">{q.solution}</pre></>}</details>
   </div>;
 }

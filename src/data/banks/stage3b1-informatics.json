@@ -563,7 +563,7 @@
       "explanation": "input() возвращает строку. Преобразуй её в int и умножь число само на себя.",
       "solution": "n = int(input())\nprint(n * n)",
       "principle": "Определи, что надо вычислить после чтения числа.",
-      "version": 1,
+      "version": 2,
       "requires": [
         "py-types"
       ],
@@ -596,6 +596,22 @@
           {
             "stdin": "17",
             "expectedOutput": "289"
+          },
+          {
+            "stdin": "-1000",
+            "expectedOutput": "1000000"
+          },
+          {
+            "stdin": "1000",
+            "expectedOutput": "1000000"
+          },
+          {
+            "stdin": "-999",
+            "expectedOutput": "998001"
+          },
+          {
+            "stdin": "999",
+            "expectedOutput": "998001"
           }
         ]
       }
@@ -621,7 +637,7 @@
       "explanation": "range не включает правую границу. Перебирай до n + 1. Можно использовать и формулу суммы.",
       "solution": "n = int(input())\ns = 0\nfor x in range(1, n + 1):\n    s += x\nprint(s)",
       "principle": "Нужен накопитель, который начинается с нуля.",
-      "version": 1,
+      "version": 2,
       "requires": [
         "py-loops"
       ],
@@ -654,6 +670,14 @@
           {
             "stdin": "10",
             "expectedOutput": "55"
+          },
+          {
+            "stdin": "1000",
+            "expectedOutput": "500500"
+          },
+          {
+            "stdin": "999",
+            "expectedOutput": "499500"
           }
         ]
       }
@@ -676,10 +700,10 @@
       "prompt": "Считай строку с 1–20 целыми числами, разделёнными пробелами (каждое от −100 до 100). Выведи максимальное из них.",
       "answer": "Все тесты пройдены",
       "hint": "Все числа могут оказаться отрицательными.",
-      "explanation": "split() разделяет строку по пробелам. Преобразуй элементы в int; max() найдёт наибольший.",
+      "explanation": "Возьми первое число за текущий максимум. Перебери числа: если очередное больше текущего максимума, замени его. Начинать с 0 нельзя — при всех отрицательных числах ответом тоже должно быть отрицательное число.\n\n```python\nwords = input().split()\nlargest = int(words[0])\nfor word in words:\n    number = int(word)\n    if number > largest:\n        largest = number\nprint(largest)\n```\n\nВ компактном эталоне [int(x) for x in input().split()] создаёт список целых чисел, а max(nums) находит наибольший элемент. Оба способа подходят; конкретный текст решения не требуется.",
       "solution": "nums = [int(x) for x in input().split()]\nprint(max(nums))",
       "principle": "Все числа могут оказаться отрицательными.",
-      "version": 1,
+      "version": 2,
       "requires": [
         "py-lists"
       ],
@@ -712,6 +736,18 @@
           {
             "stdin": "-100 100",
             "expectedOutput": "100"
+          },
+          {
+            "stdin": "-100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 100",
+            "expectedOutput": "100"
+          },
+          {
+            "stdin": "-100 -99 -98 -97 -96 -95 -94 -93 -92 -91 -90 -89 -88 -87 -86 -85 -84 -83 -82 -81",
+            "expectedOutput": "-81"
+          },
+          {
+            "stdin": "100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100",
+            "expectedOutput": "100"
           }
         ]
       }
@@ -737,7 +773,7 @@
       "explanation": "Целое число чётно, если остаток от деления на 2 равен нулю; ноль тоже чётный.",
       "solution": "count = 0\nfor item in input().split():\n    if int(item) % 2 == 0:\n        count += 1\nprint(count)",
       "principle": "Счётчик увеличивается только для подходящих элементов.",
-      "version": 1,
+      "version": 2,
       "requires": [
         "py-types",
         "py-if",
@@ -772,6 +808,18 @@
           {
             "stdin": "8",
             "expectedOutput": "1"
+          },
+          {
+            "stdin": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
+            "expectedOutput": "20"
+          },
+          {
+            "stdin": "-3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3 -3",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "-10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9",
+            "expectedOutput": "10"
           }
         ]
       }
@@ -797,7 +845,7 @@
       "explanation": "Для новой цифры умножь накопленное значение на 2 и прибавь цифру. Допустим также int(строка, 2).",
       "solution": "bits = input()\nvalue = 0\nfor bit in bits:\n    value = value * 2 + int(bit)\nprint(value)",
       "principle": "Можно последовательно учитывать двоичные разряды слева направо.",
-      "version": 1,
+      "version": 2,
       "requires": [
         "binary",
         "py-loops"
@@ -831,6 +879,22 @@
           {
             "stdin": "100000",
             "expectedOutput": "32"
+          },
+          {
+            "stdin": "111111111111",
+            "expectedOutput": "4095"
+          },
+          {
+            "stdin": "100000000000",
+            "expectedOutput": "2048"
+          },
+          {
+            "stdin": "101010101010",
+            "expectedOutput": "2730"
+          },
+          {
+            "stdin": "000000000101",
+            "expectedOutput": "5"
           }
         ]
       }

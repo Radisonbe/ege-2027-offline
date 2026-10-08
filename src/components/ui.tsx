@@ -1,5 +1,7 @@
 import { createElement, useEffect, useRef, type ButtonHTMLAttributes, type ReactNode } from 'react';
 import type { ContentNode } from '../domain/types';
+import { MathText } from './MathText';
+import { isCodeText } from '../domain/math-text';
 
 export type IconName = 'home' | 'errors' | 'review' | 'progress' | 'math' | 'russian' | 'informatics' | 'python' | 'settings' | 'shield' | 'feather' | 'clock' | 'calendar' | 'moon' | 'sun' | 'menu' | 'arrow' | 'back' | 'chevron' | 'book' | 'practice' | 'check' | 'bulb' | 'plus' | 'close' | 'pause' | 'play';
 const paths: Record<IconName, ReactNode> = {
@@ -36,10 +38,11 @@ export function Heading({ eyebrow, title, subtitle, action }: { eyebrow: string;
 export function Empty({ title, children }: { title: string; children: ReactNode }) { return <div className="empty-state"><div className="empty-icon"><Icon name="check" size={24}/></div><h3>{title}</h3><p>{children}</p></div>; }
 export function ProgressBar({ value, label }: { value: number; label: string }) { return <div className="progress-bar" role="progressbar" aria-label={label} aria-valuenow={Math.round(value)} aria-valuemin={0} aria-valuemax={100}><div style={{ width: `${Math.min(100, Math.max(0, value))}%` }}/></div>; }
 const tags = new Set(['div', 'span', 'p', 'h2', 'h3', 'h4', 'b', 'strong', 'small', 'pre', 'code', 'ol', 'ul', 'li', 'sup', 'em', 'section', 'br']);
-export function Content({ node }: { node: ContentNode }) {
+export function Content({ node, math=false }: { node: ContentNode; math?:boolean }) {
   // Inert, allowlisted data tree: no HTML injection, handlers or executable source.
   const tag = tags.has(node.tag) ? node.tag : 'div';
-  return createElement(tag, { className: node.className || undefined }, ...(tag === 'br' ? [] : node.children.map((child, i) => typeof child === 'object' ? <Content key={i} node={child}/> : child)));
+  const renderMath=math&&tag!=='code'&&!(tag==='pre'&&isCodeText(node.children.filter(c=>typeof c==='string').join('\n')));
+  return createElement(tag, { className: [node.className,renderMath&&tag==='pre'?'math-example':''].filter(Boolean).join(' ')||undefined }, ...(tag === 'br' ? [] : node.children.map((child, i) => typeof child === 'object' ? <Content key={i} node={child} math={renderMath}/> : renderMath?<MathText key={i}>{child}</MathText>:child)));
 }
 export function Modal({ title, children, close }: { title: string; children: ReactNode; close: () => void }) {
   const dialog = useRef<HTMLDialogElement>(null);

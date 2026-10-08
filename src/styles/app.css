@@ -838,3 +838,16 @@ button {
 
 .code-exercise{min-width:0}.code-exercise .python-editor{min-height:280px}.code-exercise .question-prompt{white-space:pre-wrap}.code-test-result{padding:12px 0;border-top:1px solid var(--border)}.code-test-result pre{white-space:pre-wrap;overflow-wrap:anywhere}.code-exercise details{margin-top:20px}.wrong-answer{white-space:pre-wrap;overflow-wrap:anywhere}
 @media(max-width:600px){.code-exercise .button-row{display:flex;flex-wrap:wrap}.code-exercise .python-editor{min-height:300px}.code-exercise .python-keys{flex-wrap:wrap}}
+/* Inline maths use only local HTML/CSS. Source values and Python stay plain text. */
+.math-fraction{display:inline-grid;grid-template-rows:auto auto;vertical-align:middle;align-items:center;text-align:center;line-height:1.15;margin:0 .12em;white-space:nowrap;font-size:1em}
+.math-numerator{border-bottom:1.4px solid currentColor;padding:0 .18em .12em}
+.math-denominator{padding:.12em .18em 0}
+.math-source-separator{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:pre}
+.math-power,.math-root{display:inline-block;white-space:nowrap}
+.math-power sup{font-size:.75em;line-height:0;vertical-align:super}
+.math-root{display:inline-flex;align-items:baseline;margin:0 .06em}
+.math-radicand{border-top:1.2px solid currentColor;padding:0 .12em}
+.prose pre.math-example{font-family:inherit;white-space:pre-wrap;overflow-wrap:break-word;line-height:2.5;font-size:1rem}
+.question-prompt:has(.math-fraction),.answer-option:has(.math-fraction),.solution:has(.math-fraction),.prose p:has(.math-fraction),.callout:has(.math-fraction),.feedback p:has(.math-fraction),.error-card h3:has(.math-fraction),.error-details:has(.math-fraction){line-height:2.3}
+.code-explanation p{white-space:pre-wrap}
+.code-explanation .python-output{margin:1rem 0}
