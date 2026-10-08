@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' blob:; worker-src blob:; connect-src blob:; frame-src 'none'; form-action 'none'; base-uri 'none'">
+<script>
+// Opaque origin (sandbox allow-scripts only). This bridge never executes Python in its UI thread.
+let worker;
+onmessage = event => {
+  if (event.source !== parent) return;
+  const data=event.data;
+  if (data.type==='init' && !worker) {
+    const url=URL.createObjectURL(new Blob([data.source],{type:'text/javascript'}));
+    worker=new Worker(url);URL.revokeObjectURL(url);
+    worker.onmessage=event=>parent.postMessage(event.data,'*');
+    worker.onerror=()=>parent.postMessage({type:'load-error',text:'Worker Python неожиданно завершился.'},'*');
+    worker.postMessage({type:'init',payload:data.payload});
+  } else if (data.type==='stop') {
+    worker?.terminate();worker=undefined;parent.postMessage({type:'stopped'},'*');
+  } else if (worker && (data.type==='run'||data.type==='input')) worker.postMessage(data);
+};
+parent.postMessage({type:'frame-ready'},'*');
+</script>

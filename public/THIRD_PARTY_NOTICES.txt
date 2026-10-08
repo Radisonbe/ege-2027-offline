@@ -55,3 +55,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Python Playground runtime: Pyodide 314.0.7 / CPython 3.14.2
+Copyright Pyodide contributors and Mozilla; Python Software Foundation and contributors.
+Pyodide licence: MPL-2.0. CPython licence: PSF-2.0 and its included notices.
+Unmodified runtime files originate from the official pyodide npm package (integrity verified).
+Corresponding source and patches: https://github.com/pyodide/pyodide/tree/314.0.7
+Source archive: https://github.com/pyodide/pyodide/archive/refs/tags/314.0.7.tar.gz
+CPython source: https://github.com/python/cpython/tree/v3.14.2
+Emscripten source: https://github.com/emscripten-core/emscripten/tree/5.0.3
+Full notices are distributed under python-runtime/licenses/ and included in the offline kit.
+These include MPL-2.0, PSF licence/history, CPython bundled third-party notices,
+Emscripten MIT/NCSA notices, musl MIT/BSD notices, LLVM runtime Apache-2.0 with exceptions,
+libffi MIT, zlib licence, bzip2 licence, liblzma 0BSD, Expat MIT and SQLite public-domain statement.
+No NumPy/pandas/scipy wheels or micropip installer are bundled.

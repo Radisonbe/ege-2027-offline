@@ -821,3 +821,17 @@ button {
     width:140px
   }
 }
+.python-editor,.python-stdin{display:block;width:100%;max-width:100%;box-sizing:border-box;font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:16px;line-height:1.6;tab-size:4;resize:vertical;padding:16px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--foreground);}
+.python-editor{height:360px;min-height:240px;white-space:pre;overflow:auto;overflow-wrap:normal;}
+.python-stdin{height:110px;margin:10px 0;}
+.python-keys{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0;}
+.python-keys button{min-width:40px;min-height:40px;padding:6px 10px;}
+.python-output{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;min-height:64px;max-height:400px;padding:16px;background:var(--muted);border-radius:10px;font:15px/1.6 ui-monospace,Consolas,monospace;}
+.python-error{color:var(--foreground);}
+.python-input-mode{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.python-input-mode input{width:18px;height:18px;}
+.python-input-request{padding:16px;background:var(--muted);border-radius:10px;margin-top:16px;display:grid;gap:12px;}
+.python-input-request input{width:100%;min-width:0;font-size:16px;}
+.python-reset{margin-top:18px;}
+.python-reset summary{cursor:pointer;}
+@media(max-width:600px){.python-editor{padding:12px;height:300px;}.python-keys{gap:5px;}.python-keys button{font-size:12px;}.python-input-request{padding:12px;}}

@@ -168,3 +168,16 @@ IndexedDB остаётся `ege-local-center`, версия 1. Обновлен�
 Для локального просмотра проверенной сборки: `pnpm exec vite preview --host 127.0.0.1 --port 4183 --strictPort --outDir outputs/stage3a-final-build`. Он доступен по http://127.0.0.1:4183/#review-today. Профили проверок изолированы; production Stage 2 не затронута.
 
 Дополнительная проверка Stage 3A: `node work/tests/stage3a-browser-checks.mjs <playwright-node-modules> <build-directory>`. Прежние browser-checks принимают build directory четвёртым аргументом, update-checks — третьим. Их проверки адаптированы к текущей схеме v2, исходные файлы Stage 2 сохранены в стабильном commit/tag.
+# Python Playground — Stage 3A.1
+
+В разделе Python доступна локальная песочница: textarea, отступы, stdin, stdout/traceback, остановка и лимит выполнения. Pyodide 314.0.7 запускает CPython 3.14.2. Пять неизменённых runtime-файлов и лицензии поставляются в public/python-runtime; сервер/CDN для занятия не требуется, весь комплект включён в PWA precache.
+
+Python работает в Worker внутри sandbox iframe с непрозрачным origin. DOM, учебная IndexedDB и JavaScript API приложения не передаются. Сетевые обращения из песочницы запрещены CSP и runtime-политикой. Код хранится отдельно в ege-python-playground/drafts/current, schema 1. Прогресс schema 2 и backup v2 сохранены; старые Stage 2/Stage 3A backup импортируются. Backup прогресса не включает Python-черновик: его нужно копировать отдельно перед очисткой данных сайта.
+
+Интерактивный input() использует JSPI при наличии; иначе доступны заранее заполненные строки stdin. Выполнение ограничено 10 секундами, ожидание ввода — 2 минутами, вывод — 65 536 символами. Остановка/timeout уничтожают Worker и восстанавливают чистый runtime. Это учебная песочница; жёсткого лимита потребления RAM нет, ОС-модули/пакеты отсутствуют либо ограничены.
+
+Модель PythonTask поддерживает predict-output/write-program/complete-code/fix-bug/write-function и тестовые метаданные. Ожидаемые результаты не передаются Worker; сравнение выполняется вне него. На публичном клиенте hidden tests не могут быть секретом от владельца браузера — это основа учебной проверки, а не защищённая экзаменационная система.
+
+`node scripts/check-offline-build.mjs <build-directory>` проверяет окончательные SHA-256, SW и наличие всех пяти runtime-файлов. Inventory теперь создаётся по финальным записанным файлам, после обработки lazy imports Vite. CI выполняет эту проверку после build.
+
+Проверки: 58 unit-тестов, 30 сценариев песочницы и 29 прежних браузерных сценариев. Песочница проверяется через work/tests/playground-browser-checks.mjs с путями bundled-node-modules, новой сборки и стабильной Stage 3A сборки. Все профили/черновики/измерения остаются в ignored work/outputs. Реальная клавиатура и поведение Samsung Android требуют отдельного теста владельцем после согласованной публикации.

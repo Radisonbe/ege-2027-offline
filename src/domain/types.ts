@@ -1,3 +1,4 @@
+import type {PythonTask} from '../python/tasks';
 export type SubjectId = 'math' | 'russian' | 'informatics' | 'python';
 export type TopicStatus = 'Не изучено' | 'Изучаю' | 'Нужна практика' | 'Уверенно' | 'Повторить';
 export type Origin = 'official' | 'generated' | 'reconstructed' | 'custom' | 'private-import';
@@ -23,6 +24,7 @@ export interface Question {
   wrongAnswers?: Record<string, string>; easy?: boolean; version: number;
   requires: string[]; related: string[];
   skills?: string[]; remediates?: string[];
+  python?: PythonTask;
 }
 export interface Attempt {
   id: string; questionId: string; questionVersion: number; topic: string;

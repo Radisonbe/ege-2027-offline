@@ -56,6 +56,9 @@ jobs:
       - name: Build production PWA
         run: pnpm exec vite build --emptyOutDir false
 
+      - name: Verify final offline inventory
+        run: node scripts/check-offline-build.mjs dist
+
       - name: Configure existing Pages site
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
         with:

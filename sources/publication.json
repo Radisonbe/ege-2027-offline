@@ -98,7 +98,7 @@
         {
           "path": "public/THIRD_PARTY_NOTICES.txt",
           "normalization": "lf",
-          "sha256": "ad16434304d53cbc937fdd8679f830975b642838e96bf49d46efcdd39f6b88a3"
+          "sha256": "25baf6818dc181d3a84150f8cc40a8a248cf2881c048103dc102610851a9d77f"
         }
       ]
     },
@@ -156,6 +156,110 @@
           "path": "src/data/taxonomy.json",
           "normalization": "lf",
           "sha256": "cd3022973bd760f1e253c17b864f5e7ae857732df3ee4575e3cd8f17e6eeec27"
+        }
+      ]
+    },
+    {
+      "id": "python-runtime-314.0.7",
+      "clearance": "licensed",
+      "source": "https://registry.npmjs.org/pyodide/-/pyodide-314.0.7.tgz",
+      "license": "MPL-2.0 AND PSF-2.0; accompanying permissive third-party notices",
+      "evidence": "Unmodified five core files from official npm release, archive sha512-0YvXxEhfEdpLfb/XkM2BFAeMROq0iMUX2bzzH9pOttyMcWkwq+HbE5uyuGD82LN7y2q+SNvi/6V5JEsOlD2R1A== verified. No package scripts executed. Full upstream licence texts, source release links and dependency notices are supplied locally. This is a technical runtime, not third-party learning material.",
+      "files": [
+        {
+          "path": "public/python-runtime/314.0.7/pyodide-lock.json",
+          "normalization": "lf",
+          "sha256": "5dc2fc119108bc148c7457dc86e7675b5c87e1cafd420b9c34c1eaef7b36c010"
+        },
+        {
+          "path": "public/python-runtime/314.0.7/pyodide.asm.mjs",
+          "normalization": "lf",
+          "sha256": "f7cdc8ece80678ceb712f8e65ebe6d3a83203a180c399865f49612a051693635"
+        },
+        {
+          "path": "public/python-runtime/314.0.7/pyodide.asm.wasm",
+          "normalization": "binary",
+          "sha256": "cc36e3cab04fdfc9a63ff13eb52eae2b911bf46c025cc7b281f394bd3de1d5e6"
+        },
+        {
+          "path": "public/python-runtime/314.0.7/pyodide.mjs",
+          "normalization": "lf",
+          "sha256": "6f1d60f7bf529beb300f0f47983c921d3982363640ba20af0e38efdddbc66109"
+        },
+        {
+          "path": "public/python-runtime/314.0.7/python_stdlib.zip",
+          "normalization": "binary",
+          "sha256": "fa1957e5777068fc4f7437f96d860ae2fbe9c19732ba06c84e004ec16dd7dd7a"
+        },
+        {
+          "path": "public/python-runtime/licenses/CPYTHON-THIRD-PARTY.txt",
+          "normalization": "lf",
+          "sha256": "c695d550b135e53e38807e76496d1db17d22c40e461d1f3f354c86188d3305dd"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-BZIP2.txt",
+          "normalization": "lf",
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-COMPILER-RT.txt",
+          "normalization": "lf",
+          "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-CPYTHON.txt",
+          "normalization": "lf",
+          "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-EMSCRIPTEN.txt",
+          "normalization": "lf",
+          "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-EXPAT.txt",
+          "normalization": "lf",
+          "sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-LIBCXX.txt",
+          "normalization": "lf",
+          "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-LIBFFI.txt",
+          "normalization": "lf",
+          "sha256": "67894089811f93fca47a76f85e017da6f8582d4ba0905963c6e0f1ad6df7a195"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-MUSL.txt",
+          "normalization": "lf",
+          "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-PYODIDE.txt",
+          "normalization": "lf",
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-SQLITE.txt",
+          "normalization": "lf",
+          "sha256": "7931bb7e2ef2f1f6c2ece53980f6857daeba68cd1f627f36d3bff0f121ee6ad6"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-XZ-0BSD.txt",
+          "normalization": "lf",
+          "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-XZ.txt",
+          "normalization": "lf",
+          "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8"
+        },
+        {
+          "path": "public/python-runtime/licenses/LICENSE-ZLIB.txt",
+          "normalization": "lf",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
         }
       ]
     }

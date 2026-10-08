@@ -46,7 +46,10 @@ outputs/
 **/user-data/
 **/imports/
 **/backups/
+**/python-drafts/
+**/playground-code/
 *.private-package.json
 *.private-progress.json
+*.private-playground.json
 ege-progress-*.json
 ege-backup-*.json
