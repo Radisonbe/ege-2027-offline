@@ -116,7 +116,7 @@ export function validateStudyState(value: unknown): StudyState {
 
 export function serializeBackup(state: StudyState, now = new Date()): string {
   const data = validateStudyState(JSON.parse(JSON.stringify(state)));
-  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 1, appVersion: '0.2.0', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
+  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 1, appVersion: '0.2.1', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
   if (new TextEncoder().encode(text).length > MAX_BACKUP_BYTES) throw new BackupError('Данные превышают текущий лимит резервной копии 20 МБ. Прогресс не изменён.');
   return text;
 }
