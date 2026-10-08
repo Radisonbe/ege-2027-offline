@@ -64,7 +64,7 @@
         {
           "path": "src/components/ui.tsx",
           "normalization": "lf",
-          "sha256": "a6b3ce211bfa03989e5fda4bc3c90e36465d8ebe1f6581966e1cefa7b2e083d5"
+          "sha256": "0f233efff33702f0adb34cdbfbbe35b329e3b3757d38acf23c767e941ec968e9"
         },
         {
           "path": "public/icon.svg",
@@ -268,7 +268,7 @@
       "clearance": "project-generated",
       "source": null,
       "license": null,
-      "evidence": "100 original exercises and original foundational explanations created in this project at the explicit request of its owner (Stage 3B.1). No third-party question text/solutions or figures imported. All exercises generated; examTaskType null. Existing IDs and content untouched. Math checked independently, Python reference and deliberately incorrect programs executed in the existing runner. See docs/STAGE3B1.md and reusable tests for validation.",
+      "evidence": "100 original exercises and original foundational explanations created in this project at the explicit request of its owner (Stage 3B.1). No third-party question text/solutions or figures imported. All exercises generated; examTaskType null. Existing IDs and content untouched. Math checked independently, Python reference and deliberately incorrect programs executed in the existing runner. See docs/STAGE3B1.md and reusable tests for validation. Polishing after 0.3.2: original generated programming exercises retain IDs, prompts and reference solutions; version 2 appends in-domain boundary tests and beginner explanations. No external content was imported.",
       "files": [
         {
           "path": "src/data/stage3b1-lessons.json",
@@ -288,12 +288,12 @@
         {
           "path": "src/data/banks/stage3b1-informatics.json",
           "normalization": "lf",
-          "sha256": "2d227d252c6d487bb725af636288b167da05c6ad7607d8ef228b5578e50a745c"
+          "sha256": "c5528ea3c8f377ea22d3e0dc95b782c6eac0644b6e300a375f483db130f68298"
         },
         {
           "path": "src/data/banks/stage3b1-python.json",
           "normalization": "lf",
-          "sha256": "bf7b4b899ba50d5a4df04a24dd923fdeb49711e44d2f2ce141dab6b68864b551"
+          "sha256": "a2d65170237766b1887c60c1c376375fe370cd9ced0edf3fc2555d69da5b3c4d"
         }
       ]
     }
