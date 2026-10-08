@@ -2,18 +2,18 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 
-export const PRIVATE_DIRECTORIES = new Set(['private-packages', 'personal-materials', 'local-data', 'user-data', 'imports', 'backups']);
+export const PRIVATE_DIRECTORIES = new Set(['private-packages', 'personal-materials', 'local-data', 'user-data', 'imports', 'backups','python-drafts','playground-code']);
 export const sha256 = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 export function isPrivatePath(file) {
   const parts = file.replaceAll('\\', '/').split('/');
-  return parts.some(part => PRIVATE_DIRECTORIES.has(part.toLowerCase())) || /(?:\.private-(?:package|progress)|^ege-(?:progress|backup)-.*)\.json$/i.test(parts.at(-1));
+  return parts.some(part => PRIVATE_DIRECTORIES.has(part.toLowerCase())) || /(?:\.private-(?:package|progress|playground)|^ege-(?:progress|backup)-.*)\.json$/i.test(parts.at(-1));
 }
 export function assertBuildInput(file) {
   const clean = file.split('?')[0];
   if (isPrivatePath(clean)) throw new Error('Private content cannot enter a build: ' + clean);
   if (/\.json$/i.test(clean) && fs.existsSync(clean)) {
     const value = JSON.parse(fs.readFileSync(clean, 'utf8'));
-    if (['ege-private-learning-package', 'ege-progress-backup'].includes(value?.format) || value?.distribution === 'private-import') throw new Error('Personal JSON cannot enter a build: ' + clean);
+    if (['ege-private-learning-package', 'ege-progress-backup','ege-python-playground-backup'].includes(value?.format) || value?.distribution === 'private-import' || (value?.schemaVersion===1&&typeof value.code==='string'&&typeof value.stdin==='string'&&typeof value.updatedAt==='string')) throw new Error('Personal JSON cannot enter a build: ' + clean);
   }
 }
 export function assertNoPrivateInputs(root) {

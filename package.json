@@ -1,7 +1,7 @@
 {
   "name": "ege-personal-center-local",
   "private": true,
-  "version": "0.3.0-dev",
+  "version": "0.3.1",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",

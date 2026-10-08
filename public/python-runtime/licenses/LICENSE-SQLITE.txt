@@ -1,0 +1,4 @@
+SQLite is in the public domain.
+Official statement: https://sqlite.org/copyright.html
+The SQLite support distributed here is part of the unmodified Pyodide 314.0.7 CPython runtime.
+No SQLite server, tools or additional package is distributed.

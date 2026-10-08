@@ -6,7 +6,7 @@ import ts from 'typescript';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
 const { chromium } = createRequire(pathToFileURL(path.join(process.argv[2], '_runtime.js')))('playwright');
-const modules = ['src/storage/private-packages.ts','src/domain/private-packages.ts','src/domain/backup.ts','src/domain/progress.ts'];
+const modules = ['src/storage/private-packages.ts','src/domain/private-packages.ts','src/domain/backup.ts','src/domain/progress.ts','src/python/tasks.ts'];
 const sources = new Map(modules.map(file => ['/'+file, ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText]));
 const server=http.createServer((request,response)=>{
   const pathname=new URL(request.url,'http://local.test').pathname, text=sources.get(pathname);

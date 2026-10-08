@@ -1,4 +1,5 @@
 import type { Question, StudyState } from './types.ts';
+import {validatePythonTask} from '../python/tasks.ts';
 
 export const MAX_BACKUP_BYTES = 20 * 1024 * 1024;
 export interface ProgressBackup { format: 'ege-progress-backup'; backupVersion: 2; appVersion: string; createdAt: string; data: StudyState }
@@ -43,7 +44,7 @@ function unique(items: unknown[], path: string) {
   if (new Set(ids).size !== ids.length) fail(path + '.id');
 }
 export function validateQuestion(value: unknown, path = 'question'): Question {
-  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates']);
+  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python']);
   for (const key of ['id', 'topic']) string(q[key], path + '.' + key, true);
   for (const key of ['source', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle']) string(q[key], path + '.' + key);
   for (const key of ['subtopic', 'examTaskType']) if (q[key] !== null) string(q[key], path + '.' + key);
@@ -59,6 +60,7 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
   if (q.remediates !== undefined) strings(q.remediates, path + '.remediates');
   if (q.options !== undefined) strings(q.options, path + '.options');
   if (q.easy !== undefined) choice(q.easy, path + '.easy', [true, false]);
+  if(q.python!==undefined){if(q.subject!=='python')fail(path+'.python');try{validatePythonTask(q.python);}catch{fail(path+'.python');}}
   if (q.wrongAnswers !== undefined) for (const [key, message] of Object.entries(dictionary(q.wrongAnswers, path + '.wrongAnswers'))) string(message, path + '.wrongAnswers.' + key);
   return value as Question;
 }
@@ -173,7 +175,7 @@ function validateAdaptive(value: unknown, attempts: Map<unknown, ObjectValue>) {
 
 export function serializeBackup(state: StudyState, now = new Date()): string {
   const data = validateStudyState(JSON.parse(JSON.stringify(state)));
-  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 2, appVersion: '0.3.0-dev', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
+  const text = JSON.stringify({ format: 'ege-progress-backup', backupVersion: 2, appVersion: '0.3.1', createdAt: now.toISOString(), data } satisfies ProgressBackup, null, 2);
   if (new TextEncoder().encode(text).length > MAX_BACKUP_BYTES) throw new BackupError('Данные превышают текущий лимит резервной копии 20 МБ. Прогресс не изменён.');
   return text;
 }

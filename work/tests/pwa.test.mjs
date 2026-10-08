@@ -3,9 +3,19 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import { webcrypto } from 'node:crypto';
-import { createWorker, digest } from '../../scripts/pwa-plugin.mjs';
+import { createWorker, digest, offlinePwa } from '../../scripts/pwa-plugin.mjs';
 
 const template = fs.readFileSync(new URL('../../scripts/sw-template.js', import.meta.url), 'utf8');
+test('Offline inventory hashes final written chunks after lazy-import postprocessing',()=>{
+  fs.mkdirSync('work/inventory-fixtures',{recursive:true});
+  const directory=fs.mkdtempSync('work/inventory-fixtures/build-');fs.mkdirSync(directory+'/public');
+  fs.writeFileSync(directory+'/index.html','<html><head></head></html>');fs.writeFileSync(directory+'/lazy.js','final resolved import bytes');
+  const plugin=offlinePwa();plugin.configResolved({root:process.cwd(),publicDir:directory+'/public',build:{outDir:directory}});
+  plugin.writeBundle({dir:directory},{'index.html':{source:'html'},'lazy.js':{code:'earlier unresolved preload placeholder'}});
+  const inventory=JSON.parse(fs.readFileSync(directory+'/offline-inventory.json'));
+  assert.equal(inventory.files.find(f=>f.path==='lazy.js').sha256,digest('final resolved import bytes'));
+  assert.equal(inventory.files.find(f=>f.path==='index.html').sha256,digest(fs.readFileSync(directory+'/index.html')));
+});
 function harness({broken = false, corrupt = false} = {}) {
   const contents = new Map([['index.html', '<html>new-release</html>'], ['assets/app.js', 'all 67 topics, 19 modules and questions'], ['icon.svg','icon']]);
   const files = [...contents].map(([path, text]) => ({path, sha256:digest(text)}));
