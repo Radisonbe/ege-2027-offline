@@ -729,6 +729,53 @@ button {
     grid-column:1/-1
   }
 }
+.network-status {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:.72rem;
+  color:var(--muted-foreground);
+  white-space:nowrap;
+}
+.network-dot {
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#128174;
+}
+.network-dot.offline { background:#7d928c; }
+.topbar .breadcrumb { flex:1; margin-right:12px; }
+.topbar .breadcrumb b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.topbar-right { flex-shrink:0; }
+.pwa-notice {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:12px;
+  margin-bottom:24px;
+  padding:14px 18px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--secondary);
+  font-size:.85rem;
+}
+.import-confirmation {
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin:24px 0;
+}
+.import-confirmation input { width:18px; height:18px; flex-shrink:0; }
+.backup-message { color:var(--foreground); }
+.visually-hidden {
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+}
 @media(max-width:380px) {
   .date-pill {
     display:none

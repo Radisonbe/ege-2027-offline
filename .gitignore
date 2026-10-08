@@ -34,7 +34,7 @@ work/*
 !work/format-css.mjs
 !work/tests/
 work/tests/*
-!work/tests/*.test.mjs
+!work/tests/*.mjs
 
 # Generated reports, screenshots, and local path inventories
 outputs/

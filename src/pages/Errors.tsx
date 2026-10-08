@@ -14,7 +14,7 @@ export function ErrorCard({ error }: { error: LearningError }) {
 }
 export function ErrorRetry({ error, onDone }: { error: LearningError; onDone?: (correct: boolean) => void }) {
   const { mutate } = useStudy(), [answer, setAnswer] = useState(''), [revealed, setRevealed] = useState(false), [saved, setSaved] = useState(false);
-  const question = error.questionId ? questionById[error.questionId] : undefined;
+  const question = error.questionId ? error.question ?? questionById[error.questionId] : undefined;
   function schedule(correct: boolean) {
     mutate(previous => ({ ...previous, errors: previous.errors.map(item => {
       if (item.id !== error.id) return item;

@@ -1,8 +1,9 @@
 import type { StudyState } from '../domain/types';
+import { validateStudyState } from '../domain/backup';
 
 // Versioned, atomic document for the first iteration. Static content lives separately.
 // The interface also supports a later indexed collection implementation without UI changes.
-export interface ProgressRepository { load(): Promise<StudyState | undefined>; save(state: StudyState): Promise<void> }
+export interface ProgressRepository { load(): Promise<StudyState | undefined>; save(state: StudyState): Promise<void>; replace(state: StudyState, previous: StudyState): Promise<void> }
 const DB_NAME = 'ege-local-center';
 const STORE = 'progress';
 let database: Promise<IDBDatabase> | undefined;
@@ -23,8 +24,8 @@ export const repository: ProgressRepository = {
       const request = db.transaction(STORE, 'readonly').objectStore(STORE).get('current');
       request.onsuccess = () => {
         const state = request.result as StudyState | undefined;
-        if (state && (state.app !== 'ege-local-center' || state.schemaVersion !== 1)) { reject(new Error('Сохранение другой версии. Оно не перезаписано.')); return; }
-        resolve(state);
+        try { resolve(state ? validateStudyState(state) : undefined); }
+        catch { reject(new Error('Локальное сохранение имеет неподдерживаемую структуру. Оно не перезаписано.')); }
       };
       request.onerror = () => reject(request.error);
     });
@@ -37,6 +38,20 @@ export const repository: ProgressRepository = {
       transaction.oncomplete = () => resolve();
       transaction.onerror = () => reject(transaction.error);
       transaction.onabort = () => reject(transaction.error ?? new Error('Сохранение не завершено'));
+    });
+  },
+  async replace(state, previous) {
+    const db = await open();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction(STORE, 'readwrite'), store = transaction.objectStore(STORE);
+      // Unique rollback copy and replacement are committed together, or neither is committed.
+      transaction.oncomplete = () => resolve();
+      transaction.onerror = () => reject(transaction.error);
+      transaction.onabort = () => reject(transaction.error ?? new Error('Импорт не завершён'));
+      try {
+        store.add(previous, `before-import:${new Date().toISOString()}:${crypto.randomUUID()}`);
+        store.put(state, 'current');
+      } catch (error) { transaction.abort(); reject(error); }
     });
   },
 };
