@@ -826,7 +826,7 @@ button {
 .python-stdin{height:110px;margin:10px 0;}
 .python-keys{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0;}
 .python-keys button{min-width:40px;min-height:40px;padding:6px 10px;}
-.python-output{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;min-height:64px;max-height:400px;padding:16px;background:var(--muted);border-radius:10px;font:15px/1.6 ui-monospace,Consolas,monospace;}
+.python-output{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;min-height:64px;max-height:400px;padding:16px;background:var(--muted);color:var(--foreground);border-radius:10px;font:15px/1.6 ui-monospace,Consolas,monospace;}
 .python-error{color:var(--foreground);}
 .python-input-mode{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
 .python-input-mode input{width:18px;height:18px;}
