@@ -24,6 +24,12 @@ const item=q=>({question:q,score:1,reasons:[],firstCorrect:null,correct:null,att
 
 try{
  current=resources;context=await launch();page=context.pages()[0];watch();await page.goto(base+'#settings');await ready();
+
+ const literal='& <img src="missing" onerror="window.__mathExecuted=true"> <script>window.__mathExecuted=true</script> https://example.test/?ratio=3/4 C:/lessons/ratio=2/3.txt '+String.fromCharCode(96)+'print(4/5)'+String.fromCharCode(96)+'; дробь 1/2.';
+ const htmlQuestion={...bank.find(q=>q.id==='b1-math-05'),origin:'custom',source:'Own browser safety fixture',prompt:literal};
+ await seed(beginReview(emptyState('safety-control'),[item(htmlQuestion)],5,'math','safety'));await page.locator('.question-prompt').waitFor();assert.equal(await page.locator('.question-prompt').textContent(),literal);assert.equal(await page.locator('.question-prompt img,.question-prompt script').count(),0);assert.equal(await page.locator('.question-prompt .math-fraction').count(),1);assert.equal(await page.evaluate(()=>window.__mathExecuted),undefined);
+ await page.getByLabel('Твой ответ',{exact:true}).fill(literal);assert.equal(await page.getByLabel('Твой ответ',{exact:true}).inputValue(),literal);await page.getByRole('button',{name:'Проверить ответ',exact:true}).click();assert.equal((await state()).attempts.length,0);const safetyBackup=JSON.stringify({format:'ege-progress-backup',backupVersion:2,appVersion:'0.3.3',createdAt:new Date().toISOString(),data:await state()});assert.equal(parseBackup(safetyBackup).data.adaptive.sessions[0].items[0].question.prompt,literal);
+ pass('Actual question renders HTML as literal text, never executes script/events, preserves URLs/paths/inline code and raw input; snapshot survives backup');
  for(const width of [1440,390,360,320]){
   await page.setViewportSize({width,height:900});await page.goto(base+'#topic/fractions');await page.getByRole('heading',{name:'Дроби',level:1}).waitFor();
   const example=page.locator('pre.math-example');assert.equal(await example.count(),1);assert.ok(await example.locator('.math-fraction').count()>=11);
