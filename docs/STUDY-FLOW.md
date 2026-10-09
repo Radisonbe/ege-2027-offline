@@ -1,5 +1,8 @@
 # UX & Learning Flow Polish
 
+Historical implementation report for accepted commit 34b8511. Subsequent local
+0.3.4 preparation is documented in RELEASE-034.md; history debt in HISTORY-GROWTH.md.
+
 Local branch: `polish-study-flow`, based on the clean, published 0.3.3 commit
 `69e7b5623d5bb687f06b7e5c5c09e54de1c003a8`. No release/version bump,
 merge, push, tag or publication is part of this work.

@@ -14,6 +14,10 @@ export function emptyState(contentVersion: string): StudyState {
 export function topicProgress(state: StudyState, topic: string): TopicProgress {
   return state.topics[topic] ?? { topic, status: 'Не изучено', note: '' };
 }
+export function topicAttemptCounts(state:StudyState,topic:string) {
+  const control=state.attempts.filter(a=>a.topic===topic);
+  return {control:control.length,correct:control.filter(a=>a.correct).length,incorrect:control.filter(a=>!a.correct).length,training:(state.training??[]).filter(a=>a.topic===topic).length};
+}
 export function recordAttempt(state: StudyState, question: Question, answer: string, correct: boolean, context: AttemptContext, id: string, now = new Date(), sessionId?: string): StudyState {
   const date = localDate(now), progress = topicProgress(state, question.topic), reviewKey = `topic:${question.topic}`;
   const next = { ...state, topics: { ...state.topics, [question.topic]: { ...progress, status: correct ? (progress.status === 'Не изучено' ? 'Изучаю' : progress.status) : 'Нужна практика' as TopicStatus, last: date } },
