@@ -1,8 +1,8 @@
 # Stage 3B.2 — first reviewed content wave
 
 Base: published 0.3.4, `77f81ec9c42cf956d39b3680bd82608913353a39`.
-Branch: `content-bank-3b2`. No merge, push, tag or publication is authorized here.
-Application release metadata remains 0.3.4 until a separate release decision.
+Branch: `content-bank-3b2`. Original package preparation did not authorize publication.
+Release 0.4.0 is now separately authorized; release checks are recorded in RELEASE-040.md.
 
 ## Scope and honest limits
 
