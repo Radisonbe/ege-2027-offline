@@ -7,14 +7,18 @@
         "b2",
         "b4",
         "b1-informatics-02",
-        "b1-informatics-04"
+        "b1-informatics-04",
+        "b2-informatics-binary-power",
+        "b2-informatics-binary-base"
       ],
       "test": [
         "b5",
         "b1-informatics-01",
         "b1-informatics-03",
         "b1-informatics-05",
-        "b1-informatics-06"
+        "b1-informatics-06",
+        "b2-informatics-binary-carry",
+        "b2-informatics-binary-rule"
       ]
     },
     "encoding": {
@@ -23,14 +27,18 @@
         "c2",
         "c5",
         "b1-informatics-07",
-        "b1-informatics-08"
+        "b1-informatics-08",
+        "b2-informatics-encoding-id",
+        "b2-informatics-encoding-distinct"
       ],
       "test": [
         "c3",
         "c4",
         "b1-informatics-09",
         "b1-informatics-10",
-        "b1-informatics-11"
+        "b1-informatics-11",
+        "b2-informatics-encoding-prefix",
+        "b2-informatics-encoding-permutations"
       ]
     },
     "functions": {
@@ -39,13 +47,17 @@
         "f2",
         "f4",
         "f5",
-        "b1-math-24"
+        "b1-math-24",
+        "b2-math-func-vertex-height",
+        "b2-math-func-intersection"
       ],
       "test": [
         "f3",
         "f6",
         "f7",
-        "b1-math-25"
+        "b1-math-25",
+        "b2-math-func-domain-two",
+        "b2-math-func-model-tariff"
       ]
     },
     "percent": {
@@ -55,7 +67,9 @@
         "p4",
         "p5",
         "p6",
-        "p7"
+        "p7",
+        "b2-math-pct-chain-restore",
+        "b2-math-pct-share"
       ],
       "test": [
         "b1-math-09",
@@ -64,7 +78,9 @@
         "b1-math-12",
         "b1-math-13",
         "b1-math-14",
-        "b1-math-15"
+        "b1-math-15",
+        "b2-math-pct-return",
+        "b2-math-pct-plan"
       ]
     },
     "py-variables": {
@@ -80,23 +96,27 @@
     "py-types": {
       "practice": [
         "py-types-q",
-        "b1-python-03"
+        "b1-python-03",
+        "b2-python-predict-bool"
       ],
       "test": [
         "py-t2",
-        "b1-python-04"
+        "b1-python-04",
+        "b2-python-py-average"
       ]
     },
     "py-if": {
       "practice": [
         "py-if-q",
         "b1-python-05",
-        "b1-python-06"
+        "b1-python-06",
+        "b2-python-py-leap"
       ],
       "test": [
         "py-i2",
         "b1-python-07",
-        "b1-python-08"
+        "b1-python-08",
+        "b2-python-triangle_kind"
       ]
     },
     "py-loops": {
@@ -104,80 +124,106 @@
         "py-loops-q",
         "b1-python-09",
         "b1-python-10",
-        "b1-python-11"
+        "b1-python-11",
+        "b2-python-py-factorial"
       ],
       "test": [
         "py-l2",
-        "b1-python-12"
+        "b1-python-12",
+        "b2-python-py-positive-count",
+        "b2-python-is_prime"
       ]
     },
     "py-strings": {
       "practice": [
         "py-strings-q",
-        "b1-python-13"
+        "b1-python-13",
+        "b2-python-normalize_spaces",
+        "b2-python-py-reverse-words"
       ],
       "test": [
         "py-s2",
         "b1-python-14",
-        "b1-python-15"
+        "b1-python-15",
+        "b2-python-is_palindrome",
+        "b2-python-predict-find"
       ]
     },
     "py-lists": {
       "practice": [
         "py-lists-q",
         "b1-python-16",
-        "b1-python-18"
+        "b1-python-18",
+        "b2-python-deduplicate",
+        "b2-python-median",
+        "b2-python-move_zeros"
       ],
       "test": [
         "py-li2",
         "b1-python-17",
-        "b1-python-19"
+        "b1-python-19",
+        "b2-python-rotate_right",
+        "b2-python-second_largest"
       ]
     },
     "py-sets": {
       "practice": [
-        "py-sets-q"
+        "py-sets-q",
+        "b2-python-predict-set"
       ],
       "test": [
-        "py-se2"
+        "py-se2",
+        "b2-python-intersection_count"
       ]
     },
     "py-tuples": {
       "practice": [
-        "py-tuples-q"
+        "py-tuples-q",
+        "b2-python-predict-unpack"
       ],
       "test": [
-        "py-tu2"
+        "py-tu2",
+        "b2-python-unique_edges"
       ]
     },
     "py-dicts": {
       "practice": [
         "py-dicts-q",
-        "b1-python-20"
+        "b1-python-20",
+        "b2-python-word_counts",
+        "b2-python-group_totals"
       ],
       "test": [
         "py-d2",
         "b1-python-21",
-        "b1-python-22"
+        "b1-python-22",
+        "b2-python-most_frequent",
+        "b2-python-predict-get"
       ]
     },
     "py-functions": {
       "practice": [
         "py-functions-q",
-        "b1-python-23"
+        "b1-python-23",
+        "b2-python-clamp",
+        "b2-python-predict-default"
       ],
       "test": [
         "py-f2",
         "b1-python-24",
-        "b1-python-25"
+        "b1-python-25",
+        "b2-python-gcd_nonnegative"
       ]
     },
     "py-files": {
       "practice": [
-        "py-files-q"
+        "py-files-q",
+        "b2-python-py-file-roundtrip"
       ],
       "test": [
-        "py-fi2"
+        "py-fi2",
+        "b2-python-py-file-positive",
+        "b2-python-predict-file-mode"
       ]
     },
     "py-csv": {
@@ -220,82 +266,109 @@
         "u3",
         "u4",
         "u5",
-        "b1-russian-16"
+        "b1-russian-16",
+        "b2-russian-union-role-place"
       ],
       "test": [
         "b1-russian-13",
         "b1-russian-14",
         "b1-russian-15",
-        "b1-russian-17"
+        "b1-russian-17",
+        "b2-russian-union-no-role",
+        "b2-russian-union-object"
       ]
     },
     "logic": {
       "practice": [
         "b1-informatics-12",
-        "b1-informatics-13"
+        "b1-informatics-13",
+        "b2-informatics-logic-expression",
+        "b2-informatics-logic-implication"
       ],
       "test": [
         "b1-informatics-14",
         "b1-informatics-15",
-        "b1-informatics-16"
+        "b1-informatics-16",
+        "b2-informatics-logic-interval",
+        "b2-informatics-logic-parameter"
       ]
     },
     "information": {
       "practice": [
         "b1-informatics-17",
-        "b1-informatics-18"
+        "b1-informatics-18",
+        "b2-informatics-info-header",
+        "b2-informatics-info-transfer"
       ],
       "test": [
         "b1-informatics-19",
-        "b1-informatics-20"
+        "b1-informatics-20",
+        "b2-informatics-info-audio",
+        "b2-informatics-info-row-round"
       ]
     },
     "infpython": {
       "practice": [
         "b1-informatics-21",
-        "b1-informatics-22"
+        "b1-informatics-22",
+        "b2-informatics-inf-pair",
+        "b2-informatics-inf-neighbours"
       ],
       "test": [
         "b1-informatics-23",
         "b1-informatics-24",
-        "b1-informatics-25"
+        "b1-informatics-25",
+        "b2-informatics-inf-firstmax",
+        "b2-informatics-inf-nondecreasing"
       ]
     },
     "arithmetic": {
       "practice": [
         "b1-math-01",
-        "b1-math-02"
+        "b1-math-02",
+        "b2-math-arith-balance",
+        "b2-math-arith-remainders"
       ],
       "test": [
         "b1-math-03",
-        "b1-math-04"
+        "b1-math-04",
+        "b2-math-arith-rounding",
+        "b2-math-arith-negative-square"
       ]
     },
     "fractions": {
       "practice": [
         "b1-math-05",
-        "b1-math-07"
+        "b1-math-07",
+        "b2-math-frac-share",
+        "b2-math-frac-complex"
       ],
       "test": [
         "b1-math-06",
-        "b1-math-08"
+        "b1-math-08",
+        "b2-math-frac-restore",
+        "b2-math-frac-compare"
       ]
     },
     "powers": {
       "practice": [
-        "b1-math-16"
+        "b1-math-16",
+        "b2-math-power-negative"
       ],
       "test": [
         "b1-math-17",
-        "b1-math-18"
+        "b1-math-18",
+        "b2-math-power-compare"
       ]
     },
     "roots": {
       "practice": [
-        "b1-math-19"
+        "b1-math-19",
+        "b2-math-root-absolute"
       ],
       "test": [
-        "b1-math-20"
+        "b1-math-20",
+        "b2-math-root-simplify"
       ]
     },
     "linear": {
@@ -310,38 +383,193 @@
     "speech": {
       "practice": [
         "b1-russian-01",
-        "b1-russian-02"
+        "b1-russian-02",
+        "b2-russian-speech-substantive"
       ],
       "test": [
         "b1-russian-03",
         "b1-russian-04",
-        "b1-russian-05"
+        "b1-russian-05",
+        "b2-russian-speech-like",
+        "b2-russian-speech-state"
       ]
     },
     "spelling": {
       "practice": [
-        "b1-russian-18"
+        "b1-russian-18",
+        "b2-russian-spell-ne-contrast"
       ],
       "test": [
         "b1-russian-19",
-        "b1-russian-20"
+        "b1-russian-20",
+        "b2-russian-spell-verb",
+        "b2-russian-spell-negation"
       ]
     },
     "punctuation": {
       "practice": [
-        "b1-russian-21"
+        "b1-russian-21",
+        "b2-russian-punct-address"
       ],
       "test": [
         "b1-russian-22",
-        "b1-russian-23"
+        "b1-russian-23",
+        "b2-russian-punct-gerund",
+        "b2-russian-punct-repeat-and"
       ]
     },
     "text": {
       "practice": [
-        "b1-russian-24"
+        "b1-russian-24",
+        "b2-russian-text-causal"
       ],
       "test": [
-        "b1-russian-25"
+        "b1-russian-25",
+        "b2-russian-text-pronoun",
+        "b2-russian-text-metaphor"
+      ]
+    },
+    "quadratic": {
+      "practice": [
+        "b2-math-quad-factor",
+        "b2-math-quad-discriminant",
+        "b2-math-quad-width"
+      ],
+      "test": [
+        "b2-math-quad-parameter",
+        "b2-math-quad-square"
+      ]
+    },
+    "inequalities": {
+      "practice": [
+        "b2-math-ineq-negative",
+        "b2-math-ineq-system",
+        "b2-math-ineq-rational"
+      ],
+      "test": [
+        "b2-math-ineq-root-domain",
+        "b2-math-ineq-budget"
+      ]
+    },
+    "word": {
+      "practice": [
+        "b2-math-word-rate",
+        "b2-math-word-meeting",
+        "b2-math-word-mixture"
+      ],
+      "test": [
+        "b2-math-word-workers",
+        "b2-math-word-ages"
+      ]
+    },
+    "probability": {
+      "practice": [
+        "b2-math-prob-simple",
+        "b2-math-prob-mean",
+        "b2-math-prob-no-return"
+      ],
+      "test": [
+        "b2-math-prob-conditional",
+        "b2-math-prob-weighted"
+      ]
+    },
+    "logarithms": {
+      "practice": [
+        "b2-math-log-definition",
+        "b2-math-log-equation",
+        "b2-math-log-product"
+      ],
+      "test": [
+        "b2-math-log-small-base",
+        "b2-math-exp-shift"
+      ]
+    },
+    "trigonometry": {
+      "practice": [
+        "b2-math-trig-circle",
+        "b2-math-trig-sign",
+        "b2-math-trig-double"
+      ],
+      "test": [
+        "b2-math-trig-root-count",
+        "b2-math-trig-radians"
+      ]
+    },
+    "members": {
+      "practice": [
+        "b2-russian-member-subject",
+        "b2-russian-member-object",
+        "b2-russian-member-definition"
+      ],
+      "test": [
+        "b2-russian-member-infinitive",
+        "b2-russian-member-adverb"
+      ]
+    },
+    "prepositions": {
+      "practice": [
+        "b2-russian-prep-derivative",
+        "b2-russian-prep-cause",
+        "b2-russian-prep-despite"
+      ],
+      "test": [
+        "b2-russian-prep-agreement",
+        "b2-russian-prep-account"
+      ]
+    },
+    "participles": {
+      "practice": [
+        "b2-russian-part-action",
+        "b2-russian-part-after",
+        "b2-russian-part-before"
+      ],
+      "test": [
+        "b2-russian-part-short",
+        "b2-russian-part-agree"
+      ]
+    },
+    "complex": {
+      "practice": [
+        "b2-russian-complex-bases",
+        "b2-russian-complex-shared",
+        "b2-russian-complex-insert"
+      ],
+      "test": [
+        "b2-russian-complex-homogeneous",
+        "b2-russian-complex-relation"
+      ]
+    },
+    "graphs": {
+      "practice": [
+        "b2-informatics-graph-degree",
+        "b2-informatics-graph-shortest",
+        "b2-informatics-graph-paths"
+      ],
+      "test": [
+        "b2-informatics-graph-through",
+        "b2-informatics-graph-network"
+      ]
+    },
+    "tables": {
+      "practice": [
+        "b2-informatics-table-total",
+        "b2-informatics-table-copy",
+        "b2-informatics-table-filter"
+      ],
+      "test": [
+        "b2-informatics-table-average",
+        "b2-informatics-table-join"
+      ]
+    },
+    "algorithms": {
+      "practice": [
+        "b2-informatics-algo-euclid",
+        "b2-informatics-algo-nested",
+        "b2-informatics-algo-digits"
+      ],
+      "test": [
+        "b2-informatics-algo-search",
+        "b2-informatics-algo-steps"
       ]
     }
   }

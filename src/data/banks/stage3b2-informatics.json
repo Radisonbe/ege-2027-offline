@@ -1,0 +1,1251 @@
+{
+  "schemaVersion": 1,
+  "id": "stage3b2-informatics",
+  "subject": "informatics",
+  "questions": [
+    {
+      "id": "b2-informatics-graph-degree",
+      "subject": "informatics",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "skills": [
+        "graphs.skill.3b2-structure"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Неориентированный граф имеет рёбра AB, AC, BC, CD, DE. Сколько рёбер выходит из вершины C?",
+      "answer": "3",
+      "hint": "Выпиши соседей нужной вершины.",
+      "explanation": "Вершина C соединена с A, B и D. Степень C равна 3. Каждое неориентированное ребро считается у обоих концов.",
+      "solution": "Вершина C соединена с A, B и D. Степень C равна 3. Каждое неориентированное ребро считается у обоих концов.",
+      "principle": "Выпиши соседей нужной вершины.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-graph-shortest",
+      "subject": "informatics",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "skills": [
+        "graphs.skill.3b2-weighted"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Дороги двусторонние. Длины: AB=4, AC=9, BC=2, BD=8, CD=3. Найди кратчайшее расстояние из A в D.",
+      "answer": "9",
+      "hint": "Сравни суммы весов разных простых путей.",
+      "explanation": "Путь A−B−C−D имеет длину 4+2+3=9. A−B−D даёт 12, A−C−D — 12. Все веса положительные, циклы не улучшат путь.",
+      "solution": "Путь A−B−C−D имеет длину 4+2+3=9. A−B−D даёт 12, A−C−D — 12. Все веса положительные, циклы не улучшат путь.",
+      "principle": "Сравни суммы весов разных простых путей.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-graph-paths",
+      "subject": "informatics",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "skills": [
+        "graphs.skill.3b2-count-paths"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В ориентированном графе есть только дуги A→B, A→C, B→C, B→D, C→D, D→E. Сколько разных путей ведёт из A в E?",
+      "answer": "3",
+      "hint": "Количество путей к вершине равно сумме количеств к её предшественникам.",
+      "explanation": "К B ведёт 1 путь. К C — напрямую и через B, всего 2. К D приходит 1+2=3 пути. Дуга D→E переносит все 3 пути.",
+      "solution": "К B ведёт 1 путь. К C — напрямую и через B, всего 2. К D приходит 1+2=3 пути. Дуга D→E переносит все 3 пути.",
+      "principle": "Количество путей к вершине равно сумме количеств к её предшественникам.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-graph-through",
+      "subject": "informatics",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "skills": [
+        "graphs.skill.3b2-count-paths"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Дуги графа: A→B, A→C, B→D, B→E, C→D, C→E, D→E, D→F, E→F. Сколько путей из A в F проходят через D, но не проходят через E?",
+      "answer": "2",
+      "hint": "Удалив запрещённую вершину, отдельно учти обязательную вершину.",
+      "explanation": "К D ведут два пути: A−B−D и A−C−D. После D нельзя идти в E, остаётся только D→F. Получаем два допустимых полных пути.",
+      "solution": "К D ведут два пути: A−B−D и A−C−D. После D нельзя идти в E, остаётся только D→F. Получаем два допустимых полных пути.",
+      "principle": "Удалив запрещённую вершину, отдельно учти обязательную вершину.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-graph-network",
+      "subject": "informatics",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "skills": [
+        "graphs.skill.3b2-spanning"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Нужно соединить все пять пунктов A,B,C,D,E двусторонней сетью без циклов с минимальной суммарной длиной. Доступны AB=2, AC=2, BC=1, BD=6, CD=3, CE=7, DE=4. Найди минимальную сумму.",
+      "answer": "10",
+      "hint": "Для пяти пунктов дерево содержит четыре ребра; проверь связность и отсутствие циклов.",
+      "explanation": "Выбираем BC=1, AB=2, CD=3, DE=4: пять вершин связаны без цикла, сумма 10. Для пяти вершин нужны четыре ребра. Сумму меньше 10 имеют только наборы с весами 1,2,2,3 или 1,2,2,4; оба содержат цикл AB−BC−AC и не являются деревьями. Рёбра весом 6 или 7 уже не позволяют сумму меньше 10. Значит найденный минимум доказан.",
+      "solution": "Выбираем BC=1, AB=2, CD=3, DE=4: пять вершин связаны без цикла, сумма 10. Для пяти вершин нужны четыре ребра. Сумму меньше 10 имеют только наборы с весами 1,2,2,3 или 1,2,2,4; оба содержат цикл AB−BC−AC и не являются деревьями. Рёбра весом 6 или 7 уже не позволяют сумму меньше 10. Значит найденный минимум доказан.",
+      "principle": "Для пяти пунктов дерево содержит четыре ребра; проверь связность и отсутствие циклов.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-table-total",
+      "subject": "informatics",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "skills": [
+        "tables.skill.3b2-aggregate"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Таблица продаж: строка 2 — цена 12, количество 5; строка 3 — цена 8, количество 9. В каждой строке выручка равна цене × количеству. Найди общую выручку.",
+      "answer": "132",
+      "hint": "Сначала вычисли показатель каждой строки, затем сложи.",
+      "explanation": "Строка 2: 12·5=60. Строка 3: 8·9=72. Общая выручка 132. Суммировать сами цены и количества было бы неверно.",
+      "solution": "Строка 2: 12·5=60. Строка 3: 8·9=72. Общая выручка 132. Суммировать сами цены и количества было бы неверно.",
+      "principle": "Сначала вычисли показатель каждой строки, затем сложи.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-table-copy",
+      "subject": "informatics",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "skills": [
+        "tables.skill.3b2-references"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "В ячейке C2 записана формула =$A2*B$1. Её копируют в D4. Какая формула получится?",
+      "answer": "=$A4*C$1",
+      "hint": "Знак $ фиксирует только следующий за ним столбец или строку.",
+      "explanation": "Сдвиг на 1 столбец и 2 строки. В $A2 фиксирован столбец A, строка становится 4. В B$1 фиксирована строка 1, столбец становится C. Получаем =$A4*C$1.",
+      "solution": "Сдвиг на 1 столбец и 2 строки. В $A2 фиксирован столбец A, строка становится 4. В B$1 фиксирована строка 1, столбец становится C. Получаем =$A4*C$1.",
+      "principle": "Знак $ фиксирует только следующий за ним столбец или строку.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "=$A4*C$1",
+        "=$B4*C$3",
+        "=$A2*B$1",
+        "=$A4*B$1"
+      ]
+    },
+    {
+      "id": "b2-informatics-table-filter",
+      "subject": "informatics",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "skills": [
+        "tables.skill.3b2-filter"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Данные (город; балл): (А;7), (Б;9), (А;5), (А;10), (Б;4). Найди сумму баллов строк, где город А и балл не меньше 7.",
+      "answer": "17",
+      "hint": "Два критерия должны выполняться одновременно.",
+      "explanation": "Подходят (А;7) и (А;10). Строка (А;5) не проходит порог, город Б не подходит независимо от балла. Сумма 17.",
+      "solution": "Подходят (А;7) и (А;10). Строка (А;5) не проходит порог, город Б не подходит независимо от балла. Сумма 17.",
+      "principle": "Два критерия должны выполняться одновременно.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-table-average",
+      "subject": "informatics",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "skills": [
+        "tables.skill.3b2-aggregate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В A1:A5 находятся 0, 6, 8, 10, 16. Формула считает среднее всех пяти чисел. Найди её значение.",
+      "answer": "8",
+      "hint": "Нулевое значение не равно пустой ячейке.",
+      "explanation": "Сумма 40, количество чисел 5. Ноль входит в количество: среднее 8. Пустых ячеек в условии нет.",
+      "solution": "Сумма 40, количество чисел 5. Ноль входит в количество: среднее 8. Пустых ячеек в условии нет.",
+      "principle": "Нулевое значение не равно пустой ячейке.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-table-join",
+      "subject": "informatics",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "skills": [
+        "tables.skill.3b2-join"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Таблица товаров (ID; цена): (K;12), (L;20), (M;7). Заказы (ID; количество; выполнен): (L;3;да), (K;5;нет), (M;8;да), (L;2;да). Найди выручку только выполненных заказов.",
+      "answer": "156",
+      "hint": "Сначала найди цену по ключу, затем примени фильтр и умножь на количество.",
+      "explanation": "Связываем таблицы по ID. Выполненные заказы: L на 3 штуки — 60; M на 8 — 56; L на 2 — 40. Общая выручка 156. Невыполненный K исключён; повторный ID L не означает дубликат заказа.",
+      "solution": "Связываем таблицы по ID. Выполненные заказы: L на 3 штуки — 60; M на 8 — 56; L на 2 — 40. Общая выручка 156. Невыполненный K исключён; повторный ID L не означает дубликат заказа.",
+      "principle": "Сначала найди цену по ключу, затем примени фильтр и умножь на количество.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-algo-euclid",
+      "subject": "informatics",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "skills": [
+        "algorithms.skill.3b2-trace"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Алгоритм начинает с a=84, b=30. Пока b≠0, одновременно заменяет (a,b) на (b,a mod b). Какое a будет в конце?",
+      "answer": "6",
+      "hint": "Записывай оба значения после каждого шага.",
+      "explanation": "Пары последовательно: (84,30), (30,24), (24,6), (6,0). Алгоритм завершён, a=6 — НОД исходных чисел. Одновременная замена использует старые значения.",
+      "solution": "Пары последовательно: (84,30), (30,24), (24,6), (6,0). Алгоритм завершён, a=6 — НОД исходных чисел. Одновременная замена использует старые значения.",
+      "principle": "Записывай оба значения после каждого шага.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-algo-nested",
+      "subject": "informatics",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "skills": [
+        "algorithms.skill.3b2-trace"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Счётчик c=0. Для каждого целого i от 1 до 8 включительно перебирают j от 1 до i включительно и увеличивают c, если (i+j) делится на 3. Найди c.",
+      "answer": "12",
+      "hint": "Составь таблицу количества подходящих внутренних значений для каждого i.",
+      "explanation": "Для i=1…8 количество подходящих j: 0,1,1,1,2,2,2,3. Сумма 12. Граница внутреннего цикла зависит от i, поэтому нельзя умножать две постоянные длины.",
+      "solution": "Для i=1…8 количество подходящих j: 0,1,1,1,2,2,2,3. Сумма 12. Граница внутреннего цикла зависит от i, поэтому нельзя умножать две постоянные длины.",
+      "principle": "Составь таблицу количества подходящих внутренних значений для каждого i.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-algo-digits",
+      "subject": "informatics",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "skills": [
+        "algorithms.skill.3b2-digits"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает одно неотрицательное целое число. Найди сумму его десятичных цифр и выведи одно число.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Последняя цифра — остаток от деления на 10.",
+      "explanation": "1. Последняя цифра — остаток от деления на 10.\n\n2. После её обработки отбрось цифру целочисленным делением. Для нуля сумма остаётся нулём.\n\n3. На каждом шаге сохраняется сумма уже снятых цифр; цикл заканчивается, когда цифр не осталось.",
+      "solution": "n = int(input())\ntotal = 0\nwhile n > 0:\n    total += n % 10\n    n //= 10\nprint(total)",
+      "principle": "Последняя цифра — остаток от деления на 10.",
+      "version": 1,
+      "requires": [
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Последняя цифра — остаток от деления на 10.",
+        "После её обработки отбрось цифру целочисленным делением. Для нуля сумма остаётся нулём.",
+        "На каждом шаге сохраняется сумма уже снятых цифр; цикл заканчивается, когда цифр не осталось."
+      ],
+      "presentation": {
+        "title": "Сумма цифр",
+        "statement": "Программа получает одно неотрицательное целое число. Найди сумму его десятичных цифр и выведи одно число.",
+        "limits": "0 ≤ n ≤ 10⁹. Одна строка ввода; одна строка вывода.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "203",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "203",
+            "expectedOutput": "5"
+          },
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "99999",
+            "expectedOutput": "45"
+          },
+          {
+            "stdin": "1000000000",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "70608",
+            "expectedOutput": "21"
+          },
+          {
+            "stdin": "10",
+            "expectedOutput": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-informatics-algo-search",
+      "subject": "informatics",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "skills": [
+        "algorithms.skill.3b2-trace"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В отсортированном списке [2,4,7,9,13,17,21] ищут 13 бинарным поиском. Середина всегда floor((left+right)/2), границы включены. Сколько сравнений с элементом потребуется?",
+      "answer": "3",
+      "hint": "После сравнения исключай уже проверенную середину.",
+      "explanation": "Индексы 0…6: середина 3, число 9 меньше 13. Теперь 4…6: середина 5, число 17 больше. Теперь 4…4: число 13 найдено. Три сравнения.",
+      "solution": "Индексы 0…6: середина 3, число 9 меньше 13. Теперь 4…6: середина 5, число 17 больше. Теперь 4…4: число 13 найдено. Три сравнения.",
+      "principle": "После сравнения исключай уже проверенную середину.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-algo-steps",
+      "subject": "informatics",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "skills": [
+        "algorithms.skill.3b2-dynamic"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши функцию routes(n), возвращающую число способов подняться с позиции 0 на позицию n шагами +1 или +2. Нельзя вставать на положительные позиции, кратные 3. Позиция 0 разрешена; routes(0)=1.",
+      "answer": "Программа проходит все тесты",
+      "hint": "ways[i] хранит число допустимых путей к i, а не список путей.",
+      "explanation": "1. ways[i] хранит число допустимых путей к i, а не список путей.\n\n2. Последний шаг приходит из i−1 или i−2; у закрытой позиции число путей 0.\n\n3. Начальное ways[0]=1 означает один пустой маршрут. Собирай значения от меньших позиций к большим.",
+      "solution": "def routes(n):\n    ways = [0] * (n + 1)\n    ways[0] = 1\n    for i in range(1, n + 1):\n        if i % 3 == 0:\n            continue\n        ways[i] = ways[i - 1]\n        if i >= 2:\n            ways[i] += ways[i - 2]\n    return ways[n]",
+      "principle": "ways[i] хранит число допустимых путей к i, а не список путей.",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "ways[i] хранит число допустимых путей к i, а не список путей.",
+        "Последний шаг приходит из i−1 или i−2; у закрытой позиции число путей 0.",
+        "Начальное ways[0]=1 означает один пустой маршрут. Собирай значения от меньших позиций к большим."
+      ],
+      "presentation": {
+        "title": "Маршруты с закрытыми ступенями",
+        "statement": "Напиши функцию routes(n), возвращающую число способов подняться с позиции 0 на позицию n шагами +1 или +2. Нельзя вставать на положительные позиции, кратные 3. Позиция 0 разрешена; routes(0)=1.",
+        "limits": "Аргумент — целое 0…30. Возврат — целое число; ничего печатать не нужно.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def routes(n):\n    pass\n",
+        "functionName": "routes",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              0
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              2
+            ],
+            "expectedReturn": 2
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              3
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              4
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              5
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              7
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              30
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              29
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              1
+            ],
+            "expectedReturn": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-informatics-binary-power",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.place",
+      "skills": [
+        "binary.skill.weight"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько единиц в двоичной записи числа 2¹²−1?",
+      "answer": "12",
+      "hint": "Рассмотри разряды числа непосредственно перед степенью двойки.",
+      "explanation": "2¹² записывается как 1 и 12 нулей. Вычитание единицы даёт 12 единиц. Можно проверить сумму 1+2+…+2¹¹=4095.",
+      "solution": "2¹² записывается как 1 и 12 нулей. Вычитание единицы даёт 12 единиц. Можно проверить сумму 1+2+…+2¹¹=4095.",
+      "principle": "Рассмотри разряды числа непосредственно перед степенью двойки.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-binary-base",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.extension",
+      "skills": [
+        "binary.skill.3b2-binary-base"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Найди десятичное значение числа 231₄.",
+      "answer": "45",
+      "hint": "Умножь каждую цифру на соответствующую степень основания.",
+      "explanation": "Разряды имеют веса 4²,4¹,4⁰. Значение 2·16+3·4+1=45. Все цифры меньше основания 4.",
+      "solution": "Разряды имеют веса 4²,4¹,4⁰. Значение 2·16+3·4+1=45. Все цифры меньше основания 4.",
+      "principle": "Умножь каждую цифру на соответствующую степень основания.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-binary-carry",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "skills": [
+        "binary.skill.to-decimal"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сложи 101101₂ и 111₂. Ответ запиши в десятичной системе.",
+      "answer": "52",
+      "hint": "Можно проверить переносы через перевод в десятичную систему.",
+      "explanation": "101101₂=32+8+4+1=45; 111₂=7. Сумма 52, в двоичном виде 110100₂.",
+      "solution": "101101₂=32+8+4+1=45; 111₂=7. Сумма 52, в двоичном виде 110100₂.",
+      "principle": "Можно проверить переносы через перевод в десятичную систему.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-binary-rule",
+      "subject": "informatics",
+      "topic": "binary",
+      "subtopic": "binary.sub.extension",
+      "skills": [
+        "binary.skill.3b2-binary-rule"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "К двоичной записи положительного N приписывают справа бит чётности: 0, если исходное число единиц чётно, иначе 1. Полученное число R должно быть больше 40. Найди наименьшее N.",
+      "answer": "21",
+      "hint": "Отдели сдвиг двоичной записи от вычисления дописанного бита.",
+      "explanation": "Приписывание даёт R=2N+b. Для N≤19 даже 2N+1≤39. N=20: запись 10100 имеет две единицы, R=40, не подходит. N=21: 10101 имеет три единицы, b=1 и R=43.",
+      "solution": "Приписывание даёт R=2N+b. Для N≤19 даже 2N+1≤39. N=20: запись 10100 имеет две единицы, R=40, не подходит. N=21: 10101 имеет три единицы, b=1 и R=43.",
+      "principle": "Отдели сдвиг двоичной записи от вычисления дописанного бита.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-info-header",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Передают 300 записей. Каждая содержит 18 байт данных и 6 байт заголовка. Найди общий объём в битах.",
+      "answer": "57600",
+      "hint": "Уточни, относится ли накладной расход ко всему файлу или к каждой записи.",
+      "explanation": "Одна запись занимает 24 байта, все записи 7200 байт. В байте 8 бит, значит 57600 бит. Заголовок повторяется в каждой записи.",
+      "solution": "Одна запись занимает 24 байта, все записи 7200 байт. В байте 8 бит, значит 57600 бит. Заголовок повторяется в каждой записи.",
+      "principle": "Уточни, относится ли накладной расход ко всему файлу или к каждой записи.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-info-transfer",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Файл объёмом 6 МиБ передают по каналу 2 Мибит/с без накладных расходов. За сколько секунд передадут файл? 1 МиБ=2²⁰ байт, 1 Мибит=2²⁰ бит.",
+      "answer": "24",
+      "hint": "Приведи объём и скорость к одинаковым единицам.",
+      "explanation": "6 МиБ — это 48 Мибит. Делим объём 48 на скорость 2: 24 секунды. Показатели 2²⁰ сокращаются.",
+      "solution": "6 МиБ — это 48 Мибит. Делим объём 48 на скорость 2: 24 секунды. Показатели 2²⁰ сокращаются.",
+      "principle": "Приведи объём и скорость к одинаковым единицам.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-info-audio",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Монофонический звук записан 10 секунд с частотой 8000 отсчётов/с и глубиной 16 бит. Заголовком пренебречь. Найди объём в байтах.",
+      "answer": "160000",
+      "hint": "Перемножь длительность, частоту, глубину и число каналов.",
+      "explanation": "Отсчётов 10·8000=80000. Каждый требует 16/8=2 байта. Объём 160000 байт. Один канал — дополнительных множителей нет.",
+      "solution": "Отсчётов 10·8000=80000. Каждый требует 16/8=2 байта. Объём 160000 байт. Один канал — дополнительных множителей нет.",
+      "principle": "Перемножь длительность, частоту, глубину и число каналов.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-info-row-round",
+      "subject": "informatics",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "skills": [
+        "information.skill.units"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Изображение 101×80 пикселей содержит 16 цветов. Каждый пиксель кодируется минимальным одинаковым числом бит, а каждая строка отдельно дополняется нулями до целого числа байт. Заголовка нет. Найди объём в байтах.",
+      "answer": "4080",
+      "hint": "Округление выполняется на уровне каждой строки.",
+      "explanation": "16 цветов требуют 4 бита. Строка занимает 404 бита, то есть 50,5 байта; с дополнением 51 байт. Всего 51·80=4080. Округлять только весь файл нельзя.",
+      "solution": "16 цветов требуют 4 бита. Строка занимает 404 бита, то есть 50,5 байта; с дополнением 51 байт. Всего 51·80=4080. Округлять только весь файл нельзя.",
+      "principle": "Округление выполняется на уровне каждой строки.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-encoding-id",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.alphabet",
+      "skills": [
+        "encoding.skill.minimum-bits"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Алфавит содержит 33 символа. Каждому дают минимальный равномерный двоичный код. Идентификатор имеет 12 символов; каждый идентификатор отдельно округляют до целого числа байт. Сколько байт требует один идентификатор?",
+      "answer": "9",
+      "hint": "Сначала найди число бит на символ, потом объём строки.",
+      "explanation": "2⁵=32 недостаточно, 2⁶=64 достаточно. Код символа 6 бит, всего 72 бита=9 байт.",
+      "solution": "2⁵=32 недостаточно, 2⁶=64 достаточно. Код символа 6 бит, всего 72 бита=9 байт.",
+      "principle": "Сначала найди число бит на символ, потом объём строки.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-encoding-distinct",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.alphabet",
+      "skills": [
+        "encoding.skill.capacity"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Пароль имеет длину 3 из алфавита из 5 символов; символы могут повторяться. Сколько разных паролей возможно?",
+      "answer": "125",
+      "hint": "Различай разрешённые повторения и выбор без повторений.",
+      "explanation": "На каждой позиции 5 независимых выборов. Всего 5·5·5=125. Ограничения на повторение нет.",
+      "solution": "На каждой позиции 5 независимых выборов. Всего 5·5·5=125. Ограничения на повторение нет.",
+      "principle": "Различай разрешённые повторения и выбор без повторений.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-encoding-prefix",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.extension",
+      "skills": [
+        "encoding.skill.3b2-prefix"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Двоичные коды A=0, B=10, C=110. Для D выбирают самый короткий код, сохраняя условие Фано: ни один код не является началом другого. Найди длину кода D.",
+      "answer": "3",
+      "hint": "Проверяй обе стороны: новый код не должен быть префиксом старого и наоборот.",
+      "explanation": "Однобитные 0 и 1 невозможны: 0 уже занят, 1 — начало 10 и 110. Из двухбитных 10 занят, 11 — начало 110, 00 и 01 начинаются с 0. Трёхбитный 111 подходит. Длина 3.",
+      "solution": "Однобитные 0 и 1 невозможны: 0 уже занят, 1 — начало 10 и 110. Из двухбитных 10 занят, 11 — начало 110, 00 и 01 начинаются с 0. Трёхбитный 111 подходит. Длина 3.",
+      "principle": "Проверяй обе стороны: новый код не должен быть префиксом старого и наоборот.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-encoding-permutations",
+      "subject": "informatics",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.extension",
+      "skills": [
+        "encoding.skill.3b2-combinations"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Код состоит из трёх различных символов алфавита из 6 символов. Порядок важен. Сколько кодов возможно?",
+      "answer": "120",
+      "hint": "После выбора очередного символа число доступных уменьшается.",
+      "explanation": "Первый символ выбираем 6 способами, второй 5, третий 4: 120. Повторения запрещены, поэтому 6³ не подходит.",
+      "solution": "Первый символ выбираем 6 способами, второй 5, третий 4: 120. Повторения запрещены, поэтому 6³ не подходит.",
+      "principle": "После выбора очередного символа число доступных уменьшается.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-logic-expression",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько наборов (A,B,C) из 0 и 1 делают истинным (A ∧ B) ∨ (¬A ∧ C)?",
+      "answer": "4",
+      "hint": "Раздели случаи по A, затем упрости выражение.",
+      "explanation": "При A=1 значение равно B, поэтому B=1 и два варианта C. При A=0 значение равно C, поэтому C=1 и два варианта B. Всего четыре набора.",
+      "solution": "При A=1 значение равно B, поэтому B=1 и два варианта C. При A=0 значение равно C, поэтому C=1 и два варианта B. Всего четыре набора.",
+      "principle": "Раздели случаи по A, затем упрости выражение.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-logic-implication",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько наборов (A,B,C) из 0 и 1 делают ложным A → (B ∨ C)?",
+      "answer": "1",
+      "hint": "X→Y равносильно ¬X∨Y.",
+      "explanation": "Импликация ложна только при истинной посылке и ложном следствии. Требуется A=1, B=0, C=0 — один набор.",
+      "solution": "Импликация ложна только при истинной посылке и ложном следствии. Требуется A=1, B=0, C=0 — один набор.",
+      "principle": "X→Y равносильно ¬X∨Y.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-logic-interval",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.foundation",
+      "skills": [
+        "logic.skill.operations"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько целых x от 0 до 15 делают истинным (x>3) ∧ ¬(x≥10)?",
+      "answer": "6",
+      "hint": "Сначала преобразуй отрицание сравнения.",
+      "explanation": "Условия дают 3<x<10. Целые x: 4,5,6,7,8,9 — шесть. Не забудь строгую правую границу после отрицания.",
+      "solution": "Условия дают 3<x<10. Целые x: 4,5,6,7,8,9 — шесть. Не забудь строгую правую границу после отрицания.",
+      "principle": "Сначала преобразуй отрицание сравнения.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-logic-parameter",
+      "subject": "informatics",
+      "topic": "logic",
+      "subtopic": "logic.sub.extension",
+      "skills": [
+        "logic.skill.3b2-universal"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Найди наименьшее неотрицательное целое a, при котором для всех целых x от 0 до 30 истинно: (x≤12) → (x≤a).",
+      "answer": "12",
+      "hint": "Для всеобщего условия ищи самый требовательный допустимый x.",
+      "explanation": "Все x от 0 до 12 должны удовлетворять x≤a. Самое сильное требование задаёт x=12: a≥12. При a=12 остальные значения тоже подходят; x>12 имеют ложную посылку.",
+      "solution": "Все x от 0 до 12 должны удовлетворять x≤a. Самое сильное требование задаёт x=12: a≥12. При a=12 остальные значения тоже подходят; x>12 имеют ложную посылку.",
+      "principle": "Для всеобщего условия ищи самый требовательный допустимый x.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-informatics-inf-pair",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "skills": [
+        "infpython.skill.3b2-ranking"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает строку целых чисел. Выведи сумму двух наибольших элементов списка. Равные значения допускаются и считаются отдельными элементами.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Нужны два элемента, а не два различных значения.",
+      "explanation": "1. Нужны два элемента, а не два различных значения.\n\n2. После сортировки два последних элемента наибольшие.\n\n3. Отрицательные числа нельзя заменять начальным максимумом 0.",
+      "solution": "values = list(map(int, input().split()))\nvalues.sort()\nprint(values[-1] + values[-2])",
+      "principle": "Нужны два элемента, а не два различных значения.",
+      "version": 1,
+      "requires": [
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Нужны два элемента, а не два различных значения.",
+        "После сортировки два последних элемента наибольшие.",
+        "Отрицательные числа нельзя заменять начальным максимумом 0."
+      ],
+      "presentation": {
+        "title": "Сумма двух наибольших элементов",
+        "statement": "Программа получает строку целых чисел. Выведи сумму двух наибольших элементов списка. Равные значения допускаются и считаются отдельными элементами.",
+        "limits": "От 2 до 100 чисел, каждое −1000…1000.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "3 1 5",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "3 1 5",
+            "expectedOutput": "8"
+          },
+          {
+            "stdin": "-9 -3",
+            "expectedOutput": "-12"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "5 5 1",
+            "expectedOutput": "10"
+          },
+          {
+            "stdin": "0 0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "-5 -2 -8 -1",
+            "expectedOutput": "-3"
+          },
+          {
+            "stdin": "1000 -1000 999",
+            "expectedOutput": "1999"
+          },
+          {
+            "stdin": "1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000",
+            "expectedOutput": "2000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-informatics-inf-neighbours",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "skills": [
+        "infpython.skill.3b2-neighbours"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "В строке целых чисел посчитай соседние пары, у которых сумма делится на 3. Пары могут перекрываться. Выведи их количество.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Проверяй позиции i и i+1 до предпоследнего индекса.",
+      "explanation": "1. Проверяй позиции i и i+1 до предпоследнего индекса.\n\n2. Условие относится к сумме пары, не к отдельным элементам.\n\n3. Перекрывающиеся пары (0,1) и (1,2) учитываются независимо.",
+      "solution": "a = list(map(int, input().split()))\ncount = 0\nfor i in range(len(a) - 1):\n    if (a[i] + a[i + 1]) % 3 == 0:\n        count += 1\nprint(count)",
+      "principle": "Проверяй позиции i и i+1 до предпоследнего индекса.",
+      "version": 1,
+      "requires": [
+        "py-loops",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Проверяй позиции i и i+1 до предпоследнего индекса.",
+        "Условие относится к сумме пары, не к отдельным элементам.",
+        "Перекрывающиеся пары (0,1) и (1,2) учитываются независимо."
+      ],
+      "presentation": {
+        "title": "Соседние пары",
+        "statement": "В строке целых чисел посчитай соседние пары, у которых сумма делится на 3. Пары могут перекрываться. Выведи их количество.",
+        "limits": "От 1 до 100 чисел, каждое −100…100. Для списка из одного числа ответ 0.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "1 2 4",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "1 2 4",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "3",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "-1 1 2",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "0 0 0",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "1 1 1",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "3 6 9 12",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
+            "expectedOutput": "99"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-informatics-inf-firstmax",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "skills": [
+        "infpython.skill.3b2-first-position"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает непустую строку целых чисел. Выведи индекс первого максимального элемента; индексы начинаются с нуля.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Храни индекс, а не только максимальное значение.",
+      "explanation": "1. Храни индекс, а не только максимальное значение.\n\n2. Обновляй индекс при строгом >, чтобы сохранить первое вхождение.\n\n3. Начальная позиция 0 подходит и для полностью отрицательного списка.",
+      "solution": "a = list(map(int, input().split()))\nbest = 0\nfor i in range(1, len(a)):\n    if a[i] > a[best]:\n        best = i\nprint(best)",
+      "principle": "Храни индекс, а не только максимальное значение.",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Храни индекс, а не только максимальное значение.",
+        "Обновляй индекс при строгом >, чтобы сохранить первое вхождение.",
+        "Начальная позиция 0 подходит и для полностью отрицательного списка."
+      ],
+      "presentation": {
+        "title": "Первое вхождение максимума",
+        "statement": "Программа получает непустую строку целых чисел. Выведи индекс первого максимального элемента; индексы начинаются с нуля.",
+        "limits": "От 1 до 100 чисел, каждое −100…100.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "2 7 7 1",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "2 7 7 1",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "-5",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "-7 -3 -3",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "9 2",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "0 0 0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "1 2 3 4",
+            "expectedOutput": "3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-informatics-inf-nondecreasing",
+      "subject": "informatics",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "skills": [
+        "infpython.skill.3b2-runs"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает непустую строку целых чисел. Выведи длину самого длинного непрерывного участка, где каждый следующий элемент не меньше предыдущего. Участок нельзя собирать из несоседних элементов.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Храни длину текущего участка и лучший результат.",
+      "explanation": "1. Храни длину текущего участка и лучший результат.\n\n2. При нарушении порядка начинается новый участок длины 1.\n\n3. Равные элементы разрешены: используй ≥, не строгое >.",
+      "solution": "a = list(map(int, input().split()))\ncurrent = 1\nbest = 1\nfor i in range(1, len(a)):\n    if a[i] >= a[i - 1]:\n        current += 1\n    else:\n        current = 1\n    if current > best:\n        best = current\nprint(best)",
+      "principle": "Храни длину текущего участка и лучший результат.",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Храни длину текущего участка и лучший результат.",
+        "При нарушении порядка начинается новый участок длины 1.",
+        "Равные элементы разрешены: используй ≥, не строгое >."
+      ],
+      "presentation": {
+        "title": "Самый длинный неубывающий участок",
+        "statement": "Программа получает непустую строку целых чисел. Выведи длину самого длинного непрерывного участка, где каждый следующий элемент не меньше предыдущего. Участок нельзя собирать из несоседних элементов.",
+        "limits": "От 1 до 100 чисел, каждое −100…100.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "1 2 2 0 3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "1 2 2 0 3",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "7",
+            "expectedOutput": "1"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "5 4 3 2",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "1 1 1 1",
+            "expectedOutput": "4"
+          },
+          {
+            "stdin": "1 3 2 4 5 6",
+            "expectedOutput": "4"
+          },
+          {
+            "stdin": "-3 -2 -1 -5 -4",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "-50 -49 -48 -47 -46 -45 -44 -43 -42 -41 -40 -39 -38 -37 -36 -35 -34 -33 -32 -31 -30 -29 -28 -27 -26 -25 -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49",
+            "expectedOutput": "100"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -77,3 +77,17 @@ prevent further learning-state writes, so waiting until it is exceeded is risky.
 In 0.3.4 none of these storage/format changes, cleanup, compression, automatic
 archival, record deduplication or limit increases are implemented. IndexedDB/schema
 2 and backup format 2 remain unchanged.
+# Stage 3B.2 content update note
+
+The original measurements in this document describe the 0.3.4 content and synthetic usage;
+they are not a new forecast for the extended bank. Stage 3B.2 adds longer problems,
+code solutions and test cases. Each newly started mini-test/adaptive session still
+freezes its concrete question snapshots, so their typical byte cost may increase.
+The shipped bank itself is not copied wholesale into progress/backup, and changing
+the bank fingerprint does not reset or rewrite saved history. Existing active
+sessions retain their old questions and answers.
+
+No history deletion, migration, archiving, size-limit change or automatic cleanup
+is introduced. Schema 2, backup format 2 and the exact 20 MiB limit remain. A future
+diagnostic/size warning and lossless versioned snapshot pooling should be handled
+as a separate data-safety task; a larger bank is not justification to remove records.

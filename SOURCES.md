@@ -177,3 +177,22 @@ MathText — собственный небольшой HTML/CSS-компонен
 src/data/study-flow.json — собственное распределение существующих ID для практики и самостоятельной проверки в 31 теме. Разные ID не считаются доказательством независимости: одинаковые вопросы о весе разряда и эквивалентные программы суммы оставлены в практике. Покрытие частичное и явно обозначено в интерфейсе. Новые задания не создавались. Распределение и изменённая подача отражены в sources/publication.json с основанием и SHA-256.
 
 Просмотр stdout, контекстная справка, разделение учебных режимов и обратная связь созданы для проекта. Новые пользовательские записи тренировок и мини-тестов, код и вывод хранятся только на устройстве; в Git/build не входят. Runtime, лицензии, приватные пакеты и правила публикации не изменены. Новые внешние библиотеки, сервисы и материалы не подключались.
+# Stage 3B.2 first reviewed content wave (local branch only)
+
+The 150 additional exercises and 34 lessons/supplements in `stage3b2-*` are
+original AI-authored training content created for this project on 2026-10-09.
+All exercise origins are `generated`, source type `training`, source year 2026,
+and `examTaskType` is deliberately null. No official exam numbering is claimed.
+The official FIPI project archives for mathematics, Russian and informatics were
+read only to check the skill scope. No question text, passages, images, solutions
+or PDF files from those archives enter Git or the production build.
+
+References: https://fipi.ru/ege/demoversii-specifikacii-kodifikatory and
+https://fipi.ru/ege/otkrytyy-bank-zadaniy-ege. On the review date the first page
+labels the 2027 material as projects, not final approved documents. The original
+ZIP/PDF text extraction remains only in ignored local analysis outputs.
+
+Authored metadata, mode allocation and independent calculation/negative-program
+checks are recorded in `sources/stage3b2-review.json` and `docs/CONTENT-3B2.md`.
+Publication clearance is hash-pinned in `sources/publication.json`; the existing
+private-import exclusions and third-party notices are unchanged.

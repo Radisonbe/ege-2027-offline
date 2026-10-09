@@ -275,6 +275,171 @@
       "id": "infpython.sub.programming",
       "topic": "infpython",
       "title": "Самостоятельное программирование"
+    },
+    {
+      "id": "quadratic.sub.extension",
+      "topic": "quadratic",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "inequalities.sub.extension",
+      "topic": "inequalities",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "word.sub.extension",
+      "topic": "word",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "probability.sub.extension",
+      "topic": "probability",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "logarithms.sub.extension",
+      "topic": "logarithms",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "trigonometry.sub.extension",
+      "topic": "trigonometry",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "arithmetic.sub.extension",
+      "topic": "arithmetic",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "fractions.sub.extension",
+      "topic": "fractions",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "functions.sub.extension",
+      "topic": "functions",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "members.sub.extension",
+      "topic": "members",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "prepositions.sub.extension",
+      "topic": "prepositions",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "participles.sub.extension",
+      "topic": "participles",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "complex.sub.extension",
+      "topic": "complex",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "spelling.sub.extension",
+      "topic": "spelling",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "punctuation.sub.extension",
+      "topic": "punctuation",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "text.sub.extension",
+      "topic": "text",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "graphs.sub.extension",
+      "topic": "graphs",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "tables.sub.extension",
+      "topic": "tables",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "algorithms.sub.extension",
+      "topic": "algorithms",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "binary.sub.extension",
+      "topic": "binary",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "encoding.sub.extension",
+      "topic": "encoding",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "logic.sub.extension",
+      "topic": "logic",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "infpython.sub.extension",
+      "topic": "infpython",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-if.sub.extension",
+      "topic": "py-if",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-loops.sub.extension",
+      "topic": "py-loops",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-strings.sub.extension",
+      "topic": "py-strings",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-lists.sub.extension",
+      "topic": "py-lists",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-dicts.sub.extension",
+      "topic": "py-dicts",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-functions.sub.extension",
+      "topic": "py-functions",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-sets.sub.extension",
+      "topic": "py-sets",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-tuples.sub.extension",
+      "topic": "py-tuples",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-files.sub.extension",
+      "topic": "py-files",
+      "title": "От базового правила к самостоятельному решению"
+    },
+    {
+      "id": "py-types.sub.extension",
+      "topic": "py-types",
+      "title": "От базового правила к самостоятельному решению"
     }
   ],
   "skills": [
@@ -1255,6 +1420,950 @@
       "related": [
         "infpython.skill.program"
       ],
+      "remediates": []
+    },
+    {
+      "id": "quadratic.skill.3b2-roots",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "title": "Находить и проверять корни уравнения",
+      "requires": [
+        "linear",
+        "fractions",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "quadratic.skill.3b2-model",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "title": "Составлять уравнение по условию",
+      "requires": [
+        "linear",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "quadratic.skill.3b2-integer-roots",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "title": "Используй сумму и произведение корней и перебери положительные пары.",
+      "requires": [
+        "linear",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "inequalities.skill.3b2-boundaries",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "title": "При делении неравенства на отрицательное число знак меняется.",
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "inequalities.skill.3b2-intersection",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "title": "Нужно пересечение условий, а не их объединение.",
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "inequalities.skill.3b2-domains",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "title": "Отметь отдельно нуль числителя и запрещённый нуль знаменателя.",
+      "requires": [
+        "fractions",
+        "linear",
+        "quadratic",
+        "roots"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "inequalities.skill.3b2-integer-feasibility",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "title": "Количество билетов — целое неотрицательное число.",
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "word.skill.3b2-rates",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "title": "Раздели расстояние на время, затем умножь на новое время.",
+      "requires": [
+        "fractions",
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "word.skill.3b2-balance",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "title": "Составь баланс массы соли, а не среднее арифметическое процентов.",
+      "requires": [
+        "percent",
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "word.skill.3b2-model",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "title": "Составлять уравнение по условию",
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "probability.skill.3b2-outcomes",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "title": "Раздели число благоприятных исходов на число всех равновозможных исходов.",
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "probability.skill.3b2-statistics",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "title": "Вычислять среднее с учётом численности",
+      "requires": [
+        "arithmetic",
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "probability.skill.3b2-sequential",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "title": "Учти оба порядка и изменение числа оставшихся шаров.",
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "probability.skill.3b2-conditional",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "title": "Знаменатель включает только исходы, совместимые с известным условием.",
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "logarithms.skill.3b2-definition",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "title": "Ищи степень основания, дающую аргумент.",
+      "requires": [
+        "powers",
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "logarithms.skill.3b2-domain-equation",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "title": "Объединять логарифмы можно после проверки положительности обоих аргументов.",
+      "requires": [
+        "quadratic",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "logarithms.skill.3b2-monotonic",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "title": "Для основания меньше 1 направление сравнения меняется.",
+      "requires": [
+        "inequalities",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "logarithms.skill.3b2-exponential",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "title": "Представь обе части степенями одного основания.",
+      "requires": [
+        "linear",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "trigonometry.skill.3b2-coordinates",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "title": "Восстанавливать координаты и знак на окружности",
+      "requires": [
+        "fractions",
+        "roots"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "trigonometry.skill.3b2-identities",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "title": "Восстанови синус и косинус из отношения катетов, затем используй двойной угол.",
+      "requires": [
+        "roots",
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "trigonometry.skill.3b2-equations",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "title": "Реши квадратное уравнение относительно sin x, затем учти период и границы.",
+      "requires": [
+        "quadratic"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "trigonometry.skill.3b2-units",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "title": "Переведи долю π в такую же долю 180°.",
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "arithmetic.skill.3b2-arith-remainders",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.extension",
+      "title": "Перебирай числа одного вида и проверяй второе условие.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "arithmetic.skill.3b2-arith-rounding",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.extension",
+      "title": "Округление вверх здесь нарушило бы ограничение ресурса.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "fractions.skill.3b2-frac-share",
+      "topic": "fractions",
+      "subtopic": "fractions.sub.extension",
+      "title": "Уточни, от какого целого берётся каждая доля.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "fractions.skill.3b2-frac-restore",
+      "topic": "fractions",
+      "subtopic": "fractions.sub.extension",
+      "title": "Оставшаяся доля и израсходованная доля в сумме дают 1.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.3b2-func-intersection",
+      "topic": "functions",
+      "subtopic": "functions.sub.extension",
+      "title": "В точке пересечения одинаковы и x, и y.",
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "functions.skill.3b2-func-model-tariff",
+      "topic": "functions",
+      "subtopic": "functions.sub.extension",
+      "title": "Представь каждую стоимость линейной функцией минут.",
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "members.skill.3b2-basis",
+      "topic": "members",
+      "subtopic": "members.sub.extension",
+      "title": "Выделять полное подлежащее и сказуемое",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "members.skill.3b2-secondary",
+      "topic": "members",
+      "subtopic": "members.sub.extension",
+      "title": "Определять связь второстепенного члена",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "prepositions.skill.3b2-context",
+      "topic": "prepositions",
+      "subtopic": "prepositions.sub.extension",
+      "title": "Различать предлог и самостоятельное слово по контексту",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "prepositions.skill.3b2-government",
+      "topic": "prepositions",
+      "subtopic": "prepositions.sub.extension",
+      "title": "Запомни управление: согласно, благодаря, вопреки — чему?",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "participles.skill.3b2-recognize",
+      "topic": "participles",
+      "subtopic": "participles.sub.extension",
+      "title": "Причастие соединяет признак предмета с действием.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "participles.skill.3b2-turn",
+      "topic": "participles",
+      "subtopic": "participles.sub.extension",
+      "title": "Определять границы и положение причастного оборота",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "participles.skill.3b2-form",
+      "topic": "participles",
+      "subtopic": "participles.sub.extension",
+      "title": "Отличи краткое причастие от полной формы.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "participles.skill.3b2-agreement",
+      "topic": "participles",
+      "subtopic": "participles.sub.extension",
+      "title": "Согласуй причастие с определяемым существительным по роду, числу и падежу.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "complex.skill.3b2-structure",
+      "topic": "complex",
+      "subtopic": "complex.sub.extension",
+      "title": "Выделять части и связи",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "complex.skill.3b2-punctuation",
+      "topic": "complex",
+      "subtopic": "complex.sub.extension",
+      "title": "Применять правило с учётом общей структуры",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "complex.skill.3b2-meaning",
+      "topic": "complex",
+      "subtopic": "complex.sub.extension",
+      "title": "Соотнеси союз со смысловым вопросом от главной части.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "spelling.skill.3b2-spell-ne-contrast",
+      "topic": "spelling",
+      "subtopic": "spelling.sub.extension",
+      "title": "Противопоставление признаков с «а» — важный сигнал раздельного написания.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "spelling.skill.3b2-spell-verb",
+      "topic": "spelling",
+      "subtopic": "spelling.sub.extension",
+      "title": "Сначала определи личную форму или инфинитив.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "spelling.skill.3b2-spell-negation",
+      "topic": "spelling",
+      "subtopic": "spelling.sub.extension",
+      "title": "При отрицательном местоимении проверь отрицание самого сказуемого.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "punctuation.skill.3b2-punct-address",
+      "topic": "punctuation",
+      "subtopic": "punctuation.sub.extension",
+      "title": "Отличи название адресата от подлежащего.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "punctuation.skill.3b2-punct-gerund",
+      "topic": "punctuation",
+      "subtopic": "punctuation.sub.extension",
+      "title": "Найди добавочное действие и все его зависимые слова.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "punctuation.skill.3b2-punct-repeat-and",
+      "topic": "punctuation",
+      "subtopic": "punctuation.sub.extension",
+      "title": "Проверь повторение союза, а не только наличие одного «и».",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "text.skill.3b2-text-causal",
+      "topic": "text",
+      "subtopic": "text.sub.extension",
+      "title": "Различай порядок «причина → следствие» и обратный порядок.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "text.skill.3b2-text-pronoun",
+      "topic": "text",
+      "subtopic": "text.sub.extension",
+      "title": "Проверь и грамматическое согласование, и смысл.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "text.skill.3b2-text-metaphor",
+      "topic": "text",
+      "subtopic": "text.sub.extension",
+      "title": "Определи, кому приписано действие живого человека.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "graphs.skill.3b2-structure",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "title": "Выделять части и связи",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "graphs.skill.3b2-weighted",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "title": "Сравни суммы весов разных простых путей.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "graphs.skill.3b2-count-paths",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "title": "Считать пути с заданными ограничениями",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "graphs.skill.3b2-spanning",
+      "topic": "graphs",
+      "subtopic": "graphs.sub.extension",
+      "title": "Для пяти пунктов дерево содержит четыре ребра; проверь связность и отсутствие циклов.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "tables.skill.3b2-aggregate",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "title": "Сначала вычисли показатель каждой строки, затем сложи.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "tables.skill.3b2-references",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "title": "Знак $ фиксирует только следующий за ним столбец или строку.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "tables.skill.3b2-filter",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "title": "Два критерия должны выполняться одновременно.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "tables.skill.3b2-join",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "title": "Сначала найди цену по ключу, затем примени фильтр и умножь на количество.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "algorithms.skill.3b2-trace",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "title": "Трассировать алгоритм и границы циклов",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "algorithms.skill.3b2-digits",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "title": "Последняя цифра — остаток от деления на 10.",
+      "requires": [
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "algorithms.skill.3b2-dynamic",
+      "topic": "algorithms",
+      "subtopic": "algorithms.sub.extension",
+      "title": "ways[i] хранит число допустимых путей к i, а не список путей.",
+      "requires": [
+        "py-lists",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "binary.skill.3b2-binary-base",
+      "topic": "binary",
+      "subtopic": "binary.sub.extension",
+      "title": "Умножь каждую цифру на соответствующую степень основания.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "binary.skill.3b2-binary-rule",
+      "topic": "binary",
+      "subtopic": "binary.sub.extension",
+      "title": "Отдели сдвиг двоичной записи от вычисления дописанного бита.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "encoding.skill.3b2-prefix",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.extension",
+      "title": "Проверяй обе стороны: новый код не должен быть префиксом старого и наоборот.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "encoding.skill.3b2-combinations",
+      "topic": "encoding",
+      "subtopic": "encoding.sub.extension",
+      "title": "После выбора очередного символа число доступных уменьшается.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "logic.skill.3b2-universal",
+      "topic": "logic",
+      "subtopic": "logic.sub.extension",
+      "title": "Для всеобщего условия ищи самый требовательный допустимый x.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.3b2-ranking",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "title": "Нужны два элемента, а не два различных значения.",
+      "requires": [
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.3b2-neighbours",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "title": "Проверяй позиции i и i+1 до предпоследнего индекса.",
+      "requires": [
+        "py-loops",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.3b2-first-position",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "title": "Храни индекс, а не только максимальное значение.",
+      "requires": [
+        "py-lists",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.3b2-runs",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.extension",
+      "title": "Храни длину текущего участка и лучший результат.",
+      "requires": [
+        "py-lists",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.3b2-compound",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.extension",
+      "title": "Проверь специальный случай вековых годов.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.3b2-validation",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.extension",
+      "title": "Сначала проверь существование треугольника, только потом сравнивай квадраты.",
+      "requires": [
+        "py-functions",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.3b2-product",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.extension",
+      "title": "Начальное произведение 1, а не 0.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.3b2-sentinel",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.extension",
+      "title": "Раздели условие завершения и условие подсчёта.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.3b2-divisors",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.extension",
+      "title": "Числа 0 и 1 не простые.",
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.3b2-words",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "title": "Разделять, упорядочивать и соединять слова",
+      "requires": [
+        "py-functions",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.3b2-normalize",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "title": "Сначала собери очищенную последовательность, потом сравнивай.",
+      "requires": [
+        "py-functions",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.3b2-search",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "title": "Индексы начинаются с нуля.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3b2-stable-filter",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Сохранять порядок при отборе элементов",
+      "requires": [
+        "py-sets",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3b2-slices",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Большой k сначала сократи по модулю длины.",
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3b2-distinct-ranking",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Повторение максимума не является вторым различным значением.",
+      "requires": [
+        "py-sets",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3b2-median",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Сначала сортируй копию, затем работай с центральными индексами.",
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-dicts.skill.3b2-counts",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.extension",
+      "title": "Подсчитывать частоты и разрешать равенство",
+      "requires": [
+        "py-functions",
+        "py-strings",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-dicts.skill.3b2-aggregate",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.extension",
+      "title": "Название служит ключом, не индексом списка.",
+      "requires": [
+        "py-functions",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.3b2-boundaries",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.extension",
+      "title": "Три случая: ниже, внутри, выше.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.3b2-gcd",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.extension",
+      "title": "Начни с модулей, чтобы результат был неотрицательным.",
+      "requires": [
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.3b2-defaults",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.extension",
+      "title": "Изменяемый аргумент по умолчанию может сохранять состояние между вызовами.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-sets.skill.3b2-intersection",
+      "topic": "py-sets",
+      "subtopic": "py-sets.sub.extension",
+      "title": "Повторения не увеличивают число различных общих значений.",
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-tuples.skill.3b2-normalization",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.extension",
+      "title": "Для неориентированного ребра порядок концов не важен, но нужен единый канонический порядок.",
+      "requires": [
+        "py-functions",
+        "py-lists",
+        "py-sets"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-tuples.skill.3b2-unpack",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.extension",
+      "title": "Правая часть одновременного присваивания вычисляется до изменения переменных.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-files.skill.3b2-roundtrip",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.extension",
+      "title": "with закрывает файл после блока, включая сброс записанных данных.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-files.skill.3b2-process",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.extension",
+      "title": "Два этапа: сначала запись строк, затем новый блок чтения.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-files.skill.3b2-modes",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.extension",
+      "title": "Различай перезапись w и дополнение a.",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-types.skill.3b2-average",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.extension",
+      "title": "Среднее — сумма, делённая на количество чисел.",
+      "requires": [],
+      "related": [],
       "remediates": []
     }
   ]

@@ -5,7 +5,7 @@ import {emptyState} from '../../src/domain/progress.ts';
 import {saveCodeDraft,recordCodeAssessment} from '../../src/domain/code-learning.ts';
 import {parseBackup,serializeBackup} from '../../src/domain/backup.ts';
 import {beginReview} from '../../src/domain/adaptive.ts';
-const bank=checkContentBank().questions,oldBank=['python','informatics'].flatMap(s=>JSON.parse(execFileSync('git',['show','2470167:src/data/banks/stage3b1-'+s+'.json'],{encoding:'utf8'})).questions),codes=bank.filter(q=>q.answerType==='code');
+const bank=checkContentBank().questions,oldBank=['python','informatics'].flatMap(s=>JSON.parse(execFileSync('git',['show','2470167:src/data/banks/stage3b1-'+s+'.json'],{encoding:'utf8'})).questions),codes=bank.filter(q=>q.id.startsWith('b1-')&&q.answerType==='code');
 test('Display grammar recognises fractions with parentheses, signs, spaces, decimals and variables',()=>{
  for(const [text,a,b] of [['1/2','1','2'],['(2/3) · (9/4)','2','3'],['-3 / 5','-3','5'],['0,5/2','0,5','2'],['p / 100','p','100'],['−b/(2a)','b','(2a)']]){const fraction=mathParts(text).find(p=>p.kind==='fraction');assert.ok(fraction,text);assert.equal(fraction.numerator,a);assert.equal(fraction.denominator,b);}
  assert.equal(mathParts('1/2 + 1/3 = 3/6 + 2/6 = 5/6').filter(p=>p.kind==='fraction').length,5);
@@ -19,7 +19,7 @@ test('Every display token preserves original source and parses deterministically
  assert.equal(plainExponent('²⁰'),'20');assert.equal(plainExponent('^-3'),'-3');assert.equal(mathParts('√x²')[0].kind,'root');assert.equal(mathParts('2^10')[0].exponent,'10');
 });
 test('Polishing changes only programming test/explanation revisions; IDs, conditions, solutions and old cases are retained',()=>{
- assert.equal(bank.length,167);assert.equal(codes.length,25);
+ assert.equal(bank.filter(q=>!q.id.startsWith("b2-")).length,167);assert.equal(codes.length,25);
  for(const old of oldBank){const current=bank.find(q=>q.id===old.id);assert.ok(current);if(old.answerType!=='code'){assert.deepEqual(current,old);continue;}
   assert.equal(current.version,3);for(const field of ['prompt','answer','solution','hint','hints','origin','topic','skills','requires','subtopic'])assert.deepEqual(current[field],old[field],old.id+' '+field);
   assert.deepEqual(current.python.visibleTests,old.python.visibleTests);assert.deepEqual(current.python.hiddenTests.slice(0,old.python.hiddenTests.length),old.python.hiddenTests);

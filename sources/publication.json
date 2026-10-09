@@ -35,7 +35,7 @@
       "clearance": "project-generated",
       "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
       "license": null,
-      "evidence": "Code written for this project; instructional examples recreate the owner-declared generated reference. No new external bank was imported. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved.",
+      "evidence": "Code written for this project; instructional examples recreate the owner-declared generated reference. No new external bank was imported. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added.",
       "files": [
         {
           "path": "src/components/Practices.tsx",
@@ -50,7 +50,7 @@
         {
           "path": "src/data/catalog.ts",
           "normalization": "lf",
-          "sha256": "ea844ef6aeba03fddec38f8bd25f55b4e1d64794399a5c924eb02a9b98c1f01c"
+          "sha256": "a4f1edb9c46a8e374a0528870f8d64e7251adb8587ae688bbd382a08adb2dc7b"
         }
       ]
     },
@@ -150,12 +150,12 @@
       "clearance": "project-authored",
       "source": null,
       "license": null,
-      "evidence": "Original project metadata: stable subtopic/skill IDs, classification labels and basic prerequisite/remediation links. Not copied textbook prose or exam tasks.",
+      "evidence": "Original project metadata: stable subtopic/skill IDs, classification labels and basic prerequisite/remediation links. Not copied textbook prose or exam tasks. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added.",
       "files": [
         {
           "path": "src/data/taxonomy.json",
           "normalization": "lf",
-          "sha256": "5ac4cc06256d5005e887575ed753fc6d52a5209a4b122cbf8bbf7effd07508ea"
+          "sha256": "05f0d1a1f8a4b356134742cc081d7d0293b49fd7d97292a8f6e2025aeb10fc85"
         }
       ]
     },
@@ -302,12 +302,46 @@
       "clearance": "project-authored",
       "source": null,
       "license": null,
-      "evidence": "Own reviewed allocation of existing question IDs for learning and independent checks. Equivalent fourth-bit questions and sum/fix-sum programs remain together in practice. No new external or generated questions. The repeated because/rain sentence u4/b1-russian-16 also stays together in practice.",
+      "evidence": "Own reviewed allocation of existing question IDs for learning and independent checks. Equivalent fourth-bit questions and sum/fix-sum programs remain together in practice. No new external or generated questions. The repeated because/rain sentence u4/b1-russian-16 also stays together in practice. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added.",
       "files": [
         {
           "path": "src/data/study-flow.json",
           "normalization": "lf",
-          "sha256": "c6b75ff5a83ec041495ccaf6ff8f1bf1c3047ffd1705c815897c52b57efe6800"
+          "sha256": "766dfa78e878b7c419fa002883761fe7753090416c2432d90e363b4e8a61f4d9"
+        }
+      ]
+    },
+    {
+      "id": "stage3b2-original-learning",
+      "clearance": "project-generated",
+      "source": "Original AI-authored project exercises; official FIPI 2027 projects consulted for skill scope only",
+      "license": null,
+      "evidence": "150 authored original exercises: 50 math,35 Russian,35 informatics,30 Python. 13 new lessons and 21 existing-topic supplements. No FIPI or third-party question text, images or solutions imported. Numeric/graph/logic independent calculations, real CPython reference and two incorrect algorithm checks; review detail in sources/stage3b2-review.json and docs/CONTENT-3B2.md.",
+      "files": [
+        {
+          "path": "src/data/stage3b2-lessons.json",
+          "normalization": "lf",
+          "sha256": "f2fc435d0f21f2b1be496c6a7694b98ca8a22157e96e2b034a991e041fb1203f"
+        },
+        {
+          "path": "src/data/banks/stage3b2-math.json",
+          "normalization": "lf",
+          "sha256": "0f304542f6b7e597bd8c87199103ce65d490a2de001a954d6273c1e6d6b10cc4"
+        },
+        {
+          "path": "src/data/banks/stage3b2-russian.json",
+          "normalization": "lf",
+          "sha256": "ca7e73e76f9ddf52b6faa16c8056557461b745246e98df1f20bfcf90d9877b4e"
+        },
+        {
+          "path": "src/data/banks/stage3b2-informatics.json",
+          "normalization": "lf",
+          "sha256": "ef6200b2868ebe78bee4efda996150b29aef49ae9f42d41533375c4840d19ee1"
+        },
+        {
+          "path": "src/data/banks/stage3b2-python.json",
+          "normalization": "lf",
+          "sha256": "65005dc94f326fed57f1a71664f8848acc9643200d3c42fa99cc371de2cd84b1"
         }
       ]
     }

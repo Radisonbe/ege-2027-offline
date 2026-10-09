@@ -32,13 +32,13 @@ try{
  pass('Actual question renders HTML as literal text, never executes script/events, preserves URLs/paths/inline code and raw input; snapshot survives backup');
  for(const width of [1440,390,360,320]){
   await page.setViewportSize({width,height:900});await page.goto(base+'#topic/fractions');await page.getByRole('heading',{name:'Дроби',level:1}).waitFor();
-  const example=page.locator('pre.math-example');assert.equal(await example.count(),1);assert.ok(await example.locator('.math-fraction').count()>=11);
+  const example=page.locator('pre.math-example').first();assert.equal(await page.locator('pre.math-example').count(),2);assert.ok(await example.locator('.math-fraction').count()>=11);
   const layout=await example.locator('.math-fraction').first().evaluate(el=>{const a=el.querySelector('.math-numerator'),b=el.querySelector('.math-denominator'),ar=a.getBoundingClientRect(),br=b.getBoundingClientRect();return{top:ar.top,bottom:ar.bottom,denominatorTop:br.top,font:parseFloat(getComputedStyle(a).fontSize),border:parseFloat(getComputedStyle(a).borderBottomWidth),width:document.documentElement.scrollWidth,viewport:innerWidth};});
   assert.ok(layout.bottom<=layout.denominatorTop+.1);assert.ok(layout.border>=1);assert.ok(layout.font>=15);assert.ok(layout.width<=layout.viewport,'overflow '+JSON.stringify(layout));
   await example.screenshot({path:'outputs/polish-fractions-'+width+'.png'});if(width===390)await page.screenshot({path:'outputs/polish-mobile-fractions.png',fullPage:true});
  }
  pass('Fractions in the real worked example have stacked numerator/bar/denominator, font >=15px and no page overflow at 320/360/390/1440px');
- await page.setViewportSize({width:390,height:844});await page.evaluate(()=>{document.documentElement.classList.add('dark');});await page.locator('pre.math-example').screenshot({path:'outputs/polish-fractions-dark.png'});await page.evaluate(()=>document.documentElement.classList.remove('dark'));
+ await page.setViewportSize({width:390,height:844});await page.evaluate(()=>{document.documentElement.classList.add('dark');});await page.locator('pre.math-example').first().screenshot({path:'outputs/polish-fractions-dark.png'});await page.evaluate(()=>document.documentElement.classList.remove('dark'));
  const fraction=bank.find(q=>q.id==='b1-math-05');await seed(beginReview(emptyState('fraction-control'),[item(fraction)],5,'math','fractions'));await page.locator('.question-prompt').waitFor();assert.equal(await page.locator('.question-prompt .math-fraction').count(),2);
  await page.getByRole('button',{name:'Показать подсказку',exact:true}).click();await page.getByLabel('Твой ответ',{exact:true}).fill('word');await page.getByRole('button',{name:'Проверить ответ',exact:true}).click();assert.equal((await state()).attempts.length,0);
  await page.getByLabel('Твой ответ',{exact:true}).fill('1/2');await page.getByRole('button',{name:'Проверить ответ',exact:true}).click();await saved(s=>s.errors.length===1);await page.getByRole('button',{name:'Показать полное решение',exact:false}).click();assert.ok(await page.locator('.solution .math-fraction').count()>0);

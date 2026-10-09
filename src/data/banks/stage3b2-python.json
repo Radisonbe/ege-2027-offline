@@ -1,0 +1,3472 @@
+{
+  "schemaVersion": 1,
+  "id": "stage3b2-python",
+  "subject": "python",
+  "questions": [
+    {
+      "id": "b2-python-py-leap",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.extension",
+      "skills": [
+        "py-if.skill.3b2-compound"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает номер года. Выведи YES, если год делится на 400 либо делится на 4, но не на 100. Иначе выведи NO. Это правило григорианского календаря.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Проверь специальный случай вековых годов.",
+      "explanation": "1. Проверь специальный случай вековых годов.\n\n2. Собери условие из двух альтернатив; исключение для 100 относится только ко второй.\n\n3. 1900 не високосный, а 2000 високосный: эти случаи различают алгоритмы.",
+      "solution": "year = int(input())\nif year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):\n    print(\"YES\")\nelse:\n    print(\"NO\")",
+      "principle": "Проверь специальный случай вековых годов.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Проверь специальный случай вековых годов.",
+        "Собери условие из двух альтернатив; исключение для 100 относится только ко второй.",
+        "1900 не високосный, а 2000 високосный: эти случаи различают алгоритмы."
+      ],
+      "presentation": {
+        "title": "Високосный год",
+        "statement": "Программа получает номер года. Выведи YES, если год делится на 400 либо делится на 4, но не на 100. Иначе выведи NO. Это правило григорианского календаря.",
+        "limits": "1 ≤ year ≤ 9999. Одна строка ввода; YES или NO в выводе.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "2024",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "2024",
+            "expectedOutput": "YES"
+          },
+          {
+            "stdin": "1900",
+            "expectedOutput": "NO"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "2000",
+            "expectedOutput": "YES"
+          },
+          {
+            "stdin": "2023",
+            "expectedOutput": "NO"
+          },
+          {
+            "stdin": "1",
+            "expectedOutput": "NO"
+          },
+          {
+            "stdin": "2400",
+            "expectedOutput": "YES"
+          },
+          {
+            "stdin": "9999",
+            "expectedOutput": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-triangle_kind",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.extension",
+      "skills": [
+        "py-if.skill.3b2-validation"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши triangle_kind(a,b,c). Для трёх целых длин верни INVALID, если хотя бы одна неположительна или треугольник невозможен. Иначе верни RIGHT для прямоугольного, ACUTE для остроугольного или OBTUSE для тупоугольного.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала проверь существование треугольника, только потом сравнивай квадраты.",
+      "explanation": "1. Сначала проверь существование треугольника, только потом сравнивай квадраты.\n\n2. Отсортируй стороны: самая длинная должна быть справа в проверке.\n\n3. Для допустимого треугольника сравни a²+b² с c²: равенство, больше, меньше.",
+      "solution": "def triangle_kind(a, b, c):\n    x, y, z = sorted([a, b, c])\n    if x <= 0 or x + y <= z:\n        return \"INVALID\"\n    square_sum = x * x + y * y\n    if square_sum == z * z:\n        return \"RIGHT\"\n    if square_sum > z * z:\n        return \"ACUTE\"\n    return \"OBTUSE\"",
+      "principle": "Сначала проверь существование треугольника, только потом сравнивай квадраты.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Сначала проверь существование треугольника, только потом сравнивай квадраты.",
+        "Отсортируй стороны: самая длинная должна быть справа в проверке.",
+        "Для допустимого треугольника сравни a²+b² с c²: равенство, больше, меньше."
+      ],
+      "presentation": {
+        "title": "Классификация треугольника",
+        "statement": "Напиши triangle_kind(a,b,c). Для трёх целых длин верни INVALID, если хотя бы одна неположительна или треугольник невозможен. Иначе верни RIGHT для прямоугольного, ACUTE для остроугольного или OBTUSE для тупоугольного.",
+        "limits": "Каждый аргумент −1000…1000. Порядок сторон произвольный. Строка возвращается, не печатается.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def triangle_kind(a, b, c):\n    pass\n",
+        "functionName": "triangle_kind",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              3,
+              4,
+              5
+            ],
+            "expectedReturn": "RIGHT"
+          },
+          {
+            "args": [
+              2,
+              3,
+              4
+            ],
+            "expectedReturn": "OBTUSE"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              3,
+              3,
+              3
+            ],
+            "expectedReturn": "ACUTE"
+          },
+          {
+            "args": [
+              1,
+              2,
+              3
+            ],
+            "expectedReturn": "INVALID"
+          },
+          {
+            "args": [
+              5,
+              3,
+              4
+            ],
+            "expectedReturn": "RIGHT"
+          },
+          {
+            "args": [
+              0,
+              4,
+              4
+            ],
+            "expectedReturn": "INVALID"
+          },
+          {
+            "args": [
+              -1,
+              2,
+              2
+            ],
+            "expectedReturn": "INVALID"
+          },
+          {
+            "args": [
+              1000,
+              1000,
+              1000
+            ],
+            "expectedReturn": "ACUTE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-py-factorial",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.extension",
+      "skills": [
+        "py-loops.skill.3b2-product"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает n и выводит n!: произведение целых чисел от 1 до n. Для n=0 результат по определению 1.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Начальное произведение 1, а не 0.",
+      "explanation": "1. Начальное произведение 1, а не 0.\n\n2. Правую границу range нужно сдвинуть, чтобы включить n.\n\n3. Для n=0 цикл пуст; начальное значение 1 и есть правильный результат.",
+      "solution": "n = int(input())\nproduct = 1\nfor value in range(1, n + 1):\n    product *= value\nprint(product)",
+      "principle": "Начальное произведение 1, а не 0.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Начальное произведение 1, а не 0.",
+        "Правую границу range нужно сдвинуть, чтобы включить n.",
+        "Для n=0 цикл пуст; начальное значение 1 и есть правильный результат."
+      ],
+      "presentation": {
+        "title": "Произведение от 1 до n",
+        "statement": "Программа получает n и выводит n!: произведение целых чисел от 1 до n. Для n=0 результат по определению 1.",
+        "limits": "0 ≤ n ≤ 20. Выведи одно целое число.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "4",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "4",
+            "expectedOutput": "24"
+          },
+          {
+            "stdin": "0",
+            "expectedOutput": "1"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "1",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "6",
+            "expectedOutput": "720"
+          },
+          {
+            "stdin": "10",
+            "expectedOutput": "3628800"
+          },
+          {
+            "stdin": "20",
+            "expectedOutput": "2432902008176640000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-py-positive-count",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.extension",
+      "skills": [
+        "py-loops.skill.3b2-sentinel"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает несколько целых чисел, по одному на строке. Первый ноль завершает обработку. Посчитай положительные числа до него и выведи количество. После нуля могут быть другие строки: не учитывай их.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Раздели условие завершения и условие подсчёта.",
+      "explanation": "1. Раздели условие завершения и условие подсчёта.\n\n2. Проверяй ноль до изменения счётчика.\n\n3. Отрицательные значения не завершают ввод и не увеличивают число положительных.",
+      "solution": "count = 0\nwhile True:\n    value = int(input())\n    if value == 0:\n        break\n    if value > 0:\n        count += 1\nprint(count)",
+      "principle": "Раздели условие завершения и условие подсчёта.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Раздели условие завершения и условие подсчёта.",
+        "Проверяй ноль до изменения счётчика.",
+        "Отрицательные значения не завершают ввод и не увеличивают число положительных."
+      ],
+      "presentation": {
+        "title": "До первого нуля",
+        "statement": "Программа получает несколько целых чисел, по одному на строке. Первый ноль завершает обработку. Посчитай положительные числа до него и выведи количество. После нуля могут быть другие строки: не учитывай их.",
+        "limits": "До 100 строк, каждое число −100…100. Ноль гарантирован.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "3\n-2\n7\n0\n99",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "3\n-2\n7\n0\n99",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "0\n5",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "-1\n-2\n0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "1\n1\n1\n0",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "100\n0",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "-100\n2\n0",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n0",
+            "expectedOutput": "99"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-is_prime",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.extension",
+      "skills": [
+        "py-loops.skill.3b2-divisors"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши is_prime(n), возвращающую True для простого числа и False иначе. Простое число — целое больше 1 с ровно двумя положительными делителями.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Числа 0 и 1 не простые.",
+      "explanation": "1. Числа 0 и 1 не простые.\n\n2. У составного числа хотя бы один делитель не больше квадратного корня.\n\n3. Условие divisor²≤n включает корень: иначе квадрат простого числа ошибочно пройдёт.",
+      "solution": "def is_prime(n):\n    if n < 2:\n        return False\n    divisor = 2\n    while divisor * divisor <= n:\n        if n % divisor == 0:\n            return False\n        divisor += 1\n    return True",
+      "principle": "Числа 0 и 1 не простые.",
+      "version": 1,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Числа 0 и 1 не простые.",
+        "У составного числа хотя бы один делитель не больше квадратного корня.",
+        "Условие divisor²≤n включает корень: иначе квадрат простого числа ошибочно пройдёт."
+      ],
+      "presentation": {
+        "title": "Проверка простоты",
+        "statement": "Напиши is_prime(n), возвращающую True для простого числа и False иначе. Простое число — целое больше 1 с ровно двумя положительными делителями.",
+        "limits": "0 ≤ n ≤ 10000. Верни bool, не строку.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def is_prime(n):\n    pass\n",
+        "functionName": "is_prime",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              2
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              1
+            ],
+            "expectedReturn": false
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              0
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              49
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              97
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              9999
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              10000
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              9973
+            ],
+            "expectedReturn": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-normalize_spaces",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "skills": [
+        "py-strings.skill.3b2-words"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши normalize_spaces(text), возвращающую строку слов, разделённых одним пробелом, без пробелов по краям. Слово — последовательность непробельных символов.",
+      "answer": "Программа проходит все тесты",
+      "hint": "split() без аргумента разделяет по любым пробельным промежуткам.",
+      "explanation": "1. split() без аргумента разделяет по любым пробельным промежуткам.\n\n2. join соединяет готовые слова заданным разделителем.\n\n3. Пустой список слов даёт пустую строку.",
+      "solution": "def normalize_spaces(text):\n    words = text.split()\n    return \" \".join(words)",
+      "principle": "split() без аргумента разделяет по любым пробельным промежуткам.",
+      "version": 1,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "split() без аргумента разделяет по любым пробельным промежуткам.",
+        "join соединяет готовые слова заданным разделителем.",
+        "Пустой список слов даёт пустую строку."
+      ],
+      "presentation": {
+        "title": "Лишние пробелы",
+        "statement": "Напиши normalize_spaces(text), возвращающую строку слов, разделённых одним пробелом, без пробелов по краям. Слово — последовательность непробельных символов.",
+        "limits": "Длина строки 0…1000. Допускаются табуляция и русские буквы.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def normalize_spaces(text):\n    pass\n",
+        "functionName": "normalize_spaces",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "  кот   дом  "
+            ],
+            "expectedReturn": "кот дом"
+          },
+          {
+            "args": [
+              ""
+            ],
+            "expectedReturn": ""
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "   "
+            ],
+            "expectedReturn": ""
+          },
+          {
+            "args": [
+              "а\tб"
+            ],
+            "expectedReturn": "а б"
+          },
+          {
+            "args": [
+              "один"
+            ],
+            "expectedReturn": "один"
+          },
+          {
+            "args": [
+              "x  y\t z"
+            ],
+            "expectedReturn": "x y z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-is_palindrome",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "skills": [
+        "py-strings.skill.3b2-normalize"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши is_palindrome(text). Игнорируя пробелы, знаки препинания и регистр, верни True, если оставшаяся последовательность букв и цифр читается одинаково в обе стороны. Пустая последовательность считается палиндромом.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала собери очищенную последовательность, потом сравнивай.",
+      "explanation": "1. Сначала собери очищенную последовательность, потом сравнивай.\n\n2. Удаление пробелов не удаляет пунктуацию; используй проверку каждого символа.\n\n3. После lower() регистр не влияет. Срез [::-1] читает строку справа налево.",
+      "solution": "def is_palindrome(text):\n    cleaned = \"\"\n    for symbol in text:\n        if symbol.isalnum():\n            cleaned += symbol.lower()\n    return cleaned == cleaned[::-1]",
+      "principle": "Сначала собери очищенную последовательность, потом сравнивай.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Сначала собери очищенную последовательность, потом сравнивай.",
+        "Удаление пробелов не удаляет пунктуацию; используй проверку каждого символа.",
+        "После lower() регистр не влияет. Срез [::-1] читает строку справа налево."
+      ],
+      "presentation": {
+        "title": "Палиндром без знаков",
+        "statement": "Напиши is_palindrome(text). Игнорируя пробелы, знаки препинания и регистр, верни True, если оставшаяся последовательность букв и цифр читается одинаково в обе стороны. Пустая последовательность считается палиндромом.",
+        "limits": "До 1000 символов; используй isalnum() и lower(). Русские буквы допустимы.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def is_palindrome(text):\n    pass\n",
+        "functionName": "is_palindrome",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "А роза упала на лапу Азора"
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              "Кот"
+            ],
+            "expectedReturn": false
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              ""
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              "!!!"
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              "1,2,1"
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              "Aa!"
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              "1231"
+            ],
+            "expectedReturn": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-py-reverse-words",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "skills": [
+        "py-strings.skill.3b2-words"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает одну строку. Выведи слова в обратном порядке, разделяя одним пробелом. Символы внутри каждого слова не переворачивай.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Менять нужно порядок слов, не порядок всех символов.",
+      "explanation": "1. Менять нужно порядок слов, не порядок всех символов.\n\n2. split() создаёт список; reverse() меняет его на месте.\n\n3. Собери строку через join с одним пробелом.",
+      "solution": "words = input().split()\nwords.reverse()\nprint(\" \".join(words))",
+      "principle": "Менять нужно порядок слов, не порядок всех символов.",
+      "version": 1,
+      "requires": [
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Менять нужно порядок слов, не порядок всех символов.",
+        "split() создаёт список; reverse() меняет его на месте.",
+        "Собери строку через join с одним пробелом."
+      ],
+      "presentation": {
+        "title": "Слова в обратном порядке",
+        "statement": "Программа получает одну строку. Выведи слова в обратном порядке, разделяя одним пробелом. Символы внутри каждого слова не переворачивай.",
+        "limits": "0…1000 символов, слова разделены пробельными символами. Для одной пустой строки в предварительном stdin нажми Enter; полностью пустое поле означает EOF.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "кот дом сад",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "кот дом сад",
+            "expectedOutput": "сад дом кот"
+          },
+          {
+            "stdin": "\n",
+            "expectedOutput": ""
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "  раз   два  ",
+            "expectedOutput": "два раз"
+          },
+          {
+            "stdin": "один",
+            "expectedOutput": "один"
+          },
+          {
+            "stdin": "a\tb c",
+            "expectedOutput": "c b a"
+          },
+          {
+            "stdin": "Я и ты",
+            "expectedOutput": "ты и Я"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-predict-find",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "skills": [
+        "py-strings.skill.3b2-search"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет программа? Выбери полный результат.",
+      "answer": "1",
+      "hint": "Индексы начинаются с нуля.",
+      "explanation": "find возвращает индекс первого вхождения: «ан» начинается с индекса 1. Он не возвращает количество совпадений.",
+      "solution": "find возвращает индекс первого вхождения: «ан» начинается с индекса 1. Он не возвращает количество совпадений.",
+      "principle": "Индексы начинаются с нуля.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "1",
+        "Ошибка Python",
+        "None",
+        "0"
+      ],
+      "python": {
+        "type": "predict-output",
+        "starterCode": "print(\"банан\".find(\"ан\"))",
+        "expectedOutput": "1"
+      }
+    },
+    {
+      "id": "b2-python-deduplicate",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "skills": [
+        "py-lists.skill.3b2-stable-filter"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши deduplicate(values), возвращающую список: каждое число оставь один раз, в порядке первого появления. ",
+      "answer": "Программа проходит все тесты",
+      "hint": "Множество удобно для проверки повторений, но список нужен для порядка.",
+      "explanation": "1. Множество удобно для проверки повторений, но список нужен для порядка.\n\n2. Добавляй элемент только при первом появлении.\n\n3. Создай новый результат, не удаляй элементы во время обхода исходного списка.",
+      "solution": "def deduplicate(values):\n    result = []\n    seen = set()\n    for value in values:\n        if value not in seen:\n            seen.add(value)\n            result.append(value)\n    return result",
+      "principle": "Множество удобно для проверки повторений, но список нужен для порядка.",
+      "version": 1,
+      "requires": [
+        "py-sets",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Множество удобно для проверки повторений, но список нужен для порядка.",
+        "Добавляй элемент только при первом появлении.",
+        "Создай новый результат, не удаляй элементы во время обхода исходного списка."
+      ],
+      "presentation": {
+        "title": "Без повторений, сохраняя порядок",
+        "statement": "Напиши deduplicate(values), возвращающую список: каждое число оставь один раз, в порядке первого появления. ",
+        "limits": "0…100 целых, каждое −100…100.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def deduplicate(values):\n    pass\n",
+        "functionName": "deduplicate",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                3,
+                1,
+                3,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              3,
+              1,
+              2
+            ]
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                0
+              ]
+            ],
+            "expectedReturn": [
+              0
+            ]
+          },
+          {
+            "args": [
+              [
+                -1,
+                2,
+                -1
+              ]
+            ],
+            "expectedReturn": [
+              -1,
+              2
+            ]
+          },
+          {
+            "args": [
+              [
+                4,
+                3,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              4,
+              3,
+              2,
+              1
+            ]
+          },
+          {
+            "args": [
+              [
+                9
+              ]
+            ],
+            "expectedReturn": [
+              9
+            ]
+          },
+          {
+            "args": [
+              [
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            ],
+            "expectedReturn": [
+              7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-rotate_right",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "skills": [
+        "py-lists.skill.3b2-slices"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши rotate_right(values,k): верни список, циклически сдвинутый вправо на k позиций. Пустой список остаётся пустым.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Большой k сначала сократи по модулю длины.",
+      "explanation": "1. Большой k сначала сократи по модулю длины.\n\n2. Пустой список обработай до деления по модулю.\n\n3. Справа оказываются последние k элементов, затем остальные.",
+      "solution": "def rotate_right(values, k):\n    if not values:\n        return []\n    k %= len(values)\n    if k == 0:\n        return values[:]\n    return values[-k:] + values[:-k]",
+      "principle": "Большой k сначала сократи по модулю длины.",
+      "version": 1,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Большой k сначала сократи по модулю длины.",
+        "Пустой список обработай до деления по модулю.",
+        "Справа оказываются последние k элементов, затем остальные."
+      ],
+      "presentation": {
+        "title": "Циклический сдвиг",
+        "statement": "Напиши rotate_right(values,k): верни список, циклически сдвинутый вправо на k позиций. Пустой список остаётся пустым.",
+        "limits": "0…100 целых чисел; 0 ≤ k ≤ 1000.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def rotate_right(values, k):\n    pass\n",
+        "functionName": "rotate_right",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ],
+              1
+            ],
+            "expectedReturn": [
+              3,
+              1,
+              2
+            ]
+          },
+          {
+            "args": [
+              [],
+              7
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ],
+              3
+            ],
+            "expectedReturn": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ],
+              4
+            ],
+            "expectedReturn": [
+              3,
+              1,
+              2
+            ]
+          },
+          {
+            "args": [
+              [
+                5
+              ],
+              1000
+            ],
+            "expectedReturn": [
+              5
+            ]
+          },
+          {
+            "args": [
+              [
+                4,
+                8
+              ],
+              0
+            ],
+            "expectedReturn": [
+              4,
+              8
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99
+              ],
+              1000
+            ],
+            "expectedReturn": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84,
+              85,
+              86,
+              87,
+              88,
+              89,
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-second_largest",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "skills": [
+        "py-lists.skill.3b2-distinct-ranking"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши second_largest(values). Верни второе по величине различное число. Если различных чисел меньше двух, верни None. ",
+      "answer": "Программа проходит все тесты",
+      "hint": "Повторение максимума не является вторым различным значением.",
+      "explanation": "1. Повторение максимума не является вторым различным значением.\n\n2. Удали дубликаты в новой структуре и проверь её размер.\n\n3. После сортировки второй с конца — искомый элемент; отрицательные значения обычные данные.",
+      "solution": "def second_largest(values):\n    unique = sorted(set(values))\n    if len(unique) < 2:\n        return None\n    return unique[-2]",
+      "principle": "Повторение максимума не является вторым различным значением.",
+      "version": 1,
+      "requires": [
+        "py-sets",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Повторение максимума не является вторым различным значением.",
+        "Удали дубликаты в новой структуре и проверь её размер.",
+        "После сортировки второй с конца — искомый элемент; отрицательные значения обычные данные."
+      ],
+      "presentation": {
+        "title": "Второе различное значение",
+        "statement": "Напиши second_largest(values). Верни второе по величине различное число. Если различных чисел меньше двух, верни None. ",
+        "limits": "0…100 целых чисел −1000…1000.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def second_largest(values):\n    pass\n",
+        "functionName": "second_largest",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                9,
+                9,
+                4,
+                2
+              ]
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              [
+                5,
+                5
+              ]
+            ],
+            "expectedReturn": null
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": null
+          },
+          {
+            "args": [
+              [
+                -1,
+                -7,
+                -3,
+                -1
+              ]
+            ],
+            "expectedReturn": -3
+          },
+          {
+            "args": [
+              [
+                0,
+                1
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                1000,
+                -1000
+              ]
+            ],
+            "expectedReturn": -1000
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-median",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "skills": [
+        "py-lists.skill.3b2-median"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши median(values). Для непустого списка верни медиану: средний элемент отсортированного списка при нечётной длине, среднее двух центральных — при чётной. ",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала сортируй копию, затем работай с центральными индексами.",
+      "explanation": "1. Сначала сортируй копию, затем работай с центральными индексами.\n\n2. Для чётной длины нужны позиции middle−1 и middle.\n\n3. Используй обычное деление, чтобы не потерять дробную часть.",
+      "solution": "def median(values):\n    ordered = sorted(values)\n    middle = len(ordered) // 2\n    if len(ordered) % 2 == 1:\n        return ordered[middle]\n    return (ordered[middle - 1] + ordered[middle]) / 2",
+      "principle": "Сначала сортируй копию, затем работай с центральными индексами.",
+      "version": 1,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Сначала сортируй копию, затем работай с центральными индексами.",
+        "Для чётной длины нужны позиции middle−1 и middle.",
+        "Используй обычное деление, чтобы не потерять дробную часть."
+      ],
+      "presentation": {
+        "title": "Медиана списка",
+        "statement": "Напиши median(values). Для непустого списка верни медиану: средний элемент отсортированного списка при нечётной длине, среднее двух центральных — при чётной. ",
+        "limits": "1…100 целых −1000…1000. Возврат int или float.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def median(values):\n    pass\n",
+        "functionName": "median",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                8,
+                1,
+                4
+              ]
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              [
+                1,
+                9
+              ]
+            ],
+            "expectedReturn": 5
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                -4,
+                -2,
+                5,
+                9
+              ]
+            ],
+            "expectedReturn": 1.5
+          },
+          {
+            "args": [
+              [
+                7
+              ]
+            ],
+            "expectedReturn": 7
+          },
+          {
+            "args": [
+              [
+                5,
+                5,
+                5,
+                5
+              ]
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              [
+                1000,
+                -1000
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99
+              ]
+            ],
+            "expectedReturn": 49.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-move_zeros",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "skills": [
+        "py-lists.skill.3b2-stable-filter"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши move_zeros(values): верни список, где все ненулевые числа сохраняют свой порядок, а все нули перенесены в конец.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сортировка нарушит порядок ненулевых значений.",
+      "explanation": "1. Сортировка нарушит порядок ненулевых значений.\n\n2. Собери ненулевые в новый список и отдельно посчитай нули.\n\n3. Добавь ровно столько нулей, сколько было исходно.",
+      "solution": "def move_zeros(values):\n    result = []\n    zeros = 0\n    for value in values:\n        if value == 0:\n            zeros += 1\n        else:\n            result.append(value)\n    return result + [0] * zeros",
+      "principle": "Сортировка нарушит порядок ненулевых значений.",
+      "version": 1,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Сортировка нарушит порядок ненулевых значений.",
+        "Собери ненулевые в новый список и отдельно посчитай нули.",
+        "Добавь ровно столько нулей, сколько было исходно."
+      ],
+      "presentation": {
+        "title": "Нули в конце",
+        "statement": "Напиши move_zeros(values): верни список, где все ненулевые числа сохраняют свой порядок, а все нули перенесены в конец.",
+        "limits": "0…100 целых −100…100.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def move_zeros(values):\n    pass\n",
+        "functionName": "move_zeros",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                0,
+                2,
+                0,
+                -1
+              ]
+            ],
+            "expectedReturn": [
+              2,
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                0
+              ]
+            ],
+            "expectedReturn": [
+              0,
+              0
+            ]
+          },
+          {
+            "args": [
+              [
+                3,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              3,
+              2,
+              1
+            ]
+          },
+          {
+            "args": [
+              [
+                -3,
+                0,
+                5,
+                0,
+                2
+              ]
+            ],
+            "expectedReturn": [
+              -3,
+              5,
+              2,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-word_counts",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.extension",
+      "skills": [
+        "py-dicts.skill.3b2-counts"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши word_counts(text). Раздели строку по пробельным символам, приведи слова к нижнему регистру и верни словарь количества каждого слова. Знаки препинания остаются частью слова.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Каждый ключ хранит счётчик слова.",
+      "explanation": "1. Каждый ключ хранит счётчик слова.\n\n2. get(word,0) даёт ноль для ещё не встреченного слова.\n\n3. Не удаляй пунктуацию: условие явно сохраняет её.",
+      "solution": "def word_counts(text):\n    counts = {}\n    for word in text.lower().split():\n        counts[word] = counts.get(word, 0) + 1\n    return counts",
+      "principle": "Каждый ключ хранит счётчик слова.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-strings"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Каждый ключ хранит счётчик слова.",
+        "get(word,0) даёт ноль для ещё не встреченного слова.",
+        "Не удаляй пунктуацию: условие явно сохраняет её."
+      ],
+      "presentation": {
+        "title": "Частоты слов",
+        "statement": "Напиши word_counts(text). Раздели строку по пробельным символам, приведи слова к нижнему регистру и верни словарь количества каждого слова. Знаки препинания остаются частью слова.",
+        "limits": "0…1000 символов; ключи — строки, значения — целые.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def word_counts(text):\n    pass\n",
+        "functionName": "word_counts",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "Кот дом кот"
+            ],
+            "expectedReturn": {
+              "кот": 2,
+              "дом": 1
+            }
+          },
+          {
+            "args": [
+              ""
+            ],
+            "expectedReturn": {}
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "A a A"
+            ],
+            "expectedReturn": {
+              "a": 3
+            }
+          },
+          {
+            "args": [
+              "кот кот,"
+            ],
+            "expectedReturn": {
+              "кот": 1,
+              "кот,": 1
+            }
+          },
+          {
+            "args": [
+              "x\ty x"
+            ],
+            "expectedReturn": {
+              "x": 2,
+              "y": 1
+            }
+          },
+          {
+            "args": [
+              "слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово слово"
+            ],
+            "expectedReturn": {
+              "слово": 100
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-most_frequent",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.extension",
+      "skills": [
+        "py-dicts.skill.3b2-counts"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши most_frequent(values). Верни наиболее частое число. При одинаковой частоте выбери число, которое раньше впервые встретилось. Для пустого списка верни None.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала узнай итоговые частоты всех чисел.",
+      "explanation": "1. Сначала узнай итоговые частоты всех чисел.\n\n2. Второй проход по исходному порядку позволяет сохранить первое при равенстве.\n\n3. Обновляй best только при строго большей частоте; пустой список обработай заранее.",
+      "solution": "def most_frequent(values):\n    if not values:\n        return None\n    counts = {}\n    for value in values:\n        counts[value] = counts.get(value, 0) + 1\n    best = values[0]\n    for value in values:\n        if counts[value] > counts[best]:\n            best = value\n    return best",
+      "principle": "Сначала узнай итоговые частоты всех чисел.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Сначала узнай итоговые частоты всех чисел.",
+        "Второй проход по исходному порядку позволяет сохранить первое при равенстве.",
+        "Обновляй best только при строго большей частоте; пустой список обработай заранее."
+      ],
+      "presentation": {
+        "title": "Самое частое с правилом равенства",
+        "statement": "Напиши most_frequent(values). Верни наиболее частое число. При одинаковой частоте выбери число, которое раньше впервые встретилось. Для пустого списка верни None.",
+        "limits": "0…100 целых −100…100.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def most_frequent(values):\n    pass\n",
+        "functionName": "most_frequent",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                2,
+                1,
+                1,
+                2
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": null
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                3,
+                2,
+                2
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                -1,
+                -2,
+                -2,
+                -1
+              ]
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              [
+                5,
+                4,
+                3
+              ]
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                -100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100
+              ]
+            ],
+            "expectedReturn": -100
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-group_totals",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.extension",
+      "skills": [
+        "py-dicts.skill.3b2-aggregate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши group_totals(records). records — список пар [название, целое значение]. Верни словарь суммы значений по каждому названию. Одинаковые названия могут повторяться; значения бывают отрицательными.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Название служит ключом, не индексом списка.",
+      "explanation": "1. Название служит ключом, не индексом списка.\n\n2. При повторении ключа добавляй к предыдущей сумме.\n\n3. Нулевая или отрицательная сумма не означает, что ключ нужно удалять.",
+      "solution": "def group_totals(records):\n    totals = {}\n    for name, value in records:\n        totals[name] = totals.get(name, 0) + value\n    return totals",
+      "principle": "Название служит ключом, не индексом списка.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-lists"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Название служит ключом, не индексом списка.",
+        "При повторении ключа добавляй к предыдущей сумме.",
+        "Нулевая или отрицательная сумма не означает, что ключ нужно удалять."
+      ],
+      "presentation": {
+        "title": "Суммы по группам",
+        "statement": "Напиши group_totals(records). records — список пар [название, целое значение]. Верни словарь суммы значений по каждому названию. Одинаковые названия могут повторяться; значения бывают отрицательными.",
+        "limits": "0…100 записей. Название — непустая строка; значение −1000…1000.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def group_totals(records):\n    pass\n",
+        "functionName": "group_totals",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                [
+                  "A",
+                  3
+                ],
+                [
+                  "B",
+                  4
+                ],
+                [
+                  "A",
+                  -1
+                ]
+              ]
+            ],
+            "expectedReturn": {
+              "A": 2,
+              "B": 4
+            }
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": {}
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                [
+                  "x",
+                  0
+                ],
+                [
+                  "x",
+                  0
+                ]
+              ]
+            ],
+            "expectedReturn": {
+              "x": 0
+            }
+          },
+          {
+            "args": [
+              [
+                [
+                  "дом",
+                  -5
+                ],
+                [
+                  "дом",
+                  2
+                ]
+              ]
+            ],
+            "expectedReturn": {
+              "дом": -3
+            }
+          },
+          {
+            "args": [
+              [
+                [
+                  "q",
+                  1000
+                ],
+                [
+                  "z",
+                  -1000
+                ]
+              ]
+            ],
+            "expectedReturn": {
+              "q": 1000,
+              "z": -1000
+            }
+          },
+          {
+            "args": [
+              [
+                [
+                  "A",
+                  0
+                ],
+                [
+                  "A",
+                  1
+                ],
+                [
+                  "A",
+                  2
+                ],
+                [
+                  "A",
+                  3
+                ],
+                [
+                  "A",
+                  4
+                ],
+                [
+                  "A",
+                  5
+                ],
+                [
+                  "A",
+                  6
+                ],
+                [
+                  "A",
+                  7
+                ],
+                [
+                  "A",
+                  8
+                ],
+                [
+                  "A",
+                  9
+                ],
+                [
+                  "A",
+                  10
+                ],
+                [
+                  "A",
+                  11
+                ],
+                [
+                  "A",
+                  12
+                ],
+                [
+                  "A",
+                  13
+                ],
+                [
+                  "A",
+                  14
+                ],
+                [
+                  "A",
+                  15
+                ],
+                [
+                  "A",
+                  16
+                ],
+                [
+                  "A",
+                  17
+                ],
+                [
+                  "A",
+                  18
+                ],
+                [
+                  "A",
+                  19
+                ],
+                [
+                  "A",
+                  20
+                ],
+                [
+                  "A",
+                  21
+                ],
+                [
+                  "A",
+                  22
+                ],
+                [
+                  "A",
+                  23
+                ],
+                [
+                  "A",
+                  24
+                ],
+                [
+                  "A",
+                  25
+                ],
+                [
+                  "A",
+                  26
+                ],
+                [
+                  "A",
+                  27
+                ],
+                [
+                  "A",
+                  28
+                ],
+                [
+                  "A",
+                  29
+                ],
+                [
+                  "A",
+                  30
+                ],
+                [
+                  "A",
+                  31
+                ],
+                [
+                  "A",
+                  32
+                ],
+                [
+                  "A",
+                  33
+                ],
+                [
+                  "A",
+                  34
+                ],
+                [
+                  "A",
+                  35
+                ],
+                [
+                  "A",
+                  36
+                ],
+                [
+                  "A",
+                  37
+                ],
+                [
+                  "A",
+                  38
+                ],
+                [
+                  "A",
+                  39
+                ],
+                [
+                  "A",
+                  40
+                ],
+                [
+                  "A",
+                  41
+                ],
+                [
+                  "A",
+                  42
+                ],
+                [
+                  "A",
+                  43
+                ],
+                [
+                  "A",
+                  44
+                ],
+                [
+                  "A",
+                  45
+                ],
+                [
+                  "A",
+                  46
+                ],
+                [
+                  "A",
+                  47
+                ],
+                [
+                  "A",
+                  48
+                ],
+                [
+                  "A",
+                  49
+                ],
+                [
+                  "A",
+                  50
+                ],
+                [
+                  "A",
+                  51
+                ],
+                [
+                  "A",
+                  52
+                ],
+                [
+                  "A",
+                  53
+                ],
+                [
+                  "A",
+                  54
+                ],
+                [
+                  "A",
+                  55
+                ],
+                [
+                  "A",
+                  56
+                ],
+                [
+                  "A",
+                  57
+                ],
+                [
+                  "A",
+                  58
+                ],
+                [
+                  "A",
+                  59
+                ],
+                [
+                  "A",
+                  60
+                ],
+                [
+                  "A",
+                  61
+                ],
+                [
+                  "A",
+                  62
+                ],
+                [
+                  "A",
+                  63
+                ],
+                [
+                  "A",
+                  64
+                ],
+                [
+                  "A",
+                  65
+                ],
+                [
+                  "A",
+                  66
+                ],
+                [
+                  "A",
+                  67
+                ],
+                [
+                  "A",
+                  68
+                ],
+                [
+                  "A",
+                  69
+                ],
+                [
+                  "A",
+                  70
+                ],
+                [
+                  "A",
+                  71
+                ],
+                [
+                  "A",
+                  72
+                ],
+                [
+                  "A",
+                  73
+                ],
+                [
+                  "A",
+                  74
+                ],
+                [
+                  "A",
+                  75
+                ],
+                [
+                  "A",
+                  76
+                ],
+                [
+                  "A",
+                  77
+                ],
+                [
+                  "A",
+                  78
+                ],
+                [
+                  "A",
+                  79
+                ],
+                [
+                  "A",
+                  80
+                ],
+                [
+                  "A",
+                  81
+                ],
+                [
+                  "A",
+                  82
+                ],
+                [
+                  "A",
+                  83
+                ],
+                [
+                  "A",
+                  84
+                ],
+                [
+                  "A",
+                  85
+                ],
+                [
+                  "A",
+                  86
+                ],
+                [
+                  "A",
+                  87
+                ],
+                [
+                  "A",
+                  88
+                ],
+                [
+                  "A",
+                  89
+                ],
+                [
+                  "A",
+                  90
+                ],
+                [
+                  "A",
+                  91
+                ],
+                [
+                  "A",
+                  92
+                ],
+                [
+                  "A",
+                  93
+                ],
+                [
+                  "A",
+                  94
+                ],
+                [
+                  "A",
+                  95
+                ],
+                [
+                  "A",
+                  96
+                ],
+                [
+                  "A",
+                  97
+                ],
+                [
+                  "A",
+                  98
+                ],
+                [
+                  "A",
+                  99
+                ]
+              ]
+            ],
+            "expectedReturn": {
+              "A": 4950
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-predict-get",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.default"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет программа? Выбери полный результат.",
+      "answer": "0 9",
+      "hint": "Нулевое значение и отсутствующий ключ — разные случаи.",
+      "explanation": "Запасное значение используется только при отсутствии ключа. Существующий ноль не заменяется на 9.",
+      "solution": "Запасное значение используется только при отсутствии ключа. Существующий ноль не заменяется на 9.",
+      "principle": "Нулевое значение и отсутствующий ключ — разные случаи.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "0 9",
+        "Ошибка Python",
+        "None",
+        "0"
+      ],
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d = {\"x\": 0}\nprint(d.get(\"x\", 9), d.get(\"y\", 9))",
+        "expectedOutput": "0 9"
+      }
+    },
+    {
+      "id": "b2-python-clamp",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.extension",
+      "skills": [
+        "py-functions.skill.3b2-boundaries"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши clamp(x,left,right). Верни x, если он внутри отрезка; left, если x меньше; right, если x больше.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Три случая: ниже, внутри, выше.",
+      "explanation": "1. Три случая: ниже, внутри, выше.\n\n2. Граничное значение уже принадлежит отрезку.\n\n3. Каждая ветвь должна вернуть число, а не только напечатать его.",
+      "solution": "def clamp(x, left, right):\n    if x < left:\n        return left\n    if x > right:\n        return right\n    return x",
+      "principle": "Три случая: ниже, внутри, выше.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Три случая: ниже, внутри, выше.",
+        "Граничное значение уже принадлежит отрезку.",
+        "Каждая ветвь должна вернуть число, а не только напечатать его."
+      ],
+      "presentation": {
+        "title": "Ограничение диапазоном",
+        "statement": "Напиши clamp(x,left,right). Верни x, если он внутри отрезка; left, если x меньше; right, если x больше.",
+        "limits": "Числа −1000…1000; left≤right, границы включены.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def clamp(x, left, right):\n    pass\n",
+        "functionName": "clamp",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              5,
+              0,
+              10
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              -3,
+              0,
+              10
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              12,
+              0,
+              10
+            ],
+            "expectedReturn": 10
+          },
+          {
+            "args": [
+              2,
+              2,
+              2
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              -8,
+              -5,
+              -1
+            ],
+            "expectedReturn": -5
+          },
+          {
+            "args": [
+              -1,
+              -5,
+              -1
+            ],
+            "expectedReturn": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-gcd_nonnegative",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.extension",
+      "skills": [
+        "py-functions.skill.3b2-gcd"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши gcd_nonnegative(a,b), возвращающую неотрицательный наибольший общий делитель. Для gcd_nonnegative(0,0) верни 0.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Начни с модулей, чтобы результат был неотрицательным.",
+      "explanation": "1. Начни с модулей, чтобы результат был неотрицательным.\n\n2. Остаток позволяет заменить пару (a,b) на (b,a%b) без изменения НОД.\n\n3. Когда b=0, значение a — результат; это работает и при двух нулях.",
+      "solution": "def gcd_nonnegative(a, b):\n    a = abs(a)\n    b = abs(b)\n    while b != 0:\n        a, b = b, a % b\n    return a",
+      "principle": "Начни с модулей, чтобы результат был неотрицательным.",
+      "version": 1,
+      "requires": [
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Начни с модулей, чтобы результат был неотрицательным.",
+        "Остаток позволяет заменить пару (a,b) на (b,a%b) без изменения НОД.",
+        "Когда b=0, значение a — результат; это работает и при двух нулях."
+      ],
+      "presentation": {
+        "title": "НОД с нулём и знаком",
+        "statement": "Напиши gcd_nonnegative(a,b), возвращающую неотрицательный наибольший общий делитель. Для gcd_nonnegative(0,0) верни 0.",
+        "limits": "Каждый аргумент −10000…10000.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def gcd_nonnegative(a, b):\n    pass\n",
+        "functionName": "gcd_nonnegative",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              84,
+              30
+            ],
+            "expectedReturn": 6
+          },
+          {
+            "args": [
+              0,
+              0
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              0,
+              7
+            ],
+            "expectedReturn": 7
+          },
+          {
+            "args": [
+              -12,
+              18
+            ],
+            "expectedReturn": 6
+          },
+          {
+            "args": [
+              5,
+              -10
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              9973,
+              10000
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              10000,
+              10000
+            ],
+            "expectedReturn": 10000
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-predict-default",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.extension",
+      "skills": [
+        "py-functions.skill.3b2-defaults"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет программа? Выбери полный результат.",
+      "answer": "1 2",
+      "hint": "Изменяемый аргумент по умолчанию может сохранять состояние между вызовами.",
+      "explanation": "Список значения по умолчанию создаётся один раз при определении функции. Второй вызов добавляет к тому же списку. Для независимых списков используют None и создание внутри функции.",
+      "solution": "Список значения по умолчанию создаётся один раз при определении функции. Второй вызов добавляет к тому же списку. Для независимых списков используют None и создание внутри функции.",
+      "principle": "Изменяемый аргумент по умолчанию может сохранять состояние между вызовами.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "1 2",
+        "Ошибка Python",
+        "None",
+        "0"
+      ],
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def collect(x, items=[]):\n    items.append(x)\n    return len(items)\nprint(collect(4), collect(7))",
+        "expectedOutput": "1 2"
+      }
+    },
+    {
+      "id": "b2-python-intersection_count",
+      "subject": "python",
+      "topic": "py-sets",
+      "subtopic": "py-sets.sub.extension",
+      "skills": [
+        "py-sets.skill.3b2-intersection"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши intersection_count(a,b), возвращающую количество различных целых значений, присутствующих в обоих списках.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Повторения не увеличивают число различных общих значений.",
+      "explanation": "1. Повторения не увеличивают число различных общих значений.\n\n2. Множества удаляют повторы; оператор & находит пересечение.\n\n3. Измерь размер пересечения, не объединения.",
+      "solution": "def intersection_count(a, b):\n    return len(set(a) & set(b))",
+      "principle": "Повторения не увеличивают число различных общих значений.",
+      "version": 1,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Повторения не увеличивают число различных общих значений.",
+        "Множества удаляют повторы; оператор & находит пересечение.",
+        "Измерь размер пересечения, не объединения."
+      ],
+      "presentation": {
+        "title": "Общие различные элементы",
+        "statement": "Напиши intersection_count(a,b), возвращающую количество различных целых значений, присутствующих в обоих списках.",
+        "limits": "Каждый список длины 0…100, числа −100…100.",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def intersection_count(a, b):\n    pass\n",
+        "functionName": "intersection_count",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                1,
+                1,
+                2
+              ],
+              [
+                2,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              [],
+              [
+                1
+              ]
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              [
+                -1,
+                2
+              ],
+              [
+                -1,
+                2
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                1
+              ],
+              [
+                2
+              ]
+            ],
+            "expectedReturn": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-predict-set",
+      "subject": "python",
+      "topic": "py-sets",
+      "subtopic": "py-sets.sub.membership",
+      "skills": [
+        "py-sets.skill.unique"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет программа? Выбери полный результат.",
+      "answer": "2 False",
+      "hint": "Повтор одного значения не создаёт новый элемент множества.",
+      "explanation": "Множество содержит два различных значения 2 и 5. Числа 3 в нём нет, поэтому проверка принадлежности False.",
+      "solution": "Множество содержит два различных значения 2 и 5. Числа 3 в нём нет, поэтому проверка принадлежности False.",
+      "principle": "Повтор одного значения не создаёт новый элемент множества.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "2 False",
+        "Ошибка Python",
+        "None",
+        "0"
+      ],
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a = {2, 2, 5}\nprint(len(a), 3 in a)",
+        "expectedOutput": "2 False"
+      }
+    },
+    {
+      "id": "b2-python-unique_edges",
+      "subject": "python",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.extension",
+      "skills": [
+        "py-tuples.skill.3b2-normalization"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши unique_edges(edges). Каждая пара [a,b] обозначает неориентированное ребро. Приведи пару к виду [min,max], убери повторы и верни список пар, отсортированный лексикографически. Петли [a,a] сохраняются.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Для неориентированного ребра порядок концов не важен, но нужен единый канонический порядок.",
+      "explanation": "1. Для неориентированного ребра порядок концов не важен, но нужен единый канонический порядок.\n\n2. Кортежи можно поместить в множество для удаления повторов.\n\n3. Сортировка пар сначала сравнивает первый элемент, затем второй. Верни списки согласно условию.",
+      "solution": "def unique_edges(edges):\n    normalized = set()\n    for a, b in edges:\n        normalized.add((min(a, b), max(a, b)))\n    result = []\n    for a, b in sorted(normalized):\n        result.append([a, b])\n    return result",
+      "principle": "Для неориентированного ребра порядок концов не важен, но нужен единый канонический порядок.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-lists",
+        "py-sets"
+      ],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Для неориентированного ребра порядок концов не важен, но нужен единый канонический порядок.",
+        "Кортежи можно поместить в множество для удаления повторов.",
+        "Сортировка пар сначала сравнивает первый элемент, затем второй. Верни списки согласно условию."
+      ],
+      "presentation": {
+        "title": "Нормализация неориентированных рёбер",
+        "statement": "Напиши unique_edges(edges). Каждая пара [a,b] обозначает неориентированное ребро. Приведи пару к виду [min,max], убери повторы и верни список пар, отсортированный лексикографически. Петли [a,a] сохраняются.",
+        "limits": "0…100 пар целых 0…100. Возврат — список списков, например [[1,2],[2,3]].",
+        "inputHelp": false
+      },
+      "python": {
+        "type": "write-function",
+        "starterCode": "def unique_edges(edges):\n    pass\n",
+        "functionName": "unique_edges",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                [
+                  4,
+                  4
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                4,
+                4
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                [
+                  0,
+                  2
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                [
+                  10,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                10
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-predict-unpack",
+      "subject": "python",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.extension",
+      "skills": [
+        "py-tuples.skill.3b2-unpack"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет программа? Выбери полный результат.",
+      "answer": "5",
+      "hint": "Правая часть одновременного присваивания вычисляется до изменения переменных.",
+      "explanation": "Распаковка даёт a=4,b=9. Одновременный обмен даёт a=9,b=4, разность 5. Исходный кортеж не изменяется.",
+      "solution": "Распаковка даёт a=4,b=9. Одновременный обмен даёт a=9,b=4, разность 5. Исходный кортеж не изменяется.",
+      "principle": "Правая часть одновременного присваивания вычисляется до изменения переменных.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "5",
+        "Ошибка Python",
+        "None",
+        "0"
+      ],
+      "python": {
+        "type": "predict-output",
+        "starterCode": "pair = (4, 9)\na, b = pair\na, b = b, a\nprint(a - b)",
+        "expectedOutput": "5"
+      }
+    },
+    {
+      "id": "b2-python-py-file-roundtrip",
+      "subject": "python",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.extension",
+      "skills": [
+        "py-files.skill.3b2-roundtrip"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает одну строку. Запиши её в файл message.txt с кодировкой utf-8, закрой файл, снова открой и выведи прочитанную строку без добавочных сообщений. Файл существует только в виртуальной файловой системе этого запуска.",
+      "answer": "Программа проходит все тесты",
+      "hint": "with закрывает файл после блока, включая сброс записанных данных.",
+      "explanation": "1. with закрывает файл после блока, включая сброс записанных данных.\n\n2. Режим w создаёт/перезаписывает; r читает. Используй utf-8 для русского текста.\n\n3. read() возвращает строку целиком. В каждом проверочном запуске программа пишет файл заново.",
+      "solution": "text = input()\nwith open(\"message.txt\", \"w\", encoding=\"utf-8\") as file:\n    file.write(text)\nwith open(\"message.txt\", \"r\", encoding=\"utf-8\") as file:\n    saved = file.read()\nprint(saved)",
+      "principle": "with закрывает файл после блока, включая сброс записанных данных.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "with закрывает файл после блока, включая сброс записанных данных.",
+        "Режим w создаёт/перезаписывает; r читает. Используй utf-8 для русского текста.",
+        "read() возвращает строку целиком. В каждом проверочном запуске программа пишет файл заново."
+      ],
+      "presentation": {
+        "title": "Запись и чтение UTF-8",
+        "statement": "Программа получает одну строку. Запиши её в файл message.txt с кодировкой utf-8, закрой файл, снова открой и выведи прочитанную строку без добавочных сообщений. Файл существует только в виртуальной файловой системе этого запуска.",
+        "limits": "Длина 0…1000 символов. Доступ к файлам телефона не нужен. Для одной пустой строки в предварительном stdin нажми Enter; полностью пустое поле означает EOF.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "Привет",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "Привет",
+            "expectedOutput": "Привет"
+          },
+          {
+            "stdin": "\n",
+            "expectedOutput": ""
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "a b",
+            "expectedOutput": "a b"
+          },
+          {
+            "stdin": "ёж",
+            "expectedOutput": "ёж"
+          },
+          {
+            "stdin": "123",
+            "expectedOutput": "123"
+          },
+          {
+            "stdin": "  a  ",
+            "expectedOutput": "  a  "
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-py-file-positive",
+      "subject": "python",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.extension",
+      "skills": [
+        "py-files.skill.3b2-process"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "В первой строке ввода находится n, затем n целых чисел на отдельных строках. Сохрани числа в numbers.txt по одному на строке. После закрытия файла прочитай его построчно и выведи сумму только положительных чисел. Файл виртуальный, временный.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Два этапа: сначала запись строк, затем новый блок чтения.",
+      "explanation": "1. Два этапа: сначала запись строк, затем новый блок чтения.\n\n2. Строка файла всё ещё строка: перед сравнением преобразуй через int.\n\n3. Начальная сумма 0 обеспечивает правильный результат пустого файла и файла без положительных чисел.",
+      "solution": "n = int(input())\nwith open(\"numbers.txt\", \"w\", encoding=\"utf-8\") as file:\n    for _ in range(n):\n        file.write(input() + \"\\n\")\ntotal = 0\nwith open(\"numbers.txt\", \"r\", encoding=\"utf-8\") as file:\n    for line in file:\n        value = int(line)\n        if value > 0:\n            total += value\nprint(total)",
+      "principle": "Два этапа: сначала запись строк, затем новый блок чтения.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Два этапа: сначала запись строк, затем новый блок чтения.",
+        "Строка файла всё ещё строка: перед сравнением преобразуй через int.",
+        "Начальная сумма 0 обеспечивает правильный результат пустого файла и файла без положительных чисел."
+      ],
+      "presentation": {
+        "title": "Обработка строк файла",
+        "statement": "В первой строке ввода находится n, затем n целых чисел на отдельных строках. Сохрани числа в numbers.txt по одному на строке. После закрытия файла прочитай его построчно и выведи сумму только положительных чисел. Файл виртуальный, временный.",
+        "limits": "0 ≤ n ≤ 100; числа −1000…1000. При n=0 выведи 0.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "4\n3\n-2\n0\n5",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "4\n3\n-2\n0\n5",
+            "expectedOutput": "8"
+          },
+          {
+            "stdin": "0",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "3\n-5\n-1\n0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "2\n1000\n1000",
+            "expectedOutput": "2000"
+          },
+          {
+            "stdin": "1\n7",
+            "expectedOutput": "7"
+          },
+          {
+            "stdin": "100\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000\n1000",
+            "expectedOutput": "100000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-predict-file-mode",
+      "subject": "python",
+      "topic": "py-files",
+      "subtopic": "py-files.sub.extension",
+      "skills": [
+        "py-files.skill.3b2-modes"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет программа? Выбери полный результат.",
+      "answer": "abcde",
+      "hint": "Различай перезапись w и дополнение a.",
+      "explanation": "Режим a дописывает в конец и не очищает предыдущий текст. Два фрагмента соединяются без перевода строки, поскольку write не добавляет его автоматически.",
+      "solution": "Режим a дописывает в конец и не очищает предыдущий текст. Два фрагмента соединяются без перевода строки, поскольку write не добавляет его автоматически.",
+      "principle": "Различай перезапись w и дополнение a.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "abcde",
+        "Ошибка Python",
+        "None",
+        "0"
+      ],
+      "python": {
+        "type": "predict-output",
+        "starterCode": "with open(\"x.txt\", \"w\", encoding=\"utf-8\") as f:\n    f.write(\"abc\")\nwith open(\"x.txt\", \"a\", encoding=\"utf-8\") as f:\n    f.write(\"de\")\nwith open(\"x.txt\", \"r\", encoding=\"utf-8\") as f:\n    print(f.read())",
+        "expectedOutput": "abcde"
+      }
+    },
+    {
+      "id": "b2-python-py-average",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.extension",
+      "skills": [
+        "py-types.skill.3b2-average"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает два целых числа на отдельных строках. Выведи их среднее арифметическое как число. Дробная часть разрешена; дополнительных подписей не нужно. Выводи результат в формате Python float: например, 5.0 для целого среднего.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Среднее — сумма, делённая на количество чисел.",
+      "explanation": "1. Среднее — сумма, делённая на количество чисел.\n\n2. input возвращает строку: преобразуй обе строки через int.\n\n3. Обычное / сохраняет дробную часть, // её отбрасывает. Проверка stdout требует именно вывода Python float.",
+      "solution": "a = int(input())\nb = int(input())\nprint((a + b) / 2)",
+      "principle": "Среднее — сумма, делённая на количество чисел.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "hints": [
+        "Среднее — сумма, делённая на количество чисел.",
+        "input возвращает строку: преобразуй обе строки через int.",
+        "Обычное / сохраняет дробную часть, // её отбрасывает. Проверка stdout требует именно вывода Python float."
+      ],
+      "presentation": {
+        "title": "Среднее двух чисел",
+        "statement": "Программа получает два целых числа на отдельных строках. Выведи их среднее арифметическое как число. Дробная часть разрешена; дополнительных подписей не нужно. Выводи результат в формате Python float: например, 5.0 для целого среднего.",
+        "limits": "Каждое число −1000…1000.",
+        "inputHelp": true
+      },
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "stdin": "2\n3",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "2\n3",
+            "expectedOutput": "2.5"
+          },
+          {
+            "stdin": "-4\n2",
+            "expectedOutput": "-1.0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "0\n0",
+            "expectedOutput": "0.0"
+          },
+          {
+            "stdin": "1000\n-1000",
+            "expectedOutput": "0.0"
+          },
+          {
+            "stdin": "1\n1",
+            "expectedOutput": "1.0"
+          },
+          {
+            "stdin": "1000\n1000",
+            "expectedOutput": "1000.0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2-python-predict-bool",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "skills": [
+        "py-types.skill.convert"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "choice",
+      "prompt": "Что выведет программа? Выбери полный результат.",
+      "answer": "True False 7",
+      "hint": "Значение строки и значение полученного из неё числа имеют разные правила истинности.",
+      "explanation": "Непустая строка «0» истинна, число 0 ложно. int преобразует десятичную строку с ведущими нулями в 7.",
+      "solution": "Непустая строка «0» истинна, число 0 ложно. int преобразует десятичную строку с ведущими нулями в 7.",
+      "principle": "Значение строки и значение полученного из неё числа имеют разные правила истинности.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": [],
+      "options": [
+        "True False 7",
+        "Ошибка Python",
+        "None",
+        "0"
+      ],
+      "python": {
+        "type": "predict-output",
+        "starterCode": "print(bool(\"0\"), bool(0), int(\"007\"))",
+        "expectedOutput": "True False 7"
+      }
+    }
+  ]
+}

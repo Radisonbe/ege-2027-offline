@@ -14,7 +14,7 @@ const {questions:bank,taxonomy}=checkContentBank(),wave=bank.filter(q=>q.id.star
 test('Original wave is exactly 100, balanced 25 per subject, with 20 Python and 5 informatics coding exercises',()=>{
  assert.equal(wave.length,100);for(const subject of ['math','russian','informatics','python'])assert.equal(wave.filter(q=>q.subject===subject).length,25);
  assert.equal(code.filter(q=>q.subject==='python').length,20);assert.equal(code.filter(q=>q.subject==='informatics').length,5);
- assert.equal(bank.length,167);assert.ok(wave.every(q=>q.origin==='generated'&&q.examTaskType===null&&q.sourceYear===2026));
+ assert.equal(bank.filter(q=>!q.id.startsWith("b2-")).length,167);assert.ok(wave.every(q=>q.origin==='generated'&&q.examTaskType===null&&q.sourceYear===2026));
  assert.ok(wave.every(q=>q.prompt.trim()&&q.solution.trim()&&q.explanation.trim()&&q.hint.trim()));
 });
 test('All 25 math answers independently match arithmetic identities including signed/fractional values',()=>{

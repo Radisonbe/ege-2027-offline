@@ -3,6 +3,7 @@ import {learningSets,validateLearningFlow} from '../domain/study-flow';
 import { topics as referenceTopics, theories as referenceTheories, sentences as referenceSentences, bridges as referenceBridges } from './reference.json';
 import taxonomyData from './taxonomy.json';
 import lessonData from './stage3b1-lessons.json';
+import extendedLessonData from './stage3b2-lessons.json';
 import {validateLessonPack,lessonNode} from '../domain/lessons';
 import { contentFingerprint, loadContentPackages, validateTaxonomy } from '../domain/content';
 import type { ContentNode, PythonBridge, Question, Sentence, Subject, SubjectId, Topic } from '../domain/types';
@@ -21,7 +22,7 @@ export const topics: Topic[] = referenceTopics.map((entry, index, all) => ({
   subtopics: [], requires: [], related: [],
 }));
 export const topicById = Object.fromEntries(topics.map(t => [t.id, t]));
-const lessonResult=(()=>{try{return {lessons:validateLessonPack(lessonData,topics).lessons,diagnostics:[] as string[]};}catch(error){return {lessons:[],diagnostics:[String(error instanceof Error?error.message:error)]};}})();
+const lessonResult=(()=>{const lessons:ReturnType<typeof validateLessonPack>['lessons']=[],diagnostics:string[]=[];for(const pack of [lessonData,extendedLessonData]){try{lessons.push(...validateLessonPack(pack,topics).lessons);}catch(error){diagnostics.push(String(error instanceof Error?error.message:error));}}return {lessons,diagnostics};})();
 for(const lesson of lessonResult.lessons)if(topicById[lesson.topic].materialStatus!=='ready'){Object.assign(topicById[lesson.topic],{materialStatus:'ready',minutes:lesson.minutes,description:'Базовые правила, разобранный пример и самостоятельная практика'});}
 const taxonomyResult = (() => {
   try { return { taxonomy: validateTaxonomy(taxonomyData, topics), diagnostics: [] as string[] }; }

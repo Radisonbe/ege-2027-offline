@@ -1,0 +1,1393 @@
+{
+  "schemaVersion": 1,
+  "id": "stage3b2-math",
+  "subject": "math",
+  "questions": [
+    {
+      "id": "b2-math-quad-factor",
+      "subject": "math",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "skills": [
+        "quadratic.skill.3b2-roots"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Реши x² − 5x + 6 = 0. Запиши меньший корень.",
+      "answer": "2",
+      "hint": "Нулевое произведение означает, что хотя бы один множитель равен нулю.",
+      "explanation": "Ищем два числа с суммой 5 и произведением 6: 2 и 3. Получаем (x−2)(x−3)=0. Оба корня подходят; меньший — 2.",
+      "solution": "Ищем два числа с суммой 5 и произведением 6: 2 и 3. Получаем (x−2)(x−3)=0. Оба корня подходят; меньший — 2.",
+      "principle": "Нулевое произведение означает, что хотя бы один множитель равен нулю.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-quad-discriminant",
+      "subject": "math",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "skills": [
+        "quadratic.skill.3b2-roots"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Уравнение 2x² + 3x − 2 = 0 имеет два корня. Найди их сумму.",
+      "answer": "-1.5",
+      "hint": "Сначала приведи уравнение к ax²+bx+c=0.",
+      "explanation": "Дискриминант 9+16=25. Корни (−3±5)/4: 1/2 и −2. Их сумма −3/2. Можно проверить формулой суммы −b/a.",
+      "solution": "Дискриминант 9+16=25. Корни (−3±5)/4: 1/2 и −2. Их сумма −3/2. Можно проверить формулой суммы −b/a.",
+      "principle": "Сначала приведи уравнение к ax²+bx+c=0.",
+      "version": 1,
+      "requires": [
+        "linear",
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-quad-width",
+      "subject": "math",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "skills": [
+        "quadratic.skill.3b2-model"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Прямоугольный участок имеет площадь 96 м². Длина на 4 м больше ширины. Вокруг участка снаружи проложили дорожку шириной 1 м. Найди площадь дорожки в м².",
+      "answer": "44",
+      "hint": "Отдели площадь участка от площади внешнего прямоугольника.",
+      "explanation": "Пусть ширина x>0, длина x+4. x(x+4)=96, корни 8 и −12; отрицательный не подходит. С дорожкой размеры 10 и 14. Внешняя площадь 140, дорожка занимает 140−96=44.",
+      "solution": "Пусть ширина x>0, длина x+4. x(x+4)=96, корни 8 и −12; отрицательный не подходит. С дорожкой размеры 10 и 14. Внешняя площадь 140, дорожка занимает 140−96=44.",
+      "principle": "Отдели площадь участка от площади внешнего прямоугольника.",
+      "version": 1,
+      "requires": [
+        "linear",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-quad-parameter",
+      "subject": "math",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "skills": [
+        "quadratic.skill.3b2-integer-roots"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Для каких положительных целых k уравнение x² − 6x + k = 0 имеет два различных положительных целых корня? Запиши сумму всех подходящих k.",
+      "answer": "13",
+      "hint": "Используй сумму и произведение корней и перебери положительные пары.",
+      "explanation": "Корни положительны, их сумма 6. Различные пары: 1 и 5 дают k=5; 2 и 4 дают k=8. Пара 3 и 3 исключена: корни должны быть различными. Сумма k=13.",
+      "solution": "Корни положительны, их сумма 6. Различные пары: 1 и 5 дают k=5; 2 и 4 дают k=8. Пара 3 и 3 исключена: корни должны быть различными. Сумма k=13.",
+      "principle": "Используй сумму и произведение корней и перебери положительные пары.",
+      "version": 1,
+      "requires": [
+        "linear",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-quad-square",
+      "subject": "math",
+      "topic": "quadratic",
+      "subtopic": "quadratic.sub.extension",
+      "skills": [
+        "quadratic.skill.3b2-roots"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько действительных корней имеет уравнение (x−3)² = −4?",
+      "answer": "0",
+      "hint": "Проверь знак обеих частей до вычислений.",
+      "explanation": "Квадрат действительного числа неотрицателен. Он не может равняться −4, поэтому действительных корней нет.",
+      "solution": "Квадрат действительного числа неотрицателен. Он не может равняться −4, поэтому действительных корней нет.",
+      "principle": "Проверь знак обеих частей до вычислений.",
+      "version": 1,
+      "requires": [
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-ineq-negative",
+      "subject": "math",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "skills": [
+        "inequalities.skill.3b2-boundaries"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько целых чисел x от −5 до 5 удовлетворяют −2x > 6?",
+      "answer": "2",
+      "hint": "При делении неравенства на отрицательное число знак меняется.",
+      "explanation": "Делим на −2 и меняем знак: x<−3. В заданном диапазоне это −5 и −4: два числа.",
+      "solution": "Делим на −2 и меняем знак: x<−3. В заданном диапазоне это −5 и −4: два числа.",
+      "principle": "При делении неравенства на отрицательное число знак меняется.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-ineq-system",
+      "subject": "math",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "skills": [
+        "inequalities.skill.3b2-intersection"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Найди наибольшее целое x, для которого одновременно 3x−2 < 10 и 2−x ≤ 1.",
+      "answer": "3",
+      "hint": "Нужно пересечение условий, а не их объединение.",
+      "explanation": "Первое условие даёт x<4. Второе даёт x≥1. Целые решения 1,2,3; наибольшее — 3.",
+      "solution": "Первое условие даёт x<4. Второе даёт x≥1. Целые решения 1,2,3; наибольшее — 3.",
+      "principle": "Нужно пересечение условий, а не их объединение.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-ineq-rational",
+      "subject": "math",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "skills": [
+        "inequalities.skill.3b2-domains"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько целых x от −4 до 5 удовлетворяют (x−1)/(x+2) ≥ 0?",
+      "answer": "7",
+      "hint": "Отметь отдельно нуль числителя и запрещённый нуль знаменателя.",
+      "explanation": "x=−2 исключается из ОДЗ. Критические точки −2 и 1. Знак неотрицателен при x<−2 или x≥1. В заданном диапазоне: −4,−3,1,2,3,4,5 — семь чисел.",
+      "solution": "x=−2 исключается из ОДЗ. Критические точки −2 и 1. Знак неотрицателен при x<−2 или x≥1. В заданном диапазоне: −4,−3,1,2,3,4,5 — семь чисел.",
+      "principle": "Отметь отдельно нуль числителя и запрещённый нуль знаменателя.",
+      "version": 1,
+      "requires": [
+        "fractions",
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-ineq-root-domain",
+      "subject": "math",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "skills": [
+        "inequalities.skill.3b2-domains"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько целых x одновременно входят в область определения √(12−3x) и удовлетворяют x²−5x+6 < 0?",
+      "answer": "0",
+      "hint": "Строгие границы могут исключить все целые значения.",
+      "explanation": "ОДЗ корня: x≤4. Квадратный трёхчлен равен (x−2)(x−3) и отрицателен только при 2<x<3. Целых чисел в этом открытом промежутке нет: ответ 0.",
+      "solution": "ОДЗ корня: x≤4. Квадратный трёхчлен равен (x−2)(x−3) и отрицателен только при 2<x<3. Целых чисел в этом открытом промежутке нет: ответ 0.",
+      "principle": "Строгие границы могут исключить все целые значения.",
+      "version": 1,
+      "requires": [
+        "quadratic",
+        "roots"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-ineq-budget",
+      "subject": "math",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "skills": [
+        "inequalities.skill.3b2-integer-feasibility"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Билет стоит 140 рублей, поездка до места — 60 рублей один раз. Есть 1000 рублей. Какое наибольшее число билетов можно купить?",
+      "answer": "6",
+      "hint": "Количество билетов — целое неотрицательное число.",
+      "explanation": "Для n билетов: 140n+60≤1000. n≤940/140≈6,71. Берём целую часть: 6. Проверка: 900≤1000, но 7 билетов стоят 1040 с поездкой.",
+      "solution": "Для n билетов: 140n+60≤1000. n≤940/140≈6,71. Берём целую часть: 6. Проверка: 900≤1000, но 7 билетов стоят 1040 с поездкой.",
+      "principle": "Количество билетов — целое неотрицательное число.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-word-rate",
+      "subject": "math",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "skills": [
+        "word.skill.3b2-rates"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "За 3 часа велосипедист проехал 42 км с постоянной скоростью. Сколько километров он проедет за 5 часов с той же скоростью?",
+      "answer": "70",
+      "hint": "Раздели расстояние на время, затем умножь на новое время.",
+      "explanation": "Скорость 42/3=14 км/ч. За 5 часов путь 14·5=70 км.",
+      "solution": "Скорость 42/3=14 км/ч. За 5 часов путь 14·5=70 км.",
+      "principle": "Раздели расстояние на время, затем умножь на новое время.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-word-meeting",
+      "subject": "math",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "skills": [
+        "word.skill.3b2-rates"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Из двух посёлков навстречу друг другу одновременно вышли пешеходы со скоростями 4 и 5 км/ч. Расстояние 27 км. Через сколько часов они встретятся?",
+      "answer": "3",
+      "hint": "При движении навстречу складывай скорости сближения.",
+      "explanation": "За час расстояние между ними сокращается на 4+5=9 км. Время встречи 27/9=3 часа. Оба вместе проходят 27 км.",
+      "solution": "За час расстояние между ними сокращается на 4+5=9 км. Время встречи 27/9=3 часа. Оба вместе проходят 27 км.",
+      "principle": "При движении навстречу складывай скорости сближения.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-word-mixture",
+      "subject": "math",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "skills": [
+        "word.skill.3b2-balance"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Есть 10 кг 20%-го раствора соли. Сколько килограммов 50%-го раствора нужно добавить, чтобы получить 30%-й раствор? Масса соли сохраняется.",
+      "answer": "5",
+      "hint": "Составь баланс массы соли, а не среднее арифметическое процентов.",
+      "explanation": "Пусть добавили x кг. Соль: 2+0,5x кг, общий раствор 10+x. Модель 2+0,5x=0,3(10+x). Отсюда 0,2x=1, x=5. Проверка: 4,5 кг соли в 15 кг раствора, ровно 30%.",
+      "solution": "Пусть добавили x кг. Соль: 2+0,5x кг, общий раствор 10+x. Модель 2+0,5x=0,3(10+x). Отсюда 0,2x=1, x=5. Проверка: 4,5 кг соли в 15 кг раствора, ровно 30%.",
+      "principle": "Составь баланс массы соли, а не среднее арифметическое процентов.",
+      "version": 1,
+      "requires": [
+        "percent",
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-word-workers",
+      "subject": "math",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "skills": [
+        "word.skill.3b2-rates"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Первый насос наполняет резервуар за 6 часов, второй — за 12 часов. Оба работали вместе 2 часа, затем второй отключили. Сколько всего часов потребуется до полного наполнения?",
+      "answer": "5",
+      "hint": "Складывай доли работы за час; отдели два этапа.",
+      "explanation": "За час вместе заполняется 1/6+1/12=1/4 резервуара. За 2 часа заполнена половина. Первый заполняет оставшуюся половину за (1/2)/(1/6)=3 часа. Всего 2+3=5 часов.",
+      "solution": "За час вместе заполняется 1/6+1/12=1/4 резервуара. За 2 часа заполнена половина. Первый заполняет оставшуюся половину за (1/2)/(1/6)=3 часа. Всего 2+3=5 часов.",
+      "principle": "Складывай доли работы за час; отдели два этапа.",
+      "version": 1,
+      "requires": [
+        "fractions",
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-word-ages",
+      "subject": "math",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "skills": [
+        "word.skill.3b2-model"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сейчас родителю 36 лет, ребёнку 8 лет. Через сколько лет возраст родителя будет втрое больше возраста ребёнка?",
+      "answer": "6",
+      "hint": "Оба возраста увеличатся на одно и то же число лет.",
+      "explanation": "Через t лет: 36+t=3(8+t). Получаем 12=2t, t=6. Проверка: 42 и 14, отношение 3.",
+      "solution": "Через t лет: 36+t=3(8+t). Получаем 12=2t, t=6. Проверка: 42 и 14, отношение 3.",
+      "principle": "Оба возраста увеличатся на одно и то же число лет.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-prob-simple",
+      "subject": "math",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "skills": [
+        "probability.skill.3b2-outcomes"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В мешке 4 красных и 6 синих одинаковых на ощупь шаров. Случайно берут один шар. Какова вероятность взять красный? Можно ответить дробью.",
+      "answer": "2/5",
+      "hint": "Раздели число благоприятных исходов на число всех равновозможных исходов.",
+      "explanation": "Всего 10 равновозможных шаров, благоприятных 4. Вероятность 4/10=2/5.",
+      "solution": "Всего 10 равновозможных шаров, благоприятных 4. Вероятность 4/10=2/5.",
+      "principle": "Раздели число благоприятных исходов на число всех равновозможных исходов.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-prob-mean",
+      "subject": "math",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "skills": [
+        "probability.skill.3b2-statistics"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Время выполнения четырёх работ: 8, 10, 10, 12 минут. Пятую работу выполнили за 15 минут. Найди среднее время пяти работ.",
+      "answer": "11",
+      "hint": "Среднее — сумма всех значений, делённая на их количество.",
+      "explanation": "Сумма 8+10+10+12+15=55. Делим на число работ 5: среднее 11 минут. Это не медиана, которая равна 10.",
+      "solution": "Сумма 8+10+10+12+15=55. Делим на число работ 5: среднее 11 минут. Это не медиана, которая равна 10.",
+      "principle": "Среднее — сумма всех значений, делённая на их количество.",
+      "version": 1,
+      "requires": [
+        "arithmetic"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-prob-no-return",
+      "subject": "math",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "skills": [
+        "probability.skill.3b2-sequential"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В коробке 3 белых и 2 чёрных шара. Два шара извлекают последовательно без возвращения. Найди вероятность того, что они разных цветов.",
+      "answer": "3/5",
+      "hint": "Учти оба порядка и изменение числа оставшихся шаров.",
+      "explanation": "Порядки: белый, затем чёрный или чёрный, затем белый. Вероятности 3/5·2/4 и 2/5·3/4. Сумма 12/20=3/5. После первого извлечения остаётся 4 шара.",
+      "solution": "Порядки: белый, затем чёрный или чёрный, затем белый. Вероятности 3/5·2/4 и 2/5·3/4. Сумма 12/20=3/5. После первого извлечения остаётся 4 шара.",
+      "principle": "Учти оба порядка и изменение числа оставшихся шаров.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-prob-conditional",
+      "subject": "math",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "skills": [
+        "probability.skill.3b2-conditional"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Бросили две независимые честные шестигранные кости. Известно, что сумма очков больше 8. Найди условную вероятность, что обе кости показали одинаковые числа.",
+      "answer": "1/5",
+      "hint": "Знаменатель включает только исходы, совместимые с известным условием.",
+      "explanation": "При сумме больше 8 возможны 10 упорядоченных пар: суммы 9,10,11,12 дают 4+3+2+1. Подходящие равные пары (5,5) и (6,6). Условная вероятность 2/10=1/5.",
+      "solution": "При сумме больше 8 возможны 10 упорядоченных пар: суммы 9,10,11,12 дают 4+3+2+1. Подходящие равные пары (5,5) и (6,6). Условная вероятность 2/10=1/5.",
+      "principle": "Знаменатель включает только исходы, совместимые с известным условием.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-prob-weighted",
+      "subject": "math",
+      "topic": "probability",
+      "subtopic": "probability.sub.extension",
+      "skills": [
+        "probability.skill.3b2-statistics"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Класс написал две группы работ: 10 учеников получили по 3 балла, 15 — по 5 баллов. Найди средний балл всех 25 учеников.",
+      "answer": "4.2",
+      "hint": "Учитывай количество учеников в каждой группе.",
+      "explanation": "Сумма баллов 10·3+15·5=105. Средний балл 105/25=4,2. Среднее (3+5)/2=4 здесь неверно: размеры групп различны.",
+      "solution": "Сумма баллов 10·3+15·5=105. Средний балл 105/25=4,2. Среднее (3+5)/2=4 здесь неверно: размеры групп различны.",
+      "principle": "Учитывай количество учеников в каждой группе.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-log-definition",
+      "subject": "math",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "skills": [
+        "logarithms.skill.3b2-definition"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Вычисли log₂(32).",
+      "answer": "5",
+      "hint": "Ищи степень основания, дающую аргумент.",
+      "explanation": "Логарифм — показатель степени: 2⁵=32, значит log₂32=5. Основание положительно и не равно 1, аргумент положителен.",
+      "solution": "Логарифм — показатель степени: 2⁵=32, значит log₂32=5. Основание положительно и не равно 1, аргумент положителен.",
+      "principle": "Ищи степень основания, дающую аргумент.",
+      "version": 1,
+      "requires": [
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-log-equation",
+      "subject": "math",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "skills": [
+        "logarithms.skill.3b2-definition"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Реши log₃(x−2)=2.",
+      "answer": "11",
+      "hint": "Сначала запиши ОДЗ, затем перейди к степени.",
+      "explanation": "ОДЗ: x−2>0, то есть x>2. По определению x−2=3²=9. x=11 удовлетворяет ОДЗ.",
+      "solution": "ОДЗ: x−2>0, то есть x>2. По определению x−2=3²=9. x=11 удовлетворяет ОДЗ.",
+      "principle": "Сначала запиши ОДЗ, затем перейди к степени.",
+      "version": 1,
+      "requires": [
+        "powers",
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-log-product",
+      "subject": "math",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "skills": [
+        "logarithms.skill.3b2-domain-equation"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Реши log₂(x−1)+log₂(x−3)=3. Запиши единственный допустимый корень.",
+      "answer": "5",
+      "hint": "Объединять логарифмы можно после проверки положительности обоих аргументов.",
+      "explanation": "ОДЗ требует x>3. Сумма логарифмов даёт log₂((x−1)(x−3))=3, значит произведение 8. x²−4x−5=0, корни 5 и −1. Только 5 удовлетворяет ОДЗ.",
+      "solution": "ОДЗ требует x>3. Сумма логарифмов даёт log₂((x−1)(x−3))=3, значит произведение 8. x²−4x−5=0, корни 5 и −1. Только 5 удовлетворяет ОДЗ.",
+      "principle": "Объединять логарифмы можно после проверки положительности обоих аргументов.",
+      "version": 1,
+      "requires": [
+        "quadratic",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-log-small-base",
+      "subject": "math",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "skills": [
+        "logarithms.skill.3b2-monotonic"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько целых x удовлетворяют log с основанием 1/2 от (x−1) ≥ −2?",
+      "answer": "4",
+      "hint": "Для основания меньше 1 направление сравнения меняется.",
+      "explanation": "ОДЗ x>1. Основание между 0 и 1, поэтому функция убывает: x−1≤(1/2)⁻²=4. Значит 1<x≤5, целые x: 2,3,4,5 — четыре.",
+      "solution": "ОДЗ x>1. Основание между 0 и 1, поэтому функция убывает: x−1≤(1/2)⁻²=4. Значит 1<x≤5, целые x: 2,3,4,5 — четыре.",
+      "principle": "Для основания меньше 1 направление сравнения меняется.",
+      "version": 1,
+      "requires": [
+        "inequalities",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-exp-shift",
+      "subject": "math",
+      "topic": "logarithms",
+      "subtopic": "logarithms.sub.extension",
+      "skills": [
+        "logarithms.skill.3b2-exponential"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Реши 3^(x+1)=81.",
+      "answer": "3",
+      "hint": "Представь обе части степенями одного основания.",
+      "explanation": "81=3⁴. Одинаковые основания больше 1 дают x+1=4, откуда x=3. Подстановка: 3⁴=81.",
+      "solution": "81=3⁴. Одинаковые основания больше 1 дают x+1=4, откуда x=3. Подстановка: 3⁴=81.",
+      "principle": "Представь обе части степенями одного основания.",
+      "version": 1,
+      "requires": [
+        "linear",
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-trig-circle",
+      "subject": "math",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "skills": [
+        "trigonometry.skill.3b2-coordinates"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "На единичной окружности точка угла α имеет координаты (3/5; 4/5). Найди sin α.",
+      "answer": "4/5",
+      "hint": "Синус соответствует вертикальной координате.",
+      "explanation": "На единичной окружности x=cos α, y=sin α. Поэтому sin α=4/5. Проверка: (3/5)²+(4/5)²=1.",
+      "solution": "На единичной окружности x=cos α, y=sin α. Поэтому sin α=4/5. Проверка: (3/5)²+(4/5)²=1.",
+      "principle": "Синус соответствует вертикальной координате.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-trig-sign",
+      "subject": "math",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "skills": [
+        "trigonometry.skill.3b2-coordinates"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Известно sin α=3/5, а угол α находится во второй четверти. Найди cos α.",
+      "answer": "-4/5",
+      "hint": "После извлечения корня выбери знак по четверти.",
+      "explanation": "sin²α+cos²α=1, поэтому cos²α=16/25. Во второй четверти x-координата отрицательна: cos α=−4/5.",
+      "solution": "sin²α+cos²α=1, поэтому cos²α=16/25. Во второй четверти x-координата отрицательна: cos α=−4/5.",
+      "principle": "После извлечения корня выбери знак по четверти.",
+      "version": 1,
+      "requires": [
+        "roots",
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-trig-double",
+      "subject": "math",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "skills": [
+        "trigonometry.skill.3b2-identities"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Угол α лежит в первой четверти и tan α=3/4. Найди sin(2α).",
+      "answer": "24/25",
+      "hint": "Восстанови синус и косинус из отношения катетов, затем используй двойной угол.",
+      "explanation": "Можно взять прямоугольный треугольник с катетами 3 и 4, гипотенузой 5. sin α=3/5, cos α=4/5. Формула двойного угла даёт 2·3/5·4/5=24/25.",
+      "solution": "Можно взять прямоугольный треугольник с катетами 3 и 4, гипотенузой 5. sin α=3/5, cos α=4/5. Формула двойного угла даёт 2·3/5·4/5=24/25.",
+      "principle": "Восстанови синус и косинус из отношения катетов, затем используй двойной угол.",
+      "version": 1,
+      "requires": [
+        "roots",
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-trig-root-count",
+      "subject": "math",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "skills": [
+        "trigonometry.skill.3b2-equations"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько решений имеет 2sin²x − 3sin x + 1=0 на отрезке 0≤x≤2π?",
+      "answer": "3",
+      "hint": "Реши квадратное уравнение относительно sin x, затем учти период и границы.",
+      "explanation": "Пусть t=sin x. (2t−1)(t−1)=0, то есть sin x=1/2 или sin x=1. Первый случай даёт π/6 и 5π/6, второй — π/2. Границы 0 и 2π не подходят. Всего три решения.",
+      "solution": "Пусть t=sin x. (2t−1)(t−1)=0, то есть sin x=1/2 или sin x=1. Первый случай даёт π/6 и 5π/6, второй — π/2. Границы 0 и 2π не подходят. Всего три решения.",
+      "principle": "Реши квадратное уравнение относительно sin x, затем учти период и границы.",
+      "version": 1,
+      "requires": [
+        "quadratic"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-trig-radians",
+      "subject": "math",
+      "topic": "trigonometry",
+      "subtopic": "trigonometry.sub.extension",
+      "skills": [
+        "trigonometry.skill.3b2-units"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Угол равен 5π/6 радиан. Сколько это градусов?",
+      "answer": "150",
+      "hint": "Переведи долю π в такую же долю 180°.",
+      "explanation": "π радиан соответствует 180°. Умножаем 5/6 на 180: 150°. Угол находится во второй четверти.",
+      "solution": "π радиан соответствует 180°. Умножаем 5/6 на 180: 150°. Угол находится во второй четверти.",
+      "principle": "Переведи долю π в такую же долю 180°.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-arith-balance",
+      "subject": "math",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.foundation",
+      "skills": [
+        "arithmetic.skill.order"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "На счёте было −240 рублей. Внесли 500, оплатили 180, затем вернули 35. Какой баланс в рублях?",
+      "answer": "115",
+      "hint": "Запиши каждое событие со знаком.",
+      "explanation": "Баланс: −240+500−180+35=115. Платёж уменьшает баланс, возврат увеличивает.",
+      "solution": "Баланс: −240+500−180+35=115. Платёж уменьшает баланс, возврат увеличивает.",
+      "principle": "Запиши каждое событие со знаком.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-arith-remainders",
+      "subject": "math",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.extension",
+      "skills": [
+        "arithmetic.skill.3b2-arith-remainders"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Найди наименьшее положительное целое число, дающее остаток 2 при делении на 5 и остаток 1 при делении на 3.",
+      "answer": "7",
+      "hint": "Перебирай числа одного вида и проверяй второе условие.",
+      "explanation": "Числа с остатком 2 по модулю 5: 2,7,12… Проверка по модулю 3: 2 не подходит, 7 даёт остаток 1. Поэтому ответ 7.",
+      "solution": "Числа с остатком 2 по модулю 5: 2,7,12… Проверка по модулю 3: 2 не подходит, 7 даёт остаток 1. Поэтому ответ 7.",
+      "principle": "Перебирай числа одного вида и проверяй второе условие.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-arith-rounding",
+      "subject": "math",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.extension",
+      "skills": [
+        "arithmetic.skill.3b2-arith-rounding"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Из 17 метров ткани шьют изделия, каждое требует 1,8 м. Сколько целых изделий можно сшить?",
+      "answer": "9",
+      "hint": "Округление вверх здесь нарушило бы ограничение ресурса.",
+      "explanation": "17/1,8≈9,44. Целых изделий 9: они требуют 16,2 м. Десять требуют 18 м — ткани не хватит.",
+      "solution": "17/1,8≈9,44. Целых изделий 9: они требуют 16,2 м. Десять требуют 18 м — ткани не хватит.",
+      "principle": "Округление вверх здесь нарушило бы ограничение ресурса.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-arith-negative-square",
+      "subject": "math",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.foundation",
+      "skills": [
+        "arithmetic.skill.order"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Вычисли −3² + (−3)².",
+      "answer": "0",
+      "hint": "Определи, входит ли минус в основание степени.",
+      "explanation": "Без скобок сначала степень: −3²=−9. Со скобками отрицательное число возводится в квадрат: 9. Сумма 0.",
+      "solution": "Без скобок сначала степень: −3²=−9. Со скобками отрицательное число возводится в квадрат: 9. Сумма 0.",
+      "principle": "Определи, входит ли минус в основание степени.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-frac-share",
+      "subject": "math",
+      "topic": "fractions",
+      "subtopic": "fractions.sub.extension",
+      "skills": [
+        "fractions.skill.3b2-frac-share"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сначала прочитали 1/3 книги, затем 1/4 всей книги. Какая доля книги осталась?",
+      "answer": "5/12",
+      "hint": "Уточни, от какого целого берётся каждая доля.",
+      "explanation": "Прочитано 1/3+1/4=7/12 всей книги. Осталось 1−7/12=5/12. Вторая доля относится ко всей книге, не к остатку.",
+      "solution": "Прочитано 1/3+1/4=7/12 всей книги. Осталось 1−7/12=5/12. Вторая доля относится ко всей книге, не к остатку.",
+      "principle": "Уточни, от какого целого берётся каждая доля.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-frac-complex",
+      "subject": "math",
+      "topic": "fractions",
+      "subtopic": "fractions.sub.foundation",
+      "skills": [
+        "fractions.skill.operations"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Вычисли (3/4 − 1/6) ÷ (7/8).",
+      "answer": "2/3",
+      "hint": "Сначала общий знаменатель, затем обратная дробь.",
+      "explanation": "В скобках 9/12−2/12=7/12. Деление заменяем умножением на 8/7: (7/12)·(8/7)=2/3.",
+      "solution": "В скобках 9/12−2/12=7/12. Деление заменяем умножением на 8/7: (7/12)·(8/7)=2/3.",
+      "principle": "Сначала общий знаменатель, затем обратная дробь.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-frac-restore",
+      "subject": "math",
+      "topic": "fractions",
+      "subtopic": "fractions.sub.extension",
+      "skills": [
+        "fractions.skill.3b2-frac-restore"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "После расхода 3/8 запасов осталось 25 кг. Сколько килограммов было сначала?",
+      "answer": "40",
+      "hint": "Оставшаяся доля и израсходованная доля в сумме дают 1.",
+      "explanation": "Осталась доля 5/8. Если исходная масса M, то (5/8)M=25, M=25·8/5=40.",
+      "solution": "Осталась доля 5/8. Если исходная масса M, то (5/8)M=25, M=25·8/5=40.",
+      "principle": "Оставшаяся доля и израсходованная доля в сумме дают 1.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-frac-compare",
+      "subject": "math",
+      "topic": "fractions",
+      "subtopic": "fractions.sub.foundation",
+      "skills": [
+        "fractions.skill.operations"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Найди разность большего и меньшего из чисел 5/6 и 7/9.",
+      "answer": "1/18",
+      "hint": "Сравни дроби в одинаковых долях.",
+      "explanation": "В знаменателе 18: 5/6=15/18, 7/9=14/18. Первое больше, разность 1/18.",
+      "solution": "В знаменателе 18: 5/6=15/18, 7/9=14/18. Первое больше, разность 1/18.",
+      "principle": "Сравни дроби в одинаковых долях.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-pct-chain-restore",
+      "subject": "math",
+      "topic": "percent",
+      "subtopic": "percent.sub.change",
+      "skills": [
+        "percent.skill.chain"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "После повышения цены на 20% и последующей скидки 25% товар стоит 540 рублей. Найди первоначальную цену.",
+      "answer": "600",
+      "hint": "Не вычитай проценты напрямую; перемножь множители.",
+      "explanation": "Общий множитель 1,2·0,75=0,9. 0,9P=540, значит P=600. Проценты применяются к разным базам.",
+      "solution": "Общий множитель 1,2·0,75=0,9. 0,9P=540, значит P=600. Проценты применяются к разным базам.",
+      "principle": "Не вычитай проценты напрямую; перемножь множители.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-pct-share",
+      "subject": "math",
+      "topic": "percent",
+      "subtopic": "percent.sub.direct",
+      "skills": [
+        "percent.skill.find-part"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "В группе 40 человек, 60% изучают Python. Ещё 6 человек начали изучать Python. Какой процент всей группы теперь его изучает? Размер группы не меняется.",
+      "answer": "75",
+      "hint": "Отдели число людей от процентной доли.",
+      "explanation": "Сначала изучали 0,6·40=24 человека, стало 30. Доля 30/40=0,75, то есть 75%.",
+      "solution": "Сначала изучали 0,6·40=24 человека, стало 30. Доля 30/40=0,75, то есть 75%.",
+      "principle": "Отдели число людей от процентной доли.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-pct-return",
+      "subject": "math",
+      "topic": "percent",
+      "subtopic": "percent.sub.change",
+      "skills": [
+        "percent.skill.increase"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "После снижения цены на 20% на сколько процентов надо повысить новую цену, чтобы восстановить прежнюю?",
+      "answer": "25",
+      "hint": "Повышение считается от меньшей новой базы.",
+      "explanation": "После снижения остаётся 0,8 исходной цены. Множитель восстановления 1/0,8=1,25: увеличение на 25%, не 20%.",
+      "solution": "После снижения остаётся 0,8 исходной цены. Множитель восстановления 1/0,8=1,25: увеличение на 25%, не 20%.",
+      "principle": "Повышение считается от меньшей новой базы.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-pct-plan",
+      "subject": "math",
+      "topic": "percent",
+      "subtopic": "percent.sub.direct",
+      "skills": [
+        "percent.skill.find-part"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "План выпуска увеличили с 800 до 1000 изделий. Выпущено 1100. На сколько процентов выпуск превышает новый план?",
+      "answer": "10",
+      "hint": "Выбери базу из вопроса: именно новый план.",
+      "explanation": "Превышение нового плана 1100−1000=100. Доля 100/1000=10%. Число 800 не является базой этого сравнения.",
+      "solution": "Превышение нового плана 1100−1000=100. Доля 100/1000=10%. Число 800 не является базой этого сравнения.",
+      "principle": "Выбери базу из вопроса: именно новый план.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-func-vertex-height",
+      "subject": "math",
+      "topic": "functions",
+      "subtopic": "functions.sub.quadratic",
+      "skills": [
+        "functions.skill.vertex"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Высота мяча задаётся h(t)=−5t²+20t+1 для t≥0. Какой максимальной высоты в метрах достигнет мяч?",
+      "answer": "21",
+      "hint": "Найди момент вершины, затем подставь его в функцию.",
+      "explanation": "Парабола направлена вниз. Вершина t=−20/(2·(−5))=2. h(2)=−20+40+1=21. t=2 допустим.",
+      "solution": "Парабола направлена вниз. Вершина t=−20/(2·(−5))=2. h(2)=−20+40+1=21. t=2 допустим.",
+      "principle": "Найди момент вершины, затем подставь его в функцию.",
+      "version": 1,
+      "requires": [
+        "quadratic"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-func-intersection",
+      "subject": "math",
+      "topic": "functions",
+      "subtopic": "functions.sub.extension",
+      "skills": [
+        "functions.skill.3b2-func-intersection"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Где пересекаются y=2x+1 и y=−x+10? Запиши ординату точки пересечения.",
+      "answer": "7",
+      "hint": "В точке пересечения одинаковы и x, и y.",
+      "explanation": "Приравниваем значения: 2x+1=−x+10, x=3. Ордината y=2·3+1=7. Проверка по второй прямой: −3+10=7.",
+      "solution": "Приравниваем значения: 2x+1=−x+10, x=3. Ордината y=2·3+1=7. Проверка по второй прямой: −3+10=7.",
+      "principle": "В точке пересечения одинаковы и x, и y.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-func-domain-two",
+      "subject": "math",
+      "topic": "functions",
+      "subtopic": "functions.sub.domain",
+      "skills": [
+        "functions.skill.sqrt-domain"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Сколько целых x принадлежат области определения f(x)=√(x−2)/(x−4) и отрезку [0;6]?",
+      "answer": "4",
+      "hint": "Объедини оба ограничения выражения.",
+      "explanation": "Корень требует x≥2, знаменатель требует x≠4. Из 0…6 подходят 2,3,5,6 — четыре значения.",
+      "solution": "Корень требует x≥2, знаменатель требует x≠4. Из 0…6 подходят 2,3,5,6 — четыре значения.",
+      "principle": "Объедини оба ограничения выражения.",
+      "version": 1,
+      "requires": [
+        "roots",
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-func-model-tariff",
+      "subject": "math",
+      "topic": "functions",
+      "subtopic": "functions.sub.extension",
+      "skills": [
+        "functions.skill.3b2-func-model-tariff"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Тариф A: 100 рублей плюс 3 рубля за минуту. Тариф B: 40 рублей плюс 5 рублей за минуту. При скольких минутах стоимости равны?",
+      "answer": "30",
+      "hint": "Представь каждую стоимость линейной функцией минут.",
+      "explanation": "100+3m=40+5m, значит 60=2m и m=30. Оба тарифа стоят 190 рублей.",
+      "solution": "100+3m=40+5m, значит 60=2m и m=30. Оба тарифа стоят 190 рублей.",
+      "principle": "Представь каждую стоимость линейной функцией минут.",
+      "version": 1,
+      "requires": [
+        "linear"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-power-negative",
+      "subject": "math",
+      "topic": "powers",
+      "subtopic": "powers.sub.foundation",
+      "skills": [
+        "powers.skill.rules"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Вычисли (2⁻² + 2⁻³) · 8.",
+      "answer": "3",
+      "hint": "a⁻ⁿ=1/aⁿ при a≠0.",
+      "explanation": "Отрицательные показатели дают обратные степени: 1/4+1/8=3/8. Умножение на 8 даёт 3.",
+      "solution": "Отрицательные показатели дают обратные степени: 1/4+1/8=3/8. Умножение на 8 даёт 3.",
+      "principle": "a⁻ⁿ=1/aⁿ при a≠0.",
+      "version": 1,
+      "requires": [
+        "fractions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-power-compare",
+      "subject": "math",
+      "topic": "powers",
+      "subtopic": "powers.sub.foundation",
+      "skills": [
+        "powers.skill.rules"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Найди отношение 8⁴ к 4⁵.",
+      "answer": "4",
+      "hint": "Приведи основания к степени одного числа.",
+      "explanation": "8=2³, 4=2². Отношение 2¹²/2¹⁰=2²=4.",
+      "solution": "8=2³, 4=2². Отношение 2¹²/2¹⁰=2²=4.",
+      "principle": "Приведи основания к степени одного числа.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-root-absolute",
+      "subject": "math",
+      "topic": "roots",
+      "subtopic": "roots.sub.foundation",
+      "skills": [
+        "roots.skill.principal"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Вычисли √((−7)²).",
+      "answer": "7",
+      "hint": "Корень квадрата возвращает модуль, не исходный знак.",
+      "explanation": "Арифметический квадратный корень неотрицателен: √49=7. В общем виде √a²=|a|.",
+      "solution": "Арифметический квадратный корень неотрицателен: √49=7. В общем виде √a²=|a|.",
+      "principle": "Корень квадрата возвращает модуль, не исходный знак.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "b2-math-root-simplify",
+      "subject": "math",
+      "topic": "roots",
+      "subtopic": "roots.sub.foundation",
+      "skills": [
+        "roots.skill.principal"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3B.2 · 2026-10-09; не задание ФИПИ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "number",
+      "prompt": "Вычисли (√50 − √8)².",
+      "answer": "18",
+      "hint": "Выдели из подкоренных чисел квадратные множители.",
+      "explanation": "√50=5√2, √8=2√2. Разность 3√2; её квадрат 9·2=18.",
+      "solution": "√50=5√2, √8=2√2. Разность 3√2; её квадрат 9·2=18.",
+      "principle": "Выдели из подкоренных чисел квадратные множители.",
+      "version": 1,
+      "requires": [
+        "powers"
+      ],
+      "related": [],
+      "remediates": []
+    }
+  ]
+}

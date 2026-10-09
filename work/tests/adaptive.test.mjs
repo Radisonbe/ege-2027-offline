@@ -5,7 +5,7 @@ import {checkContentBank} from '../../scripts/content-bank.mjs';
 import {emptyState,recordAttempt} from '../../src/domain/progress.ts';
 import {selectReview,questionPriority,beginReview,showReviewQuestion,answerReview,advanceReview,reviewSummary,weakEvidence} from '../../src/domain/adaptive.ts';
 import {parseBackup,serializeBackup,validateStudyState} from '../../src/domain/backup.ts';
-const {questions:allQuestions,taxonomy}=checkContentBank(),bank=allQuestions.filter(q=>!q.id.startsWith("b1-")),skills=taxonomy.skills,byId=Object.fromEntries(bank.map(q=>[q.id,q])),now=new Date('2026-10-08T12:00:00.000Z');
+const {questions:allQuestions,taxonomy}=checkContentBank(),bank=allQuestions.filter(q=>!q.id.startsWith("b1-")&&!q.id.startsWith("b2-")),skills=taxonomy.skills,byId=Object.fromEntries(bank.map(q=>[q.id,q])),now=new Date('2026-10-08T12:00:00.000Z');
 function studiedState(ids=['percent','functions','binary']){const s=emptyState('fixture');for(const topic of ids){s.topics[topic]={topic,status:topic==='percent'?'Нужна практика':'Уверенно',note:'Keep note',last:'2026-09-01'};s.reviews['topic:'+topic]={id:'topic:'+topic,targetType:'topic',targetId:topic,due:'2026-09-20',stage:1};}return s;}
 function fixedHistory(){let s=studiedState();s=recordAttempt(s,byId.p2,'12',false,'test','p-old',new Date('2026-09-30T12:00:00Z'));s=recordAttempt(s,byId.p2,'12',false,'test','p-recent',new Date('2026-10-05T12:00:00Z'));s=recordAttempt(s,byId.f1,'9',true,'test','f-correct',new Date('2026-08-01T12:00:00Z'));s.topics.functions.status='Уверенно';s.reviews['topic:percent'].due='2026-09-20';return s;}
 test('Fixed history deterministically chooses a prerequisite, weak-topic questions and confident maintenance',()=>{

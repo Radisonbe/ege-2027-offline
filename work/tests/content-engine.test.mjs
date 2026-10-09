@@ -8,7 +8,7 @@ const topics=reference.topics.map(t=>({...t,materialStatus:t.live?'ready':'plann
 const taxonomy=JSON.parse(fs.readFileSync('src/data/taxonomy.json','utf8'));
 const pack=()=>JSON.parse(fs.readFileSync('src/data/banks/math.json','utf8'));
 test('All 67 original IDs and every instructional field survive classification; all origins remain generated',()=>{
-  const {questions}=checkContentBank();assert.equal(questions.filter(q=>!q.id.startsWith("b1-")).length,67);assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
+  const {questions}=checkContentBank();assert.equal(questions.filter(q=>!q.id.startsWith("b1-")&&!q.id.startsWith("b2-")).length,67);assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
   for(const old of reference.questions){const q=questions.find(q=>q.id===old.id);assert.ok(q);for(const field of ['prompt','answer','hint','solution','principle'])assert.equal(q[field],old[field],old.id+'.'+field);assert.equal(q.explanation,old.solution);assert.deepEqual(q.wrongAnswers,old.wrong);assert.equal(Boolean(q.easy),Boolean(old.easy));assert.deepEqual(q.options,old.options);assert.equal(q.answerType,old.kind);assert.equal(q.origin,'generated');assert.ok(q.skills.length);assert.ok(q.subtopic);assert.notEqual(q.difficulty,'unspecified');}
 });
 test('Missing fields, duplicate questions, invalid answers and skill/topic mismatch are rejected',()=>{

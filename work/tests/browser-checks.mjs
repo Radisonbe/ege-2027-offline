@@ -68,7 +68,7 @@ try {
     assert.equal(offlineState.attempts.length,2);assert.equal(offlineState.errors.length,1);assert.equal(offlineState.attempts.filter(a=>a.correct).length,1);
   });
   await check('All 67 pages and all available filled modules open offline; errors, review and short sessions render', async () => {
-    const data=JSON.parse(fs.readFileSync('src/data/reference.json','utf8')),addedLessons=JSON.parse(fs.readFileSync('src/data/stage3b1-lessons.json','utf8')).lessons;
+    const data=JSON.parse(fs.readFileSync('src/data/reference.json','utf8')),addedLessons=['stage3b1-lessons.json','stage3b2-lessons.json'].flatMap(file=>JSON.parse(fs.readFileSync('src/data/'+file,'utf8')).lessons);
     for (const topic of data.topics) { await go('topic/'+topic.id); assert.equal(await page.getByRole('heading',{level:1}).textContent(),topic.title); if (topic.live || addedLessons.some(l=>l.topic===topic.id)) await page.getByRole('tab',{name:'Мини-тест'}).waitFor(); else await page.getByText('План · урок ещё не добавлен',{exact:true}).waitFor(); }
     for (const route of ['errors','review','easy','session','progress']) await go(route);
     assert.equal(external.size,0); assert.deepEqual(await getState(),offlineState);

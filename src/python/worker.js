@@ -68,10 +68,13 @@ async function run(message) {
       const fn=globals.get(message.functionCall.name);
       if(typeof fn!=='function')throw new Error('Функция '+message.functionCall.name+' не найдена.');
       try {
-        const args=python.toPy(message.functionCall.args);
-        try {const actual=fn.callKwargs(...Array.from(args),{});const converted=actual===undefined?null:actual?.toJs?actual.toJs({dict_converter:entries=>Object.fromEntries(entries)}):actual;
+        // Convert each argument separately: iterating a Python list creates borrowed
+        // child proxies which expire when iteration ends. Nested list/dict arguments
+        // must remain owned until the call and return conversion complete.
+        const args=message.functionCall.args.map(value=>python.toPy(value));
+        try {const actual=fn.callKwargs(...args,{});const converted=actual===undefined?null:actual?.toJs?actual.toJs({dict_converter:entries=>Object.fromEntries(entries)}):actual;
           send({type:'return',run:currentRun,value:converted});actual?.destroy?.();}
-        finally{args.destroy?.();}
+        finally{for(const arg of args)arg?.destroy?.();}
       } finally {fn.destroy?.();}
     }
     python.runPython('import sys; sys.stdout.flush(); sys.stderr.flush()');flushOutput();
