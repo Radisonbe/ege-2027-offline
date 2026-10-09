@@ -1,4 +1,5 @@
 import type {PythonTask} from '../python/tasks';
+import type {ExamProgress} from './exam';
 export type SubjectId = 'math' | 'russian' | 'informatics' | 'python';
 export type TopicStatus = 'Не изучено' | 'Изучаю' | 'Нужна практика' | 'Уверенно' | 'Повторить';
 export type Origin = 'official' | 'generated' | 'reconstructed' | 'custom' | 'private-import';
@@ -60,6 +61,7 @@ export interface StudyState extends Omit<LegacyStudyState, 'schemaVersion'> {
   codeDrafts?: Record<string, CodeDraft>;
   training?: Attempt[];
   topicTests?: TopicTestSession[];
+  exam?: ExamProgress;
 }
 export interface TopicTestSession { id: string; topic: string; startedAt: string; completedAt?: string; index: number; items: TopicTestItem[] }
 export interface TopicTestItem { question: Question; answer: string; lastAnswer?: string; firstCorrect: boolean | null; correct: boolean | null; attemptId?: string }

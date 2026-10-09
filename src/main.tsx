@@ -4,5 +4,6 @@ import { StudyProvider } from './state/StudyProvider';
 import { PwaProvider } from './pwa/PwaProvider';
 import './styles/reference.css';
 import './styles/app.css';
+import './styles/exam.css';
 
 createRoot(document.getElementById('root')!).render(<PwaProvider><StudyProvider><App /></StudyProvider></PwaProvider>);

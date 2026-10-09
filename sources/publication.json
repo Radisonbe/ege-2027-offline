@@ -344,6 +344,25 @@
           "sha256": "b1eb13ebc44108b76bcc09abaf045bf8b19fc2b98a49c5009f01e45aa2c720be"
         }
       ]
+    },
+    {
+      "id": "exam3c1-original-learning",
+      "clearance": "project-generated",
+      "source": "Own generated exam-format training; official FIPI 2027 projects used for structure facts only, documented in docs/EXAM-2027-SOURCES.md",
+      "license": null,
+      "evidence": "36 original conditions, answers and explanations; 74 factual project position records, verified using original specification/demo/codifier archives. No third-party exercise text, drawings or solutions copied; source PDFs excluded from Git/build. Independent arithmetic/base/prefix checks and manual language review in sources/exam3c1-review.json and work/tests/exam.test.mjs. Original 317 learning questions remain unchanged.",
+      "files": [
+        {
+          "path": "src/data/exam/maps.json",
+          "normalization": "lf",
+          "sha256": "8ac94b7dc2f6ac8e6ff1edfeea615a655090b640960c69274c4df2c8a1c2946e"
+        },
+        {
+          "path": "src/data/exam/tasks.json",
+          "normalization": "lf",
+          "sha256": "8ecffde1b463c06e2d1e98552ae464f95b8d0dabbbc032c6fc5d15840e7de0c9"
+        }
+      ]
     }
   ]
 }

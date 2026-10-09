@@ -1,0 +1,1597 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-09",
+  "exams": [
+    {
+      "id": "ege-math-2027",
+      "version": "project-2026-10-09.1",
+      "subject": "math",
+      "year": 2027,
+      "status": "project",
+      "title": "Профильная математика",
+      "durationMinutes": 235,
+      "maxPoints": 33,
+      "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+      "positions": [
+        {
+          "id": "ege-math-2027-1",
+          "number": 1,
+          "title": "Планиметрия",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "geometry"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 12; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-2",
+          "number": 2,
+          "title": "Векторы",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "vectors"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 12; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-3",
+          "number": 3,
+          "title": "Стереометрия",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "stereo"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 12; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-4",
+          "number": 4,
+          "title": "Классическая вероятность",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "probability"
+          ],
+          "skills": [
+            "probability.skill.3b2-outcomes",
+            "probability.skill.3b2-statistics",
+            "probability.skill.3b2-sequential",
+            "probability.skill.3b2-conditional"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 13; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-5",
+          "number": 5,
+          "title": "Сложение и умножение вероятностей",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "probability"
+          ],
+          "skills": [
+            "probability.skill.3b2-outcomes",
+            "probability.skill.3b2-statistics",
+            "probability.skill.3b2-sequential",
+            "probability.skill.3b2-conditional"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 13; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-6",
+          "number": 6,
+          "title": "Случайные величины и распределения",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "probability"
+          ],
+          "skills": [
+            "probability.skill.3b2-outcomes",
+            "probability.skill.3b2-statistics",
+            "probability.skill.3b2-sequential",
+            "probability.skill.3b2-conditional"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 13; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-7",
+          "number": 7,
+          "title": "Уравнения с кратким ответом",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "linear",
+            "quadratic",
+            "roots",
+            "logarithms"
+          ],
+          "skills": [
+            "roots.skill.principal",
+            "linear.skill.solve",
+            "quadratic.skill.3b2-roots",
+            "quadratic.skill.3b2-model",
+            "quadratic.skill.3b2-integer-roots",
+            "logarithms.skill.3b2-definition",
+            "logarithms.skill.3b2-domain-equation",
+            "logarithms.skill.3b2-monotonic",
+            "logarithms.skill.3b2-exponential"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 14; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-8",
+          "number": 8,
+          "title": "Преобразования выражений",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "powers",
+            "roots",
+            "logarithms"
+          ],
+          "skills": [
+            "powers.skill.power-two",
+            "powers.skill.rules",
+            "roots.skill.principal",
+            "logarithms.skill.3b2-definition",
+            "logarithms.skill.3b2-domain-equation",
+            "logarithms.skill.3b2-monotonic",
+            "logarithms.skill.3b2-exponential"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 14; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-9",
+          "number": 9,
+          "title": "Производная и первообразная",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "derivative"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 14; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-10",
+          "number": 10,
+          "title": "Прикладные модели и формулы",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "word"
+          ],
+          "skills": [
+            "word.skill.3b2-rates",
+            "word.skill.3b2-balance",
+            "word.skill.3b2-model"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 15; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-11",
+          "number": 11,
+          "title": "Текстовые задачи",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "word"
+          ],
+          "skills": [
+            "word.skill.3b2-rates",
+            "word.skill.3b2-balance",
+            "word.skill.3b2-model"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 15; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-12",
+          "number": 12,
+          "title": "Функции и графики",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "functions"
+          ],
+          "skills": [
+            "functions.skill.evaluate",
+            "functions.skill.zero",
+            "functions.skill.sqrt-domain",
+            "functions.skill.vertex",
+            "functions.skill.monotonic",
+            "functions.skill.inverse-value",
+            "functions.skill.positive",
+            "functions.skill.3b2-func-intersection",
+            "functions.skill.3b2-func-model-tariff"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 15; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-13",
+          "number": 13,
+          "title": "Практические модели и финансы",
+          "format": "decimal",
+          "maxPoints": 1,
+          "topics": [
+            "finance",
+            "word"
+          ],
+          "skills": [
+            "word.skill.3b2-rates",
+            "word.skill.3b2-balance",
+            "word.skill.3b2-model"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 15; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-14",
+          "number": 14,
+          "title": "Уравнения с развёрнутым решением",
+          "format": "extended",
+          "maxPoints": 2,
+          "topics": [
+            "trigonometry",
+            "logarithms"
+          ],
+          "skills": [
+            "logarithms.skill.3b2-definition",
+            "logarithms.skill.3b2-domain-equation",
+            "logarithms.skill.3b2-monotonic",
+            "logarithms.skill.3b2-exponential",
+            "trigonometry.skill.3b2-coordinates",
+            "trigonometry.skill.3b2-identities",
+            "trigonometry.skill.3b2-equations",
+            "trigonometry.skill.3b2-units"
+          ],
+          "needs": [
+            "written-solution",
+            "self-check-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 16; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-15",
+          "number": 15,
+          "title": "Стереометрия с доказательством",
+          "format": "extended",
+          "maxPoints": 3,
+          "topics": [
+            "stereo"
+          ],
+          "skills": [],
+          "needs": [
+            "written-solution",
+            "self-check-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 16; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-16",
+          "number": 16,
+          "title": "Неравенства с развёрнутым решением",
+          "format": "extended",
+          "maxPoints": 2,
+          "topics": [
+            "inequalities"
+          ],
+          "skills": [
+            "inequalities.skill.3b2-boundaries",
+            "inequalities.skill.3b2-intersection",
+            "inequalities.skill.3b2-domains",
+            "inequalities.skill.3b2-integer-feasibility"
+          ],
+          "needs": [
+            "written-solution",
+            "self-check-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 17; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-17",
+          "number": 17,
+          "title": "Экономические модели",
+          "format": "extended",
+          "maxPoints": 2,
+          "topics": [
+            "finance",
+            "word"
+          ],
+          "skills": [
+            "word.skill.3b2-rates",
+            "word.skill.3b2-balance",
+            "word.skill.3b2-model"
+          ],
+          "needs": [
+            "written-solution",
+            "self-check-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 17; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-18",
+          "number": 18,
+          "title": "Планиметрия с доказательством",
+          "format": "extended",
+          "maxPoints": 3,
+          "topics": [
+            "geometry"
+          ],
+          "skills": [],
+          "needs": [
+            "written-solution",
+            "self-check-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 17; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-19",
+          "number": 19,
+          "title": "Параметры",
+          "format": "extended",
+          "maxPoints": 4,
+          "topics": [
+            "parameters"
+          ],
+          "skills": [],
+          "needs": [
+            "written-solution",
+            "self-check-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 18; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        },
+        {
+          "id": "ege-math-2027-20",
+          "number": 20,
+          "title": "Числа, доказательства и примеры",
+          "format": "extended",
+          "maxPoints": 4,
+          "topics": [
+            "numbers"
+          ],
+          "skills": [],
+          "needs": [
+            "written-solution",
+            "self-check-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ma_11_2027.zip",
+          "pages": "Спецификация профильного уровня, печатная стр. 18; критерии: стр. 10, демоверсия профильного уровня для развёрнутых задач"
+        }
+      ]
+    },
+    {
+      "id": "ege-russian-2027",
+      "version": "project-2026-10-09.1",
+      "subject": "russian",
+      "year": 2027,
+      "status": "project",
+      "title": "Русский язык",
+      "durationMinutes": 210,
+      "maxPoints": 50,
+      "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+      "positions": [
+        {
+          "id": "ege-russian-2027-1",
+          "number": 1,
+          "title": "Связь предложений в тексте",
+          "format": "text",
+          "maxPoints": 1,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-2",
+          "number": 2,
+          "title": "Значение слова в контексте",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-3",
+          "number": 3,
+          "title": "Стилистика и культура речи",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-4",
+          "number": 4,
+          "title": "Ударение",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "stress"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-5",
+          "number": 5,
+          "title": "Паронимы",
+          "format": "text",
+          "maxPoints": 1,
+          "topics": [
+            "stress"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-6",
+          "number": 6,
+          "title": "Лексические нормы",
+          "format": "text",
+          "maxPoints": 1,
+          "topics": [
+            "stress"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-7",
+          "number": 7,
+          "title": "Морфологические нормы",
+          "format": "text",
+          "maxPoints": 1,
+          "topics": [
+            "speech",
+            "stress"
+          ],
+          "skills": [
+            "speech.skill.recognize",
+            "speech.skill.context"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-8",
+          "number": 8,
+          "title": "Синтаксические нормы",
+          "format": "digits-set",
+          "maxPoints": 2,
+          "topics": [
+            "sentence"
+          ],
+          "skills": [
+            "sentence.skill.main",
+            "sentence.skill.relative-subject",
+            "sentence.skill.subordinate",
+            "sentence.skill.separate"
+          ],
+          "needs": [],
+          "scoring": "hamming",
+          "criteria": "Полное совпадение: 2; одна или две неверные позиции при правильной длине: 1; иначе 0.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-9",
+          "number": 9,
+          "title": "Корни слов",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "spelling"
+          ],
+          "skills": [
+            "spelling.skill.checked-vowel",
+            "spelling.skill.3b2-spell-ne-contrast",
+            "spelling.skill.3b2-spell-verb",
+            "spelling.skill.3b2-spell-negation"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-10",
+          "number": 10,
+          "title": "Приставки и разделительные знаки",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "spelling"
+          ],
+          "skills": [
+            "spelling.skill.checked-vowel",
+            "spelling.skill.3b2-spell-ne-contrast",
+            "spelling.skill.3b2-spell-verb",
+            "spelling.skill.3b2-spell-negation"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 17; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-11",
+          "number": 11,
+          "title": "Суффиксы",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "spelling"
+          ],
+          "skills": [
+            "spelling.skill.checked-vowel",
+            "spelling.skill.3b2-spell-ne-contrast",
+            "spelling.skill.3b2-spell-verb",
+            "spelling.skill.3b2-spell-negation"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-12",
+          "number": 12,
+          "title": "Окончания глаголов и причастия",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "participles",
+            "spelling"
+          ],
+          "skills": [
+            "spelling.skill.checked-vowel",
+            "participles.skill.3b2-recognize",
+            "participles.skill.3b2-turn",
+            "participles.skill.3b2-form",
+            "participles.skill.3b2-agreement",
+            "spelling.skill.3b2-spell-ne-contrast",
+            "spelling.skill.3b2-spell-verb",
+            "spelling.skill.3b2-spell-negation"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-13",
+          "number": 13,
+          "title": "НЕ и НИ",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "neni"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-14",
+          "number": 14,
+          "title": "Слитное, раздельное, дефисное написание",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "spelling",
+            "prepositions"
+          ],
+          "skills": [
+            "spelling.skill.checked-vowel",
+            "prepositions.skill.3b2-context",
+            "prepositions.skill.3b2-government",
+            "spelling.skill.3b2-spell-ne-contrast",
+            "spelling.skill.3b2-spell-verb",
+            "spelling.skill.3b2-spell-negation"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-15",
+          "number": 15,
+          "title": "Н и НН",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "nn"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-16",
+          "number": 16,
+          "title": "Однородные члены и сложные предложения",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "punctuation",
+            "complex"
+          ],
+          "skills": [
+            "punctuation.skill.simple",
+            "complex.skill.3b2-structure",
+            "complex.skill.3b2-punctuation",
+            "complex.skill.3b2-meaning",
+            "punctuation.skill.3b2-punct-address",
+            "punctuation.skill.3b2-punct-gerund",
+            "punctuation.skill.3b2-punct-repeat-and"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-17",
+          "number": 17,
+          "title": "Обособление",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "participles",
+            "gerunds"
+          ],
+          "skills": [
+            "participles.skill.3b2-recognize",
+            "participles.skill.3b2-turn",
+            "participles.skill.3b2-form",
+            "participles.skill.3b2-agreement"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-18",
+          "number": 18,
+          "title": "Вводные слова и обращения",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "punctuation"
+          ],
+          "skills": [
+            "punctuation.skill.simple",
+            "punctuation.skill.3b2-punct-address",
+            "punctuation.skill.3b2-punct-gerund",
+            "punctuation.skill.3b2-punct-repeat-and"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-19",
+          "number": 19,
+          "title": "Сложные предложения",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "complex"
+          ],
+          "skills": [
+            "complex.skill.3b2-structure",
+            "complex.skill.3b2-punctuation",
+            "complex.skill.3b2-meaning"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-20",
+          "number": 20,
+          "title": "Разные виды связи",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "complex"
+          ],
+          "skills": [
+            "complex.skill.3b2-structure",
+            "complex.skill.3b2-punctuation",
+            "complex.skill.3b2-meaning"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-21",
+          "number": 21,
+          "title": "Пунктуационный анализ",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "punctuation"
+          ],
+          "skills": [
+            "punctuation.skill.simple",
+            "punctuation.skill.3b2-punct-address",
+            "punctuation.skill.3b2-punct-gerund",
+            "punctuation.skill.3b2-punct-repeat-and"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-22",
+          "number": 22,
+          "title": "Выразительные средства",
+          "format": "digits-set",
+          "maxPoints": 2,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "hamming",
+          "criteria": "Полное совпадение: 2; одна или две неверные позиции при правильной длине: 1; иначе 0.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-23",
+          "number": 23,
+          "title": "Смысл текста",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-24",
+          "number": 24,
+          "title": "Типы информации в тексте",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-25",
+          "number": 25,
+          "title": "Лексические отношения",
+          "format": "text",
+          "maxPoints": 1,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-26",
+          "number": 26,
+          "title": "Средства связи предложений",
+          "format": "digits-set",
+          "maxPoints": 1,
+          "topics": [
+            "text"
+          ],
+          "skills": [
+            "text.skill.link",
+            "text.skill.3b2-text-causal",
+            "text.skill.3b2-text-pronoun",
+            "text.skill.3b2-text-metaphor"
+          ],
+          "needs": [],
+          "scoring": "unordered",
+          "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+        },
+        {
+          "id": "ege-russian-2027-27",
+          "number": 27,
+          "title": "Сочинение по тексту",
+          "format": "essay",
+          "maxPoints": 22,
+          "topics": [
+            "essay"
+          ],
+          "skills": [],
+          "needs": [
+            "essay-editor",
+            "expert-rubric"
+          ],
+          "scoring": "manual",
+          "criteria": "Нужна проверка полного решения по критериям конкретного задания; конечный ответ её не заменяет.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
+          "pages": "Спецификация печатная стр. 19; критерии: стр. 15–16, демоверсия для сочинения"
+        }
+      ]
+    },
+    {
+      "id": "ege-informatics-2027",
+      "version": "project-2026-10-09.1",
+      "subject": "informatics",
+      "year": 2027,
+      "status": "project",
+      "title": "Информатика",
+      "durationMinutes": 235,
+      "maxPoints": 29,
+      "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+      "positions": [
+        {
+          "id": "ege-informatics-2027-1",
+          "number": 1,
+          "title": "Информационные модели",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "graphs"
+          ],
+          "skills": [
+            "graphs.skill.3b2-structure",
+            "graphs.skill.3b2-weighted",
+            "graphs.skill.3b2-count-paths",
+            "graphs.skill.3b2-spanning"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-2",
+          "number": 2,
+          "title": "Таблица истинности",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "logic"
+          ],
+          "skills": [
+            "logic.skill.operations",
+            "logic.skill.3b2-universal"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-3",
+          "number": 3,
+          "title": "Реляционные базы данных",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "tables"
+          ],
+          "skills": [
+            "tables.skill.3b2-aggregate",
+            "tables.skill.3b2-references",
+            "tables.skill.3b2-filter",
+            "tables.skill.3b2-join"
+          ],
+          "needs": [
+            "local-file-data",
+            "table-editor"
+          ],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-4",
+          "number": 4,
+          "title": "Кодирование и условие Фано",
+          "format": "text",
+          "maxPoints": 1,
+          "topics": [
+            "encoding"
+          ],
+          "skills": [
+            "encoding.skill.minimum-bits",
+            "encoding.skill.bytes",
+            "encoding.skill.capacity",
+            "encoding.skill.3b2-prefix",
+            "encoding.skill.3b2-combinations"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-5",
+          "number": 5,
+          "title": "Линейные алгоритмы",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "algorithms"
+          ],
+          "skills": [
+            "algorithms.skill.3b2-trace",
+            "algorithms.skill.3b2-digits",
+            "algorithms.skill.3b2-dynamic"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-6",
+          "number": 6,
+          "title": "Исполнители и вычислительные алгоритмы",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "algorithms"
+          ],
+          "skills": [
+            "algorithms.skill.3b2-trace",
+            "algorithms.skill.3b2-digits",
+            "algorithms.skill.3b2-dynamic"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-7",
+          "number": 7,
+          "title": "Графическая и звуковая информация",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "images"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-8",
+          "number": 8,
+          "title": "Измерение информации",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "information"
+          ],
+          "skills": [
+            "information.skill.units"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-9",
+          "number": 9,
+          "title": "Числовые данные в таблицах",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "tables"
+          ],
+          "skills": [
+            "tables.skill.3b2-aggregate",
+            "tables.skill.3b2-references",
+            "tables.skill.3b2-filter",
+            "tables.skill.3b2-join"
+          ],
+          "needs": [
+            "local-file-data",
+            "table-editor"
+          ],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-10",
+          "number": 10,
+          "title": "Маска подсети",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "networks"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-11",
+          "number": 11,
+          "title": "Информационный объём сообщения",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "information"
+          ],
+          "skills": [
+            "information.skill.units"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-12",
+          "number": 12,
+          "title": "Формальные исполнители",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "algorithms"
+          ],
+          "skills": [
+            "algorithms.skill.3b2-trace",
+            "algorithms.skill.3b2-digits",
+            "algorithms.skill.3b2-dynamic"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-13",
+          "number": 13,
+          "title": "Ход исполнения алгоритма",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "algorithms"
+          ],
+          "skills": [
+            "algorithms.skill.3b2-trace",
+            "algorithms.skill.3b2-digits",
+            "algorithms.skill.3b2-dynamic"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-14",
+          "number": 14,
+          "title": "Позиционные системы счисления",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "binary"
+          ],
+          "skills": [
+            "binary.skill.to-decimal",
+            "binary.skill.from-decimal",
+            "binary.skill.weight",
+            "binary.skill.hex-to-decimal",
+            "binary.skill.3b2-binary-base",
+            "binary.skill.3b2-binary-rule"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-15",
+          "number": 15,
+          "title": "Математическая логика",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "logic"
+          ],
+          "skills": [
+            "logic.skill.operations",
+            "logic.skill.3b2-universal"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-16",
+          "number": 16,
+          "title": "Рекуррентные выражения",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "recursion"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-17",
+          "number": 17,
+          "title": "Обработка числовой последовательности",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "files",
+            "infpython"
+          ],
+          "skills": [
+            "infpython.skill.program",
+            "infpython.skill.square-input",
+            "infpython.skill.sum-natural",
+            "infpython.skill.maximum-input",
+            "infpython.skill.count-even",
+            "infpython.skill.decode-binary",
+            "infpython.skill.3b2-ranking",
+            "infpython.skill.3b2-neighbours",
+            "infpython.skill.3b2-first-position",
+            "infpython.skill.3b2-runs"
+          ],
+          "needs": [
+            "local-file-data"
+          ],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-18",
+          "number": 18,
+          "title": "Целочисленные данные в таблицах",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "tables"
+          ],
+          "skills": [
+            "tables.skill.3b2-aggregate",
+            "tables.skill.3b2-references",
+            "tables.skill.3b2-filter",
+            "tables.skill.3b2-join"
+          ],
+          "needs": [
+            "local-file-data",
+            "table-editor"
+          ],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-19",
+          "number": 19,
+          "title": "Анализ логической игры",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "games"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-20",
+          "number": 20,
+          "title": "Выигрышная стратегия",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "games"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-21",
+          "number": 21,
+          "title": "Дерево игры",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "games"
+          ],
+          "skills": [],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 15; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-22",
+          "number": 22,
+          "title": "Многопроцессорные модели",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "tables"
+          ],
+          "skills": [
+            "tables.skill.3b2-aggregate",
+            "tables.skill.3b2-references",
+            "tables.skill.3b2-filter",
+            "tables.skill.3b2-join"
+          ],
+          "needs": [
+            "local-file-data",
+            "table-editor"
+          ],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 16; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-23",
+          "number": 23,
+          "title": "Алгоритмы на графах",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "graphs"
+          ],
+          "skills": [
+            "graphs.skill.3b2-structure",
+            "graphs.skill.3b2-weighted",
+            "graphs.skill.3b2-count-paths",
+            "graphs.skill.3b2-spanning"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 16; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-24",
+          "number": 24,
+          "title": "Обработка символьной информации",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "files",
+            "infpython"
+          ],
+          "skills": [
+            "infpython.skill.program",
+            "infpython.skill.square-input",
+            "infpython.skill.sum-natural",
+            "infpython.skill.maximum-input",
+            "infpython.skill.count-even",
+            "infpython.skill.decode-binary",
+            "infpython.skill.3b2-ranking",
+            "infpython.skill.3b2-neighbours",
+            "infpython.skill.3b2-first-position",
+            "infpython.skill.3b2-runs"
+          ],
+          "needs": [
+            "local-file-data"
+          ],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 16; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-25",
+          "number": 25,
+          "title": "Обработка целочисленной информации",
+          "format": "integer",
+          "maxPoints": 1,
+          "topics": [
+            "infpython"
+          ],
+          "skills": [
+            "infpython.skill.program",
+            "infpython.skill.square-input",
+            "infpython.skill.sum-natural",
+            "infpython.skill.maximum-input",
+            "infpython.skill.count-even",
+            "infpython.skill.decode-binary",
+            "infpython.skill.3b2-ranking",
+            "infpython.skill.3b2-neighbours",
+            "infpython.skill.3b2-first-position",
+            "infpython.skill.3b2-runs"
+          ],
+          "needs": [],
+          "scoring": "exact",
+          "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 16; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-26",
+          "number": 26,
+          "title": "Сортировка и обработка данных",
+          "format": "pair",
+          "maxPoints": 2,
+          "topics": [
+            "files",
+            "infpython"
+          ],
+          "skills": [
+            "infpython.skill.program",
+            "infpython.skill.square-input",
+            "infpython.skill.sum-natural",
+            "infpython.skill.maximum-input",
+            "infpython.skill.count-even",
+            "infpython.skill.decode-binary",
+            "infpython.skill.3b2-ranking",
+            "infpython.skill.3b2-neighbours",
+            "infpython.skill.3b2-first-position",
+            "infpython.skill.3b2-runs"
+          ],
+          "needs": [
+            "local-file-data"
+          ],
+          "scoring": "pair-partial",
+          "criteria": "Оба числа на своих местах: 2; одно число на своём месте либо перестановка верных чисел: 1; иначе 0.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 16; критерии: стр. 12–13"
+        },
+        {
+          "id": "ege-informatics-2027-27",
+          "number": 27,
+          "title": "Анализ и моделирование данных",
+          "format": "pair",
+          "maxPoints": 2,
+          "topics": [
+            "files",
+            "infpython"
+          ],
+          "skills": [
+            "infpython.skill.program",
+            "infpython.skill.square-input",
+            "infpython.skill.sum-natural",
+            "infpython.skill.maximum-input",
+            "infpython.skill.count-even",
+            "infpython.skill.decode-binary",
+            "infpython.skill.3b2-ranking",
+            "infpython.skill.3b2-neighbours",
+            "infpython.skill.3b2-first-position",
+            "infpython.skill.3b2-runs"
+          ],
+          "needs": [
+            "local-file-data"
+          ],
+          "scoring": "pair-partial",
+          "criteria": "Оба числа на своих местах: 2; одно число на своём месте либо перестановка верных чисел: 1; иначе 0.",
+          "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
+          "pages": "Спецификация печатная стр. 16; критерии: стр. 12–13"
+        }
+      ]
+    }
+  ]
+}

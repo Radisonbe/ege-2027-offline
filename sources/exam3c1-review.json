@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "exam27-math-4-complement",
+      "positionId": "ege-math-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "ratio",
+        "favourable": 26,
+        "total": 40
+      }
+    },
+    {
+      "id": "exam27-math-4-interval",
+      "positionId": "ege-math-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "difference",
+        "a": 0.76,
+        "b": 0.28
+      }
+    },
+    {
+      "id": "exam27-math-4-rank",
+      "positionId": "ege-math-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "ratio",
+        "favourable": 9,
+        "total": 20
+      }
+    },
+    {
+      "id": "exam27-math-4-faces",
+      "positionId": "ege-math-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "ratio",
+        "favourable": 2,
+        "total": 8
+      }
+    },
+    {
+      "id": "exam27-math-4-sections",
+      "positionId": "ege-math-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "ratio",
+        "favourable": 25,
+        "total": 50
+      }
+    },
+    {
+      "id": "exam27-math-4-threshold",
+      "positionId": "ege-math-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "ratio",
+        "favourable": 3,
+        "total": 10
+      }
+    },
+    {
+      "id": "exam27-math-7-linear",
+      "positionId": "ege-math-2027-7",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "linear",
+        "a": 7,
+        "b": -14,
+        "c": 3,
+        "d": 10
+      }
+    },
+    {
+      "id": "exam27-math-7-roots",
+      "positionId": "ege-math-2027-7",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "linear",
+        "a": 3,
+        "b": 1,
+        "c": 0,
+        "d": 25
+      }
+    },
+    {
+      "id": "exam27-math-7-quadratic",
+      "positionId": "ege-math-2027-7",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "quadratic",
+        "a": 1,
+        "b": -9,
+        "c": 20
+      }
+    },
+    {
+      "id": "exam27-math-7-fraction",
+      "positionId": "ege-math-2027-7",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "rational-equation",
+        "offset": 3,
+        "pole": 1,
+        "target": 2
+      }
+    },
+    {
+      "id": "exam27-math-7-exponential",
+      "positionId": "ege-math-2027-7",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "exponential",
+        "base": 4,
+        "power": 3,
+        "offset": 1
+      }
+    },
+    {
+      "id": "exam27-math-7-logarithm",
+      "positionId": "ege-math-2027-7",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "logarithm",
+        "base": 2,
+        "power": 4,
+        "offset": 3
+      }
+    },
+    {
+      "id": "exam27-russian-16-compound-list",
+      "positionId": "ege-russian-2027-16",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "oneComma": "23",
+        "sentences": [
+          "Тихий ветер качал ветви и шуршал сухой травой.",
+          "Солнце поднялось над крышей и двор сразу ожил.",
+          "На полке стояли книги тетради и альбомы.",
+          "В поход мы взяли и карту и фонарь и запас воды.",
+          "Девочка открыла окно и улыбнулась."
+        ],
+        "reason": "В 2 две основы, в 3 перечень из трёх предметов с одним союзом в конце. В 1 и 5 один субъект и одиночный и, запятых нет; в 4 три повторяющихся и требуют двух запятых."
+      }
+    },
+    {
+      "id": "exam27-russian-16-opposition",
+      "positionId": "ege-russian-2027-16",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "oneComma": "135",
+        "sentences": [
+          "Небо было тёмным но спокойным.",
+          "Петя вымыл чашку и поставил её на полку.",
+          "Поезд остановился и пассажиры вышли.",
+          "На столе лежали яблоки груши сливы и персики.",
+          "Мы не только прочитали рассказ но и обсудили его."
+        ],
+        "reason": "В 1 союз но, в 3 две основы, в 5 парный союз не только…но и: по одной запятой. В 2 одиночный и между сказуемыми, в 4 две запятые между четырьмя предметами."
+      }
+    },
+    {
+      "id": "exam27-russian-16-repeated",
+      "positionId": "ege-russian-2027-16",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "oneComma": "124",
+        "sentences": [
+          "Река то шумела то затихала.",
+          "Вдали показались и сосны и берёзы.",
+          "Кошка подошла к двери и тихо мяукнула.",
+          "В саду росли розы лилии и ирисы.",
+          "Лена и Вера приготовили чай."
+        ],
+        "reason": "В 1 повторяется то, в 2 повторяется и: по одной запятой. В 4 три однородных предмета с одиночным и в конце: одна запятая. В 3 и 5 одиночный и не требует запятой."
+      }
+    },
+    {
+      "id": "exam27-russian-16-adversative",
+      "positionId": "ege-russian-2027-16",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "oneComma": "24",
+        "sentences": [
+          "Листья кружились падали ложились на землю.",
+          "Работа оказалась трудной зато интересной.",
+          "Мальчик взял карандаш и открыл альбом.",
+          "Загорелся фонарь и улица стала светлее.",
+          "Мы привезли хлеб и сыр и молоко."
+        ],
+        "reason": "В 2 союз зато, в 4 две грамматические основы: по одной запятой. В 1 бессоюзный ряд из трёх сказуемых и в 5 три однородных дополнения с повторением и дают по две запятые; в 3 запятых нет."
+      }
+    },
+    {
+      "id": "exam27-russian-16-paired",
+      "positionId": "ege-russian-2027-16",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "oneComma": "134",
+        "sentences": [
+          "Экскурсия понравилась как детям так и взрослым.",
+          "Тропинка была узкой и каменистой.",
+          "Птица взлетела но вскоре вернулась.",
+          "Ветер утих и дождь закончился.",
+          "В коробке были пуговицы нитки ленты и бусины."
+        ],
+        "reason": "В 1 парный как…так и, в 3 но, в 4 две основы: по одной запятой. В 2 одиночный и, в 5 два бессоюзных промежутка, поэтому эти предложения не подходят."
+      }
+    },
+    {
+      "id": "exam27-russian-16-alternation",
+      "positionId": "ege-russian-2027-16",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "oneComma": "134",
+        "sentences": [
+          "Мы купили не только тетради но и карандаши.",
+          "Костёр горел ярко и ровно.",
+          "В комнате слышались то шаги то смех.",
+          "Дверь открылась и в зал вошёл мастер.",
+          "На лугу цвели и ромашки и васильки и колокольчики."
+        ],
+        "reason": "В 1 парный не только…но и, в 3 повторение то, в 4 разные основы: одна запятая. В 2 её нет; в 5 нужны две между тремя членами."
+      }
+    },
+    {
+      "id": "exam27-russian-26-personal-subject",
+      "positionId": "ege-russian-2027-26",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "sentences": [
+          "Никита проверил план мастерской.",
+          "Он отметил место для нового стола.",
+          "У стены оставался широкий проход.",
+          "План допускал несколько перестановок.",
+          "Работа началась утром."
+        ],
+        "target": 2,
+        "reason": "Он относится к Никите из предыдущего предложения."
+      }
+    },
+    {
+      "id": "exam27-russian-26-female-subject",
+      "positionId": "ege-russian-2027-26",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "sentences": [
+          "Библиотека получила новые книги.",
+          "Анна составила список поступлений.",
+          "Она выделила раздел о природе.",
+          "Список повесили у входа.",
+          "Посетители остановились у стенда."
+        ],
+        "target": 3,
+        "reason": "Она заменяет Анну из предложения 2."
+      }
+    },
+    {
+      "id": "exam27-russian-26-plural",
+      "positionId": "ege-russian-2027-26",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "sentences": [
+          "У ручья стоял маленький мост.",
+          "На берегу появились путешественники.",
+          "Путешественники разложили инструменты.",
+          "Они решили укрепить настил.",
+          "Ремонт занял два часа."
+        ],
+        "target": 4,
+        "reason": "Они относится к путешественникам из предложения 3; в 3 связь лексическим повтором, а не местоимением."
+      }
+    },
+    {
+      "id": "exam27-russian-26-late",
+      "positionId": "ege-russian-2027-26",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "sentences": [
+          "Снег укрыл дорожки парка.",
+          "У ворот осталась узкая тропа.",
+          "Рабочие приготовили лопаты.",
+          "Сергей подошёл к тропе первым.",
+          "Он начал расчищать проход."
+        ],
+        "target": 5,
+        "reason": "Он относится к Сергею, названному в предложении 4."
+      }
+    },
+    {
+      "id": "exam27-russian-26-object",
+      "positionId": "ege-russian-2027-26",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "sentences": [
+          "Собрание назначили на вечер.",
+          "Дмитрий пришёл немного раньше.",
+          "Его позвали проверить проектор.",
+          "Аппарат уже стоял у окна.",
+          "Изображение появилось на стене."
+        ],
+        "target": 3,
+        "reason": "Его здесь — личное местоимение в винительном падеже: позвали Дмитрия, а не притяжательное определение."
+      }
+    },
+    {
+      "id": "exam27-russian-26-oblique",
+      "positionId": "ege-russian-2027-26",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "language-review",
+        "sentences": [
+          "Мастерская готовила выставку.",
+          "Столы покрыли светлой тканью.",
+          "Марина принесла свои рисунки.",
+          "Ей предложили место у входа.",
+          "Выставка открылась в полдень."
+        ],
+        "target": 4,
+        "reason": "Ей — дательный падеж личного местоимения она; оно заменяет Марину из предложения 3. Своих в 3 не связывает его с предыдущим предложением."
+      }
+    },
+    {
+      "id": "exam27-informatics-4-minimal",
+      "positionId": "ege-informatics-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "prefix-min",
+        "codes": [
+          "0",
+          "10",
+          "110"
+        ]
+      }
+    },
+    {
+      "id": "exam27-informatics-4-word",
+      "positionId": "ege-informatics-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "word-length",
+        "codes": {
+          "А": "00",
+          "Б": "01",
+          "В": "10",
+          "Г": "11"
+        },
+        "word": "АБГГВ"
+      }
+    },
+    {
+      "id": "exam27-informatics-4-decode",
+      "positionId": "ege-informatics-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "decode",
+        "codes": [
+          "0",
+          "11",
+          "100",
+          "101"
+        ],
+        "bits": "0111001010"
+      }
+    },
+    {
+      "id": "exam27-informatics-4-lex",
+      "positionId": "ege-informatics-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "prefix-fixed",
+        "codes": [
+          "00",
+          "01",
+          "10"
+        ],
+        "length": 3
+      }
+    },
+    {
+      "id": "exam27-informatics-4-capacity",
+      "positionId": "ege-informatics-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "prefix-count",
+        "codes": [
+          "00",
+          "1",
+          "010"
+        ],
+        "length": 3
+      }
+    },
+    {
+      "id": "exam27-informatics-4-unequal",
+      "positionId": "ege-informatics-2027-4",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "word-length",
+        "codes": {
+          "А": "0",
+          "Б": "100",
+          "В": "101",
+          "Г": "110",
+          "Д": "111"
+        },
+        "word": "АБАВА"
+      }
+    },
+    {
+      "id": "exam27-informatics-14-mixed",
+      "positionId": "ege-informatics-2027-14",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "base-sum",
+        "terms": [
+          [
+            "2A",
+            16
+          ],
+          [
+            "17",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "exam27-informatics-14-unknown",
+      "positionId": "ege-informatics-2027-14",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "base-find",
+        "digits": "121",
+        "value": 49
+      }
+    },
+    {
+      "id": "exam27-informatics-14-binary-power",
+      "positionId": "ege-informatics-2027-14",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "digit-count",
+        "base": 2,
+        "digit": "1",
+        "terms": [
+          [
+            2,
+            15,
+            1
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "exam27-informatics-14-unknown-digit",
+      "positionId": "ege-informatics-2027-14",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "digit-find",
+        "base": 7,
+        "prefix": 2,
+        "suffix": 4,
+        "divisor": 5
+      }
+    },
+    {
+      "id": "exam27-informatics-14-ternary",
+      "positionId": "ege-informatics-2027-14",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "digit-count",
+        "base": 3,
+        "digit": "2",
+        "terms": [
+          [
+            3,
+            8,
+            1
+          ],
+          [
+            3,
+            2,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "exam27-informatics-14-hex-zero",
+      "positionId": "ege-informatics-2027-14",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "oracle": {
+        "kind": "digit-count",
+        "base": 16,
+        "digit": "0",
+        "terms": [
+          [
+            16,
+            5,
+            1
+          ],
+          [
+            16,
+            3,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    }
+  ]
+}

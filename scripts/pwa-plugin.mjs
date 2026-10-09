@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { assertBuildInput, assertNoPrivateInputs } from './content-policy.mjs';
 import { checkContentBank } from './content-bank.mjs';
+import { checkExamContent } from './check-exam-content.mjs';
 
 export const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 export function createWorker(files, template, buildId = '') {
@@ -18,7 +19,7 @@ export function offlinePwa() {
     name: 'ege-complete-offline-kit',
     apply: 'build', enforce: 'post',
     configResolved(value) { config = value; },
-    buildStart() { assertNoPrivateInputs(config.root); checkContentBank(config.root); },
+    buildStart() { assertNoPrivateInputs(config.root); checkContentBank(config.root); checkExamContent(); },
     load(id) { assertBuildInput(id); return null; },
     writeBundle(options, bundle) {
       // Read final bytes after Vite has resolved lazy-import/preload transformations.

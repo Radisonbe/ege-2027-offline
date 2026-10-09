@@ -1,0 +1,1337 @@
+{
+  "schemaVersion": 1,
+  "tasks": [
+    {
+      "id": "exam27-math-4-complement",
+      "version": 1,
+      "positionId": "ege-math-2027-4",
+      "familyId": "exam27-math-4-complement",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-4-complement",
+        "subject": "math",
+        "topic": "probability",
+        "subtopic": "probability.sub.extension",
+        "skills": [
+          "probability.skill.3b2-outcomes"
+        ],
+        "difficulty": "easy",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-4",
+        "answerType": "number",
+        "prompt": "В коробке 40 запечатанных карточек, из них 14 с красной меткой, остальные с синей. Случайно выбирают одну карточку. Найдите вероятность синей метки.",
+        "answer": "0.65",
+        "hint": "Посчитай карточки с нужной меткой.",
+        "explanation": "Синих карточек 40 − 14 = 26. Все 40 карточек равновозможны, поэтому P = 26/40 = 0,65.",
+        "solution": "Синих карточек 40 − 14 = 26. Все 40 карточек равновозможны, поэтому P = 26/40 = 0,65.",
+        "principle": "Посчитай карточки с нужной меткой.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: неверно посчитать благоприятные исходы, перепутать дополнение события или включить исключённую границу."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-4-interval",
+      "version": 1,
+      "positionId": "ege-math-2027-4",
+      "familyId": "exam27-math-4-interval",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-4-interval",
+        "subject": "math",
+        "topic": "probability",
+        "subtopic": "probability.sub.extension",
+        "skills": [
+          "probability.skill.3b2-outcomes"
+        ],
+        "difficulty": "easy",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-4",
+        "answerType": "number",
+        "prompt": "Вероятность того, что заказ прибудет раньше 12 часов, равна 0,28, а раньше 16 часов — 0,76. Какова вероятность прибытия с 12 часов включительно до 16 часов, не включая 16?",
+        "answer": "0.48",
+        "hint": "Событие «раньше 12» содержится в событии «раньше 16».",
+        "explanation": "Из 0,76 вычитаем 0,28: нужный промежуток имеет вероятность 0,48. Границы заданы так, что события не пересекаются.",
+        "solution": "Из 0,76 вычитаем 0,28: нужный промежуток имеет вероятность 0,48. Границы заданы так, что события не пересекаются.",
+        "principle": "Событие «раньше 12» содержится в событии «раньше 16».",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: неверно посчитать благоприятные исходы, перепутать дополнение события или включить исключённую границу."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-4-rank",
+      "version": 1,
+      "positionId": "ege-math-2027-4",
+      "familyId": "exam27-math-4-rank",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-4-rank",
+        "subject": "math",
+        "topic": "probability",
+        "subtopic": "probability.sub.extension",
+        "skills": [
+          "probability.skill.3b2-outcomes"
+        ],
+        "difficulty": "easy",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-4",
+        "answerType": "number",
+        "prompt": "В турнире участвуют 8 команд из города А, 9 из города Б и 3 из города В. Порядок выступления определяется случайной жеребьёвкой. Найдите вероятность того, что первой выступит команда из города Б.",
+        "answer": "0.45",
+        "hint": "Первая позиция равновероятна для каждой команды.",
+        "explanation": "Всего 8 + 9 + 3 = 20 команд. Благоприятных первых команд 9, вероятность 9/20 = 0,45.",
+        "solution": "Всего 8 + 9 + 3 = 20 команд. Благоприятных первых команд 9, вероятность 9/20 = 0,45.",
+        "principle": "Первая позиция равновероятна для каждой команды.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: неверно посчитать благоприятные исходы, перепутать дополнение события или включить исключённую границу."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-4-faces",
+      "version": 1,
+      "positionId": "ege-math-2027-4",
+      "familyId": "exam27-math-4-outcome-enumeration",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-4-faces",
+        "subject": "math",
+        "topic": "probability",
+        "subtopic": "probability.sub.extension",
+        "skills": [
+          "probability.skill.3b2-outcomes"
+        ],
+        "difficulty": "easy",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-4",
+        "answerType": "number",
+        "prompt": "На гранях честного восьмигранного кубика написаны числа 1–8 по одному разу. Найдите вероятность того, что при одном броске выпадет число, делящееся на 3.",
+        "answer": "0.25",
+        "hint": "Перечисли нужные грани, а не все возможные делители.",
+        "explanation": "Подходят 3 и 6: две грани из восьми. P = 2/8 = 0,25.",
+        "solution": "Подходят 3 и 6: две грани из восьми. P = 2/8 = 0,25.",
+        "principle": "Перечисли нужные грани, а не все возможные делители.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: неверно посчитать благоприятные исходы, перепутать дополнение события или включить исключённую границу."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-4-sections",
+      "version": 1,
+      "positionId": "ege-math-2027-4",
+      "familyId": "exam27-math-4-sections",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-4-sections",
+        "subject": "math",
+        "topic": "probability",
+        "subtopic": "probability.sub.extension",
+        "skills": [
+          "probability.skill.3b2-outcomes"
+        ],
+        "difficulty": "easy",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-4",
+        "answerType": "number",
+        "prompt": "Билет с одинаковой вероятностью выбирают из 50 билетов. В 18 билетах есть раздел А, в 7 — раздел Б, в остальных — раздел В. Каждый билет относится ровно к одному разделу. Найдите вероятность раздела А или Б.",
+        "answer": "0.5",
+        "hint": "Разделы не пересекаются, поэтому числа билетов складываются.",
+        "explanation": "Благоприятных билетов 18 + 7 = 25 из 50. Получаем 0,5. Здесь не нужно перемножать вероятности.",
+        "solution": "Благоприятных билетов 18 + 7 = 25 из 50. Получаем 0,5. Здесь не нужно перемножать вероятности.",
+        "principle": "Разделы не пересекаются, поэтому числа билетов складываются.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: неверно посчитать благоприятные исходы, перепутать дополнение события или включить исключённую границу."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-4-threshold",
+      "version": 1,
+      "positionId": "ege-math-2027-4",
+      "familyId": "exam27-math-4-outcome-enumeration",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-4-threshold",
+        "subject": "math",
+        "topic": "probability",
+        "subtopic": "probability.sub.extension",
+        "skills": [
+          "probability.skill.3b2-outcomes"
+        ],
+        "difficulty": "easy",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-4",
+        "answerType": "number",
+        "prompt": "Честный десятигранный кубик содержит числа от 0 до 9. Найдите вероятность того, что единственный результат броска будет больше 6.",
+        "answer": "0.3",
+        "hint": "Слово «больше» исключает число 6.",
+        "explanation": "Подходят 7, 8, 9: три результата из десяти, вероятность 0,3.",
+        "solution": "Подходят 7, 8, 9: три результата из десяти, вероятность 0,3.",
+        "principle": "Слово «больше» исключает число 6.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: неверно посчитать благоприятные исходы, перепутать дополнение события или включить исключённую границу."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-7-linear",
+      "version": 1,
+      "positionId": "ege-math-2027-7",
+      "familyId": "exam27-math-7-linear",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-7-linear",
+        "subject": "math",
+        "topic": "linear",
+        "subtopic": "linear.sub.foundation",
+        "skills": [
+          "linear.skill.solve"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-7",
+        "answerType": "number",
+        "prompt": "Решите уравнение 7(x − 2) = 3x + 10.",
+        "answer": "6",
+        "hint": "Раскрой скобки и собери члены с x.",
+        "explanation": "7x − 14 = 3x + 10, значит 4x = 24 и x = 6. Подстановка даёт 28 = 28.",
+        "solution": "7x − 14 = 3x + 10, значит 4x = 24 и x = 6. Подстановка даёт 28 = 28.",
+        "principle": "Раскрой скобки и собери члены с x.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: не проверить ОДЗ, потерять знак при переносе или выбрать не тот корень. Подставь число в исходное уравнение."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-7-roots",
+      "version": 1,
+      "positionId": "ege-math-2027-7",
+      "familyId": "exam27-math-7-roots",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-7-roots",
+        "subject": "math",
+        "topic": "roots",
+        "subtopic": "roots.sub.foundation",
+        "skills": [
+          "roots.skill.principal"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-7",
+        "answerType": "number",
+        "prompt": "Решите уравнение √(3x + 1) = 5.",
+        "answer": "8",
+        "hint": "Сначала учти, что подкоренное выражение неотрицательно.",
+        "explanation": "Возводим обе части в квадрат: 3x + 1 = 25, x = 8. Подстановка: √25 = 5; условие корня соблюдено.",
+        "solution": "Возводим обе части в квадрат: 3x + 1 = 25, x = 8. Подстановка: √25 = 5; условие корня соблюдено.",
+        "principle": "Сначала учти, что подкоренное выражение неотрицательно.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: не проверить ОДЗ, потерять знак при переносе или выбрать не тот корень. Подставь число в исходное уравнение."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-7-quadratic",
+      "version": 1,
+      "positionId": "ege-math-2027-7",
+      "familyId": "exam27-math-7-quadratic",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-7-quadratic",
+        "subject": "math",
+        "topic": "quadratic",
+        "subtopic": "quadratic.sub.extension",
+        "skills": [
+          "quadratic.skill.3b2-roots"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-7",
+        "answerType": "number",
+        "prompt": "Найдите больший корень уравнения x² − 9x + 20 = 0.",
+        "answer": "5",
+        "hint": "Нужна пара чисел с суммой 9 и произведением 20.",
+        "explanation": "(x − 4)(x − 5) = 0, корни 4 и 5. Больший — 5; подстановка 25 − 45 + 20 = 0.",
+        "solution": "(x − 4)(x − 5) = 0, корни 4 и 5. Больший — 5; подстановка 25 − 45 + 20 = 0.",
+        "principle": "Нужна пара чисел с суммой 9 и произведением 20.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: не проверить ОДЗ, потерять знак при переносе или выбрать не тот корень. Подставь число в исходное уравнение."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-7-fraction",
+      "version": 1,
+      "positionId": "ege-math-2027-7",
+      "familyId": "exam27-math-7-fraction",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-7-fraction",
+        "subject": "math",
+        "topic": "linear",
+        "subtopic": "linear.sub.foundation",
+        "skills": [
+          "linear.skill.solve"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-7",
+        "answerType": "number",
+        "prompt": "Решите уравнение (x + 3)/(x − 1) = 2.",
+        "answer": "5",
+        "hint": "Знаменатель не должен быть равен нулю.",
+        "explanation": "ОДЗ: x ≠ 1. x + 3 = 2x − 2, x = 5. Проверка: 8/4 = 2; найденное число входит в ОДЗ.",
+        "solution": "ОДЗ: x ≠ 1. x + 3 = 2x − 2, x = 5. Проверка: 8/4 = 2; найденное число входит в ОДЗ.",
+        "principle": "Знаменатель не должен быть равен нулю.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: не проверить ОДЗ, потерять знак при переносе или выбрать не тот корень. Подставь число в исходное уравнение."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-7-exponential",
+      "version": 1,
+      "positionId": "ege-math-2027-7",
+      "familyId": "exam27-math-7-exponential",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-7-exponential",
+        "subject": "math",
+        "topic": "powers",
+        "subtopic": "powers.sub.foundation",
+        "skills": [
+          "powers.skill.rules"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-7",
+        "answerType": "number",
+        "prompt": "Решите уравнение 4^(x − 1) = 64.",
+        "answer": "4",
+        "hint": "Вырази 64 как степень основания 4.",
+        "explanation": "64 = 4³. Так как основание 4 больше 1, показатели равны: x − 1 = 3, x = 4.",
+        "solution": "64 = 4³. Так как основание 4 больше 1, показатели равны: x − 1 = 3, x = 4.",
+        "principle": "Вырази 64 как степень основания 4.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: не проверить ОДЗ, потерять знак при переносе или выбрать не тот корень. Подставь число в исходное уравнение."
+        }
+      }
+    },
+    {
+      "id": "exam27-math-7-logarithm",
+      "version": 1,
+      "positionId": "ege-math-2027-7",
+      "familyId": "exam27-math-7-logarithm",
+      "format": "decimal",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-math-7-logarithm",
+        "subject": "math",
+        "topic": "logarithms",
+        "subtopic": "logarithms.sub.extension",
+        "skills": [
+          "logarithms.skill.3b2-definition"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-math-2027-7",
+        "answerType": "number",
+        "prompt": "Решите уравнение log₂(x − 3) = 4.",
+        "answer": "19",
+        "hint": "Логарифм задаёт показатель степени, а аргумент должен быть положительным.",
+        "explanation": "x − 3 > 0. По определению логарифма x − 3 = 2⁴ = 16, поэтому x = 19. Аргумент 16 положителен.",
+        "solution": "x − 3 > 0. По определению логарифма x − 3 = 2⁴ = 16, поэтому x = 19. Аргумент 16 положителен.",
+        "principle": "Логарифм задаёт показатель степени, а аргумент должен быть положительным.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: не проверить ОДЗ, потерять знак при переносе или выбрать не тот корень. Подставь число в исходное уравнение."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-16-compound-list",
+      "version": 1,
+      "positionId": "ege-russian-2027-16",
+      "familyId": "exam27-russian-16-homogeneous-compound",
+      "format": "digits-set",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-16-compound-list",
+        "subject": "russian",
+        "topic": "punctuation",
+        "subtopic": "punctuation.sub.foundation",
+        "skills": [
+          "punctuation.skill.simple"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-16",
+        "answerType": "text",
+        "prompt": "Укажите номера предложений, в которых нужно поставить ровно ОДНУ запятую. Запишите цифры без пробелов в любом порядке.\n\n1) Тихий ветер качал ветви и шуршал сухой травой.\n2) Солнце поднялось над крышей и двор сразу ожил.\n3) На полке стояли книги тетради и альбомы.\n4) В поход мы взяли и карту и фонарь и запас воды.\n5) Девочка открыла окно и улыбнулась.",
+        "answer": "23",
+        "hint": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "explanation": "В 2 две основы, в 3 перечень из трёх предметов с одним союзом в конце. В 1 и 5 один субъект и одиночный и, запятых нет; в 4 три повторяющихся и требуют двух запятых.",
+        "solution": "В 2 две основы, в 3 перечень из трёх предметов с одним союзом в конце. В 1 и 5 один субъект и одиночный и, запятых нет; в 4 три повторяющихся и требуют двух запятых.",
+        "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: поставить запятую перед каждым «и» или не заметить две грамматические основы. Сначала разберись со структурой, затем посчитай запятые."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-16-opposition",
+      "version": 1,
+      "positionId": "ege-russian-2027-16",
+      "familyId": "exam27-russian-16-homogeneous-compound",
+      "format": "digits-set",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-16-opposition",
+        "subject": "russian",
+        "topic": "punctuation",
+        "subtopic": "punctuation.sub.foundation",
+        "skills": [
+          "punctuation.skill.simple"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-16",
+        "answerType": "text",
+        "prompt": "Укажите номера предложений, в которых нужно поставить ровно ОДНУ запятую. Запишите цифры без пробелов в любом порядке.\n\n1) Небо было тёмным но спокойным.\n2) Петя вымыл чашку и поставил её на полку.\n3) Поезд остановился и пассажиры вышли.\n4) На столе лежали яблоки груши сливы и персики.\n5) Мы не только прочитали рассказ но и обсудили его.",
+        "answer": "135",
+        "hint": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "explanation": "В 1 союз но, в 3 две основы, в 5 парный союз не только…но и: по одной запятой. В 2 одиночный и между сказуемыми, в 4 две запятые между четырьмя предметами.",
+        "solution": "В 1 союз но, в 3 две основы, в 5 парный союз не только…но и: по одной запятой. В 2 одиночный и между сказуемыми, в 4 две запятые между четырьмя предметами.",
+        "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: поставить запятую перед каждым «и» или не заметить две грамматические основы. Сначала разберись со структурой, затем посчитай запятые."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-16-repeated",
+      "version": 1,
+      "positionId": "ege-russian-2027-16",
+      "familyId": "exam27-russian-16-homogeneous-compound",
+      "format": "digits-set",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-16-repeated",
+        "subject": "russian",
+        "topic": "punctuation",
+        "subtopic": "punctuation.sub.foundation",
+        "skills": [
+          "punctuation.skill.simple"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-16",
+        "answerType": "text",
+        "prompt": "Укажите номера предложений, в которых нужно поставить ровно ОДНУ запятую. Запишите цифры без пробелов в любом порядке.\n\n1) Река то шумела то затихала.\n2) Вдали показались и сосны и берёзы.\n3) Кошка подошла к двери и тихо мяукнула.\n4) В саду росли розы лилии и ирисы.\n5) Лена и Вера приготовили чай.",
+        "answer": "124",
+        "hint": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "explanation": "В 1 повторяется то, в 2 повторяется и: по одной запятой. В 4 три однородных предмета с одиночным и в конце: одна запятая. В 3 и 5 одиночный и не требует запятой.",
+        "solution": "В 1 повторяется то, в 2 повторяется и: по одной запятой. В 4 три однородных предмета с одиночным и в конце: одна запятая. В 3 и 5 одиночный и не требует запятой.",
+        "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: поставить запятую перед каждым «и» или не заметить две грамматические основы. Сначала разберись со структурой, затем посчитай запятые."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-16-adversative",
+      "version": 1,
+      "positionId": "ege-russian-2027-16",
+      "familyId": "exam27-russian-16-homogeneous-compound",
+      "format": "digits-set",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-16-adversative",
+        "subject": "russian",
+        "topic": "punctuation",
+        "subtopic": "punctuation.sub.foundation",
+        "skills": [
+          "punctuation.skill.simple"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-16",
+        "answerType": "text",
+        "prompt": "Укажите номера предложений, в которых нужно поставить ровно ОДНУ запятую. Запишите цифры без пробелов в любом порядке.\n\n1) Листья кружились падали ложились на землю.\n2) Работа оказалась трудной зато интересной.\n3) Мальчик взял карандаш и открыл альбом.\n4) Загорелся фонарь и улица стала светлее.\n5) Мы привезли хлеб и сыр и молоко.",
+        "answer": "24",
+        "hint": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "explanation": "В 2 союз зато, в 4 две грамматические основы: по одной запятой. В 1 бессоюзный ряд из трёх сказуемых и в 5 три однородных дополнения с повторением и дают по две запятые; в 3 запятых нет.",
+        "solution": "В 2 союз зато, в 4 две грамматические основы: по одной запятой. В 1 бессоюзный ряд из трёх сказуемых и в 5 три однородных дополнения с повторением и дают по две запятые; в 3 запятых нет.",
+        "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: поставить запятую перед каждым «и» или не заметить две грамматические основы. Сначала разберись со структурой, затем посчитай запятые."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-16-paired",
+      "version": 1,
+      "positionId": "ege-russian-2027-16",
+      "familyId": "exam27-russian-16-homogeneous-compound",
+      "format": "digits-set",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-16-paired",
+        "subject": "russian",
+        "topic": "punctuation",
+        "subtopic": "punctuation.sub.foundation",
+        "skills": [
+          "punctuation.skill.simple"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-16",
+        "answerType": "text",
+        "prompt": "Укажите номера предложений, в которых нужно поставить ровно ОДНУ запятую. Запишите цифры без пробелов в любом порядке.\n\n1) Экскурсия понравилась как детям так и взрослым.\n2) Тропинка была узкой и каменистой.\n3) Птица взлетела но вскоре вернулась.\n4) Ветер утих и дождь закончился.\n5) В коробке были пуговицы нитки ленты и бусины.",
+        "answer": "134",
+        "hint": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "explanation": "В 1 парный как…так и, в 3 но, в 4 две основы: по одной запятой. В 2 одиночный и, в 5 два бессоюзных промежутка, поэтому эти предложения не подходят.",
+        "solution": "В 1 парный как…так и, в 3 но, в 4 две основы: по одной запятой. В 2 одиночный и, в 5 два бессоюзных промежутка, поэтому эти предложения не подходят.",
+        "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: поставить запятую перед каждым «и» или не заметить две грамматические основы. Сначала разберись со структурой, затем посчитай запятые."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-16-alternation",
+      "version": 1,
+      "positionId": "ege-russian-2027-16",
+      "familyId": "exam27-russian-16-homogeneous-compound",
+      "format": "digits-set",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-16-alternation",
+        "subject": "russian",
+        "topic": "punctuation",
+        "subtopic": "punctuation.sub.foundation",
+        "skills": [
+          "punctuation.skill.simple"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-16",
+        "answerType": "text",
+        "prompt": "Укажите номера предложений, в которых нужно поставить ровно ОДНУ запятую. Запишите цифры без пробелов в любом порядке.\n\n1) Мы купили не только тетради но и карандаши.\n2) Костёр горел ярко и ровно.\n3) В комнате слышались то шаги то смех.\n4) Дверь открылась и в зал вошёл мастер.\n5) На лугу цвели и ромашки и васильки и колокольчики.",
+        "answer": "134",
+        "hint": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "explanation": "В 1 парный не только…но и, в 3 повторение то, в 4 разные основы: одна запятая. В 2 её нет; в 5 нужны две между тремя членами.",
+        "solution": "В 1 парный не только…но и, в 3 повторение то, в 4 разные основы: одна запятая. В 2 её нет; в 5 нужны две между тремя членами.",
+        "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: поставить запятую перед каждым «и» или не заметить две грамматические основы. Сначала разберись со структурой, затем посчитай запятые."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-26-personal-subject",
+      "version": 1,
+      "positionId": "ege-russian-2027-26",
+      "familyId": "exam27-russian-26-personal-subject",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-26-personal-subject",
+        "subject": "russian",
+        "topic": "text",
+        "subtopic": "text.sub.foundation",
+        "skills": [
+          "text.skill.link"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-26",
+        "answerType": "number",
+        "prompt": "Среди предложений 2–5 найдите такое, которое связано с непосредственно предыдущим с помощью личного местоимения. Запишите номер этого предложения.\n\n(1) Никита проверил план мастерской.\n(2) Он отметил место для нового стола.\n(3) У стены оставался широкий проход.\n(4) План допускал несколько перестановок.\n(5) Работа началась утром.",
+        "answer": "2",
+        "hint": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "explanation": "Он относится к Никите из предыдущего предложения.",
+        "solution": "Он относится к Никите из предыдущего предложения.",
+        "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: найти местоимение, но не проверить связь с непосредственно предыдущим предложением, или принять притяжательное за личное."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-26-female-subject",
+      "version": 1,
+      "positionId": "ege-russian-2027-26",
+      "familyId": "exam27-russian-26-personal-subject",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-26-female-subject",
+        "subject": "russian",
+        "topic": "text",
+        "subtopic": "text.sub.foundation",
+        "skills": [
+          "text.skill.link"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-26",
+        "answerType": "number",
+        "prompt": "Среди предложений 2–5 найдите такое, которое связано с непосредственно предыдущим с помощью личного местоимения. Запишите номер этого предложения.\n\n(1) Библиотека получила новые книги.\n(2) Анна составила список поступлений.\n(3) Она выделила раздел о природе.\n(4) Список повесили у входа.\n(5) Посетители остановились у стенда.",
+        "answer": "3",
+        "hint": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "explanation": "Она заменяет Анну из предложения 2.",
+        "solution": "Она заменяет Анну из предложения 2.",
+        "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: найти местоимение, но не проверить связь с непосредственно предыдущим предложением, или принять притяжательное за личное."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-26-plural",
+      "version": 1,
+      "positionId": "ege-russian-2027-26",
+      "familyId": "exam27-russian-26-personal-subject",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-26-plural",
+        "subject": "russian",
+        "topic": "text",
+        "subtopic": "text.sub.foundation",
+        "skills": [
+          "text.skill.link"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-26",
+        "answerType": "number",
+        "prompt": "Среди предложений 2–5 найдите такое, которое связано с непосредственно предыдущим с помощью личного местоимения. Запишите номер этого предложения.\n\n(1) У ручья стоял маленький мост.\n(2) На берегу появились путешественники.\n(3) Путешественники разложили инструменты.\n(4) Они решили укрепить настил.\n(5) Ремонт занял два часа.",
+        "answer": "4",
+        "hint": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "explanation": "Они относится к путешественникам из предложения 3; в 3 связь лексическим повтором, а не местоимением.",
+        "solution": "Они относится к путешественникам из предложения 3; в 3 связь лексическим повтором, а не местоимением.",
+        "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: найти местоимение, но не проверить связь с непосредственно предыдущим предложением, или принять притяжательное за личное."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-26-late",
+      "version": 1,
+      "positionId": "ege-russian-2027-26",
+      "familyId": "exam27-russian-26-personal-subject",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-26-late",
+        "subject": "russian",
+        "topic": "text",
+        "subtopic": "text.sub.foundation",
+        "skills": [
+          "text.skill.link"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-26",
+        "answerType": "number",
+        "prompt": "Среди предложений 2–5 найдите такое, которое связано с непосредственно предыдущим с помощью личного местоимения. Запишите номер этого предложения.\n\n(1) Снег укрыл дорожки парка.\n(2) У ворот осталась узкая тропа.\n(3) Рабочие приготовили лопаты.\n(4) Сергей подошёл к тропе первым.\n(5) Он начал расчищать проход.",
+        "answer": "5",
+        "hint": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "explanation": "Он относится к Сергею, названному в предложении 4.",
+        "solution": "Он относится к Сергею, названному в предложении 4.",
+        "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: найти местоимение, но не проверить связь с непосредственно предыдущим предложением, или принять притяжательное за личное."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-26-object",
+      "version": 1,
+      "positionId": "ege-russian-2027-26",
+      "familyId": "exam27-russian-26-personal-oblique",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-26-object",
+        "subject": "russian",
+        "topic": "text",
+        "subtopic": "text.sub.foundation",
+        "skills": [
+          "text.skill.link"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-26",
+        "answerType": "number",
+        "prompt": "Среди предложений 2–5 найдите такое, которое связано с непосредственно предыдущим с помощью личного местоимения. Запишите номер этого предложения.\n\n(1) Собрание назначили на вечер.\n(2) Дмитрий пришёл немного раньше.\n(3) Его позвали проверить проектор.\n(4) Аппарат уже стоял у окна.\n(5) Изображение появилось на стене.",
+        "answer": "3",
+        "hint": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "explanation": "Его здесь — личное местоимение в винительном падеже: позвали Дмитрия, а не притяжательное определение.",
+        "solution": "Его здесь — личное местоимение в винительном падеже: позвали Дмитрия, а не притяжательное определение.",
+        "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: найти местоимение, но не проверить связь с непосредственно предыдущим предложением, или принять притяжательное за личное."
+        }
+      }
+    },
+    {
+      "id": "exam27-russian-26-oblique",
+      "version": 1,
+      "positionId": "ege-russian-2027-26",
+      "familyId": "exam27-russian-26-personal-oblique",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-russian-26-oblique",
+        "subject": "russian",
+        "topic": "text",
+        "subtopic": "text.sub.foundation",
+        "skills": [
+          "text.skill.link"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-russian-2027-26",
+        "answerType": "number",
+        "prompt": "Среди предложений 2–5 найдите такое, которое связано с непосредственно предыдущим с помощью личного местоимения. Запишите номер этого предложения.\n\n(1) Мастерская готовила выставку.\n(2) Столы покрыли светлой тканью.\n(3) Марина принесла свои рисунки.\n(4) Ей предложили место у входа.\n(5) Выставка открылась в полдень.",
+        "answer": "4",
+        "hint": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "explanation": "Ей — дательный падеж личного местоимения она; оно заменяет Марину из предложения 3. Своих в 3 не связывает его с предыдущим предложением.",
+        "solution": "Ей — дательный падеж личного местоимения она; оно заменяет Марину из предложения 3. Своих в 3 не связывает его с предыдущим предложением.",
+        "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: найти местоимение, но не проверить связь с непосредственно предыдущим предложением, или принять притяжательное за личное."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-4-minimal",
+      "version": 1,
+      "positionId": "ege-informatics-2027-4",
+      "familyId": "exam27-informatics-4-minimal",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-4-minimal",
+        "subject": "informatics",
+        "topic": "encoding",
+        "subtopic": "encoding.sub.extension",
+        "skills": [
+          "encoding.skill.3b2-prefix"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-4",
+        "answerType": "number",
+        "prompt": "Для букв А, Б, В заданы двоичные коды 0, 10, 110. Добавляется буква Г. Код должен удовлетворять условию Фано: ни одно кодовое слово не является началом другого. Какова минимальная длина кода Г?",
+        "answer": "3",
+        "hint": "Проверяй и старые префиксы нового кода, и новый префикс старых.",
+        "explanation": "Коды длины 1 и 2 заняты или нарушают условие. 111 допустим, его длина 3.",
+        "solution": "Коды длины 1 и 2 заняты или нарушают условие. 111 допустим, его длина 3.",
+        "principle": "Проверяй и старые префиксы нового кода, и новый префикс старых.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: считать все кодовые слова одинаковой длины или проверить префиксное условие только в одном направлении."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-4-word",
+      "version": 1,
+      "positionId": "ege-informatics-2027-4",
+      "familyId": "exam27-informatics-4-word-length",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-4-word",
+        "subject": "informatics",
+        "topic": "encoding",
+        "subtopic": "encoding.sub.extension",
+        "skills": [
+          "encoding.skill.3b2-prefix"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-4",
+        "answerType": "number",
+        "prompt": "Для четырёх букв принят код: А = 00, Б = 01, В = 10. Для Г выбран кратчайший код с условием Фано. Сколько бит займёт слово АБГГВ?",
+        "answer": "10",
+        "hint": "Сначала восстанови код Г, затем длину всего слова.",
+        "explanation": "Свободный двухбитный код 11 подходит Г. Все пять букв имеют длину 2, итог 10 бит.",
+        "solution": "Свободный двухбитный код 11 подходит Г. Все пять букв имеют длину 2, итог 10 бит.",
+        "principle": "Сначала восстанови код Г, затем длину всего слова.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: считать все кодовые слова одинаковой длины или проверить префиксное условие только в одном направлении."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-4-decode",
+      "version": 1,
+      "positionId": "ege-informatics-2027-4",
+      "familyId": "exam27-informatics-4-decode",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-4-decode",
+        "subject": "informatics",
+        "topic": "encoding",
+        "subtopic": "encoding.sub.extension",
+        "skills": [
+          "encoding.skill.3b2-prefix"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-4",
+        "answerType": "number",
+        "prompt": "Коды: А = 0, Б = 11, В = 100, Г = 101. Сообщение 0111001010 закодировано этими буквами. Сколько букв в исходном сообщении?",
+        "answer": "5",
+        "hint": "Читай префиксный код слева направо.",
+        "explanation": "Разбиение 0 | 11 | 100 | 101 | 0 даёт АБВГА — пять букв.",
+        "solution": "Разбиение 0 | 11 | 100 | 101 | 0 даёт АБВГА — пять букв.",
+        "principle": "Читай префиксный код слева направо.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: считать все кодовые слова одинаковой длины или проверить префиксное условие только в одном направлении."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-4-lex",
+      "version": 1,
+      "positionId": "ege-informatics-2027-4",
+      "familyId": "exam27-informatics-4-lex",
+      "format": "bitstring",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-4-lex",
+        "subject": "informatics",
+        "topic": "encoding",
+        "subtopic": "encoding.sub.extension",
+        "skills": [
+          "encoding.skill.3b2-prefix"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-4",
+        "answerType": "text",
+        "prompt": "Коды А = 00, Б = 01, В = 10. Для Г требуется трёхбитный код с условием Фано. Найдите лексикографически наименьший допустимый код Г. Запишите именно двоичную строку.",
+        "answer": "110",
+        "hint": "Условие длины запрещает брать двухбитный 11.",
+        "explanation": "Любой код, начинающийся на 00, 01 или 10, запрещён. Остаются 110 и 111; первый меньше.",
+        "solution": "Любой код, начинающийся на 00, 01 или 10, запрещён. Остаются 110 и 111; первый меньше.",
+        "principle": "Условие длины запрещает брать двухбитный 11.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: считать все кодовые слова одинаковой длины или проверить префиксное условие только в одном направлении."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-4-capacity",
+      "version": 1,
+      "positionId": "ege-informatics-2027-4",
+      "familyId": "exam27-informatics-4-capacity",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-4-capacity",
+        "subject": "informatics",
+        "topic": "encoding",
+        "subtopic": "encoding.sub.extension",
+        "skills": [
+          "encoding.skill.3b2-prefix"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-4",
+        "answerType": "number",
+        "prompt": "Для букв А = 00, Б = 1, В = 010 задан префиксный код. Сколько разных трёхбитных кодов можно отдельно выбрать для одной новой буквы Г, сохранив условие Фано?",
+        "answer": "1",
+        "hint": "Перебери восемь строк длины 3 и исключи запрещённые префиксы.",
+        "explanation": "000 и 001 начинаются с 00; 010 занят; все 1** начинаются с 1. Только 011 остаётся допустимым.",
+        "solution": "000 и 001 начинаются с 00; 010 занят; все 1** начинаются с 1. Только 011 остаётся допустимым.",
+        "principle": "Перебери восемь строк длины 3 и исключи запрещённые префиксы.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: считать все кодовые слова одинаковой длины или проверить префиксное условие только в одном направлении."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-4-unequal",
+      "version": 1,
+      "positionId": "ege-informatics-2027-4",
+      "familyId": "exam27-informatics-4-word-length",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-4-unequal",
+        "subject": "informatics",
+        "topic": "encoding",
+        "subtopic": "encoding.sub.extension",
+        "skills": [
+          "encoding.skill.3b2-prefix"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-4",
+        "answerType": "number",
+        "prompt": "Двоичные коды: А = 0, Б = 100, В = 101, Г = 110, Д = 111. Сколько бит содержит код слова АБАВА?",
+        "answer": "9",
+        "hint": "Длины букв неодинаковы: не умножай количество букв на одну длину.",
+        "explanation": "1 + 3 + 1 + 3 + 1 = 9 бит. Все коды удовлетворяют условию Фано.",
+        "solution": "1 + 3 + 1 + 3 + 1 = 9 бит. Все коды удовлетворяют условию Фано.",
+        "principle": "Длины букв неодинаковы: не умножай количество букв на одну длину.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: считать все кодовые слова одинаковой длины или проверить префиксное условие только в одном направлении."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-14-mixed",
+      "version": 1,
+      "positionId": "ege-informatics-2027-14",
+      "familyId": "exam27-informatics-14-mixed",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-14-mixed",
+        "subject": "informatics",
+        "topic": "binary",
+        "subtopic": "binary.sub.extension",
+        "skills": [
+          "binary.skill.3b2-binary-base"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-14",
+        "answerType": "number",
+        "prompt": "Найдите десятичное значение суммы 2A₁₆ + 17₈.",
+        "answer": "57",
+        "hint": "Каждую запись переведи по весам её разрядов.",
+        "explanation": "2A₁₆ = 2 · 16 + 10 = 42; 17₈ = 1 · 8 + 7 = 15; сумма 57.",
+        "solution": "2A₁₆ = 2 · 16 + 10 = 42; 17₈ = 1 · 8 + 7 = 15; сумма 57.",
+        "principle": "Каждую запись переведи по весам её разрядов.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: смешать основание системы с цифрой, неправильно обработать перенос или посчитать цифры без учёта заимствования."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-14-unknown",
+      "version": 1,
+      "positionId": "ege-informatics-2027-14",
+      "familyId": "exam27-informatics-14-unknown",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-14-unknown",
+        "subject": "informatics",
+        "topic": "binary",
+        "subtopic": "binary.sub.extension",
+        "skills": [
+          "binary.skill.3b2-binary-base"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-14",
+        "answerType": "number",
+        "prompt": "Число 121 в системе счисления с основанием b равно десятичному 49. Найдите b.",
+        "answer": "6",
+        "hint": "Запиши полином по разрядам и учти b больше 2.",
+        "explanation": "b² + 2b + 1 = 49, значит (b + 1)² = 49. Из положительных оснований подходит b = 6.",
+        "solution": "b² + 2b + 1 = 49, значит (b + 1)² = 49. Из положительных оснований подходит b = 6.",
+        "principle": "Запиши полином по разрядам и учти b больше 2.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: смешать основание системы с цифрой, неправильно обработать перенос или посчитать цифры без учёта заимствования."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-14-binary-power",
+      "version": 1,
+      "positionId": "ege-informatics-2027-14",
+      "familyId": "exam27-informatics-14-binary-power",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-14-binary-power",
+        "subject": "informatics",
+        "topic": "binary",
+        "subtopic": "binary.sub.extension",
+        "skills": [
+          "binary.skill.3b2-binary-base"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-14",
+        "answerType": "number",
+        "prompt": "Сколько единиц в двоичной записи числа 2¹⁵ + 2⁶ − 1?",
+        "answer": "7",
+        "hint": "Число 2⁶ − 1 состоит из шести младших единиц.",
+        "explanation": "2⁶ − 1 = 63 даёт шесть единиц; разряд 2¹⁵ добавляет седьмую без переноса.",
+        "solution": "2⁶ − 1 = 63 даёт шесть единиц; разряд 2¹⁵ добавляет седьмую без переноса.",
+        "principle": "Число 2⁶ − 1 состоит из шести младших единиц.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: смешать основание системы с цифрой, неправильно обработать перенос или посчитать цифры без учёта заимствования."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-14-unknown-digit",
+      "version": 1,
+      "positionId": "ege-informatics-2027-14",
+      "familyId": "exam27-informatics-14-unknown-digit",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-14-unknown-digit",
+        "subject": "informatics",
+        "topic": "binary",
+        "subtopic": "binary.sub.extension",
+        "skills": [
+          "binary.skill.3b2-binary-base"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-14",
+        "answerType": "number",
+        "prompt": "В семеричной записи 2x4 цифра x неизвестна. Найдите x, если число делится на 5. Ответ запишите десятичной цифрой.",
+        "answer": "4",
+        "hint": "Цифра x может быть только от 0 до 6.",
+        "explanation": "Значение равно 2 · 49 + 7x + 4 = 102 + 7x. По модулю 5: 2 + 2x = 0, значит x = 4 среди цифр 0–6.",
+        "solution": "Значение равно 2 · 49 + 7x + 4 = 102 + 7x. По модулю 5: 2 + 2x = 0, значит x = 4 среди цифр 0–6.",
+        "principle": "Цифра x может быть только от 0 до 6.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: смешать основание системы с цифрой, неправильно обработать перенос или посчитать цифры без учёта заимствования."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-14-ternary",
+      "version": 1,
+      "positionId": "ege-informatics-2027-14",
+      "familyId": "exam27-informatics-14-ternary",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-14-ternary",
+        "subject": "informatics",
+        "topic": "binary",
+        "subtopic": "binary.sub.extension",
+        "skills": [
+          "binary.skill.3b2-binary-base"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-14",
+        "answerType": "number",
+        "prompt": "Сколько цифр 2 содержит троичная запись числа 3⁸ − 3²?",
+        "answer": "6",
+        "hint": "Вычитание степени из старшей степени создаёт цепочку цифр основания минус один.",
+        "explanation": "3⁸ − 1 = 22222222₃. Вычитаем ещё 8, то есть 22₃, получаем 22222200₃: шесть двоек.",
+        "solution": "3⁸ − 1 = 22222222₃. Вычитаем ещё 8, то есть 22₃, получаем 22222200₃: шесть двоек.",
+        "principle": "Вычитание степени из старшей степени создаёт цепочку цифр основания минус один.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: смешать основание системы с цифрой, неправильно обработать перенос или посчитать цифры без учёта заимствования."
+        }
+      }
+    },
+    {
+      "id": "exam27-informatics-14-hex-zero",
+      "version": 1,
+      "positionId": "ege-informatics-2027-14",
+      "familyId": "exam27-informatics-14-hex-zero",
+      "format": "integer",
+      "assessment": "automatic",
+      "assets": [],
+      "question": {
+        "id": "exam27-informatics-14-hex-zero",
+        "subject": "informatics",
+        "topic": "binary",
+        "subtopic": "binary.sub.extension",
+        "skills": [
+          "binary.skill.3b2-binary-base"
+        ],
+        "difficulty": "medium",
+        "origin": "generated",
+        "source": "Оригинальная AI-тренировка проекта Stage 3C.1; формат сопоставлен с проектом ФИПИ-2027; не официальный КИМ",
+        "sourceYear": 2026,
+        "sourceType": "exam",
+        "examTaskType": "ege-informatics-2027-14",
+        "answerType": "number",
+        "prompt": "Сколько нулей в шестнадцатеричной записи числа 16⁵ + 16³ + 1?",
+        "answer": "3",
+        "hint": "Раздели ненулевые разряды и нулевые промежутки.",
+        "explanation": "Число записывается как 101001₁₆. В этой шестизначной записи три нуля.",
+        "solution": "Число записывается как 101001₁₆. В этой шестизначной записи три нуля.",
+        "principle": "Раздели ненулевые разряды и нулевые промежутки.",
+        "version": 1,
+        "requires": [],
+        "related": [],
+        "wrongAnswers": {
+          "default": "Типичная ошибка: смешать основание системы с цифрой, неправильно обработать перенос или посчитать цифры без учёта заимствования."
+        }
+      }
+    }
+  ]
+}

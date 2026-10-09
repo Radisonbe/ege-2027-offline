@@ -196,3 +196,7 @@ Authored metadata, mode allocation and independent calculation/negative-program
 checks are recorded in `sources/stage3b2-review.json` and `docs/CONTENT-3B2.md`.
 Publication clearance is hash-pinned in `sources/publication.json`; the existing
 private-import exclusions and third-party notices are unchanged.
+
+## Stage 3C.1 — exam trainer
+
+36 new original generated exam-format tasks live separately in src/data/exam/tasks.json. The 74-position factual map paraphrases competencies from freshly checked FIPI-2027 project specification/demo/codifier archives. Source links/PDF/ZIP SHA-256 and page references: docs/EXAM-2027-SOURCES.md. No official question text, images or solutions are distributed. All tasks stay generated; the position source being official does not make a generated task official. Publication hashes are explicit. Local source archives/rendered evidence, test profiles, progress and personal imports remain ignored.

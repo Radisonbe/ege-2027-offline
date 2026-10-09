@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "node scripts/check-content-bank.mjs && tsc --noEmit && vite build --emptyOutDir false",
+    "build": "node scripts/check-content-bank.mjs && node scripts/check-exam-content.mjs && tsc --noEmit && vite build --emptyOutDir false",
     "audit:public": "node scripts/check-public-content.mjs",
-    "build:public": "node scripts/check-content-bank.mjs && node scripts/check-public-content.mjs && tsc --noEmit && vite build --emptyOutDir false",
+    "build:public": "node scripts/check-content-bank.mjs && node scripts/check-exam-content.mjs && node scripts/check-public-content.mjs && tsc --noEmit && vite build --emptyOutDir false",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test work/tests/*.test.mjs",
-    "check:content": "node scripts/check-content-bank.mjs"
+    "check:content": "node scripts/check-content-bank.mjs && node scripts/check-exam-content.mjs"
   },
   "dependencies": {
     "react": "19.3.0",

@@ -1,5 +1,6 @@
 import type { Question, StudyState } from './types.ts';
 import {validatePythonTask} from '../python/tasks.ts';
+import {validateExamProgress} from './exam-validation.ts';
 
 export const MAX_BACKUP_BYTES = 20 * 1024 * 1024;
 export interface ProgressBackup { format: 'ege-progress-backup'; backupVersion: 2; appVersion: string; createdAt: string; data: StudyState }
@@ -79,10 +80,11 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
 }
 
 export function validateStudyState(value: unknown): StudyState {
-  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive','codeDrafts','training','topicTests']);
+  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive','codeDrafts','training','topicTests','exam']);
   if (s.app !== 'ege-local-center') fail('data.app');
   if (s.schemaVersion !== 1 && s.schemaVersion !== 2) throw new BackupError('Версия схемы данных пока не поддерживается. Текущий прогресс не изменён.');
   if (s.schemaVersion === 1 && s.adaptive !== undefined) fail('data.adaptive');
+  if (s.schemaVersion === 1 && s.exam !== undefined) fail('data.exam');
   if (s.schemaVersion === 2 && s.adaptive === undefined) fail('data.adaptive');
   string(s.contentVersion, 'data.contentVersion', true); instant(s.updatedAt, 'data.updatedAt');
   const topics = dictionary(s.topics, 'data.topics');
@@ -153,6 +155,7 @@ export function validateStudyState(value: unknown): StudyState {
   }
   // Historical IDs are deliberately not restricted to the current content catalogue.
   // Additive migration: historical IDs, snapshots, dates, intervals and notes are untouched.
+  if(s.exam!==undefined){try{validateExamProgress(s.exam);}catch{fail('data.exam');}}
   return s.schemaVersion === 1 ? { ...value as StudyState, schemaVersion: 2, adaptive: { sessions: [], exposures: [] } } : value as StudyState;
 }
 
