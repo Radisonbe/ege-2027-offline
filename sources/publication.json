@@ -316,7 +316,7 @@
       "clearance": "project-generated",
       "source": "Original AI-authored project exercises; official FIPI 2027 projects consulted for skill scope only",
       "license": null,
-      "evidence": "150 authored original exercises: 50 math,35 Russian,35 informatics,30 Python. 13 new lessons and 21 existing-topic supplements. No FIPI or third-party question text, images or solutions imported. Numeric/graph/logic independent calculations, real CPython reference and two incorrect algorithm checks; review detail in sources/stage3b2-review.json and docs/CONTENT-3B2.md.",
+      "evidence": "150 authored original exercises: 50 math,35 Russian,35 informatics,30 Python. 13 new lessons and 21 existing-topic supplements. No FIPI or third-party question text, images or solutions imported. Numeric/graph/logic independent calculations, real CPython reference and two incorrect algorithm checks; review detail in sources/stage3b2-review.json and docs/CONTENT-3B2.md. Post-review methodical correction: unambiguous pronoun antecedent and explicit stdout-only file exercise grading disclosure; no new questions, runner changes or external content.",
       "files": [
         {
           "path": "src/data/stage3b2-lessons.json",
@@ -331,7 +331,7 @@
         {
           "path": "src/data/banks/stage3b2-russian.json",
           "normalization": "lf",
-          "sha256": "ca7e73e76f9ddf52b6faa16c8056557461b745246e98df1f20bfcf90d9877b4e"
+          "sha256": "1d7544f273bee0a593ec451651d3be6ef56f4a18ce9d5df914c65fddc7fbac2e"
         },
         {
           "path": "src/data/banks/stage3b2-informatics.json",
@@ -341,7 +341,7 @@
         {
           "path": "src/data/banks/stage3b2-python.json",
           "normalization": "lf",
-          "sha256": "65005dc94f326fed57f1a71664f8848acc9643200d3c42fa99cc371de2cd84b1"
+          "sha256": "b1eb13ebc44108b76bcc09abaf045bf8b19fc2b98a49c5009f01e45aa2c720be"
         }
       ]
     }

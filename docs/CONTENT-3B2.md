@@ -147,3 +147,26 @@ requests pass. The final local offline inventory has 31 SHA-256-verified resourc
 The last data refinements affect conditions/starter signatures/paragraph breaks;
 reference solution code and grading inputs are unchanged except the added n=1 case.
 All program reference/negative evidence and logs stay in ignored local outputs.
+
+## Independent-review methodical corrections
+
+The first-wave review requested only three condition revisions. The pronoun text
+now uses Oleg and a photograph, leaving only one feminine antecedent for «её»;
+the canonical answer and skill stay unchanged. Both file exercises disclose in
+their visible conditions that automatic grading checks stdout, not file usage.
+File operations remain a learning requirement, subject to manual inspection.
+The three question revisions are version 2 with unchanged IDs. Runner, schema,
+reference programs, grading cases and the 317-question bank size are unchanged.
+
+Post-correction checks: TypeScript and 105 unit tests; three focused browser
+checks for the new wording, frozen old snapshot and offline mobile/desktop
+presentation; seven existing new-bank integration groups for update retention,
+all routes, independent learning modes, Python, drafts and UI backup/import.
+The two file references pass all 12 existing cases and their four specified
+incorrect algorithms are rejected on real Pyodide; seven existing prediction
+programs are rechecked. Content validation, provenance/public audit, production
+build and SHA-256 inventory pass. No mandatory external requests were observed.
+
+The revised complete offline inventory contains 31 resources / 14,826,683 bytes
+(+2,546 bytes against the first-wave build). The existing large-chunk warning
+remains. These are local Chromium checks, not an additional real Android test.

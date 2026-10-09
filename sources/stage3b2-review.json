@@ -1117,8 +1117,8 @@
       "family": "text-pronoun",
       "check": {
         "kind": "language-review",
-        "reason": "«Её» заменяет предмет, который девочка достала и положила на стол: фотографию. Местоимение связывает предложения, сохраняя общий объект действия.",
-        "ambiguity": "Полный авторский контекст и один указанный аспект разбора; не допускается добавлять отсутствующие обстоятельства."
+        "reason": "Местоимение «её» относится к фотографии: Олег достал фотографию и затем положил эту фотографию в альбом. Существительное «фотография» — женского рода и единственного числа; «Олег», «мальчик» и «альбом» — мужского рода. Местоименная замена связывает предложения, позволяя не повторять название предмета.",
+        "ambiguity": "В полном авторском отрывке только фотография является существительным женского рода единственного числа. Олег, мальчик и альбом — мужского рода. Грамматическое согласование и смысл действий дают один ответ: фотографию."
       },
       "independence": "Отдельное условие и операция/контекст; распределение проверено вручную, не числовой вариант тренировочного вопроса.",
       "skill": "text.skill.3b2-text-pronoun",
@@ -2182,7 +2182,8 @@
         "mutants": [
           "text=input()\nwith open(\"message.txt\",\"w\",encoding=\"utf-8\") as f:f.write(text)\nprint(len(text))",
           "text=input()\nprint(text.strip())"
-        ]
+        ],
+        "verificationScope": "stdout only; file operations are a learning requirement for manual inspection, not verified by the automatic grader. The limitation is disclosed in prompt and presentation.statement."
       },
       "independence": "Отдельное условие и операция/контекст; распределение проверено вручную, не числовой вариант тренировочного вопроса.",
       "skill": "py-files.skill.3b2-roundtrip",
@@ -2197,7 +2198,8 @@
         "mutants": [
           "n=int(input())\nprint(sum(int(input()) for _ in range(n)))",
           "n=int(input())\na=[int(input()) for _ in range(n)]\nprint(sum(x>=0 for x in a))"
-        ]
+        ],
+        "verificationScope": "stdout only; file operations are a learning requirement for manual inspection, not verified by the automatic grader. The limitation is disclosed in prompt and presentation.statement."
       },
       "independence": "Отдельное условие и операция/контекст; распределение проверено вручную, не числовой вариант тренировочного вопроса.",
       "skill": "py-files.skill.3b2-process",
