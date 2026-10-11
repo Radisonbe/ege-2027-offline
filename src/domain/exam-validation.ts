@@ -1,5 +1,5 @@
 import { validateQuestion } from './backup.ts';
-import { gradeExam, mapKey, taskKey, type ExamDefinition, type ExamTask, type ExamProgress } from './exam.ts';
+import { gradeExam, compatibleExamFormat, mapKey, taskKey, type ExamDefinition, type ExamTask, type ExamProgress } from './exam.ts';
 function check(ok: unknown, path: string): asserts ok {
     if (!ok)
         throw Error('Неверные экзаменационные данные: ' + path);
@@ -27,13 +27,22 @@ export function validateExamMap(input: unknown): ExamDefinition {
     check(ps.length > 0, 'positions');
     const seen = new Set();
     ps.forEach((v, i) => {
-        const p = obj(v, ['id', 'number', 'title', 'format', 'maxPoints', 'topics', 'skills', 'needs', 'scoring', 'criteria', 'source', 'pages']);
+        const p = obj(v, ['id', 'number', 'title', 'format', 'maxPoints', 'topics', 'skills', 'needs', 'scoring', 'criteria', 'source', 'pages'], ['answerFormats']);
         id(p.id);
         check(!seen.has(p.id), 'duplicate position');
         seen.add(p.id);
         check(p.number === i + 1, 'position order');
         text(p.title);
         check(formats.includes(p.format), 'format');
+        if (p.answerFormats !== undefined) {
+            ids(p.answerFormats);
+            const refinements: Record<string, string[]> = {
+                decimal: ['decimal', 'integer'], 'digits-set': ['digits-set', 'integer'],
+                text: ['text', 'integer', 'bitstring'],
+            };
+            const allowed = refinements[p.format] ?? [p.format];
+            check(p.answerFormats.includes(p.format) && p.answerFormats.every((f: string) => allowed.includes(f)), 'format refinements');
+        }
         num(p.maxPoints, 1, 100);
         ids(p.topics);
         ids(p.skills);
@@ -139,7 +148,7 @@ export function validateExamProgress(input: unknown): ExamProgress {
             used.add(item.key);
             const t = p.snapshots[item.key];
             const pos = map.positions.find((x: any) => x.id === t.positionId);
-            check(pos && t.question.subject === map.subject, 'position reference');
+            check(pos && compatibleExamFormat(map, t), 'position/format reference');
             text(item.answer);
             text(item.draft);
             check(typeof item.assisted === 'boolean', 'assisted');
@@ -166,4 +175,11 @@ export function validateExamProgress(input: unknown): ExamProgress {
             check(items.length === map.positions.length && new Set(items.map(i => p.snapshots[i.key].positionId)).size === map.positions.length && items.every(i => p.snapshots[i.key].assessment === 'automatic' && !map.positions.find((r: any) => r.id === p.snapshots[i.key].positionId).needs.length), 'incomplete full exam');
     }
     return input as ExamProgress;
+}
+
+export function validateExamAlignment(map: ExamDefinition, task: ExamTask): void {
+    check(compatibleExamFormat(map, task), 'incompatible position format');
+    const position = map.positions.find(p => p.id === task.positionId)!;
+    check(position.topics.includes(task.question.topic), 'task topic');
+    check(task.question.skills?.length && task.question.skills.every(s => position.skills.includes(s)), 'task skills');
 }

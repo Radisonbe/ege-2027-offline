@@ -4,7 +4,7 @@
   "exams": [
     {
       "id": "ege-math-2027",
-      "version": "project-2026-10-09.1",
+      "version": "project-2026-10-09.2",
       "subject": "math",
       "year": 2027,
       "status": "project",
@@ -71,10 +71,7 @@
             "probability"
           ],
           "skills": [
-            "probability.skill.3b2-outcomes",
-            "probability.skill.3b2-statistics",
-            "probability.skill.3b2-sequential",
-            "probability.skill.3b2-conditional"
+            "probability.skill.3b2-outcomes"
           ],
           "needs": [],
           "scoring": "exact",
@@ -134,17 +131,16 @@
             "linear",
             "quadratic",
             "roots",
+            "powers",
             "logarithms"
           ],
           "skills": [
-            "roots.skill.principal",
             "linear.skill.solve",
+            "roots.skill.principal",
             "quadratic.skill.3b2-roots",
-            "quadratic.skill.3b2-model",
-            "quadratic.skill.3b2-integer-roots",
+            "powers.skill.rules",
             "logarithms.skill.3b2-definition",
             "logarithms.skill.3b2-domain-equation",
-            "logarithms.skill.3b2-monotonic",
             "logarithms.skill.3b2-exponential"
           ],
           "needs": [],
@@ -439,7 +435,7 @@
     },
     {
       "id": "ege-russian-2027",
-      "version": "project-2026-10-09.1",
+      "version": "project-2026-10-09.2",
       "subject": "russian",
       "year": 2027,
       "status": "project",
@@ -757,12 +753,9 @@
           ],
           "skills": [
             "punctuation.skill.simple",
+            "punctuation.skill.3b2-punct-repeat-and",
             "complex.skill.3b2-structure",
-            "complex.skill.3b2-punctuation",
-            "complex.skill.3b2-meaning",
-            "punctuation.skill.3b2-punct-address",
-            "punctuation.skill.3b2-punct-gerund",
-            "punctuation.skill.3b2-punct-repeat-and"
+            "complex.skill.3b2-punctuation"
           ],
           "needs": [],
           "scoring": "unordered",
@@ -970,14 +963,17 @@
           "skills": [
             "text.skill.link",
             "text.skill.3b2-text-causal",
-            "text.skill.3b2-text-pronoun",
-            "text.skill.3b2-text-metaphor"
+            "text.skill.3b2-text-pronoun"
           ],
           "needs": [],
           "scoring": "unordered",
           "criteria": "Полный правильный набор; порядок цифр несущественен. Частичные баллы не предусмотрены.",
           "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/ru_11_2027.zip",
-          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения"
+          "pages": "Спецификация печатная стр. 18; критерии: стр. 15–16, демоверсия для сочинения",
+          "answerFormats": [
+            "digits-set",
+            "integer"
+          ]
         },
         {
           "id": "ege-russian-2027-27",
@@ -1002,7 +998,7 @@
     },
     {
       "id": "ege-informatics-2027",
-      "version": "project-2026-10-09.1",
+      "version": "project-2026-10-09.2",
       "subject": "informatics",
       "year": 2027,
       "status": "project",
@@ -1085,17 +1081,18 @@
             "encoding"
           ],
           "skills": [
-            "encoding.skill.minimum-bits",
-            "encoding.skill.bytes",
-            "encoding.skill.capacity",
-            "encoding.skill.3b2-prefix",
-            "encoding.skill.3b2-combinations"
+            "encoding.skill.3b2-prefix"
           ],
           "needs": [],
           "scoring": "exact",
           "criteria": "Ответ полностью совпадает с эталоном в установленном формате.",
           "source": "https://doc.fipi.ru/ege/demoversii-specifikacii-kodifikatory/2027/inf_11_2027.zip",
-          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13"
+          "pages": "Спецификация печатная стр. 14; критерии: стр. 12–13",
+          "answerFormats": [
+            "text",
+            "integer",
+            "bitstring"
+          ]
         },
         {
           "id": "ege-informatics-2027-5",
@@ -1283,8 +1280,7 @@
             "binary.skill.from-decimal",
             "binary.skill.weight",
             "binary.skill.hex-to-decimal",
-            "binary.skill.3b2-binary-base",
-            "binary.skill.3b2-binary-rule"
+            "binary.skill.3b2-binary-base"
           ],
           "needs": [],
           "scoring": "exact",

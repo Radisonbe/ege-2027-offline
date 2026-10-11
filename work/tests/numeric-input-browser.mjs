@@ -36,10 +36,10 @@ async function saved(predicate) {
   for(let i=0;i<300;i++){const s=await state();if(predicate(s))return s;await new Promise(r=>setTimeout(r,25));}
   throw Error('Expected persisted numeric answer');
 }
-async function insert(field, text, start, end=start, keyboard=false) {
+async function insert(field, text, start, end=start, keyboard=false, symbol='/') {
   await field.fill(text); await field.focus();
   await field.evaluate((el,range)=>el.setSelectionRange(...range),[start,end]);
-  const key = page.getByRole('button',{name:'Вставить дробную черту',exact:true});
+  const key = page.getByRole('button',{name:symbol==='/'?'Вставить дробную черту':'Вставить минус',exact:true});
   await key.scrollIntoViewIfNeeded();
   const before = await page.evaluate(()=>({x:scrollX,y:scrollY}));
   if(keyboard){await key.focus();await key.press('Enter');}else await key.tap();
@@ -72,6 +72,8 @@ try {
       await page.evaluate(d=>document.documentElement.classList.toggle('dark',d),dark);
       assert.equal(await insert(field,'14',1),'1/4');
       assert.equal(await insert(field,'-14',2),'-1/4');
+      assert.equal(await insert(field,'14',0,0,false,'−'),'−14');
+      assert.equal(await insert(field,'x1/4',0,1,false,'−'),'−1/4');
       assert.equal(await insert(field,'1 replace 4',1,10),'1/4');
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),width+' overflow');
       const bounds=await page.getByRole('button',{name:'Вставить дробную черту',exact:true}).boundingBox();
@@ -99,6 +101,7 @@ try {
   await saved(s=>s.attempts.length===2);
   assert.equal((await state()).attempts.at(-1).answer,'1/4');
   assert.equal(await page.getByRole('button',{name:'Вставить дробную черту',exact:true}).isDisabled(),true);
+  assert.equal(await page.getByRole('button',{name:'Вставить минус',exact:true}).isDisabled(),true);
   await page.getByRole('button',{name:'Попробовать ещё раз',exact:true}).click();
   assert.equal(await insert(field,'-14',2),'-1/4');await check.click();
   const corrected=await saved(s=>s.attempts.at(-1)?.correct);
@@ -125,16 +128,18 @@ try {
   await page.getByLabel('Количество экзаменационных заданий').fill('1');
   await page.getByRole('button',{name:'Начать экзаменационную тренировку',exact:true}).click();
   field=page.getByLabel('Ответ экзаменационного задания');await field.waitFor();
-  assert.equal(await insert(field,'14',1),'1/4');await saved(s=>s.exam?.sessions.at(-1).items[0].answer==='1/4');
+  assert.equal(await page.getByRole('button',{name:'Вставить дробную черту',exact:true}).count(),0);
+  assert.equal(await insert(field,'14',0,0,false,'−'),'−14');
+  await field.fill('1/4');await saved(s=>s.exam?.sessions.at(-1).items[0].answer==='1/4');
   await check.click();await page.getByRole('alert').waitFor();
   assert.equal((await state()).exam.sessions.at(-1).items[0].attempts.length,0);
-  await page.getByText('Запись через / перед проверкой переведи в десятичную.',{exact:false}).waitFor();
+  await page.getByText('Экзаменационный ответ: целое число или конечная десятичная дробь.',{exact:true}).waitFor();
   const route=page.url();
   await context.close();context=await launch();await context.setOffline(true);page=context.pages()[0];watch();
   await page.goto(route);field=page.getByLabel('Ответ экзаменационного задания');await field.waitFor();
   assert.equal(await field.inputValue(),'1/4');
-  assert.equal(await insert(field,'-14',2),'-1/4');
-  const final=await saved(s=>s.exam.sessions.at(-1).items[0].answer==='-1/4');
+  assert.equal(await insert(field,'14',0,0,false,'−'),'−14');
+  const final=await saved(s=>s.exam.sessions.at(-1).items[0].answer==='−14');
   assert.deepEqual(parseBackup(serializeBackup(final)).data,final);
   const inv=JSON.parse(fs.readFileSync(path.join(build,'offline-inventory.json')));
   const cached=await page.evaluate(async()=>{const name=(await caches.keys()).find(n=>n.startsWith('ege-offline:'));return (await(await caches.open(name)).keys()).map(r=>new URL(r.url).pathname.slice('/ege-2027-offline/'.length));});

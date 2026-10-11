@@ -350,17 +350,22 @@
       "clearance": "project-generated",
       "source": "Own generated exam-format training; official FIPI 2027 projects used for structure facts only, documented in docs/EXAM-2027-SOURCES.md",
       "license": null,
-      "evidence": "36 original conditions, answers and explanations; 74 factual project position records, verified using original specification/demo/codifier archives. No third-party exercise text, drawings or solutions copied; source PDFs excluded from Git/build. Independent arithmetic/base/prefix checks and manual language review in sources/exam3c1-review.json and work/tests/exam.test.mjs. Original 317 learning questions remain unchanged.",
+      "evidence": "36 original conditions, answers and explanations; 74 factual project position records, verified using original specification/demo/codifier archives. No third-party exercise text, drawings or solutions copied; source PDFs excluded from Git/build. Independent arithmetic/base/prefix checks and manual language review in sources/exam3c1-review.json and work/tests/exam.test.mjs. Original 317 learning questions remain unchanged. Independent review corrections: precise dice geometry; task revisions preserve IDs/answers; narrowed evidence-based skill links and explicit format refinements. No new tasks or external exercise material. Historical .1 snapshots retain their original contents.",
       "files": [
         {
           "path": "src/data/exam/maps.json",
           "normalization": "lf",
-          "sha256": "8ac94b7dc2f6ac8e6ff1edfeea615a655090b640960c69274c4df2c8a1c2946e"
+          "sha256": "74b1b1210b1166415f597408b58d5b7e474ea5c84671b14ad4db854251cd65df"
         },
         {
           "path": "src/data/exam/tasks.json",
           "normalization": "lf",
-          "sha256": "8ecffde1b463c06e2d1e98552ae464f95b8d0dabbbc032c6fc5d15840e7de0c9"
+          "sha256": "669fe7dd8628d8aaf714ce417e5c96a24bfd220d83cf49d0b70f6156d3b72388"
+        },
+        {
+          "path": "sources/exam3c1-review.json",
+          "normalization": "lf",
+          "sha256": "e2dd0a821ae66afebbec7118d9f2d26d02694ea020fa72485aaa274374c2c5d7"
         }
       ]
     }

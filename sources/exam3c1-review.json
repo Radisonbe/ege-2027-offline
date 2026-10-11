@@ -9,7 +9,8 @@
         "kind": "ratio",
         "favourable": 26,
         "total": 40
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-4-interval",
@@ -19,7 +20,8 @@
         "kind": "difference",
         "a": 0.76,
         "b": 0.28
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-4-rank",
@@ -29,17 +31,19 @@
         "kind": "ratio",
         "favourable": 9,
         "total": 20
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-4-faces",
       "positionId": "ege-math-2027-4",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Geometry corrected to an eight/ten-faced die with explicitly equiprobable outcomes; answer and independent oracle unchanged.",
       "oracle": {
         "kind": "ratio",
         "favourable": 2,
         "total": 8
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-math-4-sections",
@@ -49,17 +53,19 @@
         "kind": "ratio",
         "favourable": 25,
         "total": 50
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-4-threshold",
       "positionId": "ege-math-2027-4",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Geometry corrected to an eight/ten-faced die with explicitly equiprobable outcomes; answer and independent oracle unchanged.",
       "oracle": {
         "kind": "ratio",
         "favourable": 3,
         "total": 10
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-math-7-linear",
@@ -71,7 +77,8 @@
         "b": -14,
         "c": 3,
         "d": 10
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-7-roots",
@@ -83,7 +90,8 @@
         "b": 1,
         "c": 0,
         "d": 25
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-7-quadratic",
@@ -94,7 +102,8 @@
         "a": 1,
         "b": -9,
         "c": 20
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-7-fraction",
@@ -105,7 +114,8 @@
         "offset": 3,
         "pole": 1,
         "target": 2
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-7-exponential",
@@ -116,7 +126,8 @@
         "base": 4,
         "power": 3,
         "offset": 1
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-math-7-logarithm",
@@ -127,12 +138,13 @@
         "base": 2,
         "power": 4,
         "offset": 3
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-russian-16-compound-list",
       "positionId": "ege-russian-2027-16",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Reviewed actual stimulus for homogeneous members, repeated conjunctions and compound-clause punctuation; only exercised skills linked.",
       "oracle": {
         "kind": "language-review",
         "oneComma": "23",
@@ -144,12 +156,13 @@
           "Девочка открыла окно и улыбнулась."
         ],
         "reason": "В 2 две основы, в 3 перечень из трёх предметов с одним союзом в конце. В 1 и 5 один субъект и одиночный и, запятых нет; в 4 три повторяющихся и требуют двух запятых."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-16-opposition",
       "positionId": "ege-russian-2027-16",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Reviewed actual stimulus for homogeneous members, repeated conjunctions and compound-clause punctuation; only exercised skills linked.",
       "oracle": {
         "kind": "language-review",
         "oneComma": "135",
@@ -161,12 +174,13 @@
           "Мы не только прочитали рассказ но и обсудили его."
         ],
         "reason": "В 1 союз но, в 3 две основы, в 5 парный союз не только…но и: по одной запятой. В 2 одиночный и между сказуемыми, в 4 две запятые между четырьмя предметами."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-16-repeated",
       "positionId": "ege-russian-2027-16",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Reviewed actual stimulus for homogeneous members, repeated conjunctions and compound-clause punctuation; only exercised skills linked.",
       "oracle": {
         "kind": "language-review",
         "oneComma": "124",
@@ -178,12 +192,13 @@
           "Лена и Вера приготовили чай."
         ],
         "reason": "В 1 повторяется то, в 2 повторяется и: по одной запятой. В 4 три однородных предмета с одиночным и в конце: одна запятая. В 3 и 5 одиночный и не требует запятой."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-16-adversative",
       "positionId": "ege-russian-2027-16",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Reviewed actual stimulus for homogeneous members, repeated conjunctions and compound-clause punctuation; only exercised skills linked.",
       "oracle": {
         "kind": "language-review",
         "oneComma": "24",
@@ -195,12 +210,13 @@
           "Мы привезли хлеб и сыр и молоко."
         ],
         "reason": "В 2 союз зато, в 4 две грамматические основы: по одной запятой. В 1 бессоюзный ряд из трёх сказуемых и в 5 три однородных дополнения с повторением и дают по две запятые; в 3 запятых нет."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-16-paired",
       "positionId": "ege-russian-2027-16",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Reviewed actual stimulus for homogeneous members, repeated conjunctions and compound-clause punctuation; only exercised skills linked.",
       "oracle": {
         "kind": "language-review",
         "oneComma": "134",
@@ -212,12 +228,13 @@
           "В коробке были пуговицы нитки ленты и бусины."
         ],
         "reason": "В 1 парный как…так и, в 3 но, в 4 две основы: по одной запятой. В 2 одиночный и, в 5 два бессоюзных промежутка, поэтому эти предложения не подходят."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-16-alternation",
       "positionId": "ege-russian-2027-16",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Reviewed actual stimulus for homogeneous members, repeated conjunctions and compound-clause punctuation; only exercised skills linked.",
       "oracle": {
         "kind": "language-review",
         "oneComma": "134",
@@ -229,12 +246,13 @@
           "На лугу цвели и ромашки и васильки и колокольчики."
         ],
         "reason": "В 1 парный не только…но и, в 3 повторение то, в 4 разные основы: одна запятая. В 2 её нет; в 5 нужны две между тремя членами."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-26-personal-subject",
       "positionId": "ege-russian-2027-26",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Personal-pronoun agreement and antecedent relation linked; metaphor is not assessed. One index refines the allowed unordered digit set.",
       "oracle": {
         "kind": "language-review",
         "sentences": [
@@ -246,12 +264,13 @@
         ],
         "target": 2,
         "reason": "Он относится к Никите из предыдущего предложения."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-26-female-subject",
       "positionId": "ege-russian-2027-26",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Personal-pronoun agreement and antecedent relation linked; metaphor is not assessed. One index refines the allowed unordered digit set.",
       "oracle": {
         "kind": "language-review",
         "sentences": [
@@ -263,12 +282,13 @@
         ],
         "target": 3,
         "reason": "Она заменяет Анну из предложения 2."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-26-plural",
       "positionId": "ege-russian-2027-26",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Personal-pronoun agreement and antecedent relation linked; metaphor is not assessed. One index refines the allowed unordered digit set.",
       "oracle": {
         "kind": "language-review",
         "sentences": [
@@ -280,12 +300,13 @@
         ],
         "target": 4,
         "reason": "Они относится к путешественникам из предложения 3; в 3 связь лексическим повтором, а не местоимением."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-26-late",
       "positionId": "ege-russian-2027-26",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Personal-pronoun agreement and antecedent relation linked; metaphor is not assessed. One index refines the allowed unordered digit set.",
       "oracle": {
         "kind": "language-review",
         "sentences": [
@@ -297,12 +318,13 @@
         ],
         "target": 5,
         "reason": "Он относится к Сергею, названному в предложении 4."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-26-object",
       "positionId": "ege-russian-2027-26",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Personal-pronoun agreement and antecedent relation linked; metaphor is not assessed. One index refines the allowed unordered digit set.",
       "oracle": {
         "kind": "language-review",
         "sentences": [
@@ -314,12 +336,13 @@
         ],
         "target": 3,
         "reason": "Его здесь — личное местоимение в винительном падеже: позвали Дмитрия, а не притяжательное определение."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-russian-26-oblique",
       "positionId": "ege-russian-2027-26",
-      "review": "Original condition; narrow compatible format, not complete coverage of the position.",
+      "review": "Original condition; narrow compatible format, not complete coverage of the position. Personal-pronoun agreement and antecedent relation linked; metaphor is not assessed. One index refines the allowed unordered digit set.",
       "oracle": {
         "kind": "language-review",
         "sentences": [
@@ -331,7 +354,8 @@
         ],
         "target": 4,
         "reason": "Ей — дательный падеж личного местоимения она; оно заменяет Марину из предложения 3. Своих в 3 не связывает его с предыдущим предложением."
-      }
+      },
+      "version": 2
     },
     {
       "id": "exam27-informatics-4-minimal",
@@ -344,7 +368,8 @@
           "10",
           "110"
         ]
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-4-word",
@@ -359,7 +384,8 @@
           "Г": "11"
         },
         "word": "АБГГВ"
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-4-decode",
@@ -374,7 +400,8 @@
           "101"
         ],
         "bits": "0111001010"
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-4-lex",
@@ -388,7 +415,8 @@
           "10"
         ],
         "length": 3
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-4-capacity",
@@ -402,7 +430,8 @@
           "010"
         ],
         "length": 3
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-4-unequal",
@@ -418,7 +447,8 @@
           "Д": "111"
         },
         "word": "АБАВА"
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-14-mixed",
@@ -436,7 +466,8 @@
             8
           ]
         ]
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-14-unknown",
@@ -446,7 +477,8 @@
         "kind": "base-find",
         "digits": "121",
         "value": 49
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-14-binary-power",
@@ -473,7 +505,8 @@
             -1
           ]
         ]
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-14-unknown-digit",
@@ -485,7 +518,8 @@
         "prefix": 2,
         "suffix": 4,
         "divisor": 5
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-14-ternary",
@@ -507,7 +541,8 @@
             -1
           ]
         ]
-      }
+      },
+      "version": 1
     },
     {
       "id": "exam27-informatics-14-hex-zero",
@@ -534,7 +569,8 @@
             1
           ]
         ]
-      }
+      },
+      "version": 1
     }
   ]
 }

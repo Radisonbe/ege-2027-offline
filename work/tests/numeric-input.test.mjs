@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { insertFractionSlash } from '../../src/domain/numeric-input.ts';
+import { insertFractionSlash, insertAnswerSymbol } from '../../src/domain/numeric-input.ts';
 import { parseNumber, checkAnswer } from '../../src/domain/answers.ts';
 
 test('Fraction key inserts at start, middle, end and replaces a selection', () => {
@@ -36,4 +36,13 @@ test('Zero denominators and malformed answers remain unscored format errors', ()
   assert.equal(checkAnswer(q, '-0,25').correct, true);
   assert.equal(checkAnswer(q, '1/4').valid, true);
   assert.equal(checkAnswer(q, '1/4').correct, false);
+});
+
+test('Minus key preserves suffix and replaces selection; Unicode minus keeps parser semantics', () => {
+  assert.deepEqual(insertAnswerSymbol('14',0,0,'−'),{value:'−14',cursor:1});
+  assert.deepEqual(insertAnswerSymbol('x1/4',0,1,'−'),{value:'−1/4',cursor:1});
+  assert.deepEqual(insertAnswerSymbol('1234',2,3,'−'),{value:'12−4',cursor:3});
+  assert.equal(parseNumber('12−4'),null);
+  assert.equal(parseNumber('−1/4'),-0.25);
+  assert.equal(insertAnswerSymbol('12',0,0,'−',2),null);
 });

@@ -7,6 +7,7 @@ export interface ExamPosition {
     number: number;
     title: string;
     format: ExamFormat;
+    answerFormats?: ExamFormat[];
     maxPoints: number;
     topics: string[];
     skills: string[];
@@ -99,8 +100,25 @@ export const emptyExam = (): ExamProgress => ({ schemaVersion: 1, maps: {}, snap
 export const mapKey = (map: ExamDefinition) => `${map.id}@${map.version}`;
 export const taskKey = (task: ExamTask) => `${task.id}@${task.version}`;
 function stableContent(value: unknown) { return JSON.stringify(value, (_key, item) => item && typeof item === 'object' && !Array.isArray(item) ? Object.fromEntries(Object.keys(item).sort().map(key => [key, item[key]])) : item); }
-export function coverage(map: ExamDefinition, tasks: ExamTask[]) { return map.positions.map(p => { const own = tasks.filter(t => t.positionId === p.id && t.assessment === 'automatic'); return { position: p, count: own.length, status: own.length >= 10 && new Set(own.map(t => t.familyId)).size >= 3 ? 'Готово' : own.length ? 'Ограниченный банк' : 'В разработке' }; }); }
-export function fullExamAvailable(map: ExamDefinition, tasks: ExamTask[]) { return map.status !== 'unverified' && map.positions.every(p => tasks.some(t => t.positionId === p.id && t.assessment === 'automatic' && !p.needs.length)); }
+/** Explicit refinements; archived .1 maps did not yet store these declarations. */
+export function compatibleExamFormat(map: ExamDefinition, task: ExamTask): boolean {
+    const position = map.positions.find(p => p.id === task.positionId);
+    if (!position || task.question.subject !== map.subject) return false;
+    const legacy: Record<string, { base: ExamFormat; formats: ExamFormat[] }> = {
+        'ege-russian-2027-26': { base: 'digits-set', formats: ['digits-set', 'integer'] },
+        'ege-informatics-2027-4': { base: 'text', formats: ['text', 'integer', 'bitstring'] },
+    };
+    const previous = legacy[position.id];
+    const historical = map.version === 'project-2026-10-09.1' && previous?.base === position.format;
+    const allowed = position.answerFormats ?? (historical ? previous.formats : undefined) ?? [position.format];
+    if (!allowed.includes(task.format)) return false;
+    // One positive sentence index is a singleton of the position's digit set.
+    if (position.format === 'digits-set' && task.format === 'integer')
+        return /^[1-9]\d*$/.test(task.question.answer);
+    return true;
+}
+export function coverage(map: ExamDefinition, tasks: ExamTask[]) { return map.positions.map(p => { const own = tasks.filter(t => t.positionId === p.id && t.assessment === 'automatic' && compatibleExamFormat(map, t)); return { position: p, count: own.length, status: own.length >= 10 && new Set(own.map(t => t.familyId)).size >= 3 ? 'Готово' : own.length ? 'Ограниченный банк' : 'В разработке' }; }); }
+export function fullExamAvailable(map: ExamDefinition, tasks: ExamTask[]) { return map.status !== 'unverified' && map.positions.every(p => tasks.some(t => t.positionId === p.id && t.assessment === 'automatic' && compatibleExamFormat(map, t) && !p.needs.length)); }
 function rank(seed: string, id: string) {
     let h = 2166136261;
     for (const c of seed + '|' + id) {
@@ -114,7 +132,7 @@ export function selectExamTasks(map: ExamDefinition, tasks: ExamTask[], position
         throw Error('Выбери от 1 до 50 заданий.');
     if (!positions.length || positions.some(id => !map.positions.some(p => p.id === id)))
         throw Error('Выбери доступные номера этого экзамена.');
-    const list = tasks.filter(t => positions.includes(t.positionId) && t.assessment === 'automatic' && (!topics.length || topics.includes(t.question.topic)) && (!difficulty.length || difficulty.includes(t.question.difficulty)));
+    const list = tasks.filter(t => positions.includes(t.positionId) && t.assessment === 'automatic' && compatibleExamFormat(map, t) && (!topics.length || topics.includes(t.question.topic)) && (!difficulty.length || difficulty.includes(t.question.difficulty)));
     const unique = [...new Map(list.map(t => [t.id, t])).values()].sort((a, b) => rank(seed, a.id) - rank(seed, b.id) || a.id.localeCompare(b.id));
     const selected = unique.slice(0, count);
     if (order === 'numbers')
@@ -128,7 +146,7 @@ export function startExam(progress: ExamProgress, map: ExamDefinition, tasks: Ex
         throw Error('Неверный идентификатор сеанса.');
     if (progress.sessions.some(s => s.id === id))
         throw Error('Сеанс уже существует.');
-    if (!tasks.length || new Set(tasks.map(t => t.id)).size !== tasks.length || tasks.some(t => !map.positions.some(p => p.id === t.positionId)))
+    if (!tasks.length || new Set(tasks.map(t => t.id)).size !== tasks.length || tasks.some(t => !compatibleExamFormat(map, t)))
         throw Error('Проверь состав тренировки.');
     if (mode === 'full' && (!fullExamAvailable(map, tasks) || tasks.length !== map.positions.length || new Set(tasks.map(t => t.positionId)).size !== map.positions.length))
         throw Error('Полный пробник недоступен: не все обязательные позиции обеспечены.');

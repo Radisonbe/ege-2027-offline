@@ -860,7 +860,9 @@ button {
 .output-view-scroll pre{margin:0;min-width:100%;width:max-content;white-space:pre;overflow:visible;font:15px/1.6 ui-monospace,Consolas,monospace;user-select:text}
 @media(max-width:600px){.program-examples{grid-template-columns:1fr}.output-viewer header strong{font-size:15px}.output-view-tools .button{padding:8px 10px}}
 
-.numeric-answer-input{display:grid;grid-template-columns:minmax(0,1fr) 48px;gap:8px;align-items:center;max-width:460px}
+.numeric-answer-input{display:grid;grid-template-columns:minmax(0,1fr) 48px 48px;gap:8px;align-items:center;max-width:460px}
 .numeric-answer-input input{min-width:0;width:100%;max-width:none}
-.numeric-answer-input .fraction-input-key{min-width:48px;min-height:48px;padding:8px;font-size:22px;line-height:1;touch-action:manipulation}
+.numeric-answer-input .numeric-input-key{min-width:48px;min-height:48px;padding:8px;font-size:22px;line-height:1;touch-action:manipulation}
 .exam-session .numeric-answer-input{max-width:none}
+
+.numeric-answer-input.without-fraction{grid-template-columns:minmax(0,1fr) 48px}

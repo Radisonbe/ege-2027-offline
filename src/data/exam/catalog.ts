@@ -1,6 +1,6 @@
 import maps from './maps.json';
 import tasks from './tasks.json';
-import { validateExamMap, validateExamTask } from '../../domain/exam-validation';
+import { validateExamMap, validateExamTask, validateExamAlignment } from '../../domain/exam-validation';
 import type { ExamDefinition, ExamTask } from '../../domain/exam';
 export const examDiagnostics: string[] = [];
 export const exams: ExamDefinition[] = [];
@@ -23,6 +23,7 @@ try {
         const t = validateExamTask(task);
         if (ids.has(t.id) || !exams.some(m => m.positions.some(p => p.id === t.positionId)))
             throw Error('Связи банка');
+        validateExamAlignment(exams.find(m => m.positions.some(p => p.id === t.positionId))!, t);
         ids.add(t.id);
         examTasks.push(t);
     }

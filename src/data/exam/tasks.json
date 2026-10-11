@@ -114,7 +114,7 @@
     },
     {
       "id": "exam27-math-4-faces",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-math-2027-4",
       "familyId": "exam27-math-4-outcome-enumeration",
       "format": "decimal",
@@ -135,13 +135,13 @@
         "sourceType": "exam",
         "examTaskType": "ege-math-2027-4",
         "answerType": "number",
-        "prompt": "На гранях честного восьмигранного кубика написаны числа 1–8 по одному разу. Найдите вероятность того, что при одном броске выпадет число, делящееся на 3.",
+        "prompt": "На гранях симметричной восьмигранной игральной кости написаны числа 1–8 по одному разу. Найдите вероятность того, что при одном броске выпадет число, делящееся на 3. Все восемь исходов равновероятны.",
         "answer": "0.25",
         "hint": "Перечисли нужные грани, а не все возможные делители.",
         "explanation": "Подходят 3 и 6: две грани из восьми. P = 2/8 = 0,25.",
         "solution": "Подходят 3 и 6: две грани из восьми. P = 2/8 = 0,25.",
         "principle": "Перечисли нужные грани, а не все возможные делители.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -188,7 +188,7 @@
     },
     {
       "id": "exam27-math-4-threshold",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-math-2027-4",
       "familyId": "exam27-math-4-outcome-enumeration",
       "format": "decimal",
@@ -209,13 +209,13 @@
         "sourceType": "exam",
         "examTaskType": "ege-math-2027-4",
         "answerType": "number",
-        "prompt": "Честный десятигранный кубик содержит числа от 0 до 9. Найдите вероятность того, что единственный результат броска будет больше 6.",
+        "prompt": "На гранях десятигранной игральной кости написаны числа от 0 до 9 по одному разу. Все десять исходов равновероятны. Найдите вероятность того, что единственный результат броска будет больше 6.",
         "answer": "0.3",
         "hint": "Слово «больше» исключает число 6.",
         "explanation": "Подходят 7, 8, 9: три результата из десяти, вероятность 0,3.",
         "solution": "Подходят 7, 8, 9: три результата из десяти, вероятность 0,3.",
         "principle": "Слово «больше» исключает число 6.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -447,7 +447,7 @@
     },
     {
       "id": "exam27-russian-16-compound-list",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-16",
       "familyId": "exam27-russian-16-homogeneous-compound",
       "format": "digits-set",
@@ -459,7 +459,10 @@
         "topic": "punctuation",
         "subtopic": "punctuation.sub.foundation",
         "skills": [
-          "punctuation.skill.simple"
+          "punctuation.skill.simple",
+          "punctuation.skill.3b2-punct-repeat-and",
+          "complex.skill.3b2-structure",
+          "complex.skill.3b2-punctuation"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -474,7 +477,7 @@
         "explanation": "В 2 две основы, в 3 перечень из трёх предметов с одним союзом в конце. В 1 и 5 один субъект и одиночный и, запятых нет; в 4 три повторяющихся и требуют двух запятых.",
         "solution": "В 2 две основы, в 3 перечень из трёх предметов с одним союзом в конце. В 1 и 5 один субъект и одиночный и, запятых нет; в 4 три повторяющихся и требуют двух запятых.",
         "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -484,7 +487,7 @@
     },
     {
       "id": "exam27-russian-16-opposition",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-16",
       "familyId": "exam27-russian-16-homogeneous-compound",
       "format": "digits-set",
@@ -496,7 +499,9 @@
         "topic": "punctuation",
         "subtopic": "punctuation.sub.foundation",
         "skills": [
-          "punctuation.skill.simple"
+          "punctuation.skill.simple",
+          "complex.skill.3b2-structure",
+          "complex.skill.3b2-punctuation"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -511,7 +516,7 @@
         "explanation": "В 1 союз но, в 3 две основы, в 5 парный союз не только…но и: по одной запятой. В 2 одиночный и между сказуемыми, в 4 две запятые между четырьмя предметами.",
         "solution": "В 1 союз но, в 3 две основы, в 5 парный союз не только…но и: по одной запятой. В 2 одиночный и между сказуемыми, в 4 две запятые между четырьмя предметами.",
         "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -521,7 +526,7 @@
     },
     {
       "id": "exam27-russian-16-repeated",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-16",
       "familyId": "exam27-russian-16-homogeneous-compound",
       "format": "digits-set",
@@ -533,7 +538,8 @@
         "topic": "punctuation",
         "subtopic": "punctuation.sub.foundation",
         "skills": [
-          "punctuation.skill.simple"
+          "punctuation.skill.simple",
+          "punctuation.skill.3b2-punct-repeat-and"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -548,7 +554,7 @@
         "explanation": "В 1 повторяется то, в 2 повторяется и: по одной запятой. В 4 три однородных предмета с одиночным и в конце: одна запятая. В 3 и 5 одиночный и не требует запятой.",
         "solution": "В 1 повторяется то, в 2 повторяется и: по одной запятой. В 4 три однородных предмета с одиночным и в конце: одна запятая. В 3 и 5 одиночный и не требует запятой.",
         "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -558,7 +564,7 @@
     },
     {
       "id": "exam27-russian-16-adversative",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-16",
       "familyId": "exam27-russian-16-homogeneous-compound",
       "format": "digits-set",
@@ -570,7 +576,10 @@
         "topic": "punctuation",
         "subtopic": "punctuation.sub.foundation",
         "skills": [
-          "punctuation.skill.simple"
+          "punctuation.skill.simple",
+          "punctuation.skill.3b2-punct-repeat-and",
+          "complex.skill.3b2-structure",
+          "complex.skill.3b2-punctuation"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -585,7 +594,7 @@
         "explanation": "В 2 союз зато, в 4 две грамматические основы: по одной запятой. В 1 бессоюзный ряд из трёх сказуемых и в 5 три однородных дополнения с повторением и дают по две запятые; в 3 запятых нет.",
         "solution": "В 2 союз зато, в 4 две грамматические основы: по одной запятой. В 1 бессоюзный ряд из трёх сказуемых и в 5 три однородных дополнения с повторением и дают по две запятые; в 3 запятых нет.",
         "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -595,7 +604,7 @@
     },
     {
       "id": "exam27-russian-16-paired",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-16",
       "familyId": "exam27-russian-16-homogeneous-compound",
       "format": "digits-set",
@@ -607,7 +616,9 @@
         "topic": "punctuation",
         "subtopic": "punctuation.sub.foundation",
         "skills": [
-          "punctuation.skill.simple"
+          "punctuation.skill.simple",
+          "complex.skill.3b2-structure",
+          "complex.skill.3b2-punctuation"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -622,7 +633,7 @@
         "explanation": "В 1 парный как…так и, в 3 но, в 4 две основы: по одной запятой. В 2 одиночный и, в 5 два бессоюзных промежутка, поэтому эти предложения не подходят.",
         "solution": "В 1 парный как…так и, в 3 но, в 4 две основы: по одной запятой. В 2 одиночный и, в 5 два бессоюзных промежутка, поэтому эти предложения не подходят.",
         "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -632,7 +643,7 @@
     },
     {
       "id": "exam27-russian-16-alternation",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-16",
       "familyId": "exam27-russian-16-homogeneous-compound",
       "format": "digits-set",
@@ -644,7 +655,10 @@
         "topic": "punctuation",
         "subtopic": "punctuation.sub.foundation",
         "skills": [
-          "punctuation.skill.simple"
+          "punctuation.skill.simple",
+          "punctuation.skill.3b2-punct-repeat-and",
+          "complex.skill.3b2-structure",
+          "complex.skill.3b2-punctuation"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -659,7 +673,7 @@
         "explanation": "В 1 парный не только…но и, в 3 повторение то, в 4 разные основы: одна запятая. В 2 её нет; в 5 нужны две между тремя членами.",
         "solution": "В 1 парный не только…но и, в 3 повторение то, в 4 разные основы: одна запятая. В 2 её нет; в 5 нужны две между тремя членами.",
         "principle": "Сначала найди грамматические основы, затем проверь однородные члены и союзы.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -669,7 +683,7 @@
     },
     {
       "id": "exam27-russian-26-personal-subject",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-26",
       "familyId": "exam27-russian-26-personal-subject",
       "format": "integer",
@@ -681,7 +695,8 @@
         "topic": "text",
         "subtopic": "text.sub.foundation",
         "skills": [
-          "text.skill.link"
+          "text.skill.link",
+          "text.skill.3b2-text-pronoun"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -696,7 +711,7 @@
         "explanation": "Он относится к Никите из предыдущего предложения.",
         "solution": "Он относится к Никите из предыдущего предложения.",
         "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -706,7 +721,7 @@
     },
     {
       "id": "exam27-russian-26-female-subject",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-26",
       "familyId": "exam27-russian-26-personal-subject",
       "format": "integer",
@@ -718,7 +733,8 @@
         "topic": "text",
         "subtopic": "text.sub.foundation",
         "skills": [
-          "text.skill.link"
+          "text.skill.link",
+          "text.skill.3b2-text-pronoun"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -733,7 +749,7 @@
         "explanation": "Она заменяет Анну из предложения 2.",
         "solution": "Она заменяет Анну из предложения 2.",
         "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -743,7 +759,7 @@
     },
     {
       "id": "exam27-russian-26-plural",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-26",
       "familyId": "exam27-russian-26-personal-subject",
       "format": "integer",
@@ -755,7 +771,8 @@
         "topic": "text",
         "subtopic": "text.sub.foundation",
         "skills": [
-          "text.skill.link"
+          "text.skill.link",
+          "text.skill.3b2-text-pronoun"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -770,7 +787,7 @@
         "explanation": "Они относится к путешественникам из предложения 3; в 3 связь лексическим повтором, а не местоимением.",
         "solution": "Они относится к путешественникам из предложения 3; в 3 связь лексическим повтором, а не местоимением.",
         "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -780,7 +797,7 @@
     },
     {
       "id": "exam27-russian-26-late",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-26",
       "familyId": "exam27-russian-26-personal-subject",
       "format": "integer",
@@ -792,7 +809,8 @@
         "topic": "text",
         "subtopic": "text.sub.foundation",
         "skills": [
-          "text.skill.link"
+          "text.skill.link",
+          "text.skill.3b2-text-pronoun"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -807,7 +825,7 @@
         "explanation": "Он относится к Сергею, названному в предложении 4.",
         "solution": "Он относится к Сергею, названному в предложении 4.",
         "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -817,7 +835,7 @@
     },
     {
       "id": "exam27-russian-26-object",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-26",
       "familyId": "exam27-russian-26-personal-oblique",
       "format": "integer",
@@ -829,7 +847,8 @@
         "topic": "text",
         "subtopic": "text.sub.foundation",
         "skills": [
-          "text.skill.link"
+          "text.skill.link",
+          "text.skill.3b2-text-pronoun"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -844,7 +863,7 @@
         "explanation": "Его здесь — личное местоимение в винительном падеже: позвали Дмитрия, а не притяжательное определение.",
         "solution": "Его здесь — личное местоимение в винительном падеже: позвали Дмитрия, а не притяжательное определение.",
         "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {
@@ -854,7 +873,7 @@
     },
     {
       "id": "exam27-russian-26-oblique",
-      "version": 1,
+      "version": 2,
       "positionId": "ege-russian-2027-26",
       "familyId": "exam27-russian-26-personal-oblique",
       "format": "integer",
@@ -866,7 +885,8 @@
         "topic": "text",
         "subtopic": "text.sub.foundation",
         "skills": [
-          "text.skill.link"
+          "text.skill.link",
+          "text.skill.3b2-text-pronoun"
         ],
         "difficulty": "medium",
         "origin": "generated",
@@ -881,7 +901,7 @@
         "explanation": "Ей — дательный падеж личного местоимения она; оно заменяет Марину из предложения 3. Своих в 3 не связывает его с предыдущим предложением.",
         "solution": "Ей — дательный падеж личного местоимения она; оно заменяет Марину из предложения 3. Своих в 3 не связывает его с предыдущим предложением.",
         "principle": "Смотри на связь именно с соседним предложением. Отличай личное местоимение от притяжательного.",
-        "version": 1,
+        "version": 2,
         "requires": [],
         "related": [],
         "wrongAnswers": {

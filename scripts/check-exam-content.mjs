@@ -1,13 +1,13 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';
-import {validateExamMap,validateExamTask} from '../src/domain/exam-validation.ts';
+import {validateExamMap,validateExamTask,validateExamAlignment} from '../src/domain/exam-validation.ts';
 export function checkExamContent(){
  const mapFile=JSON.parse(fs.readFileSync('src/data/exam/maps.json')),taskFile=JSON.parse(fs.readFileSync('src/data/exam/tasks.json')),review=JSON.parse(fs.readFileSync('sources/exam3c1-review.json'));
  assert.equal(mapFile.schemaVersion,1);assert.equal(taskFile.schemaVersion,1);assert.equal(review.schemaVersion,1);assert.equal(Object.keys(mapFile).sort().join(','),'exams,reviewedOn,schemaVersion');assert.equal(Object.keys(taskFile).sort().join(','),'schemaVersion,tasks');
  const maps=mapFile.exams.map(validateExamMap),tasks=taskFile.tasks.map(validateExamTask),positions=maps.flatMap(m=>m.positions),taxonomy=JSON.parse(fs.readFileSync('src/data/taxonomy.json'));
  assert.equal(new Set(maps.map(m=>m.id)).size,maps.length);assert.equal(new Set(tasks.map(t=>t.id)).size,tasks.length);assert.equal(new Set(positions.map(p=>p.id)).size,positions.length);assert.equal(new Set(review.questions.map(r=>r.id)).size,tasks.length);assert.equal(review.questions.length,tasks.length);
  const topicIds=new Set(JSON.parse(fs.readFileSync('src/data/reference.json')).topics.map(t=>t.id));
- for(const p of positions){for(const id of p.topics)assert.ok(topicIds.has(id),id);for(const id of p.skills)assert.ok(taxonomy.skills.some(s=>s.id===id));}
- for(const task of tasks){const map=maps.find(m=>m.positions.some(p=>p.id===task.positionId)),q=task.question,r=review.questions.find(r=>r.id===task.id);assert.ok(map&&r);assert.equal(map.subject,q.subject);assert.equal(q.origin,'generated');assert.ok(q.source.includes('не официальный'));assert.ok(q.skills.length);for(const id of q.skills)assert.ok(taxonomy.skills.some(s=>s.id===id&&s.topic===q.topic));
+ for(const p of positions){for(const id of p.topics)assert.ok(topicIds.has(id),id);for(const id of p.skills)assert.ok(taxonomy.skills.some(s=>s.id===id&&p.topics.includes(s.topic)),id+' position topic');}
+ for(const task of tasks){const map=maps.find(m=>m.positions.some(p=>p.id===task.positionId)),q=task.question,r=review.questions.find(r=>r.id===task.id);assert.ok(map&&r);assert.equal(r.version,task.version,task.id+' review version');assert.equal(map.subject,q.subject);validateExamAlignment(map,task);assert.equal(q.origin,'generated');assert.ok(q.source.includes('не официальный'));assert.ok(q.skills.length);if(q.subtopic)assert.ok(taxonomy.subtopics.some(s=>s.id===q.subtopic&&s.topic===q.topic),task.id+' subtopic');for(const id of q.requires??[])assert.ok(topicIds.has(id),task.id+' prerequisite');for(const id of q.skills)assert.ok(taxonomy.skills.some(s=>s.id===id&&map.positions.find(p=>p.id===task.positionId).topics.includes(s.topic)));
   const c=r.oracle;let result;
   if(c.kind==='language-review')continue;
   if(c.kind==='ratio')result=c.favourable/c.total;

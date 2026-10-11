@@ -200,3 +200,9 @@ private-import exclusions and third-party notices are unchanged.
 ## Stage 3C.1 — exam trainer
 
 36 new original generated exam-format tasks live separately in src/data/exam/tasks.json. The 74-position factual map paraphrases competencies from freshly checked FIPI-2027 project specification/demo/codifier archives. Source links/PDF/ZIP SHA-256 and page references: docs/EXAM-2027-SOURCES.md. No official question text, images or solutions are distributed. All tasks stay generated; the position source being official does not make a generated task official. Publication hashes are explicit. Local source archives/rendered evidence, test profiles, progress and personal imports remain ignored.
+
+После независимого ревью Stage 3C.1 (2026-10-11): геометрические формулировки
+и метаданные навыков собственного generated-банка уточнены; ID и ответы всех
+36 задач сохранены, изменённые задачи получили новую версию. Карта `.2`
+содержит явные уточнения форматов и проверенные учебные связи. Первичные
+тексты ФИПИ не добавлены в банк. См. docs/EXAM-2027-SOURCES.md.
