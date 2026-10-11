@@ -14,7 +14,17 @@
         "c2a-informatics-unknown-digit",
         "c2a-informatics-hex-add",
         "c2a-informatics-append-zero",
-        "c2a-informatics-ones"
+        "c2a-informatics-ones",
+        "c2b-informatics-binary-place-mask",
+        "c2b-informatics-binary-subtraction",
+        "c2b-informatics-binary-unknown-digit",
+        "c2b-informatics-binary-base-restore",
+        "c2b-informatics-binary-trailing-capacity",
+        "c2b-informatics-binary-leading",
+        "c2b-informatics-binary-last-digit",
+        "c2b-informatics-binary-bit-capacity",
+        "c2b-informatics-binary-order",
+        "c2b-informatics-binary-complement"
       ],
       "test": [
         "b5",
@@ -25,7 +35,9 @@
         "b2-informatics-binary-carry",
         "b2-informatics-binary-rule",
         "c2a-informatics-unknown-base",
-        "c2a-informatics-capacity-interval"
+        "c2a-informatics-capacity-interval",
+        "c2b-informatics-binary-test-append-one",
+        "c2b-informatics-binary-test-count"
       ]
     },
     "encoding": {
@@ -40,7 +52,13 @@
         "c2a-informatics-alphabet-17",
         "c2a-informatics-message-volume",
         "c2a-informatics-fano-valid",
-        "c2a-informatics-fixed-word"
+        "c2a-informatics-fixed-word",
+        "c2b-informatics-encoding-alphabet",
+        "c2b-informatics-encoding-capacity-inverse",
+        "c2b-informatics-encoding-password",
+        "c2b-informatics-encoding-decode",
+        "c2b-informatics-encoding-new-letter",
+        "c2b-informatics-encoding-redundancy"
       ],
       "test": [
         "c3",
@@ -50,7 +68,9 @@
         "b1-informatics-11",
         "b2-informatics-encoding-prefix",
         "b2-informatics-encoding-permutations",
-        "c2a-informatics-permutation"
+        "c2a-informatics-permutation",
+        "c2b-informatics-encoding-test-code-length",
+        "c2b-informatics-encoding-test-prefix-failure"
       ]
     },
     "functions": {
@@ -64,7 +84,12 @@
         "b2-math-func-intersection",
         "c2a-math-argument",
         "c2a-math-domain",
-        "c2a-math-tariff"
+        "c2a-math-tariff",
+        "c2b-math-function-linear-infer",
+        "c2b-math-function-difference",
+        "c2b-math-function-vertex",
+        "c2b-math-function-domain-holes",
+        "c2b-math-function-scale-sign"
       ],
       "test": [
         "f3",
@@ -73,7 +98,8 @@
         "b1-math-25",
         "b2-math-func-domain-two",
         "b2-math-func-model-tariff",
-        "c2a-math-zero"
+        "c2a-math-zero",
+        "c2b-math-function-test-meeting"
       ]
     },
     "percent": {
@@ -89,7 +115,15 @@
         "c2a-math-part",
         "c2a-math-two-bases",
         "c2a-math-mixture",
-        "c2a-math-reverse-chain"
+        "c2a-math-reverse-chain",
+        "c2b-math-percent-composition",
+        "c2b-math-percent-equal-sum",
+        "c2b-math-percent-points",
+        "c2b-math-percent-recover-discount",
+        "c2b-math-percent-mixture-salt",
+        "c2b-math-percent-voters",
+        "c2b-math-percent-saving",
+        "c2b-math-percent-compared"
       ],
       "test": [
         "b1-math-09",
@@ -101,7 +135,9 @@
         "b1-math-15",
         "b2-math-pct-return",
         "b2-math-pct-plan",
-        "c2a-math-ratio"
+        "c2a-math-ratio",
+        "c2b-math-percent-test-reverse",
+        "c2b-math-percent-test-plan"
       ]
     },
     "py-variables": {
@@ -136,7 +172,9 @@
         "b1-python-06",
         "b2-python-py-leap",
         "c2a-python-two-if",
-        "c2a-python-boxes-needed"
+        "c2a-python-boxes-needed",
+        "c2b-python-if-independent",
+        "c2b-python-if-short-circuit"
       ],
       "test": [
         "py-i2",
@@ -157,7 +195,11 @@
         "c2a-python-break-before",
         "c2a-python-nested-count",
         "c2a-python-sum_between",
-        "c2a-python-count-changes"
+        "c2a-python-count-changes",
+        "c2b-python-loop-continue",
+        "c2b-python-loop-while-pop",
+        "c2b-python-loop-triangular",
+        "c2b-python-count-signs"
       ],
       "test": [
         "py-l2",
@@ -193,7 +235,17 @@
         "b2-python-move_zeros",
         "c2a-python-alias",
         "c2a-python-running_totals",
-        "c2a-python-edge_swap"
+        "c2a-python-edge_swap",
+        "c2b-python-list-extend",
+        "c2b-python-list-append",
+        "c2b-python-list-pop",
+        "c2b-python-list-rebind",
+        "c2b-python-list-copy-mutate",
+        "c2b-python-positive-prefix",
+        "c2b-python-replace-negatives",
+        "c2b-python-adjacent-increases",
+        "c2b-python-running-maxima",
+        "c2b-python-sum-distinct"
       ],
       "test": [
         "py-li2",
@@ -201,7 +253,8 @@
         "b1-python-19",
         "b2-python-rotate_right",
         "b2-python-second_largest",
-        "c2a-python-slice-copy"
+        "c2a-python-slice-copy",
+        "c2b-python-list-test-slice"
       ]
     },
     "py-sets": {
@@ -230,14 +283,19 @@
         "b1-python-20",
         "b2-python-word_counts",
         "b2-python-group_totals",
-        "c2a-python-overwrite"
+        "c2a-python-overwrite",
+        "c2b-python-dict-get-no-insert",
+        "c2b-python-dict-key-overwrite",
+        "c2b-python-dict-alias",
+        "c2b-python-frequent-first"
       ],
       "test": [
         "py-d2",
         "b1-python-21",
         "b1-python-22",
         "b2-python-most_frequent",
-        "b2-python-predict-get"
+        "b2-python-predict-get",
+        "c2b-python-dict-test-membership"
       ]
     },
     "py-functions": {
@@ -246,14 +304,17 @@
         "b1-python-23",
         "b2-python-clamp",
         "b2-python-predict-default",
-        "c2a-python-early-return"
+        "c2a-python-early-return",
+        "c2b-python-function-local-rebind",
+        "c2b-python-balance-cut"
       ],
       "test": [
         "py-f2",
         "b1-python-24",
         "b1-python-25",
         "b2-python-gcd_nonnegative",
-        "c2a-python-none"
+        "c2a-python-none",
+        "c2b-python-function-test-mutation"
       ]
     },
     "py-files": {
@@ -291,7 +352,12 @@
         "s4",
         "b1-russian-06",
         "b1-russian-07",
-        "c2a-russian-subordinate-basis"
+        "c2a-russian-subordinate-basis",
+        "c2b-russian-sentence-one-basis",
+        "c2b-russian-sentence-two-bases",
+        "c2b-russian-sentence-impersonal",
+        "c2b-russian-sentence-relative",
+        "c2b-russian-sentence-indirect-agent"
       ],
       "test": [
         "b1-russian-08",
@@ -299,7 +365,8 @@
         "b1-russian-10",
         "b1-russian-11",
         "b1-russian-12",
-        "c2a-russian-main-basis"
+        "c2a-russian-main-basis",
+        "c2b-russian-sentence-test-subordinate"
       ]
     },
     "unionwords": {
@@ -313,7 +380,12 @@
         "b2-russian-union-role-place",
         "c2a-russian-relative-object",
         "c2a-russian-that-conjunction",
-        "c2a-russian-because"
+        "c2a-russian-because",
+        "c2b-russian-union-question-object",
+        "c2b-russian-union-report",
+        "c2b-russian-union-place",
+        "c2b-russian-union-because",
+        "c2b-russian-union-if"
       ],
       "test": [
         "b1-russian-13",
@@ -322,7 +394,8 @@
         "b1-russian-17",
         "b2-russian-union-no-role",
         "b2-russian-union-object",
-        "c2a-russian-that-subject"
+        "c2a-russian-that-subject",
+        "c2b-russian-union-test-whom"
       ]
     },
     "logic": {
@@ -333,7 +406,12 @@
         "b2-informatics-logic-implication",
         "c2a-informatics-truth-count",
         "c2a-informatics-exclusive",
-        "c2a-informatics-universal-threshold"
+        "c2a-informatics-universal-threshold",
+        "c2b-informatics-logic-conjunction",
+        "c2b-informatics-logic-demorgan",
+        "c2b-informatics-logic-interval",
+        "c2b-informatics-logic-negated-range",
+        "c2b-informatics-logic-exclusive-three"
       ],
       "test": [
         "b1-informatics-14",
@@ -341,7 +419,8 @@
         "b1-informatics-16",
         "b2-informatics-logic-interval",
         "b2-informatics-logic-parameter",
-        "c2a-informatics-negated-condition"
+        "c2a-informatics-negated-condition",
+        "c2b-informatics-logic-test-universal"
       ]
     },
     "information": {
@@ -353,13 +432,20 @@
         "c2a-informatics-kib",
         "c2a-informatics-transmit",
         "c2a-informatics-aligned",
-        "c2a-informatics-bitmap"
+        "c2a-informatics-bitmap",
+        "c2b-informatics-info-units-mixed",
+        "c2b-informatics-info-speed",
+        "c2b-informatics-info-compression",
+        "c2b-informatics-info-two-channels",
+        "c2b-informatics-info-packet-overhead",
+        "c2b-informatics-info-resolution"
       ],
       "test": [
         "b1-informatics-19",
         "b1-informatics-20",
         "b2-informatics-info-audio",
-        "b2-informatics-info-row-round"
+        "b2-informatics-info-row-round",
+        "c2b-informatics-info-test-time-budget"
       ]
     },
     "infpython": {
@@ -386,13 +472,17 @@
         "c2a-math-brackets",
         "c2a-math-absolute",
         "c2a-math-error-order",
-        "c2a-math-packaging"
+        "c2a-math-packaging",
+        "c2b-math-arith-negative-average",
+        "c2b-math-arith-divisibility",
+        "c2b-math-arith-round-money"
       ],
       "test": [
         "b1-math-03",
         "b1-math-04",
         "b2-math-arith-rounding",
-        "b2-math-arith-negative-square"
+        "b2-math-arith-negative-square",
+        "c2b-math-arith-test-distribution"
       ]
     },
     "fractions": {
@@ -403,7 +493,17 @@
         "b2-math-frac-complex",
         "c2a-math-signed-sum",
         "c2a-math-nested-share",
-        "c2a-math-division"
+        "c2a-math-division",
+        "c2b-math-fraction-compound",
+        "c2b-math-fraction-remainder-share",
+        "c2b-math-fraction-units",
+        "c2b-math-fraction-inverse-dose",
+        "c2b-math-fraction-error-subtract",
+        "c2b-math-fraction-negative-divisor",
+        "c2b-math-fraction-perimeter",
+        "c2b-math-fraction-known-part",
+        "c2b-math-fraction-nested",
+        "c2b-math-fraction-speed"
       ],
       "test": [
         "b1-math-06",
@@ -411,7 +511,9 @@
         "b2-math-frac-restore",
         "b2-math-frac-compare",
         "c2a-math-inverse",
-        "c2a-math-compare"
+        "c2a-math-compare",
+        "c2b-math-fraction-test-balance",
+        "c2b-math-fraction-test-error"
       ]
     },
     "powers": {
@@ -419,13 +521,21 @@
         "b1-math-16",
         "b2-math-power-negative",
         "c2a-math-negative-square",
-        "c2a-math-negative-exponent"
+        "c2a-math-negative-exponent",
+        "c2b-math-power-outside-minus",
+        "c2b-math-power-product-bases",
+        "c2b-math-power-quotient-inverse",
+        "c2b-math-power-squared-fraction",
+        "c2b-math-power-scaled-area",
+        "c2b-math-power-error-add"
       ],
       "test": [
         "b1-math-17",
         "b1-math-18",
         "b2-math-power-compare",
-        "c2a-math-combined"
+        "c2a-math-combined",
+        "c2b-math-power-test-count",
+        "c2b-math-power-test-model"
       ]
     },
     "roots": {
@@ -433,23 +543,37 @@
         "b1-math-19",
         "b2-math-root-absolute",
         "c2a-math-principal",
-        "c2a-math-sum"
+        "c2a-math-sum",
+        "c2b-math-root-factor",
+        "c2b-math-root-bound",
+        "c2b-math-root-absolute-shift",
+        "c2b-math-root-error-sum",
+        "c2b-math-root-fraction"
       ],
       "test": [
         "b1-math-20",
-        "b2-math-root-simplify"
+        "b2-math-root-simplify",
+        "c2b-math-root-test-distance"
       ]
     },
     "linear": {
       "practice": [
         "b1-math-21",
         "c2a-math-both-sides",
-        "c2a-math-fractions"
+        "c2a-math-fractions",
+        "c2b-math-linear-negative",
+        "c2b-math-linear-thirds",
+        "c2b-math-linear-identity-check",
+        "c2b-math-linear-cancel",
+        "c2b-math-linear-fixed-distance",
+        "c2b-math-linear-error-sign"
       ],
       "test": [
         "b1-math-22",
         "b1-math-23",
-        "c2a-math-contradiction"
+        "c2a-math-contradiction",
+        "c2b-math-linear-test-restriction",
+        "c2b-math-linear-test-age"
       ]
     },
     "speech": {
@@ -458,7 +582,13 @@
         "b1-russian-02",
         "b2-russian-speech-substantive",
         "c2a-russian-adverb-time",
-        "c2a-russian-pronoun"
+        "c2a-russian-pronoun",
+        "c2b-russian-speech-infinitive",
+        "c2b-russian-speech-ordinal",
+        "c2b-russian-speech-adverb-degree",
+        "c2b-russian-speech-pronoun",
+        "c2b-russian-speech-preposition",
+        "c2b-russian-speech-homonym"
       ],
       "test": [
         "b1-russian-03",
@@ -466,7 +596,9 @@
         "b1-russian-05",
         "b2-russian-speech-like",
         "b2-russian-speech-state",
-        "c2a-russian-noun-vs-verb"
+        "c2a-russian-noun-vs-verb",
+        "c2b-russian-speech-test-participle",
+        "c2b-russian-speech-test-gerund"
       ]
     },
     "spelling": {
@@ -488,14 +620,20 @@
         "b1-russian-21",
         "b2-russian-punct-address",
         "c2a-russian-single-and",
-        "c2a-russian-gerund"
+        "c2a-russian-gerund",
+        "c2b-russian-punct-address",
+        "c2b-russian-punct-adversative",
+        "c2b-russian-punct-gerund",
+        "c2b-russian-punct-list",
+        "c2b-russian-punct-paired"
       ],
       "test": [
         "b1-russian-22",
         "b1-russian-23",
         "b2-russian-punct-gerund",
         "b2-russian-punct-repeat-and",
-        "c2a-russian-address"
+        "c2a-russian-address",
+        "c2b-russian-punct-test-common"
       ]
     },
     "text": {
@@ -503,13 +641,19 @@
         "b1-russian-24",
         "b2-russian-text-causal",
         "c2a-russian-pronoun-clear",
-        "c2a-russian-lexical-repetition"
+        "c2a-russian-lexical-repetition",
+        "c2b-russian-text-repeat",
+        "c2b-russian-text-pronoun",
+        "c2b-russian-text-causal",
+        "c2b-russian-text-adversative",
+        "c2b-russian-text-synonym"
       ],
       "test": [
         "b1-russian-25",
         "b2-russian-text-pronoun",
         "b2-russian-text-metaphor",
-        "c2a-russian-cause-order"
+        "c2a-russian-cause-order",
+        "c2b-russian-text-test-order"
       ]
     },
     "quadratic": {
@@ -518,12 +662,18 @@
         "b2-math-quad-discriminant",
         "b2-math-quad-width",
         "c2a-math-zero-factor",
-        "c2a-math-model"
+        "c2a-math-model",
+        "c2b-math-quadratic-sum",
+        "c2b-math-quadratic-product",
+        "c2b-math-quadratic-discriminant",
+        "c2b-math-quadratic-shift-square",
+        "c2b-math-quadratic-model-margin"
       ],
       "test": [
         "b2-math-quad-parameter",
         "b2-math-quad-square",
-        "c2a-math-double-root"
+        "c2a-math-double-root",
+        "c2b-math-quadratic-test-positive"
       ]
     },
     "inequalities": {
@@ -543,7 +693,13 @@
         "b2-math-word-meeting",
         "b2-math-word-mixture",
         "c2a-math-speed",
-        "c2a-math-work"
+        "c2a-math-work",
+        "c2b-math-word-travel-stops",
+        "c2b-math-word-upstream",
+        "c2b-math-word-two-products",
+        "c2b-math-word-average-speed",
+        "c2b-math-word-stock-balance",
+        "c2b-math-word-work-break"
       ],
       "test": [
         "b2-math-word-workers",
@@ -558,7 +714,13 @@
         "b2-math-prob-no-return",
         "c2a-math-ordered-dice",
         "c2a-math-median",
-        "c2a-math-without-replacement"
+        "c2a-math-without-replacement",
+        "c2b-math-prob-complement",
+        "c2b-math-prob-or-intersection",
+        "c2b-math-prob-one-red",
+        "c2b-math-prob-mean-missing",
+        "c2b-math-prob-median-even",
+        "c2b-math-prob-independent"
       ],
       "test": [
         "b2-math-prob-conditional",
@@ -596,13 +758,21 @@
         "b2-russian-member-definition",
         "c2a-russian-inversion",
         "c2a-russian-object",
-        "c2a-russian-homogeneous-basis"
+        "c2a-russian-homogeneous-basis",
+        "c2b-russian-member-object",
+        "c2b-russian-member-definition",
+        "c2b-russian-member-adverbial",
+        "c2b-russian-member-inverted",
+        "c2b-russian-member-passive",
+        "c2b-russian-member-infinitive"
       ],
       "test": [
         "b2-russian-member-infinitive",
         "b2-russian-member-adverb",
         "c2a-russian-predicate-compound",
-        "c2a-russian-circumstance"
+        "c2a-russian-circumstance",
+        "c2b-russian-member-test-compound",
+        "c2b-russian-member-test-nominal"
       ]
     },
     "prepositions": {
@@ -638,7 +808,11 @@
         "b2-russian-complex-shared",
         "b2-russian-complex-insert",
         "c2a-russian-common-time",
-        "c2a-russian-purpose"
+        "c2a-russian-purpose",
+        "c2b-russian-complex-subordinate",
+        "c2b-russian-complex-coordinate",
+        "c2b-russian-complex-purpose",
+        "c2b-russian-complex-relative"
       ],
       "test": [
         "b2-russian-complex-homogeneous",
@@ -653,12 +827,18 @@
         "b2-informatics-graph-paths",
         "c2a-informatics-degree",
         "c2a-informatics-shortest",
-        "c2a-informatics-tree"
+        "c2a-informatics-tree",
+        "c2b-informatics-graph-degree",
+        "c2b-informatics-graph-handshake",
+        "c2b-informatics-graph-paths-dag",
+        "c2b-informatics-graph-min-distance",
+        "c2b-informatics-graph-tree-extra"
       ],
       "test": [
         "b2-informatics-graph-through",
         "b2-informatics-graph-network",
-        "c2a-informatics-paths"
+        "c2a-informatics-paths",
+        "c2b-informatics-graph-test-blocked"
       ]
     },
     "tables": {

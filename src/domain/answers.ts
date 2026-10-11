@@ -31,7 +31,11 @@ export function checkAnswer(question: Question, value: string): AnswerResult {
     return { valid: true, correct: Math.abs(answer - expected) <= 1e-9 * Math.max(1, Math.abs(expected)), normalized: String(answer) };
   }
   if(question.answerFormat==='python-output'){const normalized=value.trim().replace(/\s+/g,' '),expected=question.answer.trim().replace(/\s+/g,' ');return {valid:true,correct:normalized===expected,normalized};}
-  if (question.answerType === 'choice' && !question.options?.includes(value)) return { valid: false, message: 'Выбери один из предложенных вариантов.' };
+  if (question.answerType === 'choice') {
+    if (!question.options?.includes(value)) return { valid: false, message: 'Выбери один из предложенных вариантов.' };
+    // A radio option is an identity, not free text: spaces/punctuation can carry the tested rule.
+    return {valid:true,correct:value===question.answer,normalized:value};
+  }
   if ((question.id === 'b2'||question.answerFormat==='binary') && !/^[01]+$/.test(value.trim())) return { valid: false, message: 'Двоичная запись состоит только из 0 и 1. Исправь ввод — попытка пока не учитывается.' };
   return { valid: true, correct: normalizeText(value) === normalizeText(question.answer), normalized: normalizeText(value) };
 }

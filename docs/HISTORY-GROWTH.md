@@ -110,3 +110,7 @@ The 20 MiB cap and all historical records remain unchanged. Future safe work:
 measure before export, a visible size warning, pooled immutable historical
 snapshots with a versioned migration, and optional portable archive exports
 with verified restoration. Never silently delete history to make an export fit.
+
+## Stage 3C.2 B
+
+Банк увеличен до 699 заданий; пул quick practice — 393 ID в 44 готовых темах. Pooled snapshots остаются id@version, старые объекты не пересоздаются. Новая контрольная попытка ограничена шестью снимками, старые сохранённые сеансы не обрезаются. Это уменьшает размер новых попыток, но не решает накопление истории: 20 МиБ остаются техническим долгом. Безопасный будущий этап — диагностика размера перед экспортом, добровольные архивы с контролем ссылок и восстановлением; удаления или изменения лимита сейчас нет.

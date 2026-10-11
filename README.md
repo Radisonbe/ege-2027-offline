@@ -202,3 +202,5 @@ See docs/CONTENT-3C2.md, CONTENT-3C2-COVERAGE.md, CONTENT-3C2-QUALITY.md and
 CONTENT-3C2-SESSIONS.md. For numeric QA use trusted Python 3 (standard library);
 set EGE_ORACLE_PYTHON if it is not available as python/python3. No Python
 installation or production dependency is required by the app itself.
+
+Stage 3C.2 package B (local, application version remains 0.5.0): 200 further generated exercises, 150 practice /30 controls /20 exam. Current combined bank: 614 learning +85 exam. New topic mini-test attempts draw at most six controls; old sessions stay intact. See [docs/CONTENT-3C2-B.md](docs/CONTENT-3C2-B.md). No public release has been made.

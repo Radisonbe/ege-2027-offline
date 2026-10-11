@@ -27,7 +27,31 @@ def decode_count(bits,codes):
   if len(match)!=1:raise ValueError('ambiguous code')
   bits=bits[len(match[0]):];count+=1
  return count
-safe=dict(linear_solution_count=linear_solution_count,Fraction=Fraction,isqrt=isqrt,product=product,permutations=permutations,run_loop=run_loop,count_commands=count_commands,min_prefix_length=min_prefix_length,minimum_two_codes=minimum_two_codes,decode_count=decode_count,range=range,zip=zip,int=int,str=str,len=len,bin=bin,format=format,pow=pow,sum=sum,next=next,min=min,max=max,abs=abs,sorted=sorted,list=list,map=map,all=all,bool=bool)
+def digits(n,b):
+ if n==0:return [0]
+ result=[]
+ while n:
+  n,r=divmod(n,b);result.append(r)
+ return result[::-1]
+def path_count(edges,start,end,via=None):
+ def walk(node,seen):
+  if node==end:return int(via is None or via in seen)
+  return sum(walk(b,seen+[b]) for a,b in edges if a==node and b not in seen)
+ return walk(start,[start])
+def shortest_path(edges,start,end):
+ nodes=sorted({v for a,b,w in edges for v in [a,b]})
+ candidates=[]
+ costs={(a,b):w for a,b,w in edges}
+ costs.update({(b,a):w for a,b,w in edges})
+ middle=[n for n in nodes if n not in [start,end]]
+ for size in range(len(middle)+1):
+  for group in permutations(middle,size):
+   route=[start,*group,end]
+   if all((a,b) in costs for a,b in zip(route,route[1:])):
+    candidates.append(sum(costs[a,b] for a,b in zip(route,route[1:])))
+ return min(candidates)
+
+safe=dict(digits=digits,path_count=path_count,shortest_path=shortest_path,linear_solution_count=linear_solution_count,Fraction=Fraction,isqrt=isqrt,product=product,permutations=permutations,run_loop=run_loop,count_commands=count_commands,min_prefix_length=min_prefix_length,minimum_two_codes=minimum_two_codes,decode_count=decode_count,range=range,zip=zip,int=int,str=str,len=len,bin=bin,format=format,pow=pow,sum=sum,next=next,min=min,max=max,abs=abs,sorted=sorted,list=list,map=map,all=all,bool=bool)
 results=[]
 for record in json.load(sys.stdin):
  source=record['verification'];tree=ast.parse(source,mode='eval')

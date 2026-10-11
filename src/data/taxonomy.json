@@ -2428,6 +2428,78 @@
       "requires": [],
       "related": [],
       "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3c2-prefix-scan",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Найти длину начального участка до первого нарушения",
+      "requires": [
+        "py-loops",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3c2-transform",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Преобразовать каждый элемент с сохранением позиций",
+      "requires": [
+        "py-loops",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3c2-adjacent",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Сравнить соседние элементы последовательности",
+      "requires": [
+        "py-loops",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3c2-running-extrema",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Накопить максимум каждого префикса",
+      "requires": [
+        "py-loops",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3c2-distinct-sum",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.extension",
+      "title": "Учесть каждое значение один раз без требования множеств",
+      "requires": [
+        "py-loops",
+        "py-functions"
+      ],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-functions.skill.3c2-prefix-balance",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.extension",
+      "title": "Найти первый разрез с равными суммами частей",
+      "requires": [
+        "py-lists",
+        "py-loops"
+      ],
+      "related": [],
+      "remediates": []
     }
   ]
 }

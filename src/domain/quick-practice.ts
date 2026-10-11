@@ -1,5 +1,6 @@
+import {family} from './question-families.ts';
+export {family,legacyFamilyAliases} from './question-families.ts';
 // Mirrors the reviewed alias registry; parity is tested. Avoid JSON module import attributes in Chromium dev mode.
-export const legacyFamilyAliases:Record<string,string>={'b2-math-log-definition':'log-definition','b1-math-20':'root-absolute','b2-math-root-absolute':'root-absolute','b1-math-19':'root-exact'};
 import type {Question,StudyState,Attempt,SubjectId,Topic,Skill} from './types.ts';
 import {validateQuestion} from './backup.ts';
 import {recordTraining} from './study-flow.ts';
@@ -8,7 +9,6 @@ export interface QuickItem {key:string;answer:string;correct:boolean|null;shown:
 export interface QuickSession {id:string;startedAt:string;completedAt?:string;index:number;preferences:QuickPreferences;items:QuickItem[]}
 export interface QuickProgress {schemaVersion:1;preferences:QuickPreferences;snapshots:Record<string,Question>;sessions:QuickSession[]}
 export const quickKey=(q:Question)=>q.id+'@'+q.version;
-export const family=(q:Question)=>q.familyId??(Object.hasOwn(legacyFamilyAliases,q.id)?legacyFamilyAliases[q.id]:undefined)??('legacy:'+q.topic+':'+(q.skills??[q.id]).join(','));
 export function quickDefaults(state:StudyState,topics:Topic[]):QuickPreferences {
  return {subjects:['math','russian','informatics','python'],topics:topics.filter(t=>t.materialStatus==='ready'&&state.topics[t.id]&&state.topics[t.id].status!=='Не изучено').map(t=>t.id),count:20,difficulty:'mixed',unseenFirst:true,allowRepeats:false};
 }

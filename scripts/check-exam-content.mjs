@@ -4,7 +4,7 @@ export function checkExamContent(){
  const mapFile=JSON.parse(fs.readFileSync('src/data/exam/maps.json')),taskFile=JSON.parse(fs.readFileSync('src/data/exam/tasks.json')),review=JSON.parse(fs.readFileSync('sources/exam3c1-review.json'));
  assert.equal(mapFile.schemaVersion,1);assert.equal(taskFile.schemaVersion,1);assert.equal(review.schemaVersion,1);assert.equal(Object.keys(mapFile).sort().join(','),'exams,reviewedOn,schemaVersion');assert.equal(Object.keys(taskFile).sort().join(','),'schemaVersion,tasks');
  const additions=fs.readdirSync('src/data/exam').filter(n=>/^stage3c2-.*\.json$/.test(n)).flatMap(n=>JSON.parse(fs.readFileSync('src/data/exam/'+n)).tasks);
- const addedReview=JSON.parse(fs.readFileSync('sources/stage3c2-a-review.json')).questions.filter(r=>r.mode==='exam');
+ const addedReview=['a','b'].flatMap(pack=>JSON.parse(fs.readFileSync('sources/stage3c2-'+pack+'-review.json')).questions.filter(r=>r.mode==='exam'));
  taskFile.tasks.push(...additions);review.questions.push(...addedReview.map(r=>({id:r.id,version:1,oracle:{kind:'stage3c2-check'}})));
  const maps=mapFile.exams.map(validateExamMap),tasks=taskFile.tasks.map(validateExamTask),positions=maps.flatMap(m=>m.positions),taxonomy=JSON.parse(fs.readFileSync('src/data/taxonomy.json'));
  assert.equal(new Set(maps.map(m=>m.id)).size,maps.length);assert.equal(new Set(tasks.map(t=>t.id)).size,tasks.length);assert.equal(new Set(positions.map(p=>p.id)).size,positions.length);assert.equal(new Set(review.questions.map(r=>r.id)).size,tasks.length);assert.equal(review.questions.length,tasks.length);

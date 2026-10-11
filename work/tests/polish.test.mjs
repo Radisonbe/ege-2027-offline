@@ -19,7 +19,7 @@ test('Every display token preserves original source and parses deterministically
  assert.equal(plainExponent('²⁰'),'20');assert.equal(plainExponent('^-3'),'-3');assert.equal(mathParts('√x²')[0].kind,'root');assert.equal(mathParts('2^10')[0].exponent,'10');
 });
 test('Polishing changes only programming test/explanation revisions; IDs, conditions, solutions and old cases are retained',()=>{
- assert.equal(bank.filter(q=>!q.id.startsWith("b2-")&&!q.id.startsWith("c2a-")).length,167);assert.equal(codes.length,25);
+ assert.equal(bank.filter(q=>!q.id.startsWith("b2-")&&!/^c2[ab]-/.test(q.id)).length,167);assert.equal(codes.length,25);
  for(const old of oldBank){const current=bank.find(q=>q.id===old.id);assert.ok(current);if(old.answerType!=='code'){assert.deepEqual(current,old);continue;}
   assert.equal(current.version,3);for(const field of ['prompt','answer','solution','hint','hints','origin','topic','skills','requires','subtopic'])assert.deepEqual(current[field],old[field],old.id+' '+field);
   assert.deepEqual(current.python.visibleTests,old.python.visibleTests);assert.deepEqual(current.python.hiddenTests.slice(0,old.python.hiddenTests.length),old.python.hiddenTests);

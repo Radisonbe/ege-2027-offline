@@ -6,3 +6,5 @@ console.log(`Content bank valid: ${questions.length} questions, ${taxonomy.subto
 console.log('Stage 3B.2 independent content checks:',checkWave({structural:false}));
 
 const wave=checkC2();console.log('Stage 3C.2 independent content checks:',{...wave,closePairs:wave.closePairs.length});
+
+const waveB=checkC2("b");console.log("Stage 3C.2 B independent checks:",{...waveB,closePairs:waveB.closePairs.length});

@@ -4,6 +4,7 @@ import { topics as referenceTopics, theories as referenceTheories, sentences as 
 import taxonomyData from './taxonomy.json';
 import lessonData from './stage3b1-lessons.json';
 import c2LessonData from './stage3c2-a-lessons.json';
+import c2bLessonData from './stage3c2-b-lessons.json';
 import extendedLessonData from './stage3b2-lessons.json';
 import {validateLessonPack,lessonNode} from '../domain/lessons';
 import { contentFingerprint, loadContentPackages, validateTaxonomy } from '../domain/content';
@@ -23,7 +24,7 @@ export const topics: Topic[] = referenceTopics.map((entry, index, all) => ({
   subtopics: [], requires: [], related: [],
 }));
 export const topicById = Object.fromEntries(topics.map(t => [t.id, t]));
-const lessonResult=(()=>{const lessons:ReturnType<typeof validateLessonPack>['lessons']=[],diagnostics:string[]=[];for(const pack of [lessonData,extendedLessonData,c2LessonData]){try{lessons.push(...validateLessonPack(pack,topics).lessons);}catch(error){diagnostics.push(String(error instanceof Error?error.message:error));}}return {lessons,diagnostics};})();
+const lessonResult=(()=>{const lessons:ReturnType<typeof validateLessonPack>['lessons']=[],diagnostics:string[]=[];for(const pack of [lessonData,extendedLessonData,c2LessonData,c2bLessonData]){try{lessons.push(...validateLessonPack(pack,topics).lessons);}catch(error){diagnostics.push(String(error instanceof Error?error.message:error));}}return {lessons,diagnostics};})();
 for(const lesson of lessonResult.lessons)if(topicById[lesson.topic].materialStatus!=='ready'){Object.assign(topicById[lesson.topic],{materialStatus:'ready',minutes:lesson.minutes,description:'Базовые правила, разобранный пример и самостоятельная практика'});}
 const taxonomyResult = (() => {
   try { return { taxonomy: validateTaxonomy(taxonomyData, topics), diagnostics: [] as string[] }; }

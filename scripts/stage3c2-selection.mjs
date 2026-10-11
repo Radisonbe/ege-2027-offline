@@ -6,7 +6,7 @@ import {recordTraining,learningSets} from '../src/domain/study-flow.ts';
 import {quickDefaults,selectQuick} from '../src/domain/quick-practice.ts';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const reference=read('src/data/reference.json');
-const ready=new Set([...reference.topics.filter(t=>t.live).map(t=>t.id),...['stage3b1-lessons.json','stage3b2-lessons.json','stage3c2-a-lessons.json'].flatMap(n=>read('src/data/'+n).lessons.map(l=>l.topic))]);
+const ready=new Set([...reference.topics.filter(t=>t.live).map(t=>t.id),...['stage3b1-lessons.json','stage3b2-lessons.json','stage3c2-a-lessons.json','stage3c2-b-lessons.json'].flatMap(n=>read('src/data/'+n).lessons.map(l=>l.topic))]);
 const topics=reference.topics.map(t=>({...t,materialStatus:ready.has(t.id)?'ready':'planned'}));
 const {questions,taxonomy}=checkContentBank(),flow=read('src/data/study-flow.json').topics;
 const bank=topics.flatMap(t=>learningSets(questions,t.id,flow).practice);
