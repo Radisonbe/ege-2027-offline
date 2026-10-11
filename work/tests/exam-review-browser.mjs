@@ -26,6 +26,7 @@ try {
  baseline.exam=answerExam(editExam(baseline.exam,s.id,s.index,'0.25'),s.id,s.index,'own-correction');
  baseline.exam.sessions[0].items[s.index].draft='Own preserved scratch work';
  const oldBackup=JSON.parse(JSON.stringify(baseline));
+ const historicalBackup=JSON.parse(serializeBackup(oldBackup));historicalBackup.appVersion='0.4.0';
  context=await launch();page=context.pages()[0];watch();await page.goto(host+'/seed.html');
  await page.evaluate(s=>new Promise(resolve=>{const r=indexedDB.open('ege-local-center',1);r.onupgradeneeded=()=>r.result.createObjectStore('progress');r.onsuccess=()=>{const db=r.result,tx=db.transaction('progress','readwrite');tx.objectStore('progress').put(s,'current');tx.oncomplete=()=>{db.close();resolve();};};}),baseline);
  await go('settings');await ready();assert.deepEqual(await state(),baseline);
@@ -58,7 +59,7 @@ try {
  const final=await saved(s=>s.exam.sessions.at(-1).items[face].answer==='−4');await go('settings');
  const download=page.waitForEvent('download');await page.getByRole('button',{name:'Экспортировать JSON',exact:true}).click();
  const text=fs.readFileSync(await(await download).path(),'utf8');assert.deepEqual(parseBackup(text).data,final);
- await page.locator('input[type=file]').setInputFiles({name:'own-old-exam.json',mimeType:'application/json',buffer:Buffer.from(serializeBackup(oldBackup))});
+ await page.locator('input[type=file]').setInputFiles({name:'own-old-exam.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(historicalBackup))});
  await page.getByLabel('Понимаю, что импорт заменит текущий прогресс').check();await page.getByRole('button',{name:'Заменить данные',exact:true}).click();await page.getByText('Данные восстановлены из резервной копии.',{exact:false}).waitFor();assert.deepEqual(await state(),baseline);
  await page.locator('input[type=file]').setInputFiles({name:'own-new-exam.json',mimeType:'application/json',buffer:Buffer.from(text)});await page.getByLabel('Понимаю, что импорт заменит текущий прогресс').check();await page.getByRole('button',{name:'Заменить данные',exact:true}).click();await page.getByText('Данные восстановлены из резервной копии.',{exact:false}).waitFor();assert.deepEqual(await state(),final);
  pass('New backup round-trips current and archived structures, attempts and unfinished answers');
