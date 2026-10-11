@@ -11,9 +11,10 @@ import {CodeExplanation} from './CodeExplanation';
 import {PythonOutput} from './PythonOutput';
 import {PythonInput,InputHelp} from './PythonInput';
 import {pythonMismatch} from '../python/assessment';
+import {answerQuick,quickKey} from '../domain/quick-practice';
 import {answerTopicTest} from '../domain/study-flow';
 
-export function CodeExercise({question:q,context='test',onDone,adaptiveSessionId,topicTestSessionId,initial}:{question:Question;context?:AttemptContext;onDone?:(correct:boolean)=>void;adaptiveSessionId?:string;topicTestSessionId?:string;initial?:{answer:string;result:boolean|null}}) {
+export function CodeExercise({question:q,context='test',onDone,adaptiveSessionId,topicTestSessionId,quickSessionId,initial}:{question:Question;context?:AttemptContext;onDone?:(correct:boolean)=>void;adaptiveSessionId?:string;topicTestSessionId?:string;quickSessionId?:string;initial?:{answer:string;result:boolean|null}}) {
   const {state,mutate,storageError,saving,replacing}=useStudy(),draft=state.codeDrafts?.[q.id],task=q.python!;
   const [code,setCode]=useState(draft?.code??(initial?.answer||task.starterCode||'')),[stdin,setStdin]=useState(draft?.stdin??task.stdin??''),[stdout,setStdout]=useState(''),[stderr,setStderr]=useState('');
   const [phase,setPhase]=useState('loading'),[generation,setGeneration]=useState(0),[message,setMessage]=useState(''),[results,setResults]=useState<PythonGrade[]>([]),[hints,setHints]=useState(0),[solution,setSolution]=useState(false);
@@ -45,12 +46,13 @@ export function CodeExercise({question:q,context='test',onDone,adaptiveSessionId
       if(problem&&problem.actual.kind!=='runtime'){
         setMessage(problem.actual.kind==='syntax'?'Синтаксис программы требует исправления. Попытка не учитывается.':problem.actual.kind==='timeout'?'Превышен лимит времени. Попытка не учитывается.':'Проверка не завершена. Попытка не учитывается.');return;
       }
-      const attemptId=crypto.randomUUID();mutate(s=>topicTestSessionId?answerTopicTest(s,topicTestSessionId,code,passed,attemptId):recordCodeAssessment(s,q,code,passed,context,attemptId,adaptiveSessionId));onDone?.(passed);
+      const attemptId=crypto.randomUUID();mutate(s=>quickSessionId?answerQuick(s,quickSessionId,code,passed,attemptId,new Date(),quickKey(q)):topicTestSessionId?answerTopicTest(s,topicTestSessionId,code,passed,attemptId):recordCodeAssessment(s,q,code,passed,context,attemptId,adaptiveSessionId));onDone?.(passed);
       setMessage(passed?'Все тесты пройдены. Решение верное.':context==='practice'?'Пока не все тесты пройдены. Это тренировка: контрольная ошибка не записана. Исправь код или открой подсказку.':'Решение пока не проходит проверку. Исправь код или открой подсказку. Первый самостоятельный результат не меняется от исправления.');
     }catch(e){if(live.current)setMessage('Проверка не завершена: '+String(e instanceof Error?e.message:e));}
     finally{checking.current=null;if(live.current){setPhase('loading');setGeneration(n=>n+1);}}
   }
   const shownHints=q.hints??[q.hint],key=codeAssessmentKey(state,q,context,adaptiveSessionId),scored=state.attempts.filter(a=>a.assessmentKey===key),allowHints=!topicTestSessionId||results.length>0||scored.length>0||initial?.result===true||initial?.result===false;
+  const hadCheck=results.length>0||initial?.result===true||initial?.result===false||state.training?.some(a=>a.questionId===q.id&&a.questionVersion===q.version)||state.attempts.some(a=>a.questionId===q.id&&a.questionVersion===q.version);
   const example=task.visibleTests?.[0];
   return <div className="code-exercise"><QuestionMetadata question={q}/>{q.presentation&&<h3>{q.presentation.title}</h3>}<p className="question-prompt">{q.presentation?.statement??q.prompt}</p>
     {example&&<section className="program-examples" aria-label="Пример из условия"><div><h4>{task.functionName?'Пример аргументов':'Пример входа'}</h4><pre>{task.functionName?JSON.stringify(example.args):example.stdin}</pre></div><div><h4>{task.functionName?'Ожидаемый return':'Пример выхода'}</h4><pre>{task.functionName?JSON.stringify(example.expectedReturn):example.expectedOutput}</pre></div><p className="small muted">Это только пример. Проверка использует другие значения. Используй данные программы, не записывай готовый ответ в код.</p></section>}
@@ -70,6 +72,6 @@ export function CodeExercise({question:q,context='test',onDone,adaptiveSessionId
     <h3>Вывод · stdout</h3><p className="small muted">Фактический результат последнего «Запустить», без оценки решения.</p><PythonOutput text={stdout} resultId={runKey} incomplete={runIncomplete}/><h3>Ошибки Python</h3><PythonOutput text={stderr} label="Ошибки Python" resultId={runKey} empty="Ошибок нет." error/>
     {results.length>0&&<section aria-label="Результаты тестов"><h3>Проверка решения</h3>{results.map((r,i)=>{const test=task.visibleTests?.[i],failure=r.actual.kind;return <div className="code-test-result" key={i}><b>Тест {i+1}: {r.passed?'пройден':failure==='syntax'?'SyntaxError':failure==='runtime'?'ошибка выполнения':failure==='timeout'?'лимит времени':failure==='stopped'?'остановлен':'неверный результат'}</b>{!r.passed&&<p className="small">{pythonMismatch(r.actual,test,!!task.functionName)}</p>}{test&&<><p className="small">{task.functionName?'Аргументы: '+JSON.stringify(test.args):'Вход теста: '+(test.stdin||'(пустой)')}</p>{!r.passed&&<><p className="small">Ожидалось:</p><pre className="expected-output">{test.expectedOutput??JSON.stringify(test.expectedReturn)}</pre></>}</>}{task.functionName&&!r.passed&&!failure&&<p className="small">Полученный return: {JSON.stringify(r.actual.value)}</p>}<p className="small">Фактический stdout теста {i+1}:</p><PythonOutput text={r.actual.stdout} label={'Вывод теста '+(i+1)} resultId={checkKey+':'+i} incomplete={r.actual.kind==='infrastructure'&&r.actual.stderr.includes('вывода')}/>{r.actual.stderr&&<PythonOutput text={r.actual.stderr} label={'Traceback теста '+(i+1)} resultId={checkKey+':'+i} error/>}</div>;})}</section>}
     {allowHints&&hints<shownHints.length&&<Button variant="ghost" onClick={()=>setHints(n=>n+1)}>{hints?'Более конкретная подсказка':'Показать подсказку'}</Button>}{shownHints.slice(0,hints).map((h,i)=><p className="callout" key={i}>{h}</p>)}
-    {allowHints&&<details><summary>Разбор и решение — по запросу</summary><Button variant="ghost" onClick={()=>setSolution(true)}>Показать полное решение</Button>{solution&&<><CodeExplanation text={q.explanation}/><pre className="python-output">{q.solution}</pre></>}</details>}
+    {allowHints&&hadCheck&&<details><summary>Разбор и решение — по запросу</summary><Button variant="ghost" disabled={busy} onClick={()=>setSolution(true)}>Показать полное решение</Button>{solution&&<><CodeExplanation text={q.explanation}/><pre className="python-output">{q.solution}</pre></>}</details>}
   </div>;
 }

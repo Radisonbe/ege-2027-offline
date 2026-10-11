@@ -2365,6 +2365,69 @@
       "requires": [],
       "related": [],
       "remediates": []
+    },
+    {
+      "id": "arithmetic.skill.3c2-signed-difference",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.foundation",
+      "title": "Находить изменение величины с учётом отрицательных значений",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "information.skill.3c2-transmission",
+      "topic": "information",
+      "subtopic": "information.sub.foundation",
+      "title": "Находить время передачи из объёма и скорости",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-variables.skill.3c2-swap",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "title": "Проследить одновременное присваивание",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-types.skill.3c2-division",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "title": "Различать целочисленное деление и остаток",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.3c2-slice",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "title": "Проследить срез с шагом",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.3c2-alias",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "title": "Различать общий список и отдельную копию",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.3c2-break",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "title": "Проследить прекращение цикла по break",
+      "requires": [],
+      "related": [],
+      "remediates": []
     }
   ]
 }

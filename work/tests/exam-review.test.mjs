@@ -12,9 +12,9 @@ const oldMaps=legacy('src/data/exam/maps.json').exams,oldTasks=legacy('src/data/
 const ownMap=t=>maps.find(m=>m.positions.some(p=>p.id===t.positionId));
 
 test('Geometric correction and reviewed skill revisions preserve all 36 identities/answers and use new snapshot versions',()=>{
-  assert.equal(tasks.length,oldTasks.length);
+  assert.equal(tasks.filter(t=>!t.id.startsWith("c2a-")).length,oldTasks.length);
   let revisions=0;
-  for(const t of tasks){const old=oldTasks.find(o=>o.id===t.id);assert.ok(old);assert.equal(t.question.answer,old.question.answer);assert.equal(t.version,t.question.version);
+  for(const t of tasks.filter(t=>!t.id.startsWith("c2a-"))){const old=oldTasks.find(o=>o.id===t.id);assert.ok(old);assert.equal(t.question.answer,old.question.answer);assert.equal(t.version,t.question.version);
     if(JSON.stringify(t)!==JSON.stringify(old)){assert.equal(t.version,old.version+1);revisions++;}else assert.equal(t.version,old.version);
     assert.doesNotMatch(t.question.prompt,/восьмигранн\S* кубик|десятигранн\S* кубик/i);
   }

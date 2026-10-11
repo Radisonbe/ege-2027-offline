@@ -14,10 +14,11 @@ import { EasyPage, SessionPage } from './pages/Sessions';
 import { NetworkStatus, PwaNotice } from './components/PwaStatus';
 import { AdaptiveReviewPage } from './pages/AdaptiveReview';
 const PythonPlaygroundPage=lazy(()=>import('./pages/PythonPlayground').then(module=>({default:module.PythonPlaygroundPage})));
+const QuickPracticePage=lazy(()=>import('./pages/QuickPractice').then(module=>({default:module.QuickPracticePage})));
 const ExamsPage=lazy(()=>import('./pages/Exams').then(module=>({default:module.ExamsPage})));
 
-const mainNavigation: { id: string; label: string; icon: IconName }[] = [{ id: 'home', label: 'Главная', icon: 'home' }, { id: 'errors', label: 'Мои ошибки', icon: 'errors' }, { id: 'review', label: 'Повторение', icon: 'review' }, { id: 'review-today', label: 'Повторение на сегодня', icon: 'review' }, { id: 'progress', label: 'Прогресс', icon: 'progress' }, { id: 'exam', label: 'ЕГЭ / Пробники', icon: 'book' }];
-const validRoutes = new Set(['exam', 'home', 'errors', 'review', 'review-today', 'python-playground', 'progress', 'settings', 'easy', 'session', ...subjects.map(s => s.id)]);
+const mainNavigation: { id: string; label: string; icon: IconName }[] = [{ id: 'home', label: 'Главная', icon: 'home' }, { id: 'errors', label: 'Мои ошибки', icon: 'errors' }, { id: 'review', label: 'Повторение', icon: 'review' }, { id: 'review-today', label: 'Повторение на сегодня', icon: 'review' }, { id: 'progress', label: 'Прогресс', icon: 'progress' }, { id: 'quick-practice', label: 'Мои темы / Быстрая практика', icon: 'book' }, { id: 'exam', label: 'ЕГЭ / Пробники', icon: 'book' }];
+const validRoutes = new Set(['quick-practice', 'exam', 'home', 'errors', 'review', 'review-today', 'python-playground', 'progress', 'settings', 'easy', 'session', ...subjects.map(s => s.id)]);
 function route() { let hash = ''; try { hash = decodeURIComponent(window.location.hash.slice(1)); } catch { return 'home'; } return /^exam\/session\/[^/]+$/.test(hash) || validRoutes.has(hash) || (hash.startsWith('topic/') && topicById[hash.slice(6)]) ? hash : 'home'; }
 function Navigation({ page, go }: { page: string; go: (page: string) => void }) {
   const { state } = useStudy(), errors = state.errors.filter(e => e.status !== 'закрепил').length;
@@ -33,6 +34,7 @@ export function App() {
   if (!ready) screen = <Panel><h2>Твой учебный центр</h2><p>Загружаем сохранённый прогресс…</p></Panel>;
   else if (page === 'home') screen = <Dashboard go={go}/>;
   else if (page === 'exam' || page.startsWith('exam/session/')) screen = <Suspense fallback={<Panel><p>Открываем экзаменационный раздел…</p></Panel>}><ExamsPage key={page} go={go} sessionId={page.startsWith('exam/session/')?page.slice(13):undefined}/></Suspense>;
+  else if(page==='quick-practice') screen=<Suspense fallback={<Panel><p>Открываем практику…</p></Panel>}><QuickPracticePage go={go}/></Suspense>;
   else if (page === 'review-today') screen = <AdaptiveReviewPage go={go}/>;
   else if (page === 'python-playground') screen = <Suspense fallback={<Panel><p>Открываем Python Playground…</p></Panel>}><PythonPlaygroundPage/></Suspense>;
   else if (subjects.some(s => s.id === page)) screen = <SubjectPage key={page} subjectId={page as SubjectId} go={go}/>;

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedOn": "2026-10-09",
+  "reviewedOn": "2026-10-11",
   "entries": [
     {
       "id": "reference-learning",
@@ -35,7 +35,7 @@
       "clearance": "project-generated",
       "source": "https://ege-2027-radisonbe.sonberadi.chatgpt.site",
       "license": null,
-      "evidence": "Code written for this project; instructional examples recreate the owner-declared generated reference. No new external bank was imported. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added.",
+      "evidence": "Code written for this project; instructional examples recreate the owner-declared generated reference. No new external bank was imported. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Study-flow review 2026-10-09: own novice presentation of existing generated tasks / explicit practice allocation, no third-party content; canonical conditions, answers, solutions and test cases preserved. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added. Stage 3C.2 A: original additional explanation/skills or reviewed package connection; old question objects retained.",
       "files": [
         {
           "path": "src/components/Practices.tsx",
@@ -50,7 +50,7 @@
         {
           "path": "src/data/catalog.ts",
           "normalization": "lf",
-          "sha256": "a4f1edb9c46a8e374a0528870f8d64e7251adb8587ae688bbd382a08adb2dc7b"
+          "sha256": "e4e200a2674b30e7ea8615198aa3ffc8841f500e65c6ce2ff74c53fd4f7e2b9a"
         }
       ]
     },
@@ -150,12 +150,12 @@
       "clearance": "project-authored",
       "source": null,
       "license": null,
-      "evidence": "Original project metadata: stable subtopic/skill IDs, classification labels and basic prerequisite/remediation links. Not copied textbook prose or exam tasks. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added.",
+      "evidence": "Original project metadata: stable subtopic/skill IDs, classification labels and basic prerequisite/remediation links. Not copied textbook prose or exam tasks. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added. Stage 3C.2 A: original additional explanation/skills or reviewed package connection; old question objects retained.",
       "files": [
         {
           "path": "src/data/taxonomy.json",
           "normalization": "lf",
-          "sha256": "05f0d1a1f8a4b356134742cc081d7d0293b49fd7d97292a8f6e2025aeb10fc85"
+          "sha256": "2f00bc846be90163d37af744c65afd4872d197f9dd01c7aa96b31240f50504ef"
         }
       ]
     },
@@ -302,12 +302,12 @@
       "clearance": "project-authored",
       "source": null,
       "license": null,
-      "evidence": "Own reviewed allocation of existing question IDs for learning and independent checks. Equivalent fourth-bit questions and sum/fix-sum programs remain together in practice. No new external or generated questions. The repeated because/rain sentence u4/b1-russian-16 also stays together in practice. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added.",
+      "evidence": "Own reviewed allocation of existing question IDs for learning and independent checks. Equivalent fourth-bit questions and sum/fix-sum programs remain together in practice. No new external or generated questions. The repeated because/rain sentence u4/b1-russian-16 also stays together in practice. Stage 3B.2: own generated extension, old entities retained, new lessons and reviewed allocations added. Stage 3C.2: additive package A allocation/catalogue, original entities unchanged.",
       "files": [
         {
           "path": "src/data/study-flow.json",
           "normalization": "lf",
-          "sha256": "766dfa78e878b7c419fa002883761fe7753090416c2432d90e363b4e8a61f4d9"
+          "sha256": "ba301f59fb75d01e2d69d5d36334598ab5756ebd1a9e83c5a2caa15ca78b85f4"
         }
       ]
     },
@@ -366,6 +366,50 @@
           "path": "sources/exam3c1-review.json",
           "normalization": "lf",
           "sha256": "e2dd0a821ae66afebbec7118d9f2d26d02694ea020fa72485aaa274374c2c5d7"
+        }
+      ]
+    },
+    {
+      "id": "stage3c2-a-generated",
+      "clearance": "project-generated",
+      "source": null,
+      "license": null,
+      "evidence": "Original AI-authored package A in the current authorized task 2026-10-11. No third-party exercises or texts imported. Rule references are for validation only; sources/stage3c2-a-review.json records verification and families. Release stays local for independent review. Stage 3C.2 A: original additional explanation/skills or reviewed package connection; old question objects retained. Stage 3C.2 A: original additional explanation/skills or reviewed package connection; old question objects retained. Stage 3C.2 A: original additional explanation/skills or reviewed package connection; old question objects retained. Stage 3C.2 A: original additional explanation/skills or reviewed package connection; old question objects retained.",
+      "files": [
+        {
+          "path": "src/data/banks/stage3c2-a-math.json",
+          "normalization": "lf",
+          "sha256": "67cb84a2f8125ba0c8ebb7d2daa49cfa86807afc3143c0db242621295acfc33b"
+        },
+        {
+          "path": "src/data/banks/stage3c2-a-russian.json",
+          "normalization": "lf",
+          "sha256": "140aa93a943c1e9dd7fe7a47c817473026fd66a3085a6df4ce011172f6d1a381"
+        },
+        {
+          "path": "src/data/banks/stage3c2-a-informatics.json",
+          "normalization": "lf",
+          "sha256": "61ccdebeb13f8bfadd5d1995e2e7a1b006c78ea9162094c9ae39ae8b9be00e90"
+        },
+        {
+          "path": "src/data/banks/stage3c2-a-python.json",
+          "normalization": "lf",
+          "sha256": "5a70123bddb92a9e601b37c8814092f0a409eac6e66a4c302e0e8d1ff3db5e97"
+        },
+        {
+          "path": "src/data/exam/stage3c2-a.json",
+          "normalization": "lf",
+          "sha256": "f8f04435c6e415ce9fc59c738634e7e7bb0d8f340887796b3fdd214ed6fa9e9a"
+        },
+        {
+          "path": "src/data/content-families.json",
+          "normalization": "lf",
+          "sha256": "824097ed82dcc090340b06bc6d8991e0481c152416fbeb6f3fb9774b386f86a8"
+        },
+        {
+          "path": "src/data/stage3c2-a-lessons.json",
+          "normalization": "lf",
+          "sha256": "584390fd6244a5f0ba0e97fe6f20afde141bc20b85ef421df0fbb7502cfcfd8d"
         }
       ]
     }

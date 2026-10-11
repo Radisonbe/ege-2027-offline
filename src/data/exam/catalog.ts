@@ -15,20 +15,17 @@ catch {
     exams.length = 0;
     examDiagnostics.push('Карта экзаменов требует проверки.');
 }
-try {
-    if (tasks.schemaVersion !== 1)
-        throw Error('Версия банка');
-    const ids = new Set();
-    for (const task of tasks.tasks) {
-        const t = validateExamTask(task);
-        if (ids.has(t.id) || !exams.some(m => m.positions.some(p => p.id === t.positionId)))
-            throw Error('Связи банка');
-        validateExamAlignment(exams.find(m => m.positions.some(p => p.id === t.positionId))!, t);
-        ids.add(t.id);
-        examTasks.push(t);
-    }
-}
-catch {
-    examTasks.length = 0;
-    examDiagnostics.push('Экзаменационный банк временно недоступен; обычный учебный банк сохранён.');
+const taskPacks = [tasks,...Object.values(import.meta.glob('./stage3c2-*.json', { eager:true, import:'default' }))] as typeof tasks[];
+const taskIds = new Set<string>();
+for(const pack of taskPacks){
+    try {
+        if(pack.schemaVersion!==1||!Array.isArray(pack.tasks))throw Error('Версия банка');
+        const validated:ExamTask[]=[],localIds=new Set<string>();
+        for(const raw of pack.tasks){
+            const task=validateExamTask(raw),map=exams.find(m=>m.positions.some(p=>p.id===task.positionId));
+            if(!map||taskIds.has(task.id)||localIds.has(task.id))throw Error('Связи банка');
+            validateExamAlignment(map,task);localIds.add(task.id);validated.push(task);
+        }
+        validated.forEach(task=>{taskIds.add(task.id);examTasks.push(task);});
+    }catch{examDiagnostics.push('Один экзаменационный пакет недоступен; остальные материалы и сохранения доступны.');}
 }

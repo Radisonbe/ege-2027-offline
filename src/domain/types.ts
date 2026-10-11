@@ -21,12 +21,13 @@ export interface Question {
   origin: Origin; source: string; sourceYear: number | null;
   sourceType: 'training' | 'exam' | 'lesson'; examTaskType: string | null;
   answerType: AnswerType; prompt: string; answer: string; options?: string[];
-  answerFormat?: 'binary';
+  answerFormat?: 'binary' | 'python-output';
   hint: string; explanation: string; solution: string; principle: string;
   hints?: string[];
   wrongAnswers?: Record<string, string>; easy?: boolean; version: number;
   requires: string[]; related: string[];
   skills?: string[]; remediates?: string[];
+  familyId?: string;
   python?: PythonTask;
   presentation?: { title: string; statement: string; limits: string; inputHelp: boolean };
 }
@@ -62,6 +63,7 @@ export interface StudyState extends Omit<LegacyStudyState, 'schemaVersion'> {
   training?: Attempt[];
   topicTests?: TopicTestSession[];
   exam?: ExamProgress;
+  quickPractice?: import('./quick-practice').QuickProgress;
 }
 export interface TopicTestSession { id: string; topic: string; startedAt: string; completedAt?: string; index: number; items: TopicTestItem[] }
 export interface TopicTestItem { question: Question; answer: string; lastAnswer?: string; firstCorrect: boolean | null; correct: boolean | null; attemptId?: string }

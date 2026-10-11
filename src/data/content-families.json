@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "aliases": {
+    "b2-math-log-definition": "log-definition",
+    "b1-math-20": "root-absolute",
+    "b2-math-root-absolute": "root-absolute",
+    "b1-math-19": "root-exact"
+  },
+  "description": "Reviewed aliases for same-method variants. Unclassified legacy items are grouped conservatively by topic and skills, not declared independent families."
+}

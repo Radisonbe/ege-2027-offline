@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { easyQuestions, questions, questionById, topicById } from '../data/catalog';
+import { easyQuestions, topicLearning, topics, questions, questionById, topicById } from '../data/catalog';
 import { useStudy } from '../state/StudyProvider';
 import { AnswerBox, Quiz } from '../components/Quiz';
 import { Badge, Button, Heading, Icon, Panel } from '../components/ui';
@@ -14,10 +14,12 @@ export function SessionPage({ go }: { go: (page: string) => void }) {
   const { state } = useStudy(), [remaining, setRemaining] = useState(900), [paused, setPaused] = useState(false), [step, setStep] = useState(0), [results, setResults] = useState<Record<number, boolean>>({});
   const [selection] = useState(() => {
     const old = Object.values(state.topics).filter(t => t.status !== 'Не изучено').sort((a, b) => (state.reviews[`topic:${a.topic}`]?.due ?? '9999').localeCompare(state.reviews[`topic:${b.topic}`]?.due ?? '9999'));
-    const recall = questions.find(q => q.topic === old[0]?.topic && !q.easy) ?? questionById.e1;
-    const all = questions.filter(q => !q.easy && q.id !== recall.id && ['percent', 'functions', 'binary', 'encoding', 'unionwords'].includes(q.topic));
+    const recall = old[0]?topicLearning(old[0].topic).practice.find(q => !q.easy):undefined;
+    const recallQuestion = recall ?? questionById.e1;
+    const practice = topics.flatMap(t=>topicLearning(t.id).practice);
+    const all = practice.filter(q => !q.easy && q.id !== recallQuestion.id && ['percent', 'functions', 'binary', 'encoding', 'unionwords'].includes(q.topic));
     const offset = state.attempts.length % all.length;
-    return { recall, practice: [...all.slice(offset), ...all.slice(0, offset)].slice(0, 3), error: [...state.errors].filter(e => e.status !== 'закрепил').sort((a, b) => a.due.localeCompare(b.due))[0], hasOld: !!old.length };
+    return { recall:recallQuestion, practice: [...all.slice(offset), ...all.slice(0, offset)].slice(0, 3), error: [...state.errors].filter(e => e.status !== 'закрепил').sort((a, b) => a.due.localeCompare(b.due))[0], hasOld: !!old.length };
   });
   useEffect(() => {
     if (paused || step === 5) return;

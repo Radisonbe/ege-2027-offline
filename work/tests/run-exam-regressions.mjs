@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
 import {spawn} from 'node:child_process';
-const [runtime,build,old,relative,previous]=process.argv.slice(2);
+const [runtime,build,old,relative,previous,published050]=process.argv.slice(2);
 if(!previous)throw Error('Usage: runtime build old relative previous-reviewed-build');
 const root=path.resolve(relative);
 const server=http.createServer((req,res)=>{
@@ -22,6 +22,7 @@ async function worker(){while(cursor<names.length){
  if(name==='study-flow-layout-browser.mjs')args=[url+'/'];
  if(name==='update-checks.mjs')args=[relative];
  if(name==='private-packages-browser.mjs')args=[];
+ if(name==='content3c2-browser.mjs')args=[build,published050??old];
  if(name==='exam-review-browser.mjs')args=[build,previous];
  console.log('START '+name);
  const log=path.join('outputs','exam-review-'+stamp+'-'+name+'.log'),out=fs.createWriteStream(log);
@@ -29,8 +30,8 @@ async function worker(){while(cursor<names.length){
  for(const stream of [child.stdout,child.stderr])stream.on('data',data=>{out.write(data);text+=data.toString();});
  const code=await new Promise((resolve,reject)=>{child.on('error',reject);child.on('close',resolve);});out.end();
  results.push({name,code,groups:(text.match(/^PASS /gm)||[]).length,log});
- fs.writeFileSync('outputs/EXAM-REVIEW-REGRESSIONS.json',JSON.stringify({total:names.length,results},null,2));
+ fs.writeFileSync('outputs/exam-regressions-'+stamp+'.json',JSON.stringify({total:names.length,results},null,2));
  console.log('DONE '+JSON.stringify(results.at(-1)));if(code)console.log(text.slice(-3500));
 }}
-try{await Promise.all([worker(),worker(),worker()]);console.log('SUMMARY '+JSON.stringify({passed:results.filter(r=>r.code===0).length,suites:names.length,groups:results.reduce((s,r)=>s+r.groups,0)}));process.exitCode=results.every(r=>r.code===0)?0:1;}
+try{await Promise.all([worker(),worker(),worker()]);fs.writeFileSync('outputs/EXAM-REVIEW-REGRESSIONS.json',JSON.stringify({total:names.length,results},null,2));console.log('REPORT outputs/exam-regressions-'+stamp+'.json');console.log('SUMMARY '+JSON.stringify({passed:results.filter(r=>r.code===0).length,suites:names.length,groups:results.reduce((s,r)=>s+r.groups,0)}));process.exitCode=results.every(r=>r.code===0)?0:1;}
 finally{server.closeAllConnections();await new Promise(r=>server.close(r));}

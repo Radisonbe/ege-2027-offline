@@ -1,0 +1,1428 @@
+{
+  "schemaVersion": 1,
+  "id": "stage3c2-a-python",
+  "subject": "python",
+  "questions": [
+    {
+      "id": "c2a-python-swap",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "skills": [
+        "py-variables.skill.3c2-swap"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "9 4",
+      "hint": "Правая часть вычисляется до присваивания.",
+      "explanation": "Правая часть вычисляется до присваивания. Новое a получает старое b, новое b — старое a. Поэтому вывод 9 4.",
+      "solution": "Правая часть вычисляется до присваивания. Новое a получает старое b, новое b — старое a. Поэтому вывод 9 4.",
+      "principle": "Правая часть вычисляется до присваивания.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-simultaneous-assignment",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a = 4\nb = 9\na, b = b, a\nprint(a, b)",
+        "expectedOutput": "9 4"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-division",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "skills": [
+        "py-types.skill.3c2-division"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "3 1",
+      "hint": "Целочисленное деление даёт частное 3, остаток равен 1: 7 = 2 · 3 + 1..",
+      "explanation": "Целочисленное деление даёт частное 3, остаток равен 1: 7 = 2 · 3 + 1.",
+      "solution": "Целочисленное деление даёт частное 3, остаток равен 1: 7 = 2 · 3 + 1.",
+      "principle": "Целочисленное деление даёт частное 3, остаток равен 1: 7 = 2 · 3 + 1..",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-division-remainder",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "print(7 // 2, 7 % 2)",
+        "expectedOutput": "3 1"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-string-add",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "skills": [
+        "py-types.skill.convert"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "123",
+      "hint": "Оба значения — строки.",
+      "explanation": "Оба значения — строки. Оператор + соединяет их, а не складывает числа. Для арифметики нужно явное преобразование в int.",
+      "solution": "Оба значения — строки. Оператор + соединяет их, а не складывает числа. Для арифметики нужно явное преобразование в int.",
+      "principle": "Оба значения — строки.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-string-number",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a = \"12\"\nb = \"3\"\nprint(a + b)",
+        "expectedOutput": "123"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-two-if",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "skills": [
+        "py-if.skill.branch"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "A\nB",
+      "hint": "Это два независимых if.",
+      "explanation": "Это два независимых if. Обе проверки истинны, поэтому печатаются обе строки. Второй if не является elif первого.",
+      "solution": "Это два независимых if. Обе проверки истинны, поэтому печатаются обе строки. Второй if не является elif первого.",
+      "principle": "Это два независимых if.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-if-vs-elif",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "x = 4\nif x > 0:\n    print(\"A\")\nif x % 2 == 0:\n    print(\"B\")",
+        "expectedOutput": "A\nB"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-elif-order",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "skills": [
+        "py-if.skill.branch"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "first",
+      "hint": "В цепочке if/elif выполняется первая подходящая ветвь.",
+      "explanation": "В цепочке if/elif выполняется первая подходящая ветвь. После x > 3 остальные условия уже не проверяются.",
+      "solution": "В цепочке if/elif выполняется первая подходящая ветвь. После x > 3 остальные условия уже не проверяются.",
+      "principle": "В цепочке if/elif выполняется первая подходящая ветвь.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-if-vs-elif",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "x = 8\nif x > 3:\n    print(\"first\")\nelif x > 6:\n    print(\"second\")\nelse:\n    print(\"last\")",
+        "expectedOutput": "first"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-descending",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "9",
+      "hint": "Отрицательный шаг −2 даёт 5, 3, 1.",
+      "explanation": "Отрицательный шаг −2 даёт 5, 3, 1. Правая граница 0 не включена. Сумма равна 9.",
+      "solution": "Отрицательный шаг −2 даёт 5, 3, 1. Правая граница 0 не включена. Сумма равна 9.",
+      "principle": "Отрицательный шаг −2 даёт 5, 3, 1.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-descending-range",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "total = 0\nfor x in range(5, 0, -2):\n    total += x\nprint(total)",
+        "expectedOutput": "9"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-break-before",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.3c2-break"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "7",
+      "hint": "Встретив 0, цикл прекращается до прибавления.",
+      "explanation": "Встретив 0, цикл прекращается до прибавления. Учтены 2 и 5, число 9 уже не посещается.",
+      "solution": "Встретив 0, цикл прекращается до прибавления. Учтены 2 и 5, число 9 уже не посещается.",
+      "principle": "Встретив 0, цикл прекращается до прибавления.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-loop-break",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s = 0\nfor x in [2, 5, 0, 9]:\n    if x == 0:\n        break\n    s += x\nprint(s)",
+        "expectedOutput": "7"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-slice",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.3c2-slice"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "ln",
+      "hint": "Срез берёт индексы 1 и 3, пока индекс меньше 5.",
+      "explanation": "Срез берёт индексы 1 и 3, пока индекс меньше 5. В слове planet это l и n.",
+      "solution": "Срез берёт индексы 1 и 3, пока индекс меньше 5. В слове planet это l и n.",
+      "principle": "Срез берёт индексы 1 и 3, пока индекс меньше 5.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-string-slice",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s = \"planet\"\nprint(s[1:5:2])",
+        "expectedOutput": "ln"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-alias",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "3",
+      "hint": "Присваивание b = a не копирует список: обе переменные ссылаются на один объект.",
+      "explanation": "Присваивание b = a не копирует список: обе переменные ссылаются на один объект. Добавление через b увеличивает длину a до 3.",
+      "solution": "Присваивание b = a не копирует список: обе переменные ссылаются на один объект. Добавление через b увеличивает длину a до 3.",
+      "principle": "Присваивание b = a не копирует список: обе переменные ссылаются на один объект.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-list-alias",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a = [2, 4]\nb = a\nb.append(6)\nprint(len(a))",
+        "expectedOutput": "3"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-slice-copy",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "2 9",
+      "hint": "Срез a[:] создаёт отдельный список.",
+      "explanation": "Срез a[:] создаёт отдельный список. Замена элемента b не меняет элемент a. Вывод 2 9.",
+      "solution": "Срез a[:] создаёт отдельный список. Замена элемента b не меняет элемент a. Вывод 2 9.",
+      "principle": "Срез a[:] создаёт отдельный список.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-list-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a = [2, 4]\nb = a[:]\nb[0] = 9\nprint(a[0], b[0])",
+        "expectedOutput": "2 9"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-overwrite",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.update"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "2 5",
+      "hint": "Повторное присваивание существующему ключу меняет значение, а не добавляет ключ.",
+      "explanation": "Повторное присваивание существующему ключу меняет значение, а не добавляет ключ. После добавления y ключей два, x равен 5.",
+      "solution": "Повторное присваивание существующему ключу меняет значение, а не добавляет ключ. После добавления y ключей два, x равен 5.",
+      "principle": "Повторное присваивание существующему ключу меняет значение, а не добавляет ключ.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-dict-key-update",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d = {\"x\": 2}\nd[\"x\"] = 5\nd[\"y\"] = 8\nprint(len(d), d[\"x\"])",
+        "expectedOutput": "2 5"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-early-return",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "0 6",
+      "hint": "Для −3 выполняется ранний return 0, оставшийся код функции пропускается.",
+      "explanation": "Для −3 выполняется ранний return 0, оставшийся код функции пропускается. Для 4 условие ложно, возвращается 4 + 2 = 6.",
+      "solution": "Для −3 выполняется ранний return 0, оставшийся код функции пропускается. Для 4 условие ложно, возвращается 4 + 2 = 6.",
+      "principle": "Для −3 выполняется ранний return 0, оставшийся код функции пропускается.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-early-return",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def f(x):\n    if x < 0:\n        return 0\n    return x + 2\n\nprint(f(-3), f(4))",
+        "expectedOutput": "0 6"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-none",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "easy",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "3\nNone",
+      "hint": "Функция печатает 3, но не содержит return.",
+      "explanation": "Функция печатает 3, но не содержит return. Поэтому её результат — None, который печатается вторым print.",
+      "solution": "Функция печатает 3, но не содержит return. Поэтому её результат — None, который печатается вторым print.",
+      "principle": "Функция печатает 3, но не содержит return.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-print-versus-return",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def show(x):\n    print(x)\n\nr = show(3)\nprint(r)",
+        "expectedOutput": "3\nNone"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-nested-count",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.accumulate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Запиши значения в порядке вывода, сохраняя регистр букв. Если строк несколько, раздели их пробелами в поле ответа.",
+      "answer": "3",
+      "hint": "При a = 0 внутренний цикл пуст.",
+      "explanation": "При a = 0 внутренний цикл пуст. При a = 1 один шаг, при a = 2 два. Всего 0 + 1 + 2 = 3.",
+      "solution": "При a = 0 внутренний цикл пуст. При a = 1 один шаг, при a = 2 два. Всего 0 + 1 + 2 = 3.",
+      "principle": "При a = 0 внутренний цикл пуст.",
+      "version": 1,
+      "requires": [
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-nested-trace",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "count = 0\nfor a in range(3):\n    for b in range(a):\n        count += 1\nprint(count)",
+        "expectedOutput": "3"
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "c2a-python-sum_between",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.programming",
+      "skills": [
+        "py-loops.skill.sum-range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши sum_between(a, b). Верни сумму всех целых чисел от меньшего аргумента до большего включительно. Аргументы могут идти в любом порядке. Ввод и print не нужны.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала определи меньшую и большую границы, чтобы порядок аргументов не влиял на результат.\nВ range правая граница не включается: для включения последнего числа увеличь её на 1.\nНачни total с 0, прибавляй каждое число и верни total после цикла.",
+      "explanation": "Сначала определи меньшую и большую границы, чтобы порядок аргументов не влиял на результат.\nВ range правая граница не включается: для включения последнего числа увеличь её на 1.\nНачни total с 0, прибавляй каждое число и верни total после цикла. При равных аргументах в диапазоне ровно одно число.",
+      "solution": "def sum_between(a, b):\n    left = min(a, b)\n    right = max(a, b)\n    total = 0\n    for value in range(left, right + 1):\n        total += value\n    return total",
+      "principle": "Сначала определи меньшую и большую границы, чтобы порядок аргументов не влиял на результат.\nВ range правая граница не включается: для включения последнего числа увеличь её на 1.\nНачни total с 0, прибавляй каждое число и верни total после цикла.",
+      "version": 1,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "python-inclusive-interval",
+      "hints": [
+        "Сначала определи меньшую и большую границы, чтобы порядок аргументов не влиял на результат.",
+        "В range правая граница не включается: для включения последнего числа увеличь её на 1."
+      ],
+      "python": {
+        "type": "write-function",
+        "starterCode": "def sum_between(a, b):\n    pass",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              2,
+              4
+            ],
+            "expectedReturn": 9
+          },
+          {
+            "args": [
+              4,
+              2
+            ],
+            "expectedReturn": 9
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              -2,
+              2
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              5,
+              5
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              -1000,
+              1000
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              -1000,
+              -997
+            ],
+            "expectedReturn": -3994
+          },
+          {
+            "args": [
+              997,
+              1000
+            ],
+            "expectedReturn": 3994
+          }
+        ],
+        "functionName": "sum_between"
+      },
+      "presentation": {
+        "title": "Sum_between",
+        "statement": "Напиши sum_between(a, b). Верни сумму всех целых чисел от меньшего аргумента до большего включительно. Аргументы могут идти в любом порядке. Ввод и print не нужны.",
+        "limits": "−1000 ≤ a,b ≤ 1000. Результат — целое число.",
+        "inputHelp": false
+      }
+    },
+    {
+      "id": "c2a-python-first_long_word",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.extension",
+      "skills": [
+        "py-strings.skill.3b2-words"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши first_long_word(text, k). Раздели текст по пробельным символам и верни первое слово длиной не меньше k. Если такого слова нет, верни пустую строку. Порядок слов сохраняется.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Перебирай слова в исходном порядке: нужен первый подходящий элемент, а не самый длинный.\nПроверка длины включает равенство k.",
+      "explanation": "Перебирай слова в исходном порядке: нужен первый подходящий элемент, а не самый длинный.\nПроверка длины включает равенство k. Как только слово подходит, его можно вернуть.\nЕсли цикл закончился без результата, верни пустую строку. split() убирает пустые элементы от нескольких пробелов и работает с табуляцией.",
+      "solution": "def first_long_word(text, k):\n    for word in text.split():\n        if len(word) >= k:\n            return word\n    return \"\"",
+      "principle": "Перебирай слова в исходном порядке: нужен первый подходящий элемент, а не самый длинный.\nПроверка длины включает равенство k.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-if",
+        "py-loops"
+      ],
+      "related": [],
+      "familyId": "python-first-match",
+      "hints": [
+        "Перебирай слова в исходном порядке: нужен первый подходящий элемент, а не самый длинный.",
+        "Проверка длины включает равенство k. Как только слово подходит, его можно вернуть."
+      ],
+      "python": {
+        "type": "write-function",
+        "starterCode": "def first_long_word(text, k):\n    pass",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "кот собака дом",
+              4
+            ],
+            "expectedReturn": "собака"
+          },
+          {
+            "args": [
+              "a bb cc",
+              3
+            ],
+            "expectedReturn": ""
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "",
+              1
+            ],
+            "expectedReturn": ""
+          },
+          {
+            "args": [
+              "  один\tдва   три ",
+              3
+            ],
+            "expectedReturn": "один"
+          },
+          {
+            "args": [
+              "aa bbbb cccccc",
+              4
+            ],
+            "expectedReturn": "bbbb"
+          },
+          {
+            "args": [
+              "ёж",
+              2
+            ],
+            "expectedReturn": "ёж"
+          },
+          {
+            "args": [
+              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              20
+            ],
+            "expectedReturn": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          }
+        ],
+        "functionName": "first_long_word"
+      },
+      "presentation": {
+        "title": "First_long_word",
+        "statement": "Напиши first_long_word(text, k). Раздели текст по пробельным символам и верни первое слово длиной не меньше k. Если такого слова нет, верни пустую строку. Порядок слов сохраняется.",
+        "limits": "0–300 символов; 1 ≤ k ≤ 20. Слово — непробельная последовательность.",
+        "inputHelp": false
+      }
+    },
+    {
+      "id": "c2a-python-running_totals",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.programming",
+      "skills": [
+        "py-lists.skill.input-list-sum"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши running_totals(values). Верни список накопленных сумм: элемент с индексом i равен сумме исходных элементов от 0 до i. Для пустого списка верни [].",
+      "answer": "Программа проходит все тесты",
+      "hint": "Храни сумму уже обработанных чисел в одной переменной.\nДля каждого элемента сначала прибавь его, затем добавь новую сумму в результирующий список.\nНе вычисляй одну общую сумму для всех позиций и не добавляй сумму до текущего элемента: это даст неверное смещение.",
+      "explanation": "Храни сумму уже обработанных чисел в одной переменной.\nДля каждого элемента сначала прибавь его, затем добавь новую сумму в результирующий список.\nНе вычисляй одну общую сумму для всех позиций и не добавляй сумму до текущего элемента: это даст неверное смещение. Пустой цикл оставит пустой результат.",
+      "solution": "def running_totals(values):\n    result = []\n    total = 0\n    for value in values:\n        total += value\n        result.append(total)\n    return result",
+      "principle": "Храни сумму уже обработанных чисел в одной переменной.\nДля каждого элемента сначала прибавь его, затем добавь новую сумму в результирующий список.\nНе вычисляй одну общую сумму для всех позиций и не добавляй сумму до текущего элемента: это даст неверное смещение.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-loops"
+      ],
+      "related": [],
+      "familyId": "python-prefix-sums",
+      "hints": [
+        "Храни сумму уже обработанных чисел в одной переменной.",
+        "Для каждого элемента сначала прибавь его, затем добавь новую сумму в результирующий список."
+      ],
+      "python": {
+        "type": "write-function",
+        "starterCode": "def running_totals(values):\n    pass",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                2,
+                3,
+                -1
+              ]
+            ],
+            "expectedReturn": [
+              2,
+              5,
+              4
+            ]
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0
+              ]
+            ],
+            "expectedReturn": [
+              0
+            ]
+          },
+          {
+            "args": [
+              [
+                -3,
+                -2
+              ]
+            ],
+            "expectedReturn": [
+              -3,
+              -5
+            ]
+          },
+          {
+            "args": [
+              [
+                1,
+                -1,
+                1,
+                -1
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "args": [
+              [
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000,
+                1000
+              ]
+            ],
+            "expectedReturn": [
+              1000,
+              2000,
+              3000,
+              4000,
+              5000,
+              6000,
+              7000,
+              8000,
+              9000,
+              10000,
+              11000,
+              12000,
+              13000,
+              14000,
+              15000,
+              16000,
+              17000,
+              18000,
+              19000,
+              20000,
+              21000,
+              22000,
+              23000,
+              24000,
+              25000,
+              26000,
+              27000,
+              28000,
+              29000,
+              30000,
+              31000,
+              32000,
+              33000,
+              34000,
+              35000,
+              36000,
+              37000,
+              38000,
+              39000,
+              40000,
+              41000,
+              42000,
+              43000,
+              44000,
+              45000,
+              46000,
+              47000,
+              48000,
+              49000,
+              50000,
+              51000,
+              52000,
+              53000,
+              54000,
+              55000,
+              56000,
+              57000,
+              58000,
+              59000,
+              60000,
+              61000,
+              62000,
+              63000,
+              64000,
+              65000,
+              66000,
+              67000,
+              68000,
+              69000,
+              70000,
+              71000,
+              72000,
+              73000,
+              74000,
+              75000,
+              76000,
+              77000,
+              78000,
+              79000,
+              80000,
+              81000,
+              82000,
+              83000,
+              84000,
+              85000,
+              86000,
+              87000,
+              88000,
+              89000,
+              90000,
+              91000,
+              92000,
+              93000,
+              94000,
+              95000,
+              96000,
+              97000,
+              98000,
+              99000,
+              100000
+            ]
+          }
+        ],
+        "functionName": "running_totals"
+      },
+      "presentation": {
+        "title": "Running_totals",
+        "statement": "Напиши running_totals(values). Верни список накопленных сумм: элемент с индексом i равен сумме исходных элементов от 0 до i. Для пустого списка верни [].",
+        "limits": "0–100 элементов; целые значения от −1000 до 1000.",
+        "inputHelp": false
+      }
+    },
+    {
+      "id": "c2a-python-edge_swap",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.indices"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши edge_swap(values). Верни список, в котором первый и последний элементы поменяны местами, а средние идут в прежнем порядке. Для длины 0 или 1 верни список с теми же элементами.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала отдельно обработай длины 0 и 1: обращаться к отсутствующему элементу нельзя.\nДля остальных списков нужны только два индекса: 0 и −1; средние элементы не переставляй.\nУдобно сделать копию срезом, поменять её края одновременным присваиванием и вернуть список.",
+      "explanation": "Сначала отдельно обработай длины 0 и 1: обращаться к отсутствующему элементу нельзя.\nДля остальных списков нужны только два индекса: 0 и −1; средние элементы не переставляй.\nУдобно сделать копию срезом, поменять её края одновременным присваиванием и вернуть список. Проверка сравнивает возвращаемый список.",
+      "solution": "def edge_swap(values):\n    result = values[:]\n    if len(result) >= 2:\n        result[0], result[-1] = result[-1], result[0]\n    return result",
+      "principle": "Сначала отдельно обработай длины 0 и 1: обращаться к отсутствующему элементу нельзя.\nДля остальных списков нужны только два индекса: 0 и −1; средние элементы не переставляй.\nУдобно сделать копию срезом, поменять её края одновременным присваиванием и вернуть список.",
+      "version": 1,
+      "requires": [
+        "py-functions",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-edge-swap",
+      "hints": [
+        "Сначала отдельно обработай длины 0 и 1: обращаться к отсутствующему элементу нельзя.",
+        "Для остальных списков нужны только два индекса: 0 и −1; средние элементы не переставляй."
+      ],
+      "python": {
+        "type": "write-function",
+        "starterCode": "def edge_swap(values):\n    pass",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                1,
+                2,
+                3,
+                4
+              ]
+            ],
+            "expectedReturn": [
+              4,
+              2,
+              3,
+              1
+            ]
+          },
+          {
+            "args": [
+              [
+                5
+              ]
+            ],
+            "expectedReturn": [
+              5
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1,
+                2
+              ]
+            ],
+            "expectedReturn": [
+              2,
+              1
+            ]
+          },
+          {
+            "args": [
+              [
+                -2,
+                0,
+                8
+              ]
+            ],
+            "expectedReturn": [
+              8,
+              0,
+              -2
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99
+              ]
+            ],
+            "expectedReturn": [
+              99,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84,
+              85,
+              86,
+              87,
+              88,
+              89,
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              0
+            ]
+          }
+        ],
+        "functionName": "edge_swap"
+      },
+      "presentation": {
+        "title": "Edge_swap",
+        "statement": "Напиши edge_swap(values). Верни список, в котором первый и последний элементы поменяны местами, а средние идут в прежнем порядке. Для длины 0 или 1 верни список с теми же элементами.",
+        "limits": "0–100 целых элементов, каждое от −1000 до 1000.",
+        "inputHelp": false
+      }
+    },
+    {
+      "id": "c2a-python-count-changes",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.accumulate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает одну непустую строку целых чисел через пробел. Выведи количество соседних пар с разными значениями. При одном числе ответ 0.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Нужно сравнить каждое число с непосредственно предыдущим, а не подсчитать различные значения во всём списке.\nНачинай с индекса 1, чтобы предыдущий индекс был допустимым.\nЗа каждое различие увеличь count на 1 и выведи его после цикла.",
+      "explanation": "Нужно сравнить каждое число с непосредственно предыдущим, а не подсчитать различные значения во всём списке.\nНачинай с индекса 1, чтобы предыдущий индекс был допустимым.\nЗа каждое различие увеличь count на 1 и выведи его после цикла. Список длины 1 не имеет соседних пар.",
+      "solution": "values = list(map(int, input().split()))\ncount = 0\nfor i in range(1, len(values)):\n    if values[i] != values[i - 1]:\n        count += 1\nprint(count)",
+      "principle": "Нужно сравнить каждое число с непосредственно предыдущим, а не подсчитать различные значения во всём списке.\nНачинай с индекса 1, чтобы предыдущий индекс был допустимым.\nЗа каждое различие увеличь count на 1 и выведи его после цикла.",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-adjacent-changes",
+      "hints": [
+        "Нужно сравнить каждое число с непосредственно предыдущим, а не подсчитать различные значения во всём списке.",
+        "Начинай с индекса 1, чтобы предыдущий индекс был допустимым."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "1 1 2 2 1",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "9",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "-1 0 1 -1",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "0 0 0",
+            "expectedOutput": "0"
+          },
+          {
+            "stdin": "0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1",
+            "expectedOutput": "99"
+          },
+          {
+            "stdin": "3 4 5 5 5 6",
+            "expectedOutput": "3"
+          }
+        ],
+        "stdin": "1 1 2 2 1"
+      },
+      "presentation": {
+        "title": "Count changes",
+        "statement": "Программа получает одну непустую строку целых чисел через пробел. Выведи количество соседних пар с разными значениями. При одном числе ответ 0.",
+        "limits": "1–100 чисел; каждое от −1000 до 1000. Одна строка ввода, одно целое в выводе.",
+        "inputHelp": true
+      }
+    },
+    {
+      "id": "c2a-python-boxes-needed",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "skills": [
+        "py-if.skill.branch"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Оригинальная AI-тренировка проекта · Stage 3C.2 пакет A · 2026-10-11; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Программа получает два целых числа на отдельных строках: количество предметов n и вместимость коробки k. Выведи минимальное число коробок для всех предметов. При n = 0 нужно 0 коробок.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала найди число полностью заполненных коробок через целочисленное деление.\nЕсли есть ненулевой остаток, понадобится ещё одна коробка; иначе добавлять её не нужно.\nПроверь отдельно нулевое количество и точную кратность: оба случая отличают верный алгоритм от безусловного прибавления 1..",
+      "explanation": "Сначала найди число полностью заполненных коробок через целочисленное деление.\nЕсли есть ненулевой остаток, понадобится ещё одна коробка; иначе добавлять её не нужно.\nПроверь отдельно нулевое количество и точную кратность: оба случая отличают верный алгоритм от безусловного прибавления 1.",
+      "solution": "n = int(input())\nk = int(input())\nboxes = n // k\nif n % k != 0:\n    boxes += 1\nprint(boxes)",
+      "principle": "Сначала найди число полностью заполненных коробок через целочисленное деление.\nЕсли есть ненулевой остаток, понадобится ещё одна коробка; иначе добавлять её не нужно.\nПроверь отдельно нулевое количество и точную кратность: оба случая отличают верный алгоритм от безусловного прибавления 1..",
+      "version": 1,
+      "requires": [
+        "py-types"
+      ],
+      "related": [],
+      "familyId": "python-ceiling-division",
+      "hints": [
+        "Сначала найди число полностью заполненных коробок через целочисленное деление.",
+        "Если есть ненулевой остаток, понадобится ещё одна коробка; иначе добавлять её не нужно."
+      ],
+      "python": {
+        "type": "write-program",
+        "starterCode": "",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "stdin": "13\n5",
+            "expectedOutput": "3"
+          },
+          {
+            "stdin": "0\n4",
+            "expectedOutput": "0"
+          }
+        ],
+        "hiddenTests": [
+          {
+            "stdin": "10\n5",
+            "expectedOutput": "2"
+          },
+          {
+            "stdin": "1\n100",
+            "expectedOutput": "1"
+          },
+          {
+            "stdin": "10000\n1",
+            "expectedOutput": "10000"
+          },
+          {
+            "stdin": "9999\n100",
+            "expectedOutput": "100"
+          }
+        ],
+        "stdin": "13\n5"
+      },
+      "presentation": {
+        "title": "Boxes needed",
+        "statement": "Программа получает два целых числа на отдельных строках: количество предметов n и вместимость коробки k. Выведи минимальное число коробок для всех предметов. При n = 0 нужно 0 коробок.",
+        "limits": "0 ≤ n ≤ 10000; 1 ≤ k ≤ 100. В выводе одно целое.",
+        "inputHelp": true
+      }
+    }
+  ]
+}

@@ -66,9 +66,16 @@ try{
  await page.goto(base+'#settings');await ready();const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Экспортировать JSON',exact:true}).click();const download=await downloadPromise,backup=fs.readFileSync(await download.path(),'utf8'),backedUp=parseBackup(backup).data;assert.ok(backedUp.codeDrafts[square.id]);
  await importText(backup);assert.deepEqual(await state(),backedUp);const corrupt=JSON.parse(backup);corrupt.data.codeDrafts[square.id].schemaVersion=2;await page.locator('input[type=file]').setInputFiles({name:'own-corrupt.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(corrupt))});assert.equal(await page.getByRole('dialog').count(),0);assert.deepEqual(await state(),backedUp);
  pass('Backup round-trips both drafts and learning history; invalid draft import cannot replace existing data');
- fs.writeFileSync(path.join(fixtures,'legacy-tasks.mjs'),ts.transpileModule(execFileSync('git',['show','main:src/python/tasks.ts'],{encoding:'utf8'}),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText);
- for(const ref of ['v0.2.0','v0.3.0','main']){const source=execFileSync('git',['show',ref+':src/domain/backup.ts'],{encoding:'utf8'});const file=path.join(fixtures,ref.replaceAll('.','-')+'.mjs');fs.writeFileSync(file,ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText.replace('../python/tasks.ts','./legacy-tasks.mjs'));let data=structuredClone(baseline);if(ref==='v0.2.0'){data.schemaVersion=1;delete data.adaptive;}const text=(await import(pathToFileURL(file))).serializeBackup(data);await importText(text);assert.equal((await state()).schemaVersion,2);assert.equal((await state()).topics.percent.note,baseline.topics.percent.note);}
- pass('Genuine Stage 2, Stage 3A and Android-tested Stage 3A.1 exports still import');
+ // Read actual immutable historical modules, with their own relative dependency tree.
+ for(const ref of ['v0.2.0','v0.3.0','1e629d6','77f81ec','f91ef76','37e3ee1']){
+  const root=path.join(fixtures,'history-'+ref.replaceAll('.','-'));
+  const files=execFileSync('git',['ls-tree','-r','--name-only',ref,'src/domain','src/python'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(f=>f.endsWith('.ts'));
+  for(const source of files){const destination=path.join(root,source);fs.mkdirSync(path.dirname(destination),{recursive:true});fs.writeFileSync(destination,execFileSync('git',['show',ref+':'+source]));}
+  let data=structuredClone(baseline);if(ref==='v0.2.0'){data.schemaVersion=1;delete data.adaptive;}
+  const text=(await import(pathToFileURL(path.join(root,'src/domain/backup.ts')))).serializeBackup(data);
+  await importText(text);assert.equal((await state()).schemaVersion,2);assert.equal((await state()).topics.percent.note,baseline.topics.percent.note);
+ }
+ pass('Genuine Stage 2, Stage 3A, Stage 3A.1, 0.3.4, 0.4.0 and 0.5.0 exports still import with original serializer dependencies');
  // Every new question and explanation is already in the production bundle; reopen all covered modules offline.
  for(const topic of new Set(wave.map(q=>q.topic))){await page.goto(base+'#topic/'+topic);await page.getByRole('tab',{name:'Мини-тест',exact:true}).waitFor();}pass('Every topic covered by all 100 new exercises has theory and its test route available offline');
  // Methodical content verification with real CPython; expected values stay outside Worker.

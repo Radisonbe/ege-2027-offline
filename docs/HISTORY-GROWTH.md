@@ -91,3 +91,22 @@ No history deletion, migration, archiving, size-limit change or automatic cleanu
 is introduced. Schema 2, backup format 2 and the exact 20 MiB limit remain. A future
 diagnostic/size warning and lossless versioned snapshot pooling should be handled
 as a separate data-safety task; a larger bank is not justification to remove records.
+
+
+## Stage 3C.2 A: pooled quick practice
+
+quickPractice stores one immutable snapshot per question ID/version. Sessions
+reference that pool and compact item state. The same checked answer in the same
+item is deduplicated. Draft edits and experimental Run do not append training;
+new checks and activity still accumulate. Large code strings also remain in
+training/drafts; the existing topicTests/adaptive history continues to grow.
+
+Owned synthetic measurement: 60 days, 20 checks/day, including 6 reference
+programs. 1200 training, 60 sessions, 20 snapshots; pretty backup 1,280,675 bytes.
+No retries, long programs, topic tests, adaptive sessions, errors or private
+packages in that scenario. It is not a guarantee of device capacity/duration.
+
+The 20 MiB cap and all historical records remain unchanged. Future safe work:
+measure before export, a visible size warning, pooled immutable historical
+snapshots with a versioned migration, and optional portable archive exports
+with verified restoration. Never silently delete history to make an export fit.

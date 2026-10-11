@@ -1,5 +1,6 @@
 import type { Question, StudyState } from './types.ts';
 import {validatePythonTask} from '../python/tasks.ts';
+import {validateQuickProgress} from './quick-practice.ts';
 import {validateExamProgress} from './exam-validation.ts';
 
 export const MAX_BACKUP_BYTES = 20 * 1024 * 1024;
@@ -45,7 +46,7 @@ function unique(items: unknown[], path: string) {
   if (new Set(ids).size !== ids.length) fail(path + '.id');
 }
 export function validateQuestion(value: unknown, path = 'question'): Question {
-  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python','hints','answerFormat','presentation']);
+  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python','hints','answerFormat','presentation','familyId']);
   for (const key of ['id', 'topic']) string(q[key], path + '.' + key, true);
   for (const key of ['source', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle']) string(q[key], path + '.' + key);
   for (const key of ['subtopic', 'examTaskType']) if (q[key] !== null) string(q[key], path + '.' + key);
@@ -54,7 +55,8 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
   choice(q.origin, path + '.origin', ['official', 'generated', 'reconstructed', 'custom', 'private-import']);
   choice(q.sourceType, path + '.sourceType', ['training', 'exam', 'lesson']);
   choice(q.answerType, path + '.answerType', ['number', 'text', 'choice', 'selection','multiple-choice','code']);
-  if(q.answerFormat!==undefined)choice(q.answerFormat,path+'.answerFormat',['binary']);
+  if(q.answerFormat!==undefined)choice(q.answerFormat,path+'.answerFormat',['binary','python-output']);
+  if(q.familyId!==undefined){string(q.familyId,path+'.familyId',true);if(!/^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,199}$/.test(q.familyId as string))fail(path+'.familyId');}
   integer(q.version, path + '.version', 1, Number.MAX_SAFE_INTEGER);
   if (q.sourceYear !== null) integer(q.sourceYear, path + '.sourceYear', 1900, 2200);
   strings(q.requires, path + '.requires'); strings(q.related, path + '.related');
@@ -71,6 +73,7 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
     if(!Array.isArray(expected)||!expected.length||new Set(expected).size!==expected.length||!Array.isArray(q.options)||q.options.length<2||new Set(q.options).size!==q.options.length||expected.some(v=>typeof v!=='string'||!(q.options as unknown[]).includes(v)))fail(path+'.answer');
   }
   if(q.answerFormat==='binary'&&(q.answerType!=='text'||!/^[01]+$/.test(q.answer as string)))fail(path+'.answerFormat');
+  if(q.answerFormat==='python-output'&&(q.answerType!=='text'||!q.python||(q.python as {type:string}).type!=='predict-output'||typeof (q.python as {expectedOutput?:unknown}).expectedOutput!=='string'||(q.python as {expectedOutput:string}).expectedOutput!==q.answer))fail(path+'.answerFormat');
   if(q.answerType==='code'){
     const task=validatePythonTask(q.python),tests=[...(task.visibleTests??[]),...(task.hiddenTests??[])];
     if(tests.length<3||tests.some(t=>task.functionName?t.args===undefined||t.expectedReturn===undefined:t.stdin===undefined||t.expectedOutput===undefined))fail(path+'.python.tests');
@@ -80,7 +83,7 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
 }
 
 export function validateStudyState(value: unknown): StudyState {
-  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive','codeDrafts','training','topicTests','exam']);
+  const s = object(value, 'data', ['app', 'schemaVersion', 'contentVersion', 'topics', 'attempts', 'errors', 'reviews', 'activity', 'settings', 'updatedAt'], ['adaptive','codeDrafts','training','topicTests','exam','quickPractice']);
   if (s.app !== 'ege-local-center') fail('data.app');
   if (s.schemaVersion !== 1 && s.schemaVersion !== 2) throw new BackupError('Версия схемы данных пока не поддерживается. Текущий прогресс не изменён.');
   if (s.schemaVersion === 1 && s.adaptive !== undefined) fail('data.adaptive');
@@ -155,6 +158,7 @@ export function validateStudyState(value: unknown): StudyState {
   }
   // Historical IDs are deliberately not restricted to the current content catalogue.
   // Additive migration: historical IDs, snapshots, dates, intervals and notes are untouched.
+  if(s.quickPractice!==undefined){try{validateQuickProgress(s.quickPractice,s.training??[]);}catch{fail('data.quickPractice');}}
   if(s.exam!==undefined){try{validateExamProgress(s.exam);}catch{fail('data.exam');}}
   return s.schemaVersion === 1 ? { ...value as StudyState, schemaVersion: 2, adaptive: { sessions: [], exposures: [] } } : value as StudyState;
 }

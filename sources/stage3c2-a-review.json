@@ -1,0 +1,2278 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-11",
+  "questions": [
+    {
+      "id": "c2a-math-brackets",
+      "mode": "practice",
+      "family": "signed-order",
+      "verification": "sum([-18,4*sum([7,-2])])",
+      "reason": "Сначала вычисли скобки: 7 − 2 = 5. Затем 4 · 5 = 20; −18 + 20 = 2.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-absolute",
+      "mode": "practice",
+      "family": "signed-difference",
+      "verification": "abs(5-(-7))",
+      "reason": "Изменение равно конечному значению минус начальное. 5 − (−7) = 12 градусов.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-error-order",
+      "mode": "practice",
+      "family": "signed-order",
+      "verification": "sum([6,3*4])",
+      "reason": "Умножение выполняется раньше сложения. Получаем 6 + 12 = 18, а 36 получается из неверных скобок (6 + 3) · 4.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-packaging",
+      "mode": "practice",
+      "family": "integer-capacity",
+      "verification": "next(n for n in range(20) if 12*n>=73)",
+      "reason": "Шесть пачек вмещают 72 тетради — одной не хватает. Поэтому нужна седьмая пачка.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-signed-sum",
+      "mode": "practice",
+      "family": "fraction-common-denominator",
+      "verification": "Fraction(-2,3)+Fraction(5,6)",
+      "reason": "Приведи дроби к знаменателю 6. −2/3 = −4/6; сумма равна (−4 + 5)/6 = 1/6.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-nested-share",
+      "mode": "practice",
+      "family": "fraction-changing-whole",
+      "verification": "(1-Fraction(3,5))*(1-Fraction(1,2))",
+      "reason": "После первого чтения осталось 2/5 книги. Половина этой доли равна 1/5; столько же остаётся непрочитанным.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-inverse",
+      "mode": "test",
+      "family": "fraction-restore-whole",
+      "verification": "Fraction(25)/(1-Fraction(3,8))",
+      "reason": "Остаток — 5/8 исходной массы. Если исходная масса x, то 5x/8 = 25, откуда x = 25 · 8/5 = 40. Проверка: израсходовано 15, осталось 25.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-division",
+      "mode": "practice",
+      "family": "fraction-divide",
+      "verification": "(Fraction(3,4)-Fraction(1,6))/Fraction(7,12)",
+      "reason": "Разность равна 9/12 − 2/12 = 7/12. Деление ненулевой дроби на себя даёт 1.",
+      "method": "independent-python",
+      "optionReview": [],
+      "duplicateReview": "Ложное сближение при удалении всей пунктуации: здесь есть дополнительное деление дробей и скобки, которых нет в b1-math-06. Это другой набор операций, не простая замена чисел."
+    },
+    {
+      "id": "c2a-math-compare",
+      "mode": "test",
+      "family": "fraction-compare",
+      "verification": "max([Fraction(5,8),Fraction(7,12)])",
+      "reason": "Приведи дроби к знаменателю 24: 15/24 и 14/24. Первая дробь больше.",
+      "method": "independent-python",
+      "optionReview": [
+        {
+          "text": "5/8",
+          "correct": true,
+          "reason": "Приведи дроби к знаменателю 24: 15/24 и 14/24. Первая дробь больше."
+        },
+        {
+          "text": "7/12",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: Приведи дроби к знаменателю 24: 15/24 и 14/24. Первая дробь больше."
+        },
+        {
+          "text": "Они равны",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: Приведи дроби к знаменателю 24: 15/24 и 14/24. Первая дробь больше."
+        }
+      ]
+    },
+    {
+      "id": "c2a-math-part",
+      "mode": "practice",
+      "family": "percent-direct",
+      "verification": "Fraction(240*35,100)",
+      "reason": "Один процент — 2,4 билета в расчёте, 35 процентов — 240 · 0,35 = 84 билета.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-ratio",
+      "mode": "test",
+      "family": "percent-rate-from-values",
+      "verification": "Fraction((920-800)*100,800)",
+      "reason": "Рост составляет 120 рублей. Сравниваем его с начальной ценой 800: 120/800 · 100 = 15%.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-two-bases",
+      "mode": "practice",
+      "family": "percent-chain",
+      "verification": "100*(Fraction(125,100)*Fraction(80,100)-1)",
+      "reason": "Примем исходное за 100. Получаем 125, затем 125 · 0,8 = 100. Разные процентные базы здесь точно компенсируются.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-mixture",
+      "mode": "practice",
+      "family": "percent-conserved-mass",
+      "verification": "Fraction(400*10,400+100)",
+      "reason": "Масса соли остаётся 40 г. Общая масса стала 500 г. Доля соли 40/500 = 0,08, то есть 8%.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-negative-square",
+      "mode": "practice",
+      "family": "power-sign",
+      "verification": "pow(-3,2)-pow(3,2)",
+      "reason": "Скобки включают минус в основание первой степени. (−3) · (−3) = 9 и 3 · 3 = 9; разность равна 0.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-negative-exponent",
+      "mode": "practice",
+      "family": "power-reciprocal",
+      "verification": "Fraction(1,pow(2,3))",
+      "reason": "Отрицательная степень означает обратное число: 2^(−3) = 1/2^3 = 1/8.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-combined",
+      "mode": "test",
+      "family": "power-laws",
+      "verification": "Fraction(pow(3,5)*pow(3,2),pow(3,4))",
+      "reason": "При умножении показатели складываются, при делении вычитаются. Получаем 3^(5 + 2 − 4) = 3^3 = 27.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-principal",
+      "mode": "practice",
+      "family": "root-absolute",
+      "verification": "isqrt(pow(-11,2))",
+      "reason": "Квадрат равен 121. Арифметический квадратный корень неотрицателен, поэтому результат 11, а не −11.",
+      "method": "independent-python",
+      "optionReview": [],
+      "duplicateReview": "Числовой вариант уже существующего приёма √(x²)=|x|, не новый тип. b1-math-20 и b2-math-root-absolute явно связаны с тем же семейством root-absolute отдельным alias без изменения старых объектов."
+    },
+    {
+      "id": "c2a-math-sum",
+      "mode": "practice",
+      "family": "root-exact",
+      "verification": "isqrt(81)+isqrt(16)-isqrt(25)",
+      "reason": "Корни равны 9, 4 и 5. Складываем и вычитаем: 9 + 4 − 5 = 8.",
+      "method": "independent-python",
+      "optionReview": [],
+      "duplicateReview": "Расширенный вариант вычисления нескольких точных корней и внешней арифметики; b1-math-19 связан с тем же семейством root-exact. Не считается новой формулой корней."
+    },
+    {
+      "id": "c2a-math-both-sides",
+      "mode": "practice",
+      "family": "linear-both-sides",
+      "verification": "next(x for x in range(-50,51) if 5*x-7==2*x+8)",
+      "reason": "Перенеси слагаемые с x влево, числа вправо. 3x = 15, поэтому x = 5. Подстановка даёт 18 = 18.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-fractions",
+      "mode": "practice",
+      "family": "linear-denominators",
+      "verification": "next(x for x in range(-50,51) if Fraction(x,3)+2==Fraction(x,2)-1)",
+      "reason": "Умножь обе части на 6: 2x + 12 = 3x − 6. Отсюда x = 18; в исходном уравнении обе части равны 8.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-contradiction",
+      "mode": "test",
+      "family": "linear-classify",
+      "verification": "linear_solution_count(4,8,4,3)",
+      "reason": "После раскрытия скобок получается 4x + 8 = 4x + 3, то есть 8 = 3. Это противоречие при любом x; решений нет.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-zero-factor",
+      "mode": "practice",
+      "family": "quadratic-zero-factor",
+      "verification": "next(x for x in range(-20,21) if x!=0 and x*x-7*x==0)",
+      "reason": "Вынеси x: x(x − 7) = 0. Один корень 0, второй 7. Деление на x без выделения нулевого корня потеряло бы часть решений.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-double-root",
+      "mode": "test",
+      "family": "quadratic-root-count",
+      "verification": "len([x for x in range(-20,21) if x*x-6*x+9==0])",
+      "reason": "Левая часть равна (x − 3)^2. Она обращается в нуль только при x = 3. Совпавшие корни считаются одним различным корнем.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-model",
+      "mode": "practice",
+      "family": "quadratic-geometry-model",
+      "verification": "next(x for x in range(1,41) if x*(x+3)==40)",
+      "reason": "Обозначь ширину x > 0. Тогда x(x + 3) = 40, то есть (x − 5)(x + 8) = 0. Корень −8 не подходит длине; ширина 5, длина 8.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-argument",
+      "mode": "practice",
+      "family": "function-substitution",
+      "verification": "2*pow(-2,2)-3",
+      "reason": "Подставь −2 вместе со скобками: 2 · (−2)^2 − 3 = 8 − 3 = 5.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-zero",
+      "mode": "test",
+      "family": "function-zero",
+      "verification": "next(x for x in range(-20,21) if 4-Fraction(x,2)==0)",
+      "reason": "В нуле функции y = 0. Уравнение 4 − x/2 = 0 даёт x/2 = 4 и x = 8.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-domain",
+      "mode": "practice",
+      "family": "function-root-domain",
+      "verification": "next(x for x in range(-10,20) if 2*x-5>=0)",
+      "reason": "Подкоренное выражение должно быть неотрицательным: 2x − 5 ≥ 0, x ≥ 2,5. Первое подходящее целое — 3.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-tariff",
+      "mode": "practice",
+      "family": "linear-tariff-crossing",
+      "verification": "next(t for t in range(200) if 100+3*t==160+2*t)",
+      "reason": "Составь 100 + 3t = 160 + 2t. Получаем t = 60. Оба тарифа стоят 280 рублей; минуты не нужно округлять.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-speed",
+      "mode": "practice",
+      "family": "distance-units",
+      "verification": "Fraction(9*30,135)",
+      "reason": "Переведи время: 2 ч 15 мин = 2,25 ч. Скорость 9/2,25 = 4 км/ч. За половину часа он пройдёт 2 км.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-work",
+      "mode": "practice",
+      "family": "work-rates",
+      "verification": "1/(Fraction(1,6)+Fraction(1,3))",
+      "reason": "За час насосы заполняют 1/6 и 1/3 бака. Вместе это 1/2 бака в час, поэтому весь бак заполнят за 2 часа.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-tickets",
+      "mode": "test",
+      "family": "word-linear-balance",
+      "verification": "next(x for x in range(60,1000) if 2*x+3*(x-60)==1080)",
+      "reason": "Обозначь взрослый билет x, детский x − 60. Тогда 2x + 3(x − 60) = 1080, 5x = 1260, x = 252. Проверка: 504 + 576 = 1080.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-ordered-dice",
+      "mode": "practice",
+      "family": "probability-dice-sum",
+      "verification": "Fraction(sum(a+b==7 for a in range(1,7) for b in range(1,7)),36)",
+      "reason": "Всего 36 упорядоченных пар. Сумму 7 дают (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): шесть исходов. 6/36 = 1/6.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-mean",
+      "mode": "test",
+      "family": "statistics-mean",
+      "verification": "Fraction(sum([4,7,5,8]),4)",
+      "reason": "Среднее — общая сумма, делённая на число дней. (4 + 7 + 5 + 8)/4 = 24/4 = 6 км.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-median",
+      "mode": "practice",
+      "family": "statistics-median",
+      "verification": "sorted([9,2,7,4,6])[2]",
+      "reason": "Упорядочи числа: 2, 4, 6, 7, 9. Среднее по позиции третье число — 6. Медиана не обязательно равна среднему арифметическому.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-without-replacement",
+      "mode": "practice",
+      "family": "probability-without-replacement",
+      "verification": "Fraction(sum(i<3 and j<3 for i in range(5) for j in range(5) if i!=j),20)",
+      "reason": "Первый белый: 3/5. После этого остаются 2 белых из 4 шаров. Вероятность двух белых 3/5 · 2/4 = 3/10.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-math-definition",
+      "mode": "practice",
+      "family": "log-definition",
+      "verification": "next(n for n in range(-10,11) if Fraction(2)**n==Fraction(1,8))",
+      "reason": "Логарифм — показатель степени. 2^(−3) = 1/8, значит log₂(1/8) = −3.",
+      "method": "independent-python",
+      "optionReview": [],
+      "duplicateReview": "Вариант семейства логарифма по определению, включает обратную степень и отрицательный показатель. Не заявляется новым типом логарифма по сравнению с b2-math-log-definition."
+    },
+    {
+      "id": "c2a-math-reverse-chain",
+      "mode": "practice",
+      "family": "percent-chain-inverse",
+      "verification": "Fraction(2700)/(Fraction(120,100)*Fraction(75,100))",
+      "reason": "Пусть исходная цена x. После двух изменений остаётся 1,2 · 0,75x = 0,9x. Поэтому x = 2700/0,9 = 3000. Проверка: 3600, затем 2700.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-russian-adverb-time",
+      "mode": "practice",
+      "family": "speech-context",
+      "verification": null,
+      "reason": "«Сегодня» обозначает время действия, отвечает на вопрос «когда?» и не изменяется. Это наречие.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Наречие",
+          "correct": true,
+          "reason": "Временное наречие, неизменяемое слово."
+        },
+        {
+          "text": "Существительное",
+          "correct": false,
+          "reason": "Не называет предмет и не склоняется."
+        },
+        {
+          "text": "Прилагательное",
+          "correct": false,
+          "reason": "Не обозначает согласуемый признак предмета."
+        },
+        {
+          "text": "Глагол",
+          "correct": false,
+          "reason": "Не обозначает действие и не спрягается."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-noun-vs-verb",
+      "mode": "test",
+      "family": "speech-context",
+      "verification": null,
+      "reason": "Слово «стук» называет явление и отвечает на вопрос «что?». Его формы: стук, стука, стуку. Действие в предложении выражено глаголом «разбудил».",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Существительное",
+          "correct": true,
+          "reason": "Название явления, изменяемое по падежам."
+        },
+        {
+          "text": "Глагол",
+          "correct": false,
+          "reason": "Действие выражено другим словом."
+        },
+        {
+          "text": "Наречие",
+          "correct": false,
+          "reason": "Стук склоняется, это не неизменяемое наречие."
+        },
+        {
+          "text": "Предлог",
+          "correct": false,
+          "reason": "Слово является самостоятельным членом предложения."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-pronoun",
+      "mode": "practice",
+      "family": "pronoun-person",
+      "verification": null,
+      "reason": "«Она» указывает на лицо, не называя его. Это личное местоимение третьего лица единственного числа.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Личное местоимение",
+          "correct": true,
+          "reason": "Указывает на лицо в третьем лице."
+        },
+        {
+          "text": "Указательное местоимение",
+          "correct": false,
+          "reason": "Указательные местоимения: этот, тот и подобные."
+        },
+        {
+          "text": "Союз",
+          "correct": false,
+          "reason": "Не связывает части и является подлежащим."
+        },
+        {
+          "text": "Числительное",
+          "correct": false,
+          "reason": "Не обозначает количество или порядок."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-inversion",
+      "mode": "practice",
+      "family": "basis-word-order",
+      "verification": null,
+      "reason": "Подлежащее — «сосны» (что?), сказуемое — «шумели» (что делали?). Слово «высокие» — определение, «за окном» — обстоятельство.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Сосны шумели",
+          "correct": true,
+          "reason": "Подлежащее и простое глагольное сказуемое."
+        },
+        {
+          "text": "Высокие сосны",
+          "correct": false,
+          "reason": "Подлежащее с определением, без сказуемого."
+        },
+        {
+          "text": "За окном шумели",
+          "correct": false,
+          "reason": "Обстоятельство со сказуемым, без подлежащего."
+        },
+        {
+          "text": "Окном шумели",
+          "correct": false,
+          "reason": "Форма существительного относится к обстоятельству."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-predicate-compound",
+      "mode": "test",
+      "family": "basis-compound-predicate",
+      "verification": null,
+      "reason": "Фазовый глагол «стал» и инфинитив «работать» вместе обозначают начало действия: это составное глагольное сказуемое. «Тише» — обстоятельство.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Стал работать",
+          "correct": true,
+          "reason": "Фазовая часть и инфинитив составляют сказуемое."
+        },
+        {
+          "text": "Стал",
+          "correct": false,
+          "reason": "Отдельная фазовая часть не включает само действие."
+        },
+        {
+          "text": "Работать тише",
+          "correct": false,
+          "reason": "Пропущена фазовая часть и добавлено обстоятельство."
+        },
+        {
+          "text": "Прибор стал",
+          "correct": false,
+          "reason": "Включено подлежащее, пропущен инфинитив."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-object",
+      "mode": "practice",
+      "family": "secondary-object",
+      "verification": null,
+      "reason": "Сказуемое — «принёс», подлежащее — «курьер». Слово «письмо» обозначает объект действия и отвечает на вопрос «принёс что?». Это дополнение.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Дополнение",
+          "correct": true,
+          "reason": "Прямое дополнение при переходном глаголе."
+        },
+        {
+          "text": "Подлежащее",
+          "correct": false,
+          "reason": "Действие выполняет курьер."
+        },
+        {
+          "text": "Определение",
+          "correct": false,
+          "reason": "Не обозначает признак другого существительного."
+        },
+        {
+          "text": "Обстоятельство",
+          "correct": false,
+          "reason": "Не обозначает место, время или способ действия."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-circumstance",
+      "mode": "test",
+      "family": "secondary-circumstance",
+      "verification": null,
+      "reason": "Слово отвечает на вопрос «поднял как?» и обозначает способ действия. Это обстоятельство, выраженное наречием.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Обстоятельство",
+          "correct": true,
+          "reason": "Способ действия."
+        },
+        {
+          "text": "Дополнение",
+          "correct": false,
+          "reason": "Не объект действия и не косвенный падеж существительного."
+        },
+        {
+          "text": "Подлежащее",
+          "correct": false,
+          "reason": "Не называет действующего лица."
+        },
+        {
+          "text": "Определение",
+          "correct": false,
+          "reason": "Характеризует действие, а не предмет."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-relative-object",
+      "mode": "practice",
+      "family": "relative-role",
+      "verification": null,
+      "reason": "«Которую» заменяет слово «книгу» внутри придаточной части: искал что? Оно соединяет части и является дополнением, поэтому это союзное слово.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Союзное слово — дополнение",
+          "correct": true,
+          "reason": "Винительный падеж, объект поиска."
+        },
+        {
+          "text": "Союз, не член предложения",
+          "correct": false,
+          "reason": "Слово имеет синтаксическую роль внутри части."
+        },
+        {
+          "text": "Союзное слово — подлежащее",
+          "correct": false,
+          "reason": "Подлежащее восстанавливается как я; которую — объект."
+        },
+        {
+          "text": "Предлог",
+          "correct": false,
+          "reason": "Изменяемое относительное местоимение, не предлог."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-that-subject",
+      "mode": "test",
+      "family": "that-member",
+      "verification": null,
+      "reason": "К слову можно поставить вопрос внутри придаточного: изменилось что? Оно является подлежащим. Поэтому «что» здесь союзное слово, а не союз.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Союзное слово",
+          "correct": true,
+          "reason": "Относительное местоимение в роли подлежащего."
+        },
+        {
+          "text": "Союз",
+          "correct": false,
+          "reason": "Союз не выполнял бы роль подлежащего."
+        },
+        {
+          "text": "Частица",
+          "correct": false,
+          "reason": "Не выражает оттенок значения, а называет неизвестный предмет изменения."
+        },
+        {
+          "text": "Предлог",
+          "correct": false,
+          "reason": "Не управляет падежом существительного."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-that-conjunction",
+      "mode": "practice",
+      "family": "that-nonmember",
+      "verification": null,
+      "reason": "У придаточного уже есть основа «встреча начнётся». К «что» нельзя поставить вопрос как к члену этой части. Оно только соединяет части.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Союз",
+          "correct": true,
+          "reason": "Подчинительный союз без синтаксической роли."
+        },
+        {
+          "text": "Союзное слово — подлежащее",
+          "correct": false,
+          "reason": "Подлежащее — встреча."
+        },
+        {
+          "text": "Местоимение — дополнение",
+          "correct": false,
+          "reason": "Нет глагола, требующего объекта что внутри придаточной."
+        },
+        {
+          "text": "Наречие",
+          "correct": false,
+          "reason": "Не обозначает обстоятельство."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-because",
+      "mode": "practice",
+      "family": "subordinate-meaning",
+      "verification": null,
+      "reason": "Часть «потому что началась гроза» отвечает на вопрос «почему вернулись?». Составной союз «потому что» вводит причину.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Причина",
+          "correct": true,
+          "reason": "Гроза объясняет возвращение."
+        },
+        {
+          "text": "Цель",
+          "correct": false,
+          "reason": "Цель выражалась бы для чего, чтобы."
+        },
+        {
+          "text": "Условие",
+          "correct": false,
+          "reason": "Условие требует если или равнозначной связи."
+        },
+        {
+          "text": "Время",
+          "correct": false,
+          "reason": "Союз не задаёт момент когда."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-subordinate-basis",
+      "mode": "practice",
+      "family": "basis-subordinate",
+      "verification": null,
+      "reason": "Придаточная часть — «когда растаял снег». Подлежащее снег, сказуемое растаял. «Дорожка стала сухой» — основа главной части.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Снег растаял",
+          "correct": true,
+          "reason": "Оба главных члена внутри придаточного."
+        },
+        {
+          "text": "Дорожка стала сухой",
+          "correct": false,
+          "reason": "Это основа главной части."
+        },
+        {
+          "text": "Когда растаял",
+          "correct": false,
+          "reason": "Когда — союз, подлежащее пропущено."
+        },
+        {
+          "text": "Дорожка растаял",
+          "correct": false,
+          "reason": "Слова из разных частей, нарушение согласования."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-main-basis",
+      "mode": "test",
+      "family": "basis-interrupted",
+      "verification": null,
+      "reason": "Придаточное «которую подарил брат» вставлено между подлежащим и сказуемым главной части. Главная основа: книга лежала.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Книга лежала",
+          "correct": true,
+          "reason": "Главные члены главной части."
+        },
+        {
+          "text": "Брат подарил",
+          "correct": false,
+          "reason": "Основа придаточного."
+        },
+        {
+          "text": "Которую подарил",
+          "correct": false,
+          "reason": "Дополнение и сказуемое придаточного."
+        },
+        {
+          "text": "Полке лежала",
+          "correct": false,
+          "reason": "Полке — часть обстоятельства места."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-despite",
+      "mode": "practice",
+      "family": "preposition-context",
+      "verification": null,
+      "reason": "«Несмотря на» выражает уступку и связывает существительное «дождь» с сообщением о прогулке. Здесь нет действия смотреть. Это производный предлог.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Производный предлог",
+          "correct": true,
+          "reason": "Уступительный предлог с винительным падежом."
+        },
+        {
+          "text": "Деепричастие с отрицанием",
+          "correct": false,
+          "reason": "Действие не глядеть здесь не описывается."
+        },
+        {
+          "text": "Сочинительный союз",
+          "correct": false,
+          "reason": "Не соединяет равноправные слова или части."
+        },
+        {
+          "text": "Существительное",
+          "correct": false,
+          "reason": "Не называет предмет."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-government",
+      "mode": "test",
+      "family": "preposition-government",
+      "verification": null,
+      "reason": "Предлог «согласно» требует дательного падежа: согласно чему? — расписанию. Форма «расписания» родительная и здесь не подходит.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Согласно расписанию",
+          "correct": true,
+          "reason": "Дательный падеж."
+        },
+        {
+          "text": "Согласно расписания",
+          "correct": false,
+          "reason": "Родительный падеж."
+        },
+        {
+          "text": "Согласно расписанием",
+          "correct": false,
+          "reason": "Творительный падеж."
+        },
+        {
+          "text": "Согласно расписание",
+          "correct": false,
+          "reason": "Именительный/винительный вместо дательного."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-recognize",
+      "mode": "practice",
+      "family": "participle-recognition",
+      "verification": null,
+      "reason": "«Подошедший» обозначает признак по действию: поезд, который подошёл. «Остановился» — личный глагол, «поезд» и «платформы» — существительные.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Подошедший",
+          "correct": true,
+          "reason": "Действительное причастие прошедшего времени."
+        },
+        {
+          "text": "Остановился",
+          "correct": false,
+          "reason": "Личная форма глагола."
+        },
+        {
+          "text": "Поезд",
+          "correct": false,
+          "reason": "Существительное."
+        },
+        {
+          "text": "Платформы",
+          "correct": false,
+          "reason": "Существительное в родительном падеже."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-postposition",
+      "mode": "practice",
+      "family": "participle-postposition",
+      "verification": null,
+      "reason": "Причастный оборот «написанное вчера» стоит после определяемого слова «письмо» и обособляется с двух сторон.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Письмо, написанное вчера, лежало на столе.",
+          "correct": true,
+          "reason": "Оборот после существительного замкнут двумя запятыми."
+        },
+        {
+          "text": "Письмо написанное вчера лежало на столе.",
+          "correct": false,
+          "reason": "Пропущено обязательное обособление."
+        },
+        {
+          "text": "Письмо написанное, вчера лежало на столе.",
+          "correct": false,
+          "reason": "Запятая разрывает оборот."
+        },
+        {
+          "text": "Письмо, написанное вчера лежало на столе.",
+          "correct": false,
+          "reason": "Нет закрывающей запятой перед сказуемым."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-preposition",
+      "mode": "test",
+      "family": "participle-preposition",
+      "verification": null,
+      "reason": "Оборот «покрытая снегом» стоит перед существительным «тропа», не имеет причинного значения и не относится к местоимению. В данном контексте запятые не нужны.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Покрытая снегом тропа вела к дому.",
+          "correct": true,
+          "reason": "Обычный оборот перед существительным."
+        },
+        {
+          "text": "Покрытая снегом, тропа вела к дому.",
+          "correct": false,
+          "reason": "Нет основания обособлять оборот с одной стороны."
+        },
+        {
+          "text": "Покрытая, снегом тропа вела к дому.",
+          "correct": false,
+          "reason": "Разорвано сочетание причастия с зависимым словом."
+        },
+        {
+          "text": "Покрытая снегом тропа, вела к дому.",
+          "correct": false,
+          "reason": "Запятая между подлежащим и сказуемым необоснованна."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-ne-opposition",
+      "mode": "practice",
+      "family": "ne-adjective-opposition",
+      "verification": null,
+      "reason": "Противопоставление признаков с союзом «а» требует раздельного написания НЕ с прилагательным: не высокий, а низкий.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Не высокий, а низкий",
+          "correct": true,
+          "reason": "Явное противопоставление с а."
+        },
+        {
+          "text": "Невысокий, а низкий",
+          "correct": false,
+          "reason": "Слитное написание не подходит при таком противопоставлении."
+        },
+        {
+          "text": "Не-высокий, а низкий",
+          "correct": false,
+          "reason": "Дефис с НЕ здесь не применяется."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-verb-infinitive",
+      "mode": "test",
+      "family": "verb-tsya",
+      "verification": null,
+      "reason": "Поставь вопрос: хочет что делать? — учиться. Это инфинитив; перед -ся сохраняется мягкий знак.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Учиться",
+          "correct": true,
+          "reason": "Инфинитив на -ться."
+        },
+        {
+          "text": "Учится",
+          "correct": false,
+          "reason": "Форма что делает не соответствует хочет."
+        },
+        {
+          "text": "Учитьса",
+          "correct": false,
+          "reason": "Окончание -са не является правильным написанием."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-single-and",
+      "mode": "practice",
+      "family": "homogeneous-single-union",
+      "verification": null,
+      "reason": "Однородные подлежащие «ручка» и «блокнот» соединены одиночным союзом И. Запятая между ними не нужна.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "В сумке лежали ручка и блокнот.",
+          "correct": true,
+          "reason": "Одиночное и соединяет однородные члены."
+        },
+        {
+          "text": "В сумке лежали ручка, и блокнот.",
+          "correct": false,
+          "reason": "Запятая перед одиночным и не требуется."
+        },
+        {
+          "text": "В сумке, лежали ручка и блокнот.",
+          "correct": false,
+          "reason": "Обстоятельство не требует запятой перед сказуемым."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-address",
+      "mode": "test",
+      "family": "address",
+      "verification": null,
+      "reason": "«Коллеги» называет адресатов просьбы — это обращение. Оно отделяется запятой и не является подлежащим при повелительном «проверьте».",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Коллеги, проверьте расчёт.",
+          "correct": true,
+          "reason": "Обособлено обращение в начале."
+        },
+        {
+          "text": "Коллеги проверьте расчёт.",
+          "correct": false,
+          "reason": "Не отделено обращение."
+        },
+        {
+          "text": "Коллеги проверьте, расчёт.",
+          "correct": false,
+          "reason": "Запятая разрывает глагол и дополнение."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-gerund",
+      "mode": "practice",
+      "family": "gerund-turn",
+      "verification": null,
+      "reason": "Деепричастный оборот «проверив расчёт» выражает добавочное действие и обособляется. Оба действия выполняет мастер.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Проверив расчёт, мастер подписал лист.",
+          "correct": true,
+          "reason": "Отделён целый деепричастный оборот."
+        },
+        {
+          "text": "Проверив, расчёт мастер подписал лист.",
+          "correct": false,
+          "reason": "Оборот разорван между главным и зависимым словом."
+        },
+        {
+          "text": "Проверив расчёт мастер подписал лист.",
+          "correct": false,
+          "reason": "Обязательная запятая пропущена."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-common-time",
+      "mode": "practice",
+      "family": "complex-common-member",
+      "verification": null,
+      "reason": "«Утром» относится к обеим частям: утром выглянуло и утром запели. Общий второстепенный член позволяет не ставить запятую перед одиночным И.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Нет: есть общий второстепенный член",
+          "correct": true,
+          "reason": "Утром — общий член двух частей."
+        },
+        {
+          "text": "Да: в любом сложном предложении перед И всегда запятая",
+          "correct": false,
+          "reason": "Правило имеет указанное исключение."
+        },
+        {
+          "text": "Нет: это одно подлежащее",
+          "correct": false,
+          "reason": "Два подлежащих: солнце и птицы."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-no-common",
+      "mode": "test",
+      "family": "complex-independent-and",
+      "verification": null,
+      "reason": "Две основы: солнце скрылось, двор погрузился. Общего второстепенного члена нет, перед соединительным союзом ставится запятая.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Солнце скрылось, и двор погрузился в тень.",
+          "correct": true,
+          "reason": "Разделены самостоятельные предикативные части."
+        },
+        {
+          "text": "Солнце скрылось и двор погрузился в тень.",
+          "correct": false,
+          "reason": "Обязательная межчастная запятая пропущена."
+        },
+        {
+          "text": "Солнце, скрылось и двор погрузился в тень.",
+          "correct": false,
+          "reason": "Необоснованно разделены подлежащее и сказуемое."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-purpose",
+      "mode": "practice",
+      "family": "subordinate-purpose",
+      "verification": null,
+      "reason": "Союз «чтобы» вводит цель действия: открыли окно для проветривания. Это не сообщение о времени или причине уже совершённого действия.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "С какой целью?",
+          "correct": true,
+          "reason": "Вопрос придаточного цели."
+        },
+        {
+          "text": "Когда?",
+          "correct": false,
+          "reason": "Нет указания момента времени."
+        },
+        {
+          "text": "Несмотря на что?",
+          "correct": false,
+          "reason": "Не уступительная связь."
+        },
+        {
+          "text": "Какой?",
+          "correct": false,
+          "reason": "Придаточное не характеризует существительное."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-pronoun-clear",
+      "mode": "practice",
+      "family": "text-personal-link",
+      "verification": null,
+      "reason": "В первой фразе только «катер» — существительное мужского рода, которое может готовиться к рейсу. «Причала» входит в обстоятельство и по смыслу не является объектом подготовки.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Катер",
+          "correct": true,
+          "reason": "Мужской род и смысловая связь с рейсом."
+        },
+        {
+          "text": "Причал",
+          "correct": false,
+          "reason": "Причал не готовится к рейсу; форма в обстоятельстве."
+        },
+        {
+          "text": "Рейс",
+          "correct": false,
+          "reason": "Рейс упомянут позже, не является предыдущим референтом."
+        },
+        {
+          "text": "Утро",
+          "correct": false,
+          "reason": "Утро среднего рода и не упомянуто как субъект."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-cause-order",
+      "mode": "test",
+      "family": "text-cause-result",
+      "verification": null,
+      "reason": "Снежный занос — причина задержки. Слово «поэтому» показывает переход от причины к следствию.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Второе сообщает следствие первого",
+          "correct": true,
+          "reason": "Поэтому вводит результат."
+        },
+        {
+          "text": "Второе сообщает причину первого",
+          "correct": false,
+          "reason": "Порядок обратный: причина в первом."
+        },
+        {
+          "text": "Второе опровергает первое",
+          "correct": false,
+          "reason": "Противоречия нет."
+        },
+        {
+          "text": "Второе приводит сравнение",
+          "correct": false,
+          "reason": "Нет уподобления двух явлений."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-lexical-repetition",
+      "mode": "practice",
+      "family": "text-lexical-link",
+      "verification": null,
+      "reason": "Существительное «карта» повторено во втором предложении. Слово не заменено местоимением или синонимом, поэтому связь обеспечивается лексическим повтором.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Лексический повтор",
+          "correct": true,
+          "reason": "Повтор того же слова в другой падежной форме."
+        },
+        {
+          "text": "Замена личным местоимением",
+          "correct": false,
+          "reason": "Местоимения вместо карты нет."
+        },
+        {
+          "text": "Антонимы",
+          "correct": false,
+          "reason": "Слова с противоположным значением не соединяют предложения."
+        },
+        {
+          "text": "Сравнение",
+          "correct": false,
+          "reason": "Нет сравнительной конструкции."
+        }
+      ]
+    },
+    {
+      "id": "c2a-russian-homogeneous-basis",
+      "mode": "practice",
+      "family": "basis-homogeneous",
+      "verification": null,
+      "reason": "Подлежащее — мастер. Он осмотрел и заменил: два однородных сказуемых в простом предложении, а не две отдельные основы с разными подлежащими.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "Два",
+          "correct": true,
+          "reason": "Осмотрел и заменил."
+        },
+        {
+          "text": "Одно",
+          "correct": false,
+          "reason": "Второе действие тоже является сказуемым."
+        },
+        {
+          "text": "Три",
+          "correct": false,
+          "reason": "Прибор и провод — дополнения, не сказуемые."
+        },
+        {
+          "text": "Ни одного",
+          "correct": false,
+          "reason": "Действия названы явно."
+        }
+      ]
+    },
+    {
+      "id": "c2a-informatics-place-polynomial",
+      "mode": "practice",
+      "family": "base-polynomial",
+      "verification": "int(\"203\",7)",
+      "reason": "Разряды имеют веса 7^2, 7 и 1. Значение 2 · 49 + 0 · 7 + 3 = 101.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-unknown-digit",
+      "mode": "practice",
+      "family": "base-unknown-digit",
+      "verification": "next(x for x in range(5) if int(\"1\"+str(x)+\"2\",5)==42)",
+      "reason": "По весам разрядов получаем 25 + 5x + 2 = 42. Поэтому 5x = 15, x = 3; эта цифра меньше основания 5.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-unknown-base",
+      "mode": "test",
+      "family": "base-unknown-base",
+      "verification": "next(b for b in range(4,37) if int(\"23\",b)==15)",
+      "reason": "Запись 23 означает 2b + 3. Уравнение 2b + 3 = 15 даёт b = 6. Цифры 2 и 3 допустимы, так как меньше 6.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-hex-add",
+      "mode": "practice",
+      "family": "mixed-base-arithmetic",
+      "verification": "int(\"A\",16)+int(\"11\",2)",
+      "reason": "Шестнадцатеричная A равна 10. Двоичная 11 равна 3. Сумма равна 13.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-append-zero",
+      "mode": "practice",
+      "family": "binary-append-shift",
+      "verification": "int(bin(13)[2:]+\"0\",2)",
+      "reason": "Приписывание нуля сдвигает каждый разряд вдвое. 13₂ здесь означает именно запись десятичного 13: 1101 → 11010, значение 26.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-ones",
+      "mode": "practice",
+      "family": "binary-popcount",
+      "verification": "bin(31).count(\"1\")",
+      "reason": "31 = 16 + 8 + 4 + 2 + 1. Все пять разрядов единичные: 11111.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-capacity-interval",
+      "mode": "test",
+      "family": "binary-fixed-capacity",
+      "verification": "max(int(format(n,\"05b\"),2) for n in range(32))",
+      "reason": "Пять разрядов дают 2^5 = 32 разных комбинации. Значения начинаются с нуля, поэтому максимальное — 31.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-kib",
+      "mode": "practice",
+      "family": "information-unit-convert",
+      "verification": "3*2**10",
+      "reason": "Умножь количество двоичных килобайтов на 1024. 3 · 1024 = 3072 байта.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-transmit",
+      "mode": "practice",
+      "family": "information-transmission",
+      "verification": "Fraction(18000,3000)",
+      "reason": "Время равно объёму, делённому на скорость. Единицы одинаковы: 18 000/3000 = 6 секунд.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-aligned",
+      "mode": "practice",
+      "family": "information-per-record-rounding",
+      "verification": "9*next(n for n in range(10) if n*8>=13)",
+      "reason": "Одно сообщение требует 2 байта: 1 байта недостаточно для 13 бит. Девять отдельно хранимых сообщений займут 18 байтов. Округлять только общую сумму нельзя.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-alphabet-17",
+      "mode": "practice",
+      "family": "uniform-alphabet-capacity",
+      "verification": "next(n for n in range(20) if 2**n>=17)",
+      "reason": "Четыре бита дают только 16 кодов; пять дают 32. Чтобы различить 17 символов, нужны 5 бит.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-message-volume",
+      "mode": "practice",
+      "family": "uniform-message-volume",
+      "verification": "Fraction(20*6,8)",
+      "reason": "Объём равен 20 · 6 = 120 бит. Делим на 8: 15 байтов; округление не требуется.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-fano-valid",
+      "mode": "practice",
+      "family": "prefix-bidirectional",
+      "verification": "next(s for s in [\"11\",\"0\",\"1\",\"001\"] if all(not s.startswith(c) and not c.startswith(s) for c in [\"00\",\"01\",\"10\"]))",
+      "reason": "Новый код не должен начинаться старым кодом и не должен быть началом старого. Строка 11 не конфликтует; 0 является началом 00 и 01, 1 — началом 10, 001 начинается с 00.",
+      "method": "independent-python",
+      "optionReview": [
+        {
+          "text": "11",
+          "correct": true,
+          "reason": "Новый код не должен начинаться старым кодом и не должен быть началом старого. Строка 11 не конфликтует; 0 является началом 00 и 01, 1 — началом 10, 001 начинается с 00."
+        },
+        {
+          "text": "0",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: Новый код не должен начинаться старым кодом и не должен быть началом старого. Строка 11 не конфликтует; 0 является началом 00 и 01, 1 — началом 10, 001 начинается с 00."
+        },
+        {
+          "text": "1",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: Новый код не должен начинаться старым кодом и не должен быть началом старого. Строка 11 не конфликтует; 0 является началом 00 и 01, 1 — началом 10, 001 начинается с 00."
+        },
+        {
+          "text": "001",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: Новый код не должен начинаться старым кодом и не должен быть началом старого. Строка 11 не конфликтует; 0 является началом 00 и 01, 1 — началом 10, 001 начинается с 00."
+        }
+      ]
+    },
+    {
+      "id": "c2a-informatics-permutation",
+      "mode": "test",
+      "family": "code-no-repetition",
+      "verification": "len(list(permutations(\"ABCD\",2)))",
+      "reason": "На первое место 4 выбора, на второе остаются 3. Порядок важен: AB и BA разные. Всего 4 · 3 = 12.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-truth-count",
+      "mode": "practice",
+      "family": "logic-truth-count",
+      "verification": "sum(bool((a or b) and not a) for a in [0,1] for b in [0,1])",
+      "reason": "Из НЕ A следует A = 0. Тогда A ИЛИ B истинно только при B = 1. Единственный набор (0,1).",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-exclusive",
+      "mode": "practice",
+      "family": "logic-exclusive",
+      "verification": null,
+      "reason": "Первая часть описывает A = 1, B = 0, вторая — A = 0, B = 1. Другие наборы обе части делают ложными.",
+      "method": "truth-table",
+      "optionReview": [
+        {
+          "text": "(A И НЕ B) ИЛИ (НЕ A И B)",
+          "correct": true,
+          "reason": "Истина на 01 и 10."
+        },
+        {
+          "text": "A И B",
+          "correct": false,
+          "reason": "Истина только на 11."
+        },
+        {
+          "text": "A ИЛИ B",
+          "correct": false,
+          "reason": "Дополнительно истинно на 11."
+        },
+        {
+          "text": "НЕ A И НЕ B",
+          "correct": false,
+          "reason": "Истина только на 00."
+        }
+      ],
+      "truthTables": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "c2a-informatics-negated-condition",
+      "mode": "test",
+      "family": "logic-interval-negation",
+      "verification": "sum(not (x>3 and x<7) for x in range(1,9))",
+      "reason": "Оба неравенства верны при x = 4, 5, 6: три значения. Остальные пять из восьми дают ложь.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-universal-threshold",
+      "mode": "practice",
+      "family": "logic-universal-bound",
+      "verification": "next(a for a in range(20) if all(x<=a or x%2==1 for x in range(13)))",
+      "reason": "Чётное x не может сделать вторую часть истинной, поэтому A должно быть не меньше каждого чётного x в диапазоне. Наибольшее такое x = 12; A = 12 подходит всем.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-degree",
+      "mode": "practice",
+      "family": "graph-degree",
+      "verification": "sum(\"C\" in e for e in [\"AB\",\"AC\",\"BD\",\"CD\",\"CE\"])",
+      "reason": "С C связаны A, D и E: три ребра AC, CD, CE. Другие рёбра к C не относятся.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-shortest",
+      "mode": "practice",
+      "family": "graph-weighted-route",
+      "verification": "min([4+3,2+8,2+1+3,4+1+8])",
+      "reason": "Пути A-B-D и A-C-D имеют длины 7 и 10. Через C и B получаем A-C-B-D длиной 2 + 1 + 3 = 6. Прямых других дорог нет.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-paths",
+      "mode": "test",
+      "family": "dag-path-count",
+      "verification": "sum(all((a,b) in [(\"A\",\"B\"),(\"A\",\"C\"),(\"B\",\"D\"),(\"C\",\"D\"),(\"B\",\"C\")] for a,b in zip(path,path[1:])) for k in range(3) for middle in permutations(\"BC\",k) for path in [(\"A\",)+middle+(\"D\",)])",
+      "reason": "Можно пройти A-B-D, A-C-D и A-B-C-D. Других исходящих рёбер нет, обратные переходы запрещены.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-tree",
+      "mode": "practice",
+      "family": "tree-edge-count",
+      "verification": "len(list(range(2,9)))",
+      "reason": "Связный граф без циклов — дерево. Начни с одной вершины: каждую из следующих семи присоединяют одним ребром. Поэтому рёбер 8 − 1 = 7.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-sum-products",
+      "mode": "practice",
+      "family": "table-weighted-sum",
+      "verification": "sum(p*n for p,n in [(15,3),(20,2),(8,5)])",
+      "reason": "Для каждой строки перемножь цену и количество: 45, 40, 40. Сумма стоимостей равна 125.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-filter-two",
+      "mode": "test",
+      "family": "table-two-filters",
+      "verification": "sum(age>=18 and score>=75 for age,score in [(17,80),(18,65),(19,90),(18,75),(16,95)])",
+      "reason": "Первая строка не подходит по возрасту, вторая по баллу. Подходят третья и четвёртая. Пятая не подходит по возрасту. Итого 2.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-relative-reference",
+      "mode": "practice",
+      "family": "spreadsheet-relative-absolute",
+      "verification": null,
+      "reason": "При переносе на три строки ссылка A2 смещается на A5. В $B$1 закреплены и столбец, и строка, поэтому она не изменяется.",
+      "method": "manual-options",
+      "optionReview": [
+        {
+          "text": "=A5*$B$1",
+          "correct": true,
+          "reason": "При переносе на три строки ссылка A2 смещается на A5. В $B$1 закреплены и столбец, и строка, поэтому она не изменяется."
+        },
+        {
+          "text": "=A2*$B$4",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: При переносе на три строки ссылка A2 смещается на A5. В $B$1 закреплены и столбец, и строка, поэтому она не изменяется."
+        },
+        {
+          "text": "=A5*$B$4",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: При переносе на три строки ссылка A2 смещается на A5. В $B$1 закреплены и столбец, и строка, поэтому она не изменяется."
+        },
+        {
+          "text": "=A2*$B$1",
+          "correct": false,
+          "reason": "Не соответствует правилу/условию: При переносе на три строки ссылка A2 смещается на A5. В $B$1 закреплены и столбец, и строка, поэтому она не изменяется."
+        }
+      ]
+    },
+    {
+      "id": "c2a-informatics-while-trace",
+      "mode": "practice",
+      "family": "algorithm-loop-boundary",
+      "verification": "run_loop(3,30)",
+      "reason": "Последовательность значений: 3 → 7 → 15 → 31. Проверка условия происходит перед очередным шагом; при 31 условие ложно.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-digit-sum",
+      "mode": "test",
+      "family": "algorithm-digit-sum",
+      "verification": "sum(map(int,str(4062)))",
+      "reason": "Алгоритм суммирует цифры с конца: 2 + 6 + 0 + 4 = 12. Нулевой разряд не прекращает обработку всего числа.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-commands-paths",
+      "mode": "practice",
+      "family": "executor-path-count",
+      "verification": "count_commands(1,4)",
+      "reason": "Из 1 в 2 есть две команды. Из 2 в 3 — одна, из 2 в 4 — одна, из 3 в 4 — одна. Для каждого из двух способов получить 2 есть два продолжения к 4: всего четыре программы.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-fixed-word",
+      "mode": "practice",
+      "family": "word-exact-symbol-count",
+      "verification": "sum(word.count(\"B\")==1 for word in map(\"\".join,product(\"AB\",repeat=3)))",
+      "reason": "Единственную B можно поставить на одну из трёх позиций: BAA, ABA, AAB. Остальные места однозначно заполняются A.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-informatics-bitmap",
+      "mode": "practice",
+      "family": "image-bit-volume",
+      "verification": "Fraction(16*10,8)",
+      "reason": "Всего 160 пикселей, каждый занимает 1 бит. 160/8 = 20 байтов. Размер заголовка в условии исключён.",
+      "method": "independent-python",
+      "optionReview": []
+    },
+    {
+      "id": "c2a-python-swap",
+      "mode": "practice",
+      "family": "python-simultaneous-assignment",
+      "verification": null,
+      "reason": "Правая часть вычисляется до присваивания. Новое a получает старое b, новое b — старое a. Поэтому вывод 9 4.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "a = 4\nb = 9\na, b = b, a\nprint(a, b)",
+      "expectedOutput": "9 4"
+    },
+    {
+      "id": "c2a-python-division",
+      "mode": "practice",
+      "family": "python-division-remainder",
+      "verification": null,
+      "reason": "Целочисленное деление даёт частное 3, остаток равен 1: 7 = 2 · 3 + 1.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "print(7 // 2, 7 % 2)",
+      "expectedOutput": "3 1"
+    },
+    {
+      "id": "c2a-python-string-add",
+      "mode": "practice",
+      "family": "python-string-number",
+      "verification": null,
+      "reason": "Оба значения — строки. Оператор + соединяет их, а не складывает числа. Для арифметики нужно явное преобразование в int.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "a = \"12\"\nb = \"3\"\nprint(a + b)",
+      "expectedOutput": "123"
+    },
+    {
+      "id": "c2a-python-two-if",
+      "mode": "practice",
+      "family": "python-if-vs-elif",
+      "verification": null,
+      "reason": "Это два независимых if. Обе проверки истинны, поэтому печатаются обе строки. Второй if не является elif первого.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "x = 4\nif x > 0:\n    print(\"A\")\nif x % 2 == 0:\n    print(\"B\")",
+      "expectedOutput": "A\nB"
+    },
+    {
+      "id": "c2a-python-elif-order",
+      "mode": "test",
+      "family": "python-if-vs-elif",
+      "verification": null,
+      "reason": "В цепочке if/elif выполняется первая подходящая ветвь. После x > 3 остальные условия уже не проверяются.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "x = 8\nif x > 3:\n    print(\"first\")\nelif x > 6:\n    print(\"second\")\nelse:\n    print(\"last\")",
+      "expectedOutput": "first"
+    },
+    {
+      "id": "c2a-python-descending",
+      "mode": "practice",
+      "family": "python-descending-range",
+      "verification": null,
+      "reason": "Отрицательный шаг −2 даёт 5, 3, 1. Правая граница 0 не включена. Сумма равна 9.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "total = 0\nfor x in range(5, 0, -2):\n    total += x\nprint(total)",
+      "expectedOutput": "9"
+    },
+    {
+      "id": "c2a-python-break-before",
+      "mode": "practice",
+      "family": "python-loop-break",
+      "verification": null,
+      "reason": "Встретив 0, цикл прекращается до прибавления. Учтены 2 и 5, число 9 уже не посещается.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "s = 0\nfor x in [2, 5, 0, 9]:\n    if x == 0:\n        break\n    s += x\nprint(s)",
+      "expectedOutput": "7"
+    },
+    {
+      "id": "c2a-python-slice",
+      "mode": "practice",
+      "family": "python-string-slice",
+      "verification": null,
+      "reason": "Срез берёт индексы 1 и 3, пока индекс меньше 5. В слове planet это l и n.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "s = \"planet\"\nprint(s[1:5:2])",
+      "expectedOutput": "ln"
+    },
+    {
+      "id": "c2a-python-alias",
+      "mode": "practice",
+      "family": "python-list-alias",
+      "verification": null,
+      "reason": "Присваивание b = a не копирует список: обе переменные ссылаются на один объект. Добавление через b увеличивает длину a до 3.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "a = [2, 4]\nb = a\nb.append(6)\nprint(len(a))",
+      "expectedOutput": "3"
+    },
+    {
+      "id": "c2a-python-slice-copy",
+      "mode": "test",
+      "family": "python-list-copy",
+      "verification": null,
+      "reason": "Срез a[:] создаёт отдельный список. Замена элемента b не меняет элемент a. Вывод 2 9.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "a = [2, 4]\nb = a[:]\nb[0] = 9\nprint(a[0], b[0])",
+      "expectedOutput": "2 9"
+    },
+    {
+      "id": "c2a-python-overwrite",
+      "mode": "practice",
+      "family": "python-dict-key-update",
+      "verification": null,
+      "reason": "Повторное присваивание существующему ключу меняет значение, а не добавляет ключ. После добавления y ключей два, x равен 5.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "d = {\"x\": 2}\nd[\"x\"] = 5\nd[\"y\"] = 8\nprint(len(d), d[\"x\"])",
+      "expectedOutput": "2 5"
+    },
+    {
+      "id": "c2a-python-early-return",
+      "mode": "practice",
+      "family": "python-early-return",
+      "verification": null,
+      "reason": "Для −3 выполняется ранний return 0, оставшийся код функции пропускается. Для 4 условие ложно, возвращается 4 + 2 = 6.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "def f(x):\n    if x < 0:\n        return 0\n    return x + 2\n\nprint(f(-3), f(4))",
+      "expectedOutput": "0 6"
+    },
+    {
+      "id": "c2a-python-none",
+      "mode": "test",
+      "family": "python-print-versus-return",
+      "verification": null,
+      "reason": "Функция печатает 3, но не содержит return. Поэтому её результат — None, который печатается вторым print.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "def show(x):\n    print(x)\n\nr = show(3)\nprint(r)",
+      "expectedOutput": "3\nNone"
+    },
+    {
+      "id": "c2a-python-nested-count",
+      "mode": "practice",
+      "family": "python-nested-trace",
+      "verification": null,
+      "reason": "При a = 0 внутренний цикл пуст. При a = 1 один шаг, при a = 2 два. Всего 0 + 1 + 2 = 3.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "code": "count = 0\nfor a in range(3):\n    for b in range(a):\n        count += 1\nprint(count)",
+      "expectedOutput": "3"
+    },
+    {
+      "id": "c2a-python-sum_between",
+      "mode": "practice",
+      "family": "python-inclusive-interval",
+      "verification": null,
+      "reason": "Сначала определи меньшую и большую границы, чтобы порядок аргументов не влиял на результат.\nВ range правая граница не включается: для включения последнего числа увеличь её на 1.\nНачни total с 0, прибавляй каждое число и верни total после цикла. При равных аргументах в диапазоне ровно одно число.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "mutants": [
+        "def sum_between(a,b):\n    return sum(range(a,b+1))",
+        "def sum_between(a,b):\n    return sum(range(min(a,b),max(a,b)))"
+      ]
+    },
+    {
+      "id": "c2a-python-first_long_word",
+      "mode": "practice",
+      "family": "python-first-match",
+      "verification": null,
+      "reason": "Перебирай слова в исходном порядке: нужен первый подходящий элемент, а не самый длинный.\nПроверка длины включает равенство k. Как только слово подходит, его можно вернуть.\nЕсли цикл закончился без результата, верни пустую строку. split() убирает пустые элементы от нескольких пробелов и работает с табуляцией.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "mutants": [
+        "def first_long_word(text,k):\n    words=text.split()\n    return words[-1] if words else \"\"",
+        "def first_long_word(text,k):\n    for word in text.split():\n        if len(word)>k:\n            return word\n    return \"\""
+      ]
+    },
+    {
+      "id": "c2a-python-running_totals",
+      "mode": "practice",
+      "family": "python-prefix-sums",
+      "verification": null,
+      "reason": "Храни сумму уже обработанных чисел в одной переменной.\nДля каждого элемента сначала прибавь его, затем добавь новую сумму в результирующий список.\nНе вычисляй одну общую сумму для всех позиций и не добавляй сумму до текущего элемента: это даст неверное смещение. Пустой цикл оставит пустой результат.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "mutants": [
+        "def running_totals(values):\n    return [sum(values)]*len(values)",
+        "def running_totals(values):\n    result=[]\n    total=0\n    for value in values:\n        result.append(total)\n        total+=value\n    return result"
+      ]
+    },
+    {
+      "id": "c2a-python-edge_swap",
+      "mode": "practice",
+      "family": "python-edge-swap",
+      "verification": null,
+      "reason": "Сначала отдельно обработай длины 0 и 1: обращаться к отсутствующему элементу нельзя.\nДля остальных списков нужны только два индекса: 0 и −1; средние элементы не переставляй.\nУдобно сделать копию срезом, поменять её края одновременным присваиванием и вернуть список. Проверка сравнивает возвращаемый список.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "mutants": [
+        "def edge_swap(values):\n    return values[::-1]",
+        "def edge_swap(values):\n    return [values[-1]]+values[1:-1]+[values[0]]"
+      ]
+    },
+    {
+      "id": "c2a-python-count-changes",
+      "mode": "practice",
+      "family": "python-adjacent-changes",
+      "verification": null,
+      "reason": "Нужно сравнить каждое число с непосредственно предыдущим, а не подсчитать различные значения во всём списке.\nНачинай с индекса 1, чтобы предыдущий индекс был допустимым.\nЗа каждое различие увеличь count на 1 и выведи его после цикла. Список длины 1 не имеет соседних пар.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "mutants": [
+        "values=list(map(int,input().split()))\nprint(len(set(values))-1)",
+        "values=list(map(int,input().split()))\nprint(sum(values[i]!=values[i-1] for i in range(2,len(values))))"
+      ]
+    },
+    {
+      "id": "c2a-python-boxes-needed",
+      "mode": "practice",
+      "family": "python-ceiling-division",
+      "verification": null,
+      "reason": "Сначала найди число полностью заполненных коробок через целочисленное деление.\nЕсли есть ненулевой остаток, понадобится ещё одна коробка; иначе добавлять её не нужно.\nПроверь отдельно нулевое количество и точную кратность: оба случая отличают верный алгоритм от безусловного прибавления 1.",
+      "method": "real-cpython",
+      "optionReview": [],
+      "mutants": [
+        "n=int(input())\nk=int(input())\nprint(n//k)",
+        "n=int(input())\nk=int(input())\nprint(n//k+1)"
+      ]
+    },
+    {
+      "id": "c2a-exam-math-range-multiple",
+      "mode": "exam",
+      "family": "exam-classic-divisibility",
+      "verification": "Fraction(sum(n%4==0 for n in range(1,21)),20)",
+      "reason": "Все 20 чисел равновозможны. На 4 делятся 4, 8, 12, 16, 20: пять чисел. Вероятность 5/20 = 0,25.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-4"
+    },
+    {
+      "id": "c2a-exam-math-two-sets",
+      "mode": "exam",
+      "family": "exam-classic-complement",
+      "verification": "Fraction(10+8,10+8+2)",
+      "reason": "Всего 20 карточек, небелых 18. Искомая вероятность 18/20 = 0,9.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-4"
+    },
+    {
+      "id": "c2a-exam-math-relative-counts",
+      "mode": "exam",
+      "family": "exam-classic-complement",
+      "verification": "Fraction(30-12,30)",
+      "reason": "Пловцов 30 − 12 = 18, пересечения групп нет по условию. Каждый из 30 участников равновозможен. 18/30 = 0,6.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-4"
+    },
+    {
+      "id": "c2a-exam-math-digits-card",
+      "mode": "exam",
+      "family": "exam-classic-digit-property",
+      "verification": "Fraction(sum(n//10==n%10 for n in range(10,30)),20)",
+      "reason": "Карточек 20. Одинаковые цифры имеют только 11 и 22: два исхода. Вероятность 2/20 = 0,1.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-4"
+    },
+    {
+      "id": "c2a-exam-math-score-table",
+      "mode": "exam",
+      "family": "exam-classic-threshold-table",
+      "verification": "Fraction(sum(c for score,c in [(1,5),(2,8),(3,7)] if score>=2),20)",
+      "reason": "Условие «не меньше 2» включает группы с 2 и 3 баллами. Благоприятных игроков 8 + 7 = 15. Вероятность 15/20 = 0,75.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-4"
+    },
+    {
+      "id": "c2a-exam-math-denominator",
+      "mode": "exam",
+      "family": "exam-linear-variable-denominator",
+      "verification": "next(x for x in range(-20,21) if x!=1 and Fraction(2,x-1)==Fraction(1,3))",
+      "reason": "Знаменатель запрещает x = 1. Перемножаем крест-накрест: x − 1 = 6, x = 7. Подстановка: 2/6 = 1/3, ОДЗ выполнена.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-7"
+    },
+    {
+      "id": "c2a-exam-math-product-root",
+      "mode": "exam",
+      "family": "exam-quadratic-product",
+      "verification": "min(x for x in range(-20,21) if (x-4)*(x+9)==0)",
+      "reason": "Произведение равно нулю, если один из множителей равен нулю. Корни 4 и −9; меньший −9.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-7"
+    },
+    {
+      "id": "c2a-exam-math-decimal-equation",
+      "mode": "exam",
+      "family": "exam-linear-decimal",
+      "verification": "next(x for x in range(-20,21) if Fraction(5,10)*x+Fraction(12,10)==Fraction(37,10))",
+      "reason": "Вычти 1,2 из обеих частей: 0,5x = 2,5. Раздели на 0,5: x = 5.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-7"
+    },
+    {
+      "id": "c2a-exam-math-log-reciprocal",
+      "mode": "exam",
+      "family": "exam-log-linear-argument",
+      "verification": "Fraction(1,2)-3",
+      "reason": "По определению логарифма x + 3 = 2^(−1) = 1/2. Следовательно, x = −5/2 = −2,5; аргумент положителен.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-math-2027-7"
+    },
+    {
+      "id": "c2a-exam-russian-comma-a",
+      "mode": "exam",
+      "family": "exam-russian-one-comma",
+      "verification": null,
+      "reason": "1: Однородные вёдра и лопаты без союза; последнее и одиночное (1 запятая); 2: Повторяющееся и соединяет два дополнения (1 запятая); 3: Два однородных признака с одиночным и (0 запятых); 4: Противительный но между частями (1 запятая); 5: Две основы без общего члена (1 запятая). Поэтому ответ 1245.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-16",
+      "sentences": [
+        "В сарае хранились вёдра лопаты и грабли.",
+        "Мастер взял и молоток и плоскогубцы.",
+        "Ночь была тиха и прохладна.",
+        "Ветер стих но волны ещё шумели.",
+        "Катер приблизился к причалу и матрос бросил канат."
+      ],
+      "commaCounts": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "sentenceReasons": [
+        "Однородные вёдра и лопаты без союза; последнее и одиночное",
+        "Повторяющееся и соединяет два дополнения",
+        "Два однородных признака с одиночным и",
+        "Противительный но между частями",
+        "Две основы без общего члена"
+      ]
+    },
+    {
+      "id": "c2a-exam-russian-comma-b",
+      "mode": "exam",
+      "family": "exam-russian-one-comma",
+      "verification": null,
+      "reason": "1: Три члена с повторяющимся и: две запятые (2 запятых); 2: Две части без общего члена, вторая неопределённо-личная (1 запятая); 3: Утром относится к обеим частям (0 запятых); 4: Однородные признаки с но (1 запятая); 5: Первое перечисление без союза, последнее и одиночное (1 запятая). Поэтому ответ 245.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-16",
+      "sentences": [
+        "Мы закупили и краску и кисти и валики.",
+        "Дождь закончился и окна открыли настежь.",
+        "Утром затих ветер и выглянуло солнце.",
+        "Провод был тонким но прочным.",
+        "На полке стояли книги журналы и папки."
+      ],
+      "commaCounts": [
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "sentenceReasons": [
+        "Три члена с повторяющимся и: две запятые",
+        "Две части без общего члена, вторая неопределённо-личная",
+        "Утром относится к обеим частям",
+        "Однородные признаки с но",
+        "Первое перечисление без союза, последнее и одиночное"
+      ]
+    },
+    {
+      "id": "c2a-exam-russian-comma-c",
+      "mode": "exam",
+      "family": "exam-russian-one-comma",
+      "verification": null,
+      "reason": "1: Перечисление трёх однородных качеств с одиночным последним и (1 запятая); 2: Два сказуемых с противительным но (1 запятая); 3: Два дополнения с одиночным и (0 запятых); 4: Три подлежащих с повторяющимся и (2 запятых); 5: Общий временной член с утра относится к двум частям (0 запятых). Поэтому ответ 12.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-16",
+      "sentences": [
+        "Тропа была узкой извилистой и скользкой.",
+        "Лодка качнулась но не перевернулась.",
+        "Садовник посадил яблони и груши.",
+        "И птицы и звери и насекомые оживились.",
+        "С утра шёл дождь и дорога была мокрой."
+      ],
+      "commaCounts": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "sentenceReasons": [
+        "Перечисление трёх однородных качеств с одиночным последним и",
+        "Два сказуемых с противительным но",
+        "Два дополнения с одиночным и",
+        "Три подлежащих с повторяющимся и",
+        "Общий временной член с утра относится к двум частям"
+      ]
+    },
+    {
+      "id": "c2a-exam-russian-comma-d",
+      "mode": "exam",
+      "family": "exam-russian-one-comma",
+      "verification": null,
+      "reason": "1: Два подлежащих с одиночным и (0 запятых); 2: Две основы без общего члена (1 запятая); 3: Противопоставление дополнений с а (1 запятая); 4: Три члена с повторяющимся и (2 запятых); 5: Вечером относится к обеим частям (0 запятых). Поэтому ответ 23.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-16",
+      "sentences": [
+        "Окна и двери были закрыты.",
+        "Фонарь погас и двор потемнел.",
+        "Мы увидели не озеро а широкий пруд.",
+        "В коробке лежали и гайки и шайбы и винты.",
+        "Вечером остановился дождь и прояснилось небо."
+      ],
+      "commaCounts": [
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "sentenceReasons": [
+        "Два подлежащих с одиночным и",
+        "Две основы без общего члена",
+        "Противопоставление дополнений с а",
+        "Три члена с повторяющимся и",
+        "Вечером относится к обеим частям"
+      ]
+    },
+    {
+      "id": "c2a-exam-russian-comma-e",
+      "mode": "exam",
+      "family": "exam-russian-one-comma",
+      "verification": null,
+      "reason": "1: Два подлежащих с повторяющимся и (1 запятая); 2: Общее подлежащее, два сказуемых с одиночным и (0 запятых); 3: Две основы соединены но (1 запятая); 4: Перечисление трёх предметов, одно последнее и (1 запятая); 5: Четыре однородных дополнения, между первыми тремя две запятые (2 запятых). Поэтому ответ 134.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-16",
+      "sentences": [
+        "Справа виднелись и луг и лес.",
+        "Мастер проверил шнур и включил прибор.",
+        "Стук прекратился но свет не зажёгся.",
+        "В ящике лежали отвёртки ключи и пассатижи.",
+        "Мы взяли хлеб сыр яблоки и воду."
+      ],
+      "commaCounts": [
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "sentenceReasons": [
+        "Два подлежащих с повторяющимся и",
+        "Общее подлежащее, два сказуемых с одиночным и",
+        "Две основы соединены но",
+        "Перечисление трёх предметов, одно последнее и",
+        "Четыре однородных дополнения, между первыми тремя две запятые"
+      ]
+    },
+    {
+      "id": "c2a-exam-russian-link-cat",
+      "mode": "exam",
+      "family": "exam-russian-personal-link",
+      "verification": null,
+      "reason": "Предложение 2 связано с предыдущим личным местоимением. «Он» заменяет единственное подходящее существительное мужского рода «кот» из предложения 1; одушевлённость и действие согласованы. Другие предложения в отрывке не используют личное местоимение для такой связи.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-26",
+      "sentences": [
+        "У окна сидел кот.",
+        "Он следил за движением веток.",
+        "За стеклом покачивалась берёза.",
+        "К вечеру ветер стих.",
+        "В комнате снова стало тихо."
+      ],
+      "target": 2,
+      "referent": "кот",
+      "languageReason": "«Он» заменяет единственное подходящее существительное мужского рода «кот» из предложения 1; одушевлённость и действие согласованы."
+    },
+    {
+      "id": "c2a-exam-russian-link-lantern",
+      "mode": "exam",
+      "family": "exam-russian-personal-link",
+      "verification": null,
+      "reason": "Предложение 3 связано с предыдущим личным местоимением. «Он» заменяет «фонарь» в предложении 2. Предыдущее предложение не содержит другого существительного мужского рода; речь о свете. Другие предложения в отрывке не используют личное местоимение для такой связи.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-26",
+      "sentences": [
+        "Туристы вышли к реке.",
+        "На набережной светился фонарь.",
+        "Он помогал различать ступени в темноте.",
+        "Вода была спокойной.",
+        "Переправа заняла несколько минут."
+      ],
+      "target": 3,
+      "referent": "фонарь",
+      "languageReason": "«Он» относится к фонарю из предложения 2. Набережная женского рода, поэтому второго мужского референта в предыдущем предложении нет. Свет фонаря позволяет различать ступени."
+    },
+    {
+      "id": "c2a-exam-russian-link-boat",
+      "mode": "exam",
+      "family": "exam-russian-personal-link",
+      "verification": null,
+      "reason": "Предложение 4 связано с предыдущим личным местоимением. «Она» относится к лодке из предложения 3. Форма женского рода и смысл покачивания делают связь однозначной. Другие предложения в отрывке не используют личное местоимение для такой связи.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-26",
+      "sentences": [
+        "На берегу начались сборы.",
+        "Рядом стояли ящики с провизией.",
+        "Лодка была готова к отплытию.",
+        "Она слегка покачивалась на воде.",
+        "Через минуту прозвучал сигнал."
+      ],
+      "target": 4,
+      "referent": "лодка",
+      "languageReason": "«Она» относится к лодке из предложения 3. Форма женского рода и смысл покачивания делают связь однозначной."
+    },
+    {
+      "id": "c2a-exam-russian-link-students",
+      "mode": "exam",
+      "family": "exam-russian-personal-link",
+      "verification": null,
+      "reason": "Предложение 5 связано с предыдущим личным местоимением. «Они» относится к ученикам из непосредственно предыдущего предложения 4. Приборы упомянуты раньше и не могут сами готовить рабочие места. Другие предложения в отрывке не используют личное местоимение для такой связи.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-26",
+      "sentences": [
+        "Лаборатория открылась после ремонта.",
+        "В кабинете пахло свежей краской.",
+        "На столах стояли новые приборы.",
+        "К началу занятия пришли ученики.",
+        "Они быстро подготовили рабочие места."
+      ],
+      "target": 5,
+      "referent": "ученики",
+      "languageReason": "«Они» относится к ученикам из непосредственно предыдущего предложения 4. Приборы упомянуты раньше и не могут сами готовить рабочие места."
+    },
+    {
+      "id": "c2a-exam-russian-link-map",
+      "mode": "exam",
+      "family": "exam-russian-personal-link",
+      "verification": null,
+      "reason": "Предложение 2 связано с предыдущим личным местоимением. «Её» — личное местоимение в винительном падеже, прямое дополнение при «достали». Референт — карта; другого подходящего существительного женского рода нет. Другие предложения в отрывке не используют личное местоимение для такой связи.",
+      "method": "manual-language",
+      "optionReview": [],
+      "positionId": "ege-russian-2027-26",
+      "sentences": [
+        "У путешественника была карта.",
+        "Её достали перед развилкой.",
+        "На бумаге были отмечены два маршрута.",
+        "Короткий путь проходил через лес.",
+        "Решение приняли после обсуждения."
+      ],
+      "target": 2,
+      "referent": "карта",
+      "languageReason": "«Её» — личное местоимение в винительном падеже, дополнение при «достали». Единственный референт женского рода — карта. Путешественник мужского рода, второго женского существительного в предыдущей фразе нет."
+    },
+    {
+      "id": "c2a-exam-informatics-prefix-tree",
+      "mode": "exam",
+      "family": "exam-prefix-minimum",
+      "verification": "min_prefix_length([\"0\",\"100\",\"101\"])",
+      "reason": "Все строки, начинающиеся с 0, запрещены. Строка 1 была бы префиксом 100 и 101; 10 тоже. Код 11 не конфликтует, его длина 2.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-4"
+    },
+    {
+      "id": "c2a-exam-informatics-code-length",
+      "mode": "exam",
+      "family": "exam-prefix-word-length",
+      "verification": "sum(len({\"A\":\"0\",\"B\":\"10\",\"C\":\"110\",\"D\":\"111\"}[c]) for c in \"CADAC\")",
+      "reason": "Неравномерный префиксный код: проверены длины всех пяти символов и отсутствие взаимных префиксов. Это задача на код, не умножение на равномерную разрядность.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-4"
+    },
+    {
+      "id": "c2a-exam-informatics-decode-word",
+      "mode": "exam",
+      "family": "exam-prefix-decode",
+      "verification": "decode_count(\"010110\",[\"0\",\"10\",\"11\"])",
+      "reason": "Читай с начала: 0 | 10 | 11 | 0, то есть A B C A. Условие Фано даёт однозначное разбиение. Получилось четыре буквы.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-4"
+    },
+    {
+      "id": "c2a-exam-informatics-only-short-code",
+      "mode": "exam",
+      "family": "exam-prefix-fixed-string",
+      "verification": "next(s for s in [\"0\",\"1\"] if all(not s.startswith(c) and not c.startswith(s) for c in [\"00\",\"010\",\"011\"]))",
+      "reason": "Код 0 является префиксом всех заданных кодов. Код 1 не является их префиксом и не начинается ни одним из них. Поэтому единственный одноразрядный выбор — 1.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-4"
+    },
+    {
+      "id": "c2a-exam-informatics-minimum-total",
+      "mode": "exam",
+      "family": "exam-prefix-two-new-symbols",
+      "verification": "minimum_two_codes([\"00\",\"01\"])",
+      "reason": "Обе новые ветви должны начинаться с 1. Если взять 1 для одной буквы, для второй не остаётся допустимого кода. Коды 10 и 11 имеют суммарную длину 4; меньшая сумма невозможна.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-4"
+    },
+    {
+      "id": "c2a-exam-informatics-base-comparison",
+      "mode": "exam",
+      "family": "exam-base-mixed-sum",
+      "verification": "int(\"21\",3)+int(\"13\",4)",
+      "reason": "21₃ = 2 · 3 + 1 = 7. 13₄ = 1 · 4 + 3 = 7. Сумма равна 14.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-14"
+    },
+    {
+      "id": "c2a-exam-informatics-find-base",
+      "mode": "exam",
+      "family": "exam-base-find",
+      "verification": "next(b for b in range(3,37) if int(\"12\",b)==10)",
+      "reason": "Разрядная запись 12_b означает b + 2. Равенство b + 2 = 10 даёт b = 8, цифры 1 и 2 допустимы.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-14"
+    },
+    {
+      "id": "c2a-exam-informatics-unknown-divisible",
+      "mode": "exam",
+      "family": "exam-base-digit-divisibility",
+      "verification": "next(x for x in range(3) if int(\"2\"+str(x)+\"1\",5)%3==0)",
+      "reason": "Значение равно 51 + 5x. Допустимы x = 0, 1, 2. Только x = 0 даёт число, кратное 3: 51. Ограничение x < 3 делает ответ единственным.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-14"
+    },
+    {
+      "id": "c2a-exam-informatics-zero-digit-count",
+      "mode": "exam",
+      "family": "exam-base-power-digit-count",
+      "verification": "bin(2**8+2**3)[2:].count(\"0\")",
+      "reason": "Единицы стоят в разрядах 8 и 3. Запись 100001000 имеет 9 цифр: 2 единицы и 7 нулей. Старший разряд задаёт длину записи, начальные нули не считаются.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-14"
+    },
+    {
+      "id": "c2a-exam-informatics-carry-count",
+      "mode": "exam",
+      "family": "exam-base-borrow-digit-count",
+      "verification": "bin(2**10-2**4).count(\"1\")",
+      "reason": "Вычитаем 16 из 1024: 1008. В двоичной записи единицы занимают разряды от 4 до 9 включительно, их шесть: 1111110000.",
+      "method": "independent-python",
+      "optionReview": [],
+      "positionId": "ege-informatics-2027-14"
+    }
+  ],
+  "ruleReferences": [
+    "https://gramota.ru/uchebnik/pravila/normy-postanovki-znakov-prepinaniya-v-slozhnosochinennykh-predlozheniyakh-15",
+    "https://gramota.ru/uchebnik/pravila/normy-postanovki-znakov-prepinaniya-v-slozhnopodchinennykh-predlozheniyakh"
+  ],
+  "excluded": [
+    {
+      "id": "c2a-exam-math-shifted-exponent",
+      "reason": "Exact prompt duplicate of exam27-math-7-exponential; excluded before inclusion/count."
+    },
+    {
+      "id": "c2a-math-restore",
+      "reason": "Numerical clone of b1-math-13; excluded from bank/count."
+    },
+    {
+      "id": "c2a-math-equation-domain",
+      "reason": "Same mathematical condition/answer as b2-math-log-equation despite spacing. Would leak a practice question into the new mini-test; excluded."
+    }
+  ]
+}

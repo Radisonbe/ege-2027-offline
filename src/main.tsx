@@ -7,3 +7,5 @@ import './styles/app.css';
 import './styles/exam.css';
 
 createRoot(document.getElementById('root')!).render(<PwaProvider><StudyProvider><App /></StudyProvider></PwaProvider>);
+
+import './styles/quick-practice.css';

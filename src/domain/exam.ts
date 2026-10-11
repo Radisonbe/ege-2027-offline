@@ -117,7 +117,7 @@ export function compatibleExamFormat(map: ExamDefinition, task: ExamTask): boole
         return /^[1-9]\d*$/.test(task.question.answer);
     return true;
 }
-export function coverage(map: ExamDefinition, tasks: ExamTask[]) { return map.positions.map(p => { const own = tasks.filter(t => t.positionId === p.id && t.assessment === 'automatic' && compatibleExamFormat(map, t)); return { position: p, count: own.length, status: own.length >= 10 && new Set(own.map(t => t.familyId)).size >= 3 ? 'Готово' : own.length ? 'Ограниченный банк' : 'В разработке' }; }); }
+export function coverage(map: ExamDefinition, tasks: ExamTask[]) { return map.positions.map(p => { const own = tasks.filter(t => t.positionId === p.id && t.assessment === 'automatic' && compatibleExamFormat(map, t)); return { position: p, count: own.length, status: own.length ? 'Ограниченный банк' : 'В разработке' }; }); }
 export function fullExamAvailable(map: ExamDefinition, tasks: ExamTask[]) { return map.status !== 'unverified' && map.positions.every(p => tasks.some(t => t.positionId === p.id && t.assessment === 'automatic' && compatibleExamFormat(map, t) && !p.needs.length)); }
 function rank(seed: string, id: string) {
     let h = 2166136261;

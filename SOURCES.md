@@ -206,3 +206,15 @@ private-import exclusions and third-party notices are unchanged.
 36 задач сохранены, изменённые задачи получили новую версию. Карта `.2`
 содержит явные уточнения форматов и проверенные учебные связи. Первичные
 тексты ФИПИ не добавлены в банк. См. docs/EXAM-2027-SOURCES.md.
+
+
+## Stage 3C.2 package A (2026-10-11, local review)
+
+146 original generated additions (117 learning /29 exam) and 13 supplemental
+lessons. No third-party task/text/image/file import. Rule references in
+sources/stage3c2-a-review.json are used for verification, not reproduction.
+Accepted FIPI-2027 project maps stay unchanged; no generated task is official.
+The publication registry records LF SHA-256 of new packs and changed allocation,
+taxonomy and loaders. Three near/exact drafts were excluded. Personal packages,
+progress, code drafts, archives, outputs and test profiles stay ignored and out
+of production. Runtime/dependency licensing is unchanged. See CONTENT-3C2-QUALITY.md.
