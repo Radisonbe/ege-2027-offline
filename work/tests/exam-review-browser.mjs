@@ -42,11 +42,11 @@ try {
   await go('exam/session/'+id);await page.getByLabel('Ответ экзаменационного задания').waitFor();assert.deepEqual(await state(),baseline);
  }
  pass('Update from reviewed 44de3f6 activates cold offline; all 36 old snapshots, first error/correction, draft, active mini-test and 0.4.0 learning history remain exact');
- await go('exam');await page.getByLabel('Выбрать №4',{exact:true}).check();await page.getByLabel('Количество экзаменационных заданий').fill('11');
+ await go('exam');await page.getByLabel('Выбрать №4',{exact:true}).check();const positionCount=checkExamContent().tasks.filter(t=>t.positionId==='ege-math-2027-4').length;assert.ok(positionCount<=50);await page.getByLabel('Количество экзаменационных заданий').fill(String(positionCount));
  await page.getByRole('button',{name:'Начать экзаменационную тренировку',exact:true}).click();
  let next=await saved(s=>s.exam.sessions.length===4),session=next.exam.sessions.at(-1);
  assert.equal(next.exam.maps[session.mapKey].version,'project-2026-10-09.2');
- assert.equal(session.items.length,11);
+ assert.equal(session.items.length,positionCount);
  const face=session.items.findIndex(i=>next.exam.snapshots[i.key].id==='exam27-math-4-faces');
  assert.ok(face>=0,'Reviewed face task is included in the complete position bank');
  await page.getByRole('button',{name:'К заданию '+(face+1),exact:true}).click();

@@ -1,0 +1,3584 @@
+{
+  "schemaVersion": 1,
+  "baselineStatic": 699,
+  "baselineGenerated": 432,
+  "rows": [
+    {
+      "id": "chat500-informatics-001",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-002",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-003",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-004",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-005",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-006",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-007",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-008",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-009",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-010",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-011",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-012",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-013",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-014",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-015",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-016",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-017",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-018",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-019",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-020",
+      "closest": "c2a-informatics-place-polynomial",
+      "jaccard": 0.462,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-021",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-022",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-023",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-024",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-025",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-026",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-027",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-028",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-029",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-030",
+      "closest": "c2a-informatics-unknown-digit",
+      "jaccard": 0.818,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-041",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-042",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-043",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-044",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-045",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-046",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-047",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-048",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-049",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-050",
+      "closest": "c2",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-051",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-052",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-053",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-054",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-055",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-056",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-057",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-058",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-059",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-060",
+      "closest": "c1",
+      "jaccard": 0.474,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-061",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-062",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-063",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-064",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-065",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-066",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-067",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-068",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-069",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-070",
+      "closest": "c2a-exam-informatics-decode-word",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-071",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-072",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-073",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-074",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-075",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-076",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-077",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-078",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-079",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-080",
+      "closest": "c2b-informatics-logic-negated-range",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-084",
+      "closest": "b2-informatics-graph-paths",
+      "jaccard": 0.824,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-085",
+      "closest": "b2-informatics-graph-paths",
+      "jaccard": 0.765,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-086",
+      "closest": "b2-informatics-graph-paths",
+      "jaccard": 0.824,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-087",
+      "closest": "b2-informatics-graph-paths",
+      "jaccard": 0.765,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-088",
+      "closest": "b2-informatics-graph-paths",
+      "jaccard": 0.824,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-089",
+      "closest": "b2-informatics-graph-paths",
+      "jaccard": 0.765,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-090",
+      "closest": "b2-informatics-graph-paths",
+      "jaccard": 0.824,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-091",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-092",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-093",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-094",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-095",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-096",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-097",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-098",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-099",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-100",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-101",
+      "closest": "c2a-informatics-while-trace",
+      "jaccard": 0.231,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-102",
+      "closest": "c2a-informatics-while-trace",
+      "jaccard": 0.231,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-103",
+      "closest": "c2a-informatics-while-trace",
+      "jaccard": 0.231,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-104",
+      "closest": "c2a-informatics-while-trace",
+      "jaccard": 0.231,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-105",
+      "closest": "c2a-informatics-while-trace",
+      "jaccard": 0.231,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-106",
+      "closest": "c2a-python-break-before",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-107",
+      "closest": "c2a-python-break-before",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-108",
+      "closest": "c2a-python-break-before",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-109",
+      "closest": "c2a-python-break-before",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-informatics-110",
+      "closest": "c2a-python-break-before",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-001",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-002",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-003",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-004",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-005",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-006",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-007",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-008",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-009",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-010",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-011",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-012",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-013",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-014",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-015",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-016",
+      "closest": "b2-informatics-binary-base",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-017",
+      "closest": "gen-whole-from-share-v1-s0",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-018",
+      "closest": "gen-whole-from-share-v1-s0",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-019",
+      "closest": "gen-whole-from-share-v1-s0",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-020",
+      "closest": "gen-whole-from-share-v1-s0",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-021",
+      "closest": "gen-whole-from-share-v1-s0",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-023",
+      "closest": "gen-whole-from-share-v1-s0",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-024",
+      "closest": "gen-whole-from-share-v1-s0",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-025",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-026",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-027",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-028",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-029",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-030",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-031",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-032",
+      "closest": "py-sets-q",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-033",
+      "closest": "b1-math-13",
+      "jaccard": 0.8,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-034",
+      "closest": "b1-math-13",
+      "jaccard": 0.8,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-036",
+      "closest": "b1-math-13",
+      "jaccard": 0.8,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-037",
+      "closest": "b1-math-13",
+      "jaccard": 0.8,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-038",
+      "closest": "b1-math-13",
+      "jaccard": 0.8,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-039",
+      "closest": "b1-math-13",
+      "jaccard": 0.8,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-040",
+      "closest": "b1-math-13",
+      "jaccard": 0.8,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-041",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-042",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-043",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-044",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-045",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-046",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-047",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-048",
+      "closest": "c2a-math-ratio",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-049",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-050",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-051",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-052",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-053",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-054",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-055",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-056",
+      "closest": "f1",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-057",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-058",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-059",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-060",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-061",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-062",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-063",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-064",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-065",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-066",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-067",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-068",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-069",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-070",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-071",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-072",
+      "closest": "c2a-math-both-sides",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-073",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-074",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-075",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-076",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-077",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-078",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-079",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-080",
+      "closest": "c2a-math-model",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-082",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-083",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-084",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-085",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-086",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-088",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-089",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-090",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-091",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-092",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-093",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-094",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-095",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-096",
+      "closest": "e3",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-097",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-098",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-099",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-100",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-101",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-102",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-103",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-104",
+      "closest": "f1",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-105",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-106",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-107",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-108",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-109",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-110",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-111",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-112",
+      "closest": "b1-math-25",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-113",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-114",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-115",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-116",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-117",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-118",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-119",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-120",
+      "closest": "c2b-math-power-test-model",
+      "jaccard": 0.188,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-121",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-122",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-123",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-124",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-125",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-126",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-127",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-128",
+      "closest": "c2a-math-speed",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-129",
+      "closest": "gen-probability-bag-v1-s0",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-130",
+      "closest": "gen-probability-bag-v1-s1",
+      "jaccard": 0.591,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-131",
+      "closest": "gen-probability-bag-v1-s0",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-132",
+      "closest": "gen-probability-bag-v1-s1",
+      "jaccard": 0.591,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-133",
+      "closest": "gen-probability-bag-v1-s0",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-134",
+      "closest": "gen-probability-bag-v1-s1",
+      "jaccard": 0.591,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-135",
+      "closest": "gen-probability-bag-v1-s0",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-136",
+      "closest": "gen-probability-bag-v1-s1",
+      "jaccard": 0.591,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-137",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-138",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-139",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-140",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-141",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-142",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-143",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-144",
+      "closest": "b2-math-prob-mean",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-145",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-146",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-147",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-148",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-149",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-150",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-151",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-152",
+      "closest": "c2b-informatics-logic-interval",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-153",
+      "closest": "b2-math-log-definition",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-154",
+      "closest": "b2-math-log-definition",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-155",
+      "closest": "b2-math-log-definition",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-156",
+      "closest": "b2-math-log-definition",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-157",
+      "closest": "b2-math-trig-radians",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-158",
+      "closest": "b2-math-trig-radians",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-159",
+      "closest": "b2-math-trig-radians",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-160",
+      "closest": "b2-math-trig-radians",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-161",
+      "closest": "py-sets-q",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-162",
+      "closest": "py-sets-q",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-163",
+      "closest": "py-sets-q",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-164",
+      "closest": "py-sets-q",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-165",
+      "closest": "py-sets-q",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-166",
+      "closest": "c2b-math-percent-equal-sum",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-167",
+      "closest": "c2b-math-percent-equal-sum",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-168",
+      "closest": "c2b-math-percent-equal-sum",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-169",
+      "closest": "c2b-math-percent-equal-sum",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-math-170",
+      "closest": "c2b-math-percent-equal-sum",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-001",
+      "closest": "c2b-python-list-test-slice",
+      "jaccard": 0.4,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-002",
+      "closest": "c2b-python-list-test-slice",
+      "jaccard": 0.4,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-003",
+      "closest": "b1-python-02",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-004",
+      "closest": "b1-python-02",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-007",
+      "closest": "c2b-python-list-test-slice",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-008",
+      "closest": "c2b-python-dict-key-overwrite",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-009",
+      "closest": "b1-python-04",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-010",
+      "closest": "b1-python-04",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-011",
+      "closest": "b1-python-12",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-012",
+      "closest": "b1-python-12",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-013",
+      "closest": "b1-python-12",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-014",
+      "closest": "b1-python-12",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-015",
+      "closest": "b1-python-12",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-016",
+      "closest": "c2a-python-descending",
+      "jaccard": 0.625,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-019",
+      "closest": "c2a-python-descending",
+      "jaccard": 0.625,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-020",
+      "closest": "c2a-python-descending",
+      "jaccard": 0.625,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-021",
+      "closest": "b1-python-04",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-022",
+      "closest": "b1-python-04",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-023",
+      "closest": "b1-python-04",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-024",
+      "closest": "b1-python-04",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-025",
+      "closest": "b1-python-04",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-026",
+      "closest": "c2b-python-list-append",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-027",
+      "closest": "c2b-python-list-append",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-028",
+      "closest": "c2b-python-list-append",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-029",
+      "closest": "c2b-python-list-append",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-030",
+      "closest": "c2b-python-list-append",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-031",
+      "closest": "c2a-python-elif-order",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-032",
+      "closest": "c2a-python-elif-order",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-033",
+      "closest": "c2a-python-elif-order",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-034",
+      "closest": "c2a-python-elif-order",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-035",
+      "closest": "c2a-python-elif-order",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-036",
+      "closest": "c2a-python-overwrite",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": true,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-037",
+      "closest": "c2a-python-overwrite",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": true,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-038",
+      "closest": "c2a-python-overwrite",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": true,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-039",
+      "closest": "c2a-python-overwrite",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": true,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-040",
+      "closest": "c2a-python-overwrite",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": true,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-041",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-042",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-043",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-044",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-045",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-046",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-047",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-048",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-049",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-050",
+      "closest": "c2a-python-early-return",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-051",
+      "closest": "c2b-python-if-short-circuit",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-052",
+      "closest": "c2b-python-if-short-circuit",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-053",
+      "closest": "c2b-python-if-short-circuit",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-054",
+      "closest": "b2-python-predict-bool",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-055",
+      "closest": "b1-python-04",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-056",
+      "closest": "b1-python-02",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-057",
+      "closest": "b1-python-02",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-058",
+      "closest": "b1-python-02",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-059",
+      "closest": "b1-python-02",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-060",
+      "closest": "b1-python-02",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-062",
+      "closest": "c2a-python-edge_swap",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-063",
+      "closest": "b2-python-normalize_spaces",
+      "jaccard": 0.429,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-064",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-066",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-067",
+      "closest": "b2-python-word_counts",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-068",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.429,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-069",
+      "closest": "c2b-python-positive-prefix",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-python-070",
+      "closest": "b1-python-25",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-001",
+      "closest": "exam27-russian-16-opposition",
+      "jaccard": 0.065,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-002",
+      "closest": "exam27-russian-16-opposition",
+      "jaccard": 0.066,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-003",
+      "closest": "exam27-russian-16-alternation",
+      "jaccard": 0.059,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-004",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.132,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-005",
+      "closest": "c2b-informatics-info-two-channels",
+      "jaccard": 0.076,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-006",
+      "closest": "c2b-informatics-info-two-channels",
+      "jaccard": 0.078,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-007",
+      "closest": "c2b-informatics-info-two-channels",
+      "jaccard": 0.076,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-008",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.1,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-009",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.057,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-010",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.058,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-011",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.049,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-012",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.098,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-013",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.054,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-014",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.055,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-015",
+      "closest": "c2b-russian-speech-infinitive",
+      "jaccard": 0.049,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-016",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.103,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-017",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.06,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-018",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.062,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-019",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.054,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-020",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.122,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-021",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.049,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-022",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.05,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-023",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.049,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-024",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.091,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-025",
+      "closest": "exam27-math-4-interval",
+      "jaccard": 0.056,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-026",
+      "closest": "exam27-math-4-interval",
+      "jaccard": 0.057,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-027",
+      "closest": "exam27-math-4-interval",
+      "jaccard": 0.056,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-028",
+      "closest": "b2-russian-complex-homogeneous",
+      "jaccard": 0.093,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-029",
+      "closest": "exam27-russian-16-opposition",
+      "jaccard": 0.055,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-030",
+      "closest": "exam27-russian-16-opposition",
+      "jaccard": 0.056,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-031",
+      "closest": "exam27-russian-16-opposition",
+      "jaccard": 0.048,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-032",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.122,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-033",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.058,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-034",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.059,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-035",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.052,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-036",
+      "closest": "b2-informatics-algo-euclid",
+      "jaccard": 0.103,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-037",
+      "closest": "exam27-russian-16-alternation",
+      "jaccard": 0.061,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-038",
+      "closest": "exam27-russian-16-alternation",
+      "jaccard": 0.062,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-039",
+      "closest": "exam27-russian-16-alternation",
+      "jaccard": 0.062,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-040",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.122,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-041",
+      "closest": "c2a-exam-russian-link-cat",
+      "jaccard": 0.061,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-042",
+      "closest": "c2a-exam-russian-link-cat",
+      "jaccard": 0.062,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-043",
+      "closest": "c2a-exam-russian-link-cat",
+      "jaccard": 0.053,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-044",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.125,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-045",
+      "closest": "c2b-russian-exam-comma-route",
+      "jaccard": 0.065,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-046",
+      "closest": "c2b-russian-exam-comma-route",
+      "jaccard": 0.066,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-047",
+      "closest": "c2b-russian-exam-comma-route",
+      "jaccard": 0.065,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-048",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.128,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-049",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.05,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-050",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.051,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-052",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.098,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-053",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.064,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-054",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.066,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-056",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.095,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-057",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.067,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-058",
+      "closest": "b2-python-py-file-positive",
+      "jaccard": 0.068,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-059",
+      "closest": "s2",
+      "jaccard": 0.067,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-060",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.103,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-061",
+      "closest": "b1-russian-02",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-062",
+      "closest": "c2b-russian-speech-infinitive",
+      "jaccard": 0.294,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-063",
+      "closest": "c2b-russian-speech-ordinal",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-064",
+      "closest": "c2b-russian-speech-pronoun",
+      "jaccard": 0.312,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-065",
+      "closest": "c2b-russian-speech-ordinal",
+      "jaccard": 0.214,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-066",
+      "closest": "c2b-russian-speech-ordinal",
+      "jaccard": 0.214,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-067",
+      "closest": "c2b-russian-speech-ordinal",
+      "jaccard": 0.214,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-068",
+      "closest": "c2b-russian-speech-ordinal",
+      "jaccard": 0.214,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-069",
+      "closest": "c2b-russian-speech-ordinal",
+      "jaccard": 0.214,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-070",
+      "closest": "c2a-russian-inversion",
+      "jaccard": 0.636,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-071",
+      "closest": "c2b-russian-sentence-impersonal",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-072",
+      "closest": "c2b-russian-sentence-impersonal",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-073",
+      "closest": "c2b-russian-sentence-impersonal",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-074",
+      "closest": "c2b-russian-sentence-impersonal",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-075",
+      "closest": "c2b-russian-sentence-impersonal",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-076",
+      "closest": "c2b-russian-sentence-impersonal",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-077",
+      "closest": "c2a-russian-main-basis",
+      "jaccard": 0.389,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-078",
+      "closest": "c2a-russian-subordinate-basis",
+      "jaccard": 0.438,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-079",
+      "closest": "b2-russian-union-no-role",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-080",
+      "closest": "b2-russian-prep-despite",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-081",
+      "closest": "b2-russian-prep-despite",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-082",
+      "closest": "b1-russian-13",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-083",
+      "closest": "b2-russian-prep-despite",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-084",
+      "closest": "b2-russian-speech-like",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-085",
+      "closest": "c2b-russian-member-adverbial",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-086",
+      "closest": "c2b-russian-union-question-object",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-087",
+      "closest": "c2a-russian-adverb-time",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-088",
+      "closest": "c2a-russian-single-and",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-089",
+      "closest": "c2a-russian-single-and",
+      "jaccard": 0.357,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-090",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.714,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-091",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.231,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-092",
+      "closest": "c2b-russian-punct-test-common",
+      "jaccard": 0.348,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-093",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-094",
+      "closest": "c2a-russian-single-and",
+      "jaccard": 0.385,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-095",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.3,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-096",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-097",
+      "closest": "b2-russian-part-after",
+      "jaccard": 0.308,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-098",
+      "closest": "b2-russian-part-after",
+      "jaccard": 0.308,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-099",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-100",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-101",
+      "closest": "c2a-russian-single-and",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-102",
+      "closest": "c2a-russian-single-and",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-103",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-104",
+      "closest": "c2a-russian-address",
+      "jaccard": 0.273,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-105",
+      "closest": "c2a-russian-single-and",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-106",
+      "closest": "c2b-russian-punct-gerund",
+      "jaccard": 0.222,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-107",
+      "closest": "c2a-russian-postposition",
+      "jaccard": 0.133,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-108",
+      "closest": "py-tu2",
+      "jaccard": 0.071,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-109",
+      "closest": "b2-math-power-compare",
+      "jaccard": 0.091,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-110",
+      "closest": "py-tu2",
+      "jaccard": 0.067,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-111",
+      "closest": "b2-russian-punct-gerund",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-112",
+      "closest": "c2a-math-error-order",
+      "jaccard": 0.143,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-113",
+      "closest": "b1-informatics-11",
+      "jaccard": 0.111,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-114",
+      "closest": "py-tu2",
+      "jaccard": 0.071,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-115",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-116",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.154,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-117",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.182,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-118",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-119",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-120",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.154,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-121",
+      "closest": "b2-russian-spell-negation",
+      "jaccard": 0.154,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-122",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-123",
+      "closest": "b2-russian-spell-verb",
+      "jaccard": 0.154,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-124",
+      "closest": "b2-russian-speech-like",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-125",
+      "closest": "c2a-russian-pronoun",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-126",
+      "closest": "b2-russian-speech-substantive",
+      "jaccard": 0.214,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-127",
+      "closest": "c2a-russian-pronoun",
+      "jaccard": 0.267,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-128",
+      "closest": "c2a-russian-recognize",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-129",
+      "closest": "b2-russian-speech-like",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-130",
+      "closest": "b2-russian-member-object",
+      "jaccard": 0.294,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-131",
+      "closest": "b2-russian-member-object",
+      "jaccard": 0.235,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-132",
+      "closest": "b2-russian-speech-substantive",
+      "jaccard": 0.214,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-133",
+      "closest": "b1-russian-12",
+      "jaccard": 0.615,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-134",
+      "closest": "c2a-russian-homogeneous-basis",
+      "jaccard": 0.471,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-135",
+      "closest": "b2-russian-complex-bases",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-136",
+      "closest": "b1-russian-12",
+      "jaccard": 0.312,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-137",
+      "closest": "c2b-russian-sentence-one-basis",
+      "jaccard": 0.533,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-138",
+      "closest": "b1-russian-12",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-139",
+      "closest": "b1-russian-12",
+      "jaccard": 0.438,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-140",
+      "closest": "b1-russian-12",
+      "jaccard": 0.429,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-141",
+      "closest": "b1-russian-12",
+      "jaccard": 0.4,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-142",
+      "closest": "b1-russian-24",
+      "jaccard": 0.2,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-143",
+      "closest": "b1-russian-24",
+      "jaccard": 0.091,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-144",
+      "closest": "c2b-russian-union-place",
+      "jaccard": 0.056,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-145",
+      "closest": "c2b-russian-union-place",
+      "jaccard": 0.111,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-146",
+      "closest": "p1",
+      "jaccard": 0.071,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-147",
+      "closest": "u4",
+      "jaccard": 0.176,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-148",
+      "closest": "b2-russian-member-definition",
+      "jaccard": 0.13,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-149",
+      "closest": "b2-russian-member-subject",
+      "jaccard": 0.095,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "chat500-russian-150",
+      "closest": "c2a-russian-cause-order",
+      "jaccard": 0.15,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-informatics-record-padding",
+      "closest": "b1-informatics-09",
+      "jaccard": 0.231,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-informatics-packet-overhead",
+      "closest": "c2b-informatics-info-packet-overhead",
+      "jaccard": 0.25,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-informatics-base-equation",
+      "closest": "c2b-informatics-exam-base-unknown",
+      "jaccard": 0.438,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-informatics-logic-window",
+      "closest": "c2b-math-function-domain-holes",
+      "jaccard": 0.368,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-informatics-prefix-word",
+      "closest": "c2b-informatics-encoding-decode",
+      "jaccard": 0.312,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-informatics-filter-two",
+      "closest": "c2a-informatics-filter-two",
+      "jaccard": 0.154,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-math-remaining-share",
+      "closest": "b2-math-frac-restore",
+      "jaccard": 0.278,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-math-two-discounts",
+      "closest": "gen-percent-chain-v1-s1",
+      "jaccard": 0.171,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-math-boxes-model",
+      "closest": "c2b-russian-sentence-two-bases",
+      "jaccard": 0.148,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-math-rectangle-border",
+      "closest": "b2-math-quad-width",
+      "jaccard": 0.241,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-math-without-replacement",
+      "closest": "c2a-math-without-replacement",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-math-weighted-mean",
+      "closest": "c2b-math-word-average-speed",
+      "jaccard": 0.167,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-runs",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-merge",
+      "closest": "b2-python-clamp",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-once",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-signs",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-transpose",
+      "closest": "b2-informatics-algo-steps",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-missing",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-suffix",
+      "closest": "b1-python-25",
+      "jaccard": 0.571,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-clock",
+      "closest": "b2-python-normalize_spaces",
+      "jaccard": 0.429,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-tokens",
+      "closest": "b2-python-normalize_spaces",
+      "jaccard": 0.375,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-pair-sums",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-stock",
+      "closest": "b2-informatics-algo-steps",
+      "jaccard": 0.286,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-peak",
+      "closest": "c2b-python-frequent-first",
+      "jaccard": 0.667,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-balanced",
+      "closest": "b2-informatics-algo-steps",
+      "jaccard": 0.333,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-blocks",
+      "closest": "b2-python-rotate_right",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-nearest",
+      "closest": "b2-python-deduplicate",
+      "jaccard": 0.5,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-dict-order",
+      "closest": "b1-python-02",
+      "jaccard": 0.6,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-loop-continue",
+      "closest": "c2a-python-break-before",
+      "jaccard": 0.75,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-python-return-stop",
+      "closest": "c2a-python-early-return",
+      "jaccard": 1.0,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-russian-laboratory-style",
+      "closest": "c2b-math-arith-negative-average",
+      "jaccard": 0.095,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-russian-instruction-style",
+      "closest": "b2-russian-speech-state",
+      "jaccard": 0.097,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-russian-portrait-type",
+      "closest": "py-c2",
+      "jaccard": 0.1,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-russian-counterargument",
+      "closest": "b2-python-py-positive-count",
+      "jaccard": 0.067,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-russian-pronoun-clear",
+      "closest": "c2b-russian-text-repeat",
+      "jaccard": 0.133,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    },
+    {
+      "id": "codex500-russian-reasoning-type",
+      "closest": "py-c2",
+      "jaccard": 0.062,
+      "sameNumberlessCondition": false,
+      "review": "A lexical signal was reviewed as a known-method variant, not a new method. Exact parameter / code / graph repeats are separately rejected in chat500-review.json. Lexical distance does not prove originality."
+    }
+  ]
+}

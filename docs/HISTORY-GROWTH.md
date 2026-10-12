@@ -118,3 +118,14 @@ with verified restoration. Never silently delete history to make an export fit.
 ## Stage 3C.2-G finite pilot
 
 Generated variants use existing pooled quick-practice snapshots. Synthetic checks: 100 answers/100 snapshots = 259266 backup bytes; 500 answers/432 snapshots = 1205891; 1000 answers/432 snapshots = 1704084. Repeated solutions do not duplicate full questions, but answers/activity/sessions grow without automatic deletion. The 20 MiB cap remains. These are not owner-data measurements or promises of unlimited use. See GENERATORS-3C2-PERFORMANCE.md for the future 5500-domain risk and safe archival strategy.
+
+## Author-pack review 2026-10-12
+
+No schema/backup-limit change or deletion. A synthetic quick-practice model through
+the real serializer measured 248,966 / 1,497,669 / 2,022,420 bytes at 100 / 500 /
+1000 answers; pooled snapshots 100 / 500 / 511, so the last profile contains a
+repeat cycle. Assumptions: short authored reference code, correct answers, no
+added independent mini-test/error/adaptive history. These are not owner data and
+not guarantees for long programs. Seven function tasks and three text questions
+retain intermediate version-2 snapshots after a version-3 refinement. See
+CONTENT-CROSS-REVIEW.md and sources/author500-verification.json for current sizes.

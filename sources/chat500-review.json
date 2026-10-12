@@ -4269,13 +4269,15 @@
       "changes": [
         "explanation",
         "options",
+        "prompt",
         "skills",
         "solution"
       ],
       "reviewNotes": [
         "Навык анализа, стиля, типа речи или связи соответствует вопросу",
         "Позиция правильного варианта не служит подсказкой",
-        "Все варианты перечитаны в полном контексте; Решение должно опираться на правило, а не на угадывание."
+        "Все варианты перечитаны в полном контексте; Решение должно опираться на правило, а не на угадывание.",
+        "Явно зафиксированы размеры, начальный объём, влажность и движение воздуха при сравнении температуры. Ответ и проверяемый речевой навык не изменились; версия 3 сохраняет промежуточный v2-снимок."
       ],
       "independent": {
         "id": "chat500-russian-001",
@@ -4311,7 +4313,7 @@
           "principle": "Решение должно опираться на правило, а не на угадывание."
         }
       ],
-      "approvedSha256": "349e75b74d4a9af7b2673d9ea9ee08ee8c437033995855e193ebd7db26ef32f8"
+      "approvedSha256": "8eddb84dc943bb7b3710b8f8722dcfd251a5c801ddcc3a7fbf74f77d9deeedad"
     },
     {
       "id": "chat500-russian-002",
@@ -4322,12 +4324,14 @@
       "family": "text-functional-style",
       "changes": [
         "options",
+        "prompt",
         "skills"
       ],
       "reviewNotes": [
         "Навык анализа, стиля, типа речи или связи соответствует вопросу",
         "Позиция правильного варианта не служит подсказкой",
-        "Все варианты перечитаны в полном контексте; Решение должно опираться на правило, а не на угадывание."
+        "Все варианты перечитаны в полном контексте; Решение должно опираться на правило, а не на угадывание.",
+        "Явно зафиксированы размеры, начальный объём, влажность и движение воздуха при сравнении температуры. Ответ и проверяемый речевой навык не изменились; версия 3 сохраняет промежуточный v2-снимок."
       ],
       "independent": {
         "id": "chat500-russian-002",
@@ -4363,7 +4367,7 @@
           "principle": "Решение должно опираться на правило, а не на угадывание."
         }
       ],
-      "approvedSha256": "91b334b0aeb4ac354e1b1a4fc958664b46bf6f82dec2b0e90cfc1e0a84bdc297"
+      "approvedSha256": "061f4656eb18a690764a5cc7d74f8a2503d034f764e37c2e27f093a9dde53a23"
     },
     {
       "id": "chat500-russian-003",
@@ -4373,11 +4377,13 @@
       "originalFamily": "chat500-long-semantic-type-water",
       "family": "text-speech-type",
       "changes": [
+        "prompt",
         "skills"
       ],
       "reviewNotes": [
         "Навык анализа, стиля, типа речи или связи соответствует вопросу",
-        "Все варианты перечитаны в полном контексте; Решение должно опираться на правило, а не на угадывание."
+        "Все варианты перечитаны в полном контексте; Решение должно опираться на правило, а не на угадывание.",
+        "Явно зафиксированы размеры, начальный объём, влажность и движение воздуха при сравнении температуры. Ответ и проверяемый речевой навык не изменились; версия 3 сохраняет промежуточный v2-снимок."
       ],
       "independent": {
         "id": "chat500-russian-003",
@@ -4403,7 +4409,7 @@
           "principle": "Решение должно опираться на правило, а не на угадывание."
         }
       ],
-      "approvedSha256": "4cc283a93df3273d74f463f37057d981fcddbc414dbf7358e6073102d0a4929f"
+      "approvedSha256": "5479ef7064172d852d6b3e0200c7951b061e91c287dfaaabcb7fe2fb5de6617d"
     },
     {
       "id": "chat500-russian-004",
@@ -15170,6 +15176,7 @@
         "hints",
         "prompt",
         "python.hiddenTests",
+        "requires",
         "skills"
       ],
       "reviewNotes": [
@@ -15177,7 +15184,8 @@
         "Независимые граничные и крупные случаи",
         "Пошаговый алгоритм вместо общей фразы",
         "Два уровня подсказки без готового кода",
-        "Навык обработки последовательности вместо арифметики по индексу"
+        "Навык обработки последовательности вместо арифметики по индексу",
+        "Final prerequisite guard: loop/condition and list/set concepts must be selected or studied; version 3 preserves intermediate version-2 snapshots."
       ],
       "independent": {
         "id": "chat500-python-062",
@@ -15187,7 +15195,7 @@
         "method": "native-reference-smoke-not-final-Pyodide",
         "cases": 6
       },
-      "approvedSha256": "7a30439dd33b623478d0301b1fb53bfe1e7ef512c810ae04fbbe2e029edc2911"
+      "approvedSha256": "7c50c39987e7398c9ad0880a7e57eb1206cc80561d4272cec2b947705f1f03fd"
     },
     {
       "id": "chat500-python-063",
@@ -15201,6 +15209,7 @@
         "hints",
         "prompt",
         "python.hiddenTests",
+        "requires",
         "skills",
         "solution"
       ],
@@ -15210,7 +15219,8 @@
         "Независимые граничные и крупные случаи",
         "Пошаговый алгоритм вместо общей фразы",
         "Два уровня подсказки без готового кода",
-        "Проверяемая операция со строкой"
+        "Проверяемая операция со строкой",
+        "Final prerequisite guard: loop/condition and list/set concepts must be selected or studied; version 3 preserves intermediate version-2 snapshots."
       ],
       "independent": {
         "id": "chat500-python-063",
@@ -15220,7 +15230,7 @@
         "method": "native-reference-smoke-not-final-Pyodide",
         "cases": 6
       },
-      "approvedSha256": "845235b79a913b159bce9f8e5809189ee09d9dc56b29c48debad396fe121402f"
+      "approvedSha256": "25dfb618ae3e66383f83a75dc28bd0604ba0dc918b26c6cea93bb882181219b8"
     },
     {
       "id": "chat500-python-064",
@@ -15233,13 +15243,15 @@
         "explanation",
         "hints",
         "python.hiddenTests",
+        "requires",
         "skills"
       ],
       "reviewNotes": [
         "Независимые граничные и крупные случаи",
         "Пошаговый алгоритм вместо общей фразы",
         "Два уровня подсказки без готового кода",
-        "Навык обработки последовательности вместо арифметики по индексу"
+        "Навык обработки последовательности вместо арифметики по индексу",
+        "Final prerequisite guard: loop/condition and list/set concepts must be selected or studied; version 3 preserves intermediate version-2 snapshots."
       ],
       "independent": {
         "id": "chat500-python-064",
@@ -15249,7 +15261,7 @@
         "method": "native-reference-smoke-not-final-Pyodide",
         "cases": 6
       },
-      "approvedSha256": "4d85ee1fb393406cbde1a838dadaeeb1178a9131e6927f3248849aa08c1ca55d"
+      "approvedSha256": "560daaf261b70c95e9137900c9e0981f41a769e62f09f8b4f12529ba08da16a9"
     },
     {
       "id": "chat500-python-065",
@@ -15292,13 +15304,15 @@
         "explanation",
         "hints",
         "python.hiddenTests",
+        "requires",
         "skills"
       ],
       "reviewNotes": [
         "Независимые граничные и крупные случаи",
         "Пошаговый алгоритм вместо общей фразы",
         "Два уровня подсказки без готового кода",
-        "Навык обработки последовательности вместо арифметики по индексу"
+        "Навык обработки последовательности вместо арифметики по индексу",
+        "Final prerequisite guard: loop/condition and list/set concepts must be selected or studied; version 3 preserves intermediate version-2 snapshots."
       ],
       "independent": {
         "id": "chat500-python-066",
@@ -15308,7 +15322,7 @@
         "method": "native-reference-smoke-not-final-Pyodide",
         "cases": 6
       },
-      "approvedSha256": "75e747bdd58597733022df9125fae94f4179da6ea48ee049b967feb221c29ba7"
+      "approvedSha256": "49190cab24888982b5b9f2ba9b4297946bab2913ee05a63bfa447c3b3f63049c"
     },
     {
       "id": "chat500-python-067",
@@ -15321,13 +15335,15 @@
         "explanation",
         "hints",
         "python.hiddenTests",
+        "requires",
         "skills"
       ],
       "reviewNotes": [
         "Независимые граничные и крупные случаи",
         "Пошаговый алгоритм вместо общей фразы",
         "Два уровня подсказки без готового кода",
-        "Проверяемая операция со строкой"
+        "Проверяемая операция со строкой",
+        "Final prerequisite guard: loop/condition and list/set concepts must be selected or studied; version 3 preserves intermediate version-2 snapshots."
       ],
       "independent": {
         "id": "chat500-python-067",
@@ -15337,7 +15353,7 @@
         "method": "native-reference-smoke-not-final-Pyodide",
         "cases": 6
       },
-      "approvedSha256": "11f096dfba24cf1d87dcb41edafff8b52f1866a469a141bb4c416db706a5d4c4"
+      "approvedSha256": "2dc45e9413bc38c903ca2eb2578b290a47cb9a7b9a36ea6bb058608a0e2856f6"
     },
     {
       "id": "chat500-python-068",
@@ -15350,13 +15366,15 @@
         "explanation",
         "hints",
         "python.hiddenTests",
+        "requires",
         "skills"
       ],
       "reviewNotes": [
         "Независимые граничные и крупные случаи",
         "Пошаговый алгоритм вместо общей фразы",
         "Два уровня подсказки без готового кода",
-        "Навык обработки последовательности вместо арифметики по индексу"
+        "Навык обработки последовательности вместо арифметики по индексу",
+        "Final prerequisite guard: loop/condition and list/set concepts must be selected or studied; version 3 preserves intermediate version-2 snapshots."
       ],
       "independent": {
         "id": "chat500-python-068",
@@ -15366,7 +15384,7 @@
         "method": "native-reference-smoke-not-final-Pyodide",
         "cases": 6
       },
-      "approvedSha256": "546417b15d8c0ad432fbeb27266d79b75abc5cf92810e907b7d45aad35237e22"
+      "approvedSha256": "74ca3b160bbef17d6bc390eb03b4db0034902efceedc7a45505f6b23e300e07f"
     },
     {
       "id": "chat500-python-069",
@@ -15380,6 +15398,7 @@
         "hints",
         "prompt",
         "python.hiddenTests",
+        "requires",
         "skills"
       ],
       "reviewNotes": [
@@ -15387,7 +15406,8 @@
         "Независимые граничные и крупные случаи",
         "Пошаговый алгоритм вместо общей фразы",
         "Два уровня подсказки без готового кода",
-        "Навык обработки последовательности вместо арифметики по индексу"
+        "Навык обработки последовательности вместо арифметики по индексу",
+        "Final prerequisite guard: loop/condition and list/set concepts must be selected or studied; version 3 preserves intermediate version-2 snapshots."
       ],
       "independent": {
         "id": "chat500-python-069",
@@ -15397,7 +15417,7 @@
         "method": "native-reference-smoke-not-final-Pyodide",
         "cases": 6
       },
-      "approvedSha256": "3ccb6cd4e0c94235b508d1f7e29f42a9c53f2c324a67491968098ef70055bd93"
+      "approvedSha256": "e708246bcc205c154bc4984aedc04a825e025ba52537588ba740aaa297ca35ee"
     },
     {
       "id": "chat500-python-070",

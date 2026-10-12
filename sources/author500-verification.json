@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-12",
+  "base": "c791d6053b93a8a4c72fd2c5857bf21982671151",
+  "unit": {
+    "passed": 169,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "total": 26,
+    "results": [
+      {
+        "name": "author500-phone-browser.mjs",
+        "code": 0,
+        "groups": 8
+      },
+      {
+        "name": "browser-checks.mjs",
+        "code": 0,
+        "groups": 11
+      },
+      {
+        "name": "content3b2-bridge-browser.mjs",
+        "code": 0,
+        "groups": 2
+      },
+      {
+        "name": "content3b2-browser.mjs",
+        "code": 0,
+        "groups": 7
+      },
+      {
+        "name": "content3b2-review-browser.mjs",
+        "code": 0,
+        "groups": 3
+      },
+      {
+        "name": "content3c2-b-browser.mjs",
+        "code": 0,
+        "groups": 8
+      },
+      {
+        "name": "content3c2-browser.mjs",
+        "code": 0,
+        "groups": 11
+      },
+      {
+        "name": "content3c2-program-browser.mjs",
+        "code": 0,
+        "groups": 1
+      },
+      {
+        "name": "exam-browser.mjs",
+        "code": 0,
+        "groups": 8
+      },
+      {
+        "name": "exam-review-browser.mjs",
+        "code": 0,
+        "groups": 3
+      },
+      {
+        "name": "generators-browser.mjs",
+        "code": 0,
+        "groups": 9
+      },
+      {
+        "name": "author500-program-browser.mjs",
+        "code": 0,
+        "groups": 1
+      },
+      {
+        "name": "numeric-input-browser.mjs",
+        "code": 0,
+        "groups": 5
+      },
+      {
+        "name": "playground-browser-checks.mjs",
+        "code": 0,
+        "groups": 30
+      },
+      {
+        "name": "content3b2-program-browser.mjs",
+        "code": 0,
+        "groups": 1
+      },
+      {
+        "name": "polish-explanations-browser.mjs",
+        "code": 0,
+        "groups": 4
+      },
+      {
+        "name": "polish-browser.mjs",
+        "code": 0,
+        "groups": 7
+      },
+      {
+        "name": "private-packages-browser.mjs",
+        "code": 0,
+        "groups": 2
+      },
+      {
+        "name": "prediction-bank-browser.mjs",
+        "code": 0,
+        "groups": 0
+      },
+      {
+        "name": "release034-browser.mjs",
+        "code": 0,
+        "groups": 5
+      },
+      {
+        "name": "stage3a-browser-checks.mjs",
+        "code": 0,
+        "groups": 12
+      },
+      {
+        "name": "study-flow-browser.mjs",
+        "code": 0,
+        "groups": 14
+      },
+      {
+        "name": "study-flow-layout-browser.mjs",
+        "code": 0,
+        "groups": 3
+      },
+      {
+        "name": "update-checks.mjs",
+        "code": 0,
+        "groups": 4
+      },
+      {
+        "name": "learning-content-browser.mjs",
+        "code": 0,
+        "groups": 21
+      },
+      {
+        "name": "program-bank-browser.mjs",
+        "code": 0,
+        "groups": 1
+      }
+    ]
+  },
+  "offline": {
+    "growth": [
+      {
+        "solved": 100,
+        "uniqueSnapshots": 100,
+        "pooledSnapshotsBytes": 117904,
+        "backupBytes": 248966,
+        "sessions": 4
+      },
+      {
+        "solved": 500,
+        "uniqueSnapshots": 500,
+        "pooledSnapshotsBytes": 781146,
+        "backupBytes": 1497669,
+        "sessions": 17
+      },
+      {
+        "solved": 1000,
+        "uniqueSnapshots": 511,
+        "pooledSnapshotsBytes": 803396,
+        "backupBytes": 2022420,
+        "sessions": 34
+      }
+    ],
+    "previous": {
+      "resources": 35,
+      "bytes": 15565610,
+      "inventoryVersion": "4784881f4119c010947d"
+    },
+    "pilot": {
+      "resources": 35,
+      "bytes": 16367780,
+      "inventoryVersion": "b39a461f45ae6d4a67a5"
+    },
+    "published050": {
+      "resources": 33,
+      "bytes": 14976723,
+      "inventoryVersion": "b5904661ee3e7dca5129"
+    }
+  },
+  "codeHashes": {
+    "src/python/assessment.ts": "71fb845c697e9d1722e998d6cdef564c15eed1608e201ee9fa0994fafc399b97",
+    "src/python/editor.ts": "fb33119e4afb65b5a38a23ec78c91011c71183bc0eab6492bc4700a91ece8e95",
+    "src/python/grading.ts": "5b298f81df64e8a1507979ccbadffac641061521487eb56a63f444be4da254f0",
+    "src/python/runner.ts": "285be67eb6bdc309468a3c9e29067b99215e787eedea786617308169498dae43",
+    "src/python/sandbox.html": "07cedd3fabd913d6932b3ba92e38f5bd2ec92fd2cc5937320cacb5604272a091",
+    "src/python/tasks.ts": "b21fe7fad3a05391bd38dd160a822be59ef208753b128b939cb3643b9ea78a90",
+    "src/python/worker.js": "c3fb741068db303a7fdaa771158b242b8fcdf266d915b0b051a3fa49b5f15e4e"
+  },
+  "limits": [
+    "500 archive tasks reviewed; own package is a verified 36, not 500",
+    "language editorial review is not a professional philological certification",
+    "local hidden tests are not cryptographically secret",
+    "no physical Samsung test"
+  ]
+}

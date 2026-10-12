@@ -1872,9 +1872,11 @@
       "explanation": "Скопируй список. Меняй местами позиции 0 и 1, 2 и 3; если последняя позиция без пары, оставь её. Верни список, не вывод.",
       "solution": "def swap_adjacent(values):\n    out=values[:] \n    for i in range(0,len(out)-1,2):\n        out[i],out[i+1]=out[i+1],out[i]\n    return out",
       "principle": "Сначала продумай крайние случаи и структуру результата.",
-      "version": 2,
+      "version": 3,
       "requires": [
-        "py-functions"
+        "py-functions",
+        "py-loops",
+        "py-if"
       ],
       "related": [],
       "familyId": "chat500-swap-adjacent",
@@ -2072,9 +2074,12 @@
       "explanation": "Сначала проверь исходный символ по диапазонам A–Z/a–z. Только затем приведи его к нижнему регистру и добавь в множество. Длина множества — число разных букв.",
       "solution": "def distinct_letters(text):\n    letters = set()\n    for c in text:\n        if \"a\" <= c <= \"z\" or \"A\" <= c <= \"Z\":\n            letters.add(c.lower())\n    return len(letters)",
       "principle": "Сначала продумай крайние случаи и структуру результата.",
-      "version": 2,
+      "version": 3,
       "requires": [
-        "py-functions"
+        "py-functions",
+        "py-loops",
+        "py-if",
+        "py-sets"
       ],
       "related": [],
       "familyId": "chat500-count-distinct-letters",
@@ -2174,9 +2179,11 @@
       "explanation": "Храни длину текущей серии и максимальную длину. При смене значения начинай серию с 1. На пустом списке длина равна 0.",
       "solution": "def longest_run(values):\n    best=cur=0\n    last=object()\n    for v in values:\n        cur=cur+1 if v==last else 1\n        best=max(best,cur)\n        last=v\n    return best",
       "principle": "Сначала продумай крайние случаи и структуру результата.",
-      "version": 2,
+      "version": 3,
       "requires": [
-        "py-functions"
+        "py-functions",
+        "py-loops",
+        "py-if"
       ],
       "related": [],
       "familyId": "chat500-longest-run",
@@ -2344,9 +2351,11 @@
       "explanation": "Считай чётные элементы, включая ноль и отрицательные чётные числа. Результат — bool: достиг ли счётчик 2.",
       "solution": "def at_least_two_even(values):\n    return sum(v%2==0 for v in values)>=2",
       "principle": "Сначала продумай крайние случаи и структуру результата.",
-      "version": 2,
+      "version": 3,
       "requires": [
-        "py-functions"
+        "py-functions",
+        "py-loops",
+        "py-if"
       ],
       "related": [],
       "familyId": "chat500-two-even-check",
@@ -2468,9 +2477,12 @@
       "explanation": "split() без аргумента выделяет слова между любыми пробельными символами. Пройди слова циклом и добавь длину каждого в список.",
       "solution": "def word_lengths(text):\n    return [len(w) for w in text.split()]",
       "principle": "Сначала продумай крайние случаи и структуру результата.",
-      "version": 2,
+      "version": 3,
       "requires": [
-        "py-functions"
+        "py-functions",
+        "py-loops",
+        "py-if",
+        "py-lists"
       ],
       "related": [],
       "familyId": "chat500-word-lengths",
@@ -2586,9 +2598,11 @@
       "explanation": "Начни с индекса −1. При каждом чётном элементе обновляй индекс: к концу останется последний. Пустой список даёт −1.",
       "solution": "def last_even_index(values):\n    idx=-1\n    for i,x in enumerate(values):\n        if x%2==0:idx=i\n    return idx",
       "principle": "Сначала продумай крайние случаи и структуру результата.",
-      "version": 2,
+      "version": 3,
       "requires": [
-        "py-functions"
+        "py-functions",
+        "py-loops",
+        "py-if"
       ],
       "related": [],
       "familyId": "chat500-last-even-index",
@@ -2738,9 +2752,11 @@
       "explanation": "Пропускай числа ≤ 0. Начни произведение с 1 и отдельно помни, было ли положительное число; при их отсутствии верни 0.",
       "solution": "def positive_product(values):\n    result=1\n    found=False\n    for x in values:\n        if x>0:\n            result*=x\n            found=True\n    return result if found else 0",
       "principle": "Сначала продумай крайние случаи и структуру результата.",
-      "version": 2,
+      "version": 3,
       "requires": [
-        "py-functions"
+        "py-functions",
+        "py-loops",
+        "py-if"
       ],
       "related": [],
       "familyId": "chat500-positive-product",

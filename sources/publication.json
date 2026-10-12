@@ -491,12 +491,12 @@
         {
           "path": "src/data/banks/author-chat500-python.json",
           "normalization": "lf",
-          "sha256": "44698e829ad5475c6717ecd61a6b3824eb22024533eb6258459ac41a2b4dba21"
+          "sha256": "428c383bd1e6c65e4b17997bc3a7a31d25a4dd540f8f614c64c5147f50100c58"
         },
         {
           "path": "src/data/banks/author-chat500-russian.json",
           "normalization": "lf",
-          "sha256": "a44683a04e19fcce72f8839b551d95753e69fdb149787ea50c3d7448083a53b4"
+          "sha256": "838d85f51a885cd6b4b87115d32e3f7468ba65796739c450d50301228271480c"
         },
         {
           "path": "src/data/banks/author-codex500-informatics.json",
@@ -521,7 +521,7 @@
         {
           "path": "src/data/author500-lessons.json",
           "normalization": "lf",
-          "sha256": "c145a6b9d070d3dac077525e6df6526472d1bdc715ac20541be0a27a1b973480"
+          "sha256": "0fd0433b18fdb75aa9cec9897c8b725a5820184ef91fd6db63141c2f10349ef4"
         }
       ]
     }
