@@ -5,6 +5,7 @@ import type {Question,StudyState,Attempt,SubjectId,Topic,Skill} from './types.ts
 import {validateQuestion} from './backup.ts';
 import {recordTraining} from './study-flow.ts';
 import {textContext} from './text-context.ts';
+import {practicePattern} from './practice-pattern.ts';
 export interface QuickPreferences {subjects:SubjectId[];topics:string[];count:10|20|30;difficulty:'mixed'|'easy'|'medium'|'hard';unseenFirst:boolean;allowRepeats:boolean;generatedVariants?:boolean}
 export interface QuickItem {key:string;answer:string;correct:boolean|null;shown:boolean;repeat:boolean;attemptIds:string[];assisted?:boolean;independentCorrect?:boolean}
 export interface QuickSession {id:string;startedAt:string;completedAt?:string;index:number;preferences:QuickPreferences;items:QuickItem[]}
@@ -32,7 +33,8 @@ export function selectQuick(state:StudyState,bank:Question[],topics:Topic[],skil
  const queue=[...candidates].sort((a,b)=>(prefs.unseenFirst?Number(seen.has(a.id))-Number(seen.has(b.id)):0)||Number(seenFamilies.has(family(a)))-Number(seenFamilies.has(family(b)))||hash(a.id)-hash(b.id)||a.id.localeCompare(b.id));
  const result:Question[]=[],used=new Map<string,number>(),usedTexts=new Map<string,number>();
  while(queue.length&&result.length<prefs.count){
-  let best=0;const score=(q:Question)=>[prefs.unseenFirst?Number(seen.has(q.id)):0,textContext(q)?usedTexts.get(textContext(q)!)??0:0,used.get(family(q))??0,result.at(-1)?.topic===q.topic?1:0,result.at(-1)?.subtopic===q.subtopic?1:0];
+  const remainingPatterns=new Map<string,number>();for(const q of queue){const p=practicePattern(q);if(p)remainingPatterns.set(p,(remainingPatterns.get(p)??0)+1);}
+  let best=0;const last=result.at(-1),score=(q:Question)=>{const pattern=practicePattern(q);return [prefs.unseenFirst?Number(seen.has(q.id)):0,textContext(q)?usedTexts.get(textContext(q)!)??0:0,last&&family(last)===family(q)?1:0,used.get(family(q))??0,pattern&&last&&practicePattern(last)===pattern?1:0,pattern&&(!last||family(last)===family(q))?-(remainingPatterns.get(pattern)??0):0,last?.difficulty===q.difficulty?1:0,last?.topic===q.topic?1:0,last?.subtopic===q.subtopic?1:0];};
   const less=(a:number[],b:number[])=>{for(let i=0;i<a.length;i++)if(a[i]!==b[i])return a[i]<b[i];return false;};
   for(let i=1;i<queue.length;i++)if(less(score(queue[i]),score(queue[best])))best=i;
   const q=queue.splice(best,1)[0];result.push(q);used.set(family(q),(used.get(family(q))??0)+1);const context=textContext(q);if(context)usedTexts.set(context,(usedTexts.get(context)??0)+1);

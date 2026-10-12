@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 1,
+  "stage": "CHAT500-QA.1",
+  "checkedAt": "2026-10-12T17:34:35.447Z",
+  "branch": "content-expansion-3c2",
+  "base": "256d34da4cc1feff995a15e1664b02380e362d97",
+  "previous": "d267df9f3e852d22b98ac014296a1524ac48f5ee",
+  "main": "37e3ee1856cc96a26648fb52580c158120a39086",
+  "appVersion": "0.5.0",
+  "changes": [
+    {
+      "id": "chat500-russian-021",
+      "oldVersion": 3,
+      "newVersion": 4,
+      "reason": "Вопросительная форма побуждает читателя, но совместность действия с автором не выражена.",
+      "oldSha256": "61e64b348592d9add3558e9a7fee719922de3bc79f3f2ec88438219cb10b2817",
+      "newSha256": "a70b360af5320a5dc4843f31c603b336e6dc57ec37580e9f2a507956fbe08322"
+    },
+    {
+      "id": "chat500-russian-108",
+      "oldVersion": 3,
+      "newVersion": 4,
+      "reason": "Вместо очередного начального оборота тренируется оборот в конце предложения; слова сохранены, изменён их порядок.",
+      "oldSha256": "cff395c79e72851016897dcc6fd6df316015a8a59535d02642491204fb3b3ae5",
+      "newSha256": "99be0c36e830ab86c3d21333ee750dfd53982989219b8882c7a95668483424cf"
+    },
+    {
+      "id": "chat500-russian-109",
+      "oldVersion": 3,
+      "newVersion": 4,
+      "reason": "Проверяются две границы оборота в середине предложения и правдоподобная ошибка незакрытого обособления.",
+      "oldSha256": "7efffc0c1bf360faad16dfb797069e76befe5cb567948e2db3128ba651bacc2f",
+      "newSha256": "3d942c89023ceb861db92e775ecb6e407d32daaeea222ec53061c10342f15eba"
+    },
+    {
+      "id": "chat500-russian-111",
+      "oldVersion": 3,
+      "newVersion": 4,
+      "reason": "Добавлена содержательная проверка однородных деепричастных оборотов с одиночным союзом, а не новая задача с косметической заменой имени. Семейство метода и навыки сохранены.",
+      "oldSha256": "0addada037fb64d6342d04bad6c5607c5c669e16b07242c5817193dcabe5a051",
+      "newSha256": "02506f4616265c0037b76fb9af18f1824cd1f255b0d02efb9231ce5f5bb02e47"
+    }
+  ],
+  "unchanged017": {
+    "id": "chat500-russian-017",
+    "version": 3,
+    "decision": "retained",
+    "reason": "В контексте параллельных частей при «рёбра» восстанавливается составное глагольное сказуемое «могут обозначать». Тире отмечает контекстно восстановимый пропуск; характеристика правильна и не заменена механически.",
+    "source": "https://gramota.ru/biblioteka/spravochniki/pravila-russkoy-orfografii-i-punktuatsii/tire-v-nepolnom-predlozhenii",
+    "sourceAccess": "Нормативный текст доступен в поисковом индексе; прямое открытие страницы вернуло HTTP 403."
+  },
+  "orderAudit": {
+    "baseline": {
+      "total": 27,
+      "twoOptions": 21,
+      "correctSecond": 20
+    },
+    "currentCanonical": {
+      "total": 27,
+      "twoOptions": 19,
+      "correctSecond": 20
+    },
+    "displaySample": {
+      "seedPattern": "choice-order-v1-session-0..199",
+      "rightSecond": 2450,
+      "total": 5400,
+      "rate": 0.4537037037037037
+    },
+    "policy": "New sessions and ordinary attempts use a random UUID seed, stable throughout their own attempt. Canonical keys are not balanced artificially."
+  },
+  "unit": {
+    "passed": 235,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0,
+    "log": "outputs/chat500-qa1-unit-final-verified.log",
+    "newTests": 11,
+    "priorQaSnapshotCases": 51,
+    "newSnapshotCases": 4
+  },
+  "browser": {
+    "uniqueSuites": 28,
+    "passed": 28,
+    "failed": 0,
+    "results": [
+      {
+        "name": "author500-phone-browser.mjs",
+        "code": 0,
+        "groups": 8,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\author500-phone-browser.mjs.log"
+      },
+      {
+        "name": "browser-checks.mjs",
+        "code": 0,
+        "groups": 11,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\browser-checks.mjs.log"
+      },
+      {
+        "name": "content3b2-review-browser.mjs",
+        "code": 0,
+        "groups": 3,
+        "log": "outputs\\chat500-qa1-browser-logs\\content3b2-review-browser.mjs.log"
+      },
+      {
+        "name": "content3b2-bridge-browser.mjs",
+        "code": 0,
+        "groups": 2,
+        "log": "outputs\\chat500-qa1-browser-logs\\content3b2-bridge-browser.mjs.log"
+      },
+      {
+        "name": "content3c2-b-browser.mjs",
+        "code": 0,
+        "groups": 8,
+        "log": "outputs\\chat500-qa1-browser-logs\\content3c2-b-browser.mjs.log"
+      },
+      {
+        "name": "content3c2-browser.mjs",
+        "code": 0,
+        "groups": 11,
+        "log": "outputs\\chat500-qa1-browser-logs\\content3c2-browser.mjs.log"
+      },
+      {
+        "name": "exam-browser.mjs",
+        "code": 0,
+        "groups": 8,
+        "log": "outputs\\chat500-qa1-browser-logs\\exam-browser.mjs.log"
+      },
+      {
+        "name": "content3b2-browser.mjs",
+        "code": 0,
+        "groups": 7,
+        "log": "outputs\\chat500-qa1-browser-logs\\content3b2-browser.mjs.log"
+      },
+      {
+        "name": "exam-review-browser.mjs",
+        "code": 0,
+        "groups": 3,
+        "log": "outputs\\chat500-qa1-browser-logs\\exam-review-browser.mjs.log"
+      },
+      {
+        "name": "generators-browser.mjs",
+        "code": 0,
+        "groups": 9,
+        "log": "outputs\\chat500-qa1-browser-logs\\generators-browser.mjs.log"
+      },
+      {
+        "name": "numeric-input-browser.mjs",
+        "code": 0,
+        "groups": 5,
+        "log": "outputs\\chat500-qa1-browser-logs\\numeric-input-browser.mjs.log"
+      },
+      {
+        "name": "playground-browser-checks.mjs",
+        "code": 0,
+        "groups": 30,
+        "log": "outputs\\chat500-qa1-browser-logs\\playground-browser-checks.mjs.log"
+      },
+      {
+        "name": "content3c2-program-browser.mjs",
+        "code": 0,
+        "groups": 1,
+        "log": "outputs\\chat500-qa1-browser-logs\\content3c2-program-browser.mjs.log"
+      },
+      {
+        "name": "polish-explanations-browser.mjs",
+        "code": 0,
+        "groups": 4,
+        "log": "outputs\\chat500-qa1-browser-logs\\polish-explanations-browser.mjs.log"
+      },
+      {
+        "name": "polish-browser.mjs",
+        "code": 0,
+        "groups": 7,
+        "log": "outputs\\chat500-qa1-browser-logs\\polish-browser.mjs.log"
+      },
+      {
+        "name": "private-packages-browser.mjs",
+        "code": 0,
+        "groups": 2,
+        "log": "outputs\\chat500-qa1-browser-logs\\private-packages-browser.mjs.log"
+      },
+      {
+        "name": "prediction-bank-browser.mjs",
+        "code": 0,
+        "groups": 0,
+        "log": "outputs\\chat500-qa1-browser-logs\\prediction-bank-browser.mjs.log"
+      },
+      {
+        "name": "release034-browser.mjs",
+        "code": 0,
+        "groups": 5,
+        "log": "outputs\\chat500-qa1-browser-logs\\release034-browser.mjs.log"
+      },
+      {
+        "name": "author500-program-browser.mjs",
+        "code": 0,
+        "groups": 1,
+        "log": "outputs\\chat500-qa1-browser-logs\\author500-program-browser.mjs.log"
+      },
+      {
+        "name": "stage3a-browser-checks.mjs",
+        "code": 0,
+        "groups": 12,
+        "log": "outputs\\chat500-qa1-browser-logs\\stage3a-browser-checks.mjs.log"
+      },
+      {
+        "name": "study-flow-layout-browser.mjs",
+        "code": 0,
+        "groups": 3,
+        "log": "outputs\\chat500-qa1-browser-logs\\study-flow-layout-browser.mjs.log"
+      },
+      {
+        "name": "update-checks.mjs",
+        "code": 0,
+        "groups": 4,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\update-checks.mjs.log"
+      },
+      {
+        "name": "study-flow-browser.mjs",
+        "code": 0,
+        "groups": 14,
+        "log": "outputs\\chat500-qa1-browser-logs\\study-flow-browser.mjs.log"
+      },
+      {
+        "name": "content3b2-program-browser.mjs",
+        "code": 0,
+        "groups": 1,
+        "log": "outputs\\chat500-qa1-browser-logs\\content3b2-program-browser.mjs.log"
+      },
+      {
+        "name": "chat500-qa-browser.mjs",
+        "code": 0,
+        "groups": 3,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\chat500-qa-browser.mjs.log"
+      },
+      {
+        "name": "chat500-qa1-browser.mjs",
+        "code": 0,
+        "groups": 5,
+        "log": "outputs/chat500-qa1-ordinary-confirmation.log"
+      },
+      {
+        "name": "learning-content-browser.mjs",
+        "code": 0,
+        "groups": 21,
+        "log": "outputs\\chat500-qa1-browser-logs\\learning-content-browser.mjs.log"
+      },
+      {
+        "name": "program-bank-browser.mjs",
+        "code": 0,
+        "groups": 1,
+        "log": "outputs\\chat500-qa1-browser-logs\\program-bank-browser.mjs.log"
+      }
+    ],
+    "firstFullRun": {
+      "buildPrefix": "outputs/chat500-qa1-prefix",
+      "buildRelative": "outputs/chat500-qa1-relative",
+      "passed": 28,
+      "failed": 0,
+      "results": [
+        {
+          "name": "author500-phone-browser.mjs",
+          "code": 0,
+          "groups": 8,
+          "log": "outputs\\chat500-qa1-browser-logs\\author500-phone-browser.mjs.log"
+        },
+        {
+          "name": "browser-checks.mjs",
+          "code": 0,
+          "groups": 11,
+          "log": "outputs\\chat500-qa1-browser-logs\\browser-checks.mjs.log"
+        },
+        {
+          "name": "content3b2-review-browser.mjs",
+          "code": 0,
+          "groups": 3,
+          "log": "outputs\\chat500-qa1-browser-logs\\content3b2-review-browser.mjs.log"
+        },
+        {
+          "name": "content3b2-bridge-browser.mjs",
+          "code": 0,
+          "groups": 2,
+          "log": "outputs\\chat500-qa1-browser-logs\\content3b2-bridge-browser.mjs.log"
+        },
+        {
+          "name": "content3c2-b-browser.mjs",
+          "code": 0,
+          "groups": 8,
+          "log": "outputs\\chat500-qa1-browser-logs\\content3c2-b-browser.mjs.log"
+        },
+        {
+          "name": "content3c2-browser.mjs",
+          "code": 0,
+          "groups": 11,
+          "log": "outputs\\chat500-qa1-browser-logs\\content3c2-browser.mjs.log"
+        },
+        {
+          "name": "exam-browser.mjs",
+          "code": 0,
+          "groups": 8,
+          "log": "outputs\\chat500-qa1-browser-logs\\exam-browser.mjs.log"
+        },
+        {
+          "name": "content3b2-browser.mjs",
+          "code": 0,
+          "groups": 7,
+          "log": "outputs\\chat500-qa1-browser-logs\\content3b2-browser.mjs.log"
+        },
+        {
+          "name": "exam-review-browser.mjs",
+          "code": 0,
+          "groups": 3,
+          "log": "outputs\\chat500-qa1-browser-logs\\exam-review-browser.mjs.log"
+        },
+        {
+          "name": "generators-browser.mjs",
+          "code": 0,
+          "groups": 9,
+          "log": "outputs\\chat500-qa1-browser-logs\\generators-browser.mjs.log"
+        },
+        {
+          "name": "numeric-input-browser.mjs",
+          "code": 0,
+          "groups": 5,
+          "log": "outputs\\chat500-qa1-browser-logs\\numeric-input-browser.mjs.log"
+        },
+        {
+          "name": "playground-browser-checks.mjs",
+          "code": 0,
+          "groups": 30,
+          "log": "outputs\\chat500-qa1-browser-logs\\playground-browser-checks.mjs.log"
+        },
+        {
+          "name": "content3c2-program-browser.mjs",
+          "code": 0,
+          "groups": 1,
+          "log": "outputs\\chat500-qa1-browser-logs\\content3c2-program-browser.mjs.log"
+        },
+        {
+          "name": "polish-explanations-browser.mjs",
+          "code": 0,
+          "groups": 4,
+          "log": "outputs\\chat500-qa1-browser-logs\\polish-explanations-browser.mjs.log"
+        },
+        {
+          "name": "polish-browser.mjs",
+          "code": 0,
+          "groups": 7,
+          "log": "outputs\\chat500-qa1-browser-logs\\polish-browser.mjs.log"
+        },
+        {
+          "name": "private-packages-browser.mjs",
+          "code": 0,
+          "groups": 2,
+          "log": "outputs\\chat500-qa1-browser-logs\\private-packages-browser.mjs.log"
+        },
+        {
+          "name": "prediction-bank-browser.mjs",
+          "code": 0,
+          "groups": 0,
+          "log": "outputs\\chat500-qa1-browser-logs\\prediction-bank-browser.mjs.log"
+        },
+        {
+          "name": "release034-browser.mjs",
+          "code": 0,
+          "groups": 5,
+          "log": "outputs\\chat500-qa1-browser-logs\\release034-browser.mjs.log"
+        },
+        {
+          "name": "author500-program-browser.mjs",
+          "code": 0,
+          "groups": 1,
+          "log": "outputs\\chat500-qa1-browser-logs\\author500-program-browser.mjs.log"
+        },
+        {
+          "name": "stage3a-browser-checks.mjs",
+          "code": 0,
+          "groups": 12,
+          "log": "outputs\\chat500-qa1-browser-logs\\stage3a-browser-checks.mjs.log"
+        },
+        {
+          "name": "study-flow-layout-browser.mjs",
+          "code": 0,
+          "groups": 3,
+          "log": "outputs\\chat500-qa1-browser-logs\\study-flow-layout-browser.mjs.log"
+        },
+        {
+          "name": "update-checks.mjs",
+          "code": 0,
+          "groups": 4,
+          "log": "outputs\\chat500-qa1-browser-logs\\update-checks.mjs.log"
+        },
+        {
+          "name": "study-flow-browser.mjs",
+          "code": 0,
+          "groups": 14,
+          "log": "outputs\\chat500-qa1-browser-logs\\study-flow-browser.mjs.log"
+        },
+        {
+          "name": "content3b2-program-browser.mjs",
+          "code": 0,
+          "groups": 1,
+          "log": "outputs\\chat500-qa1-browser-logs\\content3b2-program-browser.mjs.log"
+        },
+        {
+          "name": "chat500-qa-browser.mjs",
+          "code": 0,
+          "groups": 3,
+          "log": "outputs\\chat500-qa1-browser-logs\\chat500-qa-browser.mjs.log"
+        },
+        {
+          "name": "chat500-qa1-browser.mjs",
+          "code": 0,
+          "groups": 5,
+          "log": "outputs\\chat500-qa1-browser-logs\\chat500-qa1-browser.mjs.log"
+        },
+        {
+          "name": "learning-content-browser.mjs",
+          "code": 0,
+          "groups": 21,
+          "log": "outputs\\chat500-qa1-browser-logs\\learning-content-browser.mjs.log"
+        },
+        {
+          "name": "program-bank-browser.mjs",
+          "code": 0,
+          "groups": 1,
+          "log": "outputs\\chat500-qa1-browser-logs\\program-bank-browser.mjs.log"
+        }
+      ]
+    },
+    "finalAffectedRun": {
+      "buildPrefix": "outputs/chat500-qa1-reviewed-prefix",
+      "buildRelative": "outputs/chat500-qa1-reviewed-relative",
+      "passed": 5,
+      "failed": 0,
+      "results": [
+        {
+          "name": "author500-phone-browser.mjs",
+          "code": 0,
+          "groups": 8,
+          "log": "outputs\\chat500-qa1-final-browser-logs\\author500-phone-browser.mjs.log"
+        },
+        {
+          "name": "browser-checks.mjs",
+          "code": 0,
+          "groups": 11,
+          "log": "outputs\\chat500-qa1-final-browser-logs\\browser-checks.mjs.log"
+        },
+        {
+          "name": "update-checks.mjs",
+          "code": 0,
+          "groups": 4,
+          "log": "outputs\\chat500-qa1-final-browser-logs\\update-checks.mjs.log"
+        },
+        {
+          "name": "chat500-qa-browser.mjs",
+          "code": 0,
+          "groups": 3,
+          "log": "outputs\\chat500-qa1-final-browser-logs\\chat500-qa-browser.mjs.log"
+        },
+        {
+          "name": "chat500-qa1-browser.mjs",
+          "code": 0,
+          "groups": 5,
+          "log": "outputs/chat500-qa1-ordinary-confirmation.log"
+        }
+      ]
+    },
+    "resolvedFailures": [],
+    "focused": {
+      "checks": [
+        "Existing session retains source order, selected answer and full old snapshot on cold offline restart",
+        "All 27 punctuation keys and new 021 multi-key pass against real shuffled labels; explanation numbering follows every displayed option",
+        "Order and value-based scoring stay exact through wrong answer, retry, cold offline reopen and backup restoration",
+        "Actual quick-practice start generates the persistent opt-in session ID without any new backup fields",
+        "Stored ordinary attempt seed restores the exact shuffled order and numbered explanation in error replay without rewriting history"
+      ],
+      "punctuationChecks": 27,
+      "flipped": 16,
+      "errors": [],
+      "externalRequests": []
+    },
+    "finalAffectedInitialResults": [
+      {
+        "name": "author500-phone-browser.mjs",
+        "code": 0,
+        "groups": 8,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\author500-phone-browser.mjs.log"
+      },
+      {
+        "name": "browser-checks.mjs",
+        "code": 0,
+        "groups": 11,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\browser-checks.mjs.log"
+      },
+      {
+        "name": "update-checks.mjs",
+        "code": 0,
+        "groups": 4,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\update-checks.mjs.log"
+      },
+      {
+        "name": "chat500-qa-browser.mjs",
+        "code": 0,
+        "groups": 3,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\chat500-qa-browser.mjs.log"
+      },
+      {
+        "name": "chat500-qa1-browser.mjs",
+        "code": 0,
+        "groups": 5,
+        "log": "outputs\\chat500-qa1-final-browser-logs\\chat500-qa1-browser.mjs.log"
+      }
+    ],
+    "strengthenedFixture": {
+      "log": "outputs/chat500-qa1-ordinary-confirmation.log",
+      "passedGroups": 5,
+      "reason": "The original ordinary-history seed produced an identity permutation. The final fixture uses ordinary-history-1 and explicitly rejects identity, ensuring error-replay numbering is meaningfully exercised. Both runs passed."
+    }
+  },
+  "checks": {
+    "typescript": true,
+    "prefixBuild": true,
+    "relativeBuild": true,
+    "contentBank": true,
+    "examContent": true,
+    "provenance": true,
+    "publicAudit": true,
+    "offlineInventory": true,
+    "diffCheck": true,
+    "authorOracles": {
+      "accepted": 475,
+      "corrected": 281,
+      "rejected": 25,
+      "own": 36,
+      "learning": 1125,
+      "exam": 85,
+      "oldRetained": 699,
+      "methods": 103,
+      "numericalOriginals": 280,
+      "ownNumerical": 12,
+      "predictions": 64,
+      "programs": 25,
+      "referenceCases": 175,
+      "mutants": 50
+    }
+  },
+  "offline": {
+    "prefix": {
+      "directory": "outputs/chat500-qa1-reviewed-prefix",
+      "version": "1d309c5be37ddf561e8f",
+      "resources": 35,
+      "inventorySha256": "282eaeb84a0b9bdb9552cbe729b99984974c49a3501f48602be6c94b76befc2d"
+    },
+    "relative": {
+      "directory": "outputs/chat500-qa1-reviewed-relative",
+      "version": "f58d86e37a2f56f52ce7",
+      "resources": 35,
+      "inventorySha256": "4717258101df51128138bddac73b6e936dd19ed6d1ea9234d577e4f576985f79"
+    }
+  },
+  "pythonUnchangedHashes": {
+    "src/python/assessment.ts": "71fb845c697e9d1722e998d6cdef564c15eed1608e201ee9fa0994fafc399b97",
+    "src/python/editor.ts": "fb33119e4afb65b5a38a23ec78c91011c71183bc0eab6492bc4700a91ece8e95",
+    "src/python/grading.ts": "5b298f81df64e8a1507979ccbadffac641061521487eb56a63f444be4da254f0",
+    "src/python/runner.ts": "285be67eb6bdc309468a3c9e29067b99215e787eedea786617308169498dae43",
+    "src/python/sandbox.html": "07cedd3fabd913d6932b3ba92e38f5bd2ec92fd2cc5937320cacb5604272a091",
+    "src/python/tasks.ts": "b21fe7fad3a05391bd38dd160a822be59ef208753b128b939cb3643b9ea78a90",
+    "src/python/worker.js": "c3fb741068db303a7fdaa771158b242b8fcdf266d915b0b051a3fa49b5f15e4e"
+  },
+  "codeHashesLF": {
+    "src/domain/choice-order.ts": "a997bc1e5fee0120068c2c0a629121ea7aba08aa0dc6b2e323b323ba47f64f80",
+    "src/domain/practice-pattern.ts": "d5290986135c02e8953a905d8d2b48565f56a1b1a8bbb6d422d7bf9f6b2837bd",
+    "src/domain/quick-practice.ts": "71ec20c8db045455778f008558c0233cbfda03fcf0257a69f61512d0eebd53db",
+    "src/components/Quiz.tsx": "f7a458f4aca0b59d5bfbdbe88c5f0558b5a5428ca52027908cdc62ac60a7cf59",
+    "src/components/TopicTest.tsx": "88f51d31b21d8f6c5736c4577f0aa0d9e7cef4c450bf63dd380b78117b03d389",
+    "src/pages/QuickPractice.tsx": "8e218c76a6c6ae2ec7998198372bf172d0970b1f1abb634b7b57870771a212f8",
+    "src/pages/AdaptiveReview.tsx": "4c9097f59b9fa63c120a58945d5cbb3aec26672df109f7a5e41cd63d7b1c9427",
+    "src/pages/Errors.tsx": "21ffbef114769294dfe0a067db625cfcdaca0265dc5b62d8a1a6444ba50f90a1",
+    "scripts/chat500-qa-quality.mjs": "6ac08ae7df2c4255feb6bc243fcff96e30658413b0333707ae398d1f40bd623e",
+    "work/tests/chat500-qa1.test.mjs": "ba84cdf601619e40153ccf02eaa14533f8a38efe9959319461113e89585ccaae",
+    "work/tests/chat500-qa1-browser.mjs": "347005943f6540edf00b309ca561a0efc3b6f64468cad8e963a97fd57c979889",
+    "work/tests/run-chat500-qa-browser.mjs": "8e689f05a0e58c4a0db3387a8dd80f32ac665bc38909145e1f9890a4b1105c17",
+    "work/tests/private-packages-browser.mjs": "f0f6a489ab9bd888ce493e9aff8f3b8c5efd14d6f19ebe7070327915bc0f307f"
+  },
+  "dataHashesLF": {
+    "src/data/banks/author-chat500-russian.json": "ae28d0fe6367a8cfbfadaa151b732584a3954cc37d052667a89bd6c916b509f0",
+    "sources/chat500-review.json": "c93467e9164ae83fc7bacae8708dd38369a772d5e4a74e40cf7fa8d387099c58",
+    "sources/chat500-qa-review.json": "8675aa7d78a0316fb95a9fd2c35af99149f16fca11495aea2a1e0c8e6551022c",
+    "sources/chat500-qa1-review.json": "25bb870f6cb31f6821732ab31f28d204e94f3dca1a4e7097deb696059df1b371",
+    "sources/publication.json": "db60c889bc5eba2e25a7b8e2039c29e7307b443a3cfa55b6b638953597d8bcdb"
+  },
+  "backup": {
+    "directory": "work/chat500-qa1-backup-2026-10-12T16-42-49-774Z",
+    "files": 13,
+    "sha256Verified": true,
+    "previousStage": "work/chat500-qa-backup-2026-10-12T15-25-44-415Z",
+    "userProgressTouched": false
+  },
+  "toolLaunchIssues": [
+    {
+      "action": "Final unit rerun launch",
+      "reason": "A manually entered bundled Node path omitted bin/. No executable ran and no tests were executed by that launch.",
+      "resolution": "Reran with the verified Node path: 235/235 passed."
+    }
+  ],
+  "warnings": [
+    "Existing Vite warning about chunks larger than 500 kB; no suppression.",
+    "Normative Gramota page returned HTTP 403 on direct open; its primary search-index extract supported the retained syntax analysis."
+  ],
+  "limits": [
+    "Edge/Chromium emulation, no physical device test.",
+    "Unsubmitted ordinary quizzes had no persisted draft before this stage and still do not. Persisted sessions and completed attempts preserve their display seed.",
+    "Shuffling is scoped to reviewed Russian choice questions with complete option-identified explanations. Other materials keep their existing presentation.",
+    "Construction variety is a local tie-breaker for quick practice; adaptive error priorities are preserved."
+  ],
+  "actions": {
+    "push": false,
+    "merge": false,
+    "tag": false,
+    "pages": false,
+    "mainChanged": false,
+    "newTaskGeneration": false,
+    "conceptMigration": false
+  },
+  "protocolAssemblyIssues": [
+    {
+      "reason": "The first report helper compared LF-normalized Python digests to the prior receipt raw-byte digests, which include CRLF. This caused an assertion failure while assembling the report, before report files were written.",
+      "resolution": "Corrected the comparison to raw hashes for the previous receipt, and separately compared normalized LF hashes to Git d267. All seven files match both checks; no Python source changed."
+    }
+  ],
+  "fileAudit": {
+    "files": 267,
+    "forbiddenPaths": [],
+    "archives": [
+      "public/python-runtime/314.0.7/python_stdlib.zip"
+    ],
+    "privateKeyOrTokenCandidates": [],
+    "runtimeArchiveUnchanged": true,
+    "resolvedFalsePositive": {
+      "path": "work/tests/backup.test.mjs",
+      "reason": "Existing tracked regression test, not a backup file. The initial path heuristic confused test names with backup directories.",
+      "testUnchanged": true
+    }
+  },
+  "fileAuditFirst": {
+    "files": 267,
+    "forbiddenPaths": [
+      "work/tests/backup.test.mjs"
+    ],
+    "archives": [
+      "public/python-runtime/314.0.7/python_stdlib.zip"
+    ],
+    "privateKeyOrTokenCandidates": [],
+    "runtimeArchiveUnchanged": true
+  }
+}

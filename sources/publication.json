@@ -476,7 +476,7 @@
       "clearance": "project-generated",
       "source": null,
       "license": null,
-      "evidence": "Owner supplied original ChatGPT author pack on 2026-10-12; archive SHA-256 5bed21061e5d11429228b2c4a6d16dc6dbc10ce54240bd6700c46b71941897a4. Independently reviewed conditions, answer oracles, corrected/rejected ledger sources/chat500-review.json; separate original Codex tasks sources/codex500-review.json. All content generated training, not official FIPI tasks. FIPI project documents used only for scope; no external bank copied. CHAT500-QA: исходные тексты сохранены; переработанные варианты и объяснения проверены по словам и конструкциям; сравнение версий в sources/chat500-qa-review.json.",
+      "evidence": "Owner supplied original ChatGPT author pack on 2026-10-12; archive SHA-256 5bed21061e5d11429228b2c4a6d16dc6dbc10ce54240bd6700c46b71941897a4. Independently reviewed conditions, answer oracles, corrected/rejected ledger sources/chat500-review.json; separate original Codex tasks sources/codex500-review.json. All content generated training, not official FIPI tasks. FIPI project documents used only for scope; no external bank copied. CHAT500-QA: исходные тексты сохранены; переработанные варианты и объяснения проверены по словам и конструкциям; сравнение версий в sources/chat500-qa-review.json. CHAT500-QA.1: уточнено побуждение в 021 и разнообразны три деепричастные конструкции; отдельный версионный разбор в sources/chat500-qa1-review.json.",
       "files": [
         {
           "path": "src/data/banks/author-chat500-informatics.json",
@@ -496,7 +496,7 @@
         {
           "path": "src/data/banks/author-chat500-russian.json",
           "normalization": "lf",
-          "sha256": "ae815d2bb27f090072e62246ea9c27c4d74d97f01f7b707166e51b3e8048c74a"
+          "sha256": "ae28d0fe6367a8cfbfadaa151b732584a3954cc37d052667a89bd6c916b509f0"
         },
         {
           "path": "src/data/banks/author-codex500-informatics.json",

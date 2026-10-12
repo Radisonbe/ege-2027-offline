@@ -20,18 +20,22 @@ export function checkTextAnswerDiversity(questions){
 }
 export function checkChat500QA(){
  const bank=read('src/data/banks/author-chat500-russian.json').questions,review=read('sources/chat500-review.json').questions,qa=read('sources/chat500-qa-review.json');
+ const next=read('sources/chat500-qa1-review.json');assert.equal(next.base,'d267df9f3e852d22b98ac014296a1524ac48f5ee');assert.equal(next.changes.length,4);
+ const revisions=new Map(next.changes.map(c=>[c.id,c]));assert.equal(revisions.size,4);
  assert.equal(qa.schemaVersion,1);assert.equal(qa.stage,'CHAT500-QA');
  assert.equal(qa.base,'256d34da4cc1feff995a15e1664b02380e362d97');assert.equal(qa.changes.length,51);
  assert.equal(new Set(qa.changes.map(c=>c.id)).size,51);
  for(const q of bank)assertQAFeedback(q);
  for(const c of qa.changes){
   const q=bank.find(q=>q.id===c.id),r=review.find(r=>r.id===c.id);
-  assert.deepEqual(q,c.after,c.id+' current revision');assert.equal(q.version,c.before.version+1,c.id);
-  assert.equal(q.prompt,c.before.prompt,c.id+' original text');assert.equal(q.id,c.before.id);
+  const revision=revisions.get(c.id),current=revision??c;
+  if(revision){assert.deepEqual(revision.before,c.after,c.id+' accepted QA predecessor');assert.equal(revision.after.version,revision.before.version+1);assert.equal(hash(revision.before),revision.oldSha256);}
+  assert.deepEqual(q,current.after,c.id+' current revision');assert.equal(c.after.version,c.before.version+1,c.id);
+  assert.equal(c.after.prompt,c.before.prompt,c.id+' original QA text');assert.equal(q.id,c.before.id);
   assert.equal(q.origin,'generated');assert.equal(q.examTaskType,null);
   assert.ok(!boilerplate.test(q.principle)&&!boilerplate.test(q.hint),q.id+' generic feedback');
-  assert.equal(hash(c.before),c.oldSha256);assert.equal(hash(q),c.newSha256);assert.equal(r.approvedSha256,c.newSha256);
-  assert.deepEqual(r.optionReview,c.optionReview);assert.deepEqual(r.optionReview.map(o=>o.option),q.options);
+  assert.equal(hash(c.before),c.oldSha256);assert.equal(hash(c.after),c.newSha256);assert.equal(hash(q),current.newSha256);assert.equal(r.approvedSha256,current.newSha256);
+  assert.deepEqual(r.optionReview,current.optionReview);assert.deepEqual(r.optionReview.map(o=>o.option),q.options);
   const truth=q.answerType==='multiple-choice'?JSON.parse(q.answer):[q.answer];
   for(const [i,o] of r.optionReview.entries()){
    assert.equal(o.accepted,truth.includes(o.option));assert.ok(o.principle.length>=25&&!boilerplate.test(o.principle));
