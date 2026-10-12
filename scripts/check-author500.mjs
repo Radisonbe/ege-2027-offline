@@ -4,8 +4,10 @@ import assert from 'node:assert/strict';
 import {spawnSync,execFileSync} from 'node:child_process';
 import {checkContentBank} from './content-bank.mjs';
 import {family} from '../src/domain/question-families.ts';
+import {checkChat500QA} from './chat500-qa-quality.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 export function checkAuthor500(){
+ checkChat500QA();
  const {questions,taxonomy}=checkContentBank(),newQuestions=questions.filter(q=>/^(chat500|codex500)-/.test(q.id)),chat=read('sources/chat500-review.json'),own=read('sources/codex500-review.json');
  assert.equal(chat.questions.length,500);assert.equal(new Set(chat.questions.map(r=>r.id)).size,500);
  const accepted=chat.questions.filter(r=>r.status!=='rejected');assert.equal(accepted.length,475);assert.equal(own.questions.length,36);assert.equal(newQuestions.length,511);
