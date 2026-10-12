@@ -54,7 +54,8 @@
         "chat500-informatics-027",
         "chat500-informatics-028",
         "chat500-informatics-029",
-        "chat500-informatics-030"
+        "chat500-informatics-030",
+        "codex500-informatics-base-equation"
       ],
       "test": [
         "b5",
@@ -108,7 +109,9 @@
         "chat500-informatics-067",
         "chat500-informatics-068",
         "chat500-informatics-069",
-        "chat500-informatics-070"
+        "chat500-informatics-070",
+        "codex500-informatics-record-padding",
+        "codex500-informatics-prefix-word"
       ],
       "test": [
         "c3",
@@ -217,7 +220,8 @@
         "chat500-math-162",
         "chat500-math-163",
         "chat500-math-164",
-        "chat500-math-165"
+        "chat500-math-165",
+        "codex500-math-two-discounts"
       ],
       "test": [
         "b1-math-09",
@@ -311,7 +315,8 @@
         "chat500-python-015",
         "chat500-python-016",
         "chat500-python-019",
-        "chat500-python-020"
+        "chat500-python-020",
+        "codex500-python-loop-continue"
       ],
       "test": [
         "py-l2",
@@ -430,7 +435,8 @@
         "chat500-python-037",
         "chat500-python-038",
         "chat500-python-039",
-        "chat500-python-040"
+        "chat500-python-040",
+        "codex500-python-dict-order"
       ],
       "test": [
         "py-d2",
@@ -460,7 +466,20 @@
         "chat500-python-048",
         "chat500-python-049",
         "chat500-python-050",
-        "chat500-python-070"
+        "chat500-python-070",
+        "codex500-python-runs",
+        "codex500-python-merge",
+        "codex500-python-once",
+        "codex500-python-signs",
+        "codex500-python-transpose",
+        "codex500-python-missing",
+        "codex500-python-suffix",
+        "codex500-python-tokens",
+        "codex500-python-pair-sums",
+        "codex500-python-stock",
+        "codex500-python-balanced",
+        "codex500-python-blocks",
+        "codex500-python-return-stop"
       ],
       "test": [
         "py-f2",
@@ -468,7 +487,10 @@
         "b1-python-25",
         "b2-python-gcd_nonnegative",
         "c2a-python-none",
-        "c2b-python-function-test-mutation"
+        "c2b-python-function-test-mutation",
+        "codex500-python-clock",
+        "codex500-python-peak",
+        "codex500-python-nearest"
       ]
     },
     "py-files": {
@@ -590,7 +612,8 @@
         "chat500-informatics-077",
         "chat500-informatics-078",
         "chat500-informatics-079",
-        "chat500-informatics-080"
+        "chat500-informatics-080",
+        "codex500-informatics-logic-window"
       ],
       "test": [
         "b1-informatics-14",
@@ -627,7 +650,8 @@
         "chat500-informatics-047",
         "chat500-informatics-048",
         "chat500-informatics-049",
-        "chat500-informatics-050"
+        "chat500-informatics-050",
+        "codex500-informatics-packet-overhead"
       ],
       "test": [
         "b1-informatics-19",
@@ -725,7 +749,8 @@
         "chat500-math-020",
         "chat500-math-021",
         "chat500-math-023",
-        "chat500-math-024"
+        "chat500-math-024",
+        "codex500-math-remaining-share"
       ],
       "test": [
         "b1-math-06",
@@ -818,7 +843,8 @@
         "chat500-math-061",
         "chat500-math-062",
         "chat500-math-063",
-        "chat500-math-064"
+        "chat500-math-064",
+        "codex500-math-boxes-model"
       ],
       "test": [
         "b1-math-22",
@@ -1001,14 +1027,20 @@
         "chat500-russian-147",
         "chat500-russian-148",
         "chat500-russian-149",
-        "chat500-russian-150"
+        "chat500-russian-150",
+        "codex500-russian-laboratory-style",
+        "codex500-russian-instruction-style",
+        "codex500-russian-portrait-type",
+        "codex500-russian-counterargument",
+        "codex500-russian-pronoun-clear"
       ],
       "test": [
         "b1-russian-25",
         "b2-russian-text-pronoun",
         "b2-russian-text-metaphor",
         "c2a-russian-cause-order",
-        "c2b-russian-text-test-order"
+        "c2b-russian-text-test-order",
+        "codex500-russian-reasoning-type"
       ]
     },
     "quadratic": {
@@ -1038,7 +1070,8 @@
         "chat500-math-077",
         "chat500-math-078",
         "chat500-math-079",
-        "chat500-math-080"
+        "chat500-math-080",
+        "codex500-math-rectangle-border"
       ],
       "test": [
         "b2-math-quad-parameter",
@@ -1131,12 +1164,14 @@
         "chat500-math-141",
         "chat500-math-142",
         "chat500-math-143",
-        "chat500-math-144"
+        "chat500-math-144",
+        "codex500-math-without-replacement"
       ],
       "test": [
         "b2-math-prob-conditional",
         "b2-math-prob-weighted",
-        "c2a-math-mean"
+        "c2a-math-mean",
+        "codex500-math-weighted-mean"
       ]
     },
     "logarithms": {
@@ -1322,7 +1357,8 @@
       "test": [
         "b2-informatics-table-average",
         "b2-informatics-table-join",
-        "c2a-informatics-filter-two"
+        "c2a-informatics-filter-two",
+        "codex500-informatics-filter-two"
       ]
     },
     "algorithms": {

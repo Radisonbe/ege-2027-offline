@@ -1,0 +1,1912 @@
+{
+  "schemaVersion": 1,
+  "id": "independent-codex500-python",
+  "subject": "python",
+  "questions": [
+    {
+      "id": "codex500-python-runs",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй compress_runs(values). Сожми соседние одинаковые целые числа в пары [значение, длина серии], сохраняя порядок серий. Верни список пар; пустой список даёт []. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Соседние равные значения принадлежат одной серии. При смене значения добавь новую пару, при повторе увеличь длину последней. Одинаковое значение после перерыва образует новую серию.",
+      "solution": "def compress_runs(values):\n    out=[]\n    for v in values:\n        if out and out[-1][0]==v:\n            out[-1][1]+=1\n        else:\n            out.append([v,1])\n    return out",
+      "principle": "Соседние равные значения принадлежат одной серии",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-runs",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def compress_runs(values):\n    pass",
+        "functionName": "compress_runs",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1,
+                1,
+                2,
+                1,
+                1,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                -2,
+                -2,
+                0
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -2,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            ],
+            "expectedReturn": [
+              [
+                5,
+                30
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            ],
+            "expectedReturn": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                9,
+                1
+              ],
+              [
+                10,
+                1
+              ],
+              [
+                11,
+                1
+              ],
+              [
+                12,
+                1
+              ],
+              [
+                13,
+                1
+              ],
+              [
+                14,
+                1
+              ],
+              [
+                15,
+                1
+              ],
+              [
+                16,
+                1
+              ],
+              [
+                17,
+                1
+              ],
+              [
+                18,
+                1
+              ],
+              [
+                19,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-merge",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй merge_sorted(left,right). Объедини два списка целых чисел, уже отсортированных по возрастанию, в один отсортированный список. Повторы сохраняй. Входные списки могут быть пустыми. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Сравни ближайшие ещё не использованные значения. Добавь меньшее и передвинь только его указатель. Когда один список закончился, добавь хвост второго. Не удаляй повторы.",
+      "solution": "def merge_sorted(left,right):\n    out=[]\n    i=j=0\n    while i<len(left) and j<len(right):\n        if left[i]<=right[j]:\n            out.append(left[i]); i+=1\n        else:\n            out.append(right[j]); j+=1\n    return out+left[i:]+right[j:]",
+      "principle": "Сравни ближайшие ещё не использованные значения",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-merge",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def merge_sorted(left,right):\n    pass",
+        "functionName": "merge_sorted",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [],
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              2,
+              3,
+              3
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                0
+              ],
+              [
+                -2,
+                4
+              ]
+            ],
+            "expectedReturn": [
+              -2,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "args": [
+              [
+                1
+              ],
+              []
+            ],
+            "expectedReturn": [
+              1
+            ]
+          },
+          {
+            "args": [
+              [],
+              [
+                -3,
+                -1,
+                5
+              ]
+            ],
+            "expectedReturn": [
+              -3,
+              -1,
+              5
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-once",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй unique_once(values). Верни только значения, встречающиеся в исходном списке ровно один раз, в исходном порядке. Это не удаление повторов: повторяющееся значение исключается полностью. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Сначала подсчитай частоту каждого числа. Вторым проходом бери лишь элементы с частотой 1. Список [2,1,2,3] превращается в [1,3], а не [2,1,3].",
+      "solution": "def unique_once(values):\n    counts={}\n    for v in values:\n        counts[v]=counts.get(v,0)+1\n    return [v for v in values if counts[v]==1]",
+      "principle": "Сначала подсчитай частоту каждого числа",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-once",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def unique_once(values):\n    pass",
+        "functionName": "unique_once",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                2,
+                1,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              3
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                0
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                4,
+                -1,
+                5
+              ]
+            ],
+            "expectedReturn": [
+              4,
+              -1,
+              5
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                4
+              ]
+            ],
+            "expectedReturn": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-signs",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй split_signs(values). Верни [отрицательные, неотрицательные]: два списка чисел с сохранением их исходного порядка. Ноль относится ко второй группе. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Начни с двух пустых списков. Для каждого элемента проверь v < 0. Отрицательные добавляй в первый, остальные, включая ноль, во второй. Верни оба списка в установленном порядке.",
+      "solution": "def split_signs(values):\n    negative=[]\n    other=[]\n    for v in values:\n        if v<0: negative.append(v)\n        else: other.append(v)\n    return [negative,other]",
+      "principle": "Начни с двух пустых списков",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-signs",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def split_signs(values):\n    pass",
+        "functionName": "split_signs",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": [
+              [],
+              []
+            ]
+          },
+          {
+            "args": [
+              [
+                2,
+                -1,
+                0,
+                -3
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -1,
+                -3
+              ],
+              [
+                2,
+                0
+              ]
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                -5,
+                -2
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -5,
+                -2
+              ],
+              []
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              [],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                -10,
+                -9,
+                -8,
+                -7,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -10,
+                -9,
+                -8,
+                -7,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-transpose",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй transpose_rect(rows). Верни транспонированную прямоугольную таблицу целых чисел: её столбцы становятся строками. Внутренние строки одинаковой длины. [] и [[],[]] дают []. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Внешний цикл перебирает столбцы исходной таблицы. Для каждого столбца собери по одному значению из каждой строки. Размеры меняются местами. Пустые столбцы дают пустой результат.",
+      "solution": "def transpose_rect(rows):\n    if not rows: return []\n    out=[]\n    for col in range(len(rows[0])):\n        line=[]\n        for row in rows: line.append(row[col])\n        out.append(line)\n    return out",
+      "principle": "Внешний цикл перебирает столбцы исходной таблицы",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops"
+      ],
+      "related": [],
+      "familyId": "python-transpose",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def transpose_rect(rows):\n    pass",
+        "functionName": "transpose_rect",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  4,
+                  5,
+                  6
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                6
+              ]
+            ]
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                [],
+                []
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                [
+                  9
+                ],
+                [
+                  8
+                ],
+                [
+                  7
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                9,
+                8,
+                7
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                [
+                  0,
+                  -2
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                0
+              ],
+              [
+                -2
+              ]
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-missing",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй missing_between(values). Передан непустой список различных целых чисел. Верни по возрастанию все отсутствующие целые числа между его минимумом и максимумом. Разность крайних значений не больше 100. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Найди крайние значения. Перебери целые числа строго между ними и отбирай отсутствующие в исходном списке. Уже имеющиеся числа добавлять нельзя.",
+      "solution": "def missing_between(values):\n    present=set(values)\n    return [x for x in range(min(values)+1,max(values)) if x not in present]",
+      "principle": "Найди крайние значения",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-missing",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def missing_between(values):\n    pass",
+        "functionName": "missing_between",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            "expectedReturn": [
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                -2,
+                2,
+                0
+              ]
+            ],
+            "expectedReturn": [
+              -1,
+              1
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                5
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                3,
+                1,
+                2
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                10,
+                15
+              ]
+            ],
+            "expectedReturn": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-suffix",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй common_suffix(a,b). Верни длину общего конца двух строк. Сравнение точное и чувствительно к регистру; пустая строка даёт 0. Например, «дом» и «гром» имеют общий конец «ом» длины 2. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Сравнивай строки справа налево. Остановись при первом несовпадении или достижении начала одной строки. Не считай совпадения в других позициях после разрыва.",
+      "solution": "def common_suffix(a,b):\n    count=0\n    while count<min(len(a),len(b)) and a[-1-count]==b[-1-count]:\n        count+=1\n    return count",
+      "principle": "Сравнивай строки справа налево",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-strings",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-suffix",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def common_suffix(a,b):\n    pass",
+        "functionName": "common_suffix",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "дом",
+              "гром"
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              "",
+              "abc"
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "ABC",
+              "abc"
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "same",
+              "same"
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              "xyzz",
+              "zz"
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              "abc",
+              "xbc"
+            ],
+            "expectedReturn": 2
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-clock",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "hard",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй clock_minutes(text). Строка должна иметь формат HH:MM: ровно две ASCII-цифры часа, двоеточие, две цифры минут. Часы 00–23, минуты 00–59. Верни минуты с начала суток; неверный формат даёт −1. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Сначала проверь длину, двоеточие и допустимые символы. Затем преобразуй обе части и проверь диапазоны. Только допустимое время переводи по формуле 60 · часы + минуты.",
+      "solution": "def clock_minutes(text):\n    if len(text)!=5 or text[2]!=\":\" or any(c not in \"0123456789\" for c in text[:2]+text[3:]): return -1\n    h=int(text[:2]); m=int(text[3:])\n    return h*60+m if h<24 and m<60 else -1",
+      "principle": "Сначала проверь длину, двоеточие и допустимые символы",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-strings",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-clock",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def clock_minutes(text):\n    pass",
+        "functionName": "clock_minutes",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "00:00"
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "23:59"
+            ],
+            "expectedReturn": 1439
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "07:04"
+            ],
+            "expectedReturn": 424
+          },
+          {
+            "args": [
+              "7:04"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "24:00"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "00:60"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "aa:bb"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "０７:04"
+            ],
+            "expectedReturn": -1
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-tokens",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй sum_integer_tokens(text). Раздели строку по пробельным символам. Сложи только токены вида необязательный знак + или − (ASCII -), затем одна или несколько ASCII-цифр. Токены 2.5, одиночный знак и буквы пропускай. Сумма по модулю не больше 1000000. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Для каждого слова убери один начальный знак, если он есть. Остаток должен быть непустым и состоять из ASCII-цифр. Лишь после этой проверки вызывай int. Не превращай десятичные записи в целые.",
+      "solution": "def sum_integer_tokens(text):\n    total=0\n    for token in text.split():\n        digits=token[1:] if token[:1] in [\"+\",\"-\"] else token\n        if digits and all(c in \"0123456789\" for c in digits): total+=int(token)\n    return total",
+      "principle": "Для каждого слова убери один начальный знак, если он есть",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-strings",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-tokens",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def sum_integer_tokens(text):\n    pass",
+        "functionName": "sum_integer_tokens",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "2 -3 +5"
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              "+ - a 2.5"
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "001 -001 7"
+            ],
+            "expectedReturn": 7
+          },
+          {
+            "args": [
+              ""
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "4\t-2\n+9"
+            ],
+            "expectedReturn": 11
+          },
+          {
+            "args": [
+              "１２ 3"
+            ],
+            "expectedReturn": 3
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-pair-sums",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй pair_sums(values). Верни суммы всех соседних пар целых чисел: для [2,5,1] результат [7,6]. Пары перекрываются. Для списка короче двух элементов верни []. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Для каждого индекса начиная с 1 складывай предыдущий и текущий элементы. После первой пары сдвигайся на один элемент, не на два. Число сумм на единицу меньше длины непустого списка.",
+      "solution": "def pair_sums(values):\n    out=[]\n    for i in range(1,len(values)): out.append(values[i-1]+values[i])\n    return out",
+      "principle": "Для каждого индекса начиная с 1 складывай предыдущий и текущий элементы",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops"
+      ],
+      "related": [],
+      "familyId": "python-pair-sums",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def pair_sums(values):\n    pass",
+        "functionName": "pair_sums",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                4
+              ]
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                2,
+                5,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              7,
+              6
+            ]
+          },
+          {
+            "args": [
+              [
+                -1,
+                0,
+                2
+              ]
+            ],
+            "expectedReturn": [
+              -1,
+              2
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-stock",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй stock_after(stock,demand). Два словаря задают неотрицательные целые количества товаров. Верни словарь с теми же ключами, что stock: остаток каждого товара после заказа demand, но не меньше нуля. Неизвестные заказанные товары игнорируй; отсутствие товара в заказе означает расход 0. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Перебирай товары из запаса, а не из заказа. Для каждого бери расход через get с запасным нулём. Отрицательный остаток заменяй нулём. Ключи неизвестных товаров не добавляй.",
+      "solution": "def stock_after(stock,demand):\n    out={}\n    for key,value in stock.items(): out[key]=max(0,value-demand.get(key,0))\n    return out",
+      "principle": "Перебирай товары из запаса, а не из заказа",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if",
+        "py-dicts"
+      ],
+      "related": [],
+      "familyId": "python-stock",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def stock_after(stock,demand):\n    pass",
+        "functionName": "stock_after",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              {},
+              {}
+            ],
+            "expectedReturn": {}
+          },
+          {
+            "args": [
+              {
+                "a": 5,
+                "b": 2
+              },
+              {
+                "a": 3,
+                "b": 9,
+                "c": 1
+              }
+            ],
+            "expectedReturn": {
+              "a": 2,
+              "b": 0
+            }
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              {
+                "x": 0
+              },
+              {}
+            ],
+            "expectedReturn": {
+              "x": 0
+            }
+          },
+          {
+            "args": [
+              {
+                "a": 4
+              },
+              {
+                "z": 9
+              }
+            ],
+            "expectedReturn": {
+              "a": 4
+            }
+          },
+          {
+            "args": [
+              {
+                "q": 8
+              },
+              {
+                "q": 8
+              }
+            ],
+            "expectedReturn": {
+              "q": 0
+            }
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-peak",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй first_peak(values). Верни индекс первого внутреннего строгого пика: элемент больше обоих соседей. Крайние позиции не рассматриваются. Если пика нет, верни −1. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Проверяй индексы от 1 до предпоследнего. Оба сравнения должны быть строгими: плато не пик. Возвращай первый найденный индекс, не позицию общего максимума.",
+      "solution": "def first_peak(values):\n    for i in range(1,len(values)-1):\n        if values[i]>values[i-1] and values[i]>values[i+1]: return i\n    return -1",
+      "principle": "Проверяй индексы от 1 до предпоследнего",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-peak",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def first_peak(values):\n    pass",
+        "functionName": "first_peak",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                1,
+                3,
+                2,
+                4,
+                1
+              ]
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": -1
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                2
+              ]
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              [
+                9,
+                1,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                3,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": -1
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-balanced",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй balanced_steps(steps). Список состоит из шагов +1 и −1. Верни True, если сумма каждого начального участка неотрицательна, а итоговая сумма равна 0. Пустой список подходит. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Храни текущий баланс. Отрицательный баланс хотя бы в одном месте сразу нарушает условие, даже если общий итог нулевой. После всех шагов отдельно проверь итог 0.",
+      "solution": "def balanced_steps(steps):\n    balance=0\n    for step in steps:\n        balance+=step\n        if balance<0:return False\n    return balance==0",
+      "principle": "Храни текущий баланс",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-balanced",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def balanced_steps(steps):\n    pass",
+        "functionName": "balanced_steps",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                -1,
+                1
+              ]
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": true
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                -1
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                1,
+                1,
+                -1,
+                -1
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                1,
+                1,
+                -1
+              ]
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              [
+                1,
+                -1,
+                -1,
+                1
+              ]
+            ],
+            "expectedReturn": false
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-blocks",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй reverse_blocks(values,k). Разбей список на последовательные блоки по k элементов и переверни порядок внутри каждого блока, сохраняя порядок самих блоков. Последний короткий блок тоже переверни. k — положительное целое. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Начала блоков — 0, k, 2k. Возьми срез каждого блока, разверни только этот срез и допиши к результату. Не переворачивай весь список; последний блок может быть короче.",
+      "solution": "def reverse_blocks(values,k):\n    out=[]\n    for start in range(0,len(values),k): out.extend(values[start:start+k][::-1])\n    return out",
+      "principle": "Начала блоков — 0, k, 2k",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-blocks",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def reverse_blocks(values,k):\n    pass",
+        "functionName": "reverse_blocks",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [],
+              3
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              2
+            ],
+            "expectedReturn": [
+              2,
+              1,
+              4,
+              3,
+              5
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ],
+              5
+            ],
+            "expectedReturn": [
+              3,
+              2,
+              1
+            ]
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ],
+              1
+            ],
+            "expectedReturn": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              3
+            ],
+            "expectedReturn": [
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              6
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-nearest",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.programming",
+      "skills": [
+        "py-functions.skill.write-return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Реализуй nearest_zero(values). Из непустого списка целых чисел верни ближайшее к нулю значение. При равных модулях выбери положительное. Если есть ноль, верни 0. input() и print() не нужны. Числа по модулю не больше 1000, длина входных списков и строк не больше 100, если отдельно не указано иначе.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Разбей требование на проверку условий и построение результата.",
+      "explanation": "Сравни модули, а не сами числа. При равенстве модулей выбирай большее значение. Ноль имеет минимальный модуль и выигрывает у всех ненулевых.",
+      "solution": "def nearest_zero(values):\n    best=values[0]\n    for v in values[1:]:\n        if abs(v)<abs(best) or (abs(v)==abs(best) and v>best):best=v\n    return best",
+      "principle": "Сравни модули, а не сами числа",
+      "version": 1,
+      "requires": [
+        "py-lists",
+        "py-loops",
+        "py-if"
+      ],
+      "related": [],
+      "familyId": "python-nearest",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def nearest_zero(values):\n    pass",
+        "functionName": "nearest_zero",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                -4,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                -2,
+                2
+              ]
+            ],
+            "expectedReturn": 2
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                -1,
+                1
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                -8,
+                -3
+              ]
+            ],
+            "expectedReturn": -3
+          },
+          {
+            "args": [
+              [
+                5
+              ]
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              [
+                -1,
+                1,
+                -1
+              ]
+            ],
+            "expectedReturn": 1
+          }
+        ]
+      },
+      "hints": [
+        "Разбей требование на проверку условий и построение результата.",
+        "Проверь пример, пустой случай (если разрешён) и граничные значения."
+      ]
+    },
+    {
+      "id": "codex500-python-dict-order",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.update"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что напечатает программа? Запиши вывод точно.",
+      "answer": "['a', 'b']",
+      "hint": "Изменение значения существующего ключа не перемещает его в порядке вставки.",
+      "explanation": "Изменение значения существующего ключа не перемещает его в порядке вставки. Список ключей остаётся a, b.",
+      "solution": "Изменение значения существующего ключа не перемещает его в порядке вставки. Список ключей остаётся a, b.",
+      "principle": "Изменение значения существующего ключа не перемещает его в порядке вставки",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-dict-order",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d={\"a\":1,\"b\":2}\nd[\"a\"]=7\nprint(list(d))",
+        "expectedOutput": "['a', 'b']"
+      }
+    },
+    {
+      "id": "codex500-python-loop-continue",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что напечатает программа? Запиши вывод точно.",
+      "answer": "6",
+      "hint": "continue пропускает только отрицательное значение −1.",
+      "explanation": "continue пропускает только отрицательное значение −1. Сумма остальных 2 + 4 + 0 = 6.",
+      "solution": "continue пропускает только отрицательное значение −1. Сумма остальных 2 + 4 + 0 = 6.",
+      "principle": "continue пропускает только отрицательное значение −1",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-loop-continue",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s=0\nfor x in [2,-1,4,0]:\n    if x<0:\n        continue\n    s+=x\nprint(s)",
+        "expectedOutput": "6"
+      }
+    },
+    {
+      "id": "codex500-python-return-stop",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Самостоятельно составленная и проверенная задача Codex, 2026-10-12; учебная, не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что напечатает программа? Запиши вывод точно.",
+      "answer": "12",
+      "hint": "Первый вызов возвращает 9 и прекращает функцию; второй возвращает 3.",
+      "explanation": "Первый вызов возвращает 9 и прекращает функцию; второй возвращает 3. Общий вывод 12.",
+      "solution": "Первый вызов возвращает 9 и прекращает функцию; второй возвращает 3. Общий вывод 12.",
+      "principle": "Первый вызов возвращает 9 и прекращает функцию; второй возвращает 3",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "python-return-stop",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def f(x):\n    if x==0:\n        return 9\n    return x+1\nprint(f(0)+f(2))",
+        "expectedOutput": "12"
+      }
+    }
+  ]
+}

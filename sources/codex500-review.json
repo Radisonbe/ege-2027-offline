@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "codex500-math-remaining-share",
+      "mode": "practice",
+      "method": "fraction-two-stage-restore",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "17a4f2eb5a4f81d2a046161b9c66464e0bc021bf02d1827f84ed369bd996f99f"
+    },
+    {
+      "id": "codex500-math-two-discounts",
+      "mode": "practice",
+      "method": "percent-compare-two-strategies",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "80146983d160db987908339cd6e06b00bbf80aac8cfdedc49adc09be28f94f6a"
+    },
+    {
+      "id": "codex500-math-boxes-model",
+      "mode": "practice",
+      "method": "linear-two-group-model",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "3cb94fa35ad33b7fffbb684a78ecf5f67a6972cfc9e5b467ee0db26a56ab49b0"
+    },
+    {
+      "id": "codex500-math-rectangle-border",
+      "mode": "practice",
+      "method": "quadratic-model-perimeter",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "7e706da80982d2463138d0bf6a6d444bbf93b6e4529e462d4bc6e8a7ad047276"
+    },
+    {
+      "id": "codex500-math-without-replacement",
+      "mode": "practice",
+      "method": "probability-two-draw-colours",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "667d78c63dc08d189f1fc600528fb8e469e843d3715bff398f9daf6ef9a51ca9"
+    },
+    {
+      "id": "codex500-math-weighted-mean",
+      "mode": "test",
+      "method": "statistics-weighted-two-groups",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "b21e4033c677f4157a51f4e87b169196b070fcb22fdedc3a4516c8bcf1ce6cb0"
+    },
+    {
+      "id": "codex500-russian-laboratory-style",
+      "mode": "practice",
+      "method": "text-functional-style",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [
+        {
+          "option": "Разговорный",
+          "accepted": false,
+          "reason": "Текст сообщает условия опыта и объясняет корректность сравнения. Точные понятия и нейтральное изложение служат научному объяснению. Это не приказ с обязательными действиями, не бытовой разговор и не образная сцена."
+        },
+        {
+          "option": "Научный",
+          "accepted": true,
+          "reason": "Текст сообщает условия опыта и объясняет корректность сравнения. Точные понятия и нейтральное изложение служат научному объяснению. Это не приказ с обязательными действиями, не бытовой разговор и не образная сцена."
+        },
+        {
+          "option": "Официально-деловой",
+          "accepted": false,
+          "reason": "Текст сообщает условия опыта и объясняет корректность сравнения. Точные понятия и нейтральное изложение служат научному объяснению. Это не приказ с обязательными действиями, не бытовой разговор и не образная сцена."
+        },
+        {
+          "option": "Художественный",
+          "accepted": false,
+          "reason": "Текст сообщает условия опыта и объясняет корректность сравнения. Точные понятия и нейтральное изложение служат научному объяснению. Это не приказ с обязательными действиями, не бытовой разговор и не образная сцена."
+        }
+      ],
+      "approvedSha256": "50f00f161dd5d849c830ef83b33148ea21d7098506b84a9727b53270e4150ab1"
+    },
+    {
+      "id": "codex500-russian-instruction-style",
+      "mode": "practice",
+      "method": "text-functional-style",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [
+        {
+          "option": "Научный",
+          "accepted": false,
+          "reason": "Регламент устанавливает порядок и обязанность возврата. «Производится», «подлежат» и фиксируемые сведения характерны для официально-делового стиля. Научную закономерность текст не доказывает."
+        },
+        {
+          "option": "Художественный",
+          "accepted": false,
+          "reason": "Регламент устанавливает порядок и обязанность возврата. «Производится», «подлежат» и фиксируемые сведения характерны для официально-делового стиля. Научную закономерность текст не доказывает."
+        },
+        {
+          "option": "Официально-деловой",
+          "accepted": true,
+          "reason": "Регламент устанавливает порядок и обязанность возврата. «Производится», «подлежат» и фиксируемые сведения характерны для официально-делового стиля. Научную закономерность текст не доказывает."
+        },
+        {
+          "option": "Разговорный",
+          "accepted": false,
+          "reason": "Регламент устанавливает порядок и обязанность возврата. «Производится», «подлежат» и фиксируемые сведения характерны для официально-делового стиля. Научную закономерность текст не доказывает."
+        }
+      ],
+      "approvedSha256": "1f3d182d4b1d6071af35d3d61bb1ee301b0c407d89c8bd3fc3678e3c52a1e36a"
+    },
+    {
+      "id": "codex500-russian-portrait-type",
+      "mode": "practice",
+      "method": "text-speech-type",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [
+        {
+          "option": "Рассуждение",
+          "accepted": false,
+          "reason": "Перечислены предметы и их признаки в одной картине: узкий стол, зелёная лампа, потёртая столешница. Последовательности событий и вывода из доказательств нет. Это описание."
+        },
+        {
+          "option": "Описание",
+          "accepted": true,
+          "reason": "Перечислены предметы и их признаки в одной картине: узкий стол, зелёная лампа, потёртая столешница. Последовательности событий и вывода из доказательств нет. Это описание."
+        },
+        {
+          "option": "Повествование",
+          "accepted": false,
+          "reason": "Перечислены предметы и их признаки в одной картине: узкий стол, зелёная лампа, потёртая столешница. Последовательности событий и вывода из доказательств нет. Это описание."
+        }
+      ],
+      "approvedSha256": "4b73bc79a6385d3e018bd28e8b1e1479cf3b5c5d68f1e3f28dd229e0a77ebf28"
+    },
+    {
+      "id": "codex500-russian-counterargument",
+      "mode": "practice",
+      "method": "text-statement-evidence",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [
+        {
+          "option": "Кассир всегда виноват в появлении очереди.",
+          "accepted": false,
+          "reason": "Второе предложение прямо называет одновременный приход как возможную причину. «Не всегда» исключает обвинение кассира во всех случаях. Минуты не упоминаются; выяснять причины автор предлагает, а не запрещает."
+        },
+        {
+          "option": "Одновременный приход покупателей может создать очередь.",
+          "accepted": true,
+          "reason": "Второе предложение прямо называет одновременный приход как возможную причину. «Не всегда» исключает обвинение кассира во всех случаях. Минуты не упоминаются; выяснять причины автор предлагает, а не запрещает."
+        },
+        {
+          "option": "Любая очередь исчезает за минуту.",
+          "accepted": false,
+          "reason": "Второе предложение прямо называет одновременный приход как возможную причину. «Не всегда» исключает обвинение кассира во всех случаях. Минуты не упоминаются; выяснять причины автор предлагает, а не запрещает."
+        },
+        {
+          "option": "Автор запрещает выяснять причины задержки.",
+          "accepted": false,
+          "reason": "Второе предложение прямо называет одновременный приход как возможную причину. «Не всегда» исключает обвинение кассира во всех случаях. Минуты не упоминаются; выяснять причины автор предлагает, а не запрещает."
+        }
+      ],
+      "approvedSha256": "fade7facb887e2fc11043aa8cfd24abc1d56817029374fc9e987207c53fa4ac1"
+    },
+    {
+      "id": "codex500-russian-pronoun-clear",
+      "mode": "practice",
+      "method": "text-cohesion",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [
+        {
+          "option": "Лексическим повтором",
+          "accepted": false,
+          "reason": "«Он» — личное местоимение, заменяющее сочетание «воздушный змей». Само существительное не повторяется; «этот» и «поэтому» отсутствуют."
+        },
+        {
+          "option": "Личным местоимением",
+          "accepted": true,
+          "reason": "«Он» — личное местоимение, заменяющее сочетание «воздушный змей». Само существительное не повторяется; «этот» и «поэтому» отсутствуют."
+        },
+        {
+          "option": "Указательным местоимением",
+          "accepted": false,
+          "reason": "«Он» — личное местоимение, заменяющее сочетание «воздушный змей». Само существительное не повторяется; «этот» и «поэтому» отсутствуют."
+        },
+        {
+          "option": "Причинным наречием",
+          "accepted": false,
+          "reason": "«Он» — личное местоимение, заменяющее сочетание «воздушный змей». Само существительное не повторяется; «этот» и «поэтому» отсутствуют."
+        }
+      ],
+      "approvedSha256": "6cc38854dd0522facf316eba411bfa33805cebc5e503b2e4f4c3f16d41a804b8"
+    },
+    {
+      "id": "codex500-russian-reasoning-type",
+      "mode": "test",
+      "method": "text-speech-type",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [
+        {
+          "option": "Повествование",
+          "accepted": false,
+          "reason": "Поставлен вопрос, названа причина и сформулировано следствие. Такая причинная цепочка строит рассуждение. Текст не рассказывает последовательность поступков героя и не перечисляет только внешние признаки."
+        },
+        {
+          "option": "Рассуждение",
+          "accepted": true,
+          "reason": "Поставлен вопрос, названа причина и сформулировано следствие. Такая причинная цепочка строит рассуждение. Текст не рассказывает последовательность поступков героя и не перечисляет только внешние признаки."
+        },
+        {
+          "option": "Описание",
+          "accepted": false,
+          "reason": "Поставлен вопрос, названа причина и сформулировано следствие. Такая причинная цепочка строит рассуждение. Текст не рассказывает последовательность поступков героя и не перечисляет только внешние признаки."
+        }
+      ],
+      "approvedSha256": "7fbc47c9ead9f9c6f41830a488efa5126b5c073a927028a3205c55b987e32b25"
+    },
+    {
+      "id": "codex500-informatics-record-padding",
+      "mode": "practice",
+      "method": "encoding-record-rounding",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "67891dbb20f0aec2b87bd45c1b46b757b1cb0acc53e8542808317db0432c1dfd"
+    },
+    {
+      "id": "codex500-informatics-packet-overhead",
+      "mode": "practice",
+      "method": "information-packet-header",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "3d5b2cb0757a70b9138ba253f865c4b15b723e65c6030725052fbe52a765300c"
+    },
+    {
+      "id": "codex500-informatics-base-equation",
+      "mode": "practice",
+      "method": "base-polynomial-equation",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "a587b3571ad7e342cef90d010b15bbdf7578dc846fdf48dd9bb3f347c65bfdbc"
+    },
+    {
+      "id": "codex500-informatics-logic-window",
+      "mode": "practice",
+      "method": "logic-exclusive-interval",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "9b5d8c91ed2e37ad6dd98f242dde558b64080ea7b14bcdcaa23e3138588b153b"
+    },
+    {
+      "id": "codex500-informatics-prefix-word",
+      "mode": "practice",
+      "method": "encoding-prefix-word",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "9a335d0c4039b9289a6565183ce1945bc929dce7e0aa4efa92180e017ef3e276"
+    },
+    {
+      "id": "codex500-informatics-filter-two",
+      "mode": "test",
+      "method": "table-conjunctive-filter",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "014df220ed77c7c597d73f755eb60e9f954e0fc36a82a8127b9d71bab6973ecb"
+    },
+    {
+      "id": "codex500-python-runs",
+      "mode": "practice",
+      "method": "python-runs",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "442e96c49752f9b8edab95a14b1198a27f7110fd11380530b2824af1c5a3b933"
+    },
+    {
+      "id": "codex500-python-merge",
+      "mode": "practice",
+      "method": "python-merge",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "a9dfd3ad8ad5f866238a912d58ff465391a96b4d8efac98a8e80df5292b82342"
+    },
+    {
+      "id": "codex500-python-once",
+      "mode": "practice",
+      "method": "python-once",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "d8489cb77e578a9975c40f95f4b6d76fee8aa34128fd34985932440c557fa1af"
+    },
+    {
+      "id": "codex500-python-signs",
+      "mode": "practice",
+      "method": "python-signs",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "07371ba9b3e063c5d7148ede529d07e2c890615eab3b9c9ed01c6bf3de233c45"
+    },
+    {
+      "id": "codex500-python-transpose",
+      "mode": "practice",
+      "method": "python-transpose",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "0aedc642418bd4db7c9f44d34482f06c23aa8916be5bc278915d8793cd8bcc65"
+    },
+    {
+      "id": "codex500-python-missing",
+      "mode": "practice",
+      "method": "python-missing",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "a0ff96e7830c42901054550800c840fabdaf36d100fb6fd62c42d4eb97b69ff3"
+    },
+    {
+      "id": "codex500-python-suffix",
+      "mode": "practice",
+      "method": "python-suffix",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "e85bd852ad74686c6b13635d45c9aeb8a8d4c60f051df8000b44fc5e67001ebd"
+    },
+    {
+      "id": "codex500-python-clock",
+      "mode": "test",
+      "method": "python-clock",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "a4412b77215925d18c93b6a0eaa9fa8c017995722035a2e4206b2998b6e45c45"
+    },
+    {
+      "id": "codex500-python-tokens",
+      "mode": "practice",
+      "method": "python-tokens",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "75d38292ad00ff16934a7dfea6306cb35253c19354d0342ed6a00e0f0f004ce2"
+    },
+    {
+      "id": "codex500-python-pair-sums",
+      "mode": "practice",
+      "method": "python-pair-sums",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "a466351b2721062a25dfad08488619f72d42dff2e7961ba5f3232f1b548bbde9"
+    },
+    {
+      "id": "codex500-python-stock",
+      "mode": "practice",
+      "method": "python-stock",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "036c47de2ad4f9b7ad9b954164396048596e670a465b59d53bc4630136f19e72"
+    },
+    {
+      "id": "codex500-python-peak",
+      "mode": "test",
+      "method": "python-peak",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "8b4bb57de9b0a627111bea33e57ed7e2312592880ddc433d5cab4f6d37dde582"
+    },
+    {
+      "id": "codex500-python-balanced",
+      "mode": "practice",
+      "method": "python-balanced",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "670646bd51ea4869818b1f653bb1a8d04083d7739dcfefd034c2efc511468182"
+    },
+    {
+      "id": "codex500-python-blocks",
+      "mode": "practice",
+      "method": "python-blocks",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "514eb6aca5c77dc3bbd0ecd9f9e253d06eb5a6bc90eb75123b52b7251a302ea5"
+    },
+    {
+      "id": "codex500-python-nearest",
+      "mode": "test",
+      "method": "python-nearest",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "dc2c6dc6fff895c615dc525535d18807d3539418c6a5307d4d4349b74343c063"
+    },
+    {
+      "id": "codex500-python-dict-order",
+      "mode": "practice",
+      "method": "python-dict-order",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "51484c48ab7770831ba3d1d9b0b6b82617014957b7835a1ac1e97a0221fde438"
+    },
+    {
+      "id": "codex500-python-loop-continue",
+      "mode": "practice",
+      "method": "python-loop-continue",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "93b86168cfdb821e40f4a3529072980f8acb6ebdaee591d03fcc8efad9d63db2"
+    },
+    {
+      "id": "codex500-python-return-stop",
+      "mode": "practice",
+      "method": "python-return-stop",
+      "independent": "Specified independently below; public reproducible checks",
+      "optionReview": [],
+      "approvedSha256": "abafee1ac78385f56398fb74e6138ad2ebdedd35c10a919b0106c79ac25341b4"
+    }
+  ],
+  "programFixtures": [
+    {
+      "id": "codex500-python-runs",
+      "reference": "def compress_runs(values):\n    out=[]\n    for v in values:\n        if out and out[-1][0]==v:\n            out[-1][1]+=1\n        else:\n            out.append([v,1])\n    return out",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def compress_runs(values):\n    pass",
+        "functionName": "compress_runs",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1,
+                1,
+                2,
+                1,
+                1,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                -2,
+                -2,
+                0
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -2,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            ],
+            "expectedReturn": [
+              [
+                5,
+                30
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            ],
+            "expectedReturn": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                7,
+                1
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                9,
+                1
+              ],
+              [
+                10,
+                1
+              ],
+              [
+                11,
+                1
+              ],
+              [
+                12,
+                1
+              ],
+              [
+                13,
+                1
+              ],
+              [
+                14,
+                1
+              ],
+              [
+                15,
+                1
+              ],
+              [
+                16,
+                1
+              ],
+              [
+                17,
+                1
+              ],
+              [
+                18,
+                1
+              ],
+              [
+                19,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def compress_runs(values):\n    return [[v, values.count(v)] for v in dict.fromkeys(values)]",
+        "def compress_runs(values):\n    return []"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-merge",
+      "reference": "def merge_sorted(left,right):\n    out=[]\n    i=j=0\n    while i<len(left) and j<len(right):\n        if left[i]<=right[j]:\n            out.append(left[i]); i+=1\n        else:\n            out.append(right[j]); j+=1\n    return out+left[i:]+right[j:]",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def merge_sorted(left,right):\n    pass",
+        "functionName": "merge_sorted",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [],
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              2,
+              3,
+              3
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                0
+              ],
+              [
+                -2,
+                4
+              ]
+            ],
+            "expectedReturn": [
+              -2,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "args": [
+              [
+                1
+              ],
+              []
+            ],
+            "expectedReturn": [
+              1
+            ]
+          },
+          {
+            "args": [
+              [],
+              [
+                -3,
+                -1,
+                5
+              ]
+            ],
+            "expectedReturn": [
+              -3,
+              -1,
+              5
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def merge_sorted(left,right):\n    return left+right",
+        "def merge_sorted(left,right):\n    return []"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-once",
+      "reference": "def unique_once(values):\n    counts={}\n    for v in values:\n        counts[v]=counts.get(v,0)+1\n    return [v for v in values if counts[v]==1]",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def unique_once(values):\n    pass",
+        "functionName": "unique_once",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                2,
+                1,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              3
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                0
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                4,
+                -1,
+                5
+              ]
+            ],
+            "expectedReturn": [
+              4,
+              -1,
+              5
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                4
+              ]
+            ],
+            "expectedReturn": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def unique_once(values):\n    return list(dict.fromkeys(values))",
+        "def unique_once(values):\n    return []"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-signs",
+      "reference": "def split_signs(values):\n    negative=[]\n    other=[]\n    for v in values:\n        if v<0: negative.append(v)\n        else: other.append(v)\n    return [negative,other]",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def split_signs(values):\n    pass",
+        "functionName": "split_signs",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": [
+              [],
+              []
+            ]
+          },
+          {
+            "args": [
+              [
+                2,
+                -1,
+                0,
+                -3
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -1,
+                -3
+              ],
+              [
+                2,
+                0
+              ]
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                -5,
+                -2
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -5,
+                -2
+              ],
+              []
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              [],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                -10,
+                -9,
+                -8,
+                -7,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            ],
+            "expectedReturn": [
+              [
+                -10,
+                -9,
+                -8,
+                -7,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def split_signs(values):\n    return [[v for v in values if v<0],[v for v in values if v>0]]",
+        "def split_signs(values):\n    return [[], []]"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-transpose",
+      "reference": "def transpose_rect(rows):\n    if not rows: return []\n    out=[]\n    for col in range(len(rows[0])):\n        line=[]\n        for row in rows: line.append(row[col])\n        out.append(line)\n    return out",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def transpose_rect(rows):\n    pass",
+        "functionName": "transpose_rect",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  4,
+                  5,
+                  6
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                6
+              ]
+            ]
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                [],
+                []
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                [
+                  9
+                ],
+                [
+                  8
+                ],
+                [
+                  7
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                9,
+                8,
+                7
+              ]
+            ]
+          },
+          {
+            "args": [
+              [
+                [
+                  0,
+                  -2
+                ]
+              ]
+            ],
+            "expectedReturn": [
+              [
+                0
+              ],
+              [
+                -2
+              ]
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def transpose_rect(rows):\n    return rows",
+        "def transpose_rect(rows):\n    return []"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-missing",
+      "reference": "def missing_between(values):\n    present=set(values)\n    return [x for x in range(min(values)+1,max(values)) if x not in present]",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def missing_between(values):\n    pass",
+        "functionName": "missing_between",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            "expectedReturn": [
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                -2,
+                2,
+                0
+              ]
+            ],
+            "expectedReturn": [
+              -1,
+              1
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                5
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                3,
+                1,
+                2
+              ]
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                10,
+                15
+              ]
+            ],
+            "expectedReturn": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def missing_between(values):\n    return list(range(min(values)+1,max(values)))",
+        "def missing_between(values):\n    return [3]"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-suffix",
+      "reference": "def common_suffix(a,b):\n    count=0\n    while count<min(len(a),len(b)) and a[-1-count]==b[-1-count]:\n        count+=1\n    return count",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def common_suffix(a,b):\n    pass",
+        "functionName": "common_suffix",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "дом",
+              "гром"
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              "",
+              "abc"
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "ABC",
+              "abc"
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "same",
+              "same"
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              "xyzz",
+              "zz"
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              "abc",
+              "xbc"
+            ],
+            "expectedReturn": 2
+          }
+        ]
+      },
+      "mutants": [
+        "def common_suffix(a,b):\n    return sum(x==y for x,y in zip(a,b))",
+        "def common_suffix(a,b):\n    return 2"
+      ],
+      "nativeTests": 6,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-clock",
+      "reference": "def clock_minutes(text):\n    if len(text)!=5 or text[2]!=\":\" or any(c not in \"0123456789\" for c in text[:2]+text[3:]): return -1\n    h=int(text[:2]); m=int(text[3:])\n    return h*60+m if h<24 and m<60 else -1",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def clock_minutes(text):\n    pass",
+        "functionName": "clock_minutes",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "00:00"
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "23:59"
+            ],
+            "expectedReturn": 1439
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "07:04"
+            ],
+            "expectedReturn": 424
+          },
+          {
+            "args": [
+              "7:04"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "24:00"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "00:60"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "aa:bb"
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              "０７:04"
+            ],
+            "expectedReturn": -1
+          }
+        ]
+      },
+      "mutants": [
+        "def clock_minutes(text):\n    return int(text[:2])*60+int(text[3:])",
+        "def clock_minutes(text):\n    return 0"
+      ],
+      "nativeTests": 8,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-tokens",
+      "reference": "def sum_integer_tokens(text):\n    total=0\n    for token in text.split():\n        digits=token[1:] if token[:1] in [\"+\",\"-\"] else token\n        if digits and all(c in \"0123456789\" for c in digits): total+=int(token)\n    return total",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def sum_integer_tokens(text):\n    pass",
+        "functionName": "sum_integer_tokens",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "2 -3 +5"
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              "+ - a 2.5"
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "001 -001 7"
+            ],
+            "expectedReturn": 7
+          },
+          {
+            "args": [
+              ""
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "4\t-2\n+9"
+            ],
+            "expectedReturn": 11
+          },
+          {
+            "args": [
+              "１２ 3"
+            ],
+            "expectedReturn": 3
+          }
+        ]
+      },
+      "mutants": [
+        "def sum_integer_tokens(text):\n    return sum(int(t) for t in text.split() if t.isdigit())",
+        "def sum_integer_tokens(text):\n    return 4"
+      ],
+      "nativeTests": 6,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-pair-sums",
+      "reference": "def pair_sums(values):\n    out=[]\n    for i in range(1,len(values)): out.append(values[i-1]+values[i])\n    return out",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def pair_sums(values):\n    pass",
+        "functionName": "pair_sums",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                4
+              ]
+            ],
+            "expectedReturn": []
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                2,
+                5,
+                1
+              ]
+            ],
+            "expectedReturn": [
+              7,
+              6
+            ]
+          },
+          {
+            "args": [
+              [
+                -1,
+                0,
+                2
+              ]
+            ],
+            "expectedReturn": [
+              -1,
+              2
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def pair_sums(values):\n    return [values[i]+values[i+1] for i in range(0,len(values)-1,2)]",
+        "def pair_sums(values):\n    return []"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-stock",
+      "reference": "def stock_after(stock,demand):\n    out={}\n    for key,value in stock.items(): out[key]=max(0,value-demand.get(key,0))\n    return out",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def stock_after(stock,demand):\n    pass",
+        "functionName": "stock_after",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              {},
+              {}
+            ],
+            "expectedReturn": {}
+          },
+          {
+            "args": [
+              {
+                "a": 5,
+                "b": 2
+              },
+              {
+                "a": 3,
+                "b": 9,
+                "c": 1
+              }
+            ],
+            "expectedReturn": {
+              "a": 2,
+              "b": 0
+            }
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              {
+                "x": 0
+              },
+              {}
+            ],
+            "expectedReturn": {
+              "x": 0
+            }
+          },
+          {
+            "args": [
+              {
+                "a": 4
+              },
+              {
+                "z": 9
+              }
+            ],
+            "expectedReturn": {
+              "a": 4
+            }
+          },
+          {
+            "args": [
+              {
+                "q": 8
+              },
+              {
+                "q": 8
+              }
+            ],
+            "expectedReturn": {
+              "q": 0
+            }
+          }
+        ]
+      },
+      "mutants": [
+        "def stock_after(stock,demand):\n    return {k:v-demand.get(k,0) for k,v in stock.items()}",
+        "def stock_after(stock,demand):\n    return {}"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-peak",
+      "reference": "def first_peak(values):\n    for i in range(1,len(values)-1):\n        if values[i]>values[i-1] and values[i]>values[i+1]: return i\n    return -1",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def first_peak(values):\n    pass",
+        "functionName": "first_peak",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                1,
+                3,
+                2,
+                4,
+                1
+              ]
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": -1
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                2
+              ]
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              [
+                9,
+                1,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                3,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": -1
+          }
+        ]
+      },
+      "mutants": [
+        "def first_peak(values):\n    return values.index(max(values)) if values else -1",
+        "def first_peak(values):\n    return -1"
+      ],
+      "nativeTests": 6,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-balanced",
+      "reference": "def balanced_steps(steps):\n    balance=0\n    for step in steps:\n        balance+=step\n        if balance<0:return False\n    return balance==0",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def balanced_steps(steps):\n    pass",
+        "functionName": "balanced_steps",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                -1,
+                1
+              ]
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": true
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                -1
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                1,
+                1,
+                -1,
+                -1
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                1,
+                1,
+                -1
+              ]
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              [
+                1,
+                -1,
+                -1,
+                1
+              ]
+            ],
+            "expectedReturn": false
+          }
+        ]
+      },
+      "mutants": [
+        "def balanced_steps(steps):\n    return sum(steps)==0",
+        "def balanced_steps(steps):\n    return True"
+      ],
+      "nativeTests": 6,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-blocks",
+      "reference": "def reverse_blocks(values,k):\n    out=[]\n    for start in range(0,len(values),k): out.extend(values[start:start+k][::-1])\n    return out",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def reverse_blocks(values,k):\n    pass",
+        "functionName": "reverse_blocks",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [],
+              3
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              2
+            ],
+            "expectedReturn": [
+              2,
+              1,
+              4,
+              3,
+              5
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ],
+              5
+            ],
+            "expectedReturn": [
+              3,
+              2,
+              1
+            ]
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ],
+              1
+            ],
+            "expectedReturn": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              3
+            ],
+            "expectedReturn": [
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              6
+            ]
+          }
+        ]
+      },
+      "mutants": [
+        "def reverse_blocks(values,k):\n    return values[::-1]",
+        "def reverse_blocks(values,k):\n    return []"
+      ],
+      "nativeTests": 5,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    },
+    {
+      "id": "codex500-python-nearest",
+      "reference": "def nearest_zero(values):\n    best=values[0]\n    for v in values[1:]:\n        if abs(v)<abs(best) or (abs(v)==abs(best) and v>best):best=v\n    return best",
+      "task": {
+        "type": "write-function",
+        "starterCode": "def nearest_zero(values):\n    pass",
+        "functionName": "nearest_zero",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              [
+                -4,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                -2,
+                2
+              ]
+            ],
+            "expectedReturn": 2
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                0,
+                -1,
+                1
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                -8,
+                -3
+              ]
+            ],
+            "expectedReturn": -3
+          },
+          {
+            "args": [
+              [
+                5
+              ]
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              [
+                -1,
+                1,
+                -1
+              ]
+            ],
+            "expectedReturn": 1
+          }
+        ]
+      },
+      "mutants": [
+        "def nearest_zero(values):\n    return min(values)",
+        "def nearest_zero(values):\n    return 2"
+      ],
+      "nativeTests": 6,
+      "independentMethod": "Alternate oracle: groupby/sorting/enumeration/regex/zip/prefix sums"
+    }
+  ]
+}

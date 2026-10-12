@@ -239,3 +239,11 @@ baseline, not the independent proof. See `docs/CHAT500-REVIEW.md` and
 `sources/chat500-review.json` for every decision, oracle, correction and duplicate.
 No third-party exercise text/images were imported. The original archive, local
 source-check script, official PDF downloads, profiles and builds are ignored inputs.
+
+## Independent Codex author pilot (2026-10-12)
+
+36 independently authored training tasks with `codex500-` IDs, including 15
+write-function exercises, are documented in `docs/CODEX500-REVIEW.md` and
+`sources/codex500-review.json`. This is a verified partial package, not 500 tasks.
+No exercise text was copied from FIPI, Reshu EGE or other collections. All tasks
+are generated training with null examTaskType; the 85 existing exam tasks are unchanged.

@@ -307,7 +307,7 @@
         {
           "path": "src/data/study-flow.json",
           "normalization": "lf",
-          "sha256": "7867abed833ea384d315391a1a4ac5eb742020f6913652417533835ed05e7256"
+          "sha256": "abe8b91d69a7074270c23109dbbd0ddab34d58a4e9aa802b02c4132711962df8"
         }
       ]
     },
@@ -476,7 +476,7 @@
       "clearance": "project-generated",
       "source": null,
       "license": null,
-      "evidence": "Owner supplied original ChatGPT author pack on 2026-10-12; archive SHA-256 5bed21061e5d11429228b2c4a6d16dc6dbc10ce54240bd6700c46b71941897a4. Independently reviewed conditions, answer oracles, corrected/rejected ledger sources/chat500-review.json; All content generated training, not official FIPI tasks. FIPI project documents used only for scope; no external bank copied.",
+      "evidence": "Owner supplied original ChatGPT author pack on 2026-10-12; archive SHA-256 5bed21061e5d11429228b2c4a6d16dc6dbc10ce54240bd6700c46b71941897a4. Independently reviewed conditions, answer oracles, corrected/rejected ledger sources/chat500-review.json; separate original Codex tasks sources/codex500-review.json. All content generated training, not official FIPI tasks. FIPI project documents used only for scope; no external bank copied.",
       "files": [
         {
           "path": "src/data/banks/author-chat500-informatics.json",
@@ -497,6 +497,26 @@
           "path": "src/data/banks/author-chat500-russian.json",
           "normalization": "lf",
           "sha256": "a44683a04e19fcce72f8839b551d95753e69fdb149787ea50c3d7448083a53b4"
+        },
+        {
+          "path": "src/data/banks/author-codex500-informatics.json",
+          "normalization": "lf",
+          "sha256": "b8570bcc6fd04ae26cd710ace56069158e9d1c76c690feb7909475785a1895ab"
+        },
+        {
+          "path": "src/data/banks/author-codex500-math.json",
+          "normalization": "lf",
+          "sha256": "f97283b6f6f4c8fc3b3c996fe2d37deebd73d9e2a4236061458e3ef577fa298a"
+        },
+        {
+          "path": "src/data/banks/author-codex500-python.json",
+          "normalization": "lf",
+          "sha256": "c551b07293dea40947dd3ecf8cb73ce6532ec2d62d594074d647fe8f6fa4811c"
+        },
+        {
+          "path": "src/data/banks/author-codex500-russian.json",
+          "normalization": "lf",
+          "sha256": "458fd6e5548fe7178e3eac09d76efcc3c324d65a8141a89f7f12d16f1cd806e9"
         },
         {
           "path": "src/data/author500-lessons.json",
