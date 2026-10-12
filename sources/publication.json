@@ -443,7 +443,7 @@
         {
           "path": "src/data/exam/stage3c2-b.json",
           "normalization": "lf",
-          "sha256": "2301a874144f697c17d3762a7230277e01b3184e499cd933fa8a2640350ce9b9"
+          "sha256": "542608239ba025a653b09cf4e6187550e756b4510e6f87fc6eda1cb61257c3b3"
         },
         {
           "path": "src/data/stage3c2-b-lessons.json",
