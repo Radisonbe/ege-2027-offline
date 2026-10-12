@@ -1,3 +1,4 @@
+import authorLessonData from './author500-lessons.json';
 import flowData from './study-flow.json';
 import {learningSets,validateLearningFlow} from '../domain/study-flow';
 import { topics as referenceTopics, theories as referenceTheories, sentences as referenceSentences, bridges as referenceBridges } from './reference.json';
@@ -24,7 +25,7 @@ export const topics: Topic[] = referenceTopics.map((entry, index, all) => ({
   subtopics: [], requires: [], related: [],
 }));
 export const topicById = Object.fromEntries(topics.map(t => [t.id, t]));
-const lessonResult=(()=>{const lessons:ReturnType<typeof validateLessonPack>['lessons']=[],diagnostics:string[]=[];for(const pack of [lessonData,extendedLessonData,c2LessonData,c2bLessonData]){try{lessons.push(...validateLessonPack(pack,topics).lessons);}catch(error){diagnostics.push(String(error instanceof Error?error.message:error));}}return {lessons,diagnostics};})();
+const lessonResult=(()=>{const lessons:ReturnType<typeof validateLessonPack>['lessons']=[],diagnostics:string[]=[];for(const pack of [lessonData,extendedLessonData,c2LessonData,c2bLessonData,authorLessonData]){try{lessons.push(...validateLessonPack(pack,topics).lessons);}catch(error){diagnostics.push(String(error instanceof Error?error.message:error));}}return {lessons,diagnostics};})();
 for(const lesson of lessonResult.lessons)if(topicById[lesson.topic].materialStatus!=='ready'){Object.assign(topicById[lesson.topic],{materialStatus:'ready',minutes:lesson.minutes,description:'Базовые правила, разобранный пример и самостоятельная практика'});}
 const taxonomyResult = (() => {
   try { return { taxonomy: validateTaxonomy(taxonomyData, topics), diagnostics: [] as string[] }; }

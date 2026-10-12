@@ -24,7 +24,37 @@
         "c2b-informatics-binary-last-digit",
         "c2b-informatics-binary-bit-capacity",
         "c2b-informatics-binary-order",
-        "c2b-informatics-binary-complement"
+        "c2b-informatics-binary-complement",
+        "chat500-informatics-001",
+        "chat500-informatics-002",
+        "chat500-informatics-003",
+        "chat500-informatics-004",
+        "chat500-informatics-005",
+        "chat500-informatics-006",
+        "chat500-informatics-007",
+        "chat500-informatics-008",
+        "chat500-informatics-009",
+        "chat500-informatics-010",
+        "chat500-informatics-011",
+        "chat500-informatics-012",
+        "chat500-informatics-013",
+        "chat500-informatics-014",
+        "chat500-informatics-015",
+        "chat500-informatics-016",
+        "chat500-informatics-017",
+        "chat500-informatics-018",
+        "chat500-informatics-019",
+        "chat500-informatics-020",
+        "chat500-informatics-021",
+        "chat500-informatics-022",
+        "chat500-informatics-023",
+        "chat500-informatics-024",
+        "chat500-informatics-025",
+        "chat500-informatics-026",
+        "chat500-informatics-027",
+        "chat500-informatics-028",
+        "chat500-informatics-029",
+        "chat500-informatics-030"
       ],
       "test": [
         "b5",
@@ -58,7 +88,27 @@
         "c2b-informatics-encoding-password",
         "c2b-informatics-encoding-decode",
         "c2b-informatics-encoding-new-letter",
-        "c2b-informatics-encoding-redundancy"
+        "c2b-informatics-encoding-redundancy",
+        "chat500-informatics-051",
+        "chat500-informatics-052",
+        "chat500-informatics-053",
+        "chat500-informatics-054",
+        "chat500-informatics-055",
+        "chat500-informatics-056",
+        "chat500-informatics-057",
+        "chat500-informatics-058",
+        "chat500-informatics-059",
+        "chat500-informatics-060",
+        "chat500-informatics-061",
+        "chat500-informatics-062",
+        "chat500-informatics-063",
+        "chat500-informatics-064",
+        "chat500-informatics-065",
+        "chat500-informatics-066",
+        "chat500-informatics-067",
+        "chat500-informatics-068",
+        "chat500-informatics-069",
+        "chat500-informatics-070"
       ],
       "test": [
         "c3",
@@ -89,7 +139,23 @@
         "c2b-math-function-difference",
         "c2b-math-function-vertex",
         "c2b-math-function-domain-holes",
-        "c2b-math-function-scale-sign"
+        "c2b-math-function-scale-sign",
+        "chat500-math-097",
+        "chat500-math-098",
+        "chat500-math-099",
+        "chat500-math-100",
+        "chat500-math-101",
+        "chat500-math-102",
+        "chat500-math-103",
+        "chat500-math-104",
+        "chat500-math-105",
+        "chat500-math-106",
+        "chat500-math-107",
+        "chat500-math-108",
+        "chat500-math-109",
+        "chat500-math-110",
+        "chat500-math-111",
+        "chat500-math-112"
       ],
       "test": [
         "f3",
@@ -123,7 +189,35 @@
         "c2b-math-percent-mixture-salt",
         "c2b-math-percent-voters",
         "c2b-math-percent-saving",
-        "c2b-math-percent-compared"
+        "c2b-math-percent-compared",
+        "chat500-math-025",
+        "chat500-math-026",
+        "chat500-math-027",
+        "chat500-math-028",
+        "chat500-math-029",
+        "chat500-math-030",
+        "chat500-math-031",
+        "chat500-math-032",
+        "chat500-math-033",
+        "chat500-math-034",
+        "chat500-math-036",
+        "chat500-math-037",
+        "chat500-math-038",
+        "chat500-math-039",
+        "chat500-math-040",
+        "chat500-math-041",
+        "chat500-math-042",
+        "chat500-math-043",
+        "chat500-math-044",
+        "chat500-math-045",
+        "chat500-math-046",
+        "chat500-math-047",
+        "chat500-math-048",
+        "chat500-math-161",
+        "chat500-math-162",
+        "chat500-math-163",
+        "chat500-math-164",
+        "chat500-math-165"
       ],
       "test": [
         "b1-math-09",
@@ -145,7 +239,12 @@
         "py-variables-q",
         "py-v2",
         "b1-python-01",
-        "c2a-python-swap"
+        "c2a-python-swap",
+        "chat500-python-056",
+        "chat500-python-057",
+        "chat500-python-058",
+        "chat500-python-059",
+        "chat500-python-060"
       ],
       "test": [
         "b1-python-02"
@@ -157,7 +256,9 @@
         "b1-python-03",
         "b2-python-predict-bool",
         "c2a-python-division",
-        "c2a-python-string-add"
+        "c2a-python-string-add",
+        "chat500-python-054",
+        "chat500-python-055"
       ],
       "test": [
         "py-t2",
@@ -174,7 +275,10 @@
         "c2a-python-two-if",
         "c2a-python-boxes-needed",
         "c2b-python-if-independent",
-        "c2b-python-if-short-circuit"
+        "c2b-python-if-short-circuit",
+        "chat500-python-051",
+        "chat500-python-052",
+        "chat500-python-053"
       ],
       "test": [
         "py-i2",
@@ -199,7 +303,15 @@
         "c2b-python-loop-continue",
         "c2b-python-loop-while-pop",
         "c2b-python-loop-triangular",
-        "c2b-python-count-signs"
+        "c2b-python-count-signs",
+        "chat500-python-011",
+        "chat500-python-012",
+        "chat500-python-013",
+        "chat500-python-014",
+        "chat500-python-015",
+        "chat500-python-016",
+        "chat500-python-019",
+        "chat500-python-020"
       ],
       "test": [
         "py-l2",
@@ -215,7 +327,14 @@
         "b2-python-normalize_spaces",
         "b2-python-py-reverse-words",
         "c2a-python-slice",
-        "c2a-python-first_long_word"
+        "c2a-python-first_long_word",
+        "chat500-python-021",
+        "chat500-python-022",
+        "chat500-python-023",
+        "chat500-python-024",
+        "chat500-python-025",
+        "chat500-python-063",
+        "chat500-python-067"
       ],
       "test": [
         "py-s2",
@@ -245,7 +364,22 @@
         "c2b-python-replace-negatives",
         "c2b-python-adjacent-increases",
         "c2b-python-running-maxima",
-        "c2b-python-sum-distinct"
+        "c2b-python-sum-distinct",
+        "chat500-python-026",
+        "chat500-python-027",
+        "chat500-python-028",
+        "chat500-python-029",
+        "chat500-python-030",
+        "chat500-python-031",
+        "chat500-python-032",
+        "chat500-python-033",
+        "chat500-python-034",
+        "chat500-python-035",
+        "chat500-python-062",
+        "chat500-python-064",
+        "chat500-python-066",
+        "chat500-python-068",
+        "chat500-python-069"
       ],
       "test": [
         "py-li2",
@@ -260,7 +394,9 @@
     "py-sets": {
       "practice": [
         "py-sets-q",
-        "b2-python-predict-set"
+        "b2-python-predict-set",
+        "chat500-python-001",
+        "chat500-python-002"
       ],
       "test": [
         "py-se2",
@@ -270,7 +406,9 @@
     "py-tuples": {
       "practice": [
         "py-tuples-q",
-        "b2-python-predict-unpack"
+        "b2-python-predict-unpack",
+        "chat500-python-003",
+        "chat500-python-004"
       ],
       "test": [
         "py-tu2",
@@ -287,7 +425,12 @@
         "c2b-python-dict-get-no-insert",
         "c2b-python-dict-key-overwrite",
         "c2b-python-dict-alias",
-        "c2b-python-frequent-first"
+        "c2b-python-frequent-first",
+        "chat500-python-036",
+        "chat500-python-037",
+        "chat500-python-038",
+        "chat500-python-039",
+        "chat500-python-040"
       ],
       "test": [
         "py-d2",
@@ -306,7 +449,18 @@
         "b2-python-predict-default",
         "c2a-python-early-return",
         "c2b-python-function-local-rebind",
-        "c2b-python-balance-cut"
+        "c2b-python-balance-cut",
+        "chat500-python-041",
+        "chat500-python-042",
+        "chat500-python-043",
+        "chat500-python-044",
+        "chat500-python-045",
+        "chat500-python-046",
+        "chat500-python-047",
+        "chat500-python-048",
+        "chat500-python-049",
+        "chat500-python-050",
+        "chat500-python-070"
       ],
       "test": [
         "py-f2",
@@ -330,7 +484,9 @@
     },
     "py-csv": {
       "practice": [
-        "py-csv-q"
+        "py-csv-q",
+        "chat500-python-007",
+        "chat500-python-008"
       ],
       "test": [
         "py-c2"
@@ -338,7 +494,9 @@
     },
     "py-algorithms": {
       "practice": [
-        "py-algorithms-q"
+        "py-algorithms-q",
+        "chat500-python-009",
+        "chat500-python-010"
       ],
       "test": [
         "py-a2"
@@ -357,7 +515,9 @@
         "c2b-russian-sentence-two-bases",
         "c2b-russian-sentence-impersonal",
         "c2b-russian-sentence-relative",
-        "c2b-russian-sentence-indirect-agent"
+        "c2b-russian-sentence-indirect-agent",
+        "chat500-russian-077",
+        "chat500-russian-078"
       ],
       "test": [
         "b1-russian-08",
@@ -385,7 +545,16 @@
         "c2b-russian-union-report",
         "c2b-russian-union-place",
         "c2b-russian-union-because",
-        "c2b-russian-union-if"
+        "c2b-russian-union-if",
+        "chat500-russian-079",
+        "chat500-russian-080",
+        "chat500-russian-081",
+        "chat500-russian-082",
+        "chat500-russian-083",
+        "chat500-russian-084",
+        "chat500-russian-085",
+        "chat500-russian-086",
+        "chat500-russian-087"
       ],
       "test": [
         "b1-russian-13",
@@ -411,7 +580,17 @@
         "c2b-informatics-logic-demorgan",
         "c2b-informatics-logic-interval",
         "c2b-informatics-logic-negated-range",
-        "c2b-informatics-logic-exclusive-three"
+        "c2b-informatics-logic-exclusive-three",
+        "chat500-informatics-071",
+        "chat500-informatics-072",
+        "chat500-informatics-073",
+        "chat500-informatics-074",
+        "chat500-informatics-075",
+        "chat500-informatics-076",
+        "chat500-informatics-077",
+        "chat500-informatics-078",
+        "chat500-informatics-079",
+        "chat500-informatics-080"
       ],
       "test": [
         "b1-informatics-14",
@@ -438,7 +617,17 @@
         "c2b-informatics-info-compression",
         "c2b-informatics-info-two-channels",
         "c2b-informatics-info-packet-overhead",
-        "c2b-informatics-info-resolution"
+        "c2b-informatics-info-resolution",
+        "chat500-informatics-041",
+        "chat500-informatics-042",
+        "chat500-informatics-043",
+        "chat500-informatics-044",
+        "chat500-informatics-045",
+        "chat500-informatics-046",
+        "chat500-informatics-047",
+        "chat500-informatics-048",
+        "chat500-informatics-049",
+        "chat500-informatics-050"
       ],
       "test": [
         "b1-informatics-19",
@@ -453,7 +642,12 @@
         "b1-informatics-21",
         "b1-informatics-22",
         "b2-informatics-inf-pair",
-        "b2-informatics-inf-neighbours"
+        "b2-informatics-inf-neighbours",
+        "chat500-informatics-106",
+        "chat500-informatics-107",
+        "chat500-informatics-108",
+        "chat500-informatics-109",
+        "chat500-informatics-110"
       ],
       "test": [
         "b1-informatics-23",
@@ -475,7 +669,12 @@
         "c2a-math-packaging",
         "c2b-math-arith-negative-average",
         "c2b-math-arith-divisibility",
-        "c2b-math-arith-round-money"
+        "c2b-math-arith-round-money",
+        "chat500-math-166",
+        "chat500-math-167",
+        "chat500-math-168",
+        "chat500-math-169",
+        "chat500-math-170"
       ],
       "test": [
         "b1-math-03",
@@ -503,7 +702,30 @@
         "c2b-math-fraction-perimeter",
         "c2b-math-fraction-known-part",
         "c2b-math-fraction-nested",
-        "c2b-math-fraction-speed"
+        "c2b-math-fraction-speed",
+        "chat500-math-001",
+        "chat500-math-002",
+        "chat500-math-003",
+        "chat500-math-004",
+        "chat500-math-005",
+        "chat500-math-006",
+        "chat500-math-007",
+        "chat500-math-008",
+        "chat500-math-009",
+        "chat500-math-010",
+        "chat500-math-011",
+        "chat500-math-012",
+        "chat500-math-013",
+        "chat500-math-014",
+        "chat500-math-015",
+        "chat500-math-016",
+        "chat500-math-017",
+        "chat500-math-018",
+        "chat500-math-019",
+        "chat500-math-020",
+        "chat500-math-021",
+        "chat500-math-023",
+        "chat500-math-024"
       ],
       "test": [
         "b1-math-06",
@@ -527,7 +749,13 @@
         "c2b-math-power-quotient-inverse",
         "c2b-math-power-squared-fraction",
         "c2b-math-power-scaled-area",
-        "c2b-math-power-error-add"
+        "c2b-math-power-error-add",
+        "chat500-math-082",
+        "chat500-math-083",
+        "chat500-math-084",
+        "chat500-math-085",
+        "chat500-math-086",
+        "chat500-math-088"
       ],
       "test": [
         "b1-math-17",
@@ -548,7 +776,15 @@
         "c2b-math-root-bound",
         "c2b-math-root-absolute-shift",
         "c2b-math-root-error-sum",
-        "c2b-math-root-fraction"
+        "c2b-math-root-fraction",
+        "chat500-math-089",
+        "chat500-math-090",
+        "chat500-math-091",
+        "chat500-math-092",
+        "chat500-math-093",
+        "chat500-math-094",
+        "chat500-math-095",
+        "chat500-math-096"
       ],
       "test": [
         "b1-math-20",
@@ -566,7 +802,23 @@
         "c2b-math-linear-identity-check",
         "c2b-math-linear-cancel",
         "c2b-math-linear-fixed-distance",
-        "c2b-math-linear-error-sign"
+        "c2b-math-linear-error-sign",
+        "chat500-math-049",
+        "chat500-math-050",
+        "chat500-math-051",
+        "chat500-math-052",
+        "chat500-math-053",
+        "chat500-math-054",
+        "chat500-math-055",
+        "chat500-math-056",
+        "chat500-math-057",
+        "chat500-math-058",
+        "chat500-math-059",
+        "chat500-math-060",
+        "chat500-math-061",
+        "chat500-math-062",
+        "chat500-math-063",
+        "chat500-math-064"
       ],
       "test": [
         "b1-math-22",
@@ -588,7 +840,16 @@
         "c2b-russian-speech-adverb-degree",
         "c2b-russian-speech-pronoun",
         "c2b-russian-speech-preposition",
-        "c2b-russian-speech-homonym"
+        "c2b-russian-speech-homonym",
+        "chat500-russian-061",
+        "chat500-russian-062",
+        "chat500-russian-063",
+        "chat500-russian-064",
+        "chat500-russian-065",
+        "chat500-russian-066",
+        "chat500-russian-067",
+        "chat500-russian-068",
+        "chat500-russian-069"
       ],
       "test": [
         "b1-russian-03",
@@ -605,7 +866,16 @@
       "practice": [
         "b1-russian-18",
         "b2-russian-spell-ne-contrast",
-        "c2a-russian-ne-opposition"
+        "c2a-russian-ne-opposition",
+        "chat500-russian-124",
+        "chat500-russian-125",
+        "chat500-russian-126",
+        "chat500-russian-127",
+        "chat500-russian-128",
+        "chat500-russian-129",
+        "chat500-russian-130",
+        "chat500-russian-131",
+        "chat500-russian-132"
       ],
       "test": [
         "b1-russian-19",
@@ -625,7 +895,25 @@
         "c2b-russian-punct-adversative",
         "c2b-russian-punct-gerund",
         "c2b-russian-punct-list",
-        "c2b-russian-punct-paired"
+        "c2b-russian-punct-paired",
+        "chat500-russian-088",
+        "chat500-russian-089",
+        "chat500-russian-090",
+        "chat500-russian-091",
+        "chat500-russian-092",
+        "chat500-russian-093",
+        "chat500-russian-094",
+        "chat500-russian-095",
+        "chat500-russian-096",
+        "chat500-russian-106",
+        "chat500-russian-107",
+        "chat500-russian-108",
+        "chat500-russian-109",
+        "chat500-russian-110",
+        "chat500-russian-111",
+        "chat500-russian-112",
+        "chat500-russian-113",
+        "chat500-russian-114"
       ],
       "test": [
         "b1-russian-22",
@@ -646,7 +934,74 @@
         "c2b-russian-text-pronoun",
         "c2b-russian-text-causal",
         "c2b-russian-text-adversative",
-        "c2b-russian-text-synonym"
+        "c2b-russian-text-synonym",
+        "chat500-russian-001",
+        "chat500-russian-002",
+        "chat500-russian-003",
+        "chat500-russian-004",
+        "chat500-russian-005",
+        "chat500-russian-006",
+        "chat500-russian-007",
+        "chat500-russian-008",
+        "chat500-russian-009",
+        "chat500-russian-010",
+        "chat500-russian-011",
+        "chat500-russian-012",
+        "chat500-russian-013",
+        "chat500-russian-014",
+        "chat500-russian-015",
+        "chat500-russian-016",
+        "chat500-russian-017",
+        "chat500-russian-018",
+        "chat500-russian-019",
+        "chat500-russian-020",
+        "chat500-russian-021",
+        "chat500-russian-022",
+        "chat500-russian-023",
+        "chat500-russian-024",
+        "chat500-russian-025",
+        "chat500-russian-026",
+        "chat500-russian-027",
+        "chat500-russian-028",
+        "chat500-russian-029",
+        "chat500-russian-030",
+        "chat500-russian-031",
+        "chat500-russian-032",
+        "chat500-russian-033",
+        "chat500-russian-034",
+        "chat500-russian-035",
+        "chat500-russian-036",
+        "chat500-russian-037",
+        "chat500-russian-038",
+        "chat500-russian-039",
+        "chat500-russian-040",
+        "chat500-russian-041",
+        "chat500-russian-042",
+        "chat500-russian-043",
+        "chat500-russian-044",
+        "chat500-russian-045",
+        "chat500-russian-046",
+        "chat500-russian-047",
+        "chat500-russian-048",
+        "chat500-russian-049",
+        "chat500-russian-050",
+        "chat500-russian-052",
+        "chat500-russian-053",
+        "chat500-russian-054",
+        "chat500-russian-056",
+        "chat500-russian-057",
+        "chat500-russian-058",
+        "chat500-russian-059",
+        "chat500-russian-060",
+        "chat500-russian-142",
+        "chat500-russian-143",
+        "chat500-russian-144",
+        "chat500-russian-145",
+        "chat500-russian-146",
+        "chat500-russian-147",
+        "chat500-russian-148",
+        "chat500-russian-149",
+        "chat500-russian-150"
       ],
       "test": [
         "b1-russian-25",
@@ -667,7 +1022,23 @@
         "c2b-math-quadratic-product",
         "c2b-math-quadratic-discriminant",
         "c2b-math-quadratic-shift-square",
-        "c2b-math-quadratic-model-margin"
+        "c2b-math-quadratic-model-margin",
+        "chat500-math-065",
+        "chat500-math-066",
+        "chat500-math-067",
+        "chat500-math-068",
+        "chat500-math-069",
+        "chat500-math-070",
+        "chat500-math-071",
+        "chat500-math-072",
+        "chat500-math-073",
+        "chat500-math-074",
+        "chat500-math-075",
+        "chat500-math-076",
+        "chat500-math-077",
+        "chat500-math-078",
+        "chat500-math-079",
+        "chat500-math-080"
       ],
       "test": [
         "b2-math-quad-parameter",
@@ -680,7 +1051,15 @@
       "practice": [
         "b2-math-ineq-negative",
         "b2-math-ineq-system",
-        "b2-math-ineq-rational"
+        "b2-math-ineq-rational",
+        "chat500-math-145",
+        "chat500-math-146",
+        "chat500-math-147",
+        "chat500-math-148",
+        "chat500-math-149",
+        "chat500-math-150",
+        "chat500-math-151",
+        "chat500-math-152"
       ],
       "test": [
         "b2-math-ineq-root-domain",
@@ -699,7 +1078,23 @@
         "c2b-math-word-two-products",
         "c2b-math-word-average-speed",
         "c2b-math-word-stock-balance",
-        "c2b-math-word-work-break"
+        "c2b-math-word-work-break",
+        "chat500-math-113",
+        "chat500-math-114",
+        "chat500-math-115",
+        "chat500-math-116",
+        "chat500-math-117",
+        "chat500-math-118",
+        "chat500-math-119",
+        "chat500-math-120",
+        "chat500-math-121",
+        "chat500-math-122",
+        "chat500-math-123",
+        "chat500-math-124",
+        "chat500-math-125",
+        "chat500-math-126",
+        "chat500-math-127",
+        "chat500-math-128"
       ],
       "test": [
         "b2-math-word-workers",
@@ -720,7 +1115,23 @@
         "c2b-math-prob-one-red",
         "c2b-math-prob-mean-missing",
         "c2b-math-prob-median-even",
-        "c2b-math-prob-independent"
+        "c2b-math-prob-independent",
+        "chat500-math-129",
+        "chat500-math-130",
+        "chat500-math-131",
+        "chat500-math-132",
+        "chat500-math-133",
+        "chat500-math-134",
+        "chat500-math-135",
+        "chat500-math-136",
+        "chat500-math-137",
+        "chat500-math-138",
+        "chat500-math-139",
+        "chat500-math-140",
+        "chat500-math-141",
+        "chat500-math-142",
+        "chat500-math-143",
+        "chat500-math-144"
       ],
       "test": [
         "b2-math-prob-conditional",
@@ -733,7 +1144,11 @@
         "b2-math-log-definition",
         "b2-math-log-equation",
         "b2-math-log-product",
-        "c2a-math-definition"
+        "c2a-math-definition",
+        "chat500-math-153",
+        "chat500-math-154",
+        "chat500-math-155",
+        "chat500-math-156"
       ],
       "test": [
         "b2-math-log-small-base",
@@ -744,7 +1159,11 @@
       "practice": [
         "b2-math-trig-circle",
         "b2-math-trig-sign",
-        "b2-math-trig-double"
+        "b2-math-trig-double",
+        "chat500-math-157",
+        "chat500-math-158",
+        "chat500-math-159",
+        "chat500-math-160"
       ],
       "test": [
         "b2-math-trig-root-count",
@@ -764,7 +1183,14 @@
         "c2b-russian-member-adverbial",
         "c2b-russian-member-inverted",
         "c2b-russian-member-passive",
-        "c2b-russian-member-infinitive"
+        "c2b-russian-member-infinitive",
+        "chat500-russian-070",
+        "chat500-russian-071",
+        "chat500-russian-072",
+        "chat500-russian-073",
+        "chat500-russian-074",
+        "chat500-russian-075",
+        "chat500-russian-076"
       ],
       "test": [
         "b2-russian-member-infinitive",
@@ -780,7 +1206,16 @@
         "b2-russian-prep-derivative",
         "b2-russian-prep-cause",
         "b2-russian-prep-despite",
-        "c2a-russian-despite"
+        "c2a-russian-despite",
+        "chat500-russian-115",
+        "chat500-russian-116",
+        "chat500-russian-117",
+        "chat500-russian-118",
+        "chat500-russian-119",
+        "chat500-russian-120",
+        "chat500-russian-121",
+        "chat500-russian-122",
+        "chat500-russian-123"
       ],
       "test": [
         "b2-russian-prep-agreement",
@@ -794,7 +1229,16 @@
         "b2-russian-part-after",
         "b2-russian-part-before",
         "c2a-russian-recognize",
-        "c2a-russian-postposition"
+        "c2a-russian-postposition",
+        "chat500-russian-097",
+        "chat500-russian-098",
+        "chat500-russian-099",
+        "chat500-russian-100",
+        "chat500-russian-101",
+        "chat500-russian-102",
+        "chat500-russian-103",
+        "chat500-russian-104",
+        "chat500-russian-105"
       ],
       "test": [
         "b2-russian-part-short",
@@ -812,7 +1256,16 @@
         "c2b-russian-complex-subordinate",
         "c2b-russian-complex-coordinate",
         "c2b-russian-complex-purpose",
-        "c2b-russian-complex-relative"
+        "c2b-russian-complex-relative",
+        "chat500-russian-133",
+        "chat500-russian-134",
+        "chat500-russian-135",
+        "chat500-russian-136",
+        "chat500-russian-137",
+        "chat500-russian-138",
+        "chat500-russian-139",
+        "chat500-russian-140",
+        "chat500-russian-141"
       ],
       "test": [
         "b2-russian-complex-homogeneous",
@@ -832,7 +1285,14 @@
         "c2b-informatics-graph-handshake",
         "c2b-informatics-graph-paths-dag",
         "c2b-informatics-graph-min-distance",
-        "c2b-informatics-graph-tree-extra"
+        "c2b-informatics-graph-tree-extra",
+        "chat500-informatics-084",
+        "chat500-informatics-085",
+        "chat500-informatics-086",
+        "chat500-informatics-087",
+        "chat500-informatics-088",
+        "chat500-informatics-089",
+        "chat500-informatics-090"
       ],
       "test": [
         "b2-informatics-graph-through",
@@ -847,7 +1307,17 @@
         "b2-informatics-table-copy",
         "b2-informatics-table-filter",
         "c2a-informatics-sum-products",
-        "c2a-informatics-relative-reference"
+        "c2a-informatics-relative-reference",
+        "chat500-informatics-091",
+        "chat500-informatics-092",
+        "chat500-informatics-093",
+        "chat500-informatics-094",
+        "chat500-informatics-095",
+        "chat500-informatics-096",
+        "chat500-informatics-097",
+        "chat500-informatics-098",
+        "chat500-informatics-099",
+        "chat500-informatics-100"
       ],
       "test": [
         "b2-informatics-table-average",
@@ -861,7 +1331,12 @@
         "b2-informatics-algo-nested",
         "b2-informatics-algo-digits",
         "c2a-informatics-while-trace",
-        "c2a-informatics-commands-paths"
+        "c2a-informatics-commands-paths",
+        "chat500-informatics-101",
+        "chat500-informatics-102",
+        "chat500-informatics-103",
+        "chat500-informatics-104",
+        "chat500-informatics-105"
       ],
       "test": [
         "b2-informatics-algo-search",

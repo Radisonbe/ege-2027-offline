@@ -2500,6 +2500,141 @@
       ],
       "related": [],
       "remediates": []
+    },
+    {
+      "id": "text.skill.author500-style",
+      "topic": "text",
+      "subtopic": "text.sub.foundation",
+      "title": "Определять функциональный стиль по цели и языковым средствам",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "text.skill.author500-type",
+      "topic": "text",
+      "subtopic": "text.sub.foundation",
+      "title": "Различать описание, повествование и рассуждение",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "text.skill.author500-analysis",
+      "topic": "text",
+      "subtopic": "text.sub.foundation",
+      "title": "Проверять утверждения по полному тексту",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-lists.skill.author500-sequence",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "title": "Обработать соседние элементы и границы списка",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.author500-ascii",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "title": "Отобрать исходные латинские буквы и учесть регистр",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-strings.skill.author500-words",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "title": "Разделить строку по пробельным символам",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "arithmetic.skill.author500-model",
+      "topic": "arithmetic",
+      "subtopic": "arithmetic.sub.foundation",
+      "title": "Составить модель суммы и разности двух величин",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "binary.skill.author500-write-base",
+      "topic": "binary",
+      "subtopic": "binary.sub.conversion",
+      "title": "Записать целое число в указанной позиционной системе",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "tables.skill.author500-single-filter",
+      "topic": "tables",
+      "subtopic": "tables.sub.extension",
+      "title": "Посчитать строки, удовлетворяющие одному критерию",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "infpython.skill.author500-trace",
+      "topic": "infpython",
+      "subtopic": "infpython.sub.foundation",
+      "title": "Трассировать обработку последовательности на Python",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "word.skill.author500-productivity",
+      "topic": "word",
+      "subtopic": "word.sub.extension",
+      "title": "Учесть две производительности, время и начальный запас",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "inequalities.skill.author500-integer-interval",
+      "topic": "inequalities",
+      "subtopic": "inequalities.sub.extension",
+      "title": "Посчитать целые значения с учётом строгих границ",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-csv.skill.author500-delimiter",
+      "topic": "py-csv",
+      "subtopic": "py-csv.sub.value",
+      "title": "Разделить простую строку по указанному разделителю",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-loops.skill.author500-nested",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "title": "Проследить число действий во вложенных циклах",
+      "requires": [],
+      "related": [],
+      "remediates": []
+    },
+    {
+      "id": "py-if.skill.author500-boolean",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "title": "Вычислить логическое выражение Python",
+      "requires": [],
+      "related": [],
+      "remediates": []
     }
   ]
 }

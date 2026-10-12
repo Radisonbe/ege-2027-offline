@@ -1,0 +1,2976 @@
+{
+  "schemaVersion": 1,
+  "id": "reviewed-author500-python",
+  "subject": "python",
+  "questions": [
+    {
+      "id": "chat500-python-001",
+      "subject": "python",
+      "topic": "py-sets",
+      "subtopic": "py-sets.sub.membership",
+      "skills": [
+        "py-sets.skill.unique"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "4",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "Множество хранит каждое значение один раз; len считает различные значения. Результат вывода: 4.",
+      "solution": "Множество хранит каждое значение один раз; len считает различные значения. Результат вывода: 4.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-set-dedup",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "values = [1, 2, 2, 3, 4]\nprint(len(set(values)))",
+        "expectedOutput": "4",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-002",
+      "subject": "python",
+      "topic": "py-sets",
+      "subtopic": "py-sets.sub.membership",
+      "skills": [
+        "py-sets.skill.unique"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "3",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "Множество хранит каждое значение один раз; len считает различные значения. Результат вывода: 3.",
+      "solution": "Множество хранит каждое значение один раз; len считает различные значения. Результат вывода: 3.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-set-dedup",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "values = [1, 2, 2, 4, 4]\nprint(len(set(values)))",
+        "expectedOutput": "3",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-003",
+      "subject": "python",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.extension",
+      "skills": [
+        "py-tuples.skill.3b2-unpack"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "5",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "При распаковке первый элемент присваивается a, второй b. Результат вывода: 5.",
+      "solution": "При распаковке первый элемент присваивается a, второй b. Результат вывода: 5.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-unpack-tuple",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a, b = (3, 8)\nprint(b - a)",
+        "expectedOutput": "5",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-004",
+      "subject": "python",
+      "topic": "py-tuples",
+      "subtopic": "py-tuples.sub.extension",
+      "skills": [
+        "py-tuples.skill.3b2-unpack"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "5",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "При распаковке значения присваиваются в порядке элементов кортежа. Результат вывода: 5.",
+      "solution": "При распаковке значения присваиваются в порядке элементов кортежа. Результат вывода: 5.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-unpack-tuple",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a, b = (4, 9)\nprint(b - a)",
+        "expectedOutput": "5",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-007",
+      "subject": "python",
+      "topic": "py-csv",
+      "subtopic": "py-csv.sub.value",
+      "skills": [
+        "py-csv.skill.author500-delimiter"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "3 книга",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "split(\",\") разделяет эту строку по запятым. Это учебный пример без кавычек внутри полей, не универсальный CSV-парсер. Результат вывода: 3 книга.",
+      "solution": "split(\",\") разделяет эту строку по запятым. Это учебный пример без кавычек внутри полей, не универсальный CSV-парсер. Результат вывода: 3 книга.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-delimiter-split",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "row = \"книга,ручка,карандаш\"\nparts = row.split(\",\")\nprint(len(parts), parts[0])",
+        "expectedOutput": "3 книга",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-008",
+      "subject": "python",
+      "topic": "py-csv",
+      "subtopic": "py-csv.sub.value",
+      "skills": [
+        "py-csv.skill.author500-delimiter"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "4 a",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "split(\",\") разделяет эту строку по запятым. Поля здесь не содержат экранированных запятых. Результат вывода: 4 a.",
+      "solution": "split(\",\") разделяет эту строку по запятым. Поля здесь не содержат экранированных запятых. Результат вывода: 4 a.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-delimiter-split",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "row = \"a,b,c,d\"\nparts = row.split(\",\")\nprint(len(parts), parts[0])",
+        "expectedOutput": "4 a",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-009",
+      "subject": "python",
+      "topic": "py-algorithms",
+      "subtopic": "py-algorithms.sub.maximum",
+      "skills": [
+        "py-algorithms.skill.maximum"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "12 2",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "max находит значение максимума, index — индекс первого его появления. Результат вывода: 12 2.",
+      "solution": "max находит значение максимума, index — индекс первого его появления. Результат вывода: 12 2.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-maximum-and-index",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "values = [3, 1, 12, 4, 2]\nprint(max(values), values.index(max(values)))",
+        "expectedOutput": "12 2",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-010",
+      "subject": "python",
+      "topic": "py-algorithms",
+      "subtopic": "py-algorithms.sub.maximum",
+      "skills": [
+        "py-algorithms.skill.maximum"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет программа? Сохрани порядок значений и регистр букв.",
+      "answer": "13 2",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "index возвращает позицию первого максимума, индексация начинается с нуля. Результат вывода: 13 2.",
+      "solution": "index возвращает позицию первого максимума, индексация начинается с нуля. Результат вывода: 13 2.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-maximum-and-index",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "values = [3, 1, 13, 4, 2]\nprint(max(values), values.index(max(values)))",
+        "expectedOutput": "13 2",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-011",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "9",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 9.",
+      "solution": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 9.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-range-right-boundary",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s = 0\nfor k in range(1, 6, 2):\n    s += k\nprint(s)",
+        "expectedOutput": "9",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-012",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "7",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 7.",
+      "solution": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 7.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-range-right-boundary",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s = 0\nfor k in range(2, 7, 3):\n    s += k\nprint(s)",
+        "expectedOutput": "7",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-013",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "10",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 10.",
+      "solution": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 10.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-range-right-boundary",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s = 0\nfor k in range(3, 8, 4):\n    s += k\nprint(s)",
+        "expectedOutput": "10",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-014",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "18",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 18.",
+      "solution": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 18.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-range-right-boundary",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s = 0\nfor k in range(4, 9, 2):\n    s += k\nprint(s)",
+        "expectedOutput": "18",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-015",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.range"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "13",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 13.",
+      "solution": "Правая граница range не включается; складываются только посещённые значения. Итоговый вывод: 13.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-range-right-boundary",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "s = 0\nfor k in range(5, 10, 3):\n    s += k\nprint(s)",
+        "expectedOutput": "13",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-016",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.author500-nested"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "1",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Вложенный цикл при x делает x итераций; общее число — сумма 0+1+... . Итоговый вывод: 1.",
+      "solution": "Вложенный цикл при x делает x итераций; общее число — сумма 0+1+... . Итоговый вывод: 1.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-triangular-loop",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "count = 0\nfor x in range(2):\n    for y in range(x):\n        count += 1\nprint(count)",
+        "expectedOutput": "1",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-019",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.author500-nested"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "10",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Вложенный цикл при x делает x итераций; общее число — сумма 0+1+... . Итоговый вывод: 10.",
+      "solution": "Вложенный цикл при x делает x итераций; общее число — сумма 0+1+... . Итоговый вывод: 10.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-triangular-loop",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "count = 0\nfor x in range(5):\n    for y in range(x):\n        count += 1\nprint(count)",
+        "expectedOutput": "10",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-020",
+      "subject": "python",
+      "topic": "py-loops",
+      "subtopic": "py-loops.sub.iteration",
+      "skills": [
+        "py-loops.skill.author500-nested"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "15",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Вложенный цикл при x делает x итераций; общее число — сумма 0+1+... . Итоговый вывод: 15.",
+      "solution": "Вложенный цикл при x делает x итераций; общее число — сумма 0+1+... . Итоговый вывод: 15.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-triangular-loop",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "count = 0\nfor x in range(6):\n    for y in range(x):\n        count += 1\nprint(count)",
+        "expectedOutput": "15",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-021",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.3c2-slice"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "rne",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: rne.",
+      "solution": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: rne.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-string-slicing",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "text = \"printer\"\nprint(text[1:6:2])",
+        "expectedOutput": "rne",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-022",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.3c2-slice"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "ti",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: ti.",
+      "solution": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: ti.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-string-slicing",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "text = \"station\"\nprint(text[1:6:3])",
+        "expectedOutput": "ti",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-023",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.3c2-slice"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "oml",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: oml.",
+      "solution": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: oml.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-string-slicing",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "text = \"formula\"\nprint(text[1:6:2])",
+        "expectedOutput": "oml",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-024",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.3c2-slice"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "ri",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: ri.",
+      "solution": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: ri.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-string-slicing",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "text = \"archive\"\nprint(text[1:6:3])",
+        "expectedOutput": "ri",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-025",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.3c2-slice"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "etr",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: etr.",
+      "solution": "Срез начинает с индекса 1, индекс 6 не включается. Итоговый вывод: etr.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-string-slicing",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "text = \"feature\"\nprint(text[1:6:2])",
+        "expectedOutput": "etr",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-026",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "3 5",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 5.",
+      "solution": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 5.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-alias-not-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "items = [1, 3]\nother = items\nother.append(5)\nprint(len(items), items[-1])",
+        "expectedOutput": "3 5",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-027",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "3 6",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 6.",
+      "solution": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 6.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-alias-not-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "items = [2, 4]\nother = items\nother.append(6)\nprint(len(items), items[-1])",
+        "expectedOutput": "3 6",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-028",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "3 7",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 7.",
+      "solution": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 7.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-alias-not-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "items = [3, 5]\nother = items\nother.append(7)\nprint(len(items), items[-1])",
+        "expectedOutput": "3 7",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-029",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "3 8",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 8.",
+      "solution": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 8.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-alias-not-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "items = [4, 6]\nother = items\nother.append(8)\nprint(len(items), items[-1])",
+        "expectedOutput": "3 8",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-030",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "3 9",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 9.",
+      "solution": "Присваивание не копирует список: имена ссылаются на один объект. Итоговый вывод: 3 9.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-alias-not-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "items = [5, 7]\nother = items\nother.append(9)\nprint(len(items), items[-1])",
+        "expectedOutput": "3 9",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-031",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "1 11",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 1 11.",
+      "solution": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 1 11.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-slice-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "first = [1, 2]\nsecond = first[:] \nsecond[0] = 11\nprint(first[0], second[0])",
+        "expectedOutput": "1 11",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-032",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "2 12",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 2 12.",
+      "solution": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 2 12.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-slice-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "first = [2, 3]\nsecond = first[:] \nsecond[0] = 12\nprint(first[0], second[0])",
+        "expectedOutput": "2 12",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-033",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "3 13",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 3 13.",
+      "solution": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 3 13.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-slice-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "first = [3, 4]\nsecond = first[:] \nsecond[0] = 13\nprint(first[0], second[0])",
+        "expectedOutput": "3 13",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-034",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "4 14",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 4 14.",
+      "solution": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 4 14.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-slice-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "first = [4, 5]\nsecond = first[:] \nsecond[0] = 14\nprint(first[0], second[0])",
+        "expectedOutput": "4 14",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-035",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.3c2-alias"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "5 15",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 5 15.",
+      "solution": "Срез [:] создаёт новый список; изменение элемента копии не меняет исходный. Итоговый вывод: 5 15.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-slice-copy",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "first = [5, 6]\nsecond = first[:] \nsecond[0] = 15\nprint(first[0], second[0])",
+        "expectedOutput": "5 15",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-036",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.update"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "2 7",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 7.",
+      "solution": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 7.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-dictionary-overwrite",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d = {\"x\": 2}\nd[\"x\"] = 7\nd[\"y\"] = 0\nprint(len(d), d[\"x\"])",
+        "expectedOutput": "2 7",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-037",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.update"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "2 8",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 8.",
+      "solution": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 8.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-dictionary-overwrite",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d = {\"x\": 3}\nd[\"x\"] = 8\nd[\"y\"] = 1\nprint(len(d), d[\"x\"])",
+        "expectedOutput": "2 8",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-038",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.update"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "2 9",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 9.",
+      "solution": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 9.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-dictionary-overwrite",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d = {\"x\": 4}\nd[\"x\"] = 9\nd[\"y\"] = 2\nprint(len(d), d[\"x\"])",
+        "expectedOutput": "2 9",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-039",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.update"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "2 10",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 10.",
+      "solution": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 10.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-dictionary-overwrite",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d = {\"x\": 5}\nd[\"x\"] = 10\nd[\"y\"] = 3\nprint(len(d), d[\"x\"])",
+        "expectedOutput": "2 10",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-040",
+      "subject": "python",
+      "topic": "py-dicts",
+      "subtopic": "py-dicts.sub.mapping",
+      "skills": [
+        "py-dicts.skill.update"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "2 11",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 11.",
+      "solution": "Повторная запись по ключу меняет значение; число ключей увеличивается только при новом ключе. Итоговый вывод: 2 11.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-dictionary-overwrite",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "d = {\"x\": 6}\nd[\"x\"] = 11\nd[\"y\"] = 4\nprint(len(d), d[\"x\"])",
+        "expectedOutput": "2 11",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-041",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "0 4",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 4.",
+      "solution": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 4.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-early-return",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def calculate(x):\n    if x < 0:\n        return 0\n    return x + 2\nprint(calculate(-2), calculate(2))",
+        "expectedOutput": "0 4",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-042",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "0 6",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 6.",
+      "solution": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 6.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-early-return",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def calculate(x):\n    if x < 0:\n        return 0\n    return x + 3\nprint(calculate(-3), calculate(3))",
+        "expectedOutput": "0 6",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-043",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "0 8",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 8.",
+      "solution": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 8.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-early-return",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def calculate(x):\n    if x < 0:\n        return 0\n    return x + 4\nprint(calculate(-4), calculate(4))",
+        "expectedOutput": "0 8",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-044",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "0 10",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 10.",
+      "solution": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 10.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-early-return",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def calculate(x):\n    if x < 0:\n        return 0\n    return x + 5\nprint(calculate(-5), calculate(5))",
+        "expectedOutput": "0 10",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-045",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "0 12",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 12.",
+      "solution": "После return функция прекращает выполнение; для второго вызова срабатывает другая ветвь. Итоговый вывод: 0 12.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-early-return",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def calculate(x):\n    if x < 0:\n        return 0\n    return x + 6\nprint(calculate(-6), calculate(6))",
+        "expectedOutput": "0 12",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-046",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "2 4",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 2 4.",
+      "solution": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 2 4.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-default-parameter",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def f(x, step=1):\n    return x + step\nprint(f(1), f(1, 3))",
+        "expectedOutput": "2 4",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-047",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "4 6",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 4 6.",
+      "solution": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 4 6.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-default-parameter",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def f(x, step=2):\n    return x + step\nprint(f(2), f(2, 4))",
+        "expectedOutput": "4 6",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-048",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "6 8",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 6 8.",
+      "solution": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 6 8.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-default-parameter",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def f(x, step=3):\n    return x + step\nprint(f(3), f(3, 5))",
+        "expectedOutput": "6 8",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-049",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "8 10",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 8 10.",
+      "solution": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 8 10.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-default-parameter",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def f(x, step=4):\n    return x + step\nprint(f(4), f(4, 6))",
+        "expectedOutput": "8 10",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-050",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "10 12",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 10 12.",
+      "solution": "Первый вызов использует значение step по умолчанию, второй передаёт его явно. Итоговый вывод: 10 12.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-default-parameter",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "def f(x, step=5):\n    return x + step\nprint(f(5), f(5, 7))",
+        "expectedOutput": "10 12",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-051",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "skills": [
+        "py-if.skill.author500-boolean"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "False True",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "and требует истинности обоих сравнений, or — хотя бы одного. Итоговый вывод: False True.",
+      "solution": "and требует истинности обоих сравнений, or — хотя бы одного. Итоговый вывод: False True.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-boolean-condition",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "x = 0\nprint(x > 0 and x < 2, x == 0 or x > 2)",
+        "expectedOutput": "False True",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-052",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "skills": [
+        "py-if.skill.author500-boolean"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "True False",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "and требует истинности обоих сравнений, or — хотя бы одного. Итоговый вывод: True False.",
+      "solution": "and требует истинности обоих сравнений, or — хотя бы одного. Итоговый вывод: True False.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-boolean-condition",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "x = 1\nprint(x > 0 and x < 2, x == 0 or x > 2)",
+        "expectedOutput": "True False",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-053",
+      "subject": "python",
+      "topic": "py-if",
+      "subtopic": "py-if.sub.condition",
+      "skills": [
+        "py-if.skill.author500-boolean"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "False False",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "and требует истинности обоих сравнений, or — хотя бы одного. Итоговый вывод: False False.",
+      "solution": "and требует истинности обоих сравнений, or — хотя бы одного. Итоговый вывод: False False.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 2,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-boolean-condition",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "x = 2\nprint(x > 0 and x < 2, x == 0 or x > 2)",
+        "expectedOutput": "False False",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-054",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "skills": [
+        "py-types.skill.convert"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python? Сохрани точную запись вывода.",
+      "answer": "15",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "int превращает строку в целое число, str — число в строку; итог: 15.",
+      "solution": "int превращает строку в целое число, str — число в строку; итог: 15.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-conversion-vs-concatenation",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "print(int(\"12\") + 3)",
+        "expectedOutput": "15",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-055",
+      "subject": "python",
+      "topic": "py-types",
+      "subtopic": "py-types.sub.types",
+      "skills": [
+        "py-types.skill.convert"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python? Сохрани точную запись вывода.",
+      "answer": "75",
+      "hint": "Определи правило и проверь крайние случаи.",
+      "explanation": "int превращает строку в целое число, str — число в строку; итог: 75.",
+      "solution": "int превращает строку в целое число, str — число в строку; итог: 75.",
+      "principle": "Правило важнее запоминания готового ответа.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-conversion-vs-concatenation",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "print(str(7) + \"5\")",
+        "expectedOutput": "75",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-056",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "skills": [
+        "py-variables.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "5 2",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 2.",
+      "solution": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 2.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-tuple-assignment",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a, b = 2, 7\na, b = b, a\nprint(a - b, b)",
+        "expectedOutput": "5 2",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-057",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "skills": [
+        "py-variables.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "5 3",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 3.",
+      "solution": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 3.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-tuple-assignment",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a, b = 3, 8\na, b = b, a\nprint(a - b, b)",
+        "expectedOutput": "5 3",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-058",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "skills": [
+        "py-variables.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "5 4",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 4.",
+      "solution": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 4.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-tuple-assignment",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a, b = 4, 9\na, b = b, a\nprint(a - b, b)",
+        "expectedOutput": "5 4",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-059",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "skills": [
+        "py-variables.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "5 5",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 5.",
+      "solution": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 5.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-tuple-assignment",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a, b = 5, 10\na, b = b, a\nprint(a - b, b)",
+        "expectedOutput": "5 5",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-060",
+      "subject": "python",
+      "topic": "py-variables",
+      "subtopic": "py-variables.sub.assign",
+      "skills": [
+        "py-variables.skill.evaluate"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "text",
+      "prompt": "Что выведет Python-программа? Сохрани порядок и регистр значений; если строк несколько, можно разделить их пробелом.",
+      "answer": "5 6",
+      "hint": "Определи, какое правило здесь применимо, и проверь свой результат.",
+      "explanation": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 6.",
+      "solution": "Сначала вычисляется вся правая часть; значения меняются местами одновременно. Итоговый вывод: 5 6.",
+      "principle": "Решение должно опираться на правило, а не на угадывание.",
+      "version": 1,
+      "requires": [],
+      "related": [],
+      "familyId": "chat500-tuple-assignment",
+      "python": {
+        "type": "predict-output",
+        "starterCode": "a, b = 6, 11\na, b = b, a\nprint(a - b, b)",
+        "expectedOutput": "5 6",
+        "timeout": 5000
+      },
+      "answerFormat": "python-output"
+    },
+    {
+      "id": "chat500-python-062",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.author500-sequence"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши swap_adjacent(values). Верни новый список, в котором элементы каждой полной соседней пары поменяны местами. Если длина нечётная, последний элемент остаётся на месте. Исходный список не изменяй. Автоматическая проверка сравнивает содержимое возвращённого списка; неизменность исходного списка и создание нового объекта не проверяются. В учебном решении всё же используй копию.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "Скопируй список. Меняй местами позиции 0 и 1, 2 и 3; если последняя позиция без пары, оставь её. Верни список, не вывод.",
+      "solution": "def swap_adjacent(values):\n    out=values[:] \n    for i in range(0,len(out)-1,2):\n        out[i],out[i+1]=out[i+1],out[i]\n    return out",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "chat500-swap-adjacent",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def swap_adjacent(values):\n    pass",
+        "functionName": "swap_adjacent",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              [
+                1
+              ]
+            ],
+            "expectedReturn": [
+              1
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                2
+              ]
+            ],
+            "expectedReturn": [
+              2,
+              1
+            ]
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3,
+                4
+              ]
+            ],
+            "expectedReturn": [
+              2,
+              1,
+              4,
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                5,
+                5,
+                6,
+                7,
+                8
+              ]
+            ],
+            "expectedReturn": [
+              5,
+              5,
+              7,
+              6,
+              8
+            ]
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "expectedReturn": [
+              2,
+              1,
+              4,
+              3,
+              5
+            ]
+          },
+          {
+            "args": [
+              [
+                9
+              ]
+            ],
+            "expectedReturn": [
+              9
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                -1,
+                -2,
+                -3
+              ]
+            ],
+            "expectedReturn": [
+              -1,
+              0,
+              -3,
+              -2
+            ]
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            ],
+            "expectedReturn": [
+              1,
+              0,
+              3,
+              2,
+              5,
+              4,
+              7,
+              6,
+              9,
+              8,
+              11,
+              10,
+              13,
+              12,
+              14
+            ]
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    },
+    {
+      "id": "chat500-python-063",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.author500-ascii"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши distinct_letters(text). Верни число различных исходных латинских букв ASCII A–Z и a–z без учёта регистра. Русские и другие буквы, цифры и знаки пропускай.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "Сначала проверь исходный символ по диапазонам A–Z/a–z. Только затем приведи его к нижнему регистру и добавь в множество. Длина множества — число разных букв.",
+      "solution": "def distinct_letters(text):\n    letters = set()\n    for c in text:\n        if \"a\" <= c <= \"z\" or \"A\" <= c <= \"Z\":\n            letters.add(c.lower())\n    return len(letters)",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "chat500-count-distinct-letters",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def distinct_letters(text):\n    pass",
+        "functionName": "distinct_letters",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              "aAa"
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              "AbB 12!"
+            ],
+            "expectedReturn": 2
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              ""
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "xYz"
+            ],
+            "expectedReturn": 3
+          },
+          {
+            "args": [
+              "123"
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "Hello, World!"
+            ],
+            "expectedReturn": 7
+          },
+          {
+            "args": [
+              "İIſK"
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              "АБВαβγ"
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            ],
+            "expectedReturn": 26
+          },
+          {
+            "args": [
+              "a\tZ\nA"
+            ],
+            "expectedReturn": 2
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    },
+    {
+      "id": "chat500-python-064",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.author500-sequence"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши longest_run(values). Верни длину самой длинной подряд идущей серии одинаковых значений. Для пустого списка верни 0.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "Храни длину текущей серии и максимальную длину. При смене значения начинай серию с 1. На пустом списке длина равна 0.",
+      "solution": "def longest_run(values):\n    best=cur=0\n    last=object()\n    for v in values:\n        cur=cur+1 if v==last else 1\n        best=max(best,cur)\n        last=v\n    return best",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "chat500-longest-run",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def longest_run(values):\n    pass",
+        "functionName": "longest_run",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                1
+              ]
+            ],
+            "expectedReturn": 1
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                1,
+                1,
+                2,
+                2,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": 3
+          },
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              [
+                7,
+                7,
+                7,
+                7
+              ]
+            ],
+            "expectedReturn": 4
+          },
+          {
+            "args": [
+              [
+                0,
+                0,
+                -1,
+                -1,
+                -1,
+                0
+              ]
+            ],
+            "expectedReturn": 3
+          },
+          {
+            "args": [
+              [
+                1,
+                1,
+                2,
+                2,
+                2,
+                1
+              ]
+            ],
+            "expectedReturn": 3
+          },
+          {
+            "args": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "expectedReturn": 20
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            ],
+            "expectedReturn": 1
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    },
+    {
+      "id": "chat500-python-066",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.author500-sequence"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши at_least_two_even(values). Верни True, если в списке не меньше двух чётных целых чисел, иначе False. Ноль тоже чётный.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "Считай чётные элементы, включая ноль и отрицательные чётные числа. Результат — bool: достиг ли счётчик 2.",
+      "solution": "def at_least_two_even(values):\n    return sum(v%2==0 for v in values)>=2",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "chat500-two-even-check",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def at_least_two_even(values):\n    pass",
+        "functionName": "at_least_two_even",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              [
+                2
+              ]
+            ],
+            "expectedReturn": false
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                2,
+                4
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                1,
+                3,
+                5
+              ]
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              [
+                0,
+                7,
+                8
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                -2,
+                3,
+                5,
+                6
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                -4,
+                -2
+              ]
+            ],
+            "expectedReturn": true
+          },
+          {
+            "args": [
+              [
+                -2
+              ]
+            ],
+            "expectedReturn": false
+          },
+          {
+            "args": [
+              [
+                1,
+                0,
+                3,
+                8
+              ]
+            ],
+            "expectedReturn": true
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    },
+    {
+      "id": "chat500-python-067",
+      "subject": "python",
+      "topic": "py-strings",
+      "subtopic": "py-strings.sub.index",
+      "skills": [
+        "py-strings.skill.author500-words"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши word_lengths(text). Раздели строку по любым пробельным символам и верни список длин слов в исходном порядке.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "split() без аргумента выделяет слова между любыми пробельными символами. Пройди слова циклом и добавь длину каждого в список.",
+      "solution": "def word_lengths(text):\n    return [len(w) for w in text.split()]",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "chat500-word-lengths",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def word_lengths(text):\n    pass",
+        "functionName": "word_lengths",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              ""
+            ],
+            "expectedReturn": []
+          },
+          {
+            "args": [
+              "a"
+            ],
+            "expectedReturn": [
+              1
+            ]
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              "кот дом"
+            ],
+            "expectedReturn": [
+              3,
+              3
+            ]
+          },
+          {
+            "args": [
+              "a   bbb"
+            ],
+            "expectedReturn": [
+              1,
+              3
+            ]
+          },
+          {
+            "args": [
+              " hi\tthere "
+            ],
+            "expectedReturn": [
+              2,
+              5
+            ]
+          },
+          {
+            "args": [
+              "one\ntwo three"
+            ],
+            "expectedReturn": [
+              3,
+              3,
+              5
+            ]
+          },
+          {
+            "args": [
+              " a\tб\nccc "
+            ],
+            "expectedReturn": [
+              1,
+              1,
+              3
+            ]
+          },
+          {
+            "args": [
+              " один два "
+            ],
+            "expectedReturn": [
+              4,
+              3
+            ]
+          },
+          {
+            "args": [
+              "   "
+            ],
+            "expectedReturn": []
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    },
+    {
+      "id": "chat500-python-068",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.author500-sequence"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши last_even_index(values). Верни индекс последнего чётного числа или -1, если таких чисел нет. Индексация начинается с нуля.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "Начни с индекса −1. При каждом чётном элементе обновляй индекс: к концу останется последний. Пустой список даёт −1.",
+      "solution": "def last_even_index(values):\n    idx=-1\n    for i,x in enumerate(values):\n        if x%2==0:idx=i\n    return idx",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "chat500-last-even-index",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def last_even_index(values):\n    pass",
+        "functionName": "last_even_index",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              [
+                1,
+                3
+              ]
+            ],
+            "expectedReturn": -1
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                2
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                2,
+                4,
+                3
+              ]
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              [
+                1,
+                6,
+                7,
+                8
+              ]
+            ],
+            "expectedReturn": 3
+          },
+          {
+            "args": [
+              [
+                -2,
+                -3,
+                0
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "expectedReturn": 2
+          },
+          {
+            "args": [
+              [
+                1,
+                3,
+                5
+              ]
+            ],
+            "expectedReturn": -1
+          },
+          {
+            "args": [
+              [
+                0
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ]
+            ],
+            "expectedReturn": 18
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    },
+    {
+      "id": "chat500-python-069",
+      "subject": "python",
+      "topic": "py-lists",
+      "subtopic": "py-lists.sub.elements",
+      "skills": [
+        "py-lists.skill.author500-sequence"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши positive_product(values). Верни произведение только положительных чисел. Если положительных нет, верни 0. Ноль и отрицательные числа пропускай. Ограничения: до 9 целых чисел, каждое от −10 до 10.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "Пропускай числа ≤ 0. Начни произведение с 1 и отдельно помни, было ли положительное число; при их отсутствии верни 0.",
+      "solution": "def positive_product(values):\n    result=1\n    found=False\n    for x in values:\n        if x>0:\n            result*=x\n            found=True\n    return result if found else 0",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-functions"
+      ],
+      "related": [],
+      "familyId": "chat500-positive-product",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def positive_product(values):\n    pass",
+        "functionName": "positive_product",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              []
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                -1,
+                0
+              ]
+            ],
+            "expectedReturn": 0
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              [
+                2,
+                3
+              ]
+            ],
+            "expectedReturn": 6
+          },
+          {
+            "args": [
+              [
+                -3,
+                2,
+                0,
+                4
+              ]
+            ],
+            "expectedReturn": 8
+          },
+          {
+            "args": [
+              [
+                1
+              ]
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              [
+                5,
+                -7,
+                2
+              ]
+            ],
+            "expectedReturn": 10
+          },
+          {
+            "args": [
+              [
+                10,
+                10,
+                10,
+                10,
+                10,
+                10,
+                10,
+                10,
+                10
+              ]
+            ],
+            "expectedReturn": 1000000000
+          },
+          {
+            "args": [
+              [
+                -2,
+                0,
+                -3
+              ]
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              [
+                2,
+                -1,
+                3,
+                0,
+                4
+              ]
+            ],
+            "expectedReturn": 24
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    },
+    {
+      "id": "chat500-python-070",
+      "subject": "python",
+      "topic": "py-functions",
+      "subtopic": "py-functions.sub.return",
+      "skills": [
+        "py-functions.skill.return"
+      ],
+      "difficulty": "medium",
+      "origin": "generated",
+      "source": "Авторская учебная подборка ChatGPT · EGE500-01 · 2026-10-12; не официальный КИМ",
+      "sourceYear": 2026,
+      "sourceType": "training",
+      "examTaskType": null,
+      "answerType": "code",
+      "prompt": "Напиши clipped_distance(a, b, limit). Верни расстояние |a-b|, но не больше положительного limit. Ввод и print не нужны.",
+      "answer": "Программа проходит все тесты",
+      "hint": "Сначала продумай крайние случаи и структуру результата.",
+      "explanation": "Расстояние неотрицательно: вычисли модуль разности. Если оно превышает limit, верни limit, иначе само расстояние.",
+      "solution": "def clipped_distance(a,b,limit):\n    return min(abs(a-b),limit)",
+      "principle": "Сначала продумай крайние случаи и структуру результата.",
+      "version": 2,
+      "requires": [
+        "py-loops"
+      ],
+      "related": [],
+      "familyId": "chat500-clipped-distance",
+      "python": {
+        "type": "write-function",
+        "starterCode": "def clipped_distance(a, b, limit):\n    pass",
+        "functionName": "clipped_distance",
+        "timeout": 5000,
+        "visibleTests": [
+          {
+            "args": [
+              1,
+              2,
+              5
+            ],
+            "expectedReturn": 1
+          },
+          {
+            "args": [
+              1,
+              10,
+              4
+            ],
+            "expectedReturn": 4
+          }
+        ],
+        "hiddenTests": [
+          {
+            "args": [
+              5,
+              5,
+              2
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              -3,
+              4,
+              5
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              0,
+              6,
+              6
+            ],
+            "expectedReturn": 6
+          },
+          {
+            "args": [
+              20,
+              -10,
+              8
+            ],
+            "expectedReturn": 8
+          },
+          {
+            "args": [
+              -100,
+              100,
+              7
+            ],
+            "expectedReturn": 7
+          },
+          {
+            "args": [
+              3,
+              3,
+              5
+            ],
+            "expectedReturn": 0
+          },
+          {
+            "args": [
+              -8,
+              -3,
+              20
+            ],
+            "expectedReturn": 5
+          },
+          {
+            "args": [
+              9,
+              -9,
+              1
+            ],
+            "expectedReturn": 1
+          }
+        ]
+      },
+      "hints": [
+        "Сначала продумай крайние случаи и структуру результата.",
+        "Проверь отдельно пустой случай (когда допустим), границу и несколько подходящих элементов. Вывод print не заменяет return."
+      ]
+    }
+  ]
+}

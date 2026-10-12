@@ -8,7 +8,7 @@ export function checkContentBank(root=process.cwd()) {
   const reference=read('src/data/reference.json');
   const topics=reference.topics.map(t=>({...t,materialStatus:t.live?'ready':'planned'}));
   const taxonomy=validateTaxonomy(read('src/data/taxonomy.json'),topics);
-  const lessons={lessons:['stage3b1-lessons.json','stage3b2-lessons.json','stage3c2-a-lessons.json','stage3c2-b-lessons.json'].flatMap(file=>validateLessonPack(read('src/data/'+file),topics).lessons)};
+  const lessons={lessons:['stage3b1-lessons.json','stage3b2-lessons.json','stage3c2-a-lessons.json','stage3c2-b-lessons.json','author500-lessons.json'].flatMap(file=>validateLessonPack(read('src/data/'+file),topics).lessons)};
   const packages=fs.readdirSync(path.join(root,'src/data/banks')).filter(name=>name.endsWith('.json')).sort().map(name=>read('src/data/banks/'+name));
   const {questions}=loadContentPackages(packages,topics,taxonomy,true);
   validateLearningFlow(read('src/data/study-flow.json'),questions);

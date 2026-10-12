@@ -50,7 +50,7 @@
         {
           "path": "src/data/catalog.ts",
           "normalization": "lf",
-          "sha256": "4ee1de8b3feb6673daf08a407e66d2776605984d11561965ca912ac0da614017"
+          "sha256": "2a22b860b36123a7cb64169e4eb9d0c7a6dbf2422c61e2a0baefb92fcce748f2"
         }
       ]
     },
@@ -155,7 +155,7 @@
         {
           "path": "src/data/taxonomy.json",
           "normalization": "lf",
-          "sha256": "929e0d95b2f06b8a4442eb86e6a8a9a2a3dba65270ecd2becb2f4a9bfc86ae76"
+          "sha256": "6d56255657ab6c7ca773c54e3331b0325449c4f3c6832974bace2489839e7308"
         }
       ]
     },
@@ -307,7 +307,7 @@
         {
           "path": "src/data/study-flow.json",
           "normalization": "lf",
-          "sha256": "590bbc5423a7cdb3a2caa8834cbab83b8a6781217f18ed5caadc31f5f88fd9b3"
+          "sha256": "7867abed833ea384d315391a1a4ac5eb742020f6913652417533835ed05e7256"
         }
       ]
     },
@@ -404,7 +404,7 @@
         {
           "path": "src/data/content-families.json",
           "normalization": "lf",
-          "sha256": "dafba17228a4b3874fe01e1206dab1d2995d33f032161495aef35bd76d41692d"
+          "sha256": "18086667195eca1537ed5701bb04cc489992b387969fc1c257c4c1d942561d86"
         },
         {
           "path": "src/data/stage3c2-a-lessons.json",
@@ -468,6 +468,40 @@
           "path": "src/domain/generators/rational.ts",
           "normalization": "lf",
           "sha256": "f163bd3a5e312c379eb8813f60c99540311c36f9e8f1479df1abe5db9a36dc76"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-author-pilot-20261012",
+      "clearance": "project-generated",
+      "source": null,
+      "license": null,
+      "evidence": "Owner supplied original ChatGPT author pack on 2026-10-12; archive SHA-256 5bed21061e5d11429228b2c4a6d16dc6dbc10ce54240bd6700c46b71941897a4. Independently reviewed conditions, answer oracles, corrected/rejected ledger sources/chat500-review.json; All content generated training, not official FIPI tasks. FIPI project documents used only for scope; no external bank copied.",
+      "files": [
+        {
+          "path": "src/data/banks/author-chat500-informatics.json",
+          "normalization": "lf",
+          "sha256": "ee0f981bf6cb9445059cb5b20168d23d220cad4fdd4bedb9fa8672bc51ffe683"
+        },
+        {
+          "path": "src/data/banks/author-chat500-math.json",
+          "normalization": "lf",
+          "sha256": "c1de077e119f4d20140a1952a185d16a9bb1c46cbea8fe730c659dfc3c2eef46"
+        },
+        {
+          "path": "src/data/banks/author-chat500-python.json",
+          "normalization": "lf",
+          "sha256": "44698e829ad5475c6717ecd61a6b3824eb22024533eb6258459ac41a2b4dba21"
+        },
+        {
+          "path": "src/data/banks/author-chat500-russian.json",
+          "normalization": "lf",
+          "sha256": "a44683a04e19fcce72f8839b551d95753e69fdb149787ea50c3d7448083a53b4"
+        },
+        {
+          "path": "src/data/author500-lessons.json",
+          "normalization": "lf",
+          "sha256": "c145a6b9d070d3dac077525e6df6526472d1bdc715ac20541be0a27a1b973480"
         }
       ]
     }

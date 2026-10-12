@@ -226,3 +226,16 @@ of production. Runtime/dependency licensing is unchanged. See CONTENT-3C2-QUALIT
 ## Stage 3C.2-G: original algorithmic variants
 
 18 original teaching templates, 24 audited seeds each (432 variants) are generated locally from standard mathematical principles. Conditions, answers and explanations are computed together; no third-party task texts, FIPI copies, external generators or AI API. Every variant remains `origin: generated`, `sourceType: training`. Registry: `generator-pilot-3c2` in `sources/publication.json`; independent verification: `scripts/generator-oracles.py`. Stored private answers/snapshots remain only in IndexedDB/owner backups and never become build inputs.
+
+## EGE500-01 independent review (2026-10-12)
+
+The owner supplied an original ChatGPT author pack and explicitly requested local
+integration after independent checking. Archive SHA-256:
+`5bed21061e5d11429228b2c4a6d16dc6dbc10ce54240bd6700c46b71941897a4`.
+475 of 500 candidate questions were accepted, including 281 corrected objects;
+25 rejected IDs remain in the review ledger, not the application bank. All are
+`generated` / `training`, never official FIPI tasks. Author self-check is only a
+baseline, not the independent proof. See `docs/CHAT500-REVIEW.md` and
+`sources/chat500-review.json` for every decision, oracle, correction and duplicate.
+No third-party exercise text/images were imported. The original archive, local
+source-check script, official PDF downloads, profiles and builds are ignored inputs.
