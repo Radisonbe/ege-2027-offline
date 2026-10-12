@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
 import {spawn} from 'node:child_process';
-const [runtime,build,old,relative,previous,published050]=process.argv.slice(2);
+const [runtime,build,old,relative,previous,published050,published040]=process.argv.slice(2);
 if(!previous)throw Error('Usage: runtime build old relative previous-reviewed-build');
 const root=path.resolve(relative);
 const server=http.createServer((req,res)=>{
@@ -22,7 +22,9 @@ async function worker(){while(cursor<names.length){
  if(name==='study-flow-layout-browser.mjs')args=[url+'/'];
  if(name==='update-checks.mjs')args=[relative];
  if(name==='private-packages-browser.mjs')args=[];
+ if(name==='generators-browser.mjs')args=[build,published050??old];
  if(name==='content3c2-browser.mjs')args=[build,published050??old];
+ if(name==='exam-browser.mjs')args=[build,published040??old];
  if(name==='exam-review-browser.mjs')args=[build,previous];
  console.log('START '+name);
  const log=path.join('outputs','exam-review-'+stamp+'-'+name+'.log'),out=fs.createWriteStream(log);

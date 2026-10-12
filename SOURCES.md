@@ -222,3 +222,7 @@ of production. Runtime/dependency licensing is unchanged. See CONTENT-3C2-QUALIT
 ## Stage 3C.2 B
 
 200 original generated tasks (180 learning, 20 exam) and ten supplemental explanations. Every new ID, method, oracle, language-option justification and negative program is recorded in `sources/stage3c2-b-review.json`. Grammar reference links are analytical references only; no external example texts were copied. Accepted FIPI project maps and all 499 prior task objects are unchanged. See `docs/CONTENT-3C2-B.md`.
+
+## Stage 3C.2-G: original algorithmic variants
+
+18 original teaching templates, 24 audited seeds each (432 variants) are generated locally from standard mathematical principles. Conditions, answers and explanations are computed together; no third-party task texts, FIPI copies, external generators or AI API. Every variant remains `origin: generated`, `sourceType: training`. Registry: `generator-pilot-3c2` in `sources/publication.json`; independent verification: `scripts/generator-oracles.py`. Stored private answers/snapshots remain only in IndexedDB/owner backups and never become build inputs.

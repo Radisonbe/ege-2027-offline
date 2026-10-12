@@ -114,3 +114,7 @@ with verified restoration. Never silently delete history to make an export fit.
 ## Stage 3C.2 B
 
 Банк увеличен до 699 заданий; пул quick practice — 393 ID в 44 готовых темах. Pooled snapshots остаются id@version, старые объекты не пересоздаются. Новая контрольная попытка ограничена шестью снимками, старые сохранённые сеансы не обрезаются. Это уменьшает размер новых попыток, но не решает накопление истории: 20 МиБ остаются техническим долгом. Безопасный будущий этап — диагностика размера перед экспортом, добровольные архивы с контролем ссылок и восстановлением; удаления или изменения лимита сейчас нет.
+
+## Stage 3C.2-G finite pilot
+
+Generated variants use existing pooled quick-practice snapshots. Synthetic checks: 100 answers/100 snapshots = 259266 backup bytes; 500 answers/432 snapshots = 1205891; 1000 answers/432 snapshots = 1704084. Repeated solutions do not duplicate full questions, but answers/activity/sessions grow without automatic deletion. The 20 MiB cap remains. These are not owner-data measurements or promises of unlimited use. See GENERATORS-3C2-PERFORMANCE.md for the future 5500-domain risk and safe archival strategy.

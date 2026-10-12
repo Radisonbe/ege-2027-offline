@@ -1,3 +1,4 @@
+import {checkGenerators} from './check-generators.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -19,7 +20,7 @@ export function offlinePwa() {
     name: 'ege-complete-offline-kit',
     apply: 'build', enforce: 'post',
     configResolved(value) { config = value; },
-    buildStart() { assertNoPrivateInputs(config.root); checkContentBank(config.root); checkExamContent(); },
+    buildStart() { assertNoPrivateInputs(config.root); checkContentBank(config.root); checkExamContent(); checkGenerators(); },
     load(id) { assertBuildInput(id); return null; },
     writeBundle(options, bundle) {
       // Read final bytes after Vite has resolved lazy-import/preload transformations.

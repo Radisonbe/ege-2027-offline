@@ -28,6 +28,7 @@ export interface Question {
   requires: string[]; related: string[];
   skills?: string[]; remediates?: string[];
   familyId?: string;
+  generation?: {generatorId:string;generatorVersion:number;seed:number};
   python?: PythonTask;
   presentation?: { title: string; statement: string; limits: string; inputHelp: boolean };
 }

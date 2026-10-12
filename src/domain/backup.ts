@@ -46,7 +46,7 @@ function unique(items: unknown[], path: string) {
   if (new Set(ids).size !== ids.length) fail(path + '.id');
 }
 export function validateQuestion(value: unknown, path = 'question'): Question {
-  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python','hints','answerFormat','presentation','familyId']);
+  const q = object(value, path, ['id', 'subject', 'topic', 'subtopic', 'difficulty', 'origin', 'source', 'sourceYear', 'sourceType', 'examTaskType', 'answerType', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle', 'version', 'requires', 'related'], ['options', 'wrongAnswers', 'easy', 'skills', 'remediates','python','hints','answerFormat','presentation','familyId','generation']);
   for (const key of ['id', 'topic']) string(q[key], path + '.' + key, true);
   for (const key of ['source', 'prompt', 'answer', 'hint', 'explanation', 'solution', 'principle']) string(q[key], path + '.' + key);
   for (const key of ['subtopic', 'examTaskType']) if (q[key] !== null) string(q[key], path + '.' + key);
@@ -66,6 +66,7 @@ export function validateQuestion(value: unknown, path = 'question'): Question {
   if (q.easy !== undefined) choice(q.easy, path + '.easy', [true, false]);
   if(q.hints!==undefined)array(q.hints,path+'.hints',(v,p)=>string(v,p),5);
   if(q.presentation!==undefined){const p=object(q.presentation,path+'.presentation',['title','statement','limits','inputHelp']);for(const key of ['title','statement','limits']){string(p[key],path+'.presentation.'+key);if(!(p[key] as string).trim())fail(path+'.presentation.'+key);}choice(p.inputHelp,path+'.presentation.inputHelp',[true,false]);}
+  if(q.generation!==undefined){const m=object(q.generation,path+'.generation',['generatorId','generatorVersion','seed']);string(m.generatorId,path+'.generation.generatorId',true);if(!/^[a-z][a-z0-9-]{0,99}$/.test(m.generatorId as string))fail(path+'.generation.generatorId');integer(m.generatorVersion,path+'.generation.generatorVersion',1,1000000);integer(m.seed,path+'.generation.seed',0,4294967295);if(q.id!==`gen-${m.generatorId}-v${m.generatorVersion}-s${m.seed}`||q.origin!=='generated'||q.sourceType!=='training'||q.examTaskType!==null||q.answerType!=='number')fail(path+'.generation');}
   if(q.python!==undefined){if(!['python','informatics'].includes(String(q.subject)))fail(path+'.python');try{validatePythonTask(q.python);}catch{fail(path+'.python');}}
   if(q.answerType==='code'&&(!q.python||(q.python as {type:string}).type==='predict-output'))fail(path+'.python');
   if(q.answerType==='multiple-choice'){

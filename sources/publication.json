@@ -451,6 +451,25 @@
           "sha256": "b5f8d3abf09e7ece349a8947e31baa1c4a3b56556408d92bc6ba8df5cc66b9e5"
         }
       ]
+    },
+    {
+      "id": "generator-pilot-3c2",
+      "clearance": "project-generated",
+      "source": "Original local algorithmic teaching variants; no copied external tasks, no FIPI task claims",
+      "license": null,
+      "evidence": "Created in this project under explicit Stage 3C.2-G request. 18 original templates use standard mathematics. All 432 conditions, answers and complete explanatory steps checked by independent Python Fraction/enumeration oracle before build. Only training, never official exam tasks.",
+      "files": [
+        {
+          "path": "src/domain/generators/index.ts",
+          "normalization": "lf",
+          "sha256": "dbf35d7c9d92df3c3b3fe82f096b8f49984b5352daa6bd33819df0d54c669ad9"
+        },
+        {
+          "path": "src/domain/generators/rational.ts",
+          "normalization": "lf",
+          "sha256": "f163bd3a5e312c379eb8813f60c99540311c36f9e8f1479df1abe5db9a36dc76"
+        }
+      ]
     }
   ]
 }

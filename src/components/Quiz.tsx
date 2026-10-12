@@ -18,11 +18,12 @@ export function AnswerBox(props: {
   customInput?: ReactNode; customAnswer?: string; customCorrect?: boolean;
   adaptiveSessionId?: string; initial?: { answer: string; result: boolean | null };
   topicTestSessionId?: string;
+  onHelpRequested?:()=>void;
   quickSessionId?: string; onAnswerChange?: (answer:string)=>void;
 }) {
   return props.question.answerType==='code'?<Suspense fallback={<p role="status">Открываем редактор…</p>}><CodeExercise {...props}/></Suspense>:<TheoryAnswerBox {...props}/>;
 }
-function TheoryAnswerBox({question,context='test',onDone,customInput,customAnswer,customCorrect,adaptiveSessionId,topicTestSessionId,quickSessionId,onAnswerChange,initial}:Parameters<typeof AnswerBox>[0]) {
+function TheoryAnswerBox({question,context='test',onDone,customInput,customAnswer,customCorrect,adaptiveSessionId,topicTestSessionId,quickSessionId,onAnswerChange,onHelpRequested,initial}:Parameters<typeof AnswerBox>[0]) {
   const { mutate } = useStudy();
   const [answer, setAnswer] = useState(initial?.answer ?? ''), [result, setResult] = useState<boolean | null>(initial?.result ?? null), [formatError, setFormatError] = useState('');
   const [solution, setSolution] = useState(false), [hint, setHint] = useState(false), [hadAttempt, setHadAttempt] = useState(initial?.result !== undefined && initial.result !== null);
@@ -43,7 +44,7 @@ function TheoryAnswerBox({question,context='test',onDone,customInput,customAnswe
   }
   return <div className="answer-box"><QuestionMetadata question={question}/><p className="question-prompt"><MathText enabled={math}>{question.prompt}</MathText></p>{question.python?.type==='predict-output'&&question.python.starterCode&&<pre className="python-output" aria-label="Код для анализа">{question.python.starterCode}</pre>}
     {context === 'adaptive' && <><Button variant="ghost" onClick={() => setHint(!hint)}>{hint ? 'Скрыть подсказку' : 'Показать подсказку'}</Button>{hint && <p className="callout"><MathText enabled={math}>{question.hint}</MathText></p>}</>}
-    {context==='practice'&&<>{hintLevel<practiceHints.length&&<Button variant="ghost" onClick={()=>setHintLevel(n=>n+1)}>{hintLevel?'Более конкретная подсказка':'Показать подсказку'}</Button>}{practiceHints.slice(0,hintLevel).map((text,i)=><p className="callout" key={i}><MathText enabled={math}>{text}</MathText></p>)}</>}
+    {context==='practice'&&<>{hintLevel<practiceHints.length&&<Button variant="ghost" onClick={()=>{onHelpRequested?.();setHintLevel(n=>n+1);}}>{hintLevel?'Более конкретная подсказка':'Показать подсказку'}</Button>}{practiceHints.slice(0,hintLevel).map((text,i)=><p className="callout" key={i}><MathText enabled={math}>{text}</MathText></p>)}</>}
     {customInput ? <fieldset disabled={result !== null}>{customInput}</fieldset> : question.answerType === 'multiple-choice' ?
       <fieldset className="answer-options"><legend>Выбери все правильные варианты</legend>{question.options?.map((option,i)=><label className="answer-option" key={option} htmlFor={`${id}-${i}`}><input type="checkbox" aria-label={option} id={`${id}-${i}`} checked={(answer?JSON.parse(answer) as string[]:[]).includes(option)} disabled={result!==null} onChange={e=>{const selected=answer?JSON.parse(answer) as string[]:[];changeAnswer(JSON.stringify(e.target.checked?[...selected,option]:selected.filter(v=>v!==option)));setFormatError('');}}/><span><MathText enabled={math}>{option}</MathText></span></label>)}</fieldset> : question.answerType === 'choice' ?
       <div role="radiogroup" aria-label="Варианты ответа" className="answer-options">{question.options?.map((option, i) => <label className={`answer-option ${answer === option ? 'selected' : ''}`} key={option} htmlFor={`${id}-${i}`}><input type="radio" aria-label={option} name={id} id={`${id}-${i}`} value={option} checked={answer === option} disabled={result !== null} onChange={() => { changeAnswer(option); setFormatError(''); }}/><span><MathText enabled={math}>{option}</MathText></span></label>)}</div> :
